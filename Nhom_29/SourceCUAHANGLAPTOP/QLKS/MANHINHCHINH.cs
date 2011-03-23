@@ -30,6 +30,15 @@ namespace QLKS
             frm.MdiParent = this;
             frm.Parent = panelWelcome;
             frm.Show();
-        }        
+        }
+
+        private void buttonThongTinNhom_Click(object sender, EventArgs e)
+        {
+            THONGTINNHOM frm = new THONGTINNHOM();
+            frm.MdiParent = this;
+            frm.Parent = panelWelcome;
+            frm.Show();
+        }
+  
     }
 }
