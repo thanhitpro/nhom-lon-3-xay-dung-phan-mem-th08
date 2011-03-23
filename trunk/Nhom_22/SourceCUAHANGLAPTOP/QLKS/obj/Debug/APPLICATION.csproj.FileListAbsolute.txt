@@ -1,0 +1,13 @@
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\bin\Debug\QLKS.exe.config
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\bin\Debug\QLKS.exe
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\bin\Debug\QLKS.pdb
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\ResolveAssemblyReference.cache
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe.licenses
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe
+E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.pdb
