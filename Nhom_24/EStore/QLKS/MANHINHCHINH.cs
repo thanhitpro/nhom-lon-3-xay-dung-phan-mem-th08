@@ -128,18 +128,23 @@ namespace QLKS
             TATCASP frmTatCaSP = new TATCASP();
             frmTatCaSP.MdiParent = this;
             frmTatCaSP.Parent = panelWelcome;
-            frmTatCaSP.Size = panelWelcome.Size;
             frmTatCaSP.Show();
        }
 
         /// <summary>
-        /// Hàm xử lý sự kiện panelWelcome resize
+        /// Hàm xử lý chọn xem tất cả
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void panelWelcome_Resize(object sender, EventArgs e)
+        private void btt_TatcaSP_Click(object sender, EventArgs e)
         {
-           
+            if (!panelWelcome.HasChildren)
+            {
+                TATCASP frmTatCaSP = new TATCASP();
+                frmTatCaSP.MdiParent = this;
+                frmTatCaSP.Parent = panelWelcome;
+                frmTatCaSP.Show();
+            }
         }
     }
 }

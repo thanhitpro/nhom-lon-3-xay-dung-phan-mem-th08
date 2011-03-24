@@ -91,7 +91,7 @@
             // panelEx_DetailSP
             // 
             this.panelEx_DetailSP.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx_DetailSP.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Windows7;
+            this.panelEx_DetailSP.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.panelEx_DetailSP.Controls.Add(this.value_TGBH);
             this.panelEx_DetailSP.Controls.Add(this.value_GiaHienHanh);
             this.panelEx_DetailSP.Controls.Add(this.value_MauSac);

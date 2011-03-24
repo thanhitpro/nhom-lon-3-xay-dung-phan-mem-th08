@@ -38,19 +38,20 @@
             this.flp_TatCaSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp_TatCaSanPham.Location = new System.Drawing.Point(0, 0);
             this.flp_TatCaSanPham.Name = "flp_TatCaSanPham";
-            this.flp_TatCaSanPham.Size = new System.Drawing.Size(792, 466);
+            this.flp_TatCaSanPham.Size = new System.Drawing.Size(894, 535);
             this.flp_TatCaSanPham.TabIndex = 0;
             // 
             // TATCASP
             // 
-            this.ClientSize = new System.Drawing.Size(792, 466);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(894, 535);
             this.Controls.Add(this.flp_TatCaSanPham);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TATCASP";
             this.Text = "TẤT CẢ CÁC SẢN PHẨM TRONG ESTORE";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TATCASP_Load);
             this.ResumeLayout(false);
 
