@@ -1,0 +1,5 @@
+E:\Studying\Projects\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+E:\Studying\Projects\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+E:\Studying\Projects\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+E:\Studying\Projects\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+E:\Studying\Projects\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb

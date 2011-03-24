@@ -1,0 +1,8 @@
+E:\Studying\Projects\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+E:\Studying\Projects\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+E:\Studying\Projects\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+E:\Studying\Projects\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+E:\Studying\Projects\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+E:\Studying\Projects\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+E:\Studying\Projects\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+E:\Studying\Projects\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb

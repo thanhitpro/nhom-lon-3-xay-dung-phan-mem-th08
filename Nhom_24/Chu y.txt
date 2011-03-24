@@ -1,0 +1,3 @@
+﻿- Chạy file .sql để tạo database (file mình để bên ngoài có cả tạo và insert dữ liệu)
+- DB tạo ra có tên là ESTORE
+- Vào app.config chỉnh lại connectionstring để chạy chương trinh
