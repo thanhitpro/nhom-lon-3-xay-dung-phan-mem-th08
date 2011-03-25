@@ -1,0 +1,36 @@
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+E:\Film\MyStore\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+E:\Film\MyStore\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.dll
+E:\Film\MyStore\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
