@@ -16,6 +16,10 @@ namespace QLKS
 {
     public class InterfaceKhachHang
     {
+        /// <summary>
+        /// Hàm khởi tạo khách hàng mới
+        /// </summary>
+        /// <returns></returns>
         public List<String> khoiTaoThemKhachHang()
         {
             List<string> comboboxTemp = new List<string>();
@@ -24,6 +28,11 @@ namespace QLKS
             return comboboxTemp;
         }
 
+        /// <summary>
+        /// Hàm lấy DataGridView khách hàng
+        /// </summary>
+        /// <param name="_dataGirdViewX"></param>
+        /// <returns></returns>
         public DevComponents.DotNetBar.Controls.DataGridViewX layDataGridViewKhachHang(DevComponents.DotNetBar.Controls.DataGridViewX _dataGirdViewX)
         {
             return _dataGirdViewX;
