@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+E:\Film\MyStore\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+E:\Film\MyStore\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
+E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
