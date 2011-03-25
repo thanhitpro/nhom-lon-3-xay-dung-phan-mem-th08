@@ -1,0 +1,40 @@
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.pdb
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
+C:\Users\admin\Desktop\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.dll
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.pdb
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.dll
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.dll
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.pdb
+E:\Film\MyStore\My Laptop Store\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+E:\Film\MyStore\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
+E:\Film\MyStore\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.dll
+E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb

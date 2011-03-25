@@ -1,0 +1,88 @@
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.TATCASP.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\QLKS.exe
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\QLKS.pdb
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreBUS.dll
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreDTO.dll
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreDAO.dll
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreBUS.pdb
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreDTO.pdb
+C:\Users\admin\Desktop\My Laptop Store\QLKS\bin\Debug\EStoreDAO.pdb
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+C:\Users\admin\Desktop\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\QLKS.exe
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\QLKS.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreBUS.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreDTO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreDAO.dll
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreDTO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreBUS.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\EStoreDAO.pdb
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.TATCASP.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+C:\Users\QUOC NHAT\Desktop\My Laptop Store_new\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+C:\Users\QUOC NHAT\Desktop\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+C:\Users\QUOC NHAT\Desktop\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\QLKS.exe
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\QLKS.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreBUS.dll
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreDTO.dll
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreDAO.dll
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreDTO.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreBUS.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\EStoreDAO.pdb
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\ResolveAssemblyReference.cache
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.TATCASP.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+E:\Film\MyStore\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\nunit.framework.dll
+E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\QLKS.exe
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\QLKS.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreBUS.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreDTO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\nunit.framework.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreDAO.dll
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreDTO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\nunit.framework.xml
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreBUS.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\bin\Debug\EStoreDAO.pdb
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\ResolveAssemblyReference.cache
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.TATCASP.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses
