@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="EStoreDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=ALIN-PC\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString3" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MRKEN-PC\SQL2005EXPRESS;Initial Catalog=ESTORE;User ID=sa" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString4" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs">
     <Type Name="CHITIETDONGLAPTOP">
       <Column Name="MaDongLapTop" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -30,7 +30,7 @@
       <Column Name="ThoiGianBaoHanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
       <Column Name="MauSac" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" OtherKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
@@ -49,7 +49,7 @@
     <Type Name="NHASANXUAT">
       <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TenNhaSanXuat" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
-      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGLAPTOP" />
+      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" ThisKey="MaNhaSanXuat" OtherKey="MaNhaSanXuat" Type="CHITIETDONGLAPTOP" />
     </Type>
   </Table>
 </Database>

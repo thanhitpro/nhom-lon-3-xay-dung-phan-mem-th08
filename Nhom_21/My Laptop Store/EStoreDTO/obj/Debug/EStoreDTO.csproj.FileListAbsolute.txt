@@ -15,3 +15,10 @@ E:\Film\MyStore\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
 E:\Film\MyStore\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
 E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
 E:\Film\MyStore\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb

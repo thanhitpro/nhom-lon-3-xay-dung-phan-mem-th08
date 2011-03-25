@@ -27,3 +27,14 @@ E:\Film\MyStore\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
 E:\Film\MyStore\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb
 E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.dll
 E:\Film\MyStore\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreBUS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\bin\Debug\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreBUS\obj\Debug\EStoreBUS.pdb
