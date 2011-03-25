@@ -64,3 +64,13 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb

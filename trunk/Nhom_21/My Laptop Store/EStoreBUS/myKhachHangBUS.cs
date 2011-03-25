@@ -29,5 +29,10 @@ namespace EStoreBUS
         {
             return m_khachHangDAO.ThemKhachHang(_thongTinKhachHang);
         }
+
+        public bool XoaKhachHangTheoCMND(string scmnd)
+        {
+            return m_khachHangDAO.XoaKhachHangTheoCMND(scmnd);
+        }
     }
 }
