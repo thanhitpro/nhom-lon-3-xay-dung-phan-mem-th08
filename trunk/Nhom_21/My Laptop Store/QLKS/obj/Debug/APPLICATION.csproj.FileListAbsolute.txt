@@ -66,3 +66,5 @@ E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\nunit.framework.dll
 E:\Film\MyStore\My Laptop Store\QLKS\bin\Debug\nunit.framework.xml
 C:\Users\ALIN\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.exe
 C:\Users\ALIN\Desktop\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
