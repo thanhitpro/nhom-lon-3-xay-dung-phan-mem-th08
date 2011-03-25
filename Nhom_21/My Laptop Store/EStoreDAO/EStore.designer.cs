@@ -30,12 +30,12 @@ namespace EStoreDAO
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertKHACHHANG(KHACHHANG instance);
-    partial void UpdateKHACHHANG(KHACHHANG instance);
-    partial void DeleteKHACHHANG(KHACHHANG instance);
     partial void InsertNHASANXUAT(NHASANXUAT instance);
     partial void UpdateNHASANXUAT(NHASANXUAT instance);
     partial void DeleteNHASANXUAT(NHASANXUAT instance);
+    partial void InsertKHACHHANG(KHACHHANG instance);
+    partial void UpdateKHACHHANG(KHACHHANG instance);
+    partial void DeleteKHACHHANG(KHACHHANG instance);
     partial void InsertCHITIETDONGLAPTOP(CHITIETDONGLAPTOP instance);
     partial void UpdateCHITIETDONGLAPTOP(CHITIETDONGLAPTOP instance);
     partial void DeleteCHITIETDONGLAPTOP(CHITIETDONGLAPTOP instance);
@@ -71,19 +71,19 @@ namespace EStoreDAO
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<KHACHHANG> KHACHHANGs
-		{
-			get
-			{
-				return this.GetTable<KHACHHANG>();
-			}
-		}
-		
 		public System.Data.Linq.Table<NHASANXUAT> NHASANXUATs
 		{
 			get
 			{
 				return this.GetTable<NHASANXUAT>();
+			}
+		}
+		
+		public System.Data.Linq.Table<KHACHHANG> KHACHHANGs
+		{
+			get
+			{
+				return this.GetTable<KHACHHANG>();
 			}
 		}
 		
@@ -93,6 +93,120 @@ namespace EStoreDAO
 			{
 				return this.GetTable<CHITIETDONGLAPTOP>();
 			}
+		}
+	}
+	
+	[Table(Name="dbo.NHASANXUAT")]
+	public partial class NHASANXUAT : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaNhaSanXuat;
+		
+		private string _TenNhaSanXuat;
+		
+		private EntitySet<CHITIETDONGLAPTOP> _CHITIETDONGLAPTOPs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaNhaSanXuatChanging(int value);
+    partial void OnMaNhaSanXuatChanged();
+    partial void OnTenNhaSanXuatChanging(string value);
+    partial void OnTenNhaSanXuatChanged();
+    #endregion
+		
+		public NHASANXUAT()
+		{
+			this._CHITIETDONGLAPTOPs = new EntitySet<CHITIETDONGLAPTOP>(new Action<CHITIETDONGLAPTOP>(this.attach_CHITIETDONGLAPTOPs), new Action<CHITIETDONGLAPTOP>(this.detach_CHITIETDONGLAPTOPs));
+			OnCreated();
+		}
+		
+		[Column(Storage="_MaNhaSanXuat", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaNhaSanXuat
+		{
+			get
+			{
+				return this._MaNhaSanXuat;
+			}
+			set
+			{
+				if ((this._MaNhaSanXuat != value))
+				{
+					this.OnMaNhaSanXuatChanging(value);
+					this.SendPropertyChanging();
+					this._MaNhaSanXuat = value;
+					this.SendPropertyChanged("MaNhaSanXuat");
+					this.OnMaNhaSanXuatChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_TenNhaSanXuat", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
+		public string TenNhaSanXuat
+		{
+			get
+			{
+				return this._TenNhaSanXuat;
+			}
+			set
+			{
+				if ((this._TenNhaSanXuat != value))
+				{
+					this.OnTenNhaSanXuatChanging(value);
+					this.SendPropertyChanging();
+					this._TenNhaSanXuat = value;
+					this.SendPropertyChanged("TenNhaSanXuat");
+					this.OnTenNhaSanXuatChanged();
+				}
+			}
+		}
+		
+		[Association(Name="NHASANXUAT_CHITIETDONGLAPTOP", Storage="_CHITIETDONGLAPTOPs", ThisKey="MaNhaSanXuat", OtherKey="MaNhaSanXuat")]
+		public EntitySet<CHITIETDONGLAPTOP> CHITIETDONGLAPTOPs
+		{
+			get
+			{
+				return this._CHITIETDONGLAPTOPs;
+			}
+			set
+			{
+				this._CHITIETDONGLAPTOPs.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_CHITIETDONGLAPTOPs(CHITIETDONGLAPTOP entity)
+		{
+			this.SendPropertyChanging();
+			entity.NHASANXUAT = this;
+		}
+		
+		private void detach_CHITIETDONGLAPTOPs(CHITIETDONGLAPTOP entity)
+		{
+			this.SendPropertyChanging();
+			entity.NHASANXUAT = null;
 		}
 	}
 	
@@ -323,120 +437,6 @@ namespace EStoreDAO
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-	}
-	
-	[Table(Name="dbo.NHASANXUAT")]
-	public partial class NHASANXUAT : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaNhaSanXuat;
-		
-		private string _TenNhaSanXuat;
-		
-		private EntitySet<CHITIETDONGLAPTOP> _CHITIETDONGLAPTOPs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaNhaSanXuatChanging(int value);
-    partial void OnMaNhaSanXuatChanged();
-    partial void OnTenNhaSanXuatChanging(string value);
-    partial void OnTenNhaSanXuatChanged();
-    #endregion
-		
-		public NHASANXUAT()
-		{
-			this._CHITIETDONGLAPTOPs = new EntitySet<CHITIETDONGLAPTOP>(new Action<CHITIETDONGLAPTOP>(this.attach_CHITIETDONGLAPTOPs), new Action<CHITIETDONGLAPTOP>(this.detach_CHITIETDONGLAPTOPs));
-			OnCreated();
-		}
-		
-		[Column(Storage="_MaNhaSanXuat", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaNhaSanXuat
-		{
-			get
-			{
-				return this._MaNhaSanXuat;
-			}
-			set
-			{
-				if ((this._MaNhaSanXuat != value))
-				{
-					this.OnMaNhaSanXuatChanging(value);
-					this.SendPropertyChanging();
-					this._MaNhaSanXuat = value;
-					this.SendPropertyChanged("MaNhaSanXuat");
-					this.OnMaNhaSanXuatChanged();
-				}
-			}
-		}
-		
-		[Column(Storage="_TenNhaSanXuat", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
-		public string TenNhaSanXuat
-		{
-			get
-			{
-				return this._TenNhaSanXuat;
-			}
-			set
-			{
-				if ((this._TenNhaSanXuat != value))
-				{
-					this.OnTenNhaSanXuatChanging(value);
-					this.SendPropertyChanging();
-					this._TenNhaSanXuat = value;
-					this.SendPropertyChanged("TenNhaSanXuat");
-					this.OnTenNhaSanXuatChanged();
-				}
-			}
-		}
-		
-		[Association(Name="NHASANXUAT_CHITIETDONGLAPTOP", Storage="_CHITIETDONGLAPTOPs", OtherKey="MaNhaSanXuat")]
-		public EntitySet<CHITIETDONGLAPTOP> CHITIETDONGLAPTOPs
-		{
-			get
-			{
-				return this._CHITIETDONGLAPTOPs;
-			}
-			set
-			{
-				this._CHITIETDONGLAPTOPs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_CHITIETDONGLAPTOPs(CHITIETDONGLAPTOP entity)
-		{
-			this.SendPropertyChanging();
-			entity.NHASANXUAT = this;
-		}
-		
-		private void detach_CHITIETDONGLAPTOPs(CHITIETDONGLAPTOP entity)
-		{
-			this.SendPropertyChanging();
-			entity.NHASANXUAT = null;
 		}
 	}
 	
@@ -1112,7 +1112,7 @@ namespace EStoreDAO
 			}
 		}
 		
-		[Association(Name="NHASANXUAT_CHITIETDONGLAPTOP", Storage="_NHASANXUAT", ThisKey="MaNhaSanXuat", IsForeignKey=true)]
+		[Association(Name="NHASANXUAT_CHITIETDONGLAPTOP", Storage="_NHASANXUAT", ThisKey="MaNhaSanXuat", OtherKey="MaNhaSanXuat", IsForeignKey=true)]
 		public NHASANXUAT NHASANXUAT
 		{
 			get

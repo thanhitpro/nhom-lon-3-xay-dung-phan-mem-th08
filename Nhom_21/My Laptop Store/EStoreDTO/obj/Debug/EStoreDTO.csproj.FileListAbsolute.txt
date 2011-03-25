@@ -22,3 +22,24 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDTO\bin\Debu
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\Tue\My Laptop Store Tuan_Tue\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+C:\Users\NNTUONG\Desktop\My Laptop Store Tuan_Tue_Vien\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\EStoreDTO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\bin\Debug\nunit.framework.xml
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDTO\obj\Debug\EStoreDTO.pdb

@@ -74,5 +74,15 @@ namespace EStoreDAO.Properties {
                 return ((string)(this["ESTOREConnectionString4"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MRKEN-PC\\SQL2005EXPRESS;Initial Catalog=ESTORE;User ID=sa")]
+        public string ESTOREConnectionString5 {
+            get {
+                return ((string)(this["ESTOREConnectionString5"]));
+            }
+        }
     }
 }
