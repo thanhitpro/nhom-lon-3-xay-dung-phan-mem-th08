@@ -305,7 +305,7 @@ namespace QLKS
         [Test]
         public void KiemTraVaThemKhachHangTest1()
         {
-            myKhachHang thongTinKhachHang = new myKhachHang
+            myKhachHang khachHangMoi = new myKhachHang
             {
                 STenKhachHang = "Trần Công Viên",
                 SNgaySinh = "08/03/1990",
@@ -316,12 +316,15 @@ namespace QLKS
                 SSoDienThoai = "01693050051"
             };
 
-            THEMKHACHHANG frmThemKH = new THEMKHACHHANG();
-            ifKhachHang.KiemTraVaThemKhachHang(thongTinKhachHang, frmThemKH);
+            khachhang_BUS.ThemKhachHang(khachHangMoi);
+
+            //THEMKHACHHANG frmThemKH = new THEMKHACHHANG();
+            //ifKhachHang.KiemTraVaThemKhachHang(khachHangMoi, frmThemKH);
 
             List<myKhachHang> danhSachKhachHang = new List<myKhachHang>();
             danhSachKhachHang = khachhang_BUS.LayDanhSachKhachHang();
-            Assert.AreEqual(thongTinKhachHang.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "lỗi khi so sánh cmnd");
+            Assert.AreEqual(khachHangMoi.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "lỗi khi so sánh cmnd");
+            khachhang_BUS.XoaKhachHangTheoCMND(danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND);
         }
 
         /// <summary>
@@ -330,23 +333,25 @@ namespace QLKS
         [Test]
         public void KiemTraVaThemKhachHangTest2()
         {
-            myKhachHang thongTinKhachHang = new myKhachHang
+            myKhachHang khachHangMoi = new myKhachHang
             {
                 STenKhachHang = "Trần Công Viên",
                 SNgaySinh = "08/03/1990",
                 SGioiTinh = "Nam",
-                SCMND = "197113456",
+                SCMND = "197113457",
                 SDiaChi = "Quang Tri",
                 SEmail = "mrken23@gmail.com",
-                //Thieu so dien thoai
+                SSoDienThoai = ""
             };
 
+            //khachhang_BUS.ThemKhachHang(khachHangMoi);
+
             THEMKHACHHANG frmThemKH = new THEMKHACHHANG();
-            ifKhachHang.KiemTraVaThemKhachHang(thongTinKhachHang, frmThemKH);
+            ifKhachHang.KiemTraVaThemKhachHang(khachHangMoi, frmThemKH);
 
             List<myKhachHang> danhSachKhachHang = new List<myKhachHang>();
             danhSachKhachHang = khachhang_BUS.LayDanhSachKhachHang();
-            Assert.AreNotEqual(thongTinKhachHang.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "Lỗi khi so sánh cmnd");
+            Assert.AreNotEqual(khachHangMoi.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "lỗi khi so sánh cmnd");
         }
 
     }
