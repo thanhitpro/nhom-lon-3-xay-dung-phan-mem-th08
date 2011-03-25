@@ -213,7 +213,7 @@ namespace QLKS
         }
 
         /// <summary>
-        /// Nguyễn Ngọc Tường - Test hàm 5_Khôi phục trạng thái - true
+        /// Nguyễn Ngọc Tường - Test hàm 5.1_Khôi phục trạng thái - true
         /// </summary>
         [Test]
         public void TestKhoiPhucTrangThai1()
@@ -242,7 +242,7 @@ namespace QLKS
         }
 
         /// <summary>
-        /// Nguyễn Ngọc Tường - Test hàm 5_Khôi phục trạng thái - false
+        /// Nguyễn Ngọc Tường - Test hàm 5.2_Khôi phục trạng thái - false
         /// </summary>
         /// 
         [Test]
@@ -274,7 +274,6 @@ namespace QLKS
         /// <summary>
         /// Nguyễn Ngọc Tường - Test hàm 6_Reset
         /// </summary>
-        /// 6. Tường
         [Test]
         public void TestReset()
         {
