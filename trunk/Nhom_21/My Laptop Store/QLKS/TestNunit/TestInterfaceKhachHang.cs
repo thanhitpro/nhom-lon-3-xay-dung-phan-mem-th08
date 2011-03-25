@@ -211,5 +211,143 @@ namespace QLKS
 
             Assert.AreEqual(false, bKetQua, "Kiem tra du lieu trong cua khach hang khong dung !");
         }
+
+        /// <summary>
+        /// Tran Cong Vien - Test ham 7 - Testcase1
+        /// </summary>
+        [Test]
+        public void KiemTraVaThemKhachHangTest1()
+        {
+            myKhachHang thongTinKhachHang = new myKhachHang
+            {
+                STenKhachHang = "Trần Công Viên",
+                SNgaySinh = "08/03/1990",
+                SGioiTinh = "Nam",
+                SCMND = "197113456",
+                SDiaChi = "Quang Tri",
+                SEmail = "mrken23@gmail.com",
+                SSoDienThoai = "01693050051"
+            };
+
+            THEMKHACHHANG frmThemKH = new THEMKHACHHANG();
+            ifKhachHang.KiemTraVaThemKhachHang(thongTinKhachHang, frmThemKH);
+
+            List<myKhachHang> danhSachKhachHang = new List<myKhachHang>();
+            danhSachKhachHang = khachhang_BUS.LayDanhSachKhachHang();
+            Assert.AreEqual(thongTinKhachHang.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "lỗi khi so sánh cmnd");
+        }
+
+        /// <summary>
+        /// Tran Cong Vien - Test ham 7 - Testcase2
+        /// </summary>
+        [Test]
+        public void KiemTraVaThemKhachHangTest2()
+        {
+            myKhachHang thongTinKhachHang = new myKhachHang
+            {
+                STenKhachHang = "Trần Công Viên",
+                SNgaySinh = "08/03/1990",
+                SGioiTinh = "Nam",
+                SCMND = "197113456",
+                SDiaChi = "Quang Tri",
+                SEmail = "mrken23@gmail.com",
+                //Thieu so dien thoai
+            };
+
+            THEMKHACHHANG frmThemKH = new THEMKHACHHANG();
+            ifKhachHang.KiemTraVaThemKhachHang(thongTinKhachHang, frmThemKH);
+
+            List<myKhachHang> danhSachKhachHang = new List<myKhachHang>();
+            danhSachKhachHang = khachhang_BUS.LayDanhSachKhachHang();
+            Assert.AreNotEqual(thongTinKhachHang.SCMND, danhSachKhachHang[danhSachKhachHang.Count - 1].SCMND, "Lỗi khi so sánh cmnd");
+        }
+
+        /// <summary>
+        /// Nguyễn Ngọc Tường - Test hàm 5_Khôi phục trạng thái - true
+        /// </summary>
+        [Test]
+        public void TestKhoiPhucTrangThai1()
+        {
+            THEMKHACHHANG _themKH = new THEMKHACHHANG();
+
+            myKhachHang khachHang = new myKhachHang
+            {
+                STenKhachHang = "",//Không có dữ liệu
+                SNgaySinh = "",//Không có dữ liệu
+                SGioiTinh = "Nam",
+                SCMND = "272065189",
+                SDiaChi = "Biên Hòa",//Không có dữ liệu
+                SEmail = "",
+                SSoDienThoai = ""//Không có dữ liệu
+            };
+            _themKH.KiemTraDuLieuTrong(khachHang);// Gọi hàm này mới test được hàm KhoiPhucTrangThai
+                                                // Ở đây, không kiểm tra hàm này, xem như hoạt động đúng.
+
+            _themKH.KhoiPhucTrangThai(khachHang);
+
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxHoTen"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Họ tên");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["dateTimeInputNgaySinh"].ForeColor, SystemColors.ControlText, "Lỗi khi so sánh màu textbox Ngày sinh");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxDiaChi"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Địa chỉ");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxSdt"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Điện thoại");
+        }
+
+        /// <summary>
+        /// Nguyễn Ngọc Tường - Test hàm 5_Khôi phục trạng thái - false
+        /// </summary>
+        /// 
+        [Test]
+        public void TestKhoiPhucTrangThai2()
+        {
+            THEMKHACHHANG _themKH = new THEMKHACHHANG();
+
+            myKhachHang khachHang = new myKhachHang
+            {
+                STenKhachHang = "Nguyễn Ngọc Tường",//có dữ liệu
+                SNgaySinh = "03/0690",//có dữ liệu
+                SGioiTinh = "Nam",
+                SCMND = "321372883",
+                SDiaChi = "Bến Tre",//có dữ liệu
+                SEmail = "0812600@gmail.com",
+                SSoDienThoai = "0988686972"//có dữ liệu
+            };
+            _themKH.KiemTraDuLieuTrong(khachHang);// Gọi hàm này mới test được hàm KhoiPhucTrangThai
+                                                // Ở đây, không kiểm tra hàm này, xem như hoạt động đúng.
+
+            _themKH.KhoiPhucTrangThai(khachHang);
+
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxHoTen"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Họ tên");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["dateTimeInputNgaySinh"].ForeColor, SystemColors.ControlText, "Lỗi khi so sánh màu textbox Ngày sinh");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxDiaChi"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Địa chỉ");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxSdt"].BackColor, SystemColors.Window, "Lỗi khi so sánh màu textbox Điện thoại");
+        }
+
+        /// <summary>
+        /// Nguyễn Ngọc Tường - Test hàm 6_Reset
+        /// </summary>
+        /// 6. Tường
+        [Test]
+        public void TestReset()
+        {
+            THEMKHACHHANG _themKH = new THEMKHACHHANG();
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxHoTen"].Text = "Nguyễn Thị A";
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["dateTimeInputNgaySinh"].Text = "02/01/1990";
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["comboBoxGioiTinh"].Text = "Nữ";
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxCMND"].Text = "9554788";
+
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxDiaChi"].Text = "Cà Mau";
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxEmail"].Text = "acamau@gmail.com";
+            _themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxSdt"].Text = "74837584";
+
+            _themKH.Reset();
+
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxHoTen"].Text, "", "Chưa reset họ tên");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["dateTimeInputNgaySinh"].Text, "", "Chưa reset ngày sinh");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["comboBoxGioiTinh"].Text, "Nam", "Chưa reset giới tính");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinKH"].Controls["textBoxCMND"].Text, "", "Chưa reset CMND");
+
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxDiaChi"].Text, "", "Chưa reset địa chỉ");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxEmail"].Text, "", "Chưa reset Email");
+            Assert.AreEqual(_themKH.Controls["groupPanel2"].Controls["panelThongTinLienLac"].Controls["textBoxSdt"].Text, "", "Chưa reset số điệnt thoại");
+        }
     }
 }
