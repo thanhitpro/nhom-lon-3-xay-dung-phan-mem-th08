@@ -72,13 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DANHMUCSANPHAM.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="DANHMUCSANPHAM.Designer.cs">
       <DependentUpon>DANHMUCSANPHAM.cs</DependentUpon>
     </Compile>
     <Compile Include="THEMKHACHHANG.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="THEMKHACHHANG.Designer.cs">
       <DependentUpon>THEMKHACHHANG.cs</DependentUpon>
@@ -122,13 +120,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="MANHINHCHINH.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MANHINHCHINH.Designer.cs">
       <DependentUpon>MANHINHCHINH.cs</DependentUpon>
     </Compile>
     <Compile Include="THONGTINNHOM.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="THONGTINNHOM.Designer.cs">
       <DependentUpon>THONGTINNHOM.cs</DependentUpon>

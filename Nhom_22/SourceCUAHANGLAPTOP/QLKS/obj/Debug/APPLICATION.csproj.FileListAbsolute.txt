@@ -11,3 +11,14 @@ E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\APPLICATION.csproj.Ge
 E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe.licenses
 E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe
 E:\study\Nam 3 Hk2\XDPM\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\bin\Debug\QLKS.exe.config
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_22\SourceCUAHANGLAPTOP\QLKS\obj\Debug\QLKS.exe.licenses
