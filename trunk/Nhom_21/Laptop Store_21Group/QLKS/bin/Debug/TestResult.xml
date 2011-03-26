@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\bin\Debug\QLKS.exe" total="10" errors="2" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-03-25" time="19:23:45">
+  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.9\bin\net-2.0" machine-name="NNTUONG-PC" user="NNTUONG" user-domain="NNTUONG-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\bin\Debug\QLKS.exe" executed="True" result="Failure" success="False" time="4.869" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="QLKS" executed="True" result="Failure" success="False" time="4.861" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestInterfaceKhachHang" executed="True" result="Failure" success="False" time="4.859" asserts="0">
+            <results>
+              <test-case name="QLKS.TestInterfaceKhachHang.DuaDuLieuVaoDataGridViewTest" executed="True" result="Success" success="True" time="1.346" asserts="1" />
+              <test-case name="QLKS.TestInterfaceKhachHang.khoiTaoThemKhachHangTest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="QLKS.TestInterfaceKhachHang.KiemTraDuLieuTrongTest1" executed="True" result="Success" success="True" time="0.327" asserts="1" />
+              <test-case name="QLKS.TestInterfaceKhachHang.KiemTraDuLieuTrongTest2" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+              <test-case name="QLKS.TestInterfaceKhachHang.KiemTraVaThemKhachHangTest1" executed="True" result="Error" success="False" time="2.492" asserts="0">
+                <failure>
+                  <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                  <stack-trace><![CDATA[at QLKS.InterfaceKhachHang.DuaDuLieuVaoDataGridView(DataGridViewX dataGridView, List`1 _danhSachKhachHang) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\InterfaceKhachHang.cs:line 40
+at QLKS.THEMKHACHHANG.DuaDuLieuVaoDataGridView(List`1 _danhSachKhachHang) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\THEMKHACHHANG.cs:line 48
+at QLKS.InterfaceKhachHang.KiemTraVaThemKhachHang(myKhachHang thongTinKhachHang, THEMKHACHHANG frmThemKH) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\InterfaceKhachHang.cs:line 94
+at QLKS.TestInterfaceKhachHang.KiemTraVaThemKhachHangTest1() in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\TestNunit\TestInterfaceKhachHang.cs:line 320
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="QLKS.TestInterfaceKhachHang.KiemTraVaThemKhachHangTest2" executed="True" result="Error" success="False" time="0.064" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Data.SqlClient.SqlException : Cannot insert the value NULL into column 'SoDienThoai', table 'ESTORE.dbo.KHACHHANG'; column does not allow nulls. INSERT fails.
+The statement has been terminated.]]></message>
+                  <stack-trace><![CDATA[at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+at System.Data.SqlClient.SqlDataReader.get_MetaData()
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+at System.Data.Common.DbCommand.ExecuteReader()
+at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+at System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+at System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+at System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+at System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+at System.Data.Linq.DataContext.SubmitChanges()
+at EStoreDAO.myKhachHangDAO.ThemKhachHang(myKhachHang _thongTinKhachHang) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreDAO\myKhachHangDAO.cs:line 78
+at EStoreBUS.myKhachHangBUS.ThemKhachHang(myKhachHang _thongTinKhachHang) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\EStoreBUS\myKhachHangBUS.cs:line 30
+at QLKS.InterfaceKhachHang.KiemTraVaThemKhachHang(myKhachHang thongTinKhachHang, THEMKHACHHANG frmThemKH) in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\InterfaceKhachHang.cs:line 90
+at QLKS.TestInterfaceKhachHang.KiemTraVaThemKhachHangTest2() in F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\My Laptop Store\QLKS\TestNunit\TestInterfaceKhachHang.cs:line 345
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="QLKS.TestInterfaceKhachHang.layDataGridViewKhachHangTest" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+              <test-case name="QLKS.TestInterfaceKhachHang.TestKhoiPhucTrangThai1" executed="True" result="Success" success="True" time="0.017" asserts="4" />
+              <test-case name="QLKS.TestInterfaceKhachHang.TestKhoiPhucTrangThai2" executed="True" result="Success" success="True" time="0.018" asserts="4" />
+              <test-case name="QLKS.TestInterfaceKhachHang.TestReset" executed="True" result="Success" success="True" time="0.028" asserts="7" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
