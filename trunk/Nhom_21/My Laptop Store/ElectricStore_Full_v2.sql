@@ -1,4 +1,5 @@
-﻿create database ESTORE
+﻿--drop database ESTORE
+create database ESTORE
 go
 use ESTORE
 
@@ -274,7 +275,7 @@ constraint PK_CHITIETDONGLAPTOP  primary key(MaDongLapTop),
 	
 	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGRAM	foreign key (MaDongRAM)  references CHITIETDONGRAM (MaDongRAM),
 	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGCPU	foreign key (MaDongCPU)  references CHITIETDONGCPU(MaDongCPU),
-	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGManHinh	foreign key (MaDongManHinh)  references CHITIETDONGManHinh(MaDongManHinh),
+	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGManHinh	foreign key (MaDongManHinh)  references CHITIETDONGMANHINH(MaDongManHinh),
 	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGOCung	foreign key (MaDongOCung)  references CHITIETDONGOCung(MaDongOCung),
 	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGCardDoHoa	foreign key (MaDongCardDoHoa)  references CHITIETDONGCardDoHoa(MaDongCardDoHoa),
 	constraint FK_CHITIETDONGLAPTOP_CHITIETDONGLoa	foreign key (MaDongLoa)  references CHITIETDONGLoa( MaDongLoa),
@@ -700,11 +701,11 @@ insert into CHITIETDONGCPU(MaChiTietCongNgheCPU,TenDongCPU	,MaBangDiem_KhoangTan
 
 
 --Thêm CHITIETKICHTHUOCMANHINH
-insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'<=10',1   )
-insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'10->13.3', 1.5  )
-insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'13.3->15', 2  )
-insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'>15',  2.5 )
-insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'LED', 0  )
+insert into CHITIETKICHTHUOCMANHINH(TenChiTietKichThuocManHinh,HeSo) values (N'<=10',1   )
+insert into CHITIETKICHTHUOCMANHINH(TenChiTietKichThuocManHinh,HeSo) values (N'10->13.3', 1.5  )
+insert into CHITIETKICHTHUOCMANHINH(TenChiTietKichThuocManHinh,HeSo) values (N'13.3->15', 2  )
+insert into CHITIETKICHTHUOCMANHINH(TenChiTietKichThuocManHinh,HeSo) values (N'>15',  2.5 )
+insert into CHITIETKICHTHUOCMANHINH(TenChiTietKichThuocManHinh,HeSo) values (N'LED', 0  )
 /*insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'',   )
 insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'',   )
 insert into CHITIETKICHTHUOCMANHINH(TenCHITIETKICHTHUOCMANHINH,HeSo) values (N'',   )
