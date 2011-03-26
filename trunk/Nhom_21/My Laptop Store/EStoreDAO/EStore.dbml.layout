@@ -2,29 +2,29 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EStore">
   <DataContextMoniker Name="/EStoreDataContext" />
   <nestedChildShapes>
-    <classShape Id="22d1c646-b071-4b10-9991-6480129035c0" absoluteBounds="0.75, 3.5, 2, 1.193992513020834">
+    <classShape Id="9fce1b58-d445-41a3-907a-65404502d129" absoluteBounds="0.75, 3.5, 2, 1.193992513020834">
       <DataClassMoniker Name="/EStoreDataContext/NHASANXUAT" />
       <nestedChildShapes>
-        <elementListCompartment Id="dcf70d5a-923d-44d4-8112-1d2e33cef15f" absoluteBounds="0.765, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f8c025d6-ac6e-4c94-91ca-49bbeb7e6905" absoluteBounds="0.765, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6e1f2d1c-84a3-4121-baf4-cac68316279a" absoluteBounds="6.75, 0.75, 2, 2.3478011067708335">
+    <classShape Id="33932b50-0a69-41f2-b28e-5fc471ad4d52" absoluteBounds="6.75, 0.75, 2, 2.3478011067708335">
       <DataClassMoniker Name="/EStoreDataContext/KHACHHANG" />
       <nestedChildShapes>
-        <elementListCompartment Id="0ba822ed-b00d-4d12-a2a7-a16ccb8ff44b" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2ea464c6-6f82-4ac6-9150-91ab2771f6d4" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0f505b8f-d587-49cc-986e-bc6a4161c61e" absoluteBounds="3.5, 1.125, 2, 6.0015283203124987">
+    <classShape Id="b1ec88ba-f3f8-4e18-8201-30ae297f5a58" absoluteBounds="3.5, 1.125, 2, 6.0015283203124987">
       <DataClassMoniker Name="/EStoreDataContext/CHITIETDONGLAPTOP" />
       <nestedChildShapes>
-        <elementListCompartment Id="c2801b7b-91fa-44be-97fc-51820b31c6f9" absoluteBounds="3.515, 1.585, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e8a2df3b-d58f-4fe2-9248-60d768a00d6f" absoluteBounds="3.515, 1.585, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <associationConnector edgePoints="[(2.75 : 4.09699625651042); (3.5 : 4.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EStoreDataContext/NHASANXUAT/NHASANXUAT_CHITIETDONGLAPTOP" />
       <nodes>
-        <classShapeMoniker Id="22d1c646-b071-4b10-9991-6480129035c0" />
-        <classShapeMoniker Id="0f505b8f-d587-49cc-986e-bc6a4161c61e" />
+        <classShapeMoniker Id="9fce1b58-d445-41a3-907a-65404502d129" />
+        <classShapeMoniker Id="b1ec88ba-f3f8-4e18-8201-30ae297f5a58" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
