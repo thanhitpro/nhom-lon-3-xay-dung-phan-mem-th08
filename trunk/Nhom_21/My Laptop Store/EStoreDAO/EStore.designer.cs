@@ -42,7 +42,7 @@ namespace EStoreDAO
     #endregion
 		
 		public EStoreDataContext() : 
-				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString5, mappingSource)
+				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString4, mappingSource)
 		{
 			OnCreated();
 		}
