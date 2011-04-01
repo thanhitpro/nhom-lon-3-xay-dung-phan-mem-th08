@@ -198,3 +198,5 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\Laptop St
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\Laptop Store_21Group\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\Laptop Store_21Group\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Nhom_21\Laptop Store_21Group\QLKS\obj\Debug\QLKS.exe.licenses
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Nhom_21\Laptop Store_21Group\QLKS\obj\Debug\QLKS.exe
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Nhom_21\Laptop Store_21Group\QLKS\obj\Debug\QLKS.pdb
