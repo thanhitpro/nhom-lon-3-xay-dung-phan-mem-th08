@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37E6FD17-D704-448D-9376-57BC1F7F1E43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EStoreDAO</RootNamespace>
+    <AssemblyName>EStoreDAO</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="myBangDiemKhoangTangDAO.cs" />
+    <Compile Include="myChiTietBoNhoCardDoHoaDAO.cs" />
+    <Compile Include="myChiTietBoNhoRamDAO.cs" />
+    <Compile Include="myChiTietCacKhaNangODiaQuangDAO.cs" />
+    <Compile Include="myChiTietCongNgheCardReaderDAO.cs" />
+    <Compile Include="myChiTietCongNgheCPUDAO.cs" />
+    <Compile Include="myChiTietCongNgheRamDAO.cs" />
+    <Compile Include="myChiTietDongCardDoHoaDAO.cs" />
+    <Compile Include="myChiTietDongCardMangDAO.cs" />
+    <Compile Include="myChiTietDongCardReaderDAO.cs" />
+    <Compile Include="myChiTietDongCPUDAO.cs" />
+    <Compile Include="myChiTietDongLaptopDAO.cs" />
+    <Compile Include="myChiTietDongLoaDAO.cs" />
+    <Compile Include="myChiTietDongManHinhDAO.cs" />
+    <Compile Include="myChiTietDongOCungDAO.cs" />
+    <Compile Include="myChiTietDongODiaQuangDAO.cs" />
+    <Compile Include="myChiTietDongPinDAO.cs" />
+    <Compile Include="myChiTietDongRamDAO.cs" />
+    <Compile Include="myChiTietDongWebcamDAO.cs" />
+    <Compile Include="myChiTietDungLuongOCungDAO.cs" />
+    <Compile Include="myChiTietHeDieuHanhDAO.cs" />
+    <Compile Include="myChiTietKichThuocManHinhDAO.cs" />
+    <Compile Include="myChiTietLoaiDanhGiaDAO.cs" />
+    <Compile Include="myChiTietLoaiDoPhanGiaiWebcamDAO.cs" />
+    <Compile Include="myChiTietLoaiKetNoiCardMangDAO.cs" />
+    <Compile Include="myChiTietLoaiTrongLuongDAO.cs" />
+    <Compile Include="myChiTietThoiLuongPinDAO.cs" />
+    <Compile Include="myChiTietTrongLuongDAO.cs" />
+    <Compile Include="myChiTietVongQuayOCungDAO.cs" />
+    <Compile Include="myDanhGiaDAO.cs" />
+    <Compile Include="myDoTuoiDAO.cs" />
+    <Compile Include="myGiaoDichDAO.cs" />
+    <Compile Include="myHeDieuHanhDAO.cs" />
+    <Compile Include="myKhachHangDAO.cs" />
+    <Compile Include="myMucDichSuDungDAO.cs" />
+    <Compile Include="myNgheNghiepDAO.cs" />
+    <Compile Include="myNhaSanXuatDAO.cs" />
+    <Compile Include="myTinhThanhDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EStoreDTO\EStoreDTO.csproj">
+      <Project>{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}</Project>
+      <Name>EStoreDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

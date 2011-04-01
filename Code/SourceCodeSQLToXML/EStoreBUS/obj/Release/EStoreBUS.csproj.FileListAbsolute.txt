@@ -1,0 +1,36 @@
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreBUS\obj\Release\EStoreBUS.pdb

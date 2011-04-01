@@ -1,0 +1,20 @@
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\NgocThuy\Desktop\Code\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Documents and Settings\UDMAN\My Documents\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\tran van thanh\SourceCUAHANGLAPTOP1\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\SourceCUAHANGLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\ThanhNguyenDang-PC\Desktop\SourceCodeChung\EStoreDTO\obj\Release\EStoreDTO.pdb
