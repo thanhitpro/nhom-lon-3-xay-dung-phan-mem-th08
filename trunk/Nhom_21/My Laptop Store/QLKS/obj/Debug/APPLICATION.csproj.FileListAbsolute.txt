@@ -176,3 +176,15 @@ D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.exe
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.pdb
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\ResolveAssemblyReference.cache
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.DANHMUCSANPHAM.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.THONGTINNHOM.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.MANHINHCHINH.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.TATCASP.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.THEMKHACHHANG.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.Properties.Resources.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.UC_SANPHAM.resources
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\APPLICATION.csproj.GenerateResource.Cache
+E:\XDPM\Nhom_21\My Laptop Store\QLKS\obj\Debug\QLKS.exe.licenses

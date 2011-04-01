@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6CD65048-A09A-48CA-8816-100BA2E8BC82}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -46,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EStore.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EStore.dbml</DependentUpon>
-    </Compile>
     <Compile Include="myDongLaptopDAO.cs" />
     <Compile Include="myKhachHangDAO.cs" />
     <Compile Include="myNhaSXDAO.cs" />
@@ -64,11 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="EStore.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>EStore.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,11 +72,6 @@
       <Project>{DEA78CC8-6D00-49EB-BCF9-9E67FB40E4DE}</Project>
       <Name>EStoreDTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="EStore.dbml.layout">
-      <DependentUpon>EStore.dbml</DependentUpon>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

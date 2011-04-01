@@ -74,3 +74,12 @@ D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\Do An\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.dll
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDAO.pdb
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.dll
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\EStoreDTO.pdb
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\bin\Debug\nunit.framework.xml
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.dll
+E:\XDPM\Nhom_21\My Laptop Store\EStoreDAO\obj\Debug\EStoreDAO.pdb
