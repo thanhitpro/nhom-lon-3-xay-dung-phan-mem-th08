@@ -1,5 +1,0 @@
-D:\Xay Dung Phan Mem\Bai Tap\SourceCUAHANGLAPTOP\EStoreDTO\bin\Debug\EStoreDTO.dll
-D:\Xay Dung Phan Mem\Bai Tap\SourceCUAHANGLAPTOP\EStoreDTO\bin\Debug\EStoreDTO.pdb
-D:\Xay Dung Phan Mem\Bai Tap\SourceCUAHANGLAPTOP\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
-D:\Xay Dung Phan Mem\Bai Tap\SourceCUAHANGLAPTOP\EStoreDTO\obj\Debug\EStoreDTO.dll
-D:\Xay Dung Phan Mem\Bai Tap\SourceCUAHANGLAPTOP\EStoreDTO\obj\Debug\EStoreDTO.pdb
