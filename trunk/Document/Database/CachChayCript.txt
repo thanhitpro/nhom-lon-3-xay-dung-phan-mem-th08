@@ -1,3 +1,0 @@
-﻿Bước 1: Chạy cript ElectricStore_v7.2.sql
-Bước 2: Chạy cript ELectricStore_InsertDatas(KhongCoKhachHang_GiaoDich)_v7.2
-Bước 3: Chạy cript ELectricStore_InsertDatas_KhachHang_GiaoDich
