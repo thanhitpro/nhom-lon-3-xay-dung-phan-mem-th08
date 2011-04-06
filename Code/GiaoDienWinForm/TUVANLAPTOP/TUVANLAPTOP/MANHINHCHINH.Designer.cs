@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.MainMenu = new System.Windows.Forms.MenuStrip();
+            this.AboutUsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupPanelChinh = new System.Windows.Forms.GroupBox();
             this.GroupPanel_ThongTinDauVao = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMucGia = new System.Windows.Forms.ComboBox();
             this.label_MucGia = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label_HoTen = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMucDichSD = new System.Windows.Forms.ComboBox();
+            this.comboBoxDoTuoi = new System.Windows.Forms.ComboBox();
+            this.comboBoxTinhThanh = new System.Windows.Forms.ComboBox();
+            this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
+            this.comboBoxNgheNghiep = new System.Windows.Forms.ComboBox();
             this.label_MucDichSuDung = new System.Windows.Forms.Label();
             this.label_TinhThanh = new System.Windows.Forms.Label();
             this.label_DoTuoi = new System.Windows.Forms.Label();
@@ -49,9 +51,7 @@
             this.label_Title_NhapTrongTin = new System.Windows.Forms.Label();
             this.GroupPanel_ChucNang = new System.Windows.Forms.GroupBox();
             this.button_CapNhatCSDL = new System.Windows.Forms.Button();
-            this.button_TuVanLapTop = new System.Windows.Forms.Button();
-            this.AboutUsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button_TuVan = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.GroupPanelChinh.SuspendLayout();
             this.GroupPanel_ThongTinDauVao.SuspendLayout();
@@ -72,6 +72,26 @@
             this.MainMenu.TabIndex = 8;
             this.MainMenu.Text = "menuStrip1";
             // 
+            // AboutUsMenuItem
+            // 
+            this.AboutUsMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.AboutUsMenuItem.Image = global::TUVANLAPTOP.Properties.Resources.aboutus;
+            this.AboutUsMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AboutUsMenuItem.Name = "AboutUsMenuItem";
+            this.AboutUsMenuItem.Size = new System.Drawing.Size(122, 72);
+            this.AboutUsMenuItem.Text = "About Us";
+            this.AboutUsMenuItem.Click += new System.EventHandler(this.AboutUsMenuItem_Click);
+            // 
+            // HelpMenuItem
+            // 
+            this.HelpMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.HelpMenuItem.Image = global::TUVANLAPTOP.Properties.Resources.help;
+            this.HelpMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.HelpMenuItem.Name = "HelpMenuItem";
+            this.HelpMenuItem.Size = new System.Drawing.Size(107, 72);
+            this.HelpMenuItem.Text = "Help !!!";
+            this.HelpMenuItem.Click += new System.EventHandler(this.HelpMenuItem_Click);
+            // 
             // GroupPanelChinh
             // 
             this.GroupPanelChinh.Controls.Add(this.GroupPanel_ThongTinDauVao);
@@ -88,15 +108,15 @@
             // 
             // GroupPanel_ThongTinDauVao
             // 
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox6);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxMucGia);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.label_MucGia);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.textBox1);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.label_HoTen);
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox4);
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox5);
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox3);
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox2);
-            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBox1);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxMucDichSD);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxDoTuoi);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxTinhThanh);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxGioiTinh);
+            this.GroupPanel_ThongTinDauVao.Controls.Add(this.comboBoxNgheNghiep);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.label_MucDichSuDung);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.label_TinhThanh);
             this.GroupPanel_ThongTinDauVao.Controls.Add(this.label_DoTuoi);
@@ -111,18 +131,26 @@
             this.GroupPanel_ThongTinDauVao.TabStop = false;
             this.GroupPanel_ThongTinDauVao.Text = "Thông Tin Đầu Vào";
             // 
-            // comboBox6
+            // comboBoxMucGia
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(339, 276);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(317, 24);
-            this.comboBox6.TabIndex = 16;
+            this.comboBoxMucGia.FormattingEnabled = true;
+            this.comboBoxMucGia.Items.AddRange(new object[] {
+            "8.000.000 đ --> 10.000.000 đ",
+            "10.000.000 đ --> 12.000.000 đ",
+            "12.000.000 đ --> 14.000.000 đ",
+            "14.000.000 đ --> 16.000.000 đ",
+            "16.000.000 đ --> 22.000.000 đ",
+            "22.000.000 đ --> 26.000.000 đ",
+            "26.000.000 đ trở lên"});
+            this.comboBoxMucGia.Location = new System.Drawing.Point(339, 140);
+            this.comboBoxMucGia.Name = "comboBoxMucGia";
+            this.comboBoxMucGia.Size = new System.Drawing.Size(317, 24);
+            this.comboBoxMucGia.TabIndex = 16;
             // 
             // label_MucGia
             // 
             this.label_MucGia.AutoSize = true;
-            this.label_MucGia.Location = new System.Drawing.Point(172, 279);
+            this.label_MucGia.Location = new System.Drawing.Point(172, 143);
             this.label_MucGia.Name = "label_MucGia";
             this.label_MucGia.Size = new System.Drawing.Size(138, 17);
             this.label_MucGia.TabIndex = 15;
@@ -130,7 +158,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(339, 62);
+            this.textBox1.Location = new System.Drawing.Point(339, 99);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 23);
             this.textBox1.TabIndex = 14;
@@ -138,51 +166,54 @@
             // label_HoTen
             // 
             this.label_HoTen.AutoSize = true;
-            this.label_HoTen.Location = new System.Drawing.Point(172, 65);
+            this.label_HoTen.Location = new System.Drawing.Point(172, 102);
             this.label_HoTen.Name = "label_HoTen";
             this.label_HoTen.Size = new System.Drawing.Size(74, 17);
             this.label_HoTen.TabIndex = 13;
             this.label_HoTen.Text = "Họ và Tên";
             // 
-            // comboBox4
+            // comboBoxMucDichSD
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(339, 332);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(317, 24);
-            this.comboBox4.TabIndex = 8;
+            this.comboBoxMucDichSD.FormattingEnabled = true;
+            this.comboBoxMucDichSD.Location = new System.Drawing.Point(339, 332);
+            this.comboBoxMucDichSD.Name = "comboBoxMucDichSD";
+            this.comboBoxMucDichSD.Size = new System.Drawing.Size(317, 24);
+            this.comboBoxMucDichSD.TabIndex = 8;
             // 
-            // comboBox5
+            // comboBoxDoTuoi
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(551, 169);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(105, 24);
-            this.comboBox5.TabIndex = 10;
+            this.comboBoxDoTuoi.FormattingEnabled = true;
+            this.comboBoxDoTuoi.Location = new System.Drawing.Point(551, 236);
+            this.comboBoxDoTuoi.Name = "comboBoxDoTuoi";
+            this.comboBoxDoTuoi.Size = new System.Drawing.Size(105, 24);
+            this.comboBoxDoTuoi.TabIndex = 10;
             // 
-            // comboBox3
+            // comboBoxTinhThanh
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(339, 222);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(317, 24);
-            this.comboBox3.TabIndex = 9;
+            this.comboBoxTinhThanh.FormattingEnabled = true;
+            this.comboBoxTinhThanh.Location = new System.Drawing.Point(339, 289);
+            this.comboBoxTinhThanh.Name = "comboBoxTinhThanh";
+            this.comboBoxTinhThanh.Size = new System.Drawing.Size(317, 24);
+            this.comboBoxTinhThanh.TabIndex = 9;
             // 
-            // comboBox2
+            // comboBoxGioiTinh
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(339, 169);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 24);
-            this.comboBox2.TabIndex = 12;
+            this.comboBoxGioiTinh.FormattingEnabled = true;
+            this.comboBoxGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBoxGioiTinh.Location = new System.Drawing.Point(339, 236);
+            this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
+            this.comboBoxGioiTinh.Size = new System.Drawing.Size(100, 24);
+            this.comboBoxGioiTinh.TabIndex = 12;
             // 
-            // comboBox1
+            // comboBoxNgheNghiep
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(339, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(317, 24);
-            this.comboBox1.TabIndex = 11;
+            this.comboBoxNgheNghiep.FormattingEnabled = true;
+            this.comboBoxNgheNghiep.Location = new System.Drawing.Point(339, 185);
+            this.comboBoxNgheNghiep.Name = "comboBoxNgheNghiep";
+            this.comboBoxNgheNghiep.Size = new System.Drawing.Size(317, 24);
+            this.comboBoxNgheNghiep.TabIndex = 11;
             // 
             // label_MucDichSuDung
             // 
@@ -196,7 +227,7 @@
             // label_TinhThanh
             // 
             this.label_TinhThanh.AutoSize = true;
-            this.label_TinhThanh.Location = new System.Drawing.Point(172, 225);
+            this.label_TinhThanh.Location = new System.Drawing.Point(172, 292);
             this.label_TinhThanh.Name = "label_TinhThanh";
             this.label_TinhThanh.Size = new System.Drawing.Size(81, 17);
             this.label_TinhThanh.TabIndex = 4;
@@ -205,7 +236,7 @@
             // label_DoTuoi
             // 
             this.label_DoTuoi.AutoSize = true;
-            this.label_DoTuoi.Location = new System.Drawing.Point(474, 172);
+            this.label_DoTuoi.Location = new System.Drawing.Point(474, 239);
             this.label_DoTuoi.Name = "label_DoTuoi";
             this.label_DoTuoi.Size = new System.Drawing.Size(62, 17);
             this.label_DoTuoi.TabIndex = 3;
@@ -214,7 +245,7 @@
             // label_GioiTinh
             // 
             this.label_GioiTinh.AutoSize = true;
-            this.label_GioiTinh.Location = new System.Drawing.Point(172, 172);
+            this.label_GioiTinh.Location = new System.Drawing.Point(172, 239);
             this.label_GioiTinh.Name = "label_GioiTinh";
             this.label_GioiTinh.Size = new System.Drawing.Size(69, 17);
             this.label_GioiTinh.TabIndex = 7;
@@ -223,7 +254,7 @@
             // label_NgheNghiep
             // 
             this.label_NgheNghiep.AutoSize = true;
-            this.label_NgheNghiep.Location = new System.Drawing.Point(172, 121);
+            this.label_NgheNghiep.Location = new System.Drawing.Point(172, 188);
             this.label_NgheNghiep.Name = "label_NgheNghiep";
             this.label_NgheNghiep.Size = new System.Drawing.Size(95, 17);
             this.label_NgheNghiep.TabIndex = 6;
@@ -252,7 +283,7 @@
             // GroupPanel_ChucNang
             // 
             this.GroupPanel_ChucNang.Controls.Add(this.button_CapNhatCSDL);
-            this.GroupPanel_ChucNang.Controls.Add(this.button_TuVanLapTop);
+            this.GroupPanel_ChucNang.Controls.Add(this.button_TuVan);
             this.GroupPanel_ChucNang.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupPanel_ChucNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupPanel_ChucNang.Location = new System.Drawing.Point(3, 539);
@@ -271,37 +302,18 @@
             this.button_CapNhatCSDL.TabIndex = 0;
             this.button_CapNhatCSDL.Text = "Cập Nhật CSDL";
             this.button_CapNhatCSDL.UseVisualStyleBackColor = true;
+            this.button_CapNhatCSDL.Click += new System.EventHandler(this.button_CapNhatCSDL_Click);
             // 
-            // button_TuVanLapTop
+            // button_TuVan
             // 
-            this.button_TuVanLapTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_TuVanLapTop.Location = new System.Drawing.Point(209, 38);
-            this.button_TuVanLapTop.Name = "button_TuVanLapTop";
-            this.button_TuVanLapTop.Size = new System.Drawing.Size(169, 54);
-            this.button_TuVanLapTop.TabIndex = 0;
-            this.button_TuVanLapTop.Text = "Tư Vấn Laptop Phù Hợp";
-            this.button_TuVanLapTop.UseVisualStyleBackColor = true;
-            this.button_TuVanLapTop.Click += new System.EventHandler(this.button_TuVanLapTop_Click);
-            // 
-            // AboutUsMenuItem
-            // 
-            this.AboutUsMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.AboutUsMenuItem.Image = global::TUVANLAPTOP.Properties.Resources.aboutus;
-            this.AboutUsMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.AboutUsMenuItem.Name = "AboutUsMenuItem";
-            this.AboutUsMenuItem.Size = new System.Drawing.Size(122, 72);
-            this.AboutUsMenuItem.Text = "About Us";
-            this.AboutUsMenuItem.Click += new System.EventHandler(this.AboutUsMenuItem_Click);
-            // 
-            // HelpMenuItem
-            // 
-            this.HelpMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.HelpMenuItem.Image = global::TUVANLAPTOP.Properties.Resources.help;
-            this.HelpMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.HelpMenuItem.Name = "HelpMenuItem";
-            this.HelpMenuItem.Size = new System.Drawing.Size(107, 72);
-            this.HelpMenuItem.Text = "Help !!!";
-            this.HelpMenuItem.Click += new System.EventHandler(this.HelpMenuItem_Click);
+            this.button_TuVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_TuVan.Location = new System.Drawing.Point(209, 38);
+            this.button_TuVan.Name = "button_TuVan";
+            this.button_TuVan.Size = new System.Drawing.Size(169, 54);
+            this.button_TuVan.TabIndex = 0;
+            this.button_TuVan.Text = "Tư Vấn Laptop Phù Hợp";
+            this.button_TuVan.UseVisualStyleBackColor = true;
+            this.button_TuVan.Click += new System.EventHandler(this.button_TuVanLapTop_Click);
             // 
             // MANHINHCHINH
             // 
@@ -314,6 +326,7 @@
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MANHINHCHINH";
             this.Text = "Phần Mềm Tư Vấn LapTop";
+            this.Load += new System.EventHandler(this.MANHINHCHINH_Load);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
             this.GroupPanelChinh.ResumeLayout(false);
@@ -333,15 +346,15 @@
         private System.Windows.Forms.ToolStripMenuItem HelpMenuItem;
         private System.Windows.Forms.GroupBox GroupPanelChinh;
         private System.Windows.Forms.GroupBox GroupPanel_ThongTinDauVao;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBoxMucGia;
         private System.Windows.Forms.Label label_MucGia;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label_HoTen;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxMucDichSD;
+        private System.Windows.Forms.ComboBox comboBoxDoTuoi;
+        private System.Windows.Forms.ComboBox comboBoxTinhThanh;
+        private System.Windows.Forms.ComboBox comboBoxGioiTinh;
+        private System.Windows.Forms.ComboBox comboBoxNgheNghiep;
         private System.Windows.Forms.Label label_MucDichSuDung;
         private System.Windows.Forms.Label label_TinhThanh;
         private System.Windows.Forms.Label label_DoTuoi;
@@ -351,7 +364,7 @@
         private System.Windows.Forms.Label label_Title_NhapTrongTin;
         private System.Windows.Forms.GroupBox GroupPanel_ChucNang;
         private System.Windows.Forms.Button button_CapNhatCSDL;
-        private System.Windows.Forms.Button button_TuVanLapTop;
+        private System.Windows.Forms.Button button_TuVan;
     }
 }
 
