@@ -1,0 +1,5 @@
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDTO\bin\Debug\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDTO\bin\Debug\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDTO\obj\Debug\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDTO\obj\Debug\EStoreDTO.pdb
