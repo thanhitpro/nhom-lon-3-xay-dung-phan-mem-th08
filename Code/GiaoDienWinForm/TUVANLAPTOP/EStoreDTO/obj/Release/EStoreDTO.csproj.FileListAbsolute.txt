@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

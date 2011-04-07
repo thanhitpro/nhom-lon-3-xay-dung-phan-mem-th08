@@ -1,0 +1,8 @@
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

@@ -1,0 +1,8 @@
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\bin\Debug\EStoreDAO.dll.config
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\bin\Debug\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\bin\Debug\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\bin\Debug\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\bin\Debug\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\obj\Debug\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\obj\Debug\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreDAO\obj\Debug\EStoreDAO.pdb

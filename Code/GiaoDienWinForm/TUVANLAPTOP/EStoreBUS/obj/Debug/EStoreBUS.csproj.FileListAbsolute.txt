@@ -1,0 +1,9 @@
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\bin\Debug\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\obj\Debug\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\obj\Debug\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\GiaoDienWinForm\TUVANLAPTOP\EStoreBUS\obj\Debug\EStoreBUS.pdb
