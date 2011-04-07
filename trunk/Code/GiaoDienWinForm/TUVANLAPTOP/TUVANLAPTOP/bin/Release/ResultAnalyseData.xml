@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NAVAS_BAYES>
+  <NHASANXUAT ID="6" TenNhaSanXuat="Acer" SoLuongDaBan="2525">
+    <TY_LE_THEO_NGHE_NGHIEP>
+      <NGHE_NGHIEP ID="1" TenNgheNghiep="Học sinh" TyLeGiaoDich="8" TyLeKhongGiaoDich="7.800375" />
+      <NGHE_NGHIEP ID="2" TenNgheNghiep="Sinh viên" TyLeGiaoDich="7.44554471969604" TyLeKhongGiaoDich="7.586299" />
+      <NGHE_NGHIEP ID="3" TenNgheNghiep="Doanh nhân" TyLeGiaoDich="7.40594053268433" TyLeKhongGiaoDich="7.733476" />
+      <NGHE_NGHIEP ID="4" TenNgheNghiep="Bác sĩ" TyLeGiaoDich="8.51485157012939" TyLeKhongGiaoDich="7.506021" />
+      <NGHE_NGHIEP ID="5" TenNgheNghiep="Dược sĩ" TyLeGiaoDich="7.84158420562744" TyLeKhongGiaoDich="7.305325" />
+      <NGHE_NGHIEP ID="6" TenNgheNghiep="Kỹ sư xây dựng" TyLeGiaoDich="6.57425737380981" TyLeKhongGiaoDich="7.666577" />
+      <NGHE_NGHIEP ID="7" TenNgheNghiep="Kỹ sư cơ khí" TyLeGiaoDich="8.07920742034912" TyLeKhongGiaoDich="7.519401" />
+      <NGHE_NGHIEP ID="8" TenNgheNghiep="Kế toán" TyLeGiaoDich="7.84158420562744" TyLeKhongGiaoDich="8.134868" />
+      <NGHE_NGHIEP ID="9" TenNgheNghiep="Kiến trúc sư" TyLeGiaoDich="7.64356422424316" TyLeKhongGiaoDich="7.10463" />
+      <NGHE_NGHIEP ID="10" TenNgheNghiep="Chuyên viên đồ họa" TyLeGiaoDich="7.68316841125488" TyLeKhongGiaoDich="7.974311" />
+      <NGHE_NGHIEP ID="11" TenNgheNghiep="Lập trình viên" TyLeGiaoDich="6.73267316818237" TyLeKhongGiaoDich="8.348944" />
+      <NGHE_NGHIEP ID="12" TenNgheNghiep="Nhân viên văn phòng" TyLeGiaoDich="7.88118839263916" TyLeKhongGiaoDich="7.452502" />
+      <NGHE_NGHIEP ID="13" TenNgheNghiep="Nghề khác..." TyLeGiaoDich="8.35643577575684" TyLeKhongGiaoDich="7.867273" />
+    </TY_LE_THEO_NGHE_NGHIEP>
+    <TY_LE_THEO_MUC_DICH_SU_DUNG>
+      <MUC_DICH ID="1" TenMucDich="Chơi game" TyLeGiaoDich="12.43564" TyLeKhongGiaoDich="12.75087" />
+      <MUC_DICH ID="2" TenMucDich="Xem phim" TyLeGiaoDich="12.35644" TyLeKhongGiaoDich="12.57693" />
+      <MUC_DICH ID="3" TenMucDich="Học tập" TyLeGiaoDich="11.92079" TyLeKhongGiaoDich="12.77763" />
+      <MUC_DICH ID="4" TenMucDich="Đánh văn bản" TyLeGiaoDich="12.95049" TyLeKhongGiaoDich="12.1354" />
+      <MUC_DICH ID="5" TenMucDich="Mục đích khác" TyLeGiaoDich="11.64356" TyLeKhongGiaoDich="12.1354" />
+      <MUC_DICH ID="6" TenMucDich="Thiết kế đồ họa chuyên nghiệp" TyLeGiaoDich="13.34653" TyLeKhongGiaoDich="13.40648" />
+      <MUC_DICH ID="7" TenMucDich="Thiết kế công trình" TyLeGiaoDich="11.76238" TyLeKhongGiaoDich="11.38614" />
+      <MUC_DICH ID="8" TenMucDich="Lập trình" TyLeGiaoDich="13.58416" TyLeKhongGiaoDich="12.83115" />
+    </TY_LE_THEO_MUC_DICH_SU_DUNG>
+    <TY_LE_THEO_DO_TUOI>
+      <DO_TUOI ID="1" TenDoTuoi="0 đến 10 tuổi" TyLeGiaoDich="17.26733" TyLeKhongGiaoDich="16.57747" />
+      <DO_TUOI ID="2" TenDoTuoi="11 đến 17 tuổi" TyLeGiaoDich="16.63366" TyLeKhongGiaoDich="16.73803" />
+      <DO_TUOI ID="3" TenDoTuoi="18 đến 22 tuổi" TyLeGiaoDich="16.11881" TyLeKhongGiaoDich="16.26974" />
+      <DO_TUOI ID="4" TenDoTuoi="23 đến 30 tuổi" TyLeGiaoDich="16.39604" TyLeKhongGiaoDich="16.71127" />
+      <DO_TUOI ID="5" TenDoTuoi="31 đến 40 tuổi" TyLeGiaoDich="17.38614" TyLeKhongGiaoDich="16.68451" />
+      <DO_TUOI ID="6" TenDoTuoi="trên 40 tuổi" TyLeGiaoDich="16.19802" TyLeKhongGiaoDich="17.019" />
+    </TY_LE_THEO_DO_TUOI>
+    <TY_LE_THEO_TINH_THANH>
+      <TINH_THANH ID="1" TenTinhThanh="TP. Hồ Chí Minh" TyLeGiaoDich="1.306931" TyLeKhongGiaoDich="1.337972" />
+      <TINH_THANH ID="2" TenTinhThanh="TP  Hà Nội" TyLeGiaoDich="1.861386" TyLeKhongGiaoDich="1.846401" />
+      <TINH_THANH ID="3" TenTinhThanh="Tỉnh Bắc Giang" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.632325" />
+      <TINH_THANH ID="4" TenTinhThanh="Tỉnh Bắc Kạn" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.592186" />
+      <TINH_THANH ID="5" TenTinhThanh="Tỉnh Bắc Ninh" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.725983" />
+      <TINH_THANH ID="6" TenTinhThanh="Tỉnh Cao Băng" TyLeGiaoDich="1.663366" TyLeKhongGiaoDich="1.605566" />
+      <TINH_THANH ID="7" TenTinhThanh="Tỉnh Điện Biên" TyLeGiaoDich="1.544554" TyLeKhongGiaoDich="1.378111" />
+      <TINH_THANH ID="8" TenTinhThanh="Tỉnh Hà Giang" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.538667" />
+      <TINH_THANH ID="9" TenTinhThanh="Tỉnh Hà Nam" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.645705" />
+      <TINH_THANH ID="10" TenTinhThanh="Tỉnh Hà Tây" TyLeGiaoDich="1.386139" TyLeKhongGiaoDich="1.659085" />
+      <TINH_THANH ID="11" TenTinhThanh="Tỉnh Hải Dương" TyLeGiaoDich="1.544554" TyLeKhongGiaoDich="1.565427" />
+      <TINH_THANH ID="12" TenTinhThanh="TP Hải Phòng" TyLeGiaoDich="1.821782" TyLeKhongGiaoDich="1.40487" />
+      <TINH_THANH ID="13" TenTinhThanh="Tỉnh Hòa Bình" TyLeGiaoDich="1.188119" TyLeKhongGiaoDich="2.060476" />
+      <TINH_THANH ID="14" TenTinhThanh="Tỉnh Hưng Yên" TyLeGiaoDich="2.138614" TyLeKhongGiaoDich="1.712604" />
+      <TINH_THANH ID="15" TenTinhThanh="Tỉnh Lai Châu" TyLeGiaoDich="1.425743" TyLeKhongGiaoDich="1.685844" />
+      <TINH_THANH ID="16" TenTinhThanh="Tỉnh Lào Cai" TyLeGiaoDich="1.544554" TyLeKhongGiaoDich="1.592186" />
+      <TINH_THANH ID="17" TenTinhThanh="Tỉnh Lạng Sơn" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.471769" />
+      <TINH_THANH ID="18" TenTinhThanh="Tỉnh Nam Định" TyLeGiaoDich="1.544554" TyLeKhongGiaoDich="1.244314" />
+      <TINH_THANH ID="19" TenTinhThanh="Tỉnh Ninh Bình" TyLeGiaoDich="1.386139" TyLeKhongGiaoDich="1.458389" />
+      <TINH_THANH ID="20" TenTinhThanh="Tỉnh Phú Thọ" TyLeGiaoDich="2.019802" TyLeKhongGiaoDich="1.458389" />
+      <TINH_THANH ID="21" TenTinhThanh="Tỉnh Quảng Ninh" TyLeGiaoDich="1.227723" TyLeKhongGiaoDich="1.672465" />
+      <TINH_THANH ID="22" TenTinhThanh="Tỉnh Sơn La" TyLeGiaoDich="2.138614" TyLeKhongGiaoDich="1.538667" />
+      <TINH_THANH ID="23" TenTinhThanh="Tỉnh Thái Bình" TyLeGiaoDich="1.980198" TyLeKhongGiaoDich="1.458389" />
+      <TINH_THANH ID="24" TenTinhThanh="Tỉnh Thái Nguyên" TyLeGiaoDich="1.782178" TyLeKhongGiaoDich="1.458389" />
+      <TINH_THANH ID="25" TenTinhThanh="Tỉnh Tuyên Quang" TyLeGiaoDich="1.306931" TyLeKhongGiaoDich="1.618946" />
+      <TINH_THANH ID="26" TenTinhThanh="Tỉnh Vĩnh Phúc" TyLeGiaoDich="1.029703" TyLeKhongGiaoDich="1.659085" />
+      <TINH_THANH ID="27" TenTinhThanh="Tỉnh Yên Bái" TyLeGiaoDich="1.623762" TyLeKhongGiaoDich="1.445009" />
+      <TINH_THANH ID="28" TenTinhThanh="Tỉnh Yên Bái" TyLeGiaoDich="1.742574" TyLeKhongGiaoDich="1.645705" />
+      <TINH_THANH ID="29" TenTinhThanh="Tỉnh Bình Định" TyLeGiaoDich="1.425743" TyLeKhongGiaoDich="1.779502" />
+      <TINH_THANH ID="30" TenTinhThanh="Tỉnh Đắk Lắk" TyLeGiaoDich="1.90099" TyLeKhongGiaoDich="1.592186" />
+      <TINH_THANH ID="31" TenTinhThanh="Tỉnh Đắk Nông" TyLeGiaoDich="1.742574" TyLeKhongGiaoDich="1.725983" />
+      <TINH_THANH ID="32" TenTinhThanh="Tỉnh Gia Lai" TyLeGiaoDich="1.148515" TyLeKhongGiaoDich="1.859781" />
+      <TINH_THANH ID="33" TenTinhThanh="Tỉnh Hà Tĩnh" TyLeGiaoDich="1.742574" TyLeKhongGiaoDich="1.578807" />
+      <TINH_THANH ID="34" TenTinhThanh="Tỉnh Khánh Hòa" TyLeGiaoDich="1.663366" TyLeKhongGiaoDich="1.41825" />
+      <TINH_THANH ID="35" TenTinhThanh="Tỉnh Kon Tum" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.672465" />
+      <TINH_THANH ID="36" TenTinhThanh="Tỉnh Nghệ An" TyLeGiaoDich="1.425743" TyLeKhongGiaoDich="1.41825" />
+      <TINH_THANH ID="37" TenTinhThanh="Tỉnh Phú Yên" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.699224" />
+      <TINH_THANH ID="38" TenTinhThanh="Tỉnh Quảng Bình" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.43163" />
+      <TINH_THANH ID="39" TenTinhThanh="Tỉnh Quảng Nam" TyLeGiaoDich="1.386139" TyLeKhongGiaoDich="1.511908" />
+      <TINH_THANH ID="40" TenTinhThanh="Tỉnh Quảng Ngãi" TyLeGiaoDich="1.623762" TyLeKhongGiaoDich="1.672465" />
+      <TINH_THANH ID="41" TenTinhThanh="Tỉnh Quảng Trị" TyLeGiaoDich="1.980198" TyLeKhongGiaoDich="1.605566" />
+      <TINH_THANH ID="42" TenTinhThanh="Tỉnh Thanh Hóa" TyLeGiaoDich="1.742574" TyLeKhongGiaoDich="1.685844" />
+      <TINH_THANH ID="43" TenTinhThanh="Tỉnh Thừa Thiên Huế" TyLeGiaoDich="1.821782" TyLeKhongGiaoDich="1.552047" />
+      <TINH_THANH ID="44" TenTinhThanh="Tỉnh An Giang" TyLeGiaoDich="1.623762" TyLeKhongGiaoDich="1.471769" />
+      <TINH_THANH ID="45" TenTinhThanh="Tỉnh Bà Rịa Vũng Tàu" TyLeGiaoDich="1.188119" TyLeKhongGiaoDich="1.645705" />
+      <TINH_THANH ID="46" TenTinhThanh="Tỉnh Bạc Liêu" TyLeGiaoDich="1.346535" TyLeKhongGiaoDich="1.659085" />
+      <TINH_THANH ID="47" TenTinhThanh="Tỉnh Bến Tre" TyLeGiaoDich="1.148515" TyLeKhongGiaoDich="1.592186" />
+      <TINH_THANH ID="48" TenTinhThanh="Tỉnh Bình Dương" TyLeGiaoDich="1.821782" TyLeKhongGiaoDich="1.766122" />
+      <TINH_THANH ID="49" TenTinhThanh="Tỉnh Bình Phước" TyLeGiaoDich="1.504951" TyLeKhongGiaoDich="1.672465" />
+      <TINH_THANH ID="50" TenTinhThanh="Tỉnh Bình Thuận" TyLeGiaoDich="1.267327" TyLeKhongGiaoDich="1.471769" />
+      <TINH_THANH ID="51" TenTinhThanh="Tỉnh Cà Mau" TyLeGiaoDich="1.821782" TyLeKhongGiaoDich="1.39149" />
+      <TINH_THANH ID="52" TenTinhThanh="TP Cần Thơ" TyLeGiaoDich="1.70297" TyLeKhongGiaoDich="1.645705" />
+      <TINH_THANH ID="53" TenTinhThanh="Tỉnh Đồng Nai" TyLeGiaoDich="1.742574" TyLeKhongGiaoDich="1.538667" />
+      <TINH_THANH ID="54" TenTinhThanh="Tỉnh Đồng Tháp" TyLeGiaoDich="1.940594" TyLeKhongGiaoDich="1.632325" />
+      <TINH_THANH ID="55" TenTinhThanh="Tỉnh Hậu Giang" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.659085" />
+      <TINH_THANH ID="56" TenTinhThanh="Tỉnh Kiên Giang" TyLeGiaoDich="1.90099" TyLeKhongGiaoDich="1.605566" />
+      <TINH_THANH ID="57" TenTinhThanh="Tỉnh Lâm Đồng" TyLeGiaoDich="1.90099" TyLeKhongGiaoDich="1.672465" />
+      <TINH_THANH ID="58" TenTinhThanh="Tỉnh Long An" TyLeGiaoDich="1.465347" TyLeKhongGiaoDich="1.40487" />
+      <TINH_THANH ID="59" TenTinhThanh="Tỉnh Ninh Thuận" TyLeGiaoDich="1.623762" TyLeKhongGiaoDich="1.618946" />
+      <TINH_THANH ID="60" TenTinhThanh="Tỉnh Sóc Trăng" TyLeGiaoDich="1.584158" TyLeKhongGiaoDich="1.618946" />
+      <TINH_THANH ID="61" TenTinhThanh="Tỉnh Tây Ninh" TyLeGiaoDich="1.346535" TyLeKhongGiaoDich="1.605566" />
+      <TINH_THANH ID="62" TenTinhThanh="Tỉnh Tiền Giang" TyLeGiaoDich="1.940594" TyLeKhongGiaoDich="1.471769" />
+      <TINH_THANH ID="63" TenTinhThanh="Tỉnh Trà Vinh" TyLeGiaoDich="1.069307" TyLeKhongGiaoDich="1.538667" />
+    </TY_LE_THEO_TINH_THANH>
+    <TY_LE_THEO_GIOI_TINH>
+      <GIOI_TINH ID="0" TenGioiTinh="NU" TyLeGiaoDich="52.47525" TyLeKhongGiaoDich="50.78941" />
+      <GIOI_TINH ID="1" TenGioiTinh="NAM" TyLeGiaoDich="47.52475" TyLeKhongGiaoDich="49.21059" />
+    </TY_LE_THEO_GIOI_TINH>
+  </NHASANXUAT>
+  <NHASANXUAT ID="9" TenNhaSanXuat="IBM-Lenovo" SoLuongDaBan="7474">
+    <TY_LE_THEO_NGHE_NGHIEP>
+      <NGHE_NGHIEP ID="1" TenNgheNghiep="Học sinh" TyLeGiaoDich="7.80037498474121" TyLeKhongGiaoDich="8" />
+      <NGHE_NGHIEP ID="2" TenNgheNghiep="Sinh viên" TyLeGiaoDich="7.58629894256592" TyLeKhongGiaoDich="7.445545" />
+      <NGHE_NGHIEP ID="3" TenNgheNghiep="Doanh nhân" TyLeGiaoDich="7.73347616195679" TyLeKhongGiaoDich="7.405941" />
+      <NGHE_NGHIEP ID="4" TenNgheNghiep="Bác sĩ" TyLeGiaoDich="7.50602102279663" TyLeKhongGiaoDich="8.514852" />
+      <NGHE_NGHIEP ID="5" TenNgheNghiep="Dược sĩ" TyLeGiaoDich="7.30532503128052" TyLeKhongGiaoDich="7.841584" />
+      <NGHE_NGHIEP ID="6" TenNgheNghiep="Kỹ sư xây dựng" TyLeGiaoDich="7.66657733917236" TyLeKhongGiaoDich="6.574257" />
+      <NGHE_NGHIEP ID="7" TenNgheNghiep="Kỹ sư cơ khí" TyLeGiaoDich="7.51940107345581" TyLeKhongGiaoDich="8.079207" />
+      <NGHE_NGHIEP ID="8" TenNgheNghiep="Kế toán" TyLeGiaoDich="8.13486766815186" TyLeKhongGiaoDich="7.841584" />
+      <NGHE_NGHIEP ID="9" TenNgheNghiep="Kiến trúc sư" TyLeGiaoDich="7.10462951660156" TyLeKhongGiaoDich="7.643564" />
+      <NGHE_NGHIEP ID="10" TenNgheNghiep="Chuyên viên đồ họa" TyLeGiaoDich="7.97431087493896" TyLeKhongGiaoDich="7.683168" />
+      <NGHE_NGHIEP ID="11" TenNgheNghiep="Lập trình viên" TyLeGiaoDich="8.34894371032715" TyLeKhongGiaoDich="6.732673" />
+      <NGHE_NGHIEP ID="12" TenNgheNghiep="Nhân viên văn phòng" TyLeGiaoDich="7.45250225067139" TyLeKhongGiaoDich="7.881188" />
+      <NGHE_NGHIEP ID="13" TenNgheNghiep="Nghề khác..." TyLeGiaoDich="7.86727285385132" TyLeKhongGiaoDich="8.356436" />
+    </TY_LE_THEO_NGHE_NGHIEP>
+    <TY_LE_THEO_MUC_DICH_SU_DUNG>
+      <MUC_DICH ID="1" TenMucDich="Chơi game" TyLeGiaoDich="12.75087" TyLeKhongGiaoDich="12.43564" />
+      <MUC_DICH ID="2" TenMucDich="Xem phim" TyLeGiaoDich="12.57693" TyLeKhongGiaoDich="12.35644" />
+      <MUC_DICH ID="3" TenMucDich="Học tập" TyLeGiaoDich="12.77763" TyLeKhongGiaoDich="11.92079" />
+      <MUC_DICH ID="4" TenMucDich="Đánh văn bản" TyLeGiaoDich="12.1354" TyLeKhongGiaoDich="12.95049" />
+      <MUC_DICH ID="5" TenMucDich="Mục đích khác" TyLeGiaoDich="12.1354" TyLeKhongGiaoDich="11.64356" />
+      <MUC_DICH ID="6" TenMucDich="Thiết kế đồ họa chuyên nghiệp" TyLeGiaoDich="13.40648" TyLeKhongGiaoDich="13.34653" />
+      <MUC_DICH ID="7" TenMucDich="Thiết kế công trình" TyLeGiaoDich="11.38614" TyLeKhongGiaoDich="11.76238" />
+      <MUC_DICH ID="8" TenMucDich="Lập trình" TyLeGiaoDich="12.83115" TyLeKhongGiaoDich="13.58416" />
+    </TY_LE_THEO_MUC_DICH_SU_DUNG>
+    <TY_LE_THEO_DO_TUOI>
+      <DO_TUOI ID="1" TenDoTuoi="0 đến 10 tuổi" TyLeGiaoDich="16.57747" TyLeKhongGiaoDich="17.26733" />
+      <DO_TUOI ID="2" TenDoTuoi="11 đến 17 tuổi" TyLeGiaoDich="16.73803" TyLeKhongGiaoDich="16.63366" />
+      <DO_TUOI ID="3" TenDoTuoi="18 đến 22 tuổi" TyLeGiaoDich="16.26974" TyLeKhongGiaoDich="16.11881" />
+      <DO_TUOI ID="4" TenDoTuoi="23 đến 30 tuổi" TyLeGiaoDich="16.71127" TyLeKhongGiaoDich="16.39604" />
+      <DO_TUOI ID="5" TenDoTuoi="31 đến 40 tuổi" TyLeGiaoDich="16.68451" TyLeKhongGiaoDich="17.38614" />
+      <DO_TUOI ID="6" TenDoTuoi="trên 40 tuổi" TyLeGiaoDich="17.019" TyLeKhongGiaoDich="16.19802" />
+    </TY_LE_THEO_DO_TUOI>
+    <TY_LE_THEO_TINH_THANH>
+      <TINH_THANH ID="1" TenTinhThanh="TP. Hồ Chí Minh" TyLeGiaoDich="1.337972" TyLeKhongGiaoDich="1.306931" />
+      <TINH_THANH ID="2" TenTinhThanh="TP  Hà Nội" TyLeGiaoDich="1.846401" TyLeKhongGiaoDich="1.861386" />
+      <TINH_THANH ID="3" TenTinhThanh="Tỉnh Bắc Giang" TyLeGiaoDich="1.632325" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="4" TenTinhThanh="Tỉnh Bắc Kạn" TyLeGiaoDich="1.592186" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="5" TenTinhThanh="Tỉnh Bắc Ninh" TyLeGiaoDich="1.725983" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="6" TenTinhThanh="Tỉnh Cao Băng" TyLeGiaoDich="1.605566" TyLeKhongGiaoDich="1.663366" />
+      <TINH_THANH ID="7" TenTinhThanh="Tỉnh Điện Biên" TyLeGiaoDich="1.378111" TyLeKhongGiaoDich="1.544554" />
+      <TINH_THANH ID="8" TenTinhThanh="Tỉnh Hà Giang" TyLeGiaoDich="1.538667" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="9" TenTinhThanh="Tỉnh Hà Nam" TyLeGiaoDich="1.645705" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="10" TenTinhThanh="Tỉnh Hà Tây" TyLeGiaoDich="1.659085" TyLeKhongGiaoDich="1.386139" />
+      <TINH_THANH ID="11" TenTinhThanh="Tỉnh Hải Dương" TyLeGiaoDich="1.565427" TyLeKhongGiaoDich="1.544554" />
+      <TINH_THANH ID="12" TenTinhThanh="TP Hải Phòng" TyLeGiaoDich="1.40487" TyLeKhongGiaoDich="1.821782" />
+      <TINH_THANH ID="13" TenTinhThanh="Tỉnh Hòa Bình" TyLeGiaoDich="2.060476" TyLeKhongGiaoDich="1.188119" />
+      <TINH_THANH ID="14" TenTinhThanh="Tỉnh Hưng Yên" TyLeGiaoDich="1.712604" TyLeKhongGiaoDich="2.138614" />
+      <TINH_THANH ID="15" TenTinhThanh="Tỉnh Lai Châu" TyLeGiaoDich="1.685844" TyLeKhongGiaoDich="1.425743" />
+      <TINH_THANH ID="16" TenTinhThanh="Tỉnh Lào Cai" TyLeGiaoDich="1.592186" TyLeKhongGiaoDich="1.544554" />
+      <TINH_THANH ID="17" TenTinhThanh="Tỉnh Lạng Sơn" TyLeGiaoDich="1.471769" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="18" TenTinhThanh="Tỉnh Nam Định" TyLeGiaoDich="1.244314" TyLeKhongGiaoDich="1.544554" />
+      <TINH_THANH ID="19" TenTinhThanh="Tỉnh Ninh Bình" TyLeGiaoDich="1.458389" TyLeKhongGiaoDich="1.386139" />
+      <TINH_THANH ID="20" TenTinhThanh="Tỉnh Phú Thọ" TyLeGiaoDich="1.458389" TyLeKhongGiaoDich="2.019802" />
+      <TINH_THANH ID="21" TenTinhThanh="Tỉnh Quảng Ninh" TyLeGiaoDich="1.672465" TyLeKhongGiaoDich="1.227723" />
+      <TINH_THANH ID="22" TenTinhThanh="Tỉnh Sơn La" TyLeGiaoDich="1.538667" TyLeKhongGiaoDich="2.138614" />
+      <TINH_THANH ID="23" TenTinhThanh="Tỉnh Thái Bình" TyLeGiaoDich="1.458389" TyLeKhongGiaoDich="1.980198" />
+      <TINH_THANH ID="24" TenTinhThanh="Tỉnh Thái Nguyên" TyLeGiaoDich="1.458389" TyLeKhongGiaoDich="1.782178" />
+      <TINH_THANH ID="25" TenTinhThanh="Tỉnh Tuyên Quang" TyLeGiaoDich="1.618946" TyLeKhongGiaoDich="1.306931" />
+      <TINH_THANH ID="26" TenTinhThanh="Tỉnh Vĩnh Phúc" TyLeGiaoDich="1.659085" TyLeKhongGiaoDich="1.029703" />
+      <TINH_THANH ID="27" TenTinhThanh="Tỉnh Yên Bái" TyLeGiaoDich="1.445009" TyLeKhongGiaoDich="1.623762" />
+      <TINH_THANH ID="28" TenTinhThanh="Tỉnh Yên Bái" TyLeGiaoDich="1.645705" TyLeKhongGiaoDich="1.742574" />
+      <TINH_THANH ID="29" TenTinhThanh="Tỉnh Bình Định" TyLeGiaoDich="1.779502" TyLeKhongGiaoDich="1.425743" />
+      <TINH_THANH ID="30" TenTinhThanh="Tỉnh Đắk Lắk" TyLeGiaoDich="1.592186" TyLeKhongGiaoDich="1.90099" />
+      <TINH_THANH ID="31" TenTinhThanh="Tỉnh Đắk Nông" TyLeGiaoDich="1.725983" TyLeKhongGiaoDich="1.742574" />
+      <TINH_THANH ID="32" TenTinhThanh="Tỉnh Gia Lai" TyLeGiaoDich="1.859781" TyLeKhongGiaoDich="1.148515" />
+      <TINH_THANH ID="33" TenTinhThanh="Tỉnh Hà Tĩnh" TyLeGiaoDich="1.578807" TyLeKhongGiaoDich="1.742574" />
+      <TINH_THANH ID="34" TenTinhThanh="Tỉnh Khánh Hòa" TyLeGiaoDich="1.41825" TyLeKhongGiaoDich="1.663366" />
+      <TINH_THANH ID="35" TenTinhThanh="Tỉnh Kon Tum" TyLeGiaoDich="1.672465" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="36" TenTinhThanh="Tỉnh Nghệ An" TyLeGiaoDich="1.41825" TyLeKhongGiaoDich="1.425743" />
+      <TINH_THANH ID="37" TenTinhThanh="Tỉnh Phú Yên" TyLeGiaoDich="1.699224" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="38" TenTinhThanh="Tỉnh Quảng Bình" TyLeGiaoDich="1.43163" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="39" TenTinhThanh="Tỉnh Quảng Nam" TyLeGiaoDich="1.511908" TyLeKhongGiaoDich="1.386139" />
+      <TINH_THANH ID="40" TenTinhThanh="Tỉnh Quảng Ngãi" TyLeGiaoDich="1.672465" TyLeKhongGiaoDich="1.623762" />
+      <TINH_THANH ID="41" TenTinhThanh="Tỉnh Quảng Trị" TyLeGiaoDich="1.605566" TyLeKhongGiaoDich="1.980198" />
+      <TINH_THANH ID="42" TenTinhThanh="Tỉnh Thanh Hóa" TyLeGiaoDich="1.685844" TyLeKhongGiaoDich="1.742574" />
+      <TINH_THANH ID="43" TenTinhThanh="Tỉnh Thừa Thiên Huế" TyLeGiaoDich="1.552047" TyLeKhongGiaoDich="1.821782" />
+      <TINH_THANH ID="44" TenTinhThanh="Tỉnh An Giang" TyLeGiaoDich="1.471769" TyLeKhongGiaoDich="1.623762" />
+      <TINH_THANH ID="45" TenTinhThanh="Tỉnh Bà Rịa Vũng Tàu" TyLeGiaoDich="1.645705" TyLeKhongGiaoDich="1.188119" />
+      <TINH_THANH ID="46" TenTinhThanh="Tỉnh Bạc Liêu" TyLeGiaoDich="1.659085" TyLeKhongGiaoDich="1.346535" />
+      <TINH_THANH ID="47" TenTinhThanh="Tỉnh Bến Tre" TyLeGiaoDich="1.592186" TyLeKhongGiaoDich="1.148515" />
+      <TINH_THANH ID="48" TenTinhThanh="Tỉnh Bình Dương" TyLeGiaoDich="1.766122" TyLeKhongGiaoDich="1.821782" />
+      <TINH_THANH ID="49" TenTinhThanh="Tỉnh Bình Phước" TyLeGiaoDich="1.672465" TyLeKhongGiaoDich="1.504951" />
+      <TINH_THANH ID="50" TenTinhThanh="Tỉnh Bình Thuận" TyLeGiaoDich="1.471769" TyLeKhongGiaoDich="1.267327" />
+      <TINH_THANH ID="51" TenTinhThanh="Tỉnh Cà Mau" TyLeGiaoDich="1.39149" TyLeKhongGiaoDich="1.821782" />
+      <TINH_THANH ID="52" TenTinhThanh="TP Cần Thơ" TyLeGiaoDich="1.645705" TyLeKhongGiaoDich="1.70297" />
+      <TINH_THANH ID="53" TenTinhThanh="Tỉnh Đồng Nai" TyLeGiaoDich="1.538667" TyLeKhongGiaoDich="1.742574" />
+      <TINH_THANH ID="54" TenTinhThanh="Tỉnh Đồng Tháp" TyLeGiaoDich="1.632325" TyLeKhongGiaoDich="1.940594" />
+      <TINH_THANH ID="55" TenTinhThanh="Tỉnh Hậu Giang" TyLeGiaoDich="1.659085" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="56" TenTinhThanh="Tỉnh Kiên Giang" TyLeGiaoDich="1.605566" TyLeKhongGiaoDich="1.90099" />
+      <TINH_THANH ID="57" TenTinhThanh="Tỉnh Lâm Đồng" TyLeGiaoDich="1.672465" TyLeKhongGiaoDich="1.90099" />
+      <TINH_THANH ID="58" TenTinhThanh="Tỉnh Long An" TyLeGiaoDich="1.40487" TyLeKhongGiaoDich="1.465347" />
+      <TINH_THANH ID="59" TenTinhThanh="Tỉnh Ninh Thuận" TyLeGiaoDich="1.618946" TyLeKhongGiaoDich="1.623762" />
+      <TINH_THANH ID="60" TenTinhThanh="Tỉnh Sóc Trăng" TyLeGiaoDich="1.618946" TyLeKhongGiaoDich="1.584158" />
+      <TINH_THANH ID="61" TenTinhThanh="Tỉnh Tây Ninh" TyLeGiaoDich="1.605566" TyLeKhongGiaoDich="1.346535" />
+      <TINH_THANH ID="62" TenTinhThanh="Tỉnh Tiền Giang" TyLeGiaoDich="1.471769" TyLeKhongGiaoDich="1.940594" />
+      <TINH_THANH ID="63" TenTinhThanh="Tỉnh Trà Vinh" TyLeGiaoDich="1.538667" TyLeKhongGiaoDich="1.069307" />
+    </TY_LE_THEO_TINH_THANH>
+    <TY_LE_THEO_GIOI_TINH>
+      <GIOI_TINH ID="0" TenGioiTinh="NU" TyLeGiaoDich="50.78941" TyLeKhongGiaoDich="52.47525" />
+      <GIOI_TINH ID="1" TenGioiTinh="NAM" TyLeGiaoDich="49.21059" TyLeKhongGiaoDich="47.52475" />
+    </TY_LE_THEO_GIOI_TINH>
+  </NHASANXUAT>
+</NAVAS_BAYES>
