@@ -8,4 +8,4 @@ trong code Thuật toán.
 Giao diện:
 - Không nên lồng Form con vào trong Form cha. Nhìn không được đẹp mắt.
 - Nên chỉnh lại màu sắc và khoảng cách giữa các control cho phù hợp.
-- ...và một số lỗi nhỏ khác.
+- ...và một số lỗi nhỏ khác...
