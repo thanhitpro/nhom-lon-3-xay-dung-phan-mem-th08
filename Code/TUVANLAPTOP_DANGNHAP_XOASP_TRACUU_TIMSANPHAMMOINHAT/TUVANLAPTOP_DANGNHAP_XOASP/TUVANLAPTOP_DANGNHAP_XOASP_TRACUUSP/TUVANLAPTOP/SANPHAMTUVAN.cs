@@ -205,13 +205,9 @@ namespace TUVANLAPTOP
             {
                 string id = null;
                 List<myChiTietDongLaptopDTO> danhSachLapTopCungLoai = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(dongLapTopTemp);
-                for (int i = 0; i < danhSachLapTopCungLoai.Count; i++)
-                {
-                    id += danhSachLapTopCungLoai[i].IMaDongLaptop.ToString()+ " , ";
-                }
-                MessageBox.Show("OK có "+ danhSachLapTopCungLoai.Count.ToString() + " Cùng loại có mã là: "+id);
-                //SANPHAMMOI frm = new SANPHAMMOI();
-                //frm.ShowDialog();
+                SANPHAMMOI frm = new SANPHAMMOI();
+                frm.Tag = danhSachLapTopCungLoai;
+                frm.ShowDialog();
                 
             }
         }
