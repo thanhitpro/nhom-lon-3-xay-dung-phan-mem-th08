@@ -643,6 +643,7 @@
             this.MaximizeBox = false;
             this.Name = "SANPHAMMOI";
             this.Text = "SANPHAMMOI";
+            this.Load += new System.EventHandler(this.SANPHAMMOI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
