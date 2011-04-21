@@ -140,3 +140,14 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TR
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\ESTORE.mdf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.pdb

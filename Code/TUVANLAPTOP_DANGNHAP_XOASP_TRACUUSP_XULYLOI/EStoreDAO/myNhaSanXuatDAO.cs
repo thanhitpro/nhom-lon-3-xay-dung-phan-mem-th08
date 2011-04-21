@@ -17,9 +17,15 @@ namespace EStoreDAO
         /// <returns></returns>
         public static NHASANXUAT LayNhaSanXuat(int _iMaNhaSanXuat)
         {
-           
-            NHASANXUAT _NhaSanXuat = m_eStoreDataContext.NHASANXUATs.Single(nsx => nsx.MaNhaSanXuat == _iMaNhaSanXuat);
-            return _NhaSanXuat;
+            try
+            {
+                NHASANXUAT _NhaSanXuat = m_eStoreDataContext.NHASANXUATs.Single(nsx => nsx.MaNhaSanXuat == _iMaNhaSanXuat);
+                return _NhaSanXuat;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay danh sach nha sx tu csdl ( phuong thuc static )
@@ -27,14 +33,20 @@ namespace EStoreDAO
         /// <returns></returns>
         public static List<NHASANXUAT> LayNhaSanXuat()
         {
-
-            var query = from NhaSanXuat in m_eStoreDataContext.NHASANXUATs select NhaSanXuat;
-            List<NHASANXUAT> _DSNhaSanXuat = new List<NHASANXUAT>();
-            foreach(NHASANXUAT _NhaSX in query)
+            try
             {
-                _DSNhaSanXuat.Add(_NhaSX);
+                var query = from NhaSanXuat in m_eStoreDataContext.NHASANXUATs select NhaSanXuat;
+                List<NHASANXUAT> _DSNhaSanXuat = new List<NHASANXUAT>();
+                foreach (NHASANXUAT _NhaSX in query)
+                {
+                    _DSNhaSanXuat.Add(_NhaSX);
+                }
+                return _DSNhaSanXuat;
             }
-            return _DSNhaSanXuat;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay danh sach nha sx tu csdl ( phuong thuc binh thuong )
@@ -42,16 +54,23 @@ namespace EStoreDAO
         /// <returns></returns>
         public List<myNhaSanXuatDTO> LayDSNhaSX()
         {
-            var query = from p in m_eStoreDataContext.NHASANXUATs select p;
-            List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
-            if (query == null)
-                return null;
-            foreach (NHASANXUAT nhasx in query)
+            try
             {
-                myNhaSanXuatDTO nsx = new myNhaSanXuatDTO(nhasx.TenNhaSanXuat);
-                dsNhaSX.Add(nsx);
+                var query = from p in m_eStoreDataContext.NHASANXUATs select p;
+                List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
+                if (query == null)
+                    return null;
+                foreach (NHASANXUAT nhasx in query)
+                {
+                    myNhaSanXuatDTO nsx = new myNhaSanXuatDTO(nhasx.TenNhaSanXuat);
+                    dsNhaSX.Add(nsx);
+                }
+                return dsNhaSX;
             }
-            return dsNhaSX;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma nha sx dua vao ten nha sx
@@ -61,17 +80,23 @@ namespace EStoreDAO
         public static int LayMaNhaSanXuat(string _sTenNhaSX)
         {
             int maNhaSX = -1;
-            DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-            var query = from p in m_EStore.NHASANXUATs where p.TenNhaSanXuat == _sTenNhaSX select p;
-            if (query == null)
-                return maNhaSX;
-            foreach (NHASANXUAT laptop in query)
+            try
             {
-                maNhaSX = laptop.MaNhaSanXuat;
-                break;
+                DataClasses1DataContext m_EStore = new DataClasses1DataContext();
+                var query = from p in m_EStore.NHASANXUATs where p.TenNhaSanXuat == _sTenNhaSX select p;
+                if (query == null)
+                    return maNhaSX;
+                foreach (NHASANXUAT laptop in query)
+                {
+                    maNhaSX = laptop.MaNhaSanXuat;
+                    break;
+                }
+                return maNhaSX;
             }
-            return maNhaSX;
-
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

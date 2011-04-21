@@ -11,8 +11,15 @@ namespace EStoreDAO
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         public static TINHTHANH LayTinhThanh(int _iMaTinhThanh)
         {
-            TINHTHANH _TinhThanh = m_eStoreDataContext.TINHTHANHs.Single(temp => temp.MaTinhThanh == _iMaTinhThanh);
-            return _TinhThanh;
+            try
+            {
+                TINHTHANH _TinhThanh = m_eStoreDataContext.TINHTHANHs.Single(temp => temp.MaTinhThanh == _iMaTinhThanh);
+                return _TinhThanh;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public static List<TINHTHANH> LayTinhThanh()
