@@ -340,6 +340,33 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TR
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SanPham.resources
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_TIMSANPHAM\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+<<<<<<< .mine
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SanPham.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+=======
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
@@ -365,3 +392,4 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TR
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SanPham.resources
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+>>>>>>> .r227
