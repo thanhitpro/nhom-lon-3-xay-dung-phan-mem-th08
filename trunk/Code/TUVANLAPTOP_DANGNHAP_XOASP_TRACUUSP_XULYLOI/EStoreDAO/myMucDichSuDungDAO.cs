@@ -11,8 +11,15 @@ namespace EStoreDAO
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         public static MUCDICHSUDUNG LayMucDichSuDung(int _iMaMucDichSuDung)
         {
-            MUCDICHSUDUNG _MucDichSuDung = m_eStoreDataContext.MUCDICHSUDUNGs.Single(temp => temp.MaMucDichSuDung == _iMaMucDichSuDung);
-            return _MucDichSuDung;
+            try
+            {
+                MUCDICHSUDUNG _MucDichSuDung = m_eStoreDataContext.MUCDICHSUDUNGs.Single(temp => temp.MaMucDichSuDung == _iMaMucDichSuDung);
+                return _MucDichSuDung;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public static List<MUCDICHSUDUNG> LayMucDichSuDung()

@@ -20,17 +20,7 @@ namespace EStoreDAO
             {
                 throw ex;
             }
-           /* myNgheNghiepDTO ngheNghiep = null;
-            foreach (NGHENGHIEP ngheNghiep_DAO in m_eStoreDataContext.NGHENGHIEPs)
-            {
-                if (ngheNghiep_DAO.MaNgheNghiep == _iMaNgheNghiep)
-                {
-                    ngheNghiep = new myNgheNghiepDTO();
-                    ngheNghiep.STenNgheNghiep = ngheNghiep_DAO.TenNgheNghiep;
-                    break;
-                }
-            }
-            return ngheNghiep;*/
+          
         }
 
         public static List<NGHENGHIEP> LayNgheNghiep()
@@ -44,15 +34,7 @@ namespace EStoreDAO
                     DSNgheNghiep.Add(_NgheNghiep);
                 }
                 return DSNgheNghiep;
-                /*List<myNgheNghiepDTO> danhSachNgheNghiep = new List<myNgheNghiepDTO>();
-
-                foreach (NGHENGHIEP NgheNghiep_DAO in m_eStoreDataContext.NGHENGHIEPs)
-                {
-                    myNgheNghiepDTO NgheNghiep_DTO = new myNgheNghiepDTO();
-                    NgheNghiep_DTO.STenNgheNghiep = NgheNghiep_DAO.TenNgheNghiep;
-                    danhSachNgheNghiep.Add(NgheNghiep_DTO);
-                }
-                return danhSachNgheNghiep;*/
+               
             }
             catch (System.Data.SqlClient.SqlException ex)
             {

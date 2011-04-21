@@ -18,11 +18,18 @@ namespace EStoreDAO
 
         public static List<DOTUOI> LayDoTuoi()
         {
-            var Query = from _DoTuoi in m_eStoreDataContext.DOTUOIs select _DoTuoi;
-            List<DOTUOI> DSDoTuoi = new List<DOTUOI>();
-            foreach (DOTUOI _DOTUOI in Query)
-                DSDoTuoi.Add(_DOTUOI);
-            return DSDoTuoi;
+            try
+            {
+                var Query = from _DoTuoi in m_eStoreDataContext.DOTUOIs select _DoTuoi;
+                List<DOTUOI> DSDoTuoi = new List<DOTUOI>();
+                foreach (DOTUOI _DOTUOI in Query)
+                    DSDoTuoi.Add(_DOTUOI);
+                return DSDoTuoi;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
