@@ -77,6 +77,7 @@
             this.label_OCung = new System.Windows.Forms.Label();
             this.label_BoXuLy = new System.Windows.Forms.Label();
             this.btn_TenLaptop = new System.Windows.Forms.Button();
+            this.button_ChonLaptop = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.GroupPanel_ListSanPham.SuspendLayout();
@@ -108,6 +109,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.button_ChonLaptop);
             this.panel2.Controls.Add(this.button_Back);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 452);
@@ -120,7 +122,7 @@
             this.button_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button_Back.Image = ((System.Drawing.Image)(resources.GetObject("button_Back.Image")));
             this.button_Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Back.Location = new System.Drawing.Point(443, 19);
+            this.button_Back.Location = new System.Drawing.Point(723, 19);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(129, 43);
             this.button_Back.TabIndex = 2;
@@ -631,6 +633,20 @@
             this.btn_TenLaptop.Text = "TÊN LAPTOP HIỂN THỊ THÔNG TIN";
             this.btn_TenLaptop.UseVisualStyleBackColor = false;
             // 
+            // button_ChonLaptop
+            // 
+            this.button_ChonLaptop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_ChonLaptop.Image = ((System.Drawing.Image)(resources.GetObject("button_ChonLaptop.Image")));
+            this.button_ChonLaptop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_ChonLaptop.Location = new System.Drawing.Point(470, 19);
+            this.button_ChonLaptop.Name = "button_ChonLaptop";
+            this.button_ChonLaptop.Size = new System.Drawing.Size(156, 43);
+            this.button_ChonLaptop.TabIndex = 3;
+            this.button_ChonLaptop.Text = "Chọn Laptop";
+            this.button_ChonLaptop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_ChonLaptop.UseVisualStyleBackColor = true;
+            this.button_ChonLaptop.Click += new System.EventHandler(this.button_ChonLaptop_Click);
+            // 
             // SANPHAMMOI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -706,6 +722,7 @@
         private System.Windows.Forms.Label label_OCung;
         private System.Windows.Forms.Label label_BoXuLy;
         private System.Windows.Forms.Button btn_TenLaptop;
+        private System.Windows.Forms.Button button_ChonLaptop;
 
     }
 }

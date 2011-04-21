@@ -564,6 +564,7 @@ namespace EStoreDAO
                 myChiTietDongLaptopDTO dongLapTop = new myChiTietDongLaptopDTO();
                 dongLapTop.STenChiTietDongLapTop = laptop.TenChiTietDongLapTop;
                 dongLapTop.SMauSac = laptop.MauSac;
+                dongLapTop.IMaDongLaptop = laptop.MaDongLapTop;
                 dongLapTop.IThoiGianBaoHanh = (int)laptop.ThoiGianBaoHanh;
                 dongLapTop.FGiaBanHienHanh = (float)laptop.GiaBanHienHanh;
                 dongLapTop.ChiTietDongRam = myChiTietDongRamDAO.LayChiTietDongRam((int)laptop.MaDongRAM);

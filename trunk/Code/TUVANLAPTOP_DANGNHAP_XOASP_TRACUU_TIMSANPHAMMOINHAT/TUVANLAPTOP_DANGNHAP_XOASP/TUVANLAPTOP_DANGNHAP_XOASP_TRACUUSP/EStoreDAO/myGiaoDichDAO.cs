@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
+using System.Data;
 using EStoreDTO;
 
 namespace EStoreDAO
@@ -99,8 +101,9 @@ namespace EStoreDAO
                 m_eStoreDataContext.SubmitChanges();
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
+                string temp = ex.Message;
                 return false;
             }            
         }
