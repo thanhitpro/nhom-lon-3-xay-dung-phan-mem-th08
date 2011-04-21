@@ -13,6 +13,8 @@ namespace TUVANLAPTOP
 {
     public partial class SANPHAMMOI : Form
     {
+        private int m_iMaLaptopDuocChon;
+        private string m_sTenLaptop = "";
         public SANPHAMMOI()
         {
             InitializeComponent();
@@ -42,6 +44,7 @@ namespace TUVANLAPTOP
                         flp_DSLaptop.Controls.Add(sanPhamControl);
                     }
             }
+            button_ChonLaptop.Enabled = false;
         }
 
         void Link_TenLaptop_Click(object sender, EventArgs e)
@@ -49,7 +52,7 @@ namespace TUVANLAPTOP
             myChiTietDongLaptopDTO dongLaptop = (myChiTietDongLaptopDTO)((LinkLabel)sender).Tag;
             if (dongLaptop != null)
             {
-                int m_iMaLaptopDuocChon = dongLaptop.IMaDongLaptop;
+                m_iMaLaptopDuocChon = dongLaptop.IMaDongLaptop;
                 string m_sTenLaptop = dongLaptop.STenChiTietDongLapTop;
 
                 btn_TenLaptop.Text = dongLaptop.STenChiTietDongLapTop;
@@ -119,6 +122,35 @@ namespace TUVANLAPTOP
 
                 //Mo ta them:s
                 tB_MoTaThem.Text = dongLaptop.SMoTaThem;
+                button_ChonLaptop.Enabled = true;
+            }
+        }
+
+        private void button_ChonLaptop_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn chọn mua Laptop " + m_sTenLaptop + " hay không ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
+            {
+                KHACHHANG khachHang = MANHINHCHINH.KKhachHang;
+
+                if (myKhachHangBUS.themKhachHang(khachHang) == false)
+                {
+                    MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
+                    return;
+                }
+
+                GIAODICH giaoDich = new GIAODICH();
+                giaoDich.MaKhachHang = khachHang.MaKhachHang;
+                giaoDich.MaDongLaptop = m_iMaLaptopDuocChon;
+                giaoDich.NgayMua = DateTime.Now;
+
+                if (myGiaoDichBUS.themGiaoDich(giaoDich))
+                {
+                    MessageBox.Show("Bạn đã chọn Laptop " + m_sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
+
+                    button_Back_Click(sender, e);
+                }
+                else
+                    MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
             }
         }
 

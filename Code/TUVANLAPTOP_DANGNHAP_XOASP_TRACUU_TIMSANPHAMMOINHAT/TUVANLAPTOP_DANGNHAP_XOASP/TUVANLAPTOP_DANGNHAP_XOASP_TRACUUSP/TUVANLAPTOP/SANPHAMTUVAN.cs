@@ -16,7 +16,6 @@ namespace TUVANLAPTOP
     {
         private int m_iMaLaptopDuocChon;
         private string m_sTenLaptop = "";
-
         private static SANPHAMTUVAN aForm = null;
 
         public static SANPHAMTUVAN Instance()
@@ -73,6 +72,7 @@ namespace TUVANLAPTOP
 
             //Disable button chọn SP:
             button_ChonLaptop.Enabled = false;
+            button1.Enabled = false;
         }
 
         /// <summary>
@@ -162,6 +162,7 @@ namespace TUVANLAPTOP
 
                 //Enable button ChonLaptop:
                 button_ChonLaptop.Enabled = true;
+                button1.Enabled = true;
             }
         }
 
@@ -172,43 +173,52 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void buttonNhapThongTin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn chọn mua Laptop " + m_sTenLaptop + " hay không ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
-            {
-                KHACHHANG khachHang = MANHINHCHINH.KKhachHang;
-
-                if (myKhachHangBUS.themKhachHang(khachHang) == false)
+                if (MessageBox.Show("Bạn có chắc chắn muốn chọn mua Laptop " + m_sTenLaptop + " hay không ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
                 {
-                    MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
-                    return;
+                    KHACHHANG khachHang = MANHINHCHINH.KKhachHang;
+
+                    if (myKhachHangBUS.themKhachHang(khachHang) == false)
+                    {
+                        MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
+                        return;
+                    }
+                    GIAODICH giaoDich = new GIAODICH();
+                    try
+                    {
+                        giaoDich.MaKhachHang = khachHang.MaKhachHang;
+                        giaoDich.MaDongLaptop = m_iMaLaptopDuocChon;
+                        giaoDich.NgayMua = DateTime.Now;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    if (myGiaoDichBUS.themGiaoDich(giaoDich))
+                    {
+                        MessageBox.Show("Bạn đã chọn Laptop " + m_sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
+
+                        button_Back_Click(sender, e);
+                    }
+                    else
+                        MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
                 }
-
-                GIAODICH giaoDich = new GIAODICH();
-                giaoDich.MaKhachHang = khachHang.MaKhachHang;
-                giaoDich.MaDongLaptop = m_iMaLaptopDuocChon;
-                giaoDich.NgayMua = DateTime.Now;
-
-                if (myGiaoDichBUS.themGiaoDich(giaoDich))
-                {
-                    MessageBox.Show("Bạn đã chọn Laptop " + m_sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
-
-                    button_Back_Click(sender, e);
-                }
-                else
-                    MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (dongLapTopTemp != null)
+            try
             {
-                string id = null;
-                List<myChiTietDongLaptopDTO> danhSachLapTopCungLoai = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(dongLapTopTemp);
-                SANPHAMMOI frm = new SANPHAMMOI();
-                frm.Tag = danhSachLapTopCungLoai;
-                frm.ShowDialog();
-                
+                if (dongLapTopTemp != null)
+                {
+                    List<myChiTietDongLaptopDTO> danhSachLapTopCungLoai = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(dongLapTopTemp);
+                    SANPHAMMOI frm = new SANPHAMMOI();
+                    frm.Tag = danhSachLapTopCungLoai;
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bạn hãy chọn sản phẩm trước khi tìm sản phẩm mới hơn");
             }
         }
     }

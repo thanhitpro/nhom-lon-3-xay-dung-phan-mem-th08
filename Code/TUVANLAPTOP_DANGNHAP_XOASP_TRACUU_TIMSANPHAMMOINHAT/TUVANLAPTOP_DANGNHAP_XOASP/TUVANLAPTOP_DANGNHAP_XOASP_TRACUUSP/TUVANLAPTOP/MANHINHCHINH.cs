@@ -38,13 +38,20 @@ namespace TUVANLAPTOP
 
             int IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich, IDKhoangGia;
             IDNgheNghiep = comboBoxNgheNghiep.SelectedIndex + 1;
-            IDGioiTinh = comboBoxGioiTinh.SelectedIndex + 1;
+            IDGioiTinh = comboBoxGioiTinh.SelectedIndex;
             IDDoTuoi = comboBoxDoTuoi.SelectedIndex + 1;
             IDTinhThanh = comboBoxTinhThanh.SelectedIndex + 1;
             IDMucDich = comboBoxMucDichSD.SelectedIndex + 1;
             IDKhoangGia = comboBoxMucGia.SelectedIndex + 1;
-
-            m_kKhachHang =  new KHACHHANG();
+            try
+            {
+                m_kKhachHang = new KHACHHANG();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tạo khách hàng");
+                throw;
+            }
             KKhachHang.MaDoTuoi = IDDoTuoi;
             KKhachHang.MaMucDichSuDung = IDMucDich;
             KKhachHang.MaNgheNghiep = IDNgheNghiep;
@@ -58,12 +65,19 @@ namespace TUVANLAPTOP
             string xPathDoTuoi = "/NAVAS_BAYES/NHASANXUAT/TY_LE_THEO_DO_TUOI/DO_TUOI/@TyLeGiaoDich[../@ID='" + IDDoTuoi.ToString() + "']";
             string xPathTinhThanh = "/NAVAS_BAYES/NHASANXUAT/TY_LE_THEO_TINH_THANH/TINH_THANH/@TyLeGiaoDich[../@ID='" + IDTinhThanh.ToString() + "']";
             string xPathMucDich = "/NAVAS_BAYES/NHASANXUAT/TY_LE_THEO_MUC_DICH_SU_DUNG/MUC_DICH/@TyLeGiaoDich[../@ID='" + IDMucDich.ToString() + "']";
-            
+
 
             string fileName = "ResultAnalyseData.xml";
 
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(fileName);
+            try
+            {
+                xmlDocument.Load(fileName);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không load được dữ liệu\n Kiểm tra lại file xml");
+            }
 
             string xPath = xPathNgheNghiep;
             XmlNodeList nodeListNgheNghiep = xmlDocument.SelectNodes(xPath);
@@ -84,16 +98,23 @@ namespace TUVANLAPTOP
             for (int i = 0; i < nodeListNgheNghiep.Count; i++)
             {
                 double temp = 0;
-                temp = (double.Parse(nodeListTinhThanh[i].InnerText))
-                    * (double.Parse(nodeListNgheNghiep[i].InnerText))
-                    * (double.Parse(nodeListMucDich[i].InnerText))
-                    * (double.Parse(nodeListGioiTinh[i].InnerText))
-                    * (double.Parse(nodeListDoTuoi[i].InnerText));
+                try
+                {
+                    temp = (double.Parse(nodeListTinhThanh[i].InnerText))
+                        * (double.Parse(nodeListNgheNghiep[i].InnerText))
+                        * (double.Parse(nodeListMucDich[i].InnerText))
+                        * (double.Parse(nodeListGioiTinh[i].InnerText))
+                        * (double.Parse(nodeListDoTuoi[i].InnerText));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi dữ liệu không hợp lệ");
+                }
                 MyStruct myStruct = new MyStruct();
                 myStruct.gt = temp;
                 myStruct.id = i;
-                
-                if(myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(myStruct.id + 1,comboBoxMucGia.SelectedIndex) == true)
+
+                if (myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(myStruct.id + 1, comboBoxMucGia.SelectedIndex) == true)
                     KetQua.Add(myStruct);
             }
             ///
@@ -119,7 +140,7 @@ namespace TUVANLAPTOP
             ///
 
             int iSoLuongLapTopDatYeuCau = 0;
-            if (KetQua.Count >3)
+            if (KetQua.Count > 3)
             {
                 iSoLuongLapTopDatYeuCau = 3;
             }
@@ -129,11 +150,12 @@ namespace TUVANLAPTOP
             }
 
             m_lDanhSachIDSanPhamDuocChon.Clear();
+            //Dua ID cua san pham duoc chon vao list
             for (int i = 0; i < iSoLuongLapTopDatYeuCau; i++)
             {
                 if (KetQua.Count - i - 1 >= 0)
                 {
-                    int t = KetQua[KetQua.Count - i - 1].id; 
+                    int t = KetQua[KetQua.Count - i - 1].id;
                     m_lDanhSachIDSanPhamDuocChon.Add(t);
                 }
             }
@@ -151,39 +173,69 @@ namespace TUVANLAPTOP
 
         private void AboutUsMenuItem_Click(object sender, EventArgs e)
         {
-            ABOUT frm = ABOUT.Instance();            
-            frm.ShowDialog();            
+            ABOUT frm = ABOUT.Instance();
+            frm.ShowDialog();
         }
 
         private void HelpMenuItem_Click(object sender, EventArgs e)
         {
-            HELP frm = HELP.Instance();            
-            frm.ShowDialog();            
+            HELP frm = HELP.Instance();
+            frm.ShowDialog();
         }
 
         private void MANHINHCHINH_Load(object sender, EventArgs e)
         {
             myNgheNghiepBUS ngheNghiepDAO = new myNgheNghiepBUS();
             List<NGHENGHIEP> listNgheNghiep = new List<NGHENGHIEP>();
-            listNgheNghiep = ngheNghiepDAO.LayNgheNghiep();
+            try
+            {
+                listNgheNghiep = ngheNghiepDAO.LayNgheNghiep();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                throw;
+            }
             comboBoxNgheNghiep.DataSource = listNgheNghiep;
             comboBoxNgheNghiep.DisplayMember = "TenNgheNghiep";
-
             myDoTuoiBUS doTuoiDAO = new myDoTuoiBUS();
             List<DOTUOI> listDoTuoi = new List<DOTUOI>();
-            listDoTuoi = doTuoiDAO.LayDoTuoi();
+            try
+            {
+                listDoTuoi = doTuoiDAO.LayDoTuoi();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                throw;
+            }
             comboBoxDoTuoi.DataSource = listDoTuoi;
             comboBoxDoTuoi.DisplayMember = "TenDoTuoi";
-
             myTinhThanhBUS tinhThanhDAO = new myTinhThanhBUS();
             List<TINHTHANH> listTinhThanh = new List<TINHTHANH>();
-            listTinhThanh = tinhThanhDAO.LayTinhThanh();
+            try
+            {
+                listTinhThanh = tinhThanhDAO.LayTinhThanh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                throw;
+            }
             comboBoxTinhThanh.DataSource = listTinhThanh;
             comboBoxTinhThanh.DisplayMember = "TenTinhThanh";
 
             myMucDichSuDungBUS mucDichSuDungDAO = new myMucDichSuDungBUS();
             List<MUCDICHSUDUNG> listMucDichSuDung = new List<MUCDICHSUDUNG>();
-            listMucDichSuDung = mucDichSuDungDAO.LayMucDichSuDung();
+            try
+            {
+                listMucDichSuDung = mucDichSuDungDAO.LayMucDichSuDung();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                throw;
+            }
             comboBoxMucDichSD.DataSource = listMucDichSuDung;
             comboBoxMucDichSD.DisplayMember = "TenMucDichSuDung";
             comboBoxGioiTinh.SelectedIndex = 0;
