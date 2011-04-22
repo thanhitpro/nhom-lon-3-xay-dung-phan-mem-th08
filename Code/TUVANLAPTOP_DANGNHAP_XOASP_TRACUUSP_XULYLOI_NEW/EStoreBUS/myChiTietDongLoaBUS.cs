@@ -8,13 +8,29 @@ namespace EStoreBUS
 {
     public class myChiTietDongLoaBUS
     {
+        /// <summary>
+        ///  Lấy thông tin dòng loa dựa vào mã dòng loa
+        /// </summary>
+        /// <param name="_iMaChiTietDongLoa">Mã dòng loa</param>
+        /// <returns>Dòng loa cần tra cứu</returns>
         public myChiTietDongLoaDTO LayChiTietDongLoa(int _iMaChiTietDongLoa)
         { return null; }
 
+        /// <summary>
+        /// Lấy thông tin tất cả các dòng Loa
+        /// </summary>
+        /// <returns>Danh sách tất cả các dòng Loa</returns>
         public List<myChiTietDongLoaDTO> LayChiTietDongLoa()
         {
             myChiTietDongLoaDAO chiTietDongLoaDAO = new myChiTietDongLoaDAO();
-            return chiTietDongLoaDAO.LayChiTietDongLoa();
+            try
+            {
+                return chiTietDongLoaDAO.LayChiTietDongLoa();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

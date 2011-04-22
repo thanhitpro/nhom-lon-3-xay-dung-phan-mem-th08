@@ -8,13 +8,29 @@ namespace EStoreBUS
 {
     public class myChiTietDongODiaQuangBUS
     {
+        /// <summary>
+        /// Lấy thông tin ổ đĩa quang dựa vào mã ỗ đĩa quang
+        /// </summary>
+        /// <param name="_iMaChiTietDongODiaQuang">Mã ổ đĩa quang</param>
+        /// <returns></returns>
         public myChiTietDongODiaQuangDTO LayChiTietDongODiaQuang(int _iMaChiTietDongODiaQuang)
         { return null; }
 
+        /// <summary>
+        /// Lấy thông tin tất cả các dòng ỗ đĩa quang
+        /// </summary>
+        /// <returns>danh sách tất cả các dòng ỗ đĩa quang</returns>
         public List<myChiTietDongODiaQuangDTO> LayChiTietDongODiaQuang()
         {
             myChiTietDongODiaQuangDAO chiTietDongDQ = new myChiTietDongODiaQuangDAO();
-            return chiTietDongDQ.LayChiTietDongODiaQuang();
+            try
+            {
+                return chiTietDongDQ.LayChiTietDongODiaQuang();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

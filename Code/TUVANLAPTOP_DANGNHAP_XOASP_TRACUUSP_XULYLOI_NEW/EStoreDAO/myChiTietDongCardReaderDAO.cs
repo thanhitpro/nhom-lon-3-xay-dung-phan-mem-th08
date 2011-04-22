@@ -35,30 +35,37 @@ namespace EStoreDAO
             return chiTietCardReader;
         }
         /// <summary>
-        /// lay thong tin tat cac dong card reader
+        /// Lấy thông tin tất cả các dòng card reader
         /// </summary>
-        /// <returns></returns>
+        /// <returns>danh sách tất cả các dòng card reader</returns>
         public List<myChiTietDongCardReaderDTO> LayChiTietDongCardReader()
         {
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
             DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-            var query = from p in m_EStore.CHITIETDONGCARDREADERs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGCARDREADER cardreader in query)
+            try
             {
-                myChiTietDongCardReaderDTO chiTietCardReader = new myChiTietDongCardReaderDTO();
-                chiTietCardReader.STenDongCardReader = cardreader.TenDongCardReader;
-                chiTietCardReader.NhaSanXuat = new myNhaSanXuatDTO(cardreader.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStore.CHITIETDONGCARDREADERs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGCARDREADER cardreader in query)
+                {
+                    myChiTietDongCardReaderDTO chiTietCardReader = new myChiTietDongCardReaderDTO();
+                    chiTietCardReader.STenDongCardReader = cardreader.TenDongCardReader;
+                    chiTietCardReader.NhaSanXuat = new myNhaSanXuatDTO(cardreader.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietCongNgheCardReaderDTO chiTietCNReader = new myChiTietCongNgheCardReaderDTO();
-                chiTietCNReader.STenCongNgheCardReader = cardreader.CHITIETCONGNGHECARDREADER.TenCongNgheCardReader;
-                chiTietCNReader.FHeSo = (float)cardreader.CHITIETCONGNGHECARDREADER.HeSo;
+                    myChiTietCongNgheCardReaderDTO chiTietCNReader = new myChiTietCongNgheCardReaderDTO();
+                    chiTietCNReader.STenCongNgheCardReader = cardreader.CHITIETCONGNGHECARDREADER.TenCongNgheCardReader;
+                    chiTietCNReader.FHeSo = (float)cardreader.CHITIETCONGNGHECARDREADER.HeSo;
 
-                chiTietCardReader.ChiTietCongNgheCardReader = chiTietCNReader;
-                dsCardReader.Add(chiTietCardReader);
+                    chiTietCardReader.ChiTietCongNgheCardReader = chiTietCNReader;
+                    dsCardReader.Add(chiTietCardReader);
+                }
+                return dsCardReader;
             }
-            return dsCardReader;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// lay thong tin ma card reader dua vao ten card reader

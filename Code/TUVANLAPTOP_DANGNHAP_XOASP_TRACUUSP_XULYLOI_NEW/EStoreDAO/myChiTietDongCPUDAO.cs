@@ -36,27 +36,34 @@ namespace EStoreDAO
         /// <summary>
         /// Lay danh sach tat ca cac dong CPU
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Danh sách dòng CPU</returns>
         public List<myChiTietDongCPUDTO> LayChiTietDongCPU()
         {
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
             DataClasses1DataContext m_eStoreContext = new DataClasses1DataContext();
-            var query = from p in m_eStoreContext.CHITIETDONGCPUs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGCPU cpu in query)
+            try
             {
-                myChiTietDongCPUDTO chiTietCPU = new myChiTietDongCPUDTO();
-                chiTietCPU.STenDongCPU = cpu.TenDongCPU;
-                chiTietCPU.NhaSanXuat = new myNhaSanXuatDTO(cpu.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_eStoreContext.CHITIETDONGCPUs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGCPU cpu in query)
+                {
+                    myChiTietDongCPUDTO chiTietCPU = new myChiTietDongCPUDTO();
+                    chiTietCPU.STenDongCPU = cpu.TenDongCPU;
+                    chiTietCPU.NhaSanXuat = new myNhaSanXuatDTO(cpu.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietCongNgheCPUDTO chiTietCNCPU = new myChiTietCongNgheCPUDTO();
-                chiTietCNCPU.STenChiTietCongNgheCPU = cpu.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU;
-                chiTietCNCPU.FHeSo = (float)cpu.CHITIETCONGNGHECPU.HeSo;
-                chiTietCPU.ChiTietCongNgheCPU = chiTietCNCPU;
-                dsDongCPU.Add(chiTietCPU);
+                    myChiTietCongNgheCPUDTO chiTietCNCPU = new myChiTietCongNgheCPUDTO();
+                    chiTietCNCPU.STenChiTietCongNgheCPU = cpu.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU;
+                    chiTietCNCPU.FHeSo = (float)cpu.CHITIETCONGNGHECPU.HeSo;
+                    chiTietCPU.ChiTietCongNgheCPU = chiTietCNCPU;
+                    dsDongCPU.Add(chiTietCPU);
+                }
+                return dsDongCPU;
             }
-            return dsDongCPU;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma dong CPU tu ten CPU

@@ -22,30 +22,37 @@ namespace EStoreDAO
             {
                 chiTietHDH = new myChiTietHeDieuHanhDTO();
                 chiTietHDH.STenHeDieuHanh = query.TenHeDieuHanh;
-                chiTietHDH.FHeSo = (float) query.HeSo;
+                chiTietHDH.FHeSo = (float)query.HeSo;
             }
             return chiTietHDH;
         }
 
         /// <summary>
-        /// lay thong tin tat cac cac he dieu hanh trong csdl
+        /// Lấy thông tin tất cả các HDH trong CSDL
         /// </summary>
         /// <returns></returns>
         public List<myChiTietHeDieuHanhDTO> LayChiTietHeDieuHanh()
         {
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
             DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-            var query = from p in m_EStore.CHITIETHEDIEUHANHs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETHEDIEUHANH hdh in query)
+            try
             {
-                myChiTietHeDieuHanhDTO chiTietHDH = new myChiTietHeDieuHanhDTO();
-                chiTietHDH.STenHeDieuHanh = hdh.TenHeDieuHanh;
-                chiTietHDH.FHeSo = (float)hdh.HeSo;
-                dsHDH.Add(chiTietHDH);
+                var query = from p in m_EStore.CHITIETHEDIEUHANHs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETHEDIEUHANH hdh in query)
+                {
+                    myChiTietHeDieuHanhDTO chiTietHDH = new myChiTietHeDieuHanhDTO();
+                    chiTietHDH.STenHeDieuHanh = hdh.TenHeDieuHanh;
+                    chiTietHDH.FHeSo = (float)hdh.HeSo;
+                    dsHDH.Add(chiTietHDH);
+                }
+                return dsHDH;
             }
-            return dsHDH;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma he dieu hanh dua vao ten hdh

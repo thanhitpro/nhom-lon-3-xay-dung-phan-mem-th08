@@ -43,23 +43,30 @@ namespace EStoreDAO
         {
             List<myChiTietTrongLuongDTO> dsTL = new List<myChiTietTrongLuongDTO>();
             DataClasses1DataContext m_Estote = new DataClasses1DataContext();
-            var query = from p in m_eStoreDataContext.CHITIETTRONGLUONGs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETTRONGLUONG tl in query)
+            try
             {
-                myChiTietTrongLuongDTO chiTietTrongLuong = new myChiTietTrongLuongDTO();
-                chiTietTrongLuong.FGiaTriTrongLuong = (float)tl.GiaTriTrongLuong;
+                var query = from p in m_eStoreDataContext.CHITIETTRONGLUONGs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETTRONGLUONG tl in query)
+                {
+                    myChiTietTrongLuongDTO chiTietTrongLuong = new myChiTietTrongLuongDTO();
+                    chiTietTrongLuong.FGiaTriTrongLuong = (float)tl.GiaTriTrongLuong;
 
-                myChiTietLoaiTrongLuongDTO chiTietLoaiTL = new myChiTietLoaiTrongLuongDTO();
-                chiTietLoaiTL.STenLoaiTrongLuong = tl.CHITIETLOAITRONGLUONG.TenLoaiTrongLuong;
-                chiTietLoaiTL.IGiaTriTrongLuong = tl.CHITIETLOAITRONGLUONG.GiaTriTrongLuong.Value;
-                chiTietLoaiTL.FHeSo = (float)tl.CHITIETLOAITRONGLUONG.HeSo;
+                    myChiTietLoaiTrongLuongDTO chiTietLoaiTL = new myChiTietLoaiTrongLuongDTO();
+                    chiTietLoaiTL.STenLoaiTrongLuong = tl.CHITIETLOAITRONGLUONG.TenLoaiTrongLuong;
+                    chiTietLoaiTL.IGiaTriTrongLuong = tl.CHITIETLOAITRONGLUONG.GiaTriTrongLuong.Value;
+                    chiTietLoaiTL.FHeSo = (float)tl.CHITIETLOAITRONGLUONG.HeSo;
 
-                chiTietTrongLuong.ChiTietLoaiTrongLuong = chiTietLoaiTL;
-                dsTL.Add(chiTietTrongLuong);
+                    chiTietTrongLuong.ChiTietLoaiTrongLuong = chiTietLoaiTL;
+                    dsTL.Add(chiTietTrongLuong);
+                }
+                return dsTL;
             }
-            return dsTL;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma trong luong dua vao gia tri trong luong
