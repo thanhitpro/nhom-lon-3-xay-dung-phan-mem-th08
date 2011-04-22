@@ -9,10 +9,14 @@ namespace EStoreDAO
     public class myChiTietDongRamDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+        /// <summary>
+        /// Lấy thông tin của dòng RAM dựa vào mã dòng RAM
+        /// </summary>
+        /// <param name="_iMaChiTietDongRam"> Mã số dòng RAM</param>
+        /// <returns>Lớp đối tượng chứa thông tin dòng RAM cần ra cứu</returns>
         public static myChiTietDongRamDTO LayChiTietDongRam(int _iMaChiTietDongRam)
         {
             myChiTietDongRamDTO chiTietDongRam = null;
-
             var query = m_eStoreDataContext.CHITIETDONGRAMs.Single(ram => ram.MaDongRAM == _iMaChiTietDongRam);
             if (query != null)
             {
@@ -23,7 +27,7 @@ namespace EStoreDAO
                 myChiTietCongNgheRamDTO chiTietCNRam = new myChiTietCongNgheRamDTO();
                 chiTietCNRam.STenCongNgheRam = query.CHITIETCONGNGHERAM.TenCongNgheRam;
                 chiTietCNRam.FHeSo = (float)query.CHITIETCONGNGHERAM.HeSo;
-                
+
                 chiTietDongRam.ChiTietCongNgheRam = chiTietCNRam;
 
                 myChiTietBoNhoRamDTO chiTietBoNhoRAM = new myChiTietBoNhoRamDTO();
@@ -38,40 +42,47 @@ namespace EStoreDAO
         /// <summary>
         /// Lấy danh sách chi tiết tất cả các dòng RAM
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Danh sách chi tiết các dòng RAM</returns>
         public List<myChiTietDongRamDTO> LayChiTietDongRam()
         {
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
             DataClasses1DataContext m_EStoreDataContext = new DataClasses1DataContext();
-            var query = from p in m_eStoreDataContext.CHITIETDONGRAMs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGRAM ram in query)
+            try
             {
-                myChiTietDongRamDTO chiTietDongRam = new myChiTietDongRamDTO();
-                chiTietDongRam.STenDongRAM = ram.TenDongRAM;
-                chiTietDongRam.NhaSanXuat = new myNhaSanXuatDTO(ram.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_eStoreDataContext.CHITIETDONGRAMs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGRAM ram in query)
+                {
+                    myChiTietDongRamDTO chiTietDongRam = new myChiTietDongRamDTO();
+                    chiTietDongRam.STenDongRAM = ram.TenDongRAM;
+                    chiTietDongRam.NhaSanXuat = new myNhaSanXuatDTO(ram.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietCongNgheRamDTO chiTietCNRam = new myChiTietCongNgheRamDTO();
-                chiTietCNRam.STenCongNgheRam = ram.CHITIETCONGNGHERAM.TenCongNgheRam;
-                chiTietCNRam.FHeSo = (float)ram.CHITIETCONGNGHERAM.HeSo;
+                    myChiTietCongNgheRamDTO chiTietCNRam = new myChiTietCongNgheRamDTO();
+                    chiTietCNRam.STenCongNgheRam = ram.CHITIETCONGNGHERAM.TenCongNgheRam;
+                    chiTietCNRam.FHeSo = (float)ram.CHITIETCONGNGHERAM.HeSo;
 
-                chiTietDongRam.ChiTietCongNgheRam = chiTietCNRam;
+                    chiTietDongRam.ChiTietCongNgheRam = chiTietCNRam;
 
-                myChiTietBoNhoRamDTO chiTietBoNhoRAM = new myChiTietBoNhoRamDTO();
-                chiTietBoNhoRAM.STenChiTietBoNhoRam = ram.CHITIETBONHORAM.TenChiTietBoNhoRAM;
-                chiTietBoNhoRAM.FHeSo = (float)ram.CHITIETBONHORAM.HeSo;
+                    myChiTietBoNhoRamDTO chiTietBoNhoRAM = new myChiTietBoNhoRamDTO();
+                    chiTietBoNhoRAM.STenChiTietBoNhoRam = ram.CHITIETBONHORAM.TenChiTietBoNhoRAM;
+                    chiTietBoNhoRAM.FHeSo = (float)ram.CHITIETBONHORAM.HeSo;
 
-                chiTietDongRam.ChiTietBoNhoRam = chiTietBoNhoRAM;
-                dsDongRam.Add(chiTietDongRam);
+                    chiTietDongRam.ChiTietBoNhoRam = chiTietBoNhoRAM;
+                    dsDongRam.Add(chiTietDongRam);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
             return dsDongRam;
         }
         /// <summary>
-        /// Lấy thông tin mã của Ram từ tên Ram
+        /// Lấy thông tin mã của RAM từ tên RAM
         /// </summary>
-        /// <param name="_sTenRam">Tên Ram</param>
-        /// <returns></returns>
+        /// <param name="_sTenRam">Tên RAM</param>
+        /// <returns>Mã dòng RAM</returns>
         public static int LayMaDongRam(string _sTenRam)
         {
             int maDongRam = -1;

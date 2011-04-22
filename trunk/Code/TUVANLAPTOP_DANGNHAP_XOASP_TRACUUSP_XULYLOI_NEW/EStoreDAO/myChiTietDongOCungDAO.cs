@@ -47,27 +47,34 @@ namespace EStoreDAO
         {
             List<myChiTietDongOCungDTO> dsOCung = new List<myChiTietDongOCungDTO>();
             DataClasses1DataContext m_EStoreContext = new DataClasses1DataContext();
-            var query = from p in m_EStoreContext.CHITIETDONGOCUNGs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGOCUNG ocung in query)
+            try
             {
-                myChiTietDongOCungDTO chiTietOCung = new myChiTietDongOCungDTO();
-                chiTietOCung.STenDongOCung = ocung.TenDongOCung;
-                chiTietOCung.NhaSanXuat = new myNhaSanXuatDTO(ocung.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStoreContext.CHITIETDONGOCUNGs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGOCUNG ocung in query)
+                {
+                    myChiTietDongOCungDTO chiTietOCung = new myChiTietDongOCungDTO();
+                    chiTietOCung.STenDongOCung = ocung.TenDongOCung;
+                    chiTietOCung.NhaSanXuat = new myNhaSanXuatDTO(ocung.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietVongQuayOCungDTO chiTietVongQuay = new myChiTietVongQuayOCungDTO();
-                chiTietVongQuay.STenChiTietVongQuayOCung = ocung.CHITIETVONGQUAYOCUNG.TenChiTietVongQuayOCung;
-                chiTietVongQuay.FHeSo = (float)ocung.CHITIETVONGQUAYOCUNG.HeSo;
-                chiTietOCung.ChiTietVongQuayOCung = chiTietVongQuay;
+                    myChiTietVongQuayOCungDTO chiTietVongQuay = new myChiTietVongQuayOCungDTO();
+                    chiTietVongQuay.STenChiTietVongQuayOCung = ocung.CHITIETVONGQUAYOCUNG.TenChiTietVongQuayOCung;
+                    chiTietVongQuay.FHeSo = (float)ocung.CHITIETVONGQUAYOCUNG.HeSo;
+                    chiTietOCung.ChiTietVongQuayOCung = chiTietVongQuay;
 
-                myChiTietDungLuongOCungDTO chiTietDungLuong = new myChiTietDungLuongOCungDTO();
-                chiTietDungLuong.STenChiTietDungLuongOCung = ocung.CHITIETDUNGLUONGOCUNG.TenChiTietDungLuongOCung;
-                chiTietDungLuong.FHeSo = (float)ocung.CHITIETDUNGLUONGOCUNG.HeSo;
-                chiTietOCung.ChiTietDungLuongOCung = chiTietDungLuong;
-                dsOCung.Add(chiTietOCung);
+                    myChiTietDungLuongOCungDTO chiTietDungLuong = new myChiTietDungLuongOCungDTO();
+                    chiTietDungLuong.STenChiTietDungLuongOCung = ocung.CHITIETDUNGLUONGOCUNG.TenChiTietDungLuongOCung;
+                    chiTietDungLuong.FHeSo = (float)ocung.CHITIETDUNGLUONGOCUNG.HeSo;
+                    chiTietOCung.ChiTietDungLuongOCung = chiTietDungLuong;
+                    dsOCung.Add(chiTietOCung);
+                }
+                return dsOCung;
             }
-            return dsOCung;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma dong o cung dua vao ten o cung

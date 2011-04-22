@@ -8,13 +8,29 @@ namespace EStoreBUS
 {
     public class myChiTietHeDieuHanhBUS
     {
+        /// <summary>
+        /// Lấy thông tin hệ điều hành dựa vào mã chi tiết HDH
+        /// </summary>
+        /// <param name="_iMaChiTietHeDieuHanh">mã chi tiết HDH</param>
+        /// <returns>Thông tin HDH</returns>
         public myChiTietHeDieuHanhDTO LayChiTietHeDieuHanh(int _iMaChiTietHeDieuHanh)
         { return null; }
 
+        /// <summary>
+        /// Lấy thông tin tất cả các hệ điều hành
+        /// </summary>
+        /// <returns>Danh sách tất cả các HDH</returns>
         public List<myChiTietHeDieuHanhDTO> LayChiTietHeDieuHanh()
         {
             myChiTietHeDieuHanhDAO chiTietHDHDAO = new myChiTietHeDieuHanhDAO();
-            return chiTietHDHDAO.LayChiTietHeDieuHanh();
+            try
+            {
+                return chiTietHDHDAO.LayChiTietHeDieuHanh();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ using EStoreDTO;
 
 namespace EStoreDAO
 {
-    public class  myChiTietDongLoaDAO
+    public class myChiTietDongLoaDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
@@ -31,26 +31,40 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Lay tat ca thong tin cac dong loa
+        /// Lấy tất cả thông tin các dòng loa
         /// </summary>
         /// <returns></returns>
         public List<myChiTietDongLoaDTO> LayChiTietDongLoa()
         {
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
             DataClasses1DataContext m_EStoreContext = new DataClasses1DataContext();
-            var query = from p in m_EStoreContext.CHITIETDONGLOAs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGLOA loa in query)
+            try
             {
-                myChiTietDongLoaDTO chiTietDongLoa = new myChiTietDongLoaDTO();
-                chiTietDongLoa.STenDongLoa = loa.TenDongDongLoa;
-                chiTietDongLoa.NhaSanXuat = new myNhaSanXuatDTO(loa.NHASANXUAT.TenNhaSanXuat);
-                chiTietDongLoa.BCoMicro = BitConverter.GetBytes(loa.CoMicro)[0];
-                dsLoa.Add(chiTietDongLoa);
+                var query = from p in m_EStoreContext.CHITIETDONGLOAs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGLOA loa in query)
+                {
+                    myChiTietDongLoaDTO chiTietDongLoa = new myChiTietDongLoaDTO();
+                    chiTietDongLoa.STenDongLoa = loa.TenDongDongLoa;
+                    chiTietDongLoa.NhaSanXuat = new myNhaSanXuatDTO(loa.NHASANXUAT.TenNhaSanXuat);
+                    chiTietDongLoa.BCoMicro = BitConverter.GetBytes(loa.CoMicro)[0];
+                    dsLoa.Add(chiTietDongLoa);
+                }
+                return dsLoa;
             }
-            return dsLoa;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
         }
+        /// <summary>
+        /// Lấy thông tin mã dòng loa dựa vào tên dòng loa
+        /// </summary>
+        /// <param name="_sTenLoa">Tên dòng loa</param>
+        /// <returns>Thông tin dòng loa cần tra cứu</returns>
         public static int LayMaDongLoa(string _sTenLoa)
         {
             int maDongLoa = -1;

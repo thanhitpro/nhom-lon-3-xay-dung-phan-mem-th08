@@ -37,16 +37,26 @@ namespace EStoreBUS
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
-
+        /// <summary>
+        /// Tra cứu thông tin các laptop thao nhiều tiêu chí
+        /// </summary>
+        /// <param name="infoCombobox">thông tin tiêu chí cần tra cứu</param>
+        /// <returns>danh sách các laptop kết quả </returns>
         public List<myChiTietDongLaptopDTO> TraCuu(InfoComboboxOfFormTraCuu infoCombobox)
         {
             myChiTietDongLaptopDAO chiTietlapTop = new myChiTietDongLaptopDAO();
             return chiTietlapTop.TraCuu(infoCombobox);
         }
 
+        /// <summary>
+        /// Kiểm tra thông tin giá tiền hợp lệ
+        /// </summary>
+        /// <param name="_iMaDongLaptop">Mã laptop</param>
+        /// <param name="_iMucGia">Mức giá</param>
+        /// <returns>true hay false</returns>
         public static bool KiemTraGiaTienHopLe(int _iMaDongLaptop, int _iMucGia)
         {
             try
@@ -95,6 +105,11 @@ namespace EStoreBUS
             return myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(_liMaDongLaptops);
         }
 
+        /// <summary>
+        /// Lấy thông tin chi tiết laptop mới nhất từ tầng DAO
+        /// </summary>
+        /// <param name="dongLaptop">Thông tin Laptop so sánh</param>
+        /// <returns></returns>
         public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptopMoiNhat(myChiTietDongLaptopDTO dongLaptop)
         {
             return myChiTietDongLaptopDAO.LayChiTietDongLaptopMoiNhat(dongLaptop);

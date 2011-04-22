@@ -173,7 +173,7 @@ namespace EStoreDAO
 
             if (string.Compare(infoCombobox.STendongLapTop, null) != 0)
             {
-                sql += "TenChiTietDongLapTop='" + infoCombobox.STendongLapTop + "' ";
+                sql += "TenChiTietDongLapTop=N'" + infoCombobox.STendongLapTop + "' ";
                 flag = 1;
             }
             if (string.Compare(infoCombobox.SRam, null) != 0)
@@ -377,18 +377,19 @@ namespace EStoreDAO
             {
                 if (flag == 0)
                 {
-                    sql += "MauSac='" + infoCombobox.SMauSac + "' ";
+                    sql += "MauSac=N'" + infoCombobox.SMauSac + "' ";
                     flag = 1;
                 }
                 else if (flag == 1)
                 {
-                    sql += "and MauSac='" + infoCombobox.SMauSac + "' ";
+                    sql += "and MauSac=N'" + infoCombobox.SMauSac + "' ";
                     flag = 1;
                 }
             }
             if (string.Compare(infoCombobox.SGiaBan, null) != 0)
             {
-                string temp = ConvertString(infoCombobox.SGiaBan);
+                string substr = " triệu đồng";
+                string temp = ConvertString(infoCombobox.SGiaBan.Substring(0, infoCombobox.SGiaBan.Length - substr.Length));
                 if (flag == 0)
                 {
                     sql += "GiaBanHienHanh=" + temp + " ";
@@ -397,6 +398,19 @@ namespace EStoreDAO
                 else if (flag == 1)
                 {
                     sql += "and GiaBanHienHanh=" + temp + " ";
+                    flag = 1;
+                }
+            }
+            if (infoCombobox.ISoCongUSB != 0)
+            {
+                if (flag == 0)
+                {
+                    sql += "SoLuongCongUSB=" + infoCombobox.ISoCongUSB.ToString() + " ";
+                    flag = 1;
+                }
+                else if (flag == 1)
+                {
+                    sql += "and SoLuongCongUSB=" + infoCombobox.ISoCongUSB.ToString() + " ";
                     flag = 1;
                 }
             }
@@ -506,7 +520,7 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Chuyễn đổi kiểm dữ liệu của giá bán sang kiểu float
+        /// Chuyễn đổi kiểm dữ liệu của giá bán String sang kiểu float
         /// </summary>
         /// <param name="giaban">thông tin giá bán của sản phẩm</param>
         /// <returns></returns>
@@ -529,6 +543,7 @@ namespace EStoreDAO
 
             return temp;
         }
+
 
         /// <summary>
         /// Xóa một dòng thông tin laptop với thông tin mã laptop

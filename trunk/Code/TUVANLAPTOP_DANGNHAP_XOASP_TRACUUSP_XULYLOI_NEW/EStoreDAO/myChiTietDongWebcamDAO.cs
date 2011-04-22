@@ -22,31 +22,38 @@ namespace EStoreDAO
             {
                 chiTietWebcam = new myChiTietDongWebcamDTO();
                 chiTietWebcam.STenDongWebCam = query.TenDongWebCam;
-                chiTietWebcam.FDoPhanGiai = (float) query.DoPhanGiai;
+                chiTietWebcam.FDoPhanGiai = (float)query.DoPhanGiai;
                 chiTietWebcam.NhaSanXuat = new myNhaSanXuatDTO(query.NHASANXUAT.TenNhaSanXuat);
             }
             return chiTietWebcam;
         }
         /// <summary>
-        /// lay thong tin tat ca cac dong webcam
+        /// Lấy thông tin tất cả các dòng webcam
         /// </summary>
         /// <returns></returns>
         public List<myChiTietDongWebcamDTO> LayChiTietDongWebcam()
         {
             List<myChiTietDongWebcamDTO> dsWebCam = new List<myChiTietDongWebcamDTO>();
             DataClasses1DataContext m_EStoreComtext = new DataClasses1DataContext();
-            var query = from p in m_EStoreComtext.CHITIETDONGWEBCAMs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGWEBCAM webcam in query)
+            try
             {
-                myChiTietDongWebcamDTO chiTietWebcam = new myChiTietDongWebcamDTO();
-                chiTietWebcam.STenDongWebCam = webcam.TenDongWebCam;
-                chiTietWebcam.FDoPhanGiai = (float)webcam.DoPhanGiai;
-                chiTietWebcam.NhaSanXuat = new myNhaSanXuatDTO(webcam.NHASANXUAT.TenNhaSanXuat);
-                dsWebCam.Add(chiTietWebcam);
+                var query = from p in m_EStoreComtext.CHITIETDONGWEBCAMs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGWEBCAM webcam in query)
+                {
+                    myChiTietDongWebcamDTO chiTietWebcam = new myChiTietDongWebcamDTO();
+                    chiTietWebcam.STenDongWebCam = webcam.TenDongWebCam;
+                    chiTietWebcam.FDoPhanGiai = (float)webcam.DoPhanGiai;
+                    chiTietWebcam.NhaSanXuat = new myNhaSanXuatDTO(webcam.NHASANXUAT.TenNhaSanXuat);
+                    dsWebCam.Add(chiTietWebcam);
+                }
+                return dsWebCam;
             }
-            return dsWebCam;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma webcam tu ten webcam

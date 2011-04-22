@@ -34,30 +34,37 @@ namespace EStoreDAO
             return chiTietOQuang;
         }
         /// <summary>
-        /// Lay thong tin tat ca dong o dia quang trong csdl
+        /// Lấy thông tin tất cả ỗ đĩa quang từ CSDL
         /// </summary>
         /// <returns></returns>
         public List<myChiTietDongODiaQuangDTO> LayChiTietDongODiaQuang()
         {
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
             DataClasses1DataContext m_EstoreContext = new DataClasses1DataContext();
-            var query = from p in m_EstoreContext.CHITIETDONGODIAQUANGs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGODIAQUANG diaquang in query)
+            try
             {
-                myChiTietDongODiaQuangDTO chiTietOQuang = new myChiTietDongODiaQuangDTO();
-                chiTietOQuang.STenDongODiaQuang = diaquang.TenDongODiaQuang;
-                chiTietOQuang.NhaSanXuat = new myNhaSanXuatDTO(diaquang.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EstoreContext.CHITIETDONGODIAQUANGs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGODIAQUANG diaquang in query)
+                {
+                    myChiTietDongODiaQuangDTO chiTietOQuang = new myChiTietDongODiaQuangDTO();
+                    chiTietOQuang.STenDongODiaQuang = diaquang.TenDongODiaQuang;
+                    chiTietOQuang.NhaSanXuat = new myNhaSanXuatDTO(diaquang.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietCacKhaNangODiaQuangDTO khaNangOQuang = new myChiTietCacKhaNangODiaQuangDTO();
-                khaNangOQuang.STenChiTietCacKhaNangODiaQuang = diaquang.CHITIETCACKHANANGODIAQUANG.TenChiTietCacKhaNangODiaQuang;
-                khaNangOQuang.FHeSo = (float)diaquang.CHITIETCACKHANANGODIAQUANG.HeSo;
+                    myChiTietCacKhaNangODiaQuangDTO khaNangOQuang = new myChiTietCacKhaNangODiaQuangDTO();
+                    khaNangOQuang.STenChiTietCacKhaNangODiaQuang = diaquang.CHITIETCACKHANANGODIAQUANG.TenChiTietCacKhaNangODiaQuang;
+                    khaNangOQuang.FHeSo = (float)diaquang.CHITIETCACKHANANGODIAQUANG.HeSo;
 
-                chiTietOQuang.ChiTietCacKhaNangODiaQuang = khaNangOQuang;
-                dsDiaQuang.Add(chiTietOQuang);
+                    chiTietOQuang.ChiTietCacKhaNangODiaQuang = khaNangOQuang;
+                    dsDiaQuang.Add(chiTietOQuang);
+                }
+                return dsDiaQuang;
             }
-            return dsDiaQuang;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Lay thong tin ma o dia quang dua vao ten o dia quang

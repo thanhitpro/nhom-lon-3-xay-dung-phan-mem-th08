@@ -11,10 +11,21 @@ namespace EStoreBUS
         public myChiTietDongWebcamDTO LayChiTietDongWebcam(int _iMaChiTietDongWebcam)
         { return null; }
 
+        /// <summary>
+        /// Lấy danh sách tất cả các dòng webcam
+        /// </summary>
+        /// <returns>Danh sách tất cả các dòng webcam</returns>
         public List<myChiTietDongWebcamDTO> LayChiTietDongWebcam()
         {
             myChiTietDongWebcamDAO chiTietWebCam = new myChiTietDongWebcamDAO();
-            return chiTietWebCam.LayChiTietDongWebcam();
+            try
+            {
+                return chiTietWebCam.LayChiTietDongWebcam();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

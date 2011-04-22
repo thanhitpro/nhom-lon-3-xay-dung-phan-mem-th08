@@ -23,9 +23,9 @@ namespace EStoreDAO
             {
                 chiTietPin = new myChiTietDongPinDTO();
                 chiTietPin.FTenDongPin = query.TenDongPin;
-                chiTietPin.FThoiGianSuDung = (float) query.ThoiGianSuDung;
+                chiTietPin.FThoiGianSuDung = (float)query.ThoiGianSuDung;
                 chiTietPin.NhaSanXuat = new myNhaSanXuatDTO(query.NHASANXUAT.TenNhaSanXuat);
-                
+
                 myChiTietThoiLuongPinDTO chiTietThoiLuongPin = new myChiTietThoiLuongPinDTO();
                 chiTietThoiLuongPin.STenThoiLuongPin = query.CHITIETTHOILUONGPIN.TenThoiLuongPin;
                 chiTietThoiLuongPin.FHeSo = (float)query.CHITIETTHOILUONGPIN.HeSo;
@@ -42,21 +42,28 @@ namespace EStoreDAO
         {
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
             DataClasses1DataContext m_EStoreContext = new DataClasses1DataContext();
-            var query = from p in m_EStoreContext.CHITIETDONGPINs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGPIN pin in query)
+            try
             {
-                myChiTietDongPinDTO chiTietPin = new myChiTietDongPinDTO();
-                chiTietPin.FTenDongPin = pin.TenDongPin;
-                chiTietPin.FThoiGianSuDung = (float)pin.ThoiGianSuDung;
-                chiTietPin.NhaSanXuat = new myNhaSanXuatDTO(pin.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStoreContext.CHITIETDONGPINs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGPIN pin in query)
+                {
+                    myChiTietDongPinDTO chiTietPin = new myChiTietDongPinDTO();
+                    chiTietPin.FTenDongPin = pin.TenDongPin;
+                    chiTietPin.FThoiGianSuDung = (float)pin.ThoiGianSuDung;
+                    chiTietPin.NhaSanXuat = new myNhaSanXuatDTO(pin.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietThoiLuongPinDTO chiTietThoiLuongPin = new myChiTietThoiLuongPinDTO();
-                chiTietThoiLuongPin.STenThoiLuongPin = pin.CHITIETTHOILUONGPIN.TenThoiLuongPin;
-                chiTietThoiLuongPin.FHeSo = (float)pin.CHITIETTHOILUONGPIN.HeSo;
-                chiTietPin.ChiTietThoiLuongPin = chiTietThoiLuongPin;
-                dsPin.Add(chiTietPin);
+                    myChiTietThoiLuongPinDTO chiTietThoiLuongPin = new myChiTietThoiLuongPinDTO();
+                    chiTietThoiLuongPin.STenThoiLuongPin = pin.CHITIETTHOILUONGPIN.TenThoiLuongPin;
+                    chiTietThoiLuongPin.FHeSo = (float)pin.CHITIETTHOILUONGPIN.HeSo;
+                    chiTietPin.ChiTietThoiLuongPin = chiTietThoiLuongPin;
+                    dsPin.Add(chiTietPin);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
             return dsPin;
         }

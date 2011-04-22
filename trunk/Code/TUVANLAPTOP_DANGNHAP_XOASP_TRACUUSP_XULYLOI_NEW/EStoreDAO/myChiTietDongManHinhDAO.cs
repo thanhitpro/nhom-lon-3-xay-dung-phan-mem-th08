@@ -42,24 +42,36 @@ namespace EStoreDAO
         {
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
             DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-            var query = from p in m_EStore.CHITIETDONGMANHINHs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGMANHINH manhinh in query)
+            try
             {
-                myChiTietDongManHinhDTO chiTietManHinh = new myChiTietDongManHinhDTO();
-                chiTietManHinh.STenDongManHinh = manhinh.TenDongManHinh;
-                chiTietManHinh.NhaSanXuat = new myNhaSanXuatDTO(manhinh.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStore.CHITIETDONGMANHINHs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGMANHINH manhinh in query)
+                {
+                    myChiTietDongManHinhDTO chiTietManHinh = new myChiTietDongManHinhDTO();
+                    chiTietManHinh.STenDongManHinh = manhinh.TenDongManHinh;
+                    chiTietManHinh.NhaSanXuat = new myNhaSanXuatDTO(manhinh.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietKichThuocManHinhDTO chiTietKichThuoc = new myChiTietKichThuocManHinhDTO();
-                chiTietKichThuoc.STenChiTietKichThuocManHinh = manhinh.CHITIETKICHTHUOCMANHINH.TenChiTietKichThuocManHinh;
-                chiTietKichThuoc.FHeSo = (float)manhinh.CHITIETKICHTHUOCMANHINH.HeSo;
+                    myChiTietKichThuocManHinhDTO chiTietKichThuoc = new myChiTietKichThuocManHinhDTO();
+                    chiTietKichThuoc.STenChiTietKichThuocManHinh = manhinh.CHITIETKICHTHUOCMANHINH.TenChiTietKichThuocManHinh;
+                    chiTietKichThuoc.FHeSo = (float)manhinh.CHITIETKICHTHUOCMANHINH.HeSo;
 
-                chiTietManHinh.ChiTietKichThuocManHinh = chiTietKichThuoc;
-                dsManHinh.Add(chiTietManHinh);
+                    chiTietManHinh.ChiTietKichThuocManHinh = chiTietKichThuoc;
+                    dsManHinh.Add(chiTietManHinh);
+                }
+                return dsManHinh;
             }
-            return dsManHinh;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
+        /// <summary>
+        /// Lấy thông tin mã màn hình từ tên dòng màn hình
+        /// </summary>
+        /// <param name="_sTenMaHinh"> tên dòng màn hình </param>
+        /// <returns></returns>
         public static int LayMaDongManHinh(string _sTenMaHinh)
         {
             int iMaManHinh = -1;

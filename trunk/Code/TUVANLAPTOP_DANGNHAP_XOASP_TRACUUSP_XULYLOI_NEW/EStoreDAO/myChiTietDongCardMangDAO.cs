@@ -31,7 +31,7 @@ namespace EStoreDAO
 
                 chiTietDongCardMang.ChiTietLoaiKetNoiMang = chiTietKetNoi;
             }
-            
+
             return chiTietDongCardMang;
         }
         /// <summary>
@@ -42,24 +42,36 @@ namespace EStoreDAO
         {
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
             DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-            var query = from p in m_EStore.CHITIETDONGCARDMANGs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGCARDMANG cardmang in query)
+            try
             {
-                myChiTietDongCardMangDTO chiTietDongCardMang = new myChiTietDongCardMangDTO();
-                chiTietDongCardMang.STenDongCardMang = cardmang.TenDongCardMang;
-                chiTietDongCardMang.NhaSanXuat = new myNhaSanXuatDTO(cardmang.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStore.CHITIETDONGCARDMANGs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGCARDMANG cardmang in query)
+                {
+                    myChiTietDongCardMangDTO chiTietDongCardMang = new myChiTietDongCardMangDTO();
+                    chiTietDongCardMang.STenDongCardMang = cardmang.TenDongCardMang;
+                    chiTietDongCardMang.NhaSanXuat = new myNhaSanXuatDTO(cardmang.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietLoaiKetNoiCardMangDTO chiTietKetNoi = new myChiTietLoaiKetNoiCardMangDTO();
-                chiTietKetNoi.STenLoaiKetNoiCardMang = cardmang.CHITIETLOAIKETNOICARDMANG.TenLoaiKetNoiCardMang;
-                chiTietKetNoi.FHeSo = (float)cardmang.CHITIETLOAIKETNOICARDMANG.HeSo;
+                    myChiTietLoaiKetNoiCardMangDTO chiTietKetNoi = new myChiTietLoaiKetNoiCardMangDTO();
+                    chiTietKetNoi.STenLoaiKetNoiCardMang = cardmang.CHITIETLOAIKETNOICARDMANG.TenLoaiKetNoiCardMang;
+                    chiTietKetNoi.FHeSo = (float)cardmang.CHITIETLOAIKETNOICARDMANG.HeSo;
 
-                chiTietDongCardMang.ChiTietLoaiKetNoiMang = chiTietKetNoi;
-                dsCardMang.Add(chiTietDongCardMang);
+                    chiTietDongCardMang.ChiTietLoaiKetNoiMang = chiTietKetNoi;
+                    dsCardMang.Add(chiTietDongCardMang);
+                }
+                return dsCardMang;
             }
-            return dsCardMang;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
+        /// <summary>
+        /// Lấy thông tin mã card mạng dựa vào tên card mạng
+        /// </summary>
+        /// <param name="_sTenCardMang">tên card mạng</param>
+        /// <returns></returns>
         public static int LayMaDongCardMang(string _sTenCardMang)
         {
             int maCardMang = -1;

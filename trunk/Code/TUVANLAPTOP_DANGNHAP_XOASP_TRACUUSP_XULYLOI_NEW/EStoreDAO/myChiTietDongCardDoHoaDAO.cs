@@ -39,32 +39,44 @@ namespace EStoreDAO
             return chitietDongCardDoHoa;
         }
         /// <summary>
-        /// Lay thong tin tat ca cac dong card do hoa
+        /// Lấy thông tin tất cả các dòng card đồ họa
         /// </summary>
         /// <returns></returns>
         public List<myChiTietDongCardDoHoaDTO> LayChiTietDongCardDoHoa()
         {
             DataClasses1DataContext m_EStoreContext = new DataClasses1DataContext();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
-            var query = from p in m_EStoreContext.CHITIETDONGCARDDOHOAs select p;
-            if (query == null)
-                return null;
-            foreach (CHITIETDONGCARDDOHOA carddohoa in query)
+            try
             {
-                myChiTietDongCardDoHoaDTO chitietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
-                chitietDongCardDoHoa.STenDongCardDoHoa = carddohoa.TenDongCardDoHoa;
-                chitietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(carddohoa.NHASANXUAT.TenNhaSanXuat);
+                var query = from p in m_EStoreContext.CHITIETDONGCARDDOHOAs select p;
+                if (query == null)
+                    return null;
+                foreach (CHITIETDONGCARDDOHOA carddohoa in query)
+                {
+                    myChiTietDongCardDoHoaDTO chitietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
+                    chitietDongCardDoHoa.STenDongCardDoHoa = carddohoa.TenDongCardDoHoa;
+                    chitietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(carddohoa.NHASANXUAT.TenNhaSanXuat);
 
-                myChiTietBoNhoCardDoHoaDTO chiTietBoNhoCardDoHoa = new myChiTietBoNhoCardDoHoaDTO();
-                chiTietBoNhoCardDoHoa.STenChiTietCardDoHoa = carddohoa.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa;
-                chiTietBoNhoCardDoHoa.FHeSo = (float)carddohoa.CHITIETBONHOCARDDOHOA.HeSo;
+                    myChiTietBoNhoCardDoHoaDTO chiTietBoNhoCardDoHoa = new myChiTietBoNhoCardDoHoaDTO();
+                    chiTietBoNhoCardDoHoa.STenChiTietCardDoHoa = carddohoa.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa;
+                    chiTietBoNhoCardDoHoa.FHeSo = (float)carddohoa.CHITIETBONHOCARDDOHOA.HeSo;
 
-                chitietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
+                    chitietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
 
-                dsCardDoHoa.Add(chitietDongCardDoHoa);
+                    dsCardDoHoa.Add(chitietDongCardDoHoa);
+                }
+                return dsCardDoHoa;
             }
-            return dsCardDoHoa;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
+        /// <summary>
+        /// Lấy thông tin mã card đồ họa từ tên card đồ họa
+        /// </summary>
+        /// <param name="_sTenCardDoaHoa">Tên card đồ họa</param>
+        /// <returns>Mã card đồ họa cần tra cứu</returns>
         public static int LayMaDongCardDoHoa(string _sTenCardDoaHoa)
         {
             int maCardDiaHoa = -1;

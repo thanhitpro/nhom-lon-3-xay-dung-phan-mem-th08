@@ -15,17 +15,24 @@ namespace EStoreBUS
         /// <param name="_iMaNhaSanXuat"></param>
         /// <returns></returns>
         public myNhaSanXuatDTO LayNhaSanXuat(int _iMaNhaSanXuat)
-        { 
+        {
             return null;
         }
         /// <summary>
-        /// Lay danh sach nha sx tu DAO
+        /// Lấy danh sách nhà SX
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Danh sách tất cả các nhà SX</returns>
         public List<myNhaSanXuatDTO> LayNhaSanXuat()
         {
             myNhaSanXuatDAO nhaSX = new myNhaSanXuatDAO();
-            return nhaSX.LayDSNhaSX();
+            try
+            {
+                return nhaSX.LayDSNhaSX();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

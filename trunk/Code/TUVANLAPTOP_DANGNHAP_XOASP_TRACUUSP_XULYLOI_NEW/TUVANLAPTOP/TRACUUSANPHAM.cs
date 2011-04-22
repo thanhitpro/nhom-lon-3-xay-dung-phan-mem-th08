@@ -17,12 +17,17 @@ namespace TUVANLAPTOP
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Đóng form màn hình
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_Back_XoaSanPham_Click(object sender, EventArgs e)
         {
             Close();
         }
         /// <summary>
-        /// Khoi tao cac gia tri ban dau cho combobox
+        /// Khởi tạo danh sách các sản phẩm ban đầu cho từng combobox
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -31,197 +36,373 @@ namespace TUVANLAPTOP
             // Load Ram
             myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
-            dsDongRam = chiTietDongRam.LayChiTietDongRam();
+            try
+            {
+                dsDongRam = chiTietDongRam.LayChiTietDongRam();
+            }
+            catch (Exception ex)
+            {
+                dsDongRam = null;
+            }
             comboBox_Ram.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongRamDTO ram in dsDongRam)
-                comboBox_Ram.Items.Add(ram.STenDongRAM);
-            comboBox_Ram.SelectedItem = comboBox_Ram.Items[0];
+            if (dsDongRam != null)
+            {
+                foreach (myChiTietDongRamDTO ram in dsDongRam)
+                    comboBox_Ram.Items.Add(ram.STenDongRAM);
+                comboBox_Ram.SelectedItem = comboBox_Ram.Items[0];
+            }
 
             // Load CPU
             myChiTietDongCPUBUS chiTietDongCPU = new myChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
-            dsDongCPU = chiTietDongCPU.LayChiTietDongCPU();
+            try
+            {
+                dsDongCPU = chiTietDongCPU.LayChiTietDongCPU();
+            }
+            catch (Exception ex)
+            {
+                dsDongCPU = null;
+            }
             comboBox_CPU.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongCPUDTO cpu in dsDongCPU)
-                comboBox_CPU.Items.Add(cpu.STenDongCPU);
-            comboBox_CPU.SelectedItem = comboBox_CPU.Items[0];
+            if (dsDongCPU != null)
+            {
+                foreach (myChiTietDongCPUDTO cpu in dsDongCPU)
+                    comboBox_CPU.Items.Add(cpu.STenDongCPU);
+                comboBox_CPU.SelectedItem = comboBox_CPU.Items[0];
+            }
 
             // Load O Cung
             myChiTietDongOCungBUS chiTietDongOCung = new myChiTietDongOCungBUS();
             List<myChiTietDongOCungDTO> dsDongOCung = new List<myChiTietDongOCungDTO>();
-            dsDongOCung = chiTietDongOCung.LayChiTietDongOCung();
+            try
+            {
+                dsDongOCung = chiTietDongOCung.LayChiTietDongOCung();
+            }
+            catch (Exception ex)
+            {
+                dsDongOCung = null;
+            }
             comboBox_HardDisk.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongOCungDTO ocung in dsDongOCung)
-                comboBox_HardDisk.Items.Add(ocung.STenDongOCung);
-            comboBox_HardDisk.SelectedItem = comboBox_HardDisk.Items[0];
+            if (dsDongOCung != null)
+            {
+                foreach (myChiTietDongOCungDTO ocung in dsDongOCung)
+                {
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_HardDisk.Items.Count; index++)
+                    {
+                        if (string.Compare(comboBox_HardDisk.Items[index].ToString().Trim(), ocung.STenDongOCung.Trim(), true) == 0)
+                        {
+
+                            trace = false;
+                        }
+                    }
+                    if (trace == true)
+                        comboBox_HardDisk.Items.Add(ocung.STenDongOCung);
+                    comboBox_HardDisk.SelectedItem = comboBox_HardDisk.Items[0];
+                }
+            }
 
             // Load Man Hinh
             myChiTietDongManHinhBUS chiTietManHinh = new myChiTietDongManHinhBUS();
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
-            dsManHinh = chiTietManHinh.LayChiTietDongManHinh();
-            comboBox_ManHinh.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongManHinhDTO manhinh in dsManHinh)
+            try
             {
-                comboBox_ManHinh.Items.Add(manhinh.STenDongManHinh);
+                dsManHinh = chiTietManHinh.LayChiTietDongManHinh();
             }
-            comboBox_ManHinh.SelectedItem = comboBox_ManHinh.Items[0];
+            catch (Exception ex)
+            {
+                dsManHinh = null;
+            }
+            comboBox_ManHinh.Items.Add("--Không quan tâm--");
+            if (dsManHinh != null)
+            {
+                foreach (myChiTietDongManHinhDTO manhinh in dsManHinh)
+                    comboBox_ManHinh.Items.Add(manhinh.STenDongManHinh);
+                comboBox_ManHinh.SelectedItem = comboBox_ManHinh.Items[0];
+            }
 
             // Load Card Mang Hinh
             myChiTietDongCardDoHoaBUS chiTietCardDoHoa = new myChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
-            dsCardDoHoa = chiTietCardDoHoa.LayChiTietDongCardDoHoa();
+            try
+            {
+                dsCardDoHoa = chiTietCardDoHoa.LayChiTietDongCardDoHoa();
+            }
+            catch (Exception ex)
+            {
+                dsCardDoHoa = null;
+            }
             comboBox_CardManHinh.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongCardDoHoaDTO carddohoa in dsCardDoHoa)
-                comboBox_CardManHinh.Items.Add(carddohoa.STenDongCardDoHoa);
-            comboBox_CardManHinh.SelectedItem = comboBox_CardManHinh.Items[0];
+            if (dsCardDoHoa != null)
+            {
+                foreach (myChiTietDongCardDoHoaDTO carddohoa in dsCardDoHoa)
+                    comboBox_CardManHinh.Items.Add(carddohoa.STenDongCardDoHoa);
+                comboBox_CardManHinh.SelectedItem = comboBox_CardManHinh.Items[0];
+            }
 
             // Load Dong Loa
             myChiTietDongLoaBUS chiTietDongLoa = new myChiTietDongLoaBUS();
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
-            dsLoa = chiTietDongLoa.LayChiTietDongLoa();
+            try
+            {
+                dsLoa = chiTietDongLoa.LayChiTietDongLoa();
+            }
+            catch (Exception ex)
+            {
+                dsLoa = null;
+            }
             comboBox_Loa.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongLoaDTO loa in dsLoa)
-                comboBox_Loa.Items.Add(loa.STenDongLoa);
-            comboBox_Loa.SelectedItem = comboBox_Loa.Items[0];
+            if (dsLoa != null)
+            {
+                foreach (myChiTietDongLoaDTO loa in dsLoa)
+                    comboBox_Loa.Items.Add(loa.STenDongLoa);
+                comboBox_Loa.SelectedItem = comboBox_Loa.Items[0];
+            }
 
             // Load O Quang
             myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
-            dsDiaQuang = chiTietDongDQ.LayChiTietDongODiaQuang();
+            try
+            {
+                dsDiaQuang = chiTietDongDQ.LayChiTietDongODiaQuang();
+            }
+            catch (Exception ex)
+            {
+                dsDiaQuang = null;
+            }
             comboBox_ODiaQuang.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongODiaQuangDTO diaquang in dsDiaQuang)
-                comboBox_ODiaQuang.Items.Add(diaquang.STenDongODiaQuang);
-            comboBox_ODiaQuang.SelectedItem = comboBox_ODiaQuang.Items[0];
+            if (dsDiaQuang != null)
+            {
+                foreach (myChiTietDongODiaQuangDTO diaquang in dsDiaQuang)
+                {
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_ODiaQuang.Items.Count; index++)
+                    {
+                        if (string.Compare(comboBox_ODiaQuang.Items[index].ToString().Trim(), diaquang.STenDongODiaQuang.Trim(), true) == 0)
+                        {
+
+                            trace = false;
+                        }
+                    }
+                    if (trace == true)
+                        comboBox_ODiaQuang.Items.Add(diaquang.STenDongODiaQuang);
+                }
+                comboBox_ODiaQuang.SelectedItem = comboBox_ODiaQuang.Items[0];
+            }
 
             //Load HDH
             myChiTietHeDieuHanhBUS chiTietHDH = new myChiTietHeDieuHanhBUS();
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
-            dsHDH = chiTietHDH.LayChiTietHeDieuHanh();
+            try
+            {
+                dsHDH = chiTietHDH.LayChiTietHeDieuHanh();
+            }
+            catch (Exception ex)
+            {
+                dsHDH = null;
+            }
             comboBox_HeDieuHanh.Items.Add("--Không quan tâm--");
-            foreach (myChiTietHeDieuHanhDTO hdh in dsHDH)
-                comboBox_HeDieuHanh.Items.Add(hdh.STenHeDieuHanh);
-            comboBox_HeDieuHanh.SelectedItem = comboBox_HeDieuHanh.Items[0];
+            if (dsHDH != null)
+            {
+                foreach (myChiTietHeDieuHanhDTO hdh in dsHDH)
+                    comboBox_HeDieuHanh.Items.Add(hdh.STenHeDieuHanh);
+                comboBox_HeDieuHanh.SelectedItem = comboBox_HeDieuHanh.Items[0];
+            }
 
             //Load Trong Luong
             myChiTietTrongLuongBUS chiTietTL = new myChiTietTrongLuongBUS();
             List<myChiTietTrongLuongDTO> dsTrongLuong = new List<myChiTietTrongLuongDTO>();
-            dsTrongLuong = chiTietTL.LayChiTietTrongLuong();
+            try
+            {
+                dsTrongLuong = chiTietTL.LayChiTietTrongLuong();
+            }
+            catch (Exception ex)
+            {
+                dsTrongLuong = null;
+            }
             comboBox_TrongLuong.Items.Add("--Không quan tâm--");
-            foreach (myChiTietTrongLuongDTO tl in dsTrongLuong)
-                comboBox_TrongLuong.Items.Add(tl.FGiaTriTrongLuong);
-            comboBox_TrongLuong.SelectedItem = comboBox_TrongLuong.Items[0];
+            if (dsTrongLuong != null)
+            {
+                foreach (myChiTietTrongLuongDTO tl in dsTrongLuong)
+                    comboBox_TrongLuong.Items.Add(tl.FGiaTriTrongLuong);
+                comboBox_TrongLuong.SelectedItem = comboBox_TrongLuong.Items[0];
+            }
 
             //Load Ten Dong LapTop & Mau Sac & Thoi Gian Bao Hanh & Gia Ban
-            
+
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
-            dsLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+            try
+            {
+                dsLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+            }
+            catch (Exception ex)
+            {
+                dsLapTop = null;
+            }
             // - Ten Dong LapTop
             Combobox_TenDongLapTop.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
+            if (dsLapTop != null)
             {
-                bool trace = true;
-                for (int index = 0; index < Combobox_TenDongLapTop.Items.Count; index++)
+                foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
-                    if (string.Compare(Combobox_TenDongLapTop.Items[index].ToString().Trim(), laptop.STenChiTietDongLapTop.Trim(), true) == 0)
+                    bool trace = true;
+                    for (int index = 0; index < Combobox_TenDongLapTop.Items.Count; index++)
                     {
+                        if (string.Compare(Combobox_TenDongLapTop.Items[index].ToString().Trim(), laptop.STenChiTietDongLapTop.Trim(), true) == 0)
+                        {
 
-                        trace = false;
+                            trace = false;
+                        }
                     }
+                    if (trace == true)
+                        Combobox_TenDongLapTop.Items.Add(laptop.STenChiTietDongLapTop);
                 }
-                if (trace == true)
-                    Combobox_TenDongLapTop.Items.Add(laptop.STenChiTietDongLapTop);
-            }
-            Combobox_TenDongLapTop.SelectedItem = Combobox_TenDongLapTop.Items[0];
-            // - Mau Sac-
-            comboBox_MauSac.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
-            {
-                bool trace = true;
-                for (int index = 0; index < comboBox_MauSac.Items.Count; index++)
+                Combobox_TenDongLapTop.SelectedItem = Combobox_TenDongLapTop.Items[0];
+
+                // - Mau Sac-
+                comboBox_MauSac.Items.Add("--Không quan tâm--");
+                foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
-                    if (string.Compare(comboBox_MauSac.Items[index].ToString().Trim(), laptop.SMauSac.Trim(), true) == 0)
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_MauSac.Items.Count; index++)
                     {
+                        if (string.Compare(comboBox_MauSac.Items[index].ToString().Trim(), laptop.SMauSac.Trim(), true) == 0)
+                        {
 
-                        trace = false;
+                            trace = false;
+                        }
                     }
+                    if (trace == true)
+                        comboBox_MauSac.Items.Add(laptop.SMauSac);
                 }
-                if (trace == true)
-                    comboBox_MauSac.Items.Add(laptop.SMauSac);
-            }
 
-            comboBox_MauSac.SelectedItem = comboBox_MauSac.Items[0];
-            // - Thoi Gian Bao Hanh
-            comboBox_ThoiGianBaoHanh.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
-            {
-                bool trace = true;
-                for (int index = 0; index < comboBox_ThoiGianBaoHanh.Items.Count; index++)
+                comboBox_MauSac.SelectedItem = comboBox_MauSac.Items[0];
+                // - Thoi Gian Bao Hanh
+                comboBox_ThoiGianBaoHanh.Items.Add("--Không quan tâm--");
+                foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
-                    if (string.Compare(comboBox_ThoiGianBaoHanh.Items[index].ToString().Trim(), laptop.IThoiGianBaoHanh.ToString().Trim(), true) == 0)
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_ThoiGianBaoHanh.Items.Count; index++)
                     {
+                        if (string.Compare(comboBox_ThoiGianBaoHanh.Items[index].ToString().Trim(), laptop.IThoiGianBaoHanh.ToString().Trim(), true) == 0)
+                        {
 
-                        trace = false;
+                            trace = false;
+                        }
                     }
+                    if (trace == true)
+                        comboBox_ThoiGianBaoHanh.Items.Add(laptop.IThoiGianBaoHanh);
                 }
-                if (trace == true)
-                    comboBox_ThoiGianBaoHanh.Items.Add(laptop.IThoiGianBaoHanh);
-            }
-            comboBox_ThoiGianBaoHanh.SelectedItem = comboBox_ThoiGianBaoHanh.Items[0];
-            // - Gia Ban Hien Hanh
-            comboBox_GiaBan.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
-            {
-                bool trace = true;
-                for (int index = 0; index < comboBox_GiaBan.Items.Count; index++)
+                comboBox_ThoiGianBaoHanh.SelectedItem = comboBox_ThoiGianBaoHanh.Items[0];
+                // - Gia Ban Hien Hanh
+                comboBox_GiaBan.Items.Add("--Không quan tâm--");
+                foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
-                    if (string.Compare(comboBox_GiaBan.Items[index].ToString().Trim(), laptop.FGiaBanHienHanh.ToString().Trim(), true) == 0)
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_GiaBan.Items.Count; index++)
                     {
+                        if (string.Compare(comboBox_GiaBan.Items[index].ToString().Trim(), laptop.FGiaBanHienHanh.ToString().Trim(), true) == 0)
+                        {
 
-                        trace = false;
+                            trace = false;
+                        }
                     }
+                    if (trace == true)
+                        comboBox_GiaBan.Items.Add(laptop.FGiaBanHienHanh + " triệu đồng");
                 }
-                if (trace == true)
-                    comboBox_GiaBan.Items.Add(laptop.FGiaBanHienHanh + " triệu đồng");
+                comboBox_GiaBan.SelectedItem = comboBox_GiaBan.Items[0];
             }
-            comboBox_GiaBan.SelectedItem = comboBox_GiaBan.Items[0];
-
             //Load Card Mạng
             myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
-            dsCardMang = chiTietCardMang.LayChiTietDongCardMang();
-            comboBox_CardMang.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongCardMangDTO cardmang in dsCardMang)
+            try
             {
-                comboBox_CardMang.Items.Add(cardmang.STenDongCardMang);
+                dsCardMang = chiTietCardMang.LayChiTietDongCardMang();
             }
-            comboBox_CardMang.SelectedItem = comboBox_CardMang.Items[0];
+            catch (Exception ex)
+            {
+                dsCardMang = null;
+            }
+            comboBox_CardMang.Items.Add("--Không quan tâm--");
+            if (dsCardMang != null)
+            {
+                foreach (myChiTietDongCardMangDTO cardmang in dsCardMang)
+                {
+                    comboBox_CardMang.Items.Add(cardmang.STenDongCardMang);
+                }
+                comboBox_CardMang.SelectedItem = comboBox_CardMang.Items[0];
+            }
 
             //Load CardReader
             myChiTietDongCardReaderBUS chiTietCardReader = new myChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
-            dsCardReader = chiTietCardReader.LayChiTietDongCardReader();
+            try
+            {
+                dsCardReader = chiTietCardReader.LayChiTietDongCardReader();
+            }
+            catch (Exception ex)
+            {
+                dsCardReader = null;
+            }
             comboBox_CardReader.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongCardReaderDTO cardreader in dsCardReader)
-                comboBox_CardReader.Items.Add(cardreader.STenDongCardReader);
-            comboBox_CardReader.SelectedItem = comboBox_CardReader.Items[0];
+            if (dsCardReader != null)
+            {
+                foreach (myChiTietDongCardReaderDTO cardreader in dsCardReader)
+                    comboBox_CardReader.Items.Add(cardreader.STenDongCardReader);
+                comboBox_CardReader.SelectedItem = comboBox_CardReader.Items[0];
+            }
 
             //Load WebCam
             myChiTietDongWebcamBUS chiTietWebCam = new myChiTietDongWebcamBUS();
             List<myChiTietDongWebcamDTO> dsWebcam = new List<myChiTietDongWebcamDTO>();
-            dsWebcam = chiTietWebCam.LayChiTietDongWebcam();
+            try
+            {
+                dsWebcam = chiTietWebCam.LayChiTietDongWebcam();
+            }
+            catch (Exception ex)
+            {
+                dsWebcam = null;
+            }
             comboBox_Webcam.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongWebcamDTO webcam in dsWebcam)
-                comboBox_Webcam.Items.Add(webcam.STenDongWebCam);
-            comboBox_Webcam.SelectedItem = comboBox_Webcam.Items[0];
+            if (dsWebcam != null)
+            {
+                foreach (myChiTietDongWebcamDTO webcam in dsWebcam)
+                    comboBox_Webcam.Items.Add(webcam.STenDongWebCam);
+                comboBox_Webcam.SelectedItem = comboBox_Webcam.Items[0];
+            }
 
             //Load Pin
             myChiTietDongPinBUS chiTietPin = new myChiTietDongPinBUS();
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
-            dsPin = chiTietPin.LayChiTietDongPin();
+            try
+            {
+                dsPin = chiTietPin.LayChiTietDongPin();
+            }
+            catch (Exception ex)
+            {
+                dsPin = null;
+            }
+
             comboBox_Pin.Items.Add("--Không quan tâm--");
-            foreach (myChiTietDongPinDTO pin in dsPin)
-                comboBox_Pin.Items.Add(pin.FTenDongPin);
-            comboBox_Pin.SelectedItem = comboBox_Pin.Items[0];
+            if (dsPin != null)
+            {
+                foreach (myChiTietDongPinDTO pin in dsPin)
+                {
+                    bool trace = true;
+                    for (int index = 0; index < comboBox_Pin.Items.Count; index++)
+                    {
+                        if (string.Compare(comboBox_Pin.Items[index].ToString().Trim(), pin.FTenDongPin.Trim(), true) == 0)
+                        {
+
+                            trace = false;
+                        }
+                    }
+                    if (trace == true)
+                        comboBox_Pin.Items.Add(pin.FTenDongPin);
+                }
+
+                comboBox_Pin.SelectedItem = comboBox_Pin.Items[0];
+            }
 
             //Load Kha Nang Nhan Dang Van Tay
             comboBox_NhanDangVanTay.Items.Add("--Không quan tâm--");
@@ -245,17 +426,38 @@ namespace TUVANLAPTOP
             // Load Nha SX
             myNhaSanXuatBUS nhaSX = new myNhaSanXuatBUS();
             List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
-            dsNhaSX = nhaSX.LayNhaSanXuat();
-            comboBox_NhaSanXuat.Items.Add("--Không quan tâm--");
-            foreach (myNhaSanXuatDTO nhasx in dsNhaSX)
+            try
             {
-                comboBox_NhaSanXuat.Items.Add(nhasx.STenNhaSanXuat);
+                dsNhaSX = nhaSX.LayNhaSanXuat();
             }
-            comboBox_NhaSanXuat.SelectedItem = comboBox_NhaSanXuat.Items[0];
+            catch (Exception ex)
+            {
+                dsNhaSX = null;
+            }
+            comboBox_NhaSanXuat.Items.Add("--Không quan tâm--");
+            if (dsNhaSX != null)
+            {
+                foreach (myNhaSanXuatDTO nhasx in dsNhaSX)
+                {
+                    comboBox_NhaSanXuat.Items.Add(nhasx.STenNhaSanXuat);
+                }
+                comboBox_NhaSanXuat.SelectedItem = comboBox_NhaSanXuat.Items[0];
+            }
+        }
 
+        /// <summary>
+        /// Xóa 1  số dòng Laptop trùng nhau trong danh sách kết quả tra cứu
+        /// </summary>
+        /// <param name="?"></param>
+        private void RutGonDanhSach(List<myChiTietDongLaptopDTO> dsDongLapTop)
+        {
+            for (int i = 0; i < dsDongLapTop.Count - 1; i++)
+                for (int j = i + 1; j < dsDongLapTop.Count; j++)
+                    if (string.Compare(dsDongLapTop[i].STenChiTietDongLapTop, dsDongLapTop[j].STenChiTietDongLapTop, true) == 0)
+                        dsDongLapTop.RemoveAt(j);
         }
         /// <summary>
-        /// Xu ly tra cuu thong tin cua laptop theo yeu cau
+        /// Xử lý việc tra cứu sản phẩm từ CSDL lên DataGridView
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -265,7 +467,7 @@ namespace TUVANLAPTOP
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             InfoComboboxOfFormTraCuu Infocombobox = new InfoComboboxOfFormTraCuu();
 
-            //thong tin combobox 
+            // Kiểm tra thông tin các combobox
             #region Info Combobox
             if (string.Compare(Combobox_TenDongLapTop.Text, "--Không quan tâm--") != 0)
             {
@@ -352,7 +554,6 @@ namespace TUVANLAPTOP
                 Infocombobox.IThoigianBH = int.Parse(comboBox_ThoiGianBaoHanh.Text);
             }
             #endregion
-
             if (string.Compare(Infocombobox.STendongLapTop, null) == 0 && string.Compare(Infocombobox.SRam, null) == 0 &&
                 string.Compare(Infocombobox.SCPU, null) == 0 && string.Compare(Infocombobox.SOCung, null) == 0 &&
                 string.Compare(Infocombobox.SManHinh, null) == 0 && string.Compare(Infocombobox.SCardManHinh, null) == 0 &&
@@ -371,20 +572,28 @@ namespace TUVANLAPTOP
 
             dsLapTop = ChiTietDongLapTop.TraCuu(Infocombobox);
             gridTraCuu.Rows.Clear();
+            if (dsLapTop == null || dsLapTop.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy thông tin tra cứu !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            RutGonDanhSach(dsLapTop);
             for (int i = 0; i < dsLapTop.Count; i++)
             {
                 #region DataGridview Tra Cứu
-                gridTraCuu.Rows.Add(dsLapTop[i].STenChiTietDongLapTop, dsLapTop[i].ChiTietDongRam.STenDongRAM, dsLapTop[i].ChiTietDongCPU.STenDongCPU,dsLapTop[i].ChiTietDongOCung.STenDongOCung,
+                gridTraCuu.Rows.Add(dsLapTop[i].STenChiTietDongLapTop, dsLapTop[i].ChiTietDongRam.STenDongRAM, dsLapTop[i].ChiTietDongCPU.STenDongCPU, dsLapTop[i].ChiTietDongOCung.STenDongOCung,
                                     dsLapTop[i].ChiTietDongManHinh.STenDongManHinh, dsLapTop[i].ChiTietDongCacDoHoa.STenDongCardDoHoa,
-                                    dsLapTop[i].ChiTietDongLoa.STenDongLoa, dsLapTop[i].ChiTietDongODiaQuang.STenDongODiaQuang,dsLapTop[i].ChiTietHeDieuHanh.STenHeDieuHanh, dsLapTop[i].ChiTietTrongLuong.FGiaTriTrongLuong ,
+                                    dsLapTop[i].ChiTietDongLoa.STenDongLoa, dsLapTop[i].ChiTietDongODiaQuang.STenDongODiaQuang, dsLapTop[i].ChiTietHeDieuHanh.STenHeDieuHanh, dsLapTop[i].ChiTietTrongLuong.FGiaTriTrongLuong,
                                     dsLapTop[i].SMauSac, dsLapTop[i].ChiTietDongCardMang.STenDongCardMang,
                                     dsLapTop[i].ChiTietDongCardReader.STenDongCardReader, dsLapTop[i].ChiTietDongWebCam.STenDongWebCam,
                                     dsLapTop[i].ChiTietDongPin.FThoiGianSuDung, Convert.ToBoolean(dsLapTop[i].BFingerprintReader), Convert.ToBoolean(dsLapTop[i].BHDMI),
                                     dsLapTop[i].ISoLuongCongUSB, dsLapTop[i].NhaSanXuat.STenNhaSanXuat,
-                                    dsLapTop[i].DanhGia.ISoNguoiDanhGia, dsLapTop[i].FGiaBanHienHanh,dsLapTop[i].IThoiGianBaoHanh);
+                                    dsLapTop[i].FGiaBanHienHanh, dsLapTop[i].IThoiGianBaoHanh, dsLapTop[i].DanhGia.ITongDiem);
                 #endregion
             }
 
         }
+
     }
 }
