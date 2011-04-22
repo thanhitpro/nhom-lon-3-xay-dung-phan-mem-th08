@@ -136,3 +136,13 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\EStoreDAO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\ESTORE.mdf
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\ESTORE_log.ldf
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\EStoreDAO.dll.config
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\EStoreDAO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\EStoreDAO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\EStoreDTO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\bin\Release\EStoreDTO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\EStoreDAO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDAO\obj\Release\EStoreDAO.pdb

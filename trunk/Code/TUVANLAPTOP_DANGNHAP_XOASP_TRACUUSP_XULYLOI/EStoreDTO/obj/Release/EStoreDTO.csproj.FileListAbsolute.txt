@@ -68,3 +68,8 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\bin\Release\EStoreDTO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\bin\Release\EStoreDTO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.pdb
