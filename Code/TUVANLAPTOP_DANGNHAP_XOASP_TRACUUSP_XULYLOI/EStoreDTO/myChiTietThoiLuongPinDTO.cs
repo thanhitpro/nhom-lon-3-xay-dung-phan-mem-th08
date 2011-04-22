@@ -15,7 +15,7 @@ namespace EStoreDTO
         }
 
         float m_fHeSo;
-
+        //
         public float FHeSo
         {
             get { return m_fHeSo; }

@@ -151,3 +151,14 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDTO.pdb
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDAO.pdb
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\ESTORE.mdf
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\ESTORE_log.ldf
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreBUS.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreBUS.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDAO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDTO.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDTO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\bin\Release\EStoreDAO.pdb
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.dll
+E:\CNTT\SVN\ThungChua_XDPM_3\nhom-lon-3-xay-dung-phan-mem-th08\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.pdb
