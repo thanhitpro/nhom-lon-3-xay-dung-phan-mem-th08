@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EStoreDAO.DataClasses1DataContext" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OZaWZIhQghyg7eSu44ALUk3PEDbKoriGav6TAxJOfh4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.BANGDIEM_KHOANGTANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZJAgHaBXgYSAGFSA4AUCQiABiCFmaIQMAMIYxQKB0Ak=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETBONHOCARDDOHOA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAVAAAAAABIUCMAAQABiCIAQIAgAAAAAAKACAg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETBONHORAM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIgCSABAAAAAARAUCEAAAABiCIAgAAIAgAgAAEEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETCACKHANANGODIAQUANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgEAABAEAAIABAUCEAAoABiCICIAAAABAAAAgAgAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETCONGNGHECARDREADER" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgAAADAAQGGABAVCEAAAAFiCoAAAAAAAEAAAAACAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETCONGNGHECPU" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgMAABgAAAAABAUCEAAAABiCIEAAAAAEQUAAICgAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETCONGNGHERAM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgCSANAIAAAERAUCMAAAABiCIAAIAAABAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGCARDDOHOA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBgADAABgAAWJQSEDAAAhiCAAAAEAAAYQAAIACgo=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGCARDMANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBgADQBJAAIShQSEDAEABiCAAIAECAJIAAAQAAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGCARDREADER" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgBhADABBEAASBQQkDAAAFiCKAIMECAAMAAAAACgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGCPU" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAgNgADgABAAASBQQEDAAABjCABAAEAAAIEAFIgAiY=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGLAPTOP" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4LMpIrFdcFnCALEpaX/aMLBpyDVLFOGAUlgWwexRFrY=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGLOA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wIAiBhArQABAAASBQQEDAAABmCAAAAEAAAMAgCAAAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGMANHINH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwBoBDAABAAISBQQEDGCAJmCAAAAEAAAIQBAIAAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGOCUNG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwBgATAIBgAASBQTMDAQABiSASBRkAAAIAEAAAAgY=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGODIAQUANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgJgIDAERAAASBSQNDAJABiCIAIAEAAAIEEAAAAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGPIN" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBgIHQEBgAgCBQSUDCAABiCQECAiQAAIAAAABAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGRAM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhJiAXAABgAEShQQELAAAViCAAgIEAAhIhCAAAQgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDONGWEBCAM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgBwwDAABICESBQQEDAMALiCAAAAMBQRICAAAEAgI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETDUNGLUONGOCUNG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAABAIAAAABAUCEACAABiCIAAQAAAIAEUAACEAQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETHEDIEUHANH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAhEKABgAAAAEBAUCEAAAABqCIAAAAAAEAgAgAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETKICHTHUOCMANHINH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoAAABABAAAABAUCEAAAABmCIAAAAQAAAIBAIAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETLOAIDANHGIA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABECIAAAFAUCEAAAEFiCILBAAAAEAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETLOAIDOPHANGIAIWEBCAM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAgAAQBAAAAAEBAcCEAAAAHiCIAIAAMAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETLOAIKETNOICARDMANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAABFAAIAABBgUCEAAAADiCJAAAADABAAgAAAAAg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETLOAITRONGLUONG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgBKABABCAAABCUCUAAAABqCYAmAAAAAAAAAAQBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETTHOILUONGPIN" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgIAIBAAEAAABAUCEAAABBiGYECAAAAAAAAAAAAEQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETTRONGLUONG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgBoADAAACAASCQAEBAAABqCSAEAFAAAIAACAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.CHITIETVONGQUAYOCUNG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIA0AAABAIAAgABBUCEAAQABiCIABAAAAIAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.DANHGIA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgBgBDQAABAASAQAEBABIBimEIAAEAAAIAAAgAAAI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.DOTUOI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEBBAgAABAIQAEIAACBiDAAAAAAAAQAAAACAgA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.GIAODICH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAQABYUAAQAQAQwEAAAABiCGAAAgBCIIAAAAAECA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.HEDIEUHANH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQA0BgADAABAAAWBQQEDAAABqCAAAAEAAEIAAgABAoI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.KHACHHANG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASEgAgAhADhAQEJoQEE4QBAJjCMAAQABQIACAEBAAgQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.MUCDICHSUDUNG" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AWAgAAABBCAQCAAAQAEAAACBjjAAAAAAAAQAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.NGHENGHIEP" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAQABBAAAgAIAQAEAAACBiDIAAAAABAQAAABAAAQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.NHASANXUAT" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IpAgG4BXkIVAGFQAYQEDAgBBiKBGYIAMQMIchAKA0EM=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.TINHTHANH" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAABBBAAAEAAQEEIAAiBiDAAAEAAAAQAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EStoreDAO.myBangDiemKhoangTangDAO" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myBangDiemKhoangTangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietBoNhoCardDoHoaDAO" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietBoNhoCardDoHoaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietBoNhoRamDAO" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietBoNhoRamDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietCacKhaNangODiaQuangDAO" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietCacKhaNangODiaQuangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietCongNgheCardReaderDAO" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietCongNgheCardReaderDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietCongNgheCPUDAO" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietCongNgheCPUDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietCongNgheRamDAO" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>myChiTietCongNgheRamDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongCardDoHoaDAO" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongCardDoHoaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongCardMangDAO" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongCardMangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongCardReaderDAO" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongCardReaderDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongCPUDAO" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongCPUDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongLaptopDAO" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongLaptopDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongLoaDAO" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>myChiTietDongLoaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongManHinhDAO" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongManHinhDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongOCungDAO" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>myChiTietDongOCungDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongODiaQuangDAO" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongODiaQuangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongPinDAO" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongPinDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongRamDAO" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongRamDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDongWebcamDAO" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietDongWebcamDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietDungLuongOCungDAO" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>myChiTietDungLuongOCungDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietHeDieuHanhDAO" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>myChiTietHeDieuHanhDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietKichThuocManHinhDAO" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietKichThuocManHinhDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietLoaiDanhGiaDAO" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietLoaiDanhGiaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietLoaiDoPhanGiaiWebcamDAO" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietLoaiDoPhanGiaiWebcamDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietLoaiKetNoiCardMangDAO" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>myChiTietLoaiKetNoiCardMangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietLoaiTrongLuongDAO" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietLoaiTrongLuongDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietThoiLuongPinDAO" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietThoiLuongPinDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietTrongLuongDAO" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietTrongLuongDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myChiTietVongQuayOCungDAO" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myChiTietVongQuayOCungDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myDanhGiaDAO" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myDanhGiaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myDoTuoiDAO" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myDoTuoiDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myGiaoDichDAO" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAI=</HashCode>
+      <FileName>myGiaoDichDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myHeDieuHanhDAO" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myHeDieuHanhDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myKhachHangDAO" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myKhachHangDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myMucDichSuDungDAO" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>myMucDichSuDungDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myNgheNghiepDAO" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>myNgheNghiepDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myNhaSanXuatDAO" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>myNhaSanXuatDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.myTinhThanhDAO" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>myTinhThanhDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EStoreDAO.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAYAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
