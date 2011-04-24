@@ -73,8 +73,16 @@ C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\E
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.dll
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreDTO\obj\Release\EStoreDTO.pdb
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.pdb
+=======
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\bin\Release\EStoreDTO.dll
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\bin\Release\EStoreDTO.pdb
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.dll
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.pdb
+>>>>>>> .r253

@@ -162,6 +162,19 @@ C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\E
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.dll
 C:\Users\admin\Desktop\TUVANLAPTOP\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI\EStoreBUS\obj\Release\EStoreBUS.pdb
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\ESTORE.mdf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\EStoreBUS.pdb
+=======
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\ESTORE.mdf
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\ESTORE_log.ldf
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\bin\Release\EStoreBUS.dll
@@ -173,3 +186,4 @@ C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStore
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\EStoreBUS.dll
 C:\Users\nmchuong\Desktop\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreBUS\obj\Release\EStoreBUS.pdb
+>>>>>>> .r253

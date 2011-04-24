@@ -57,6 +57,24 @@ namespace EStoreBUS
         /// <param name="_iMaDongLaptop">Mã laptop</param>
         /// <param name="_iMucGia">Mức giá</param>
         /// <returns>true hay false</returns>
+
+        public static bool KiemTraSanPhamTonTai(int _iMaDongLaptop)
+        {
+            try
+            {
+                myChiTietDongLaptopDTO chiTietDongLt = LayChiTietDongLaptop(_iMaDongLaptop);
+                if (chiTietDongLt.BDeleted)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return false;
+        }
+        
         public static bool KiemTraGiaTienHopLe(int _iMaDongLaptop, int _iMucGia)
         {
             try
