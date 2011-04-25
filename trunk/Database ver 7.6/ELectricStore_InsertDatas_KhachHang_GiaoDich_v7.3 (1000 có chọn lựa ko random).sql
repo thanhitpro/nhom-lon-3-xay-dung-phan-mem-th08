@@ -1529,7 +1529,7 @@ insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 502,23,'03/05/2
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 503,22,'03/05/2011')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 504,20,'03/05/2011')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 505,20,'03/05/2011')
-insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 506,34,'03/05/2011')
+insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 506,24,'03/05/2011')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 507,24,'03/05/2011')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 508,25,'03/05/2011')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values ( 509,25,'03/05/2011')
