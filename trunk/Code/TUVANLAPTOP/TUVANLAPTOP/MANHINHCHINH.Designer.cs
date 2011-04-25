@@ -53,7 +53,6 @@
             this.PanelTitle_NhapThongTinKH = new System.Windows.Forms.Panel();
             this.label_Title_NhapTrongTin = new System.Windows.Forms.Label();
             this.GroupPanel_ChucNang = new System.Windows.Forms.GroupBox();
-            this.button_CapNhatCSDL = new System.Windows.Forms.Button();
             this.button_TuVan = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.GroupPanelChinh.SuspendLayout();
@@ -124,7 +123,7 @@
             this.ThemMoiSanPhamItem.Image = global::TUVANLAPTOP.Properties.Resources.ThemSP;
             this.ThemMoiSanPhamItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ThemMoiSanPhamItem.Name = "ThemMoiSanPhamItem";
-            this.ThemMoiSanPhamItem.Size = new System.Drawing.Size(421, 72);
+            this.ThemMoiSanPhamItem.Size = new System.Drawing.Size(200, 72);
             this.ThemMoiSanPhamItem.Text = "Thêm Mới Sản Phẩm";
             this.ThemMoiSanPhamItem.Click += new System.EventHandler(this.ThemMoiSanPhamItem_Click);
             // 
@@ -333,7 +332,6 @@
             // GroupPanel_ChucNang
             // 
             this.GroupPanel_ChucNang.BackColor = System.Drawing.Color.Silver;
-            this.GroupPanel_ChucNang.Controls.Add(this.button_CapNhatCSDL);
             this.GroupPanel_ChucNang.Controls.Add(this.button_TuVan);
             this.GroupPanel_ChucNang.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupPanel_ChucNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -344,23 +342,12 @@
             this.GroupPanel_ChucNang.TabStop = false;
             this.GroupPanel_ChucNang.Text = "Chức Năng";
             // 
-            // button_CapNhatCSDL
-            // 
-            this.button_CapNhatCSDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_CapNhatCSDL.Location = new System.Drawing.Point(525, 38);
-            this.button_CapNhatCSDL.Name = "button_CapNhatCSDL";
-            this.button_CapNhatCSDL.Size = new System.Drawing.Size(170, 54);
-            this.button_CapNhatCSDL.TabIndex = 0;
-            this.button_CapNhatCSDL.Text = "Cập Nhật CSDL";
-            this.button_CapNhatCSDL.UseVisualStyleBackColor = true;
-            this.button_CapNhatCSDL.Click += new System.EventHandler(this.button_CapNhatCSDL_Click);
-            // 
             // button_TuVan
             // 
             this.button_TuVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_TuVan.Location = new System.Drawing.Point(236, 38);
+            this.button_TuVan.Location = new System.Drawing.Point(323, 37);
             this.button_TuVan.Name = "button_TuVan";
-            this.button_TuVan.Size = new System.Drawing.Size(169, 54);
+            this.button_TuVan.Size = new System.Drawing.Size(251, 54);
             this.button_TuVan.TabIndex = 0;
             this.button_TuVan.Text = "Tư Vấn Laptop Phù Hợp";
             this.button_TuVan.UseVisualStyleBackColor = true;
@@ -417,7 +404,6 @@
         private System.Windows.Forms.Panel PanelTitle_NhapThongTinKH;
         private System.Windows.Forms.Label label_Title_NhapTrongTin;
         private System.Windows.Forms.GroupBox GroupPanel_ChucNang;
-        private System.Windows.Forms.Button button_CapNhatCSDL;
         private System.Windows.Forms.Button button_TuVan;
         private System.Windows.Forms.ToolStripMenuItem XoaSanPhamItem;
         private System.Windows.Forms.ToolStripMenuItem TraCuuSanPhamItem;
