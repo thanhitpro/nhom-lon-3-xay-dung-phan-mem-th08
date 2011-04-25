@@ -259,11 +259,6 @@ namespace TUVANLAPTOP
             comboBoxMucGia.SelectedIndex = 0;
         }
 
-        private void button_CapNhatCSDL_Click(object sender, EventArgs e)
-        {
-            AlgorithmNavasBayes.AnalyseData();
-        }
-
         private void XoaSanPhamItem_Click(object sender, EventArgs e)
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 0;

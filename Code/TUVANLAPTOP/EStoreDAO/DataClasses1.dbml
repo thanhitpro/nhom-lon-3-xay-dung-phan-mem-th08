@@ -1,13 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHIT08;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString10" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.TINHTHANH" Member="TINHTHANHs">
-    <Type Name="TINHTHANH">
-      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenTinhThanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Association Name="TINHTHANH_KHACHHANG" Member="KHACHHANGs" OtherKey="MaTinhThanh" Type="KHACHHANG" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=QUOCNHAT-PC\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString8" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -27,6 +20,13 @@
       <Association Name="BANGDIEM_KHOANGTANG_CHITIETTRONGLUONG" Member="CHITIETTRONGLUONGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETTRONGLUONG" />
       <Association Name="BANGDIEM_KHOANGTANG_DANHGIA" Member="DANHGIAs" OtherKey="MaBangDiem_KhoangTang" Type="DANHGIA" />
       <Association Name="BANGDIEM_KHOANGTANG_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaBangDiem_KhoangTang" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TINHTHANH" Member="TINHTHANHs">
+    <Type Name="TINHTHANH">
+      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTinhThanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="TINHTHANH_KHACHHANG" Member="KHACHHANGs" OtherKey="MaTinhThanh" Type="KHACHHANG" />
     </Type>
   </Table>
   <Table Name="dbo.CHITIETBONHOCARDDOHOA" Member="CHITIETBONHOCARDDOHOAs">
