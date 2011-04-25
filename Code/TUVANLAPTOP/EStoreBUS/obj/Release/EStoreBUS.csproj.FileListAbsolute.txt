@@ -42,3 +42,14 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb

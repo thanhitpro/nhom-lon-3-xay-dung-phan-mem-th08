@@ -10,14 +10,6 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=THANHNGUYENDANG\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True</Value>
     </Setting>
-    <Setting Name="ESTOREConnectionString1" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=THANHNGUYENDANG\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=THANHNGUYENDANG\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True</Value>
-    </Setting>
     <Setting Name="ESTOREConnectionString2" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -105,6 +97,22 @@
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=ANHTUAN-PC;Initial Catalog=ESTORE;Persist Security Info=True;User ID=sa;Password=12345</Value>
+    </Setting>
+    <Setting Name="ESTOREConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=N43JF-VX041\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=N43JF-VX041\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="ESTOREConnectionString13" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=THANHIT08\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=THANHIT08\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

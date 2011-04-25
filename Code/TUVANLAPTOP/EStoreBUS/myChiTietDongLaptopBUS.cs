@@ -86,21 +86,21 @@ namespace EStoreBUS
                     switch (_iMucGia)
                     {
                         case 0:
-                            return (giaLaptop < 8.0);
+                            return (giaLaptop < 8000.0);
                         case 1:
-                            return (giaLaptop >= 8.0 && giaLaptop < 10.0);
+                            return (giaLaptop >= 8000.0 && giaLaptop < 10000.0);
                         case 2:
-                            return (giaLaptop >= 10.0 && giaLaptop < 12.0);
+                            return (giaLaptop >= 10000.0 && giaLaptop < 12000.0);
                         case 3:
-                            return (giaLaptop >= 12.0 && giaLaptop < 14.0);
+                            return (giaLaptop >= 12000.0 && giaLaptop < 14000.0);
                         case 4:
-                            return (giaLaptop >= 14.0 && giaLaptop < 16.0);
+                            return (giaLaptop >= 14000.0 && giaLaptop < 16000.0);
                         case 5:
-                            return (giaLaptop >= 16.0 && giaLaptop < 22.0);
+                            return (giaLaptop >= 16000.0 && giaLaptop < 22000.0);
                         case 6:
-                            return (giaLaptop >= 22.0 && giaLaptop < 26.0);
+                            return (giaLaptop >= 22000.0 && giaLaptop < 26000.0);
                         case 7:
-                            return (giaLaptop >= 26.0);
+                            return (giaLaptop >= 26000.0);
                         default:
                             return false;
                     }

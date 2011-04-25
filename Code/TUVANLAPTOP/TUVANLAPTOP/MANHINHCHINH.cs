@@ -128,8 +128,13 @@ namespace TUVANLAPTOP
                 myStruct.id = i;
                 try
                 {
-                    if (myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(myStruct.id + 1, comboBoxMucGia.SelectedIndex) == true && myChiTietDongLaptopBUS.KiemTraSanPhamTonTai(myStruct.id + 1) == false)
-                        KetQua.Add(myStruct);
+                    bool a = myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(myStruct.id + 1, comboBoxMucGia.SelectedIndex);
+                    if (a == true)
+                        if (myChiTietDongLaptopBUS.KiemTraSanPhamTonTai(myStruct.id + 1) == false)
+                        {
+                            KetQua.Add(myStruct);
+                        }
+                        
                 }
                 catch (System.Data.SqlClient.SqlException ex)
                 {
