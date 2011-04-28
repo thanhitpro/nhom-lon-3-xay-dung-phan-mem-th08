@@ -98,6 +98,12 @@
     <Compile Include="SANPHAMMOI.Designer.cs">
       <DependentUpon>SANPHAMMOI.cs</DependentUpon>
     </Compile>
+    <Compile Include="THAYDOITHONGTINSANPHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THAYDOITHONGTINSANPHAM.Designer.cs">
+      <DependentUpon>THAYDOITHONGTINSANPHAM.cs</DependentUpon>
+    </Compile>
     <Compile Include="THEMSANPHAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="THAYDOITHONGTINSANPHAM.resx">
+      <DependentUpon>THAYDOITHONGTINSANPHAM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="THEMSANPHAM.resx">
       <DependentUpon>THEMSANPHAM.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -316,6 +326,8 @@
     <None Include="Resources\Delete.png" />
     <None Include="Resources\TraCuu.png" />
     <None Include="Resources\New.jpg" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\question.png" />
     <Content Include="Resources\ThemSP.png" />
     <Content Include="ResultAnalyseData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

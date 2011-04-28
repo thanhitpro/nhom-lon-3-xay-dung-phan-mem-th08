@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã của một dòng ổ cứng dựa vào tên ổ cứng
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongOCung(string m_tenOCung)
+        {
+            try
+            {
+                return myChiTietDongOCungDAO.LayMaDongOCung(m_tenOCung);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

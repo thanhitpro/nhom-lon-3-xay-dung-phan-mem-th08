@@ -53,3 +53,25 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Rel
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\ESTORE.mdf
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\ESTORE_log.ldf
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreBUS.dll
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreBUS.pdb
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreDAO.dll
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreDTO.dll
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreDTO.pdb
+E:\Documents\Document\Source Code\EStoreBUS\bin\Release\EStoreDAO.pdb
+E:\Documents\Document\Source Code\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+E:\Documents\Document\Source Code\EStoreBUS\obj\Release\EStoreBUS.dll
+E:\Documents\Document\Source Code\EStoreBUS\obj\Release\EStoreBUS.pdb

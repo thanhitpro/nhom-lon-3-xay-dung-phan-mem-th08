@@ -34,5 +34,20 @@ namespace EStoreBUS
             }
             return list;
         }
+        /// <summary>
+        /// Lấy mã dòng Ram dựa vào tên dòng Ram
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongRam(string m_tenRam)
+        {
+            try
+            {
+                return myChiTietDongRamDAO.LayMaDongRam(m_tenRam);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

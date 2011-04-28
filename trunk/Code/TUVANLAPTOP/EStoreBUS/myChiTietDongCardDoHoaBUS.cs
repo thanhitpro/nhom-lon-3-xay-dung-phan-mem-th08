@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã dòng card đồ họa dựa vào tên card đồ họa
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongCardDoHoa(string m_tenCardDoHoa)
+        {
+            try
+            {
+                return myChiTietDongCardDoHoaDAO.LayMaDongCardDoHoa(m_tenCardDoHoa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

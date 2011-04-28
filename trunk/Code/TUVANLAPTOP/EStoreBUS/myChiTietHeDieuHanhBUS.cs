@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã hệ điều hành dựa vào tên hệ điều hành
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietHeDieuHanh(string m_tenHDH)
+        {
+            try
+            {
+                return myChiTietHeDieuHanhDAO.LayMaDongHeDieuHanh(m_tenHDH);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

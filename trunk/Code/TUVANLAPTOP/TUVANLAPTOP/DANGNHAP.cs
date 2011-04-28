@@ -41,6 +41,11 @@ namespace TUVANLAPTOP
                     THEMSANPHAM frm = new THEMSANPHAM();
                     frm.ShowDialog();
                 }
+                if (2 == MANHINHCHINH.m_iStaticFormDuocChon)
+                {
+                    THAYDOI_THONGTINSANPHAM frm = new THAYDOI_THONGTINSANPHAM();
+                    frm.ShowDialog();
+                }
             }
             else
                 MessageBox.Show("Username hay Password không chính xác \n Vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);

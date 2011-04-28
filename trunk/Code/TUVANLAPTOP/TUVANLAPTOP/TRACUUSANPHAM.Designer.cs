@@ -792,7 +792,7 @@
             this.groupBox_ThaoTac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox_ThaoTac.Location = new System.Drawing.Point(0, 703);
             this.groupBox_ThaoTac.Name = "groupBox_ThaoTac";
-            this.groupBox_ThaoTac.Size = new System.Drawing.Size(1060, 43);
+            this.groupBox_ThaoTac.Size = new System.Drawing.Size(1060, 39);
             this.groupBox_ThaoTac.TabIndex = 8;
             this.groupBox_ThaoTac.TabStop = false;
             // 
@@ -814,7 +814,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 746);
+            this.ClientSize = new System.Drawing.Size(1060, 742);
             this.Controls.Add(this.groupBox_ThaoTac);
             this.Controls.Add(this.groupBox_ThongTinSanPham);
             this.Controls.Add(this.groupBox_DanhSachSanPham);

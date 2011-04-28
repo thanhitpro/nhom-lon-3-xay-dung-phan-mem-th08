@@ -140,11 +140,30 @@ namespace EStoreBUS
             return myChiTietDongLaptopDAO.LayChiTietDongLaptopMoiNhat(dongLaptop);
         }
 
+        /// <summary>
+        /// Thêm dòng Laptop mới
+        /// </summary>
+        /// <param name="dongLaptopMoi">Thông tin dòng Laptop mới</param>
         static public void ThemMoiChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
         {
             try
             {
                 myChiTietDongLaptopDAO.ThemMoiChiTietDongLaptop(dongLaptopMoi);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Cập nhật thông tin một dòng laptop
+        /// </summary>
+        /// <param name="dongLaptopMoi">Thông tin dòng Laptop cần cập nhật</param>
+        static public void CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        {
+            try
+            {
+                myChiTietDongLaptopDAO.CapNhatChiTietDongLaptop(dongLaptopMoi);
             }
             catch (Exception ex)
             {

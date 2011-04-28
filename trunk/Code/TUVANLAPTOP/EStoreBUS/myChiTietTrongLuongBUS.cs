@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã của một loại trọng lượng dựa vào giá trị trọng lượng đó
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietTrongLuong(string m_giaTriTL)
+        {
+            try
+            {
+                return myChiTietTrongLuongDAO.LayMaChiTietTrongLuong(float.Parse(m_giaTriTL));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

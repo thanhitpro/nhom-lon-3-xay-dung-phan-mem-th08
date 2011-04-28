@@ -283,5 +283,13 @@ namespace TUVANLAPTOP
             DANGNHAP frm = new DANGNHAP();
                 frm.ShowDialog();      
         }
+
+        private void ThayDoiThongTinSP_Click(object sender, EventArgs e)
+        {
+            MANHINHCHINH.m_iStaticFormDuocChon = 2;
+            DANGNHAP frm = new DANGNHAP();
+            frm.ShowDialog();      
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHIT08\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString13" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\ESTORE.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString9" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -20,13 +20,6 @@
       <Association Name="BANGDIEM_KHOANGTANG_CHITIETTRONGLUONG" Member="CHITIETTRONGLUONGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETTRONGLUONG" />
       <Association Name="BANGDIEM_KHOANGTANG_DANHGIA" Member="DANHGIAs" OtherKey="MaBangDiem_KhoangTang" Type="DANHGIA" />
       <Association Name="BANGDIEM_KHOANGTANG_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaBangDiem_KhoangTang" Type="HEDIEUHANH" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TINHTHANH" Member="TINHTHANHs">
-    <Type Name="TINHTHANH">
-      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenTinhThanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Association Name="TINHTHANH_KHACHHANG" Member="KHACHHANGs" OtherKey="MaTinhThanh" Type="KHACHHANG" />
     </Type>
   </Table>
   <Table Name="dbo.CHITIETBONHOCARDDOHOA" Member="CHITIETBONHOCARDDOHOAs">
@@ -407,9 +400,9 @@
       <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="KHACHHANG_GIAODICH" Member="GIAODICHes" OtherKey="MaKhachHang" Type="GIAODICH" />
       <Association Name="DOTUOI_KHACHHANG" Member="DOTUOI" ThisKey="MaDoTuoi" Type="DOTUOI" IsForeignKey="true" />
-      <Association Name="TINHTHANH_KHACHHANG" Member="TINHTHANH" ThisKey="MaTinhThanh" Type="TINHTHANH" IsForeignKey="true" />
       <Association Name="MUCDICHSUDUNG_KHACHHANG" Member="MUCDICHSUDUNG" ThisKey="MaMucDichSuDung" Type="MUCDICHSUDUNG" IsForeignKey="true" />
       <Association Name="NGHENGHIEP_KHACHHANG" Member="NGHENGHIEP" ThisKey="MaNgheNghiep" Type="NGHENGHIEP" IsForeignKey="true" />
+      <Association Name="TINHTHANH_KHACHHANG" Member="TINHTHANH" ThisKey="MaTinhThanh" Type="TINHTHANH" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.MUCDICHSUDUNG" Member="MUCDICHSUDUNGs">
@@ -443,6 +436,13 @@
       <Association Name="NHASANXUAT_CHITIETDONGRAM" Member="CHITIETDONGRAMs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGRAM" />
       <Association Name="NHASANXUAT_CHITIETDONGWEBCAM" Member="CHITIETDONGWEBCAMs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGWEBCAM" />
       <Association Name="NHASANXUAT_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaNhaSanXuat" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TINHTHANH" Member="TINHTHANHs">
+    <Type Name="TINHTHANH">
+      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTinhThanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="TINHTHANH_KHACHHANG" Member="KHACHHANGs" OtherKey="MaTinhThanh" Type="KHACHHANG" />
     </Type>
   </Table>
 </Database>
