@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã dòng màn hình dựa vào tên dòng màn hình
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongManHinh(string m_tenManHinh)
+        {
+            try
+            {
+                return myChiTietDongManHinhDAO.LayMaDongManHinh(m_tenManHinh);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

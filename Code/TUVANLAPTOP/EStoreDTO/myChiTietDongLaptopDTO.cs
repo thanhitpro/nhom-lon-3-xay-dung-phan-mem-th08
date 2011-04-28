@@ -181,6 +181,13 @@ namespace EStoreDTO
             set { m_iSoLuongNhap = value; }
         }
 
+        DateTime m_dNgayNhap;
+
+        public DateTime DNgayNhap
+        {
+            get { return m_dNgayNhap; }
+            set { m_dNgayNhap = value; }
+        }
         int m_iSoLuongConLai;
 
         public int ISoLuongConLai

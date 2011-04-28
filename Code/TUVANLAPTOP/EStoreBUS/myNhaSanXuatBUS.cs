@@ -34,5 +34,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã nhà xuất dựa vào tên nhà sx
+        /// </summary>
+        /// <returns></returns>
+        public int LayNhaSanXuat(string m_tenNhaSX)
+        {
+            try
+            {
+                return myNhaSanXuatDAO.LayMaNhaSanXuat(m_tenNhaSX);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

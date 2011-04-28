@@ -27,5 +27,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã webcam dựa vào tên webcam
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongWebcam(string m_tenWebCam)
+        {
+            try
+            {
+                return myChiTietDongWebcamDAO.LayMaDongWebCam(m_tenWebCam);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

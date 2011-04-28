@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// lấy mã dòng Loa dựa vào tên loa
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongLoa(string m_tenLoa)
+        {
+            try
+            {
+                return myChiTietDongLoaDAO.LayMaDongLoa(m_tenLoa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -26,5 +26,22 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongCardMang( string m_tencardmang)
+        {
+            
+            try
+            {
+               return  myChiTietDongCardMangDAO.LayMaDongCardMang(m_tencardmang);    
+               
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -100,6 +100,10 @@ namespace EStoreDAO
                     //So luong Nhap:
                     chiTietDongLaptop.ISoLuongNhap = temp.SoLuongNhap.Value;
 
+                    // Ngay Nhap
+
+                    chiTietDongLaptop.DNgayNhap = temp.NgayNhap.Value;
+
                     //So luong con lai
                     chiTietDongLaptop.ISoLuongConLai = temp.SoLuongConLai.Value;
 
@@ -645,11 +649,32 @@ namespace EStoreDAO
             return danhsachChiTietDongLapTop;
         }
 
+        /// <summary>
+        /// Thêm một dòng LapTop mới
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
         static public void ThemMoiChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
         {
             try
             {
                 m_eStoreDataContext.CHITIETDONGLAPTOPs.InsertOnSubmit(dongLaptopMoi);
+                m_eStoreDataContext.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        /// <summary>
+        /// Cập nhật thông tin một dòng Laptop
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        static public void CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        {
+            try
+            {
+                CHITIETDONGLAPTOP laptop = m_eStoreDataContext.CHITIETDONGLAPTOPs.Single(c => c.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
+                laptop = dongLaptopMoi;
                 m_eStoreDataContext.SubmitChanges();
             }
             catch (Exception ex)

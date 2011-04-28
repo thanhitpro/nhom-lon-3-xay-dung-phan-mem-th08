@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy thông tin mã ổ đĩa quang dựa vào tên ỗ đĩa quang
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongODiaQuang(string m_tenOQuang)
+        {
+            try
+            {
+                return myChiTietDongODiaQuangDAO.LayMaDongODiaQuang(m_tenOQuang);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

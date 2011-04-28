@@ -31,5 +31,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã của pin dựa vào tên dòng Pin
+        /// </summary>
+        /// <returns>Mã dòng pin</returns>
+        public int LayChiTietDongPin(string m_tenPin)
+        {
+            try
+            {
+                return myChiTietDongPinDAO.LayMaDongPin(m_tenPin);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

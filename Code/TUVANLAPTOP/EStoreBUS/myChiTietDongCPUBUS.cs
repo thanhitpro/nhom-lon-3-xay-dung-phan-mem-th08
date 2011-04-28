@@ -32,5 +32,20 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã dòng CPU dựa vào tên dòng CPU
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongCPU(string m_tenCPU)
+        {
+            try
+            {
+                return myChiTietDongCPUDAO.LayMaDongCPU(m_tenCPU);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

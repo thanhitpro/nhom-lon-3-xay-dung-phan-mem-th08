@@ -13,3 +13,13 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+E:\Documents\Document\Source Code\EStoreDTO\bin\Release\EStoreDTO.dll
+E:\Documents\Document\Source Code\EStoreDTO\bin\Release\EStoreDTO.pdb
+E:\Documents\Document\Source Code\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+E:\Documents\Document\Source Code\EStoreDTO\obj\Release\EStoreDTO.dll
+E:\Documents\Document\Source Code\EStoreDTO\obj\Release\EStoreDTO.pdb

@@ -100,7 +100,7 @@
             this.groupBox_DanhSachSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_DanhSachSanPham.Location = new System.Drawing.Point(0, 72);
             this.groupBox_DanhSachSanPham.Name = "groupBox_DanhSachSanPham";
-            this.groupBox_DanhSachSanPham.Size = new System.Drawing.Size(1085, 385);
+            this.groupBox_DanhSachSanPham.Size = new System.Drawing.Size(1086, 385);
             this.groupBox_DanhSachSanPham.TabIndex = 12;
             this.groupBox_DanhSachSanPham.TabStop = false;
             this.groupBox_DanhSachSanPham.Text = "Thông Tin Tra Cứu";
@@ -165,7 +165,7 @@
             this.panel_ChiTietThuocTinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ChiTietThuocTinh.Location = new System.Drawing.Point(3, 17);
             this.panel_ChiTietThuocTinh.Name = "panel_ChiTietThuocTinh";
-            this.panel_ChiTietThuocTinh.Size = new System.Drawing.Size(1079, 365);
+            this.panel_ChiTietThuocTinh.Size = new System.Drawing.Size(1080, 365);
             this.panel_ChiTietThuocTinh.TabIndex = 2;
             // 
             // btn_ChonHinhAnh
@@ -709,7 +709,7 @@
             this.groupBox_TitleXoaSanPham.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox_TitleXoaSanPham.Location = new System.Drawing.Point(0, 0);
             this.groupBox_TitleXoaSanPham.Name = "groupBox_TitleXoaSanPham";
-            this.groupBox_TitleXoaSanPham.Size = new System.Drawing.Size(1085, 72);
+            this.groupBox_TitleXoaSanPham.Size = new System.Drawing.Size(1086, 72);
             this.groupBox_TitleXoaSanPham.TabIndex = 11;
             this.groupBox_TitleXoaSanPham.TabStop = false;
             // 
@@ -725,7 +725,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 457);
+            this.ClientSize = new System.Drawing.Size(1086, 455);
             this.Controls.Add(this.groupBox_DanhSachSanPham);
             this.Controls.Add(this.groupBox_TitleXoaSanPham);
             this.Name = "THEMSANPHAM";

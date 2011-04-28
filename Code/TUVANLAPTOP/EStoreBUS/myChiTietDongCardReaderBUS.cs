@@ -27,5 +27,21 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy mã cardreader
+        /// </summary>
+        /// <returns></returns>
+        public int LayChiTietDongCardReader(string m_tenCardReader)
+        {
+            try
+            {
+                return myChiTietDongCardReaderDAO.LayMaDongCardReader(m_tenCardReader);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
