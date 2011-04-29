@@ -30,7 +30,8 @@ namespace EStoreBUS
             List<DOTUOI> DSDoTuoi;
             List<TINHTHANH> DSTinhThanh;
             List<GIAODICH> DSTatCaGiaoDich;
-            List<NHASANXUAT> DSNhaSanXuat;
+            //-- List<> DSNhaSanXuat;
+            List<CHITIETDONGLAPTOP> DSDongLaptop;
             try
             {
                 DSNgheNgiep = myNgheNghiepDAO.LayNgheNghiep();
@@ -38,46 +39,44 @@ namespace EStoreBUS
                 DSDoTuoi = myDoTuoiDAO.LayDoTuoi();
                 DSTinhThanh = myTinhThanhDAO.LayTinhThanh();
                 DSTatCaGiaoDich = myGiaoDichDAO.LayGiaoDich();
-                DSNhaSanXuat = myNhaSanXuatDAO.LayNhaSanXuat();
+                // DSNhaSanXuat = myNhaSanXuatDAO.LayNhaSanXuat();
+                DSDongLaptop = myChiTietDongLaptopDAO.LayTatCaChiTietDongLaptop();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            for (int i = 0; i < DSNhaSanXuat.Count; ++i)
+            for (int i = 0; i < DSDongLaptop.Count; ++i)
             {
-                List<GIAODICH> DSGiaoDichTheoNhaSanXuat;
+                List<GIAODICH> DSGiaoDichTheoDongLaptop;
                 try
                 {
-                    DSGiaoDichTheoNhaSanXuat = myGiaoDichDAO.LayDanhSachGiaoDichTheoNhaSanXuat(DSNhaSanXuat[i].MaNhaSanXuat);
+                    DSGiaoDichTheoDongLaptop = myGiaoDichDAO.LayDanhSachGiaoDichTheoMaDongLapTop(DSDongLaptop[i].MaDongLapTop);
                 }
                 catch (Exception ex)
                 {
                     throw ex;
                 }
-                //if (DSGiaoDichTheoNhaSanXuat.Count == 0)
-                //{
-                //    continue;
-                //}
+
                 // create thẻ xml
-                XmlNode NhaSanXuat = ResultAnalyseData.CreateElement("NHASANXUAT");
-                XmlAttribute MaNhaSanXuat = ResultAnalyseData.CreateAttribute("ID");
-                XmlAttribute TenNhaSanXuat = ResultAnalyseData.CreateAttribute("TenNhaSanXuat");
+                XmlNode DongLapTop = ResultAnalyseData.CreateElement("DONGLAPTOP");
+                XmlAttribute MaDongLapTop = ResultAnalyseData.CreateAttribute("ID");
+                XmlAttribute TenDongLapTop = ResultAnalyseData.CreateAttribute("TenDongLaptop");
                 XmlAttribute SoLuongDaBan = ResultAnalyseData.CreateAttribute("SoLuongDaBan");
-                MaNhaSanXuat.Value = DSNhaSanXuat[i].MaNhaSanXuat.ToString();
-                TenNhaSanXuat.Value = DSNhaSanXuat[i].TenNhaSanXuat;
-                SoLuongDaBan.Value = DSGiaoDichTheoNhaSanXuat.Count.ToString();
+                MaDongLapTop.Value = DSDongLaptop[i].MaDongLapTop.ToString();
+                TenDongLapTop.Value = DSDongLaptop[i].TenChiTietDongLapTop;
+                SoLuongDaBan.Value = DSGiaoDichTheoDongLaptop.Count.ToString();
                 try
                 {
-                    NhaSanXuat.Attributes.Append(MaNhaSanXuat);
-                    NhaSanXuat.Attributes.Append(TenNhaSanXuat);
-                    NhaSanXuat.Attributes.Append(SoLuongDaBan);
+                    DongLapTop.Attributes.Append(MaDongLapTop);
+                    DongLapTop.Attributes.Append(TenDongLapTop);
+                    DongLapTop.Attributes.Append(SoLuongDaBan);
                 }
                 catch (Exception ex)
                 {
                     throw ex;
-                }             
-                                           
+                }
+
                 int k = 0;
                 int SLCoGiaoDich = 0;
                 int SLKhongGiaoDich = 0;
@@ -93,7 +92,7 @@ namespace EStoreBUS
                     XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
                     MaNgheNghiep.Value = DSNgheNgiep[k].MaNgheNghiep.ToString();
                     TenNgheNghiep.Value = DSNgheNgiep[k].TenNgheNghiep;
-                  
+
                     //****************
                     int SoLuongKhachHangTheoNgheNghiep;
                     try
@@ -104,23 +103,20 @@ namespace EStoreBUS
                     {
                         throw ex;
                     }
-                    for (int j = 0; j < DSGiaoDichTheoNhaSanXuat.Count; ++j)
+                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                     {
-                   
-                        if (DSNgheNgiep[k].MaNgheNghiep== DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.MaNgheNghiep)
+
+                        if (DSNgheNgiep[k].MaNgheNghiep == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaNgheNghiep)
                             SLCoGiaoDich++;
                     }
-                    //if (SLCoGiaoDich == 0)
-                    //{
-                    //    continue;
-                    //}
+
                     double a;
                     try
                     {
-                        a = (float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoNhaSanXuat.Count) * 100;
+                        a = (float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
                         TyLeGiaoDich.Value = a.ToString();
                         SLKhongGiaoDich = SoLuongKhachHangTheoNgheNghiep - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -139,12 +135,12 @@ namespace EStoreBUS
                         throw ex;
                     }
                 }
-               NhaSanXuat.AppendChild(TyLeTheoNgheNghiep);
+                DongLapTop.AppendChild(TyLeTheoNgheNghiep);
 
                 // thong ke theo muc dich su dung
 
                 XmlNode TyLeTheoMucDichSuDung = ResultAnalyseData.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
-             
+
                 for (k = 0; k < DSMucDichSuDung.Count; ++k)
                 {
                     SLCoGiaoDich = SLKhongGiaoDich = 0;
@@ -164,20 +160,17 @@ namespace EStoreBUS
                     {
                         throw ex;
                     }
-                    for (int j = 0; j < DSGiaoDichTheoNhaSanXuat.Count; ++j)
+                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                     {
-                        if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.MaMucDichSuDung)
+                        if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
                             SLCoGiaoDich++;
                     }
-                    //if (SLCoGiaoDich == 0)
-                    //{
-                    //    continue;
-                    //}
+
                     try
                     {
-                        TyLeGiaoDich.Value = ((float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoNhaSanXuat.Count) * 100).ToString();
+                        TyLeGiaoDich.Value = ((float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoMucDich - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -197,7 +190,7 @@ namespace EStoreBUS
                         throw ex;
                     }
                 }
-                NhaSanXuat.AppendChild(TyLeTheoMucDichSuDung);
+                DongLapTop.AppendChild(TyLeTheoMucDichSuDung);
                 // thong ke theo do tuoi
                 XmlNode TyLeTheoDoTuoi = ResultAnalyseData.CreateElement("TY_LE_THEO_DO_TUOI");
 
@@ -221,21 +214,18 @@ namespace EStoreBUS
                         throw ex;
                     }
 
-                    for (int j = 0; j < DSGiaoDichTheoNhaSanXuat.Count; ++j)
+                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                     {
-                       
-                        if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.MaDoTuoi)
+
+                        if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaDoTuoi)
                             SLCoGiaoDich++;
                     }
-                    //if (SLCoGiaoDich == 0)
-                    //{
-                    //    continue;
-                    //}
+
                     try
                     {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoDoTuoi - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -254,7 +244,7 @@ namespace EStoreBUS
                         throw ex;
                     }
                 }
-                NhaSanXuat.AppendChild(TyLeTheoDoTuoi);
+                DongLapTop.AppendChild(TyLeTheoDoTuoi);
                 //THONG KE THEO TINH THANH
 
                 XmlNode TyLeTheoTinhThanh = ResultAnalyseData.CreateElement("TY_LE_THEO_TINH_THANH");
@@ -274,15 +264,15 @@ namespace EStoreBUS
                     {
                         SLKhachHangTheoTinhThanh = myKhachHangDAO.SLKhachHangTheoTinhThanh(DSTinhThanh[k].MaTinhThanh);
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         throw ex;
                     }
 
-                    for (int j = 0; j < DSGiaoDichTheoNhaSanXuat.Count; ++j)
+                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                     {
-                      
-                        if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.MaTinhThanh)
+
+                        if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
                             SLCoGiaoDich++;
                     }
                     //if (SLCoGiaoDich == 0)
@@ -291,9 +281,9 @@ namespace EStoreBUS
                     //}
                     try
                     {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoTinhThanh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -312,7 +302,7 @@ namespace EStoreBUS
                         throw ex;
                     }
                 }
-                NhaSanXuat.AppendChild(TyLeTheoTinhThanh);
+                DongLapTop.AppendChild(TyLeTheoTinhThanh);
                 // THONG KE THEO GIOI TINH
                 XmlNode TyLeTheoGioiTinh = ResultAnalyseData.CreateElement("TY_LE_THEO_GIOI_TINH");
                 for (k = 0; k < 2; ++k)
@@ -323,28 +313,28 @@ namespace EStoreBUS
                     XmlAttribute TenGioiTinh = ResultAnalyseData.CreateAttribute("TenGioiTinh");
                     XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
                     XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    if(k==1)                    
-                    TenGioiTinh.Value ="NAM";
+                    if (k == 1)
+                        TenGioiTinh.Value = "NAM";
                     else
-                        TenGioiTinh.Value="NU";
+                        TenGioiTinh.Value = "NU";
                     MaGioiTinh.Value = k.ToString();
-                    
-                   int SLKhachHangTheoGioiTinh;
-                   try
-                   {
-                       if (k == 0)
-                           SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(false);
-                       else
-                           SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(true);
-                   }
-                   catch (Exception ex)
-                   {
-                       throw ex;
-                   }
-                    for (int j = 0; j < DSGiaoDichTheoNhaSanXuat.Count; ++j)
+
+                    int SLKhachHangTheoGioiTinh;
+                    try
                     {
-                       
-                        if ((DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.GioiTinhNam==true && k == 1)||(DSGiaoDichTheoNhaSanXuat[j].KHACHHANG.GioiTinhNam==false && k == 0))
+                        if (k == 0)
+                            SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(false);
+                        else
+                            SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(true);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
+                    {
+
+                        if ((DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == true && k == 1) || (DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == false && k == 0))
                             SLCoGiaoDich++;
                     }
                     //if (SLCoGiaoDich == 0)
@@ -353,9 +343,9 @@ namespace EStoreBUS
                     //}
                     try
                     {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoGioiTinh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoNhaSanXuat.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -374,8 +364,8 @@ namespace EStoreBUS
                         throw ex;
                     }
                 }
-                NhaSanXuat.AppendChild(TyLeTheoGioiTinh);
-                NavasBayes.AppendChild(NhaSanXuat);
+                DongLapTop.AppendChild(TyLeTheoGioiTinh);
+                NavasBayes.AppendChild(DongLapTop);
             }
             ResultAnalyseData.Save("ResultAnalyseData.xml");
         }

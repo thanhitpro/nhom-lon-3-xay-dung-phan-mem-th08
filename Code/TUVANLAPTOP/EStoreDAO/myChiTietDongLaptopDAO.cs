@@ -162,6 +162,29 @@ namespace EStoreDAO
                 throw ex;
             }
         }
+        public static List<CHITIETDONGLAPTOP> LayTatCaChiTietDongLaptop()
+        {
+            try
+            {
+                List<CHITIETDONGLAPTOP> Result = new List<CHITIETDONGLAPTOP>();
+                var Query = from dongLaptop in m_eStoreDataContext.CHITIETDONGLAPTOPs select dongLaptop;
+
+                foreach (CHITIETDONGLAPTOP laptop in Query)
+                {
+                    Result.Add(laptop);
+                }
+
+                return Result;
+            }
+            catch (SqlException sqlex)
+            {
+                throw new Exception("Lỗi lấy thông tin tất cả dòng Laptop : không thể kết nối với CSDL. Xem lại kết nối và thử lại !", sqlex);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         /// <summary>
         /// Tra cứu thông tin các laptop thỏa yêu cầu của người dùng

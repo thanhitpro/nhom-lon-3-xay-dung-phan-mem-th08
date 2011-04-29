@@ -68,3 +68,13 @@ E:\Documents\Document\Source Code\EStoreDAO\bin\Release\EStoreDTO.pdb
 E:\Documents\Document\Source Code\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 E:\Documents\Document\Source Code\EStoreDAO\obj\Release\EStoreDAO.dll
 E:\Documents\Document\Source Code\EStoreDAO\obj\Release\EStoreDAO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
