@@ -29,9 +29,7 @@ namespace EStoreBUS
             List<MUCDICHSUDUNG> DSMucDichSuDung;
             List<DOTUOI> DSDoTuoi;
             List<TINHTHANH> DSTinhThanh;
-           // List<GIAODICH> DSTatCaGiaoDich;
             int TongSoLuongGiaoDich = 0;
-            //-- List<> DSNhaSanXuat;
             List<CHITIETDONGLAPTOP> DSDongLaptop;
             try
             {
@@ -39,18 +37,25 @@ namespace EStoreBUS
                 DSMucDichSuDung = myMucDichSuDungDAO.LayMucDichSuDung();
                 DSDoTuoi = myDoTuoiDAO.LayDoTuoi();
                 DSTinhThanh = myTinhThanhDAO.LayTinhThanh();
-              //  DSTatCaGiaoDich = myGiaoDichDAO.LayGiaoDich();
                 TongSoLuongGiaoDich = myGiaoDichDAO.LaySoLuongGiaoDich();
-                // DSNhaSanXuat = myNhaSanXuatDAO.LayNhaSanXuat();
                 DSDongLaptop = myChiTietDongLaptopDAO.LayTatCaChiTietDongLaptop();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+
+            List<GIAODICH> DSGiaoDichTheoDongLaptop;
+            int SoLuongKhachHangTheoNgheNghiep;
+            int SLKhachHangTheoMucDich;
+            int SLKhachHangTheoDoTuoi;
+            int SLKhachHangTheoTinhThanh;
+            int SLKhachHangTheoGioiTinh;
+            int k;
+            int SLCoGiaoDich;
+            int SLKhongGiaoDich;
             for (int i = 0; i < DSDongLaptop.Count; ++i)
-            {
-                List<GIAODICH> DSGiaoDichTheoDongLaptop;
+            {              
                 try
                 {
                     DSGiaoDichTheoDongLaptop = myGiaoDichDAO.LayDanhSachGiaoDichTheoMaDongLapTop(DSDongLaptop[i].MaDongLapTop);
@@ -79,9 +84,7 @@ namespace EStoreBUS
                     throw ex;
                 }
 
-                int k = 0;
-                int SLCoGiaoDich = 0;
-                int SLKhongGiaoDich = 0;
+             
                 // thong ke theo nghe nghiep
                 XmlNode TyLeTheoNgheNghiep = ResultAnalyseData.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
                 for (k = 0; k < DSNgheNgiep.Count; ++k)
@@ -96,7 +99,7 @@ namespace EStoreBUS
                     TenNgheNghiep.Value = DSNgheNgiep[k].TenNgheNghiep;
 
                     //****************
-                    int SoLuongKhachHangTheoNgheNghiep;
+                  
                     try
                     {
                         SoLuongKhachHangTheoNgheNghiep = myKhachHangDAO.SLKhachHangTheoNgheNghiep(DSNgheNgiep[k].MaNgheNghiep);
@@ -109,7 +112,7 @@ namespace EStoreBUS
                     {
 
                         if (DSNgheNgiep[k].MaNgheNghiep == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaNgheNghiep)
-                            SLCoGiaoDich++;
+                            ++SLCoGiaoDich;
                     }
 
                     double a;
@@ -153,7 +156,7 @@ namespace EStoreBUS
                     XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
                     MaMucDich.Value = DSMucDichSuDung[k].MaMucDichSuDung.ToString();
                     TenMucDich.Value = DSMucDichSuDung[k].TenMucDichSuDung;
-                    int SLKhachHangTheoMucDich;
+                
                     try
                     {
                         SLKhachHangTheoMucDich = myKhachHangDAO.SLKhachHangTheoMucDich(DSMucDichSuDung[k].MaMucDichSuDung);
@@ -165,7 +168,7 @@ namespace EStoreBUS
                     for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                     {
                         if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
-                            SLCoGiaoDich++;
+                            ++SLCoGiaoDich;
                     }
 
                     try
@@ -206,7 +209,7 @@ namespace EStoreBUS
                     XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
                     MaDoTuoi.Value = DSDoTuoi[k].MaDoTuoi.ToString();
                     TenDoTuoi.Value = DSDoTuoi[k].TenDoTuoi;
-                    int SLKhachHangTheoDoTuoi;
+                   
                     try
                     {
                         SLKhachHangTheoDoTuoi = myKhachHangDAO.SLKhachHangTheoDoTuoi(DSDoTuoi[k].MaDoTuoi);
@@ -220,7 +223,7 @@ namespace EStoreBUS
                     {
 
                         if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaDoTuoi)
-                            SLCoGiaoDich++;
+                            ++SLCoGiaoDich;
                     }
 
                     try
@@ -261,7 +264,7 @@ namespace EStoreBUS
                     XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
                     MaTinhThanh.Value = DSTinhThanh[k].MaTinhThanh.ToString();
                     TenTinhThanh.Value = DSTinhThanh[k].TenTinhThanh;
-                    int SLKhachHangTheoTinhThanh;
+                   
                     try
                     {
                         SLKhachHangTheoTinhThanh = myKhachHangDAO.SLKhachHangTheoTinhThanh(DSTinhThanh[k].MaTinhThanh);
@@ -275,12 +278,9 @@ namespace EStoreBUS
                     {
 
                         if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
-                            SLCoGiaoDich++;
+                            ++SLCoGiaoDich;
                     }
-                    //if (SLCoGiaoDich == 0)
-                    //{
-                    //    continue;
-                    //}
+                   
                     try
                     {
                         TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
@@ -321,7 +321,7 @@ namespace EStoreBUS
                         TenGioiTinh.Value = "NU";
                     MaGioiTinh.Value = k.ToString();
 
-                    int SLKhachHangTheoGioiTinh;
+                  
                     try
                     {
                         if (k == 0)
@@ -337,12 +337,9 @@ namespace EStoreBUS
                     {
 
                         if ((DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == true && k == 1) || (DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == false && k == 0))
-                            SLCoGiaoDich++;
+                            ++SLCoGiaoDich;
                     }
-                    //if (SLCoGiaoDich == 0)
-                    //{
-                    //    continue;
-                    //}
+                 
                     try
                     {
                         TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
