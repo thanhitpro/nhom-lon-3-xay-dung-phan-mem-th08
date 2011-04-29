@@ -43,11 +43,12 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes select _GiaoDich;
+                var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes
+                            where _GiaoDich.MaDongLaptop == _iMaDongLapTop
+                            select _GiaoDich;
                 List<GIAODICH> DSGiaoDich = new List<GIAODICH>();
                 foreach (GIAODICH _giaodich in Query)
                 {
-                    if (_giaodich.MaDongLaptop == _iMaDongLapTop)
                         DSGiaoDich.Add(_giaodich);
                 }
                 return DSGiaoDich;
@@ -91,6 +92,22 @@ namespace EStoreDAO
                 string temp = ex.Message;
                 return false;
             }            
+        }
+
+        public static int LaySoLuongGiaoDich()
+        {
+            try
+            {
+                var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes select _GiaoDich;
+                int kq = 0;
+                foreach (GIAODICH giaodich in Query)
+                    kq++;
+                return kq;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
