@@ -1,4 +1,5 @@
-﻿-- Dược sĩ
+﻿-- Bảng Khách hàng
+-- 
 insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTinhThanh)values (5,3,4,1,42)
 insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTinhThanh)values (5,2,4,1,42)
 insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTinhThanh)values (5,4,4,0,7)
@@ -5000,7 +5001,7 @@ insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTi
 insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTinhThanh)values (5,5,6,1,26)
 insert into KhachHang(MaNgheNghiep, MaMucDichSuDung, MaDoTuoi, GioiTinhNam, MaTinhThanh)values (5,4,6,1,24)
 
--- Giao dịch
+-- Bảng Giao dịch
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values (10001,16,'4-15-2006')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values (10002,16,'3-19-2006')
 insert into GiaoDich(MaKhachHang, MaDongLapTop, NgayMua)values (10003,16,'1-27-2006')
