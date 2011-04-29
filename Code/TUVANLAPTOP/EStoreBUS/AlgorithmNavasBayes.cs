@@ -29,7 +29,8 @@ namespace EStoreBUS
             List<MUCDICHSUDUNG> DSMucDichSuDung;
             List<DOTUOI> DSDoTuoi;
             List<TINHTHANH> DSTinhThanh;
-            List<GIAODICH> DSTatCaGiaoDich;
+           // List<GIAODICH> DSTatCaGiaoDich;
+            int TongSoLuongGiaoDich = 0;
             //-- List<> DSNhaSanXuat;
             List<CHITIETDONGLAPTOP> DSDongLaptop;
             try
@@ -38,7 +39,8 @@ namespace EStoreBUS
                 DSMucDichSuDung = myMucDichSuDungDAO.LayMucDichSuDung();
                 DSDoTuoi = myDoTuoiDAO.LayDoTuoi();
                 DSTinhThanh = myTinhThanhDAO.LayTinhThanh();
-                DSTatCaGiaoDich = myGiaoDichDAO.LayGiaoDich();
+              //  DSTatCaGiaoDich = myGiaoDichDAO.LayGiaoDich();
+                TongSoLuongGiaoDich = myGiaoDichDAO.LaySoLuongGiaoDich();
                 // DSNhaSanXuat = myNhaSanXuatDAO.LayNhaSanXuat();
                 DSDongLaptop = myChiTietDongLaptopDAO.LayTatCaChiTietDongLaptop();
             }
@@ -116,7 +118,7 @@ namespace EStoreBUS
                         a = (float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
                         TyLeGiaoDich.Value = a.ToString();
                         SLKhongGiaoDich = SoLuongKhachHangTheoNgheNghiep - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -170,7 +172,7 @@ namespace EStoreBUS
                     {
                         TyLeGiaoDich.Value = ((float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoMucDich - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -225,7 +227,7 @@ namespace EStoreBUS
                     {
                         TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoDoTuoi - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -283,7 +285,7 @@ namespace EStoreBUS
                     {
                         TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoTinhThanh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {
@@ -345,7 +347,7 @@ namespace EStoreBUS
                     {
                         TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                         SLKhongGiaoDich = SLKhachHangTheoGioiTinh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)DSTatCaGiaoDich.Count - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
+                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
                     }
                     catch (Exception ex)
                     {

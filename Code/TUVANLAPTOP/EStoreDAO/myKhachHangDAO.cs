@@ -42,10 +42,11 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
+                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs 
+                            where _KhachHang.MaNgheNghiep== _iMaNgheNghiep
+                            select _KhachHang;
                 int Result = 0;
                 foreach (KHACHHANG _KH in Query)
-                    if (_KH.MaNgheNghiep == _iMaNgheNghiep)
                         Result++;
                 return Result;
             }
@@ -59,10 +60,11 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
+                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs
+                            where _KhachHang.MaMucDichSuDung== _iMaMucDichSuDung
+                            select _KhachHang;
                 int Result = 0;
                 foreach (KHACHHANG _KH in Query)
-                    if (_KH.MaMucDichSuDung == _iMaMucDichSuDung)
                         Result++;
                 return Result;
             }
@@ -76,10 +78,11 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
+                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs 
+                            where _KhachHang.MaDoTuoi== _iMaDoTuoi
+                            select _KhachHang;
                 int Result = 0;
                 foreach (KHACHHANG _KH in Query)
-                    if (_KH.MaDoTuoi == _iMaDoTuoi)
                         Result++;
                 return Result;
             }
@@ -93,10 +96,11 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
+                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs 
+                            where _KhachHang.MaTinhThanh == _iMaTinhThanh
+                            select _KhachHang;
                 int Result = 0;
                 foreach (KHACHHANG _KH in Query)
-                    if (_KH.MaTinhThanh == _iMaTinhThanh)
                         Result++;
                 return Result;
             }
@@ -110,10 +114,12 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
+                var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs 
+                            where _KhachHang.GioiTinhNam==isNam
+                            select _KhachHang;
                 int Result = 0;
                 foreach (KHACHHANG _KH in Query)
-                    if (_KH.GioiTinhNam == isNam)
+                 //  if (_KH.GioiTinhNam == isNam)
                         Result++;
                 return Result;
             }
