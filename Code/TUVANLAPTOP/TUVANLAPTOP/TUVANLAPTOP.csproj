@@ -104,6 +104,12 @@
     <Compile Include="THAYDOITHONGTINSANPHAM.Designer.cs">
       <DependentUpon>THAYDOITHONGTINSANPHAM.cs</DependentUpon>
     </Compile>
+    <Compile Include="THEMDACTINHSANPHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THEMDACTINHSANPHAM.Designer.cs">
+      <DependentUpon>THEMDACTINHSANPHAM.cs</DependentUpon>
+    </Compile>
     <Compile Include="THEMSANPHAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +136,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC_SanPham.cs">
+    <Compile Include="UC_SANPHAM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_SanPham.Designer.cs">
-      <DependentUpon>UC_SanPham.cs</DependentUpon>
+    <Compile Include="UC_SANPHAM.Designer.cs">
+      <DependentUpon>UC_SANPHAM.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ABOUT.resx">
       <DependentUpon>ABOUT.cs</DependentUpon>
@@ -182,6 +188,10 @@
       <DependentUpon>THAYDOITHONGTINSANPHAM.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="THEMDACTINHSANPHAM.resx">
+      <DependentUpon>THEMDACTINHSANPHAM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="THEMSANPHAM.resx">
       <DependentUpon>THEMSANPHAM.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -190,8 +200,8 @@
       <DependentUpon>TRACUUSANPHAM.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_SanPham.resx">
-      <DependentUpon>UC_SanPham.cs</DependentUpon>
+    <EmbeddedResource Include="UC_SANPHAM.resx">
+      <DependentUpon>UC_SANPHAM.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

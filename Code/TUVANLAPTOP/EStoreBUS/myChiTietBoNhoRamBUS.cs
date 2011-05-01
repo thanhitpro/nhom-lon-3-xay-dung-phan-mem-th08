@@ -7,15 +7,39 @@ using EStoreDAO;
 
 namespace EStoreBUS
 {
-    class myChiTietBoNhoRamBUS
+    public class myChiTietBoNhoRamBUS
     {
-        public myChiTietBoNhoRamDTO LayChiTietBoNhoRam(int _iMaChiTietBoNhoRam)
+        /// <summary>
+        /// Lấy danh sách bộ nhớ RAM:
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietBoNhoRamDTO> LayChiTietBoNhoRam()
         {
-            return null;
+            try
+            {
+                return myChiTietBoNhoRamDAO.LayChiTietBoNhoRam();
+            }
+            catch
+            {
+                throw;
+            }
         }
-        public List<myChiTietBoNhoRamDTO> LayChiTietBoNhoRam()
+
+        /// <summary>
+        /// Thêm chi tiết bộ nhớ RAM:
+        /// </summary>
+        /// <param name="_mCTRAM"></param>
+        /// <returns></returns>
+        public static bool ThemBoNhoRAM(myChiTietBoNhoRamDTO _mCTRAM)
         {
-            return null;
+            try
+            {
+                return myChiTietBoNhoRamDAO.ThemBoNhoRAM(_mCTRAM);
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }

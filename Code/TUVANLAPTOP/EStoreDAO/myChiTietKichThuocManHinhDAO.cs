@@ -2,19 +2,67 @@
 using System.Collections.Generic;
 using System.Text;
 using EStoreDTO;
+using System.Data.SqlClient;
 
 namespace EStoreDAO
 {
     public class myChiTietKichThuocManHinhDAO
     {
-        public myChiTietKichThuocManHinhDTO LayChiTietKichThuocManHinh(int _iMaChiTietKichThuocManHinh)
+        private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy danh sách Kích thước màn hình
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietKichThuocManHinhDTO> LayDSKichThuocManHinh()
         {
-            return null;
+            try
+            {
+                List<myChiTietKichThuocManHinhDTO> dsKichThuocManHinh = new List<myChiTietKichThuocManHinhDTO>();
+
+                foreach (CHITIETKICHTHUOCMANHINH kt in m_eStoreDataContext.CHITIETKICHTHUOCMANHINHs)
+                {
+                    myChiTietKichThuocManHinhDTO ctKichThuoc = new myChiTietKichThuocManHinhDTO();
+                    ctKichThuoc.STenChiTietKichThuocManHinh = kt.TenChiTietKichThuocManHinh;
+                    ctKichThuoc.FHeSo = (float)kt.HeSo.Value;
+
+                    dsKichThuocManHinh.Add(ctKichThuoc);
+                }
+
+                return dsKichThuocManHinh;
+            }
+            catch (SqlException sqlex)
+            {
+                throw new Exception("Lỗi lấy thông tin dòng Laptop : không thể kết nối với CSDL. Xem lại kết nối và thử lại !", sqlex);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public List<myChiTietKichThuocManHinhDTO> LayChiTietKichThuocManHinh()
+        /// <summary>
+        /// Thêm kích thước màn hình
+        /// </summary>
+        /// <param name="_mKichThuoc"></param>
+        /// <returns></returns>
+        public static bool ThemKichThuocManHinh(myChiTietKichThuocManHinhDTO _mKichThuoc)
         {
-            return null;
+            try
+            {
+                CHITIETKICHTHUOCMANHINH chiTietKT = new CHITIETKICHTHUOCMANHINH();
+                chiTietKT.TenChiTietKichThuocManHinh = _mKichThuoc.STenChiTietKichThuocManHinh;
+                chiTietKT.HeSo = (float)_mKichThuoc.FHeSo;
+
+                m_eStoreDataContext.CHITIETKICHTHUOCMANHINHs.InsertOnSubmit(chiTietKT);
+                m_eStoreDataContext.SubmitChanges();
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Thêm mới kích thước màn hình thất bại !",ex);
+            }
         }
     }
 }

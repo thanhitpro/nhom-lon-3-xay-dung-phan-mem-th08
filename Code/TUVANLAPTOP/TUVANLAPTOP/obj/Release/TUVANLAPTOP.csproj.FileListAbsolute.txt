@@ -242,3 +242,61 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SanPham.resources
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb

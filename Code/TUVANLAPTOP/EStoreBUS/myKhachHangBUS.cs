@@ -21,7 +21,7 @@ namespace EStoreBUS
             {
                 return myKhachHangDAO.themKhachHang(_kKhachHang);
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }

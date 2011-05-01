@@ -55,6 +55,7 @@
             this.label_Title_NhapTrongTin = new System.Windows.Forms.Label();
             this.GroupPanel_ChucNang = new System.Windows.Forms.GroupBox();
             this.button_TuVan = new System.Windows.Forms.Button();
+            this.btn_ThemThongTin = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.GroupPanelChinh.SuspendLayout();
             this.GroupPanel_ThongTinDauVao.SuspendLayout();
@@ -323,6 +324,7 @@
             // 
             // PanelTitle_NhapThongTinKH
             // 
+            this.PanelTitle_NhapThongTinKH.Controls.Add(this.btn_ThemThongTin);
             this.PanelTitle_NhapThongTinKH.Controls.Add(this.label_Title_NhapTrongTin);
             this.PanelTitle_NhapThongTinKH.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitle_NhapThongTinKH.Location = new System.Drawing.Point(3, 19);
@@ -364,6 +366,16 @@
             this.button_TuVan.Text = "Tư Vấn Laptop Phù Hợp";
             this.button_TuVan.UseVisualStyleBackColor = true;
             this.button_TuVan.Click += new System.EventHandler(this.button_TuVanLapTop_Click);
+            // 
+            // btn_ThemThongTin
+            // 
+            this.btn_ThemThongTin.Location = new System.Drawing.Point(985, 13);
+            this.btn_ThemThongTin.Name = "btn_ThemThongTin";
+            this.btn_ThemThongTin.Size = new System.Drawing.Size(124, 57);
+            this.btn_ThemThongTin.TabIndex = 8;
+            this.btn_ThemThongTin.Text = "Thêm thông tin";
+            this.btn_ThemThongTin.UseVisualStyleBackColor = true;
+            this.btn_ThemThongTin.Click += new System.EventHandler(this.btn_ThemThongTin_Click);
             // 
             // MANHINHCHINH
             // 
@@ -421,6 +433,7 @@
         private System.Windows.Forms.ToolStripMenuItem TraCuuSanPhamItem;
         private System.Windows.Forms.ToolStripMenuItem ThemMoiSanPhamItem;
         private System.Windows.Forms.ToolStripMenuItem ThayDoiThongTinSP;
+        private System.Windows.Forms.Button btn_ThemThongTin;
     }
 }
 

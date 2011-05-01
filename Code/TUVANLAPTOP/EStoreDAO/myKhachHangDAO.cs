@@ -137,7 +137,7 @@ namespace EStoreDAO
                 m_eStoreDataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }            

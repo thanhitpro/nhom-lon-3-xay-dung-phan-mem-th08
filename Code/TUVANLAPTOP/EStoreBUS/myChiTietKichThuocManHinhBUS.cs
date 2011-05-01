@@ -8,10 +8,37 @@ namespace EStoreBUS
 {
     public class myChiTietKichThuocManHinhBUS
     {
-        public myChiTietKichThuocManHinhDTO LayChiTietKichThuocManHinh(int _iMaChiTietKichThuocManHinh)
-        { return null; }
+        /// <summary>
+        /// Lấy danh sách kích thước màn hình
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietKichThuocManHinhDTO> LayDSKichThuocManHinh()
+        {
+            try
+            {
+                return myChiTietKichThuocManHinhDAO.LayDSKichThuocManHinh();
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
-        public List<myChiTietKichThuocManHinhDTO> LayChiTietKichThuocManHinh()
-        { return null; }
+        /// <summary>
+        /// Thêm mới kích thước màn hình
+        /// </summary>
+        /// <param name="_mKichThuoc"></param>
+        /// <returns></returns>
+        public static bool ThemMoiKichThuocMH(myChiTietKichThuocManHinhDTO _mKichThuoc)
+        {
+            try
+            {
+                return myChiTietKichThuocManHinhDAO.ThemKichThuocManHinh(_mKichThuoc);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

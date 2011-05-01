@@ -1,6 +1,6 @@
 ﻿namespace TUVANLAPTOP
 {
-    partial class UC_SanPham
+    partial class UC_SANPHAM
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SanPham));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SANPHAM));
             this.pictureBox_HinhSP = new System.Windows.Forms.PictureBox();
             this.linkLabel_TenLaptop = new System.Windows.Forms.LinkLabel();
             this.label_NhaSX = new System.Windows.Forms.Label();

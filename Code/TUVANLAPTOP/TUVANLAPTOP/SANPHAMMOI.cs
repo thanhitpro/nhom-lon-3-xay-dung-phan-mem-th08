@@ -39,7 +39,7 @@ namespace TUVANLAPTOP
                 foreach (myChiTietDongLaptopDTO laptop in listIDLaptopTuVan)
                     if (laptop != null)
                     {
-                        UC_SanPham sanPhamControl = new UC_SanPham(laptop);
+                        UC_SANPHAM sanPhamControl = new UC_SANPHAM(laptop);
                         sanPhamControl.Link_TenLaptop.Click += new EventHandler(Link_TenLaptop_Click);
                         flp_DSLaptop.Controls.Add(sanPhamControl);
                     }

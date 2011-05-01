@@ -28,3 +28,13 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

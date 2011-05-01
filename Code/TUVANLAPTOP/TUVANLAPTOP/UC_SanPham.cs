@@ -12,7 +12,7 @@ using EStoreDTO;
 
 namespace TUVANLAPTOP
 {
-    public partial class UC_SanPham : UserControl
+    public partial class UC_SANPHAM : UserControl
     {
         private myChiTietDongLaptopDTO m_dLaptop = new myChiTietDongLaptopDTO();
 
@@ -20,7 +20,7 @@ namespace TUVANLAPTOP
         /// Hàm khởi tạo đối tượng DongLaptop chứa trong UserControl Sản phẩm
         /// </summary>
         /// <param name="_mDongLaptop"></param>
-        public UC_SanPham(myChiTietDongLaptopDTO _mDongLaptop)
+        public UC_SANPHAM(myChiTietDongLaptopDTO _mDongLaptop)
         {
             InitializeComponent();
             m_dLaptop = _mDongLaptop;
