@@ -8,10 +8,37 @@ namespace EStoreBUS
 {
     public class myChiTietCongNgheCPUBUS
     {
-        public myChiTietCongNgheCPUDTO LayChiTietCongNgheCPU(int _iMaChiTietCongNgheCPU)
-        { return null; }
+        /// <summary>
+        /// Them Cong Nghe CPU:
+        /// </summary>
+        /// <param name="_mCongNgheCPU"></param>
+        /// <returns></returns>
+        public static int ThemCongNgheCPU(myChiTietCongNgheCPUDTO _mCongNgheCPU)
+        {
+            try
+            {
+                return myChiTietCongNgheCPUDAO.ThemCongNgheCPU(_mCongNgheCPU);
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
-        public List<myChiTietCongNgheCPUDTO> LayChiTietCongNgheCPU()
-        { return null; }
+        /// <summary>
+        /// Lay DS Cong Nghe:
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietCongNgheCPUDTO> LayDSCongNgheCPU()
+        {
+            try
+            {
+                return myChiTietCongNgheCPUDAO.LayDSCongNgheCPU();
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

@@ -683,7 +683,7 @@ namespace EStoreDAO
                 m_eStoreDataContext.CHITIETDONGLAPTOPs.InsertOnSubmit(dongLaptopMoi);
                 m_eStoreDataContext.SubmitChanges();
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }
@@ -700,7 +700,7 @@ namespace EStoreDAO
                 laptop = dongLaptopMoi;
                 m_eStoreDataContext.SubmitChanges();
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }

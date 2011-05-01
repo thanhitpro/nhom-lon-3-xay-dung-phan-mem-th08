@@ -107,7 +107,7 @@ namespace EStoreBUS
                 }
                 return false;
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }

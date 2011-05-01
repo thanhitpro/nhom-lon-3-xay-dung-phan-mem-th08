@@ -13,7 +13,7 @@ namespace EStoreDAO
         /// Lay thong tin cua CPU tu ma CPU
         /// </summary>
         /// <param name="_iMaChiTietDongCPU"></param>
-        /// <returns></returns>
+        /// <returns>True nếu thành công</returns>
         public static myChiTietDongCPUDTO LayChiTietDongCPU(int _iMaChiTietDongCPU)
         {
             try
@@ -40,6 +40,51 @@ namespace EStoreDAO
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Thêm dòng CPU
+        /// </summary>
+        /// <param name="_mDongCPU"></param>
+        /// <returns></returns>
+        public static bool ThemDongCPU(myChiTietDongCPUDTO _mDongCPU)
+        {
+            try
+            {
+                CHITIETDONGCPU dongCPU = new CHITIETDONGCPU();
+
+                dongCPU.MaChiTietCongNgheCPU = _mDongCPU.ChiTietCongNgheCPU.IMaChiTietCN;
+                dongCPU.TenDongCPU = _mDongCPU.STenDongCPU;
+                dongCPU.MaNhaSanXuat = 32;
+                dongCPU.MaBangDiem_KhoangTang = 1;
+                
+                m_eStoreDataContext.CHITIETDONGCPUs.InsertOnSubmit(dongCPU);
+                m_eStoreDataContext.SubmitChanges();
+
+                return true;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Kiem tra mot dong CPU co ton tai hay chua
+        /// </summary>
+        /// <param name="_sName"></param>
+        /// <returns></returns>
+        public static bool KiemTraTonTaiDongCPU(string _sName)
+        {
+            try
+            {
+                return (m_eStoreDataContext.CHITIETDONGCPUs.ToList().Exists(dongCPU => dongCPU.TenDongCPU == _sName));
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// Lay danh sach tat ca cac dong CPU
         /// </summary>

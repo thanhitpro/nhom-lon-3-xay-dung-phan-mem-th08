@@ -9,10 +9,37 @@ namespace EStoreBUS
 {
     public class myChiTietCongNgheRamBUS
     {
-        public myChiTietCongNgheRamDTO LayChiTietCongNgheRam(int _iMaChiTietCongNgheRam)
-        { return null; }
+        /// <summary>
+        /// Lấy danh sách Công nghệ RAM:
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietCongNgheRamDTO> LayChiTietCongNgheRam()
+        {
+            try
+            {
+                return myChiTietCongNgheRamDAO.LayChiTietCongNgheRam();
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
-        public List<myChiTietCongNgheRamDTO> LayChiTietCongNgheRam()
-        { return null; }
+        /// <summary>
+        /// Thêm chi tiết công nghệ RAM:
+        /// </summary>
+        /// <param name="_mCTRAM"></param>
+        /// <returns></returns>
+        public static bool ThemCongNgheRAM(myChiTietCongNgheRamDTO _mCNRAM)
+        {
+            try
+            {
+                return myChiTietCongNgheRamDAO.ThemCongNgheRAM(_mCNRAM);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

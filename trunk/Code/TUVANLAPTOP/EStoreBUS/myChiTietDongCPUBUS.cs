@@ -47,5 +47,34 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Them moi dong dong CPU:
+        /// </summary>
+        /// <param name="_mChiTietDongCPU"></param>
+        /// <returns></returns>
+        public static bool ThemDongCPU(myChiTietDongCPUDTO _mChiTietDongCPU)
+        {
+            try
+            {
+                return myChiTietDongCPUDAO.ThemDongCPU(_mChiTietDongCPU);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public static bool KiemTraTonTaiDongCPU(string _sName)
+        {
+            try
+            {
+                return myChiTietDongCPUDAO.KiemTraTonTaiDongCPU(_sName);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

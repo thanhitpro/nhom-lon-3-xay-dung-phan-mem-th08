@@ -115,6 +115,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DANGNHAP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANGNHAP";
             this.Load += new System.EventHandler(this.DANGNHAP_Load);
             this.ResumeLayout(false);
