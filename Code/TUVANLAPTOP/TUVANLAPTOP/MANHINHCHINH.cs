@@ -295,8 +295,7 @@ namespace TUVANLAPTOP
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 3;
             DANGNHAP frm = new DANGNHAP();
-            frm.ShowDialog();            
+            frm.ShowDialog(); 
         }
-
     }
 }
