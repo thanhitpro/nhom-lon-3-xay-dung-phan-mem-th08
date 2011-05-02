@@ -88,5 +88,55 @@ namespace EStoreDAO
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Lấy danh sách hệ điều hành
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietHeDieuHanhDTO> LayDSHeDieuHanh()
+        {
+            try
+            {
+                List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
+                foreach (CHITIETHEDIEUHANH hdh in m_eStoreDataContext.CHITIETHEDIEUHANHs)
+                {
+                    myChiTietHeDieuHanhDTO ctHDH = new myChiTietHeDieuHanhDTO();
+                    ctHDH.STenHeDieuHanh = hdh.TenHeDieuHanh;
+                    ctHDH.FHeSo = (float)hdh.HeSo;
+
+                    dsHDH.Add(ctHDH);
+                }
+
+                return dsHDH;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Thêm mới Hệ Điều Hành
+        /// </summary>
+        /// <param name="_mHDH"></param>
+        /// <returns></returns>
+        public static bool ThemHDH(myChiTietHeDieuHanhDTO _mHDH)
+        {
+            try
+            {
+                CHITIETHEDIEUHANH ctHDH = new CHITIETHEDIEUHANH();
+                ctHDH.TenHeDieuHanh = _mHDH.STenHeDieuHanh;
+                ctHDH.HeSo = (float)_mHDH.FHeSo;
+
+                m_eStoreDataContext.CHITIETHEDIEUHANHs.InsertOnSubmit(ctHDH);
+                m_eStoreDataContext.SubmitChanges();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Thêm mới hệ điều hành thất bại !", ex);
+            }
+        }
     }
 }

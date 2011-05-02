@@ -47,5 +47,38 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Lấy danh sách hệ điều hành
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietHeDieuHanhDTO> LayDSHeDieuHanh()
+        {
+            try
+            {
+                return myChiTietHeDieuHanhDAO.LayDSHeDieuHanh();
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Thêm hệ điều hành
+        /// </summary>
+        /// <param name="_mHDH"></param>
+        /// <returns></returns>
+        public static bool ThemMoiHDH(myChiTietHeDieuHanhDTO _mHDH)
+        {
+            try
+            {
+                return myChiTietHeDieuHanhDAO.ThemHDH(_mHDH);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

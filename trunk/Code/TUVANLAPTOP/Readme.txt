@@ -7,3 +7,6 @@ Nhóm 24: Một số chú ý:
 	    30 kí tự sẽ bị lỗi khi dùng chức năng thêm dòng CPU.
 	- Đặc tả chức năng này không rõ ràng lắm nên mình theo ý kiến chủ quan làm chức năng thêm thông tin thế thôi. Có gì các bạn note lại
 	   góp ý. 
+	   
+NEW: - Đã thêm 3 đặc tính nữa
+	 - Chú ý comboBox trong CPU có thế Edit (đã xử lý thêm mới nếu thấy đổi giá trị của nó)

@@ -8,10 +8,37 @@ namespace EStoreBUS
 {
     public class myChiTietDungLuongOCungBUS
     {
-        public myChiTietDungLuongOCungDTO LayChiTietDungLuongOCung(int _iMaChiTietDungLuongOCung)
-        { return null; }
+        /// <summary>
+        /// Lấy danh sách các dung lượng ổ cứng hiện có:
+        /// </summary>
+        /// <returns></returns>
+        public static List<myChiTietDungLuongOCungDTO> LayChiTietDungLuongOCung()
+        {
+            try
+            {
+                return myChiTietDungLuongOCungDAO.LayDSDungLuongOCung();
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
-        public List<myChiTietDungLuongOCungDTO> LayChiTietDungLuongOCung()
-        { return null; }
+        /// <summary>
+        /// Thêm dung lượng Ổ cứng mới:
+        /// </summary>
+        /// <param name="_mDungLuong"></param>
+        /// <returns></returns>
+        public static bool ThemDungLuongOCung(myChiTietDungLuongOCungDTO _mDungLuong)
+        {
+            try
+            {
+                return myChiTietDungLuongOCungDAO.ThemDungLuongOCung(_mDungLuong);
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
