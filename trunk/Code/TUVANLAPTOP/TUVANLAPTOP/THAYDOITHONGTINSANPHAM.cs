@@ -37,22 +37,13 @@ namespace TUVANLAPTOP
             {
                 dsDongRam = null;
             }
-            cbb_ram.Items.Add("----");
             if (dsDongRam != null)
             {
                 foreach (myChiTietDongRamDTO ram in dsDongRam)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_ram.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_ram.Items[index].ToString().Trim(), ram.STenDongRAM.Trim(), true) == 0)
-                        {
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_ram.Items.Add(ram.STenDongRAM);
+                    cbb_ram.Items.Add(ram);
                 }
+                cbb_ram.DisplayMember = "STenDongRAM";
                 cbb_ram.SelectedItem = cbb_ram.Items[0];
             }
 
@@ -67,22 +58,13 @@ namespace TUVANLAPTOP
             {
                 dsDongCPU = null;
             }
-            cbb_cpu.Items.Add("----");
             if (dsDongCPU != null)
             {
                 foreach (myChiTietDongCPUDTO cpu in dsDongCPU)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_cpu.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_cpu.Items[index].ToString().Trim(), cpu.STenDongCPU.Trim(), true) == 0)
-                        {
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_cpu.Items.Add(cpu.STenDongCPU);        
+                    cbb_cpu.Items.Add(cpu);
                 }
+                cbb_cpu.DisplayMember = "STenDongCPU";
                 cbb_cpu.SelectedItem = cbb_cpu.Items[0];
             }
             // Load O Cung
@@ -96,23 +78,13 @@ namespace TUVANLAPTOP
             {
                 dsDongOCung = null;
             }
-            cbb_ocung.Items.Add("----");
             if (dsDongOCung != null)
             {
                 foreach (myChiTietDongOCungDTO ocung in dsDongOCung)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_ocung.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_ocung.Items[index].ToString().Trim(), ocung.STenDongOCung.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_ocung.Items.Add(ocung.STenDongOCung);
+                    cbb_ocung.Items.Add(ocung);
                 }
+                cbb_ocung.DisplayMember = "STenDongOCung";
                 cbb_ocung.SelectedItem = cbb_ocung.Items[0];
             }
 
@@ -127,23 +99,13 @@ namespace TUVANLAPTOP
             {
                 dsManHinh = null;
             }
-            cbb_manhinh.Items.Add("----");
             if (dsManHinh != null)
             {
                 foreach (myChiTietDongManHinhDTO manhinh in dsManHinh)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_manhinh.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_manhinh.Items[index].ToString().Trim(), manhinh.STenDongManHinh.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_manhinh.Items.Add(manhinh.STenDongManHinh);    
+                    cbb_manhinh.Items.Add(manhinh);
                 }
+                cbb_manhinh.DisplayMember = "STenDongManHinh";
                 cbb_manhinh.SelectedItem = cbb_manhinh.Items[0];
             }
 
@@ -158,23 +120,13 @@ namespace TUVANLAPTOP
             {
                 dsCardDoHoa = null;
             }
-            cbb_cardmanhinh.Items.Add("----");
             if (dsCardDoHoa != null)
             {
                 foreach (myChiTietDongCardDoHoaDTO carddohoa in dsCardDoHoa)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_cardmanhinh.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_cardmanhinh.Items[index].ToString().Trim(), carddohoa.STenDongCardDoHoa.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_cardmanhinh.Items.Add(carddohoa.STenDongCardDoHoa);    
+                    cbb_cardmanhinh.Items.Add(carddohoa);
                 }
+                cbb_cardmanhinh.DisplayMember = "STenDongCardDoHoa";
                 cbb_cardmanhinh.SelectedItem = cbb_cardmanhinh.Items[0];
             }
 
@@ -189,26 +141,15 @@ namespace TUVANLAPTOP
             {
                 dsLoa = null;
             }
-            cbb_loa.Items.Add("----");
             if (dsLoa != null)
             {
                 foreach (myChiTietDongLoaDTO loa in dsLoa)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_loa.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_loa.Items[index].ToString().Trim(), loa.STenDongLoa.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_loa.Items.Add(loa.STenDongLoa);    
+                    cbb_loa.Items.Add(loa);
                 }
+                cbb_loa.DisplayMember = "STenDongLoa";
                 cbb_loa.SelectedItem = cbb_loa.Items[0];
             }
-
             // Load O Quang
             myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
@@ -220,23 +161,13 @@ namespace TUVANLAPTOP
             {
                 dsDiaQuang = null;
             }
-            cbb_oquang.Items.Add("----");
-            if (dsDiaQuang != null)
+            if (dsDongRam != null)
             {
                 foreach (myChiTietDongODiaQuangDTO diaquang in dsDiaQuang)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_oquang.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_oquang.Items[index].ToString().Trim(), diaquang.STenDongODiaQuang.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_oquang.Items.Add(diaquang.STenDongODiaQuang);
+                    cbb_oquang.Items.Add(diaquang);
                 }
+                cbb_oquang.DisplayMember = "STenDongODiaQuang";
                 cbb_oquang.SelectedItem = cbb_oquang.Items[0];
             }
 
@@ -251,23 +182,13 @@ namespace TUVANLAPTOP
             {
                 dsHDH = null;
             }
-            cbb_hdh.Items.Add("----");
             if (dsHDH != null)
             {
                 foreach (myChiTietHeDieuHanhDTO hdh in dsHDH)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_hdh.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_hdh.Items[index].ToString().Trim(), hdh.STenHeDieuHanh.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_hdh.Items.Add(hdh.STenHeDieuHanh);    
+                    cbb_hdh.Items.Add(hdh);
                 }
+                cbb_hdh.DisplayMember = "STenHeDieuHanh";
                 cbb_hdh.SelectedItem = cbb_hdh.Items[0];
             }
 
@@ -282,24 +203,14 @@ namespace TUVANLAPTOP
             {
                 dsTrongLuong = null;
             }
-            cbb_trongluong.Items.Add("----");
             if (dsTrongLuong != null)
             {
-                foreach (myChiTietTrongLuongDTO tl in dsTrongLuong)
+                foreach (myChiTietTrongLuongDTO trongluong in dsTrongLuong)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_trongluong.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_trongluong.Items[index].ToString().Trim(), tl.FGiaTriTrongLuong.ToString().Trim(), true) == 0)
-                        {
+                    cbb_trongluong.Items.Add(trongluong);
 
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_trongluong.Items.Add(tl.FGiaTriTrongLuong);        
                 }
-                    
+                cbb_trongluong.DisplayMember = "FGiaTriTrongLuong";
                 cbb_trongluong.SelectedItem = cbb_trongluong.Items[0];
             }
 
@@ -315,25 +226,25 @@ namespace TUVANLAPTOP
                 dsLapTop = null;
             }
             // - Mau Sac-
-            cbb_mausac.Items.Add("----");
-            foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
+            if (dsLapTop != null)
             {
-                bool trace = true;
-                for (int index = 0; index < cbb_mausac.Items.Count; index++)
+                foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
-                    if (string.Compare(cbb_mausac.Items[index].ToString().Trim(), laptop.SMauSac.Trim(), true) == 0)
+                    bool trace = true;
+                    for (int index = 0; index < cbb_mausac.Items.Count; index++)
                     {
+                        if (string.Compare(cbb_mausac.Items[index].ToString().Trim(), laptop.SMauSac.Trim(), true) == 0)
+                        {
 
-                        trace = false;
+                            trace = false;
+                        }
                     }
+                    if (trace == true)
+                        cbb_mausac.Items.Add(laptop.SMauSac);
                 }
-                if (trace == true)
-                    cbb_mausac.Items.Add(laptop.SMauSac);
-            }
 
                 cbb_mausac.SelectedItem = cbb_mausac.Items[0];
                 // - Thoi Gian Bao Hanh
-                cbb_thoigian_bh.Items.Add("----");
                 foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
                     bool trace = true;
@@ -349,6 +260,7 @@ namespace TUVANLAPTOP
                         cbb_thoigian_bh.Items.Add(laptop.IThoiGianBaoHanh);
                 }
                 cbb_thoigian_bh.SelectedItem = cbb_thoigian_bh.Items[0];
+            }
 
             //Load Card Mạng
             myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
@@ -361,23 +273,13 @@ namespace TUVANLAPTOP
             {
                 dsCardMang = null;
             }
-            cbb_cardmang.Items.Add("----");
             if (dsCardMang != null)
             {
                 foreach (myChiTietDongCardMangDTO cardmang in dsCardMang)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_cardmang.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_cardmang.Items[index].ToString().Trim(), cardmang.STenDongCardMang.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_cardmang.Items.Add(cardmang.STenDongCardMang);   
+                    cbb_cardmang.Items.Add(cardmang);
                 }
+                cbb_cardmang.DisplayMember = "STenDongCardMang";
                 cbb_cardmang.SelectedItem = cbb_cardmang.Items[0];
             }
 
@@ -392,23 +294,13 @@ namespace TUVANLAPTOP
             {
                 dsCardReader = null;
             }
-            cbb_cardreader.Items.Add("----");
             if (dsCardReader != null)
             {
                 foreach (myChiTietDongCardReaderDTO cardreader in dsCardReader)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_cardreader.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_cardreader.Items[index].ToString().Trim(), cardreader.STenDongCardReader.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_cardreader.Items.Add(cardreader.STenDongCardReader);    
+                    cbb_cardreader.Items.Add(cardreader);
                 }
+                cbb_cardreader.DisplayMember = "STenDongCardReader";
                 cbb_cardreader.SelectedItem = cbb_cardreader.Items[0];
             }
 
@@ -423,23 +315,13 @@ namespace TUVANLAPTOP
             {
                 dsWebcam = null;
             }
-            cbb_webcam.Items.Add("----");
             if (dsWebcam != null)
             {
                 foreach (myChiTietDongWebcamDTO webcam in dsWebcam)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_webcam.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_webcam.Items[index].ToString().Trim(), webcam.STenDongWebCam.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_webcam.Items.Add(webcam.STenDongWebCam);    
+                    cbb_webcam.Items.Add(webcam);
                 }
+                cbb_webcam.DisplayMember = "STenDongWebcam";
                 cbb_webcam.SelectedItem = cbb_webcam.Items[0];
             }
 
@@ -455,44 +337,32 @@ namespace TUVANLAPTOP
                 dsPin = null;
             }
 
-            cbb_pin.Items.Add("----");
             if (dsPin != null)
             {
                 foreach (myChiTietDongPinDTO pin in dsPin)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_pin.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_pin.Items[index].ToString().Trim(), pin.FTenDongPin.Trim(), true) == 0)
-                        {
+                    cbb_pin.Items.Add(pin);
 
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_pin.Items.Add(pin.FTenDongPin);
                 }
-
+                cbb_pin.DisplayMember = "FTenDongPin";
                 cbb_pin.SelectedItem = cbb_pin.Items[0];
             }
 
             //Load Kha Nang Nhan Dang Van Tay
-            cbb_vantay.Items.Add("----");
             cbb_vantay.Items.Add("Có");
             cbb_vantay.Items.Add("Không");
             cbb_vantay.SelectedItem = cbb_vantay.Items[0];
 
             //Load Cong HDMI
-            cbb_hdmi.Items.Add("----");
             cbb_hdmi.Items.Add("Có");
             cbb_hdmi.Items.Add("Không");
             cbb_hdmi.SelectedItem = cbb_hdmi.Items[0];
 
             // Load So Cong USB
-            cbb_usb.Items.Add("----");
             cbb_usb.Items.Add("1");
             cbb_usb.Items.Add("2");
             cbb_usb.Items.Add("3");
+            cbb_usb.Items.Add("4");
             cbb_usb.SelectedItem = cbb_usb.Items[0];
 
             // Load Nha SX
@@ -506,24 +376,13 @@ namespace TUVANLAPTOP
             {
                 dsNhaSX = null;
             }
-            cbb_nhasx.Items.Add("----");
             if (dsNhaSX != null)
             {
                 foreach (myNhaSanXuatDTO nhasx in dsNhaSX)
                 {
-                    bool trace = true;
-                    for (int index = 0; index < cbb_nhasx.Items.Count; index++)
-                    {
-                        if (string.Compare(cbb_nhasx.Items[index].ToString().Trim(), nhasx.STenNhaSanXuat.Trim(), true) == 0)
-                        {
-
-                            trace = false;
-                        }
-                    }
-                    if (trace == true)
-                        cbb_nhasx.Items.Add(nhasx.STenNhaSanXuat);    
-                    
+                    cbb_nhasx.Items.Add(nhasx);
                 }
+                cbb_nhasx.DisplayMember = "STenNhaSanXuat";
                 cbb_nhasx.SelectedItem = cbb_nhasx.Items[0];
             }
         }
@@ -585,8 +444,6 @@ namespace TUVANLAPTOP
                 }
 
             }
-
-
             //lay du lieu chi tiet 1 dong laptop
             myChiTietDongLaptopDTO laptop = new myChiTietDongLaptopDTO();
             try
@@ -595,7 +452,7 @@ namespace TUVANLAPTOP
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối với cơ sở dữ liệu. Vui lòng thực hiện lại thao tác tra cứu","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi kết nối với cơ sở dữ liệu. Vui lòng thực hiện lại thao tác tra cứu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -643,11 +500,11 @@ namespace TUVANLAPTOP
                 //pin
                 laptop.ChiTietDongPin.FTenDongPin,
                 //nhan dang van tay
-                (laptop.BFingerprintReader==1)?"Có":"Không",
+                (laptop.BFingerprintReader == 1) ? "Có" : "Không",
                 //usb
                 laptop.ISoLuongCongUSB,
                 //cong HDMI
-                (laptop.BHDMI==1)?"Có":"Không",
+                (laptop.BHDMI == 1) ? "Có" : "Không",
                 //nha san xuat
                 laptop.NhaSanXuat.STenNhaSanXuat,
                 //thoi gian bao hanh
@@ -657,7 +514,7 @@ namespace TUVANLAPTOP
                 //so luong nhap
                 laptop.ISoLuongNhap,
                 // Ngay nhap
-                laptop.DNgayNhap.Day.ToString()+"/"+laptop.DNgayNhap.Month.ToString()+"/"+laptop.DNgayNhap.Year.ToString(),
+                laptop.DNgayNhap.Day.ToString() + "/" + laptop.DNgayNhap.Month.ToString() + "/" + laptop.DNgayNhap.Year.ToString(),
                 //mo ta them
                 laptop.SMoTaThem
                 );
@@ -706,11 +563,106 @@ namespace TUVANLAPTOP
         /// <param name="m_cbb"> combobox can lay dia chi chi cho item</param>
         /// <param name="CompareStr">chuoi so sanh</param>
         /// <returns></returns>
-        private int GetIndexItem( ComboBox m_cbb, String CompareStr)
+        private int GetIndexItem(ComboBox m_cbb, String CompareStr)
         {
+
             for (int count = 0; count < m_cbb.Items.Count; count++)
             {
-                if(String.Compare(m_cbb.Items[count].ToString().Trim(),CompareStr.Trim(),true)==0)
+                string Str = "";
+
+                if (m_cbb == cbb_ram)
+                {
+                    myChiTietDongRamDTO ram = (myChiTietDongRamDTO)m_cbb.Items[count];
+                    Str = ram.STenDongRAM;
+                }
+                else if (m_cbb == cbb_cpu)
+                {
+                    myChiTietDongCPUDTO cpu = (myChiTietDongCPUDTO)m_cbb.Items[count];
+                    Str = cpu.STenDongCPU;
+                }
+                else if (m_cbb == cbb_ocung)
+                {
+                    myChiTietDongOCungDTO ocung = (myChiTietDongOCungDTO)m_cbb.Items[count];
+                    Str = ocung.STenDongOCung;
+                }
+                else if (m_cbb == cbb_manhinh)
+                {
+                    myChiTietDongManHinhDTO manhinh = (myChiTietDongManHinhDTO)m_cbb.Items[count];
+                    Str = manhinh.STenDongManHinh;
+                }
+                else if (m_cbb == cbb_cardmanhinh)
+                {
+                    myChiTietDongCardDoHoaDTO carddohoa = (myChiTietDongCardDoHoaDTO)m_cbb.Items[count];
+                    Str = carddohoa.STenDongCardDoHoa;
+                }
+                else if (m_cbb == cbb_loa)
+                {
+                    myChiTietDongLoaDTO loa = (myChiTietDongLoaDTO)m_cbb.Items[count];
+                    Str = loa.STenDongLoa;
+                }
+                else if (m_cbb == cbb_oquang)
+                {
+                    myChiTietDongODiaQuangDTO oquang = (myChiTietDongODiaQuangDTO)m_cbb.Items[count];
+                    Str = oquang.STenDongODiaQuang;
+                }
+                else if (m_cbb == cbb_hdh)
+                {
+                    myChiTietHeDieuHanhDTO hdh = (myChiTietHeDieuHanhDTO)m_cbb.Items[count];
+                    Str = hdh.STenHeDieuHanh;
+                }
+                else if (m_cbb == cbb_trongluong)
+                {
+                    myChiTietTrongLuongDTO trongluong = (myChiTietTrongLuongDTO)m_cbb.Items[count];
+                    Str = trongluong.FGiaTriTrongLuong.ToString();
+                }
+                else if (m_cbb == cbb_mausac)
+                {
+                    Str = m_cbb.Items[count].ToString();
+                }
+                else if (m_cbb == cbb_cardmang)
+                {
+                    myChiTietDongCardMangDTO cardmang = (myChiTietDongCardMangDTO)m_cbb.Items[count];
+                    Str = cardmang.STenDongCardMang;
+                }
+                else if (m_cbb == cbb_cardreader)
+                {
+                    myChiTietDongCardReaderDTO cardreader = (myChiTietDongCardReaderDTO)m_cbb.Items[count];
+                    Str = cardreader.STenDongCardReader;
+                }
+                else if (m_cbb == cbb_webcam)
+                {
+                    myChiTietDongWebcamDTO webcam = (myChiTietDongWebcamDTO)m_cbb.Items[count];
+                    Str = webcam.STenDongWebCam;
+                }
+                else if (m_cbb == cbb_pin)
+                {
+                    myChiTietDongPinDTO pin = (myChiTietDongPinDTO)m_cbb.Items[count];
+                    Str = pin.FTenDongPin;
+                }
+                else if (m_cbb == cbb_vantay)
+                {
+                    Str = m_cbb.Items[count].ToString();
+                }
+                else if (m_cbb == cbb_hdmi)
+                {
+                    Str = m_cbb.Items[count].ToString();
+                }
+                else if (m_cbb == cbb_usb)
+                {
+                    Str = m_cbb.Items[count].ToString();
+                }
+                else if (m_cbb == cbb_nhasx)
+                {
+                    myNhaSanXuatDTO nhasx = (myNhaSanXuatDTO)m_cbb.Items[count];
+                    Str = nhasx.STenNhaSanXuat;
+                }
+                else if (m_cbb == cbb_thoigian_bh)
+                {
+                    Str = m_cbb.Items[count].ToString();
+                }
+                else
+                    Str = m_cbb.Items[count].ToString();
+                if (String.Compare(Str.Trim(), CompareStr.Trim(), true) == 0)
                     return count;
             }
             return 0;
@@ -821,15 +773,6 @@ namespace TUVANLAPTOP
             {
                 return false;
             }
-            else if (
-                    cbb_ram.SelectedIndex == 0 || cbb_cpu.SelectedIndex == 0 || cbb_ocung.SelectedIndex == 0 || cbb_manhinh.SelectedIndex == 0 ||
-                    cbb_cardmanhinh.SelectedIndex == 0 || cbb_loa.SelectedIndex == 0 || cbb_oquang.SelectedIndex == 0 || cbb_hdh.SelectedIndex == 0 ||
-                    cbb_trongluong.SelectedIndex == 0 || cbb_mausac.SelectedIndex == 0 || cbb_cardmang.SelectedIndex == 0 || cbb_cardreader.SelectedIndex == 0 ||
-                    cbb_webcam.SelectedIndex == 0 || cbb_pin.SelectedIndex == 0 || cbb_vantay.SelectedIndex == 0 || cbb_usb.SelectedIndex == 0 ||
-                    cbb_hdmi.SelectedIndex == 0 || cbb_nhasx.SelectedIndex == 0 || cbb_thoigian_bh.SelectedIndex == 0)
-            {
-                return false;
-            }
             else
                 return true;
         }
@@ -843,7 +786,7 @@ namespace TUVANLAPTOP
         {
             if (KiemTra_ThongTin() == false)
             {
-                MessageBox.Show("Chưa điền đầy đủ thông tin.Vui lòng nhập lại cho đầy đủ thông tin","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Chưa điền đầy đủ thông tin.Vui lòng nhập lại cho đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
@@ -862,125 +805,53 @@ namespace TUVANLAPTOP
                 dongLaptopMoi.TenChiTietDongLapTop = txtTenDongLapTop.Text;
             }
 
-            //dòng ram
-            int maRam = -1;
-            myChiTietDongRamBUS ramBus = new myChiTietDongRamBUS();
-            try
-            {
-                maRam = ramBus.LayChiTietDongRam(cbb_ram.Text.Trim());
-            }
-            catch
-            {
-                maRam = -1;
-            }
-            dongLaptopMoi.MaDongRAM = maRam;
+            //dòng Ram
+            myChiTietDongRamDTO dongRam = (myChiTietDongRamDTO)cbb_ram.SelectedItem;
+            dongLaptopMoi.MaDongRAM = dongRam.IMaDongRam;
 
             //dòng CPU
-            myChiTietDongCPUBUS cpuBus = new myChiTietDongCPUBUS();
-            int maCpu = -1;
-            try
-            {
-                maCpu = cpuBus.LayChiTietDongCPU(cbb_cpu.Text.Trim());
-            }
-            catch
-            {
-                maCpu = -1;
-            }
-            dongLaptopMoi.MaDongCPU = maCpu;
+            myChiTietDongCPUDTO dongCPU = (myChiTietDongCPUDTO)cbb_cpu.SelectedItem;
+            dongLaptopMoi.MaDongCPU = dongCPU.IMaDongCPU;
 
-            //dòng ô cứng
-
-            myChiTietDongOCungBUS ocungBus = new myChiTietDongOCungBUS();
-            int maOCung = -1;
-            try
-            {
-                maOCung = ocungBus.LayChiTietDongOCung(cbb_ocung.Text.Trim());
-            }
-            catch
-            {
-                maOCung = -1;
-            }
-            dongLaptopMoi.MaDongOCung = maOCung;
+            //dòng Ổ Cứng
+            myChiTietDongOCungDTO dongOCung = (myChiTietDongOCungDTO)cbb_ocung.SelectedItem;
+            dongLaptopMoi.MaDongOCung = dongOCung.IMaDongOCung;
 
             //dòng màn hình
+            myChiTietDongManHinhDTO dongManHinh = (myChiTietDongManHinhDTO)cbb_manhinh.SelectedItem;
+            dongLaptopMoi.MaDongManHinh = dongManHinh.IMaDongManHinh;
 
-            myChiTietDongManHinhBUS manHinhBus = new myChiTietDongManHinhBUS();
-            int maManHinh = -1;
-            try
-            {
-                maManHinh = manHinhBus.LayChiTietDongManHinh(cbb_manhinh.Text.Trim());
-            }
-            catch
-            {
-                maManHinh = -1;
-            }
-            dongLaptopMoi.MaDongManHinh = maManHinh ;
-
-            // Card Man Hinh
-            myChiTietDongCardDoHoaBUS cardDHBus = new myChiTietDongCardDoHoaBUS();
-            int maCardDH = -1;
-            try
-            {
-                maCardDH = cardDHBus.LayChiTietDongCardDoHoa(cbb_cardmanhinh.Text.Trim());
-            }
-            catch
-            {
-                maCardDH = -1;
-            }
-            dongLaptopMoi.MaDongCardDoHoa = maCardDH;
+            // Card Màn Hình
+            myChiTietDongCardDoHoaDTO dongCardDoHoa = (myChiTietDongCardDoHoaDTO)cbb_cardmanhinh.SelectedItem;
+            dongLaptopMoi.MaDongCardDoHoa = dongCardDoHoa.IMaDongCardDoHoa;
 
             //Dong Loa
-            myChiTietDongLoaBUS loaBus = new myChiTietDongLoaBUS();
-            int maLoa = -1;
-            try
-            {
-                maLoa = loaBus.LayChiTietDongLoa(cbb_loa.Text.Trim());
-            }
-            catch
-            {
-                maLoa = -1;
-            }
-            dongLaptopMoi.MaDongLoa = maLoa;
+            myChiTietDongLoaDTO dongLoa = (myChiTietDongLoaDTO)cbb_loa.SelectedItem;
+            dongLaptopMoi.MaDongLoa = dongLoa.IMaDongLoa;
 
             //O Quang
-            myChiTietDongODiaQuangBUS diaQuangBus = new myChiTietDongODiaQuangBUS();
-            int maOQuang = -1;
-            try
-            {
-                maOQuang = diaQuangBus.LayChiTietDongODiaQuang(cbb_oquang.Text.Trim());
-            }
-            catch
-            {
-                maOQuang = -1;
-            }
-            dongLaptopMoi.MaDongODiaQuang = maOQuang;
-            //HDH
+            myChiTietDongODiaQuangDTO oDiaQuang = (myChiTietDongODiaQuangDTO)cbb_oquang.SelectedItem;
+            dongLaptopMoi.MaDongODiaQuang = oDiaQuang.IMaDongODiaQuang;
 
-            myChiTietHeDieuHanhBUS hdhBus = new myChiTietHeDieuHanhBUS();
-            int maHDH = -1;
-            try
-            {
-                maHDH = hdhBus.LayChiTietHeDieuHanh(cbb_hdh.Text.Trim());
-            }
-            catch
-            {
-                maHDH = -1;
-            }
-            dongLaptopMoi.MaHeDieuHanh = maHDH ;
+            //HDH
+            myChiTietHeDieuHanhDTO heDieuHanh = (myChiTietHeDieuHanhDTO)cbb_hdh.SelectedItem;
+            dongLaptopMoi.MaHeDieuHanh = heDieuHanh.IMaHeDieuHanh;
 
             //Trong Luong
+            myChiTietTrongLuongDTO trongLuong = (myChiTietTrongLuongDTO)cbb_trongluong.SelectedItem;
+            dongLaptopMoi.MaChiTietTrongLuong = trongLuong.IMaCHiTietTrongLuong;
 
-            myChiTietTrongLuongBUS tlBus = new myChiTietTrongLuongBUS();
-            int maTrongLuong = -1;
+            //thời gian bảo hành
             try
             {
-                maTrongLuong = tlBus.LayChiTietTrongLuong(cbb_trongluong.Text.Trim());
+                dongLaptopMoi.ThoiGianBaoHanh = int.Parse(cbb_thoigian_bh.Text);
             }
             catch
             {
-                maTrongLuong = -1;
+                MessageBox.Show("Thời gian bảo hành phải là 1 con số", "Thông báo");
+                return;
             }
-            dongLaptopMoi.MaChiTietTrongLuong = maTrongLuong ;
+
             //Màu sắc
             dongLaptopMoi.MauSac = cbb_mausac.Text;
 
@@ -991,7 +862,7 @@ namespace TUVANLAPTOP
             }
             catch
             {
-                MessageBox.Show("Thời gian bảo hành phải là giá trị số", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Thời gian bảo hành phải là giá trị số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -1003,62 +874,26 @@ namespace TUVANLAPTOP
             }
             catch
             {
-                MessageBox.Show("Giá tiền phải là giá trị số", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Giá tiền phải là giá trị số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_giaban.Focus();
                 return;
             }
-            
-            //card mạng
-            int maCardMang = -1;
-            myChiTietDongCardMangBUS cardMangBus = new myChiTietDongCardMangBUS();
-            try
-            {
-                maCardMang = cardMangBus.LayChiTietDongCardMang(cbb_cardmang.Text.Trim());
-            }
-            catch
-            {
-                maCardMang = -1;
-            }
-            dongLaptopMoi.MaDongCardMang = maCardMang;
+
+            //Card Mạng
+            myChiTietDongCardMangDTO cardMang = (myChiTietDongCardMangDTO)cbb_cardmang.SelectedItem;
+            dongLaptopMoi.MaDongCardMang = cardMang.IMaDongCardMang;
 
             //CardReader
-            int maCardReader = -1;
-            myChiTietDongCardReaderBUS cardReaderBus = new myChiTietDongCardReaderBUS();
-            try
-            {
-                maCardReader = cardReaderBus.LayChiTietDongCardReader(cbb_cardreader.Text.Trim());
-            }
-            catch
-            {
-                maCardReader = -1;
-            }
-            dongLaptopMoi.MaDongCardReader = maCardReader;
-            //WebCam
+            myChiTietDongCardReaderDTO cardReader = (myChiTietDongCardReaderDTO)cbb_cardreader.SelectedItem;
+            dongLaptopMoi.MaDongCardReader = cardReader.IMaDongCardReader;
 
-            int maWebcam = -1;
-            myChiTietDongWebcamBUS webCamBus = new myChiTietDongWebcamBUS();
-            try
-            {
-                maWebcam =  webCamBus.LayChiTietDongWebcam(cbb_webcam.Text.Trim());
-            }
-            catch
-            {
-                maWebcam = -1;
-            }
-            dongLaptopMoi.MaDongWebCam = maWebcam;
+            //WebCam
+            myChiTietDongWebcamDTO webcam = (myChiTietDongWebcamDTO)cbb_webcam.SelectedItem;
+            dongLaptopMoi.MaDongWebCam = webcam.IMaDongWebcam;
 
             //Pin
-            myChiTietDongPinBUS pinBus = new myChiTietDongPinBUS();
-            int maPin = -1;
-            try
-            {
-                pinBus.LayChiTietDongPin(cbb_pin.Text.Trim());
-            }
-            catch
-            {
-                maPin = -1;
-            }
-            dongLaptopMoi.MaDongPin = maPin;
+            myChiTietDongPinDTO pin = (myChiTietDongPinDTO)cbb_pin.SelectedItem;
+            dongLaptopMoi.MaDongPin = pin.IMaDongPin;
 
             //Kha Nang Nhan Dang Van Tay
             if (cbb_vantay.Text == "Có")
@@ -1077,20 +912,12 @@ namespace TUVANLAPTOP
 
             //Nhà Sản xuất
 
-            myNhaSanXuatBUS nhasxBus = new myNhaSanXuatBUS();
-            int maNhaSX = -1;
-            try
-            {
-                maNhaSX = nhasxBus.LayNhaSanXuat(cbb_nhasx.Text.Trim());
-            }
-            catch
-            {
-                maNhaSX = -1;
-            }
-            dongLaptopMoi.MaNhaSanXuat = maNhaSX;
+            //Nhà Sản xuất
+            myNhaSanXuatDTO nhaSanXuat = (myNhaSanXuatDTO)cbb_nhasx.SelectedItem;
+            dongLaptopMoi.MaNhaSanXuat = nhaSanXuat.IMaNhaSanXuat;
 
             //đã xóa
-            dongLaptopMoi.Deleted = LaptopInfor.BDeleted;
+            dongLaptopMoi.Deleted = false;
             //mã đánh giá
             dongLaptopMoi.MaDanhGia = 1;
             //so lượng còn lại
@@ -1139,12 +966,12 @@ namespace TUVANLAPTOP
             try
             {
                 myChiTietDongLaptopBUS.CapNhatChiTietDongLaptop(dongLaptopMoi);
-                MessageBox.Show("Cập nhật thông tin sản phẩm thành công", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Cập nhật thông tin sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 fileName = "";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(" Cập thông tin sản phẩm mới thất bại","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(" Cập thông tin sản phẩm mới thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1163,7 +990,7 @@ namespace TUVANLAPTOP
             //InitialDirectory = @"C:/";
             //Mở hộp thoại
             DialogResult result = openFileDialog1.ShowDialog();
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
             {
                 //Lấy giá trị
                 //Nếu bạn chỉ chọn một file thì giá trị trả về sẽ là một chuỗi kiểu String
