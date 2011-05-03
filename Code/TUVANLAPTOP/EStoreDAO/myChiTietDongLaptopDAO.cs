@@ -696,14 +696,80 @@ namespace EStoreDAO
         {
             try
             {
-                CHITIETDONGLAPTOP laptop = m_eStoreDataContext.CHITIETDONGLAPTOPs.Single(c => c.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
-                laptop = dongLaptopMoi;
+                CHITIETDONGLAPTOP laptop = m_eStoreDataContext.CHITIETDONGLAPTOPs.Single(p => p.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
+
+                //Update TenLapTop
+                laptop.TenChiTietDongLapTop = dongLaptopMoi.TenChiTietDongLapTop;
+                //Update Ram
+                CHITIETDONGRAM ram = m_eStoreDataContext.CHITIETDONGRAMs.Single(p => p.MaDongRAM == dongLaptopMoi.MaDongRAM);
+                laptop.CHITIETDONGRAM = ram;
+                // Update CPU
+                CHITIETDONGCPU cpu = m_eStoreDataContext.CHITIETDONGCPUs.Single(p => p.MaDongCPU == dongLaptopMoi.MaDongCPU);
+                laptop.CHITIETDONGCPU = cpu;
+                //Update OCung
+                CHITIETDONGOCUNG ocung = m_eStoreDataContext.CHITIETDONGOCUNGs.Single(p => p.MaDongOCung == dongLaptopMoi.MaDongOCung);
+                laptop.CHITIETDONGOCUNG = ocung;
+                //Update Man Hinh
+                CHITIETDONGMANHINH manhinh = m_eStoreDataContext.CHITIETDONGMANHINHs.Single(p => p.MaDongManHinh == dongLaptopMoi.MaDongManHinh);
+                laptop.CHITIETDONGMANHINH = manhinh;
+                //Update Card màn hình
+                CHITIETDONGCARDDOHOA dohoa = m_eStoreDataContext.CHITIETDONGCARDDOHOAs.Single(p => p.MaDongCardDoHoa == dongLaptopMoi.MaDongCardDoHoa);
+                laptop.CHITIETDONGCARDDOHOA = dohoa;
+                // Update Loa
+                CHITIETDONGLOA loa = m_eStoreDataContext.CHITIETDONGLOAs.Single(p => p.MaDongLoa == dongLaptopMoi.MaDongLoa);
+                laptop.CHITIETDONGLOA = loa;
+                // Update O Dia Quang
+                CHITIETDONGODIAQUANG oquang = m_eStoreDataContext.CHITIETDONGODIAQUANGs.Single(p => p.MaDongODiaQuang == dongLaptopMoi.MaDongODiaQuang);
+                laptop.CHITIETDONGODIAQUANG = oquang;
+                //Update HDH
+                HEDIEUHANH hdh = m_eStoreDataContext.HEDIEUHANHs.Single(p => p.MaHeDieuHanh == dongLaptopMoi.MaHeDieuHanh);
+                laptop.HEDIEUHANH = hdh;
+                //Update Tronluong
+                CHITIETTRONGLUONG trongluong = m_eStoreDataContext.CHITIETTRONGLUONGs.Single(p => p.MaChiTietTrongLuong == dongLaptopMoi.MaChiTietTrongLuong);
+                laptop.CHITIETTRONGLUONG = trongluong;
+                //Update MauSac
+                laptop.MauSac = dongLaptopMoi.MauSac;
+                //Update Card Mang
+                CHITIETDONGCARDMANG cardmang = m_eStoreDataContext.CHITIETDONGCARDMANGs.Single(p => p.MaDongCardMang == dongLaptopMoi.MaDongCardMang);
+                laptop.CHITIETDONGCARDMANG = cardmang;
+                //Update CardReader
+                CHITIETDONGCARDREADER cardreader = m_eStoreDataContext.CHITIETDONGCARDREADERs.Single(p => p.MaDongCardReader == dongLaptopMoi.MaDongCardReader);
+                laptop.CHITIETDONGCARDREADER = cardreader;
+                //Update Webcam
+                CHITIETDONGWEBCAM webcam = m_eStoreDataContext.CHITIETDONGWEBCAMs.Single(p => p.MaDongWebCam == dongLaptopMoi.MaDongWebCam);
+                laptop.CHITIETDONGWEBCAM = webcam;
+                //Update Pin
+                CHITIETDONGPIN pin = m_eStoreDataContext.CHITIETDONGPINs.Single(p => p.MaDongPin == dongLaptopMoi.MaDongPin);
+                laptop.CHITIETDONGPIN = pin;
+                //Update Nhan Dang Van Tay
+                laptop.FingerprintReader = dongLaptopMoi.FingerprintReader;
+                //Update So cong Usb
+                laptop.SoLuongCongUSB = dongLaptopMoi.SoLuongCongUSB;
+                //Update HDMI
+                laptop.HDMI = dongLaptopMoi.HDMI;
+                //Update NhaSx
+                NHASANXUAT nhasx = m_eStoreDataContext.NHASANXUATs.Single(p => p.MaNhaSanXuat == dongLaptopMoi.MaNhaSanXuat);
+                laptop.NHASANXUAT = nhasx;
+                //Update Thoi Gian Bao Hanh
+                laptop.ThoiGianBaoHanh = dongLaptopMoi.ThoiGianBaoHanh;
+                //Update GiaBan
+                laptop.GiaBanHienHanh = dongLaptopMoi.GiaBanHienHanh;
+                //Update So Luong Nhap
+                laptop.SoLuongNhap = dongLaptopMoi.SoLuongNhap;
+                //Update Ngay Nhap
+                laptop.NgayNhap = dongLaptopMoi.NgayNhap;
+                //Update Mo Ta Them
+                laptop.MoTaThem = dongLaptopMoi.MoTaThem;
+                //Update Hinh Anh
+                laptop.HinhAnh = dongLaptopMoi.HinhAnh;
+
                 m_eStoreDataContext.SubmitChanges();
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
+
         }
     }
 }

@@ -300,3 +300,32 @@ E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.
 E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache

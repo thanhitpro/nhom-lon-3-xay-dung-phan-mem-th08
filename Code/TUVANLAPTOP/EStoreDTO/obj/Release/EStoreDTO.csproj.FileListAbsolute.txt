@@ -38,3 +38,8 @@ E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
