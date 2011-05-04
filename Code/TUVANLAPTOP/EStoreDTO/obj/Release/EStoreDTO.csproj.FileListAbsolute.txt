@@ -8,11 +8,6 @@ C:\Users\QUOCNHAT\Desktop\temp\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\E
 C:\Users\QUOCNHAT\Desktop\temp\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 C:\Users\QUOCNHAT\Desktop\temp\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.dll
 C:\Users\QUOCNHAT\Desktop\temp\TUVANLAPTOP_DANGNHAP_XOASP_TRACUUSP_XULYLOI_NEW\EStoreDTO\obj\Release\EStoreDTO.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
-D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
 C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
 C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 C:\Users\nmchuong\Desktop\Document\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
@@ -43,3 +38,8 @@ D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVAN
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
