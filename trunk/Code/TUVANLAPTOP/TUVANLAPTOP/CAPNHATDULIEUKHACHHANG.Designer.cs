@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CAPNHATDULIEUKHACHHANG));
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.lb_Updating = new System.Windows.Forms.Label();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.timerRunProgressBar = new System.Windows.Forms.Timer(this.components);
+            this.timerShowResult = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -47,33 +51,43 @@
             // btn_Update
             // 
             this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(91, 95);
+            this.btn_Update.ForeColor = System.Drawing.Color.DarkRed;
+            this.btn_Update.Image = ((System.Drawing.Image)(resources.GetObject("btn_Update.Image")));
+            this.btn_Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Update.Location = new System.Drawing.Point(91, 70);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(169, 41);
+            this.btn_Update.Size = new System.Drawing.Size(149, 57);
             this.btn_Update.TabIndex = 1;
             this.btn_Update.Text = "CẬP NHẬT";
+            this.btn_Update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // lb_Updating
+            // progressBar
             // 
-            this.lb_Updating.AutoSize = true;
-            this.lb_Updating.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Updating.ForeColor = System.Drawing.Color.Red;
-            this.lb_Updating.Location = new System.Drawing.Point(69, 162);
-            this.lb_Updating.Name = "lb_Updating";
-            this.lb_Updating.Size = new System.Drawing.Size(229, 20);
-            this.lb_Updating.TabIndex = 2;
-            this.lb_Updating.Text = "Đang cập nhật cơ sở dữ liệu...";
+            this.progressBar.Location = new System.Drawing.Point(17, 149);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(339, 43);
+            this.progressBar.TabIndex = 2;
+            // 
+            // timerRunProgressBar
+            // 
+            this.timerRunProgressBar.Tick += new System.EventHandler(this.timerRunProgressBar_Tick);
+            // 
+            // timerShowResult
+            // 
+            this.timerShowResult.Tick += new System.EventHandler(this.timerShowResult_Tick);
             // 
             // CAPNHATDULIEUKHACHHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 201);
-            this.Controls.Add(this.lb_Updating);
+            this.ClientSize = new System.Drawing.Size(368, 214);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CAPNHATDULIEUKHACHHANG";
             this.Text = "CAPNHATDULIEUKHACHHANG";
             this.Load += new System.EventHandler(this.CAPNHATDULIEUKHACHHANG_Load);
@@ -86,6 +100,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Label lb_Updating;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Timer timerRunProgressBar;
+        private System.Windows.Forms.Timer timerShowResult;
     }
 }

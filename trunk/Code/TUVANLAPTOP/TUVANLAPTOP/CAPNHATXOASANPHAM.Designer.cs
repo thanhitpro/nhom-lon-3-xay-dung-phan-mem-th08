@@ -93,27 +93,35 @@
             // 
             // btn_ShowAll
             // 
-            this.btn_ShowAll.Location = new System.Drawing.Point(907, 84);
+            this.btn_ShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ShowAll.Image = ((System.Drawing.Image)(resources.GetObject("btn_ShowAll.Image")));
+            this.btn_ShowAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ShowAll.Location = new System.Drawing.Point(885, 83);
             this.btn_ShowAll.Name = "btn_ShowAll";
-            this.btn_ShowAll.Size = new System.Drawing.Size(87, 37);
+            this.btn_ShowAll.Size = new System.Drawing.Size(154, 44);
             this.btn_ShowAll.TabIndex = 12;
             this.btn_ShowAll.Text = "Hiện tất cả";
+            this.btn_ShowAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ShowAll.UseVisualStyleBackColor = true;
             this.btn_ShowAll.Click += new System.EventHandler(this.btn_ShowAll_Click);
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(709, 76);
+            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
+            this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_search.Location = new System.Drawing.Point(678, 50);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(75, 28);
+            this.btn_search.Size = new System.Drawing.Size(119, 43);
             this.btn_search.TabIndex = 11;
             this.btn_search.Text = "Search";
+            this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_search.UseVisualStyleBackColor = true;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // textBox_MaSanPham
             // 
-            this.textBox_MaSanPham.Location = new System.Drawing.Point(504, 84);
+            this.textBox_MaSanPham.Location = new System.Drawing.Point(465, 63);
             this.textBox_MaSanPham.MaxLength = 10;
             this.textBox_MaSanPham.Name = "textBox_MaSanPham";
             this.textBox_MaSanPham.Size = new System.Drawing.Size(156, 20);
@@ -123,7 +131,7 @@
             // label_MaSanPham
             // 
             this.label_MaSanPham.AutoSize = true;
-            this.label_MaSanPham.Location = new System.Drawing.Point(392, 87);
+            this.label_MaSanPham.Location = new System.Drawing.Point(344, 66);
             this.label_MaSanPham.Name = "label_MaSanPham";
             this.label_MaSanPham.Size = new System.Drawing.Size(74, 13);
             this.label_MaSanPham.TabIndex = 9;
@@ -134,7 +142,7 @@
             this.label_Title_NhapTrongTin.AutoSize = true;
             this.label_Title_NhapTrongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Title_NhapTrongTin.ForeColor = System.Drawing.Color.Indigo;
-            this.label_Title_NhapTrongTin.Location = new System.Drawing.Point(270, 33);
+            this.label_Title_NhapTrongTin.Location = new System.Drawing.Point(272, 16);
             this.label_Title_NhapTrongTin.Name = "label_Title_NhapTrongTin";
             this.label_Title_NhapTrongTin.Size = new System.Drawing.Size(525, 26);
             this.label_Title_NhapTrongTin.TabIndex = 8;
@@ -379,11 +387,14 @@
             // btn_Update
             // 
             this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.Image = ((System.Drawing.Image)(resources.GetObject("btn_Update.Image")));
+            this.btn_Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Update.Location = new System.Drawing.Point(614, 22);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(145, 44);
+            this.btn_Update.Size = new System.Drawing.Size(170, 44);
             this.btn_Update.TabIndex = 6;
             this.btn_Update.Text = "Cập nhật csdl";
+            this.btn_Update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 

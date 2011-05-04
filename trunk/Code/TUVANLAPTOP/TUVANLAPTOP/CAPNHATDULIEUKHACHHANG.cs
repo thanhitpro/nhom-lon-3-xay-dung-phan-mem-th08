@@ -8,11 +8,16 @@ using System.Text;
 using System.Windows.Forms;
 using EStoreBUS;
 using EStoreDTO;
+using System.Threading;
 
 namespace TUVANLAPTOP
 {
     public partial class CAPNHATDULIEUKHACHHANG : Form
     {
+        bool m_bFinish;
+        bool m_bFlag;
+        int m_iMaxProcess;
+
         public CAPNHATDULIEUKHACHHANG()
         {
             InitializeComponent();
@@ -20,26 +25,49 @@ namespace TUVANLAPTOP
 
         private void CAPNHATDULIEUKHACHHANG_Load(object sender, EventArgs e)
         {
-            this.ControlBox = false;
-            this.lb_Updating.Visible = false;
+            m_bFinish = false;
+            m_bFlag = false;
+            m_iMaxProcess = 50;
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-            lb_Updating.Text = "Đang cập nhật cơ sở dữ liệu...";
-            lb_Updating.Visible = true;
-            this.Update();
-            try
+            if (false == m_bFlag)
             {
-                AlgorithmNavasBayes.AnalyseData();
+                m_bFlag = true;
+                timerRunProgressBar.Start();
+                timerShowResult.Start();
+                ThreadStart threadStart = new ThreadStart(CapNhat);
+                Thread thread = new Thread(threadStart);
+                thread.Start();
             }
-            catch
+        }
+
+        private void CapNhat()
+        {
+            AlgorithmNavasBayes.AnalyseData();
+            m_bFinish = true;
+        }
+
+        private void timerRunProgressBar_Tick(object sender, EventArgs e)
+        {
+            if (this.m_iMaxProcess > progressBar.Value)
+                progressBar.Value += 1;
+            else
             {
-                MessageBox.Show("Cập nhật thất bại", "Thông báo");
+                this.m_iMaxProcess += (100 - this.m_iMaxProcess - 15) / 2;
+                timerRunProgressBar.Interval *= 2;
             }
-            finally
+        }
+
+        private void timerShowResult_Tick(object sender, EventArgs e)
+        {
+            if (true == m_bFinish)
             {
-                lb_Updating.Visible = false;
+                m_bFlag = false;
+                progressBar.Value = 100;
+                timerShowResult.Stop();
+                timerRunProgressBar.Stop();
                 MessageBox.Show("Cập nhật thành công", "Thông báo");
                 this.Close();
             }
