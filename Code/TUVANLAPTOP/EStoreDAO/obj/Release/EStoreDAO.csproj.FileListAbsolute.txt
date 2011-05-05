@@ -108,3 +108,13 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

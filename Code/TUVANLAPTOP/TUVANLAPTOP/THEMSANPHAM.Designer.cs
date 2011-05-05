@@ -248,6 +248,7 @@
             this.textBox_giaTienTramNgan.Name = "textBox_giaTienTramNgan";
             this.textBox_giaTienTramNgan.Size = new System.Drawing.Size(43, 21);
             this.textBox_giaTienTramNgan.TabIndex = 51;
+            this.textBox_giaTienTramNgan.Text = "000";
             this.textBox_giaTienTramNgan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_giaTienTramNgan_KeyPress);
             // 
             // label3
