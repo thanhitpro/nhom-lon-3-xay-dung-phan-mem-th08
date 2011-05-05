@@ -177,8 +177,9 @@ namespace TUVANLAPTOP
                         button_ChonLaptop.Enabled = true;
                         button1.Enabled = true;
                     }
-                    catch (NullReferenceException nullEx)
+                    catch
                     {
+
                         //Bỏ qua nếu có một thuộc tính nào đó NULL
                     }
                 }
@@ -311,7 +312,7 @@ namespace TUVANLAPTOP
                     frm.ShowDialog();
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Bạn hãy chọn sản phẩm trước khi tìm sản phẩm mới hơn");
             }

@@ -49,7 +49,7 @@ namespace TUVANLAPTOP
             {
                 m_kKhachHang = new KHACHHANG();
             }
-            catch (Exception ex)
+            catch 
             {
                 MessageBox.Show("Lỗi tạo khách hàng");
             }
@@ -77,7 +77,7 @@ namespace TUVANLAPTOP
             }
             catch (System.IO.FileNotFoundException fileNotFoundEx)
             {
-                MessageBox.Show("không tìm thấy file " + fileName + "\nxin vui lòng kiểm tra lại, có thể dữ liệu hệ thống đã bị mất");
+                MessageBox.Show("không tìm thấy file " + fileName + "\nxin vui lòng kiểm tra lại, có thể dữ liệu hệ thống đã bị mất"+fileNotFoundEx.FileName);
             }
             catch (System.Xml.XmlException xmlEx)
             {
@@ -86,7 +86,7 @@ namespace TUVANLAPTOP
             }
             catch (System.IO.FileLoadException fileLoadEx)
             {
-                MessageBox.Show("có lỗi trong quá trình tải dữ liệu");
+                MessageBox.Show("có lỗi trong quá trình tải dữ liệu" + fileLoadEx.FileName);
                 return;
             }
             catch (Exception ex)
@@ -139,7 +139,7 @@ namespace TUVANLAPTOP
                 catch (System.Data.SqlClient.SqlException ex)
                 {
                     //throw ex;
-                    MessageBox.Show("kết nối bị lỗi, hoặc bạn ko có quyền thực hiện thao tác trên");
+                    MessageBox.Show("kết nối bị lỗi, hoặc bạn ko có quyền thực hiện thao tác trên"+ex.Message);
                     return;
                 }
             }
@@ -219,7 +219,7 @@ namespace TUVANLAPTOP
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
             }
             comboBoxNgheNghiep.DataSource = listNgheNghiep;
             comboBoxNgheNghiep.DisplayMember = "TenNgheNghiep";
@@ -231,7 +231,7 @@ namespace TUVANLAPTOP
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
             }
             comboBoxDoTuoi.DataSource = listDoTuoi;
             comboBoxDoTuoi.DisplayMember = "TenDoTuoi";
@@ -243,7 +243,7 @@ namespace TUVANLAPTOP
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
             }
             comboBoxTinhThanh.DataSource = listTinhThanh;
             comboBoxTinhThanh.DisplayMember = "TenTinhThanh";
@@ -256,7 +256,7 @@ namespace TUVANLAPTOP
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai");
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
             }
             comboBoxMucDichSD.DataSource = listMucDichSuDung;
             comboBoxMucDichSD.DisplayMember = "TenMucDichSuDung";

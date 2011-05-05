@@ -40,7 +40,7 @@ namespace TUVANLAPTOP
             {
                 dsDongRam = chiTietDongRam.LayChiTietDongRam();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsDongRam = null;
             }
@@ -59,7 +59,7 @@ namespace TUVANLAPTOP
             {
                 dsDongCPU = chiTietDongCPU.LayChiTietDongCPU();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsDongCPU = null;
             }
@@ -78,7 +78,7 @@ namespace TUVANLAPTOP
             {
                 dsDongOCung = chiTietDongOCung.LayChiTietDongOCung();
             }
-            catch (Exception ex)
+            catch
             {
                 dsDongOCung = null;
             }
@@ -109,7 +109,7 @@ namespace TUVANLAPTOP
             {
                 dsManHinh = chiTietManHinh.LayChiTietDongManHinh();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsManHinh = null;
             }
@@ -128,7 +128,7 @@ namespace TUVANLAPTOP
             {
                 dsCardDoHoa = chiTietCardDoHoa.LayChiTietDongCardDoHoa();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsCardDoHoa = null;
             }
@@ -147,7 +147,7 @@ namespace TUVANLAPTOP
             {
                 dsLoa = chiTietDongLoa.LayChiTietDongLoa();
             }
-            catch (Exception ex)
+            catch
             {
                 dsLoa = null;
             }
@@ -166,7 +166,7 @@ namespace TUVANLAPTOP
             {
                 dsDiaQuang = chiTietDongDQ.LayChiTietDongODiaQuang();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsDiaQuang = null;
             }
@@ -197,7 +197,7 @@ namespace TUVANLAPTOP
             {
                 dsHDH = chiTietHDH.LayChiTietHeDieuHanh();
             }
-            catch (Exception ex)
+            catch
             {
                 dsHDH = null;
             }
@@ -216,7 +216,7 @@ namespace TUVANLAPTOP
             {
                 dsTrongLuong = chiTietTL.LayChiTietTrongLuong();
             }
-            catch (Exception ex)
+            catch
             {
                 dsTrongLuong = null;
             }
@@ -235,7 +235,7 @@ namespace TUVANLAPTOP
             {
                 dsLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsLapTop = null;
             }
@@ -319,7 +319,7 @@ namespace TUVANLAPTOP
             {
                 dsCardMang = chiTietCardMang.LayChiTietDongCardMang();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsCardMang = null;
             }
@@ -340,7 +340,7 @@ namespace TUVANLAPTOP
             {
                 dsCardReader = chiTietCardReader.LayChiTietDongCardReader();
             }
-            catch (Exception ex)
+            catch
             {
                 dsCardReader = null;
             }
@@ -359,7 +359,7 @@ namespace TUVANLAPTOP
             {
                 dsWebcam = chiTietWebCam.LayChiTietDongWebcam();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsWebcam = null;
             }
@@ -378,7 +378,7 @@ namespace TUVANLAPTOP
             {
                 dsPin = chiTietPin.LayChiTietDongPin();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsPin = null;
             }
@@ -430,7 +430,7 @@ namespace TUVANLAPTOP
             {
                 dsNhaSX = nhaSX.LayNhaSanXuat();
             }
-            catch (Exception ex)
+            catch 
             {
                 dsNhaSX = null;
             }
