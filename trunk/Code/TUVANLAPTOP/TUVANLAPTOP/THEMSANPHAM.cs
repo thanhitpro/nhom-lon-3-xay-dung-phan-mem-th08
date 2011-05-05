@@ -603,7 +603,7 @@ namespace TUVANLAPTOP
         {
             //Tạo bộ lọc các file khi mở OpenDialog
             //Filter lọc ra các file để bạn dễ dàng lựa chọn (ví dụ các fiel jpg, png,....)
-            openFileDialog1.Filter = "JPG Files|*.jpg|PNG Files|*.PNG";
+            openFileDialog1.Filter = "PNG Files|*.PNG|JPG Files|*.jpg";
             //Tên của hộp thoại hiện lên - Không có thì sẽ là mặc định
             openFileDialog1.Title = "Chọn hình ảnh";
             //Cho phép chọn nhiều file cùng lúc - Mặc định là false
@@ -626,7 +626,11 @@ namespace TUVANLAPTOP
             //MessageBox.Show(fileType);
             if (fileType == "jpg" || fileType == "png")
             {
-                fileName = @"image/" + imageFile;
+                DateTime dateTime = DateTime.Now;
+                string codeFileName = dateTime.Day.ToString() + dateTime.Month.ToString() + dateTime.Year.ToString() + dateTime.Hour.ToString()
+                    + dateTime.Minute.ToString() + dateTime.Second.ToString();
+                System.IO.File.Copy(openFileDialog1.FileName, Application.StartupPath + "\\image\\" + codeFileName + imageFile);
+                fileName = @"image/" + codeFileName + imageFile;
             }
             else
                 MessageBox.Show("Chương trình chỉ hỗ trợ file JPG và PNG.");
