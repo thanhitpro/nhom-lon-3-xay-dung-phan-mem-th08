@@ -362,3 +362,4 @@ C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TU
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
