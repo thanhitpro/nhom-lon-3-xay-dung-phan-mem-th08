@@ -31,10 +31,8 @@
             this.MainMenu = new System.Windows.Forms.MenuStrip();
             this.AboutUsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.XoaSanPhamItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdminItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TraCuuSanPhamItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThemMoiSanPhamItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThayDoiThongTinSP = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupPanelChinh = new System.Windows.Forms.GroupBox();
             this.GroupPanel_ThongTinDauVao = new System.Windows.Forms.GroupBox();
             this.comboBoxMucGia = new System.Windows.Forms.ComboBox();
@@ -55,7 +53,6 @@
             this.label_Title_NhapTrongTin = new System.Windows.Forms.Label();
             this.GroupPanel_ChucNang = new System.Windows.Forms.GroupBox();
             this.button_TuVan = new System.Windows.Forms.Button();
-            this.btn_ThemThongTin = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.GroupPanelChinh.SuspendLayout();
             this.GroupPanel_ThongTinDauVao.SuspendLayout();
@@ -70,13 +67,11 @@
             this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutUsMenuItem,
             this.HelpMenuItem,
-            this.XoaSanPhamItem,
-            this.TraCuuSanPhamItem,
-            this.ThemMoiSanPhamItem,
-            this.ThayDoiThongTinSP});
+            this.AdminItem,
+            this.TraCuuSanPhamItem});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(1124, 76);
+            this.MainMenu.Size = new System.Drawing.Size(703, 76);
             this.MainMenu.TabIndex = 8;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -100,15 +95,15 @@
             this.HelpMenuItem.Text = "Help !!!";
             this.HelpMenuItem.Click += new System.EventHandler(this.HelpMenuItem_Click);
             // 
-            // XoaSanPhamItem
+            // AdminItem
             // 
-            this.XoaSanPhamItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.XoaSanPhamItem.Image = global::TUVANLAPTOP.Properties.Resources.Delete;
-            this.XoaSanPhamItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.XoaSanPhamItem.Name = "XoaSanPhamItem";
-            this.XoaSanPhamItem.Size = new System.Drawing.Size(217, 72);
-            this.XoaSanPhamItem.Text = "Quản Lý Xóa Sản Phẩm";
-            this.XoaSanPhamItem.Click += new System.EventHandler(this.XoaSanPhamItem_Click);
+            this.AdminItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.AdminItem.Image = global::TUVANLAPTOP.Properties.Resources.admin;
+            this.AdminItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AdminItem.Name = "AdminItem";
+            this.AdminItem.Size = new System.Drawing.Size(207, 72);
+            this.AdminItem.Text = "Quản Lý Của Admin";
+            this.AdminItem.Click += new System.EventHandler(this.XoaSanPhamItem_Click);
             // 
             // TraCuuSanPhamItem
             // 
@@ -120,26 +115,6 @@
             this.TraCuuSanPhamItem.Text = "Tra Cứu Sản Phẩm";
             this.TraCuuSanPhamItem.Click += new System.EventHandler(this.TraCuuSanPhamItem_Click);
             // 
-            // ThemMoiSanPhamItem
-            // 
-            this.ThemMoiSanPhamItem.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.ThemMoiSanPhamItem.Image = global::TUVANLAPTOP.Properties.Resources.ThemSP;
-            this.ThemMoiSanPhamItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ThemMoiSanPhamItem.Name = "ThemMoiSanPhamItem";
-            this.ThemMoiSanPhamItem.Size = new System.Drawing.Size(200, 72);
-            this.ThemMoiSanPhamItem.Text = "Thêm Mới Sản Phẩm";
-            this.ThemMoiSanPhamItem.Click += new System.EventHandler(this.ThemMoiSanPhamItem_Click);
-            // 
-            // ThayDoiThongTinSP
-            // 
-            this.ThayDoiThongTinSP.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.ThayDoiThongTinSP.Image = global::TUVANLAPTOP.Properties.Resources.edit;
-            this.ThayDoiThongTinSP.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ThayDoiThongTinSP.Name = "ThayDoiThongTinSP";
-            this.ThayDoiThongTinSP.Size = new System.Drawing.Size(257, 72);
-            this.ThayDoiThongTinSP.Text = "Thay đổi thông tin sản phẩm";
-            this.ThayDoiThongTinSP.Click += new System.EventHandler(this.ThayDoiThongTinSP_Click);
-            // 
             // GroupPanelChinh
             // 
             this.GroupPanelChinh.Controls.Add(this.GroupPanel_ThongTinDauVao);
@@ -149,7 +124,7 @@
             this.GroupPanelChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupPanelChinh.Location = new System.Drawing.Point(0, 76);
             this.GroupPanelChinh.Name = "GroupPanelChinh";
-            this.GroupPanelChinh.Size = new System.Drawing.Size(1124, 584);
+            this.GroupPanelChinh.Size = new System.Drawing.Size(703, 584);
             this.GroupPanelChinh.TabIndex = 9;
             this.GroupPanelChinh.TabStop = false;
             this.GroupPanelChinh.Text = "Tư Vấn Sản Phẩm";
@@ -174,7 +149,7 @@
             this.GroupPanel_ThongTinDauVao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupPanel_ThongTinDauVao.Location = new System.Drawing.Point(3, 101);
             this.GroupPanel_ThongTinDauVao.Name = "GroupPanel_ThongTinDauVao";
-            this.GroupPanel_ThongTinDauVao.Size = new System.Drawing.Size(1118, 366);
+            this.GroupPanel_ThongTinDauVao.Size = new System.Drawing.Size(697, 366);
             this.GroupPanel_ThongTinDauVao.TabIndex = 10;
             this.GroupPanel_ThongTinDauVao.TabStop = false;
             this.GroupPanel_ThongTinDauVao.Text = "Thông Tin Đầu Vào";
@@ -192,7 +167,7 @@
             "16.000.000 đ --> 22.000.000 đ",
             "22.000.000 đ --> 26.000.000 đ",
             "26.000.000 đ trở lên"});
-            this.comboBoxMucGia.Location = new System.Drawing.Point(414, 81);
+            this.comboBoxMucGia.Location = new System.Drawing.Point(293, 81);
             this.comboBoxMucGia.Name = "comboBoxMucGia";
             this.comboBoxMucGia.Size = new System.Drawing.Size(317, 24);
             this.comboBoxMucGia.TabIndex = 16;
@@ -201,7 +176,7 @@
             // 
             this.label_MucGia.AutoSize = true;
             this.label_MucGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MucGia.Location = new System.Drawing.Point(218, 84);
+            this.label_MucGia.Location = new System.Drawing.Point(97, 84);
             this.label_MucGia.Name = "label_MucGia";
             this.label_MucGia.Size = new System.Drawing.Size(147, 16);
             this.label_MucGia.TabIndex = 15;
@@ -209,7 +184,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(414, 32);
+            this.textBox1.Location = new System.Drawing.Point(293, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 23);
             this.textBox1.TabIndex = 14;
@@ -218,7 +193,7 @@
             // 
             this.label_HoTen.AutoSize = true;
             this.label_HoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_HoTen.Location = new System.Drawing.Point(218, 35);
+            this.label_HoTen.Location = new System.Drawing.Point(97, 35);
             this.label_HoTen.Name = "label_HoTen";
             this.label_HoTen.Size = new System.Drawing.Size(80, 16);
             this.label_HoTen.TabIndex = 13;
@@ -228,7 +203,7 @@
             // 
             this.comboBoxMucDichSD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMucDichSD.FormattingEnabled = true;
-            this.comboBoxMucDichSD.Location = new System.Drawing.Point(414, 303);
+            this.comboBoxMucDichSD.Location = new System.Drawing.Point(293, 303);
             this.comboBoxMucDichSD.Name = "comboBoxMucDichSD";
             this.comboBoxMucDichSD.Size = new System.Drawing.Size(317, 24);
             this.comboBoxMucDichSD.TabIndex = 8;
@@ -237,7 +212,7 @@
             // 
             this.comboBoxDoTuoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDoTuoi.FormattingEnabled = true;
-            this.comboBoxDoTuoi.Location = new System.Drawing.Point(626, 192);
+            this.comboBoxDoTuoi.Location = new System.Drawing.Point(505, 192);
             this.comboBoxDoTuoi.Name = "comboBoxDoTuoi";
             this.comboBoxDoTuoi.Size = new System.Drawing.Size(105, 24);
             this.comboBoxDoTuoi.TabIndex = 10;
@@ -246,7 +221,7 @@
             // 
             this.comboBoxTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTinhThanh.FormattingEnabled = true;
-            this.comboBoxTinhThanh.Location = new System.Drawing.Point(414, 251);
+            this.comboBoxTinhThanh.Location = new System.Drawing.Point(293, 251);
             this.comboBoxTinhThanh.Name = "comboBoxTinhThanh";
             this.comboBoxTinhThanh.Size = new System.Drawing.Size(317, 24);
             this.comboBoxTinhThanh.TabIndex = 9;
@@ -258,7 +233,7 @@
             this.comboBoxGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBoxGioiTinh.Location = new System.Drawing.Point(414, 192);
+            this.comboBoxGioiTinh.Location = new System.Drawing.Point(293, 192);
             this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
             this.comboBoxGioiTinh.Size = new System.Drawing.Size(100, 24);
             this.comboBoxGioiTinh.TabIndex = 12;
@@ -267,7 +242,7 @@
             // 
             this.comboBoxNgheNghiep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxNgheNghiep.FormattingEnabled = true;
-            this.comboBoxNgheNghiep.Location = new System.Drawing.Point(414, 132);
+            this.comboBoxNgheNghiep.Location = new System.Drawing.Point(293, 132);
             this.comboBoxNgheNghiep.Name = "comboBoxNgheNghiep";
             this.comboBoxNgheNghiep.Size = new System.Drawing.Size(317, 24);
             this.comboBoxNgheNghiep.TabIndex = 11;
@@ -276,7 +251,7 @@
             // 
             this.label_MucDichSuDung.AutoSize = true;
             this.label_MucDichSuDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MucDichSuDung.Location = new System.Drawing.Point(218, 306);
+            this.label_MucDichSuDung.Location = new System.Drawing.Point(97, 306);
             this.label_MucDichSuDung.Name = "label_MucDichSuDung";
             this.label_MucDichSuDung.Size = new System.Drawing.Size(132, 16);
             this.label_MucDichSuDung.TabIndex = 5;
@@ -286,7 +261,7 @@
             // 
             this.label_TinhThanh.AutoSize = true;
             this.label_TinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TinhThanh.Location = new System.Drawing.Point(218, 254);
+            this.label_TinhThanh.Location = new System.Drawing.Point(97, 254);
             this.label_TinhThanh.Name = "label_TinhThanh";
             this.label_TinhThanh.Size = new System.Drawing.Size(85, 16);
             this.label_TinhThanh.TabIndex = 4;
@@ -296,7 +271,7 @@
             // 
             this.label_DoTuoi.AutoSize = true;
             this.label_DoTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_DoTuoi.Location = new System.Drawing.Point(558, 195);
+            this.label_DoTuoi.Location = new System.Drawing.Point(437, 195);
             this.label_DoTuoi.Name = "label_DoTuoi";
             this.label_DoTuoi.Size = new System.Drawing.Size(62, 16);
             this.label_DoTuoi.TabIndex = 3;
@@ -306,7 +281,7 @@
             // 
             this.label_GioiTinh.AutoSize = true;
             this.label_GioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_GioiTinh.Location = new System.Drawing.Point(218, 195);
+            this.label_GioiTinh.Location = new System.Drawing.Point(97, 195);
             this.label_GioiTinh.Name = "label_GioiTinh";
             this.label_GioiTinh.Size = new System.Drawing.Size(70, 16);
             this.label_GioiTinh.TabIndex = 7;
@@ -316,7 +291,7 @@
             // 
             this.label_NgheNghiep.AutoSize = true;
             this.label_NgheNghiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_NgheNghiep.Location = new System.Drawing.Point(218, 135);
+            this.label_NgheNghiep.Location = new System.Drawing.Point(97, 135);
             this.label_NgheNghiep.Name = "label_NgheNghiep";
             this.label_NgheNghiep.Size = new System.Drawing.Size(99, 16);
             this.label_NgheNghiep.TabIndex = 6;
@@ -324,12 +299,11 @@
             // 
             // PanelTitle_NhapThongTinKH
             // 
-            this.PanelTitle_NhapThongTinKH.Controls.Add(this.btn_ThemThongTin);
             this.PanelTitle_NhapThongTinKH.Controls.Add(this.label_Title_NhapTrongTin);
             this.PanelTitle_NhapThongTinKH.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitle_NhapThongTinKH.Location = new System.Drawing.Point(3, 19);
             this.PanelTitle_NhapThongTinKH.Name = "PanelTitle_NhapThongTinKH";
-            this.PanelTitle_NhapThongTinKH.Size = new System.Drawing.Size(1118, 82);
+            this.PanelTitle_NhapThongTinKH.Size = new System.Drawing.Size(697, 82);
             this.PanelTitle_NhapThongTinKH.TabIndex = 9;
             // 
             // label_Title_NhapTrongTin
@@ -337,7 +311,7 @@
             this.label_Title_NhapTrongTin.AutoSize = true;
             this.label_Title_NhapTrongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Title_NhapTrongTin.ForeColor = System.Drawing.Color.Indigo;
-            this.label_Title_NhapTrongTin.Location = new System.Drawing.Point(329, 26);
+            this.label_Title_NhapTrongTin.Location = new System.Drawing.Point(158, 26);
             this.label_Title_NhapTrongTin.Name = "label_Title_NhapTrongTin";
             this.label_Title_NhapTrongTin.Size = new System.Drawing.Size(377, 26);
             this.label_Title_NhapTrongTin.TabIndex = 7;
@@ -351,7 +325,7 @@
             this.GroupPanel_ChucNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupPanel_ChucNang.Location = new System.Drawing.Point(3, 467);
             this.GroupPanel_ChucNang.Name = "GroupPanel_ChucNang";
-            this.GroupPanel_ChucNang.Size = new System.Drawing.Size(1118, 114);
+            this.GroupPanel_ChucNang.Size = new System.Drawing.Size(697, 114);
             this.GroupPanel_ChucNang.TabIndex = 8;
             this.GroupPanel_ChucNang.TabStop = false;
             this.GroupPanel_ChucNang.Text = "Chức Năng";
@@ -359,7 +333,7 @@
             // button_TuVan
             // 
             this.button_TuVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_TuVan.Location = new System.Drawing.Point(414, 35);
+            this.button_TuVan.Location = new System.Drawing.Point(233, 41);
             this.button_TuVan.Name = "button_TuVan";
             this.button_TuVan.Size = new System.Drawing.Size(251, 54);
             this.button_TuVan.TabIndex = 0;
@@ -367,21 +341,11 @@
             this.button_TuVan.UseVisualStyleBackColor = true;
             this.button_TuVan.Click += new System.EventHandler(this.button_TuVanLapTop_Click);
             // 
-            // btn_ThemThongTin
-            // 
-            this.btn_ThemThongTin.Location = new System.Drawing.Point(985, 13);
-            this.btn_ThemThongTin.Name = "btn_ThemThongTin";
-            this.btn_ThemThongTin.Size = new System.Drawing.Size(124, 57);
-            this.btn_ThemThongTin.TabIndex = 8;
-            this.btn_ThemThongTin.Text = "Thêm thông tin";
-            this.btn_ThemThongTin.UseVisualStyleBackColor = true;
-            this.btn_ThemThongTin.Click += new System.EventHandler(this.btn_ThemThongTin_Click);
-            // 
             // MANHINHCHINH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 660);
+            this.ClientSize = new System.Drawing.Size(703, 660);
             this.Controls.Add(this.GroupPanelChinh);
             this.Controls.Add(this.MainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -429,11 +393,8 @@
         private System.Windows.Forms.Label label_Title_NhapTrongTin;
         private System.Windows.Forms.GroupBox GroupPanel_ChucNang;
         private System.Windows.Forms.Button button_TuVan;
-        private System.Windows.Forms.ToolStripMenuItem XoaSanPhamItem;
+        private System.Windows.Forms.ToolStripMenuItem AdminItem;
         private System.Windows.Forms.ToolStripMenuItem TraCuuSanPhamItem;
-        private System.Windows.Forms.ToolStripMenuItem ThemMoiSanPhamItem;
-        private System.Windows.Forms.ToolStripMenuItem ThayDoiThongTinSP;
-        private System.Windows.Forms.Button btn_ThemThongTin;
     }
 }
 

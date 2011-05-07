@@ -74,6 +74,12 @@
     <Compile Include="ABOUT.Designer.cs">
       <DependentUpon>ABOUT.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAPNHATDULIEUKHACHHANG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,10 @@
     </Compile>
     <EmbeddedResource Include="ABOUT.resx">
       <DependentUpon>ABOUT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CAPNHATDULIEUKHACHHANG.resx">
@@ -338,7 +348,10 @@
     <None Include="Resources\New.jpg" />
     <None Include="Resources\edit.png" />
     <None Include="Resources\question.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\admin_form.png" />
     <Content Include="Resources\ThemSP.png" />
+    <None Include="Resources\ThemThongTin.png" />
     <Content Include="ResultAnalyseData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

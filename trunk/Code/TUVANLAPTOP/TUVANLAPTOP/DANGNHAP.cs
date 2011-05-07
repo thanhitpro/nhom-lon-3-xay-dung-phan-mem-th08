@@ -32,25 +32,11 @@ namespace TUVANLAPTOP
                 this.Hide();
                 if (0 == MANHINHCHINH.m_iStaticFormDuocChon)
                 {
-                    CAPNHATXOASANPHAM frm = CAPNHATXOASANPHAM.Instance();
+                    ADMIN frm = new ADMIN();
                     frm.ShowDialog();
                 }
 
-                if (1 == MANHINHCHINH.m_iStaticFormDuocChon)
-                {
-                    THEMSANPHAM frm = new THEMSANPHAM();
-                    frm.ShowDialog();
-                }
-                if (2 == MANHINHCHINH.m_iStaticFormDuocChon)
-                {
-                    THAYDOI_THONGTINSANPHAM frm = new THAYDOI_THONGTINSANPHAM();
-                    frm.ShowDialog();
-                }
-                if (3 == MANHINHCHINH.m_iStaticFormDuocChon)
-                {
-                    THEMDACTINHSANPHAM themThongTin = new THEMDACTINHSANPHAM();
-                    themThongTin.ShowDialog();
-                }
+                
             }
             else
                 MessageBox.Show("Username hay Password không chính xác \n Vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
