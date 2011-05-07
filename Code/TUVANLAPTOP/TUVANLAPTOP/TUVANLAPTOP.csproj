@@ -77,7 +77,7 @@
     <Compile Include="ADMIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ADMIN.designer.cs">
+    <Compile Include="ADMIN.Designer.cs">
       <DependentUpon>ADMIN.cs</DependentUpon>
     </Compile>
     <Compile Include="CAPNHATDULIEUKHACHHANG.cs">
