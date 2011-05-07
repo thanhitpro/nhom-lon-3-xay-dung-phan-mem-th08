@@ -66,7 +66,6 @@
             this.SoLuongConLai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThoiGianBaoHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox_ThaoTac = new System.Windows.Forms.GroupBox();
-            this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
             this.btn_OK = new System.Windows.Forms.Button();
@@ -372,7 +371,6 @@
             // groupBox_ThaoTac
             // 
             this.groupBox_ThaoTac.BackColor = System.Drawing.Color.Silver;
-            this.groupBox_ThaoTac.Controls.Add(this.btn_Update);
             this.groupBox_ThaoTac.Controls.Add(this.btn_Exit);
             this.groupBox_ThaoTac.Controls.Add(this.btn_Back);
             this.groupBox_ThaoTac.Controls.Add(this.btn_OK);
@@ -384,26 +382,12 @@
             this.groupBox_ThaoTac.TabIndex = 3;
             this.groupBox_ThaoTac.TabStop = false;
             // 
-            // btn_Update
-            // 
-            this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Image = ((System.Drawing.Image)(resources.GetObject("btn_Update.Image")));
-            this.btn_Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Update.Location = new System.Drawing.Point(614, 22);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(170, 44);
-            this.btn_Update.TabIndex = 6;
-            this.btn_Update.Text = "Cập nhật csdl";
-            this.btn_Update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Update.UseVisualStyleBackColor = true;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
-            // 
             // btn_Exit
             // 
             this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Exit.Location = new System.Drawing.Point(865, 22);
+            this.btn_Exit.Location = new System.Drawing.Point(717, 24);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(110, 42);
             this.btn_Exit.TabIndex = 5;
@@ -417,7 +401,7 @@
             this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_Back.Image = ((System.Drawing.Image)(resources.GetObject("btn_Back.Image")));
             this.btn_Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Back.Location = new System.Drawing.Point(356, 22);
+            this.btn_Back.Location = new System.Drawing.Point(433, 24);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(129, 43);
             this.btn_Back.TabIndex = 4;
@@ -431,7 +415,7 @@
             this.btn_OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_OK.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.Image")));
             this.btn_OK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_OK.Location = new System.Drawing.Point(137, 23);
+            this.btn_OK.Location = new System.Drawing.Point(187, 24);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Size = new System.Drawing.Size(87, 43);
             this.btn_OK.TabIndex = 3;
@@ -502,7 +486,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongConLai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianBaoHanh;
-        private System.Windows.Forms.Button btn_Update;
 
     }
 }

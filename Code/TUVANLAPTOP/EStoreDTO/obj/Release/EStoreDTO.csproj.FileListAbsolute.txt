@@ -53,3 +53,8 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\bin\Rel
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
