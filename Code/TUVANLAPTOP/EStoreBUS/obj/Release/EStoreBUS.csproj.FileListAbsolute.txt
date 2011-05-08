@@ -141,3 +141,14 @@ C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreBUS
 C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 C:\Users\Minh Tue\Desktop\HK II 2010-2011\XDPM\TUVANLAPTOP\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
