@@ -70,31 +70,30 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl_All = new System.Windows.Forms.TabControl();
             this.tab_OCung = new System.Windows.Forms.TabPage();
-            this.tab_CardMH = new System.Windows.Forms.TabPage();
-            this.tab_HeDieuHanh = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.btn_HuyOCung = new System.Windows.Forms.Button();
-            this.txt_VongXoayNew = new System.Windows.Forms.TextBox();
             this.btn_ThemVongQuay = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txt_DungLuongHienCo = new System.Windows.Forms.RichTextBox();
             this.txt_DungLuongNew = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btn_ThemDungLuong = new System.Windows.Forms.Button();
-            this.txt_DungLuongHienCo = new System.Windows.Forms.RichTextBox();
             this.txt_VongXoayHienCo = new System.Windows.Forms.RichTextBox();
-            this.txt_BoNhoCardMHNew = new System.Windows.Forms.TextBox();
+            this.txt_VongXoayNew = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btn_ThemDungLuong = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tab_CardMH = new System.Windows.Forms.TabPage();
+            this.btn_HuyCardMH = new System.Windows.Forms.Button();
+            this.btn_ThemMoiCardMH = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rText_BoNhoCardMHHienCo = new System.Windows.Forms.RichTextBox();
+            this.txt_BoNhoCardMHNew = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.rText_BoNhoCardMHHienCo = new System.Windows.Forms.RichTextBox();
-            this.btn_ThemMoiCardMH = new System.Windows.Forms.Button();
-            this.btn_HuyCardMH = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.tab_HeDieuHanh = new System.Windows.Forms.TabPage();
             this.btn_ThemHDH = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.rText_HDHHienCo = new System.Windows.Forms.RichTextBox();
@@ -102,6 +101,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.btn_HuyHDH = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_thoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tab_Ram.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -115,15 +117,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl_All.SuspendLayout();
             this.tab_OCung.SuspendLayout();
-            this.tab_CardMH.SuspendLayout();
-            this.tab_HeDieuHanh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tab_CardMH.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tab_HeDieuHanh.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -402,7 +405,7 @@
             this.tab_CPU.Location = new System.Drawing.Point(4, 24);
             this.tab_CPU.Name = "tab_CPU";
             this.tab_CPU.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_CPU.Size = new System.Drawing.Size(711, 330);
+            this.tab_CPU.Size = new System.Drawing.Size(711, 419);
             this.tab_CPU.TabIndex = 0;
             this.tab_CPU.Text = "CPU";
             this.tab_CPU.UseVisualStyleBackColor = true;
@@ -549,7 +552,7 @@
             this.tabControl_All.Location = new System.Drawing.Point(0, 62);
             this.tabControl_All.Name = "tabControl_All";
             this.tabControl_All.SelectedIndex = 0;
-            this.tabControl_All.Size = new System.Drawing.Size(719, 358);
+            this.tabControl_All.Size = new System.Drawing.Size(719, 447);
             this.tabControl_All.TabIndex = 1;
             // 
             // tab_OCung
@@ -569,76 +572,6 @@
             this.tab_OCung.UseVisualStyleBackColor = true;
             this.tab_OCung.Enter += new System.EventHandler(this.tab_OCung_Enter);
             // 
-            // tab_CardMH
-            // 
-            this.tab_CardMH.Controls.Add(this.btn_HuyCardMH);
-            this.tab_CardMH.Controls.Add(this.btn_ThemMoiCardMH);
-            this.tab_CardMH.Controls.Add(this.groupBox7);
-            this.tab_CardMH.Controls.Add(this.pictureBox5);
-            this.tab_CardMH.Location = new System.Drawing.Point(4, 24);
-            this.tab_CardMH.Name = "tab_CardMH";
-            this.tab_CardMH.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_CardMH.Size = new System.Drawing.Size(711, 330);
-            this.tab_CardMH.TabIndex = 4;
-            this.tab_CardMH.Text = "Card Màn Hình";
-            this.tab_CardMH.UseVisualStyleBackColor = true;
-            this.tab_CardMH.Enter += new System.EventHandler(this.tab_CardMH_Enter);
-            // 
-            // tab_HeDieuHanh
-            // 
-            this.tab_HeDieuHanh.Controls.Add(this.btn_ThemHDH);
-            this.tab_HeDieuHanh.Controls.Add(this.groupBox8);
-            this.tab_HeDieuHanh.Controls.Add(this.btn_HuyHDH);
-            this.tab_HeDieuHanh.Controls.Add(this.pictureBox7);
-            this.tab_HeDieuHanh.Location = new System.Drawing.Point(4, 24);
-            this.tab_HeDieuHanh.Name = "tab_HeDieuHanh";
-            this.tab_HeDieuHanh.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_HeDieuHanh.Size = new System.Drawing.Size(711, 330);
-            this.tab_HeDieuHanh.TabIndex = 6;
-            this.tab_HeDieuHanh.Text = "Hệ Điều Hành";
-            this.tab_HeDieuHanh.UseVisualStyleBackColor = true;
-            this.tab_HeDieuHanh.Enter += new System.EventHandler(this.tab_HeDieuHanh_Enter);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(448, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(260, 324);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(418, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(290, 324);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(437, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(271, 324);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 110);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 15);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Giá trị mới";
-            // 
             // btn_HuyOCung
             // 
             this.btn_HuyOCung.Location = new System.Drawing.Point(324, 141);
@@ -648,13 +581,6 @@
             this.btn_HuyOCung.Text = "Hủy bỏ";
             this.btn_HuyOCung.UseVisualStyleBackColor = true;
             this.btn_HuyOCung.Click += new System.EventHandler(this.btn_HuyOCung_Click);
-            // 
-            // txt_VongXoayNew
-            // 
-            this.txt_VongXoayNew.Location = new System.Drawing.Point(77, 107);
-            this.txt_VongXoayNew.Name = "txt_VongXoayNew";
-            this.txt_VongXoayNew.Size = new System.Drawing.Size(221, 21);
-            this.txt_VongXoayNew.TabIndex = 1;
             // 
             // btn_ThemVongQuay
             // 
@@ -678,6 +604,16 @@
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thêm dung lượng";
+            // 
+            // txt_DungLuongHienCo
+            // 
+            this.txt_DungLuongHienCo.Location = new System.Drawing.Point(77, 38);
+            this.txt_DungLuongHienCo.Name = "txt_DungLuongHienCo";
+            this.txt_DungLuongHienCo.ReadOnly = true;
+            this.txt_DungLuongHienCo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.txt_DungLuongHienCo.Size = new System.Drawing.Size(221, 60);
+            this.txt_DungLuongHienCo.TabIndex = 2;
+            this.txt_DungLuongHienCo.Text = "";
             // 
             // txt_DungLuongNew
             // 
@@ -704,15 +640,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Dung lượng hiện có";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 22);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(110, 15);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Vòng quay hiện có";
-            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.txt_VongXoayHienCo);
@@ -726,26 +653,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thêm vòng quay";
             // 
-            // btn_ThemDungLuong
-            // 
-            this.btn_ThemDungLuong.Location = new System.Drawing.Point(325, 54);
-            this.btn_ThemDungLuong.Name = "btn_ThemDungLuong";
-            this.btn_ThemDungLuong.Size = new System.Drawing.Size(117, 63);
-            this.btn_ThemDungLuong.TabIndex = 6;
-            this.btn_ThemDungLuong.Text = "Thêm dung lượng Ổ Cứng";
-            this.btn_ThemDungLuong.UseVisualStyleBackColor = true;
-            this.btn_ThemDungLuong.Click += new System.EventHandler(this.btn_ThemDungLuong_Click);
-            // 
-            // txt_DungLuongHienCo
-            // 
-            this.txt_DungLuongHienCo.Location = new System.Drawing.Point(77, 38);
-            this.txt_DungLuongHienCo.Name = "txt_DungLuongHienCo";
-            this.txt_DungLuongHienCo.ReadOnly = true;
-            this.txt_DungLuongHienCo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.txt_DungLuongHienCo.Size = new System.Drawing.Size(221, 60);
-            this.txt_DungLuongHienCo.TabIndex = 2;
-            this.txt_DungLuongHienCo.Text = "";
-            // 
             // txt_VongXoayHienCo
             // 
             this.txt_VongXoayHienCo.Location = new System.Drawing.Point(77, 40);
@@ -756,12 +663,85 @@
             this.txt_VongXoayHienCo.TabIndex = 2;
             this.txt_VongXoayHienCo.Text = "";
             // 
-            // txt_BoNhoCardMHNew
+            // txt_VongXoayNew
             // 
-            this.txt_BoNhoCardMHNew.Location = new System.Drawing.Point(77, 136);
-            this.txt_BoNhoCardMHNew.Name = "txt_BoNhoCardMHNew";
-            this.txt_BoNhoCardMHNew.Size = new System.Drawing.Size(237, 21);
-            this.txt_BoNhoCardMHNew.TabIndex = 1;
+            this.txt_VongXoayNew.Location = new System.Drawing.Point(77, 107);
+            this.txt_VongXoayNew.Name = "txt_VongXoayNew";
+            this.txt_VongXoayNew.Size = new System.Drawing.Size(221, 21);
+            this.txt_VongXoayNew.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 15);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Giá trị mới";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(110, 15);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Vòng quay hiện có";
+            // 
+            // btn_ThemDungLuong
+            // 
+            this.btn_ThemDungLuong.Location = new System.Drawing.Point(325, 54);
+            this.btn_ThemDungLuong.Name = "btn_ThemDungLuong";
+            this.btn_ThemDungLuong.Size = new System.Drawing.Size(117, 63);
+            this.btn_ThemDungLuong.TabIndex = 6;
+            this.btn_ThemDungLuong.Text = "Thêm dung lượng Ổ Cứng";
+            this.btn_ThemDungLuong.UseVisualStyleBackColor = true;
+            this.btn_ThemDungLuong.Click += new System.EventHandler(this.btn_ThemDungLuong_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(448, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(260, 324);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // tab_CardMH
+            // 
+            this.tab_CardMH.Controls.Add(this.btn_HuyCardMH);
+            this.tab_CardMH.Controls.Add(this.btn_ThemMoiCardMH);
+            this.tab_CardMH.Controls.Add(this.groupBox7);
+            this.tab_CardMH.Controls.Add(this.pictureBox5);
+            this.tab_CardMH.Location = new System.Drawing.Point(4, 24);
+            this.tab_CardMH.Name = "tab_CardMH";
+            this.tab_CardMH.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_CardMH.Size = new System.Drawing.Size(711, 330);
+            this.tab_CardMH.TabIndex = 4;
+            this.tab_CardMH.Text = "Card Màn Hình";
+            this.tab_CardMH.UseVisualStyleBackColor = true;
+            this.tab_CardMH.Enter += new System.EventHandler(this.tab_CardMH_Enter);
+            // 
+            // btn_HuyCardMH
+            // 
+            this.btn_HuyCardMH.Location = new System.Drawing.Point(222, 250);
+            this.btn_HuyCardMH.Name = "btn_HuyCardMH";
+            this.btn_HuyCardMH.Size = new System.Drawing.Size(75, 41);
+            this.btn_HuyCardMH.TabIndex = 3;
+            this.btn_HuyCardMH.Text = "Hủy bỏ";
+            this.btn_HuyCardMH.UseVisualStyleBackColor = true;
+            this.btn_HuyCardMH.Click += new System.EventHandler(this.btn_HuyCardMH_Click);
+            // 
+            // btn_ThemMoiCardMH
+            // 
+            this.btn_ThemMoiCardMH.Location = new System.Drawing.Point(125, 250);
+            this.btn_ThemMoiCardMH.Name = "btn_ThemMoiCardMH";
+            this.btn_ThemMoiCardMH.Size = new System.Drawing.Size(75, 41);
+            this.btn_ThemMoiCardMH.TabIndex = 3;
+            this.btn_ThemMoiCardMH.Text = "Thêm mới";
+            this.btn_ThemMoiCardMH.UseVisualStyleBackColor = true;
+            this.btn_ThemMoiCardMH.Click += new System.EventHandler(this.btn_ThemMoiCardMH_Click);
             // 
             // groupBox7
             // 
@@ -775,6 +755,22 @@
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Thêm bộ nhớ Card Màn Hình";
+            // 
+            // rText_BoNhoCardMHHienCo
+            // 
+            this.rText_BoNhoCardMHHienCo.Location = new System.Drawing.Point(77, 48);
+            this.rText_BoNhoCardMHHienCo.Name = "rText_BoNhoCardMHHienCo";
+            this.rText_BoNhoCardMHHienCo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.rText_BoNhoCardMHHienCo.Size = new System.Drawing.Size(237, 76);
+            this.rText_BoNhoCardMHHienCo.TabIndex = 2;
+            this.rText_BoNhoCardMHHienCo.Text = "";
+            // 
+            // txt_BoNhoCardMHNew
+            // 
+            this.txt_BoNhoCardMHNew.Location = new System.Drawing.Point(77, 136);
+            this.txt_BoNhoCardMHNew.Name = "txt_BoNhoCardMHNew";
+            this.txt_BoNhoCardMHNew.Size = new System.Drawing.Size(237, 21);
+            this.txt_BoNhoCardMHNew.TabIndex = 1;
             // 
             // label15
             // 
@@ -794,34 +790,30 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Bộ nhớ Card Màn Hình hiện có";
             // 
-            // rText_BoNhoCardMHHienCo
+            // pictureBox5
             // 
-            this.rText_BoNhoCardMHHienCo.Location = new System.Drawing.Point(77, 48);
-            this.rText_BoNhoCardMHHienCo.Name = "rText_BoNhoCardMHHienCo";
-            this.rText_BoNhoCardMHHienCo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.rText_BoNhoCardMHHienCo.Size = new System.Drawing.Size(237, 76);
-            this.rText_BoNhoCardMHHienCo.TabIndex = 2;
-            this.rText_BoNhoCardMHHienCo.Text = "";
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(418, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(290, 324);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
-            // btn_ThemMoiCardMH
+            // tab_HeDieuHanh
             // 
-            this.btn_ThemMoiCardMH.Location = new System.Drawing.Point(125, 250);
-            this.btn_ThemMoiCardMH.Name = "btn_ThemMoiCardMH";
-            this.btn_ThemMoiCardMH.Size = new System.Drawing.Size(75, 41);
-            this.btn_ThemMoiCardMH.TabIndex = 3;
-            this.btn_ThemMoiCardMH.Text = "Thêm mới";
-            this.btn_ThemMoiCardMH.UseVisualStyleBackColor = true;
-            this.btn_ThemMoiCardMH.Click += new System.EventHandler(this.btn_ThemMoiCardMH_Click);
-            // 
-            // btn_HuyCardMH
-            // 
-            this.btn_HuyCardMH.Location = new System.Drawing.Point(222, 250);
-            this.btn_HuyCardMH.Name = "btn_HuyCardMH";
-            this.btn_HuyCardMH.Size = new System.Drawing.Size(75, 41);
-            this.btn_HuyCardMH.TabIndex = 3;
-            this.btn_HuyCardMH.Text = "Hủy bỏ";
-            this.btn_HuyCardMH.UseVisualStyleBackColor = true;
-            this.btn_HuyCardMH.Click += new System.EventHandler(this.btn_HuyCardMH_Click);
+            this.tab_HeDieuHanh.Controls.Add(this.btn_ThemHDH);
+            this.tab_HeDieuHanh.Controls.Add(this.groupBox8);
+            this.tab_HeDieuHanh.Controls.Add(this.btn_HuyHDH);
+            this.tab_HeDieuHanh.Controls.Add(this.pictureBox7);
+            this.tab_HeDieuHanh.Location = new System.Drawing.Point(4, 24);
+            this.tab_HeDieuHanh.Name = "tab_HeDieuHanh";
+            this.tab_HeDieuHanh.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_HeDieuHanh.Size = new System.Drawing.Size(711, 330);
+            this.tab_HeDieuHanh.TabIndex = 6;
+            this.tab_HeDieuHanh.Text = "Hệ Điều Hành";
+            this.tab_HeDieuHanh.UseVisualStyleBackColor = true;
+            this.tab_HeDieuHanh.Enter += new System.EventHandler(this.tab_HeDieuHanh_Enter);
             // 
             // btn_ThemHDH
             // 
@@ -890,11 +882,43 @@
             this.btn_HuyHDH.UseVisualStyleBackColor = true;
             this.btn_HuyHDH.Click += new System.EventHandler(this.btn_HuyHDH_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(437, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(271, 324);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_thoat);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 426);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(719, 83);
+            this.panel2.TabIndex = 2;
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.Location = new System.Drawing.Point(279, 10);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(161, 61);
+            this.btn_thoat.TabIndex = 31;
+            this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            // 
             // THEMDACTINHSANPHAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 420);
+            this.ClientSize = new System.Drawing.Size(719, 509);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl_All);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -920,19 +944,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl_All.ResumeLayout(false);
             this.tab_OCung.ResumeLayout(false);
-            this.tab_CardMH.ResumeLayout(false);
-            this.tab_HeDieuHanh.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tab_CardMH.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tab_HeDieuHanh.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1012,5 +1037,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btn_HuyHDH;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_thoat;
     }
 }

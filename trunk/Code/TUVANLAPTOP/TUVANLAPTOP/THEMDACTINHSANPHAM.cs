@@ -556,5 +556,10 @@ namespace TUVANLAPTOP
             txt_HDHNew.Text = "";
             txt_HDHNew.Focus();
         }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
