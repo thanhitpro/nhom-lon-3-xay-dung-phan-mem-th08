@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using EStoreBUS;
 using EStoreDTO;
 using EStoreDAO;
+using System.Drawing.Imaging;
 
 namespace TUVANLAPTOP
 {
@@ -357,7 +358,7 @@ namespace TUVANLAPTOP
         {
             CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
             //tên dòng laptop
-            if ((this.textBox_TenDongLapTop.Text.Length < 5) || (this.textBox_TenDongLapTop.Text.Length > 30))
+            if ((this.textBox_TenDongLapTop.Text.Trim().Length < 5) || (this.textBox_TenDongLapTop.Text.Trim().Length > 30))
             {
                 MessageBox.Show("Tên dòng laptop có chiều dài từ 5 đến 30 ký tự");
                 textBox_TenDongLapTop.Focus();
@@ -618,9 +619,16 @@ namespace TUVANLAPTOP
             //Lấy giá trị
             //Nếu bạn chỉ chọn một file thì giá trị trả về sẽ là một chuỗi kiểu String
             //Vd:
-            String imageFile = "";
-            imageFile = openFileDialog1.SafeFileName;
+            String imageFile = string.Empty;
 
+            imageFile = openFileDialog1.FileName;
+            //Kiểm tra xem file đúng định dạng
+            if (!CheckImageFormat(imageFile))
+            {
+                MessageBox.Show("File bạn vừa chọn không đúng định dạng ảnh", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            imageFile = openFileDialog1.SafeFileName;
             String fileType = "";
             fileType = imageFile.Substring(imageFile.Length - 3, 3);
             //MessageBox.Show(fileType);
@@ -634,6 +642,36 @@ namespace TUVANLAPTOP
             }
             else
                 MessageBox.Show("Chương trình chỉ hỗ trợ file JPG và PNG.");
+        }
+
+        private void button_Thoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private bool CheckImageFormat(string fileName)
+        {
+            try
+            {
+                using (Image image = Image.FromFile(fileName))
+
+                    if (image.RawFormat.Equals(ImageFormat.Jpeg))
+                    {
+                        return true;
+                    }
+                    else if (image.RawFormat.Equals(ImageFormat.Png))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

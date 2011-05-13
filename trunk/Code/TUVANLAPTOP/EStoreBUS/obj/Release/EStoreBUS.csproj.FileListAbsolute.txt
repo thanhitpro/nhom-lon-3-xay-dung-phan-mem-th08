@@ -152,3 +152,14 @@ D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\bin\R
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
