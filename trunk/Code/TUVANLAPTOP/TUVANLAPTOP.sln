@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreDAO", "EStoreDAO\ESto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreDTO", "EStoreDTO\EStoreDTO.csproj", "{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreTest", "EStoreTest\EStoreTest.csproj", "{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
