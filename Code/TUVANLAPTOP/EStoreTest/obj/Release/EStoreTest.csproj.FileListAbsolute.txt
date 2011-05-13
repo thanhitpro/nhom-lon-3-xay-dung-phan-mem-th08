@@ -10,3 +10,15 @@ C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESt
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

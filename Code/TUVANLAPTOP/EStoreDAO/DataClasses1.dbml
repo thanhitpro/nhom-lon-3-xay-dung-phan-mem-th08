@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\ESTORE.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString9" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString14" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -120,7 +120,7 @@
     <Type Name="CHITIETDONGCPU">
       <Column Name="MaDongCPU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="MaChiTietCongNgheCPU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TenDongCPU" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TenDongCPU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="CHITIETDONGCPU_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCPU" Type="CHITIETDONGLAPTOP" />
