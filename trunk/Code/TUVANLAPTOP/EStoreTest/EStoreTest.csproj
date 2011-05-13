@@ -50,6 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="myChiTietDongLaptopDAOTest.cs" />
+    <Compile Include="myTestChiTietBoNhoCardDoHoaDAO.cs" />
+    <Compile Include="myTestChiTietBoNhoRamDAO.cs" />
+    <Compile Include="myTestChiTietCongNgheCPUDAO.cs" />
+    <Compile Include="myTestChiTietCongNgheRamDAO.cs" />
+    <Compile Include="myTestChiTietDongCardDoHoaDAO.cs" />
+    <Compile Include="myTestChiTietDongCardMangDAO.cs" />
+    <Compile Include="myTestChiTietDongCPUDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

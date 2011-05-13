@@ -3,10 +3,7 @@ Username: admin
 Password: 123456
 
 Nhóm 24: Một số chú ý:
-	- Trong bản CHITIETDONGCPU, thuộc tính TenChiTietDongCPU tăng độ dài chuỗi chứa (từ 30 - 50). Nếu không một vài trường hợp vượt quá
-	    30 kí tự sẽ bị lỗi khi dùng chức năng thêm dòng CPU.
-	- Đặc tả chức năng này không rõ ràng lắm nên mình theo ý kiến chủ quan làm chức năng thêm thông tin thế thôi. Có gì các bạn note lại
-	   góp ý. 
-	   
-NEW: - Đã thêm 3 đặc tính nữa
-	 - Chú ý comboBox trong CPU có thế Edit (đã xử lý thêm mới nếu thấy đổi giá trị của nó)
+	- Do phải ngồi sửa lại cho phù hợp với nhóm code trước up lên. (Không sửa conflict tùm lum) nên nhóm 24 còn một số lớp chưa Test. 
+	  Sẽ cập nhật vào ngày mai. Mong nhóm lớn thông cảm.
+	- Vì k quy định trước nên mỗi nhóm viết UT theo cách riêng, vì thế rất khó để tích hợp, mong bạn nhóm trưởng nói rõ quy định viết UT để 
+	  thống nhất chung cho nhóm.

@@ -485,3 +485,33 @@ D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\ob
 D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
