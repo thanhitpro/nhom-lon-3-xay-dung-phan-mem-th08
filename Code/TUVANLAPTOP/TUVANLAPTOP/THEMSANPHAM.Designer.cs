@@ -87,6 +87,7 @@
             this.groupBox_TitleXoaSanPham = new System.Windows.Forms.GroupBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button_Thoat = new System.Windows.Forms.Button();
             this.groupBox_DanhSachSanPham.SuspendLayout();
             this.panel_ChiTietThuocTinh.SuspendLayout();
             this.groupBox_TitleXoaSanPham.SuspendLayout();
@@ -100,7 +101,7 @@
             this.groupBox_DanhSachSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_DanhSachSanPham.Location = new System.Drawing.Point(0, 72);
             this.groupBox_DanhSachSanPham.Name = "groupBox_DanhSachSanPham";
-            this.groupBox_DanhSachSanPham.Size = new System.Drawing.Size(1086, 385);
+            this.groupBox_DanhSachSanPham.Size = new System.Drawing.Size(1086, 441);
             this.groupBox_DanhSachSanPham.TabIndex = 12;
             this.groupBox_DanhSachSanPham.TabStop = false;
             this.groupBox_DanhSachSanPham.Text = "Thông Tin Tra Cứu";
@@ -109,6 +110,7 @@
             // 
             this.panel_ChiTietThuocTinh.BackColor = System.Drawing.Color.White;
             this.panel_ChiTietThuocTinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_ChiTietThuocTinh.Controls.Add(this.button_Thoat);
             this.panel_ChiTietThuocTinh.Controls.Add(this.btn_ChonHinhAnh);
             this.panel_ChiTietThuocTinh.Controls.Add(this.textBox_soLuongNhap);
             this.panel_ChiTietThuocTinh.Controls.Add(this.label9);
@@ -165,7 +167,7 @@
             this.panel_ChiTietThuocTinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ChiTietThuocTinh.Location = new System.Drawing.Point(3, 17);
             this.panel_ChiTietThuocTinh.Name = "panel_ChiTietThuocTinh";
-            this.panel_ChiTietThuocTinh.Size = new System.Drawing.Size(1080, 365);
+            this.panel_ChiTietThuocTinh.Size = new System.Drawing.Size(1080, 421);
             this.panel_ChiTietThuocTinh.TabIndex = 2;
             // 
             // btn_ChonHinhAnh
@@ -181,6 +183,7 @@
             // textBox_soLuongNhap
             // 
             this.textBox_soLuongNhap.Location = new System.Drawing.Point(457, 264);
+            this.textBox_soLuongNhap.MaxLength = 3;
             this.textBox_soLuongNhap.Name = "textBox_soLuongNhap";
             this.textBox_soLuongNhap.Size = new System.Drawing.Size(199, 21);
             this.textBox_soLuongNhap.TabIndex = 59;
@@ -218,7 +221,7 @@
             this.richTextBox_moTaThem.Location = new System.Drawing.Point(132, 254);
             this.richTextBox_moTaThem.MaxLength = 512;
             this.richTextBox_moTaThem.Name = "richTextBox_moTaThem";
-            this.richTextBox_moTaThem.Size = new System.Drawing.Size(200, 101);
+            this.richTextBox_moTaThem.Size = new System.Drawing.Size(200, 87);
             this.richTextBox_moTaThem.TabIndex = 54;
             this.richTextBox_moTaThem.Text = "";
             // 
@@ -264,6 +267,7 @@
             // textBox_giaTienTrieu
             // 
             this.textBox_giaTienTrieu.Location = new System.Drawing.Point(817, 186);
+            this.textBox_giaTienTrieu.MaxLength = 3;
             this.textBox_giaTienTrieu.Name = "textBox_giaTienTrieu";
             this.textBox_giaTienTrieu.Size = new System.Drawing.Size(44, 21);
             this.textBox_giaTienTrieu.TabIndex = 49;
@@ -290,9 +294,9 @@
             this.button_OK_ThemSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button_OK_ThemSanPham.Image = global::TUVANLAPTOP.Properties.Resources.ThemSP;
             this.button_OK_ThemSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_OK_ThemSanPham.Location = new System.Drawing.Point(817, 312);
+            this.button_OK_ThemSanPham.Location = new System.Drawing.Point(348, 361);
             this.button_OK_ThemSanPham.Name = "button_OK_ThemSanPham";
-            this.button_OK_ThemSanPham.Size = new System.Drawing.Size(191, 43);
+            this.button_OK_ThemSanPham.Size = new System.Drawing.Size(184, 43);
             this.button_OK_ThemSanPham.TabIndex = 3;
             this.button_OK_ThemSanPham.Text = "Thêm Sản Phẩm";
             this.button_OK_ThemSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -722,11 +726,24 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button_Thoat
+            // 
+            this.button_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_Thoat.Image = global::TUVANLAPTOP.Properties.Resources.ThemSP;
+            this.button_Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Thoat.Location = new System.Drawing.Point(584, 361);
+            this.button_Thoat.Name = "button_Thoat";
+            this.button_Thoat.Size = new System.Drawing.Size(164, 43);
+            this.button_Thoat.TabIndex = 61;
+            this.button_Thoat.Text = "Thoát";
+            this.button_Thoat.UseVisualStyleBackColor = true;
+            this.button_Thoat.Click += new System.EventHandler(this.button_Thoat_Click);
+            // 
             // THEMSANPHAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 455);
+            this.ClientSize = new System.Drawing.Size(1086, 516);
             this.Controls.Add(this.groupBox_DanhSachSanPham);
             this.Controls.Add(this.groupBox_TitleXoaSanPham);
             this.Name = "THEMSANPHAM";
@@ -803,5 +820,6 @@
         private System.Windows.Forms.TextBox textBox_soLuongNhap;
         private System.Windows.Forms.Button btn_ChonHinhAnh;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button_Thoat;
     }
 }

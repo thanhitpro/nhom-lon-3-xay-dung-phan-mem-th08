@@ -63,3 +63,8 @@ D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreDTO\bin\R
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\HCMUS\Semester 6\1-XDPM\Google Code\Nhom III\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
