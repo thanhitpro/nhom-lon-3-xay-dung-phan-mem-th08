@@ -21,10 +21,11 @@ namespace TUVANLAPTOP
         }
         private myChiTietDongLaptopDTO LaptopInfor = null;
         private String fileName = "";
+        private int iTemp = -1;
         /// <summary>
         /// Load các thông tin ban đầu cho combobox và textbox
         /// </summary>
-        private void LoadInfor()
+        public void LoadInfor()
         {
             // Load Ram
             myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
@@ -95,7 +96,7 @@ namespace TUVANLAPTOP
             {
                 dsManHinh = chiTietManHinh.LayChiTietDongManHinh();
             }
-            catch 
+            catch
             {
                 dsManHinh = null;
             }
@@ -199,7 +200,7 @@ namespace TUVANLAPTOP
             {
                 dsTrongLuong = chiTietTL.LayChiTietTrongLuong();
             }
-            catch 
+            catch
             {
                 dsTrongLuong = null;
             }
@@ -269,7 +270,7 @@ namespace TUVANLAPTOP
             {
                 dsCardMang = chiTietCardMang.LayChiTietDongCardMang();
             }
-            catch 
+            catch
             {
                 dsCardMang = null;
             }
@@ -311,7 +312,7 @@ namespace TUVANLAPTOP
             {
                 dsWebcam = chiTietWebCam.LayChiTietDongWebcam();
             }
-            catch 
+            catch
             {
                 dsWebcam = null;
             }
@@ -332,7 +333,7 @@ namespace TUVANLAPTOP
             {
                 dsPin = chiTietPin.LayChiTietDongPin();
             }
-            catch 
+            catch
             {
                 dsPin = null;
             }
@@ -372,7 +373,7 @@ namespace TUVANLAPTOP
             {
                 dsNhaSX = nhaSX.LayNhaSanXuat();
             }
-            catch 
+            catch
             {
                 dsNhaSX = null;
             }
@@ -393,7 +394,7 @@ namespace TUVANLAPTOP
         /// <param name="str"> Mã sản phẩm</param>
         /// <returns></returns>
 
-        private bool KiemtraKyTu(String str)
+        public bool KiemtraKyTu(String str)
         {
             for (int i = 0; i < str.Length; i++)
             {
@@ -415,47 +416,20 @@ namespace TUVANLAPTOP
             this.Close();
         }
 
-        /// <summary>
-        /// Tra cứu thông tin laptop
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btn_tracuu_Click(object sender, EventArgs e)
+
+        public void getLaptopDataFromDB(int laptopName)
         {
-            gb_ThayDoiThongTin.Enabled = false;
-            btn_capnhat.Enabled = false;
-            String textTraCuu = "";
-
-            if (String.Compare(txt_masp.Text.Trim(), "") == 0)
-            {
-                MessageBox.Show("Nhập thông tin cần tra cứu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else
-            {
-                if (!KiemtraKyTu(txt_masp.Text.Trim()))
-                {
-                    MessageBox.Show("Mã sản phẩm là kiểu số. Xin vui lòng nhập lại!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                else
-                {
-                    textTraCuu = txt_masp.Text;
-                }
-
-            }
             //lay du lieu chi tiet 1 dong laptop
             myChiTietDongLaptopDTO laptop = new myChiTietDongLaptopDTO();
             try
             {
-                laptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(int.Parse(textTraCuu.ToString().Trim()));
+                laptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(laptopName);
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Lỗi kết nối với cơ sở dữ liệu. Vui lòng thực hiện lại thao tác tra cứu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             LaptopInfor = laptop;
             if (laptop == null)
             {
@@ -518,6 +492,47 @@ namespace TUVANLAPTOP
                 //mo ta them
                 laptop.SMoTaThem
                 );
+        }
+
+
+        /// <summary>
+        /// Load thông tin sản phẩm vào các combobox và textbox
+        /// </summary>
+        public void loadProductToTable()
+        {
+            gb_ThayDoiThongTin.Enabled = false;
+            btn_capnhat.Enabled = false;
+            String textTraCuu = "";
+            if (String.Compare(txt_masp.Text.Trim(), "") == 0)
+            {
+                MessageBox.Show("Nhập thông tin cần tra cứu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                if (!KiemtraKyTu(txt_masp.Text.Trim()))
+                {
+                    MessageBox.Show("Mã sản phẩm là kiểu số. Xin vui lòng nhập lại!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    textTraCuu = txt_masp.Text;
+                }
+                getLaptopDataFromDB(int.Parse(textTraCuu.Trim()));
+                iTemp = int.Parse(textTraCuu.Trim());
+            }
+
+        }
+
+        /// <summary>
+        /// Tra cứu thông tin laptop
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_tracuu_Click(object sender, EventArgs e)
+        {
+            loadProductToTable();
             ResetInfor();
         }
 
@@ -752,29 +767,38 @@ namespace TUVANLAPTOP
 
             fileName = LaptopInfor.SHinhAnh;
 
-            pb_picture.ImageLocation = fileName;
+            Image img = Image.FromFile(fileName);
+            Bitmap bm = new Bitmap(279, 215);
+            Graphics gp = Graphics.FromImage((Image)bm);
+            gp.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            gp.DrawImage(img, 0, 0, 279, 215);
+            pb_picture.Image = (Image)bm;
+            gp.Dispose();
         }
         /// <summary>
         /// Load thông tin sản phẩm từ datagridview vào các combobox và textbox
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dtgw_LapTop_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+
+        private string KiemTra_ThongTin()
         {
-
-            HienThiThongTin();
-
-        }
-
-
-        private bool KiemTra_ThongTin()
-        {
-            if (string.Compare(txtTenDongLapTop.Text.Trim(), "") == 0 || string.Compare(txt_giaban.Text.Trim(), "") == 0 || string.Compare(txt_SoLuong.Text.Trim(), "") == 0)
+            string strResult = "";
+            string str1 = txtTenDongLapTop.Text.Trim();
+            string str2 = txt_giaban.Text.Trim();
+            string str3 = txt_SoLuong.Text.Trim();
+            if (string.Compare(str1, "") == 0 || string.Compare(str2, "") == 0 || string.Compare(str3, "") == 0)
             {
-                return false;
+                if (string.Compare(str1, "") == 0)
+                    strResult = strResult + " Tên dòng laptop ; ";
+                if (string.Compare(str2, "") == 0)
+                    strResult = strResult + " Giá bán ; ";
+                if (string.Compare(str3, "") == 0)
+                    strResult = strResult + " Số lượng ; ";
+                return strResult;
             }
             else
-                return true;
+                return strResult;
         }
 
         /// <summary>
@@ -784,9 +808,10 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void btn_capnhat_Click(object sender, EventArgs e)
         {
-            if (KiemTra_ThongTin() == false)
+            string strTemp = KiemTra_ThongTin();
+            if (string.Compare(strTemp.Trim(), "") != 0)
             {
-                MessageBox.Show("Chưa điền đầy đủ thông tin.Vui lòng nhập lại cho đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa điền đầy đủ thông tin:" + strTemp, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
@@ -796,7 +821,7 @@ namespace TUVANLAPTOP
             //tên dòng laptop
             if ((this.txtTenDongLapTop.Text.Length < 5) || (this.txtTenDongLapTop.Text.Length > 30))
             {
-                MessageBox.Show("Tên dòng laptop có chiều dài từ 5 đến 30 ký tự");
+                MessageBox.Show("Tên dòng laptop có chiều dài từ 5 đến 30 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTenDongLapTop.Focus();
                 return;
             }
@@ -870,7 +895,14 @@ namespace TUVANLAPTOP
             try
             {
                 double giaHienHanh = double.Parse(txt_giaban.Text);
-                dongLaptopMoi.GiaBanHienHanh = giaHienHanh;
+                if (giaHienHanh <= 100000000)
+                    dongLaptopMoi.GiaBanHienHanh = giaHienHanh;
+                else
+                {
+                    MessageBox.Show("Giá tiền phải phải không lớn hơn 100 triệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_giaban.Focus();
+                    return;
+                }
             }
             catch
             {
@@ -930,7 +962,7 @@ namespace TUVANLAPTOP
             }
             else
             {
-                MessageBox.Show("Mô tả thêm dài hơn 512 ký tự, xin nhập lại", "Thông báo");
+                MessageBox.Show("Mô tả thêm dài hơn 512 ký tự, xin nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_MoTaThem.Focus();
                 return;
             }
@@ -939,11 +971,20 @@ namespace TUVANLAPTOP
 
             try
             {
-                dongLaptopMoi.SoLuongNhap = int.Parse(txt_SoLuong.Text);
+                int sl = int.Parse(txt_SoLuong.Text);
+                if (sl <= 1000)
+                    dongLaptopMoi.SoLuongNhap = sl;
+                else
+                {
+                    MessageBox.Show("Số lượng nhập không quá 1000 chiếc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_SoLuong.Focus();
+                    return;
+                }
+
             }
             catch
             {
-                MessageBox.Show("Số lượng nhập phải là số nguyên!", "Thông báo");
+                MessageBox.Show("Số lượng nhập phải là số nguyên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_SoLuong.Focus();
                 return;
             }
@@ -967,9 +1008,9 @@ namespace TUVANLAPTOP
             {
                 myChiTietDongLaptopBUS.CapNhatChiTietDongLaptop(dongLaptopMoi);
                 MessageBox.Show("Cập nhật thông tin sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                fileName = "";
+                getLaptopDataFromDB(iTemp);
             }
-            catch 
+            catch
             {
                 MessageBox.Show(" Cập thông tin sản phẩm mới thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -998,16 +1039,28 @@ namespace TUVANLAPTOP
                 String imageFile = "";
                 imageFile = openFileDialog1.SafeFileName;
                 fileName = @"image/" + imageFile;
-                pb_picture.ImageLocation = fileName;
+                Image img = Image.FromFile(fileName);
+                Bitmap bm = new Bitmap(279, 215);
+                Graphics gp = Graphics.FromImage((Image)bm);
+                gp.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                gp.DrawImage(img, 0, 0, 279, 215);
+                pb_picture.Image = (Image)bm;
+                gp.Dispose();
             }
 
         }
         /// <summary>
-        /// Load thông tin từ datagridview vào combobox và textbox khi người dùng double click vào một dòng trong bảng
+        /// Load thông tin từ datagridview vào combobox và textbox khi người dùng click vào một ô trong bảng
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dtgw_LapTop_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dtgw_LapTop_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            HienThiThongTin();
+        }
+
+        private void dtgw_LapTop_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             HienThiThongTin();
         }

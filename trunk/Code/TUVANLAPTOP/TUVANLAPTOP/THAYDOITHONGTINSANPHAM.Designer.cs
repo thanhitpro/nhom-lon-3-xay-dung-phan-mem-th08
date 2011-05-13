@@ -195,8 +195,8 @@
             this.dtgw_LapTop.ReadOnly = true;
             this.dtgw_LapTop.Size = new System.Drawing.Size(1347, 82);
             this.dtgw_LapTop.TabIndex = 2;
-            this.dtgw_LapTop.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgw_LapTop_CellContentDoubleClick);
-            this.dtgw_LapTop.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgw_LapTop_RowHeaderMouseDoubleClick);
+            this.dtgw_LapTop.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgw_LapTop_CellClick);
+            this.dtgw_LapTop.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgw_LapTop_RowHeaderMouseClick);
             // 
             // malaptop
             // 
