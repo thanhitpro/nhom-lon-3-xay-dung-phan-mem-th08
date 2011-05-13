@@ -483,3 +483,4 @@ D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\ob
 D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
