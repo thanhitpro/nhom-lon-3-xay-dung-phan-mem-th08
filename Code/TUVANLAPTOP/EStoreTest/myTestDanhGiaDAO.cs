@@ -9,13 +9,15 @@ using EStoreDAO;
 namespace EStoreTest
 {
     [TestFixture]
-    public class myTestChiTietDongCardMangDAO
+    class myTestDanhGiaDAO
     {
         [Test]
-        public void TestLayChiTietDongCardMang()
+        public void TestLayDanhGia()
         {
-            Assert.IsNotNull(myChiTietDongCardMangDAO.LayChiTietDongCardMang(1));
+            myDanhGiaDTO danhGia = myDanhGiaDAO.LayDanhGia(1);
 
+            Assert.IsNotNull(danhGia);
+            Assert.AreEqual(1000, danhGia.ITongDiem);
         }
     }
 }

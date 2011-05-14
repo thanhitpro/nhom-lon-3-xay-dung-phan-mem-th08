@@ -28,10 +28,5 @@ namespace EStoreDAO
                 throw ex;
             }
         }
-
-        public List<myDanhGiaDTO> LayDanhGia()
-        {
-            return null;
-        }
     }
 }

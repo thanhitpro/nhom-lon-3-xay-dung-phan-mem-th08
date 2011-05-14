@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" total="14" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-05-14" time="04:15:06">
-  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release" machine-name="THIETQN" user="WSThiet" user-domain="THIETQN" />
+<test-results name="E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" total="33" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-05-14" time="14:37:14">
+  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.9\bin\net-2.0" machine-name="THIETQN" user="WSThiet" user-domain="THIETQN" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" executed="True" result="Success" success="True" time="4.016" asserts="0">
+  <test-suite type="Assembly" name="E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" executed="True" result="Success" success="True" time="3.531" asserts="0">
     <results>
-      <test-suite type="Namespace" name="EStoreTest" executed="True" result="Success" success="True" time="4.000" asserts="0">
+      <test-suite type="Namespace" name="EStoreTest" executed="True" result="Success" success="True" time="3.531" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="myChiTietDongLaptopDAOTest" executed="True" result="Success" success="True" time="3.813" asserts="0">
+          <test-suite type="TestFixture" name="myChiTietDongLaptopDAOTest" executed="True" result="Success" success="True" time="3.141" asserts="0">
             <results>
-              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.CapNhatXoaChiTietDongLaptop_Test" executed="True" result="Success" success="True" time="3.609" asserts="4" />
-              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.ThemMoiChiTietDongLaptopTest" executed="True" result="Success" success="True" time="0.172" asserts="1" />
+              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.CapNhatXoaChiTietDongLaptop_Test" executed="True" result="Success" success="True" time="2.953" asserts="4" />
+              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.ThemMoiChiTietDongLaptopTest" executed="True" result="Success" success="True" time="0.141" asserts="1" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="myTestChiTietBoNhoCardDoHoaDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoCardDoHoaDAO" executed="True" result="Success" success="True" time="0.016" asserts="0">
             <results>
-              <test-case name="EStoreTest.myTestChiTietBoNhoCardDoHoaDAO.TestThem" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietBoNhoCardDoHoaDAO.TestThem" executed="True" result="Success" success="True" time="0.016" asserts="1" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="myTestChiTietBoNhoRamDAO" executed="True" result="Success" success="True" time="0.047" asserts="0">
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoRamDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
             <results>
               <test-case name="EStoreTest.myTestChiTietBoNhoRamDAO.TestLayChiTietBoNhoRam" executed="True" result="Success" success="True" time="0.016" asserts="1" />
               <test-case name="EStoreTest.myTestChiTietBoNhoRamDAO.TestThemBoNhoRAM" executed="True" result="Success" success="True" time="0.016" asserts="1" />
@@ -27,13 +27,13 @@
           <test-suite type="TestFixture" name="myTestChiTietCongNgheCPUDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
             <results>
               <test-case name="EStoreTest.myTestChiTietCongNgheCPUDAO.TestLayDSCongNgheCPU" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-              <test-case name="EStoreTest.myTestChiTietCongNgheCPUDAO.TestThemCongNgheCPU" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietCongNgheCPUDAO.TestThemCongNgheCPU" executed="True" result="Success" success="True" time="0.016" asserts="1" />
             </results>
           </test-suite>
           <test-suite type="TestFixture" name="myTestChiTietCongNgheRamDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
             <results>
-              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestLayChiTietCongNgheRam" executed="True" result="Success" success="True" time="0.016" asserts="1" />
-              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestThemCongNgheRAM" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestLayChiTietCongNgheRam" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestThemCongNgheRAM" executed="True" result="Success" success="True" time="0.031" asserts="1" />
             </results>
           </test-suite>
           <test-suite type="TestFixture" name="myTestChiTietDongCardDoHoaDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
@@ -46,11 +46,86 @@
               <test-case name="EStoreTest.myTestChiTietDongCardMangDAO.TestLayChiTietDongCardMang" executed="True" result="Success" success="True" time="0.000" asserts="1" />
             </results>
           </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardReaderDAO" executed="True" result="Success" success="True" time="0.016" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongCardReaderDAO.TestLayChiTietDongCardReader" executed="True" result="Success" success="True" time="0.016" asserts="3" />
+            </results>
+          </test-suite>
           <test-suite type="TestFixture" name="myTestChiTietDongCPUDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
             <results>
               <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestKiemTraTonTaiDongCPU" executed="True" result="Success" success="True" time="0.016" asserts="2" />
               <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestLayChiTietDongCPU" executed="True" result="Success" success="True" time="0.000" asserts="2" />
               <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestThemMoiDongCPU" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongLaptopDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestLayChiTietDongLaptop" executed="True" result="Success" success="True" time="0.031" asserts="17" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongLoaDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongLoaDAO.TestLayChiTietDongLoa" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongManHinhDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongManHinhDAO.TestLayChiTietDongManHinh" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongOCungDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongOCungDAO.TestLayChiTietDongOCung" executed="True" result="Success" success="True" time="0.000" asserts="5" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongODiaQuangDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongODiaQuangDAO.TestLayChiTietDongODiaQuang" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongPinDAO" executed="True" result="Success" success="True" time="0.016" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongPinDAO.TestLayChiTietDongPin" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongRamDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongRamDAO.TestLayChiTietDongRam" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongWebcamDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongWebcamDAO.TestLayChiTietDongWebcam" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDungLuongOCungDAO" executed="True" result="Success" success="True" time="0.016" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDungLuongOCungDAO.TestLayDSDungLuongOCung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietDungLuongOCungDAO.TestThemDungLuongOCung" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietHeDieuHanhDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestLayChiTietHDH" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestLayDSHeDieuHanh" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestThemHeDieuHanh" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietKichThuocManHinhDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietKichThuocManHinhDAO.TestLayDSKichThuocManHinh" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietKichThuocManHinhDAO.TestThemKichThuocManHinh" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietVongQuayOCungDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietVongQuayOCungDAO.TestLayDSVongQuayOCung" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietVongQuayOCungDAO.TestThemVongQuay" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestDanhGiaDAO" executed="True" result="Success" success="True" time="0.000" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestDanhGiaDAO.TestLayDanhGia" executed="True" result="Success" success="True" time="0.000" asserts="2" />
             </results>
           </test-suite>
         </results>

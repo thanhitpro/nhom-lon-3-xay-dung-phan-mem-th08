@@ -147,7 +147,7 @@ namespace EStoreDAO
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString15, mappingSource)
+				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString14, mappingSource)
 		{
 			OnCreated();
 		}
@@ -2945,7 +2945,7 @@ namespace EStoreDAO
 			}
 		}
 		
-		[Column(Storage="_TenDongCPU", DbType="NVarChar(30)")]
+		[Column(Storage="_TenDongCPU", DbType="NVarChar(50)")]
 		public string TenDongCPU
 		{
 			get

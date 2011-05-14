@@ -14,12 +14,12 @@ namespace EStoreDAO
         /// </summary>
         /// <param name="_iMaDanhGia"></param>
         /// <returns></returns>
-        public static myChiTietHeDieuHanhDTO LayChiTietHDH(int _iMaDanhGia)
+        public static myChiTietHeDieuHanhDTO LayChiTietHDH(int _iHeDieuHanh)
         {
             try
             {
                 myChiTietHeDieuHanhDTO chiTietHDH = null;
-                var query = m_eStoreDataContext.CHITIETHEDIEUHANHs.Single(hdh => hdh.MaChiTietHeDieuHanh == _iMaDanhGia);
+                var query = m_eStoreDataContext.CHITIETHEDIEUHANHs.Single(hdh => hdh.MaChiTietHeDieuHanh == _iHeDieuHanh);
                 if (query != null)
                 {
                     chiTietHDH = new myChiTietHeDieuHanhDTO();
