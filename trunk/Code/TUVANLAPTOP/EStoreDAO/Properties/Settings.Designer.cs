@@ -179,5 +179,15 @@ namespace EStoreDAO.Properties {
                 return ((string)(this["ESTOREConnectionString14"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ITFRIEND;Initial Catalog=ESTORE;Integrated Security=True")]
+        public string ESTOREConnectionString15 {
+            get {
+                return ((string)(this["ESTOREConnectionString15"]));
+            }
+        }
     }
 }
