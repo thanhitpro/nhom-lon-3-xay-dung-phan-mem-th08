@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Framework;
 using System.Data.SqlClient;
+using NUnit.Framework;
 using EStoreDAO;
 using EStoreDTO;
+
 namespace EStoreTest
 {
     [TestFixture]
