@@ -108,17 +108,6 @@ D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVAN
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
-D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
 C:\Users\AnhTuan\Desktop\xdpmNew25-4\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
@@ -185,3 +174,14 @@ C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb

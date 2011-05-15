@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using EStoreBUS;
+using EStoreDTO;
 
 namespace TUVANLAPTOP
 {
@@ -27,19 +29,24 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (textBox_username.Text == "admin" && textBox_password.Text == "123456")
+            try
             {
-                this.Hide();
-                if (0 == MANHINHCHINH.m_iStaticFormDuocChon)
+                if (myNguoiDungBUS.KiemTraNguoiDungTonTai(textBox_username.Text, textBox_password.Text))
                 {
-                    ADMIN frm = new ADMIN();
-                    frm.ShowDialog();
+                    this.Hide();
+                    if (0 == MANHINHCHINH.m_iStaticFormDuocChon)
+                    {
+                        ADMIN frm = new ADMIN();
+                        frm.ShowDialog();
+                    }
                 }
-
-                
+                else
+                    MessageBox.Show("Username hay Password không chính xác \n Vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("Username hay Password không chính xác \n Vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Notice");
+            }
         }
 
         /// <summary>

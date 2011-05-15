@@ -43,25 +43,25 @@
             this.label_username.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_username.Location = new System.Drawing.Point(52, 35);
             this.label_username.Name = "label_username";
-            this.label_username.Size = new System.Drawing.Size(61, 14);
+            this.label_username.Size = new System.Drawing.Size(91, 14);
             this.label_username.TabIndex = 0;
-            this.label_username.Text = "Username";
+            this.label_username.Text = "Tên đăng nhập";
             // 
             // label_password
             // 
             this.label_password.AutoSize = true;
             this.label_password.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_password.Location = new System.Drawing.Point(52, 98);
+            this.label_password.Location = new System.Drawing.Point(52, 94);
             this.label_password.Name = "label_password";
-            this.label_password.Size = new System.Drawing.Size(58, 14);
+            this.label_password.Size = new System.Drawing.Size(57, 14);
             this.label_password.TabIndex = 1;
-            this.label_password.Text = "Password";
+            this.label_password.Text = "Mật khẩu";
             // 
             // textBox_username
             // 
             this.textBox_username.BackColor = System.Drawing.SystemColors.Control;
             this.textBox_username.ForeColor = System.Drawing.Color.Firebrick;
-            this.textBox_username.Location = new System.Drawing.Point(159, 29);
+            this.textBox_username.Location = new System.Drawing.Point(168, 29);
             this.textBox_username.Name = "textBox_username";
             this.textBox_username.Size = new System.Drawing.Size(152, 20);
             this.textBox_username.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             this.textBox_password.BackColor = System.Drawing.SystemColors.Control;
             this.textBox_password.ForeColor = System.Drawing.Color.Firebrick;
-            this.textBox_password.Location = new System.Drawing.Point(159, 92);
+            this.textBox_password.Location = new System.Drawing.Point(168, 92);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(152, 20);
             this.textBox_password.TabIndex = 3;
