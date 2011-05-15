@@ -27,10 +27,10 @@ namespace EStoreDAO
                     chiTietCPU.STenDongCPU = query.TenDongCPU;
                     chiTietCPU.NhaSanXuat = new myNhaSanXuatDTO(query.NHASANXUAT.TenNhaSanXuat);
 
-                    myChiTietCongNgheCPUDTO chiTietCNCPU = new myChiTietCongNgheCPUDTO();
-                    chiTietCNCPU.STenChiTietCongNgheCPU = query.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU;
-                    chiTietCNCPU.FHeSo = (float)query.CHITIETCONGNGHECPU.HeSo;
-                    chiTietCPU.ChiTietCongNgheCPU = chiTietCNCPU;
+                    myChiTietCongNgheCPUDTO chiTietCongNgheCPU = new myChiTietCongNgheCPUDTO();
+                    chiTietCongNgheCPU.STenChiTietCongNgheCPU = query.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU;
+                    chiTietCongNgheCPU.FHeSo = (float)query.CHITIETCONGNGHECPU.HeSo;
+                    chiTietCPU.ChiTietCongNgheCPU = chiTietCongNgheCPU;
                 }
 
                 return chiTietCPU;

@@ -21,11 +21,11 @@ namespace EStoreDAO
                 List<myChiTietBoNhoRamDTO> dsBoNhoRam = new List<myChiTietBoNhoRamDTO>();
                 foreach (CHITIETBONHORAM boNho in m_eStoreDataContext.CHITIETBONHORAMs)
                 {
-                    myChiTietBoNhoRamDTO ctBNRAM = new myChiTietBoNhoRamDTO();
-                    ctBNRAM.STenChiTietBoNhoRam = boNho.TenChiTietBoNhoRAM;
-                    ctBNRAM.FHeSo = (float)boNho.HeSo;
+                    myChiTietBoNhoRamDTO ctBoNhoRAM = new myChiTietBoNhoRamDTO();
+                    ctBoNhoRAM.STenChiTietBoNhoRam = boNho.TenChiTietBoNhoRAM;
+                    ctBoNhoRAM.FHeSo = (float)boNho.HeSo;
 
-                    dsBoNhoRam.Add(ctBNRAM);
+                    dsBoNhoRam.Add(ctBoNhoRAM);
                 }
 
                 return dsBoNhoRam;
@@ -45,11 +45,11 @@ namespace EStoreDAO
         {
             try
             {
-                CHITIETBONHORAM ctBNRAM = new CHITIETBONHORAM();
-                ctBNRAM.TenChiTietBoNhoRAM = _mBoNho.STenChiTietBoNhoRam;
-                ctBNRAM.HeSo = (float)_mBoNho.FHeSo;
+                CHITIETBONHORAM ctBoNhoRAM = new CHITIETBONHORAM();
+                ctBoNhoRAM.TenChiTietBoNhoRAM = _mBoNho.STenChiTietBoNhoRam;
+                ctBoNhoRAM.HeSo = (float)_mBoNho.FHeSo;
 
-                m_eStoreDataContext.CHITIETBONHORAMs.InsertOnSubmit(ctBNRAM);
+                m_eStoreDataContext.CHITIETBONHORAMs.InsertOnSubmit(ctBoNhoRAM);
                 m_eStoreDataContext.SubmitChanges();
 
                 return true;

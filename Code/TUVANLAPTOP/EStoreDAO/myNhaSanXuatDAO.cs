@@ -57,16 +57,16 @@ namespace EStoreDAO
             try
             {
                 var query = from p in m_eStoreDataContext.NHASANXUATs select p;
-                List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
+                List<myNhaSanXuatDTO> dsNhaSanXuat = new List<myNhaSanXuatDTO>();
                 if (query == null)
                     return null;
                 foreach (NHASANXUAT nhasx in query)
                 {
                     myNhaSanXuatDTO nsx = new myNhaSanXuatDTO(nhasx.TenNhaSanXuat);
                     nsx.IMaNhaSanXuat = nhasx.MaNhaSanXuat;
-                    dsNhaSX.Add(nsx);
+                    dsNhaSanXuat.Add(nsx);
                 }
-                return dsNhaSX;
+                return dsNhaSanXuat;
             }
             catch (Exception ex)
             {
@@ -80,19 +80,19 @@ namespace EStoreDAO
         /// <returns></returns>
         public static int LayMaNhaSanXuat(string _sTenNhaSX)
         {
-            int maNhaSX = -1;
+            int maNhaSanXuat = -1;
             try
             {
                 DataClasses1DataContext m_EStore = new DataClasses1DataContext();
                 var query = from p in m_EStore.NHASANXUATs where p.TenNhaSanXuat == _sTenNhaSX select p;
                 if (query == null)
-                    return maNhaSX;
+                    return maNhaSanXuat;
                 foreach (NHASANXUAT laptop in query)
                 {
-                    maNhaSX = laptop.MaNhaSanXuat;
+                    maNhaSanXuat = laptop.MaNhaSanXuat;
                     break;
                 }
-                return maNhaSX;
+                return maNhaSanXuat;
             }
             catch (Exception ex)
             {

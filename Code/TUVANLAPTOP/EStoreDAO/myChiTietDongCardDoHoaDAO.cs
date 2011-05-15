@@ -22,23 +22,23 @@ namespace EStoreDAO
         {
             try
             {
-                myChiTietDongCardDoHoaDTO chitietDongCardDoHoa = null;
+                myChiTietDongCardDoHoaDTO chiTietDongCardDoHoa = null;
 
                 var query = m_eStoreDataContext.CHITIETDONGCARDDOHOAs.Single(cardDoHoa => cardDoHoa.MaDongCardDoHoa == _iMaChiTietDongCardDoHoa);
                 if (query != null)
                 {
-                    chitietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
-                    chitietDongCardDoHoa.STenDongCardDoHoa = query.TenDongCardDoHoa;
-                    chitietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(query.NHASANXUAT.TenNhaSanXuat);
+                    chiTietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
+                    chiTietDongCardDoHoa.STenDongCardDoHoa = query.TenDongCardDoHoa;
+                    chiTietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(query.NHASANXUAT.TenNhaSanXuat);
 
                     myChiTietBoNhoCardDoHoaDTO chiTietBoNhoCardDoHoa = new myChiTietBoNhoCardDoHoaDTO();
                     chiTietBoNhoCardDoHoa.STenChiTietCardDoHoa = query.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa;
                     chiTietBoNhoCardDoHoa.FHeSo = (float)query.CHITIETBONHOCARDDOHOA.HeSo;
 
-                    chitietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
+                    chiTietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
                 }
 
-                return chitietDongCardDoHoa;
+                return chiTietDongCardDoHoa;
             }
             catch (Exception ex)
             {
@@ -58,20 +58,20 @@ namespace EStoreDAO
                 var query = from p in m_EStoreContext.CHITIETDONGCARDDOHOAs select p;
                 if (query == null)
                     return null;
-                foreach (CHITIETDONGCARDDOHOA carddohoa in query)
+                foreach (CHITIETDONGCARDDOHOA cardDoHoa in query)
                 {
-                    myChiTietDongCardDoHoaDTO chitietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
-                    chitietDongCardDoHoa.STenDongCardDoHoa = carddohoa.TenDongCardDoHoa;
-                    chitietDongCardDoHoa.IMaDongCardDoHoa = carddohoa.MaDongCardDoHoa;
-                    chitietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(carddohoa.NHASANXUAT.TenNhaSanXuat);
+                    myChiTietDongCardDoHoaDTO chiTietDongCardDoHoa = new myChiTietDongCardDoHoaDTO();
+                    chiTietDongCardDoHoa.STenDongCardDoHoa = cardDoHoa.TenDongCardDoHoa;
+                    chiTietDongCardDoHoa.IMaDongCardDoHoa = cardDoHoa.MaDongCardDoHoa;
+                    chiTietDongCardDoHoa.NhaSanXuat = new myNhaSanXuatDTO(cardDoHoa.NHASANXUAT.TenNhaSanXuat);
 
                     myChiTietBoNhoCardDoHoaDTO chiTietBoNhoCardDoHoa = new myChiTietBoNhoCardDoHoaDTO();
-                    chiTietBoNhoCardDoHoa.STenChiTietCardDoHoa = carddohoa.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa;
-                    chiTietBoNhoCardDoHoa.FHeSo = (float)carddohoa.CHITIETBONHOCARDDOHOA.HeSo;
+                    chiTietBoNhoCardDoHoa.STenChiTietCardDoHoa = cardDoHoa.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa;
+                    chiTietBoNhoCardDoHoa.FHeSo = (float)cardDoHoa.CHITIETBONHOCARDDOHOA.HeSo;
 
-                    chitietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
+                    chiTietDongCardDoHoa.ChiTietBoNhoCardDoHoa = chiTietBoNhoCardDoHoa;
 
-                    dsCardDoHoa.Add(chitietDongCardDoHoa);
+                    dsCardDoHoa.Add(chiTietDongCardDoHoa);
                 }
                 return dsCardDoHoa;
             }
@@ -85,21 +85,21 @@ namespace EStoreDAO
         /// </summary>
         /// <param name="_sTenCardDoaHoa">Tên card đồ họa</param>
         /// <returns>Mã card đồ họa cần tra cứu</returns>
-        public static int LayMaDongCardDoHoa(string _sTenCardDoaHoa)
+        public static int LayMaDongCardDoHoa(string _sTenCardDoHoa)
         {
             try
             {
-                int maCardDiaHoa = -1;
+                int maCardDoHoa = -1;
                 DataClasses1DataContext m_EStore = new DataClasses1DataContext();
-                var query = from p in m_EStore.CHITIETDONGCARDDOHOAs where p.TenDongCardDoHoa == _sTenCardDoaHoa select p;
+                var query = from p in m_EStore.CHITIETDONGCARDDOHOAs where p.TenDongCardDoHoa == _sTenCardDoHoa select p;
                 if (query == null)
-                    return maCardDiaHoa;
+                    return maCardDoHoa;
                 foreach (CHITIETDONGCARDDOHOA laptop in query)
                 {
-                    maCardDiaHoa = laptop.MaDongCardDoHoa;
+                    maCardDoHoa = laptop.MaDongCardDoHoa;
                     break;
                 }
-                return maCardDiaHoa;
+                return maCardDoHoa;
             }
             catch (Exception ex)
             {

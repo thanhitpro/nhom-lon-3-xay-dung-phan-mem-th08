@@ -21,11 +21,11 @@ namespace EStoreDAO
                 List<myChiTietCongNgheRamDTO> dsCongNgheRam = new List<myChiTietCongNgheRamDTO>();
                 foreach (CHITIETCONGNGHERAM boNho in m_eStoreDataContext.CHITIETCONGNGHERAMs)
                 {
-                    myChiTietCongNgheRamDTO ctCNRAM = new myChiTietCongNgheRamDTO();
-                    ctCNRAM.STenCongNgheRam = boNho.TenCongNgheRam;
-                    ctCNRAM.FHeSo = (float)boNho.HeSo;
+                    myChiTietCongNgheRamDTO ctCongNgheRam = new myChiTietCongNgheRamDTO();
+                    ctCongNgheRam.STenCongNgheRam = boNho.TenCongNgheRam;
+                    ctCongNgheRam.FHeSo = (float)boNho.HeSo;
 
-                    dsCongNgheRam.Add(ctCNRAM);
+                    dsCongNgheRam.Add(ctCongNgheRam);
                 }
 
                 return dsCongNgheRam;
@@ -45,11 +45,11 @@ namespace EStoreDAO
         {
             try
             {
-                CHITIETCONGNGHERAM ctCNRAM = new CHITIETCONGNGHERAM();
-                ctCNRAM.TenCongNgheRam = _mCongNgheRAM.STenCongNgheRam;
-                ctCNRAM.HeSo = (float)_mCongNgheRAM.FHeSo;
+                CHITIETCONGNGHERAM ctCongNgheRam = new CHITIETCONGNGHERAM();
+                ctCongNgheRam.TenCongNgheRam = _mCongNgheRAM.STenCongNgheRam;
+                ctCongNgheRam.HeSo = (float)_mCongNgheRAM.FHeSo;
 
-                m_eStoreDataContext.CHITIETCONGNGHERAMs.InsertOnSubmit(ctCNRAM);
+                m_eStoreDataContext.CHITIETCONGNGHERAMs.InsertOnSubmit(ctCongNgheRam);
                 m_eStoreDataContext.SubmitChanges();
 
                 return true;
