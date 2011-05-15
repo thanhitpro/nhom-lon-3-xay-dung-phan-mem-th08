@@ -34,3 +34,15 @@ D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Re
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

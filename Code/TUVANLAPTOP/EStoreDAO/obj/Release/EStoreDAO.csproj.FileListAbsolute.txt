@@ -158,3 +158,13 @@ E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreDA
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

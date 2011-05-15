@@ -516,3 +516,33 @@ E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAP
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+C:\Users\Lam\Desktop\New folder\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
