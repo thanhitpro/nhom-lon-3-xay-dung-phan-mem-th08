@@ -102,6 +102,7 @@
     <Compile Include="myKhachHangBUS.cs" />
     <Compile Include="myMucDichSuDungBUS.cs" />
     <Compile Include="myNgheNghiepBUS.cs" />
+    <Compile Include="myNguoiDungBUS.cs" />
     <Compile Include="myNhaSanXuatBUS.cs" />
     <Compile Include="myTinhThanhBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

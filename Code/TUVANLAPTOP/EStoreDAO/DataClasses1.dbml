@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString14" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=QUOCNHAT-PC\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString8" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -120,7 +120,7 @@
     <Type Name="CHITIETDONGCPU">
       <Column Name="MaDongCPU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="MaChiTietCongNgheCPU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TenDongCPU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenDongCPU" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="CHITIETDONGCPU_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCPU" Type="CHITIETDONGLAPTOP" />
@@ -424,6 +424,13 @@
       <Column Name="MaNgheNghiep" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TenNgheNghiep" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
       <Association Name="NGHENGHIEP_KHACHHANG" Member="KHACHHANGs" OtherKey="MaNgheNghiep" Type="KHACHHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIDUNG" Member="NGUOIDUNGs">
+    <Type Name="NGUOIDUNG">
+      <Column Name="MaNguoiDung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.NHASANXUAT" Member="NHASANXUATs">

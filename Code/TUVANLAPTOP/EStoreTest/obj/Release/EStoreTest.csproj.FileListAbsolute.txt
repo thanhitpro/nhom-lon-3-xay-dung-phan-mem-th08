@@ -57,3 +57,16 @@ C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

@@ -102,6 +102,7 @@
     <Compile Include="myKhachHangDTO.cs" />
     <Compile Include="myMucDichSuDungDTO.cs" />
     <Compile Include="myNgheNghiepDTO.cs" />
+    <Compile Include="myNguoiDungDTO.cs" />
     <Compile Include="myNhaSanXuatDTO.cs" />
     <Compile Include="myTinhThanhDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

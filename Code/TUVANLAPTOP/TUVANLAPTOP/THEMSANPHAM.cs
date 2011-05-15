@@ -670,6 +670,7 @@ namespace TUVANLAPTOP
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "Notice");
                 return false;
             }
         }
