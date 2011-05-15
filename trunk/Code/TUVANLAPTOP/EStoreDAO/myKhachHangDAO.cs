@@ -27,10 +27,10 @@ namespace EStoreDAO
             try
             {
                 var Query = from _KhachHang in m_eStoreDataContext.KHACHHANGs select _KhachHang;
-                List<KHACHHANG> DSKhachHang = new List<KHACHHANG>();
+                List<KHACHHANG> dsKhachHang = new List<KHACHHANG>();
                 foreach (KHACHHANG _KH in Query)
-                    DSKhachHang.Add(_KH);
-                return DSKhachHang;
+                    dsKhachHang.Add(_KH);
+                return dsKhachHang;
             }
             catch (Exception ex)
             {

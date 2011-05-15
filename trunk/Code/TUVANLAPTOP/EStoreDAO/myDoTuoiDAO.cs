@@ -21,10 +21,10 @@ namespace EStoreDAO
             try
             {
                 var Query = from _DoTuoi in m_eStoreDataContext.DOTUOIs select _DoTuoi;
-                List<DOTUOI> DSDoTuoi = new List<DOTUOI>();
+                List<DOTUOI> dsDoTuoi = new List<DOTUOI>();
                 foreach (DOTUOI _DOTUOI in Query)
-                    DSDoTuoi.Add(_DOTUOI);
-                return DSDoTuoi;
+                    dsDoTuoi.Add(_DOTUOI);
+                return dsDoTuoi;
             }
             catch (Exception ex)
             {

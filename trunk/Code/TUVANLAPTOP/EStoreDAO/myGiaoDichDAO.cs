@@ -29,10 +29,10 @@ namespace EStoreDAO
             try
             {
                 var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes select _GiaoDich;
-                List<GIAODICH> DSGiaoDich = new List<GIAODICH>();
+                List<GIAODICH> dsGiaoDich = new List<GIAODICH>();
                 foreach (GIAODICH giaodich in Query)
-                    DSGiaoDich.Add(giaodich);
-                return DSGiaoDich;
+                    dsGiaoDich.Add(giaodich);
+                return dsGiaoDich;
             }
             catch (Exception ex)
             {
@@ -65,13 +65,13 @@ namespace EStoreDAO
             try
             {
                 var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes select _GiaoDich;
-                List<GIAODICH> DSGiaoDich = new List<GIAODICH>();
+                List<GIAODICH> dsGiaoDich = new List<GIAODICH>();
                 foreach (GIAODICH _giaodich in Query)
                 {
                     if (_giaodich.CHITIETDONGLAPTOP.MaNhaSanXuat == _iMaNhaSanXuat)
-                        DSGiaoDich.Add(_giaodich);
+                        dsGiaoDich.Add(_giaodich);
                 }
-                return DSGiaoDich;
+                return dsGiaoDich;
             }
             catch (Exception ex)
             {

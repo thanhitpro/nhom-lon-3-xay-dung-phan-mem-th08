@@ -28,12 +28,12 @@ namespace EStoreDAO
             try
             {
                 var Query = from NgheNghiep in m_eStoreDataContext.NGHENGHIEPs select NgheNghiep;
-                List<NGHENGHIEP> DSNgheNghiep = new List<NGHENGHIEP>();
+                List<NGHENGHIEP> dsNgheNghiep = new List<NGHENGHIEP>();
                 foreach (NGHENGHIEP _NgheNghiep in Query)
                 {
-                    DSNgheNghiep.Add(_NgheNghiep);
+                    dsNgheNghiep.Add(_NgheNghiep);
                 }
-                return DSNgheNghiep;
+                return dsNgheNghiep;
                
             }
             catch (System.Data.SqlClient.SqlException ex)

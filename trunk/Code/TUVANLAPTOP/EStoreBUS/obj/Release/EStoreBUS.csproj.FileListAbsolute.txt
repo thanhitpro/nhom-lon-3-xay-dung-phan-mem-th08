@@ -174,3 +174,14 @@ E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreBU
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+C:\Users\Lam\Desktop\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
