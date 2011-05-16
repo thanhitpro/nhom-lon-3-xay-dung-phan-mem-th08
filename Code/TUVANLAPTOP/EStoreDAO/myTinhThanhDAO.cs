@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using EStoreDTO;
+
+namespace EStoreDAO
+{
+    public class myTinhThanhDAO
+    {
+        private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+        public static TINHTHANH LayTinhThanh(int _iMaTinhThanh)
+        {
+            try
+            {
+                TINHTHANH _TinhThanh = m_eStoreDataContext.TINHTHANHs.Single(temp => temp.MaTinhThanh == _iMaTinhThanh);
+                return _TinhThanh;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static List<TINHTHANH> LayTinhThanh()
+        {
+            try
+            {
+                var Query = from _TinhThanh in m_eStoreDataContext.TINHTHANHs select _TinhThanh;
+                List<TINHTHANH> dsTinhThanh = new List<TINHTHANH>();
+                foreach (TINHTHANH _tinhthanh in Query)
+                    dsTinhThanh.Add(_tinhthanh);
+                return dsTinhThanh;
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}
