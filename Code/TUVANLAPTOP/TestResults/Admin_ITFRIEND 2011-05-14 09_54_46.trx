@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5f6cf244-b117-4a82-ac96-796335305fcc" name="Admin@ITFRIEND 2011-05-14 09:54:46" runUser="ITFRIEND\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="145f357c-e59c-40a1-b30a-a52e614f9885">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TestResults\Admin_ITFRIEND 2011-05-14 09_54_46">
+      <DeploymentItem filename="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll" />
+      <DeploymentItem filename="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll" />
+      <DeploymentItem filename="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ITFRIEND" outcome="Error" timestamp="2011-05-14T09:55:44.6875000+07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2011-05-14T09:54:46.8750000+07:00" queuing="2011-05-14T09:54:50.2343750+07:00" start="2011-05-14T09:54:50.5625000+07:00" finish="2011-05-14T09:55:44.7031250+07:00" />
+  <TestDefinitions>
+    <UnitTest name="LayChiTietDongLaptopMoiNhatTest" storage="d:\learning\cntt\softwareconstruction\svn_new\code\tuvanlaptop\testestoreproject\bin\release\testestoreproject.dll" id="f460895f-5cd9-6685-f592-4f0c8290d7ee">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4613b4ca-52e0-4800-8668-4cc0cd57fa49" />
+      <TestMethod codeBase="D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TestEStoreProject\bin\Release\TestEStoreProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestEStoreProject.myChiTietDongLaptopDAOTest, TestEStoreProject" name="LayChiTietDongLaptopMoiNhatTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f460895f-5cd9-6685-f592-4f0c8290d7ee" executionId="8bfef181-aa29-4b28-834e-ada6c471ede4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8bfef181-aa29-4b28-834e-ada6c471ede4" testId="f460895f-5cd9-6685-f592-4f0c8290d7ee" testName="LayChiTietDongLaptopMoiNhatTest" computerName="ITFRIEND" duration="00:00:53.9218750" startTime="2011-05-14T09:54:50.7812500+07:00" endTime="2011-05-14T09:55:44.7031250+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
