@@ -178,3 +178,13 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

@@ -70,3 +70,15 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

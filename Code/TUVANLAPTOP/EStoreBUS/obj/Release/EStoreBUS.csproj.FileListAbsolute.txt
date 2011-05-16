@@ -185,3 +185,14 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+E:\THUYPRO\Store\Workspace\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
