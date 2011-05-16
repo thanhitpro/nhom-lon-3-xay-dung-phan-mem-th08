@@ -9,13 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreDAO", "EStoreDAO\ESto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreDTO", "EStoreDTO\EStoreDTO.csproj", "{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreTest", "EStoreTest\EStoreTest.csproj", "{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreTestDAO", "EStoreTest\EStoreTestDAO.csproj", "{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FCFB0A2-AF9F-4011-B5F9-1911C40B957E}"
 	ProjectSection(SolutionItems) = preProject
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		TUVANLAPTOP.vsmdi = TUVANLAPTOP.vsmdi
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreTestBUS", "EStoreTestBUS\EStoreTestBUS.csproj", "{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreTestTUVANLAPTOP", "EStoreTestTUVANLAPTOP\EStoreTestTUVANLAPTOP.csproj", "{0287FD80-69CC-4512-B2C5-538D74534075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,14 @@ Global
 		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0287FD80-69CC-4512-B2C5-538D74534075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0287FD80-69CC-4512-B2C5-538D74534075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0287FD80-69CC-4512-B2C5-538D74534075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0287FD80-69CC-4512-B2C5-538D74534075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
