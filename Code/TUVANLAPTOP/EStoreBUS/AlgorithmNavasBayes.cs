@@ -46,7 +46,7 @@ namespace EStoreBUS
             Node.Attributes.Append(xmlTyLeKhongGiaoDich);
             return Node;
         }
-        private static XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop,List<GIAODICH>DSGiaoDichTheoDongLaptop,List<NGHENGHIEP>DSNgheNghiep)
+        private static XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
         {
             XmlNode TyLeTheoNgheNghiep = xmlDocument.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
             int SLCoGiaoDich, SLKhongGiaoDich, SoLuongKhachHangTheoNgheNghiep;
@@ -63,6 +63,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
+             
                 for (int iGiaoDich = 0; iGiaoDich < DSGiaoDichTheoDongLaptop.Count; ++iGiaoDich)
                 {
                     if (DSNgheNghiep[iNgheNghiep].MaNgheNghiep == DSGiaoDichTheoDongLaptop[iGiaoDich].KHACHHANG.MaNgheNghiep)
@@ -109,6 +110,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
+                //SLCoGiaoDich = myGiaoDichDAO.DemGiaoDichTheoLaptopVaMucDich(LapTop.MaDongLapTop, DSMucDichSuDung[k].MaMucDichSuDung);
                 for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                 {
                     if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
@@ -155,10 +157,9 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-
+               // SLCoGiaoDich = myGiaoDichDAO.DemGiaoDichTheoLaptopVaDoTuoi(LapTop.MaDongLapTop, DSDoTuoi[k].MaDoTuoi);
                 for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                 {
-
                     if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaDoTuoi)
                         ++SLCoGiaoDich;
                 }
@@ -167,7 +168,7 @@ namespace EStoreBUS
                 {
                     TyLeGiaoDich = ((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
                     SLKhongGiaoDich = SLKhachHangTheoDoTuoi - SLCoGiaoDich;
-                    TyLeKhongGiaoDich= ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                    TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
                 }
                 catch (Exception ex)
                 {
@@ -203,11 +204,10 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-
+              //  SLCoGiaoDich = myGiaoDichDAO.DemGiaoDichTheoLaptopVaTinhThanh(LapTop.MaDongLapTop, DSTinhThanh[k].MaTinhThanh);
                 for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                 {
-
-                    if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
+                   if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
                         ++SLCoGiaoDich;
                 }
 
@@ -255,9 +255,10 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
+             
+
                 for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
                 {
-
                     if ((DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == true && k == 1) || (DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == false && k == 0))
                         ++SLCoGiaoDich;
                 }
@@ -313,7 +314,7 @@ namespace EStoreBUS
             }
 
             List<GIAODICH> DSGiaoDichTheoDongLaptop;
-         
+            int SoLuongGiaoDichTheoDongLaptop = 0;
             for (int i = 0; i < DSDongLaptop.Count; ++i)
             {
                 try
@@ -324,6 +325,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
+               // SoLuongGiaoDichTheoDongLaptop = myGiaoDichDAO.DemGiaoDichTheoLaptop(DSDongLaptop[i].MaDongLapTop);
                 // create thẻ xml
                 XmlNode DongLapTop = xmlDocument.CreateElement("DONGLAPTOP");
                 XmlAttribute MaDongLapTop = xmlDocument.CreateAttribute("ID");

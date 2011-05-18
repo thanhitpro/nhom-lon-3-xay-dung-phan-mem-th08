@@ -98,16 +98,14 @@ namespace EStoreDAO
         {
             try
             {
-                var Query = from _GiaoDich in m_eStoreDataContext.GIAODICHes select _GiaoDich;
-                int kq = 0;
-                foreach (GIAODICH giaodich in Query)
-                    kq++;
-                return kq;
+                int SoLuong = m_eStoreDataContext.GIAODICHes.Count();             
+                return SoLuong;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
+
     }
 }
