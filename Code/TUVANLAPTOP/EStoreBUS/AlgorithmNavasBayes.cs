@@ -10,26 +10,293 @@ namespace EStoreBUS
 {
     public class AlgorithmNavasBayes
     {
-        // dựa vào dữ liệu khách hàng đã giao dịch dử dụng 1 phần thuật toán navas bayes phân tích ra kết quả đánh giá ban đầu
-
-        public static void AnalyseData()
+        static XmlDocument xmlDocument;
+        static int TongSoLuongGiaoDich ;
+        private static void LoadFileXML(string FileName)
+        {           
+           xmlDocument = new XmlDocument();
+           xmlDocument.Load(FileName);         
+        }
+        private static void SaveFileXML(string FileName)
         {
-            XmlDocument ResultAnalyseData = new XmlDocument();
             try
             {
-                ResultAnalyseData.Load("ResultAnalyseData.xml");
+                if(xmlDocument!=null)
+                xmlDocument.Save(FileName);
+                return;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            XmlNode NavasBayes = ResultAnalyseData.DocumentElement;
+        }
+        private static XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
+        {
+            XmlNode Node = xmlDocument.CreateElement(TenThe);
+            XmlAttribute xmlID = xmlDocument.CreateAttribute("ID");
+            XmlAttribute xmlTyLeGiaoDich = xmlDocument.CreateAttribute("TyLeGiaoDich");
+            XmlAttribute xmlTyLeKhongGiaoDich = xmlDocument.CreateAttribute("TyLeKhongGiaoDich");
+
+            xmlID.Value = ID.ToString();
+            xmlTyLeGiaoDich.Value = TyLeGiaoDich.ToString();
+            xmlTyLeKhongGiaoDich.Value = TyLeKhongGiaoDich.ToString();
+
+            Node.Attributes.Append(xmlID);
+            Node.Attributes.Append(xmlTyLeGiaoDich);
+            Node.Attributes.Append(xmlTyLeKhongGiaoDich);
+            return Node;
+        }
+        private static XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop,List<GIAODICH>DSGiaoDichTheoDongLaptop,List<NGHENGHIEP>DSNgheNghiep)
+        {
+            XmlNode TyLeTheoNgheNghiep = xmlDocument.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
+            int SLCoGiaoDich, SLKhongGiaoDich, SoLuongKhachHangTheoNgheNghiep;
+            float TyLeGiaoDich, TyLeKhongGiaoDich;
+            for (int iNgheNghiep = 0; iNgheNghiep < DSNgheNghiep.Count; ++iNgheNghiep)
+            {
+                SLCoGiaoDich = 0;
+                SLKhongGiaoDich = 0;            
+                try
+                {
+                    SoLuongKhachHangTheoNgheNghiep = myKhachHangDAO.SLKhachHangTheoNgheNghiep(DSNgheNghiep[iNgheNghiep].MaNgheNghiep);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                for (int iGiaoDich = 0; iGiaoDich < DSGiaoDichTheoDongLaptop.Count; ++iGiaoDich)
+                {
+                    if (DSNgheNghiep[iNgheNghiep].MaNgheNghiep == DSGiaoDichTheoDongLaptop[iGiaoDich].KHACHHANG.MaNgheNghiep)
+                        ++SLCoGiaoDich;
+                }
+                
+                try
+                {
+                    TyLeGiaoDich = ((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
+                    SLKhongGiaoDich = SoLuongKhachHangTheoNgheNghiep - SLCoGiaoDich;
+                    TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                try
+                {
+                    XmlNode xmlNgheNghiep = TaoXMLNode("NGHE_NGHIEP",DSNgheNghiep[iNgheNghiep].MaNgheNghiep, TyLeGiaoDich, TyLeKhongGiaoDich);
+                    TyLeTheoNgheNghiep.AppendChild(xmlNgheNghiep);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return TyLeTheoNgheNghiep;
+        }
+
+
+        private static XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
+        {
+            XmlNode TyLeTheoMucDichSuDung = xmlDocument.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
+            int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoMucDich;
+            float TyLeGiaoDich, TyLeKhongGiaoDich;
+            for (int k = 0; k < DSMucDichSuDung.Count; ++k)
+            {
+                SLCoGiaoDich = SLKhongGiaoDich = 0;            
+                try
+                {
+                    SLKhachHangTheoMucDich = myKhachHangDAO.SLKhachHangTheoMucDich(DSMucDichSuDung[k].MaMucDichSuDung);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
+                {
+                    if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
+                        ++SLCoGiaoDich;
+                }
+
+                try
+                {
+                    TyLeGiaoDich = ((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
+                    SLKhongGiaoDich = SLKhachHangTheoMucDich - SLCoGiaoDich;
+                    TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                try
+                {
+
+                    XmlNode xmlMucDich = TaoXMLNode("MUC_DICH", DSMucDichSuDung[k].MaMucDichSuDung, TyLeGiaoDich, TyLeKhongGiaoDich);
+                    TyLeTheoMucDichSuDung.AppendChild(xmlMucDich);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return TyLeTheoMucDichSuDung;
+        }
+
+        private static XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
+        {
+            XmlNode TyLeTheoDoTuoi = xmlDocument.CreateElement("TY_LE_THEO_DO_TUOI");
+            int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoDoTuoi;
+            float TyLeGiaoDich, TyLeKhongGiaoDich;
+            for (int k = 0; k < DSDoTuoi.Count; ++k)
+            {
+                SLCoGiaoDich = SLKhongGiaoDich = 0;
+                try
+                {
+                    SLKhachHangTheoDoTuoi = myKhachHangDAO.SLKhachHangTheoDoTuoi(DSDoTuoi[k].MaDoTuoi);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+
+                for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
+                {
+
+                    if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaDoTuoi)
+                        ++SLCoGiaoDich;
+                }
+
+                try
+                {
+                    TyLeGiaoDich = ((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
+                    SLKhongGiaoDich = SLKhachHangTheoDoTuoi - SLCoGiaoDich;
+                    TyLeKhongGiaoDich= ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                try
+                {
+                    XmlNode xmlDoTuoi = TaoXMLNode("DO_TUOI", DSDoTuoi[k].MaDoTuoi, TyLeGiaoDich, TyLeKhongGiaoDich);
+                    TyLeTheoDoTuoi.AppendChild(xmlDoTuoi);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return TyLeTheoDoTuoi;
+        }
+
+        private static XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
+        {
+            XmlNode TyLeTheoTinhThanh = xmlDocument.CreateElement("TY_LE_THEO_TINH_THANH");
+            int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoTinhThanh;
+            float TyLeGiaoDich, TyLeKhongGiaoDich;
+            for (int k = 0; k < DSTinhThanh.Count; ++k)
+            {
+                SLCoGiaoDich = SLKhongGiaoDich = 0;
+                
+                try
+                {
+                    SLKhachHangTheoTinhThanh = myKhachHangDAO.SLKhachHangTheoTinhThanh(DSTinhThanh[k].MaTinhThanh);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+
+                for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
+                {
+
+                    if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
+                        ++SLCoGiaoDich;
+                }
+
+                try
+                {
+                    TyLeGiaoDich = ((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
+                    SLKhongGiaoDich = SLKhachHangTheoTinhThanh - SLCoGiaoDich;
+                    TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                try
+                {
+                    XmlNode xmlTinhThanh = TaoXMLNode("TINH_THANH", DSTinhThanh[k].MaTinhThanh, TyLeGiaoDich, TyLeKhongGiaoDich);
+                    TyLeTheoTinhThanh.AppendChild(xmlTinhThanh);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return TyLeTheoTinhThanh;
+        }
+
+
+        private static XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
+        {
+            XmlNode TyLeTheoGioiTinh = xmlDocument.CreateElement("TY_LE_THEO_GIOI_TINH");
+            int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoGioiTinh;
+            float TyLeGiaoDich, TyLeKhongGiaoDich;
+            for (int k = 0; k < 2; ++k)
+            {
+                SLCoGiaoDich = SLKhongGiaoDich = 0;
+               
+                try
+                {
+                    if (k == 0)
+                        SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(false);
+                    else
+                        SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(true);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
+                {
+
+                    if ((DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == true && k == 1) || (DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == false && k == 0))
+                        ++SLCoGiaoDich;
+                }
+
+                try
+                {
+                    TyLeGiaoDich = ((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                    SLKhongGiaoDich = SLKhachHangTheoGioiTinh - SLCoGiaoDich;
+                    TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                try
+                {
+                    XmlNode xmlGioiTinh = TaoXMLNode("GIOI_TINH", k, TyLeGiaoDich, TyLeKhongGiaoDich);
+                    TyLeTheoGioiTinh.AppendChild(xmlGioiTinh);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return TyLeTheoGioiTinh;
+        }
+
+        public static void AnalyseData()
+        {
+           
+            LoadFileXML("ResultAnalyseData.xml");
+
+            XmlNode NavasBayes = xmlDocument.DocumentElement;
             NavasBayes.RemoveAll();
+
             List<NGHENGHIEP> DSNgheNgiep;
             List<MUCDICHSUDUNG> DSMucDichSuDung;
             List<DOTUOI> DSDoTuoi;
-            List<TINHTHANH> DSTinhThanh;
-            int TongSoLuongGiaoDich = 0;
+            List<TINHTHANH> DSTinhThanh;           
             List<CHITIETDONGLAPTOP> DSDongLaptop;
             try
             {
@@ -46,16 +313,9 @@ namespace EStoreBUS
             }
 
             List<GIAODICH> DSGiaoDichTheoDongLaptop;
-            int SoLuongKhachHangTheoNgheNghiep;
-            int SLKhachHangTheoMucDich;
-            int SLKhachHangTheoDoTuoi;
-            int SLKhachHangTheoTinhThanh;
-            int SLKhachHangTheoGioiTinh;
-            int k;
-            int SLCoGiaoDich;
-            int SLKhongGiaoDich;
+         
             for (int i = 0; i < DSDongLaptop.Count; ++i)
-            {              
+            {
                 try
                 {
                     DSGiaoDichTheoDongLaptop = myGiaoDichDAO.LayDanhSachGiaoDichTheoMaDongLapTop(DSDongLaptop[i].MaDongLapTop);
@@ -64,12 +324,11 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-
                 // create thẻ xml
-                XmlNode DongLapTop = ResultAnalyseData.CreateElement("DONGLAPTOP");
-                XmlAttribute MaDongLapTop = ResultAnalyseData.CreateAttribute("ID");
-                XmlAttribute TenDongLapTop = ResultAnalyseData.CreateAttribute("TenDongLaptop");
-                XmlAttribute SoLuongDaBan = ResultAnalyseData.CreateAttribute("SoLuongDaBan");
+                XmlNode DongLapTop = xmlDocument.CreateElement("DONGLAPTOP");
+                XmlAttribute MaDongLapTop = xmlDocument.CreateAttribute("ID");
+                XmlAttribute TenDongLapTop = xmlDocument.CreateAttribute("TenDongLaptop");
+                XmlAttribute SoLuongDaBan = xmlDocument.CreateAttribute("SoLuongDaBan");
                 MaDongLapTop.Value = DSDongLaptop[i].MaDongLapTop.ToString();
                 TenDongLapTop.Value = DSDongLaptop[i].TenChiTietDongLapTop;
                 SoLuongDaBan.Value = DSGiaoDichTheoDongLaptop.Count.ToString();
@@ -83,290 +342,31 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-
-             
+           
                 // thong ke theo nghe nghiep
-                XmlNode TyLeTheoNgheNghiep = ResultAnalyseData.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
-                for (k = 0; k < DSNgheNgiep.Count; ++k)
-                {
-                    SLCoGiaoDich = SLKhongGiaoDich = 0;
-                    XmlNode NgheNgiep = ResultAnalyseData.CreateElement("NGHE_NGHIEP");
-                    XmlAttribute MaNgheNghiep = ResultAnalyseData.CreateAttribute("ID");
-                    XmlAttribute TenNgheNghiep = ResultAnalyseData.CreateAttribute("TenNgheNghiep");
-                    XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
-                    XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    MaNgheNghiep.Value = DSNgheNgiep[k].MaNgheNghiep.ToString();
-                    TenNgheNghiep.Value = DSNgheNgiep[k].TenNgheNghiep;
-
-                    //****************
-                  
-                    try
-                    {
-                        SoLuongKhachHangTheoNgheNghiep = myKhachHangDAO.SLKhachHangTheoNgheNghiep(DSNgheNgiep[k].MaNgheNghiep);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
-                    {
-
-                        if (DSNgheNgiep[k].MaNgheNghiep == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaNgheNghiep)
-                            ++SLCoGiaoDich;
-                    }
-
-                    double a;
-                    try
-                    {
-                        a = (float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100;
-                        TyLeGiaoDich.Value = a.ToString();
-                        SLKhongGiaoDich = SoLuongKhachHangTheoNgheNghiep - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    try
-                    {
-                        NgheNgiep.Attributes.Append(MaNgheNghiep);
-                        NgheNgiep.Attributes.Append(TenNgheNghiep);
-                        NgheNgiep.Attributes.Append(TyLeGiaoDich);
-                        NgheNgiep.Attributes.Append(TyLeKhongGiaoDich);
-                        TyLeTheoNgheNghiep.AppendChild(NgheNgiep);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                DongLapTop.AppendChild(TyLeTheoNgheNghiep);
-
+                XmlNode xmlTyLeTheoNgheNghiep = TinhTyLeTheoNgheNghiep(DSDongLaptop[i], DSGiaoDichTheoDongLaptop, DSNgheNgiep);               
+                DongLapTop.AppendChild(xmlTyLeTheoNgheNghiep);
+             
                 // thong ke theo muc dich su dung
+                XmlNode xmlTyLeTheoMucDichSuDung = TinhTyLeTheoMucDichSuDung(DSDongLaptop[i], DSGiaoDichTheoDongLaptop, DSMucDichSuDung);
+                DongLapTop.AppendChild(xmlTyLeTheoMucDichSuDung);
 
-                XmlNode TyLeTheoMucDichSuDung = ResultAnalyseData.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
-
-                for (k = 0; k < DSMucDichSuDung.Count; ++k)
-                {
-                    SLCoGiaoDich = SLKhongGiaoDich = 0;
-                    XmlNode MucDich = ResultAnalyseData.CreateElement("MUC_DICH");
-                    XmlAttribute MaMucDich = ResultAnalyseData.CreateAttribute("ID");
-                    XmlAttribute TenMucDich = ResultAnalyseData.CreateAttribute("TenMucDich");
-                    XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
-                    XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    MaMucDich.Value = DSMucDichSuDung[k].MaMucDichSuDung.ToString();
-                    TenMucDich.Value = DSMucDichSuDung[k].TenMucDichSuDung;
-                
-                    try
-                    {
-                        SLKhachHangTheoMucDich = myKhachHangDAO.SLKhachHangTheoMucDich(DSMucDichSuDung[k].MaMucDichSuDung);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
-                    {
-                        if (DSMucDichSuDung[k].MaMucDichSuDung == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
-                            ++SLCoGiaoDich;
-                    }
-
-                    try
-                    {
-                        TyLeGiaoDich.Value = ((float)((float)SLCoGiaoDich / (float)DSGiaoDichTheoDongLaptop.Count) * 100).ToString();
-                        SLKhongGiaoDich = SLKhachHangTheoMucDich - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    try
-                    {
-
-                        MucDich.Attributes.Append(MaMucDich);
-                        MucDich.Attributes.Append(TenMucDich);
-                        MucDich.Attributes.Append(TyLeGiaoDich);
-                        MucDich.Attributes.Append(TyLeKhongGiaoDich);
-                        TyLeTheoMucDichSuDung.AppendChild(MucDich);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                DongLapTop.AppendChild(TyLeTheoMucDichSuDung);
                 // thong ke theo do tuoi
-                XmlNode TyLeTheoDoTuoi = ResultAnalyseData.CreateElement("TY_LE_THEO_DO_TUOI");
+                XmlNode xmlTyLeTheoDoTuoi = TinhTyLeTheoDoTuoi(DSDongLaptop[i], DSGiaoDichTheoDongLaptop, DSDoTuoi);
+                DongLapTop.AppendChild(xmlTyLeTheoDoTuoi);
 
-                for (k = 0; k < DSDoTuoi.Count; ++k)
-                {
-                    SLCoGiaoDich = SLKhongGiaoDich = 0;
-                    XmlNode DoTuoi = ResultAnalyseData.CreateElement("DO_TUOI");
-                    XmlAttribute MaDoTuoi = ResultAnalyseData.CreateAttribute("ID");
-                    XmlAttribute TenDoTuoi = ResultAnalyseData.CreateAttribute("TenDoTuoi");
-                    XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
-                    XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    MaDoTuoi.Value = DSDoTuoi[k].MaDoTuoi.ToString();
-                    TenDoTuoi.Value = DSDoTuoi[k].TenDoTuoi;
-                   
-                    try
-                    {
-                        SLKhachHangTheoDoTuoi = myKhachHangDAO.SLKhachHangTheoDoTuoi(DSDoTuoi[k].MaDoTuoi);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
+                // thong ke theo tinh thanh
+                XmlNode xmlTyLeTheoTinhThanh = TinhTyLeTheoTinhThanh(DSDongLaptop[i], DSGiaoDichTheoDongLaptop, DSTinhThanh);
+                DongLapTop.AppendChild(xmlTyLeTheoTinhThanh);
 
-                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
-                    {
+                // thong ke theo gioi tinh
+                XmlNode xmlTyLeTheoGioiTinh = TinhTyLeTheoGioiTinh(DSDongLaptop[i], DSGiaoDichTheoDongLaptop);
+                DongLapTop.AppendChild(xmlTyLeTheoGioiTinh);
 
-                        if (DSDoTuoi[k].MaDoTuoi == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaDoTuoi)
-                            ++SLCoGiaoDich;
-                    }
-
-                    try
-                    {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                        SLKhongGiaoDich = SLKhachHangTheoDoTuoi - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    try
-                    {
-                        DoTuoi.Attributes.Append(MaDoTuoi);
-                        DoTuoi.Attributes.Append(TenDoTuoi);
-                        DoTuoi.Attributes.Append(TyLeGiaoDich);
-                        DoTuoi.Attributes.Append(TyLeKhongGiaoDich);
-                        TyLeTheoDoTuoi.AppendChild(DoTuoi);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                DongLapTop.AppendChild(TyLeTheoDoTuoi);
-                //THONG KE THEO TINH THANH
-
-                XmlNode TyLeTheoTinhThanh = ResultAnalyseData.CreateElement("TY_LE_THEO_TINH_THANH");
-
-                for (k = 0; k < DSTinhThanh.Count; ++k)
-                {
-                    SLCoGiaoDich = SLKhongGiaoDich = 0;
-                    XmlNode TinhThanh = ResultAnalyseData.CreateElement("TINH_THANH");
-                    XmlAttribute MaTinhThanh = ResultAnalyseData.CreateAttribute("ID");
-                    XmlAttribute TenTinhThanh = ResultAnalyseData.CreateAttribute("TenTinhThanh");
-                    XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
-                    XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    MaTinhThanh.Value = DSTinhThanh[k].MaTinhThanh.ToString();
-                    TenTinhThanh.Value = DSTinhThanh[k].TenTinhThanh;
-                   
-                    try
-                    {
-                        SLKhachHangTheoTinhThanh = myKhachHangDAO.SLKhachHangTheoTinhThanh(DSTinhThanh[k].MaTinhThanh);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-
-                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
-                    {
-
-                        if (DSTinhThanh[k].MaTinhThanh == DSGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
-                            ++SLCoGiaoDich;
-                    }
-                   
-                    try
-                    {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                        SLKhongGiaoDich = SLKhachHangTheoTinhThanh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    try
-                    {
-                        TinhThanh.Attributes.Append(MaTinhThanh);
-                        TinhThanh.Attributes.Append(TenTinhThanh);
-                        TinhThanh.Attributes.Append(TyLeGiaoDich);
-                        TinhThanh.Attributes.Append(TyLeKhongGiaoDich);
-                        TyLeTheoTinhThanh.AppendChild(TinhThanh);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                DongLapTop.AppendChild(TyLeTheoTinhThanh);
-                // THONG KE THEO GIOI TINH
-                XmlNode TyLeTheoGioiTinh = ResultAnalyseData.CreateElement("TY_LE_THEO_GIOI_TINH");
-                for (k = 0; k < 2; ++k)
-                {
-                    SLCoGiaoDich = SLKhongGiaoDich = 0;
-                    XmlNode GioiTinh = ResultAnalyseData.CreateElement("GIOI_TINH");
-                    XmlAttribute MaGioiTinh = ResultAnalyseData.CreateAttribute("ID");
-                    XmlAttribute TenGioiTinh = ResultAnalyseData.CreateAttribute("TenGioiTinh");
-                    XmlAttribute TyLeGiaoDich = ResultAnalyseData.CreateAttribute("TyLeGiaoDich");
-                    XmlAttribute TyLeKhongGiaoDich = ResultAnalyseData.CreateAttribute("TyLeKhongGiaoDich");
-                    if (k == 1)
-                        TenGioiTinh.Value = "NAM";
-                    else
-                        TenGioiTinh.Value = "NU";
-                    MaGioiTinh.Value = k.ToString();
-
-                  
-                    try
-                    {
-                        if (k == 0)
-                            SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(false);
-                        else
-                            SLKhachHangTheoGioiTinh = myKhachHangDAO.SLKhachHangTheoGioiTinh(true);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    for (int j = 0; j < DSGiaoDichTheoDongLaptop.Count; ++j)
-                    {
-
-                        if ((DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == true && k == 1) || (DSGiaoDichTheoDongLaptop[j].KHACHHANG.GioiTinhNam == false && k == 0))
-                            ++SLCoGiaoDich;
-                    }
-                 
-                    try
-                    {
-                        TyLeGiaoDich.Value = (((float)SLCoGiaoDich / ((float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                        SLKhongGiaoDich = SLKhachHangTheoGioiTinh - SLCoGiaoDich;
-                        TyLeKhongGiaoDich.Value = (((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100).ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    try
-                    {
-                        GioiTinh.Attributes.Append(MaGioiTinh);
-                        GioiTinh.Attributes.Append(TenGioiTinh);
-                        GioiTinh.Attributes.Append(TyLeGiaoDich);
-                        GioiTinh.Attributes.Append(TyLeKhongGiaoDich);
-                        TyLeTheoGioiTinh.AppendChild(GioiTinh);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                DongLapTop.AppendChild(TyLeTheoGioiTinh);
                 NavasBayes.AppendChild(DongLapTop);
             }
-            ResultAnalyseData.Save("ResultAnalyseData.xml");
+            SaveFileXML("ResultAnalyseData.xml");
         }
+        
     }
 }
