@@ -289,7 +289,7 @@ namespace TUVANLAPTOP
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
             {
-                dsLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+                dsLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 // - Mau Sac-
                 foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {

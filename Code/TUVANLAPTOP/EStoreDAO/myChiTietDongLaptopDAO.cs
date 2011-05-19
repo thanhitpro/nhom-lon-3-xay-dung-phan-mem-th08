@@ -10,19 +10,22 @@ namespace EStoreDAO
 
     public class myChiTietDongLaptopDAO
     {
-        private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+        private static DataClasses1DataContext storeDataContext = new DataClasses1DataContext();
 
         /// <summary>
         /// Lấy thông tin laptop dựa vào mã laptop
         /// </summary>
-        /// <param name="_iMaChiTietDongLaptop"></param>
-        /// <returns></returns>
-        public static myChiTietDongLaptopDTO LayChiTietDongLaptop(int _iMaChiTietDongLaptop)
+        /// <param name="_iMaChiTietDongLaptop">Mã Laptop cần lấy thông tin</param>
+        /// <returns>
+        ///     Thành công: đối tượng ChiTietDongLaptop DTO với đầy đủ thông tin
+        ///     Thất bại: throw một Exception cho tầng trên xử lý
+        /// </returns>
+        public static myChiTietDongLaptopDTO LayChiTietDongLaptop(int intMaChiTietDongLaptop)
         {
             myChiTietDongLaptopDTO chiTietDongLaptop = null;
             try
             {
-                var query = from dongLaptop in m_eStoreDataContext.CHITIETDONGLAPTOPs where dongLaptop.MaDongLapTop == _iMaChiTietDongLaptop select dongLaptop;
+                var query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs where dongLaptop.MaDongLapTop == intMaChiTietDongLaptop select dongLaptop;
                 if (query.Count() > 0)
                 {
                     CHITIETDONGLAPTOP temp = query.Single();
@@ -131,14 +134,17 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// lấy chi tiết danh sách các laptop
+        /// Lấy danh sách các laptop với đầy đủ thông tin chi tiết
         /// </summary>
-        /// <returns></returns>
-        public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptop()
+        /// <returns>
+        ///     Thành công: trả về danh sách các ChiTietDongLapTopDTO với thông tin chi tiết.
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
+        public static List<myChiTietDongLaptopDTO> LayDanhSachChiTietDongLaptop()
         {
             try
             {
-                var Query = from dongLaptop in m_eStoreDataContext.CHITIETDONGLAPTOPs select dongLaptop.MaDongLapTop;
+                var Query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs select dongLaptop.MaDongLapTop;
                 List<int> iDChiTietLaptops = new List<int>();
                 foreach (int idDongLaptop in Query)
                 {
@@ -167,7 +173,7 @@ namespace EStoreDAO
             try
             {
                 List<CHITIETDONGLAPTOP> Result = new List<CHITIETDONGLAPTOP>();
-                var Query = from dongLaptop in m_eStoreDataContext.CHITIETDONGLAPTOPs select dongLaptop;
+                var Query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs select dongLaptop;
 
                 foreach (CHITIETDONGLAPTOP laptop in Query)
                 {
@@ -504,7 +510,6 @@ namespace EStoreDAO
                 }
                 var query = m_EStore.ExecuteQuery<CHITIETDONGLAPTOP>(sql);
 
-
                 if (query == null)
                     return null;
                 foreach (CHITIETDONGLAPTOP laptop in query)
@@ -592,7 +597,7 @@ namespace EStoreDAO
                 for (int iCount = 0; iCount < _liMaDongLaptops.Count; iCount++)
                 {
                     CHITIETDONGLAPTOP temp = null;
-                    var query = from dongLaptop in m_eStoreDataContext.CHITIETDONGLAPTOPs where dongLaptop.MaDongLapTop == _liMaDongLaptops[iCount] select dongLaptop;
+                    var query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs where dongLaptop.MaDongLapTop == _liMaDongLaptops[iCount] select dongLaptop;
                     if (query.Count() > 0)
                     {
                         //Lấy chi tiết dòng laptop
@@ -602,7 +607,7 @@ namespace EStoreDAO
                         temp.Deleted = !temp.Deleted;
 
                         //Cập nhật lại csdl
-                        m_eStoreDataContext.SubmitChanges();
+                        storeDataContext.SubmitChanges();
                     }
                 }
             }
@@ -619,7 +624,7 @@ namespace EStoreDAO
         public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptopMoiNhat(myChiTietDongLaptopDTO donglaptop)
         {
             List<myChiTietDongLaptopDTO> danhsachChiTietDongLapTop = new List<myChiTietDongLaptopDTO>();
-            var query = from mayTinh in m_eStoreDataContext.CHITIETDONGLAPTOPs
+            var query = from mayTinh in storeDataContext.CHITIETDONGLAPTOPs
                         where mayTinh.CHITIETDONGCARDDOHOA.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa == donglaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa
                             && mayTinh.CHITIETDONGCPU.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU == donglaptop.ChiTietDongCPU.ChiTietCongNgheCPU.STenChiTietCongNgheCPU
                             && mayTinh.CHITIETDONGRAM.CHITIETBONHORAM.TenChiTietBoNhoRAM == donglaptop.ChiTietDongRam.ChiTietBoNhoRam.STenChiTietBoNhoRam
@@ -680,8 +685,8 @@ namespace EStoreDAO
         {
             try
             {
-                m_eStoreDataContext.CHITIETDONGLAPTOPs.InsertOnSubmit(dongLaptopMoi);
-                m_eStoreDataContext.SubmitChanges();
+                storeDataContext.CHITIETDONGLAPTOPs.InsertOnSubmit(dongLaptopMoi);
+                storeDataContext.SubmitChanges();
             }
             catch
             {
@@ -696,50 +701,50 @@ namespace EStoreDAO
         {
             try
             {
-                CHITIETDONGLAPTOP laptop = m_eStoreDataContext.CHITIETDONGLAPTOPs.Single(p => p.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
+                CHITIETDONGLAPTOP laptop = storeDataContext.CHITIETDONGLAPTOPs.Single(p => p.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
 
                 //Update TenLapTop
                 laptop.TenChiTietDongLapTop = dongLaptopMoi.TenChiTietDongLapTop;
                 //Update Ram
-                CHITIETDONGRAM ram = m_eStoreDataContext.CHITIETDONGRAMs.Single(p => p.MaDongRAM == dongLaptopMoi.MaDongRAM);
+                CHITIETDONGRAM ram = storeDataContext.CHITIETDONGRAMs.Single(p => p.MaDongRAM == dongLaptopMoi.MaDongRAM);
                 laptop.CHITIETDONGRAM = ram;
                 // Update CPU
-                CHITIETDONGCPU cpu = m_eStoreDataContext.CHITIETDONGCPUs.Single(p => p.MaDongCPU == dongLaptopMoi.MaDongCPU);
+                CHITIETDONGCPU cpu = storeDataContext.CHITIETDONGCPUs.Single(p => p.MaDongCPU == dongLaptopMoi.MaDongCPU);
                 laptop.CHITIETDONGCPU = cpu;
                 //Update OCung
-                CHITIETDONGOCUNG ocung = m_eStoreDataContext.CHITIETDONGOCUNGs.Single(p => p.MaDongOCung == dongLaptopMoi.MaDongOCung);
+                CHITIETDONGOCUNG ocung = storeDataContext.CHITIETDONGOCUNGs.Single(p => p.MaDongOCung == dongLaptopMoi.MaDongOCung);
                 laptop.CHITIETDONGOCUNG = ocung;
                 //Update Man Hinh
-                CHITIETDONGMANHINH manhinh = m_eStoreDataContext.CHITIETDONGMANHINHs.Single(p => p.MaDongManHinh == dongLaptopMoi.MaDongManHinh);
+                CHITIETDONGMANHINH manhinh = storeDataContext.CHITIETDONGMANHINHs.Single(p => p.MaDongManHinh == dongLaptopMoi.MaDongManHinh);
                 laptop.CHITIETDONGMANHINH = manhinh;
                 //Update Card màn hình
-                CHITIETDONGCARDDOHOA dohoa = m_eStoreDataContext.CHITIETDONGCARDDOHOAs.Single(p => p.MaDongCardDoHoa == dongLaptopMoi.MaDongCardDoHoa);
+                CHITIETDONGCARDDOHOA dohoa = storeDataContext.CHITIETDONGCARDDOHOAs.Single(p => p.MaDongCardDoHoa == dongLaptopMoi.MaDongCardDoHoa);
                 laptop.CHITIETDONGCARDDOHOA = dohoa;
                 // Update Loa
-                CHITIETDONGLOA loa = m_eStoreDataContext.CHITIETDONGLOAs.Single(p => p.MaDongLoa == dongLaptopMoi.MaDongLoa);
+                CHITIETDONGLOA loa = storeDataContext.CHITIETDONGLOAs.Single(p => p.MaDongLoa == dongLaptopMoi.MaDongLoa);
                 laptop.CHITIETDONGLOA = loa;
                 // Update O Dia Quang
-                CHITIETDONGODIAQUANG oquang = m_eStoreDataContext.CHITIETDONGODIAQUANGs.Single(p => p.MaDongODiaQuang == dongLaptopMoi.MaDongODiaQuang);
+                CHITIETDONGODIAQUANG oquang = storeDataContext.CHITIETDONGODIAQUANGs.Single(p => p.MaDongODiaQuang == dongLaptopMoi.MaDongODiaQuang);
                 laptop.CHITIETDONGODIAQUANG = oquang;
                 //Update HDH
-                HEDIEUHANH hdh = m_eStoreDataContext.HEDIEUHANHs.Single(p => p.MaHeDieuHanh == dongLaptopMoi.MaHeDieuHanh);
+                HEDIEUHANH hdh = storeDataContext.HEDIEUHANHs.Single(p => p.MaHeDieuHanh == dongLaptopMoi.MaHeDieuHanh);
                 laptop.HEDIEUHANH = hdh;
                 //Update Tronluong
-                CHITIETTRONGLUONG trongluong = m_eStoreDataContext.CHITIETTRONGLUONGs.Single(p => p.MaChiTietTrongLuong == dongLaptopMoi.MaChiTietTrongLuong);
+                CHITIETTRONGLUONG trongluong = storeDataContext.CHITIETTRONGLUONGs.Single(p => p.MaChiTietTrongLuong == dongLaptopMoi.MaChiTietTrongLuong);
                 laptop.CHITIETTRONGLUONG = trongluong;
                 //Update MauSac
                 laptop.MauSac = dongLaptopMoi.MauSac;
                 //Update Card Mang
-                CHITIETDONGCARDMANG cardmang = m_eStoreDataContext.CHITIETDONGCARDMANGs.Single(p => p.MaDongCardMang == dongLaptopMoi.MaDongCardMang);
+                CHITIETDONGCARDMANG cardmang = storeDataContext.CHITIETDONGCARDMANGs.Single(p => p.MaDongCardMang == dongLaptopMoi.MaDongCardMang);
                 laptop.CHITIETDONGCARDMANG = cardmang;
                 //Update CardReader
-                CHITIETDONGCARDREADER cardreader = m_eStoreDataContext.CHITIETDONGCARDREADERs.Single(p => p.MaDongCardReader == dongLaptopMoi.MaDongCardReader);
+                CHITIETDONGCARDREADER cardreader = storeDataContext.CHITIETDONGCARDREADERs.Single(p => p.MaDongCardReader == dongLaptopMoi.MaDongCardReader);
                 laptop.CHITIETDONGCARDREADER = cardreader;
                 //Update Webcam
-                CHITIETDONGWEBCAM webcam = m_eStoreDataContext.CHITIETDONGWEBCAMs.Single(p => p.MaDongWebCam == dongLaptopMoi.MaDongWebCam);
+                CHITIETDONGWEBCAM webcam = storeDataContext.CHITIETDONGWEBCAMs.Single(p => p.MaDongWebCam == dongLaptopMoi.MaDongWebCam);
                 laptop.CHITIETDONGWEBCAM = webcam;
                 //Update Pin
-                CHITIETDONGPIN pin = m_eStoreDataContext.CHITIETDONGPINs.Single(p => p.MaDongPin == dongLaptopMoi.MaDongPin);
+                CHITIETDONGPIN pin = storeDataContext.CHITIETDONGPINs.Single(p => p.MaDongPin == dongLaptopMoi.MaDongPin);
                 laptop.CHITIETDONGPIN = pin;
                 //Update Nhan Dang Van Tay
                 laptop.FingerprintReader = dongLaptopMoi.FingerprintReader;
@@ -748,7 +753,7 @@ namespace EStoreDAO
                 //Update HDMI
                 laptop.HDMI = dongLaptopMoi.HDMI;
                 //Update NhaSx
-                NHASANXUAT nhasx = m_eStoreDataContext.NHASANXUATs.Single(p => p.MaNhaSanXuat == dongLaptopMoi.MaNhaSanXuat);
+                NHASANXUAT nhasx = storeDataContext.NHASANXUATs.Single(p => p.MaNhaSanXuat == dongLaptopMoi.MaNhaSanXuat);
                 laptop.NHASANXUAT = nhasx;
                 //Update Thoi Gian Bao Hanh
                 laptop.ThoiGianBaoHanh = dongLaptopMoi.ThoiGianBaoHanh;
@@ -763,7 +768,7 @@ namespace EStoreDAO
                 //Update Hinh Anh
                 laptop.HinhAnh = dongLaptopMoi.HinhAnh;
 
-                m_eStoreDataContext.SubmitChanges();
+                storeDataContext.SubmitChanges();
             }
             catch (Exception ex)
             {

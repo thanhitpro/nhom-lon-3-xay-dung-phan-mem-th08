@@ -8,13 +8,13 @@ namespace EStoreBUS
 {
     public class myChiTietDongCardReaderBUS
     {
-        public myChiTietDongCardReaderDTO LayChiTietDongCardReader(int _iMaChiTietDongCardReader)
-        { return null; }
-
         /// <summary>
         /// Lấy danh sách thông tin tất cả các dòng card reader
         /// </summary>
-        /// <returns>danh sách dòng card reader</returns>
+        /// <returns>
+        ///     Thành công: Danh sách dòng card reader
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public List<myChiTietDongCardReaderDTO> LayChiTietDongCardReader()
         {
             myChiTietDongCardReaderDAO chiTietCardReader = new myChiTietDongCardReaderDAO();

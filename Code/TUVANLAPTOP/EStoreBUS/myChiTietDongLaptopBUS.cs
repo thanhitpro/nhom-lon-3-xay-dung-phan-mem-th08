@@ -12,7 +12,10 @@ namespace EStoreBUS
         /// Lay chi tiet dong laptop
         /// </summary>
         /// <param name="_iMaChiTietDongLaptop"> Ma Chi Tiet Dong Laptop</param>
-        /// <returns> myChiTietDongLaptop: Thong tin chi tiet dong laptop</returns>
+        /// <returns> 
+        ///     Thành công: trả về thông tin chi tiết dòng Laptop
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongLaptopDTO LayChiTietDongLaptop(int _iMaChiTietDongLaptop)
         {
             try
@@ -26,14 +29,17 @@ namespace EStoreBUS
         }
 
         /// <summary>
-        /// Lay chi tiet tat ca dong laptop
+        /// Lấy tất cả dòng laptop với thông tin chi tiết
         /// </summary>
-        /// <returns> myChiTietDongLaptop: Thong tin chi tiet dong laptop</returns>
-        public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptop()
+        /// <returns> 
+        ///     Thành công: trả về danh sách chi tiết dòng Laptop
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
+        public static List<myChiTietDongLaptopDTO> LayDanhSachChiTietDongLaptop()
         {
             try
             {
-                return myChiTietDongLaptopDAO.LayChiTietDongLaptop();
+                return myChiTietDongLaptopDAO.LayDanhSachChiTietDongLaptop();
             }
             catch (Exception ex)
             {
@@ -52,12 +58,13 @@ namespace EStoreBUS
         }
 
         /// <summary>
-        /// Kiểm tra thông tin giá tiền hợp lệ
+        /// Kiểm tra sản phẩm tồn tại hay không ?
         /// </summary>
-        /// <param name="_iMaDongLaptop">Mã laptop</param>
-        /// <param name="_iMucGia">Mức giá</param>
-        /// <returns>true hay false</returns>
-
+        /// <param name="_iMaDongLaptop">Mã dòng Laptop cần kiểm tra</param>
+        /// <returns>
+        ///     Kiểm tra tồn tại: trả về trues
+        ///     KT không tồn tại: trả về false
+        /// </returns>
         public static bool KiemTraSanPhamTonTai(int _iMaDongLaptop)
         {
             try
@@ -74,7 +81,16 @@ namespace EStoreBUS
             }
             return false;
         }
-        
+
+        /// <summary>
+        /// Kiểm tra thông tin giá tiền hợp lệ
+        /// </summary>
+        /// <param name="_iMaDongLaptop">Mã laptop</param>
+        /// <param name="_iMucGia">Mức giá</param>
+        /// <returns>
+        ///     Thành công: true
+        ///     Thất bại:  false
+        /// </returns>
         public static bool KiemTraGiaTienHopLe(int _iMaDongLaptop, int _iMucGia)
         {
             try

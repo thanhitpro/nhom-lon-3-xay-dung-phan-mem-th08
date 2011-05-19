@@ -11,8 +11,8 @@ namespace EStoreBUS
         /// <summary>
         /// Lấy thông tin card đồ họa từ mã card đồ họa
         /// </summary>
-        /// <param name="_iMaChiTietDongCardDoHoa">mã card đồ họa</param>
-        /// <returns>thông tin card đồ họa</returns>
+        /// <param name="_iMaChiTietDongCardDoHoa">Mã card đồ họa</param>
+        /// <returns>Thông tin chi tiết card đồ họa</returns>
         public myChiTietDongCardDoHoaDTO LayChiTietDongCardDoHoa(int _iMaChiTietDongCardDoHoa)
         { return null; }
 

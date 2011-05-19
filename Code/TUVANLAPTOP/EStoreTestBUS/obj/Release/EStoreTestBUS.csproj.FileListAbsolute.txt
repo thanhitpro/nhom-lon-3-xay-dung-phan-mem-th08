@@ -3,3 +3,17 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTest
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb

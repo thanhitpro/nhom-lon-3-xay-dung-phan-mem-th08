@@ -75,7 +75,7 @@ namespace TUVANLAPTOP
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
-                List<myChiTietDongLaptopDTO> danhSachChiTietDongLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+                List<myChiTietDongLaptopDTO> danhSachChiTietDongLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLapTop)
                 {
                     soLuongLaptop++;
@@ -314,7 +314,7 @@ namespace TUVANLAPTOP
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
-                List<myChiTietDongLaptopDTO> danhSachChiTietDongLaptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+                List<myChiTietDongLaptopDTO> danhSachChiTietDongLaptop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLaptop)
                 {
                     string sFingerprintReader;

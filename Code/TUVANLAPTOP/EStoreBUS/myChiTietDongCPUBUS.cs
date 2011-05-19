@@ -8,18 +8,14 @@ namespace EStoreBUS
 {
     public class myChiTietDongCPUBUS
     {
-        /// <summary>
-        /// Lấy thông tin dòng CPU dựa vào mã CPU
-        /// </summary>
-        /// <param name="_iMaChiTietDongCPU">mã CPU</param>
-        /// <returns>Thông tin dòng CPU cần tra cứu</returns>
-        public myChiTietDongCPUDTO LayChiTietDongCPU(int _iMaChiTietDongCPU)
-        { return null; }
 
         /// <summary>
         /// Lấy thông tin tất cả dòng CPU
         /// </summary>
-        /// <returns>Danh sách dòng CPU</returns>
+        /// <returns>
+        ///     Thành công: Danh sách dòng CPU
+        ///     Thất bại: Throw một exception cho tầng trên xử lý
+        /// </returns>
         public List<myChiTietDongCPUDTO> LayChiTietDongCPU()
         {
             myChiTietDongCPUDAO dsDongCPU = new myChiTietDongCPUDAO();

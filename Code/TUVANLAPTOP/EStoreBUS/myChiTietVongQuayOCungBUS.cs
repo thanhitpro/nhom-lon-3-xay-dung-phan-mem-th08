@@ -11,8 +11,11 @@ namespace EStoreBUS
         /// <summary>
         /// Lấy danh sách Vong Quay:
         /// </summary>
-        /// <returns></returns>
-        public static List<myChiTietVongQuayOCungDTO> LayChiTietVongQuayOCung()
+        /// <returns>
+        ///     Thành công: trả về danh sách chi tiết vòng xoay ổ cứng hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
+        public static List<myChiTietVongQuayOCungDTO> LayDanhSachChiTietVongQuayOCung()
         {
             try
             {
@@ -27,8 +30,11 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm vòng quay ổ cứng
         /// </summary>
-        /// <param name="_mVongQuay"></param>
-        /// <returns></returns>
+        /// <param name="_mVongQuay">Đối tượng ChiTietVongXoayOCungDTO</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemVongQuayOCung(myChiTietVongQuayOCungDTO _mVongQuay)
         {
             try
