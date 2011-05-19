@@ -18,7 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
-            aForm = null;
+            curForm = null;
         }
 
         #region Windows Form Designer generated code
