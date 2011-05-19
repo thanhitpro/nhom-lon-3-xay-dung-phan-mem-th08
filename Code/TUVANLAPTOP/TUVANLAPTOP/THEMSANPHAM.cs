@@ -50,7 +50,9 @@ namespace TUVANLAPTOP
         /// <summary>
         /// load RAM từ csdl lên form
         /// </summary>
-        private void LoadRAM()
+        /// <returns>true: thanh cong - false: that bai.</returns>
+
+        public bool LoadRAM()
         {
             myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
@@ -62,6 +64,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ram", "Thông báo");
+                return false;
                 this.Close();
             }
 
@@ -71,12 +74,13 @@ namespace TUVANLAPTOP
             }
             comboBox_Ram.DisplayMember = "STenDongRAM";
             comboBox_Ram.SelectedItem = comboBox_Ram.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load CPU từ csdl lên form
         /// </summary>
-        private void LoadCPU()
+        public bool LoadCPU()
         {
             myChiTietDongCPUBUS chiTietDongCPU = new myChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
@@ -88,6 +92,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng CPU", "Thông báo");
+                return false;
                 this.Close();
             }
 
@@ -95,12 +100,13 @@ namespace TUVANLAPTOP
                 comboBox_CPU.Items.Add(cpu);
             comboBox_CPU.DisplayMember = "STenDongCPU";
             comboBox_CPU.SelectedItem = comboBox_CPU.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load ổ cứng từ csdl lên form
         /// </summary>
-        private void LoadOCung()
+        public bool LoadOCung()
         {
             myChiTietDongOCungBUS chiTietDongOCung = new myChiTietDongOCungBUS();
             List<myChiTietDongOCungDTO> dsDongOCung = new List<myChiTietDongOCungDTO>();
@@ -112,6 +118,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ổ cứng", "Thông báo");
+                return false;
                 this.Close();
             }
 
@@ -119,12 +126,13 @@ namespace TUVANLAPTOP
                 comboBox_HardDisk.Items.Add(ocung);
             comboBox_HardDisk.DisplayMember = "STenDongOCung";
             comboBox_HardDisk.SelectedItem = comboBox_HardDisk.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load màn hình từ csdl lên form
         /// </summary>
-        private void LoadManHinh()
+        public bool LoadManHinh()
         {
             myChiTietDongManHinhBUS chiTietManHinh = new myChiTietDongManHinhBUS();
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
@@ -136,6 +144,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng màn hình", "Thông báo");
+                return false;
                 this.Close();
             }
 
@@ -146,12 +155,13 @@ namespace TUVANLAPTOP
 
             comboBox_ManHinh.DisplayMember = "STenDongManHinh";
             comboBox_ManHinh.SelectedItem = comboBox_ManHinh.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load card màn hình từ csdl lên form
         /// </summary>
-        private void LoadCardManHinh()
+        public bool LoadCardManHinh()
         {
             myChiTietDongCardDoHoaBUS chiTietCardDoHoa = new myChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
@@ -162,6 +172,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card đồ họa", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongCardDoHoaDTO carddohoa in dsCardDoHoa)
@@ -169,12 +180,13 @@ namespace TUVANLAPTOP
 
             comboBox_CardManHinh.DisplayMember = "STenDongCardDoHoa";
             comboBox_CardManHinh.SelectedItem = comboBox_CardManHinh.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load dòng loa từ csdl lên form
         /// </summary>
-        private void LoadDongLoa()
+        public bool LoadDongLoa()
         {
             myChiTietDongLoaBUS chiTietDongLoa = new myChiTietDongLoaBUS();
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
@@ -185,6 +197,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng loa", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongLoaDTO loa in dsLoa)
@@ -192,12 +205,13 @@ namespace TUVANLAPTOP
 
             comboBox_Loa.DisplayMember = "STenDongLoa";
             comboBox_Loa.SelectedItem = comboBox_Loa.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load ổ đĩa quang từ csdl lên form
         /// </summary>
-        private void LoadODiaQuang()
+        public bool LoadODiaQuang()
         {
             myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
@@ -208,18 +222,20 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ổ đĩa quang", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongODiaQuangDTO diaquang in dsDiaQuang)
                 comboBox_ODiaQuang.Items.Add(diaquang);
             comboBox_ODiaQuang.DisplayMember = "STenDongODiaQuang";
             comboBox_ODiaQuang.SelectedItem = comboBox_ODiaQuang.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load hệ điều hành từ csdl lên form
         /// </summary>
-        private void LoadHeDieuHanh()
+        public bool LoadHeDieuHanh()
         {
             myChiTietHeDieuHanhBUS chiTietHDH = new myChiTietHeDieuHanhBUS();
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
@@ -230,6 +246,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết hệ điều hành", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietHeDieuHanhDTO hdh in dsHDH)
@@ -237,12 +254,13 @@ namespace TUVANLAPTOP
 
             comboBox_HeDieuHanh.DisplayMember = "STenHeDieuHanh";
             comboBox_HeDieuHanh.SelectedItem = comboBox_HeDieuHanh.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load trọng lượng từ csdl lên form
         /// </summary>
-        private void LoadTrongLuong()
+        public bool LoadTrongLuong()
         {
             myChiTietTrongLuongBUS chiTietTL = new myChiTietTrongLuongBUS();
             List<myChiTietTrongLuongDTO> dsTrongLuong = new List<myChiTietTrongLuongDTO>();
@@ -253,18 +271,20 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết trọng lượng", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietTrongLuongDTO tl in dsTrongLuong)
                 comboBox_TrongLuong.Items.Add(tl);
             comboBox_TrongLuong.DisplayMember = "FGiaTriTrongLuong";
             comboBox_TrongLuong.SelectedItem = comboBox_TrongLuong.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load tên, màu sắc, giá tiền từ csdl lên form
         /// </summary>
-        private void LoadTenVaMauSac()
+        public bool LoadTenVaMauSac()
         {
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
@@ -308,14 +328,17 @@ namespace TUVANLAPTOP
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Notice");
+                return false;
                 this.Close();
             }
+
+            return true;
         }
 
         /// <summary>
         /// load card mạng từ csdl lên form
         /// </summary>
-        private void LoadCardMang()
+        public bool LoadCardMang()
         {
             myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
@@ -326,6 +349,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card mạng", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongCardMangDTO cardmang in dsCardMang)
@@ -334,12 +358,13 @@ namespace TUVANLAPTOP
             }
             comboBox_CardMang.DisplayMember = "STenDongCardMang";
             comboBox_CardMang.SelectedItem = comboBox_CardMang.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load card reader từ csdl lên form
         /// </summary>
-        private void LoadCardReader()
+        public bool LoadCardReader()
         {
             myChiTietDongCardReaderBUS chiTietCardReader = new myChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
@@ -350,18 +375,20 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card reader", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongCardReaderDTO cardreader in dsCardReader)
                 comboBox_CardReader.Items.Add(cardreader);
             comboBox_CardReader.DisplayMember = "STenDongCardReader";
             comboBox_CardReader.SelectedItem = comboBox_CardReader.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load webcam từ csdl lên form
         /// </summary>
-        private void LoadWebcam()
+        public bool LoadWebcam()
         {
             myChiTietDongWebcamBUS chiTietWebCam = new myChiTietDongWebcamBUS();
             List<myChiTietDongWebcamDTO> dsWebcam = new List<myChiTietDongWebcamDTO>();
@@ -372,18 +399,20 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng webcam", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongWebcamDTO webcam in dsWebcam)
                 comboBox_Webcam.Items.Add(webcam);
             comboBox_Webcam.DisplayMember = "STenDongWebCam";
             comboBox_Webcam.SelectedItem = comboBox_Webcam.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load pin từ csdl lên form
         /// </summary>
-        private void LoadPin()
+        public bool LoadPin()
         {
             myChiTietDongPinBUS chiTietPin = new myChiTietDongPinBUS();
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
@@ -394,50 +423,80 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng pin", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myChiTietDongPinDTO pin in dsPin)
                 comboBox_Pin.Items.Add(pin);
             comboBox_Pin.DisplayMember = "FTenDongPin";
             comboBox_Pin.SelectedItem = comboBox_Pin.Items[0];
+            return true;
         }
 
         /// <summary>
         /// load khả năng nhận dạng vân tay từ csdl lên form
         /// </summary>
-        private void LoadKhaNangNhanDangVanTay()
+        public bool LoadKhaNangNhanDangVanTay()
         {
-            comboBox_NhanDangVanTay.Items.Add("Có");
-            comboBox_NhanDangVanTay.Items.Add("Không");
-            comboBox_NhanDangVanTay.SelectedItem = comboBox_NhanDangVanTay.Items[0];
+            try
+            {
+                comboBox_NhanDangVanTay.Items.Add("Có");
+                comboBox_NhanDangVanTay.Items.Add("Không");
+                comboBox_NhanDangVanTay.SelectedItem = comboBox_NhanDangVanTay.Items[0];
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true;
+
         }
 
         /// <summary>
         /// load cổng HDMI từ csdl lên form
         /// </summary>
-        private void LoadCongHDMI()
+        public bool LoadCongHDMI()
         {
-            comboBox_HDMI.Items.Add("Có");
-            comboBox_HDMI.Items.Add("Không");
-            comboBox_HDMI.SelectedItem = comboBox_HDMI.Items[0];
+            try
+            {
+                comboBox_HDMI.Items.Add("Có");
+                comboBox_HDMI.Items.Add("Không");
+                comboBox_HDMI.SelectedItem = comboBox_HDMI.Items[0];
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
         /// load cổng usb từ csdl lên form
         /// </summary>
-        private void LoadSoCongUSB()
+        public bool LoadSoCongUSB()
         {
-            comboBox_SoCongUSB.Items.Add("1");
-            comboBox_SoCongUSB.Items.Add("2");
-            comboBox_SoCongUSB.Items.Add("3");
-            comboBox_SoCongUSB.Items.Add("4");
-            comboBox_SoCongUSB.SelectedItem = comboBox_SoCongUSB.Items[0];
+            try
+            {
+                comboBox_SoCongUSB.Items.Add("1");
+                comboBox_SoCongUSB.Items.Add("2");
+                comboBox_SoCongUSB.Items.Add("3");
+                comboBox_SoCongUSB.Items.Add("4");
+                comboBox_SoCongUSB.SelectedItem = comboBox_SoCongUSB.Items[0];
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
         /// load nhà sx từ csdl lên form
         /// </summary>
-        private void LoadNhaSX()
+        public bool LoadNhaSX()
         {
             myNhaSanXuatBUS nhaSX = new myNhaSanXuatBUS();
             List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
@@ -448,6 +507,7 @@ namespace TUVANLAPTOP
             catch
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết nhà sản xuất", "Thông báo");
+                return false;
                 this.Close();
             }
             foreach (myNhaSanXuatDTO nhasx in dsNhaSX)
@@ -456,6 +516,7 @@ namespace TUVANLAPTOP
             }
             comboBox_NhaSanXuat.DisplayMember = "STenNhaSanXuat";
             comboBox_NhaSanXuat.SelectedItem = comboBox_NhaSanXuat.Items[0];
+            return true;
         }
 
 
@@ -478,14 +539,14 @@ namespace TUVANLAPTOP
                 MessageBox.Show("Thêm sản phẩm mới thất bại");
             }
 
-            
+
         }
 
         /// <summary>
         /// lấy thông tin laptop mới từ form
         /// </summary>
         /// <returns>trả về một laptop mới</returns>
-        private CHITIETDONGLAPTOP LayThongTinLaptopMoi()
+        public CHITIETDONGLAPTOP LayThongTinLaptopMoi()
         {
             CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
             //tên dòng laptop
@@ -653,11 +714,23 @@ namespace TUVANLAPTOP
         }
 
         /// <summary>
+        /// Ham set du lieu tren text box, chi dung cho test
+        /// </summary>
+        /// <param name="tenLaptop"></param>
+        public void GanThongTinTextBox_Test(string tenLaptop, string soLuongNhap, string giaBan, string hinhAnh)
+        {
+            textBox_TenDongLapTop.Text = tenLaptop;
+            textBox_soLuongNhap.Text = soLuongNhap;
+            textBox_giaTienTrieu.Text = giaBan;
+            fileName = hinhAnh;
+        }
+
+        /// <summary>
         /// thêm một laptop mới vào cơ sở dữ liệu
         /// </summary>
         /// <param name="dongLaptopMoi"></param>
         /// <returns>true: thêm thành công - false: thêm thất bại</returns>
-        private bool ThemSanPhamMoi(CHITIETDONGLAPTOP dongLaptopMoi)
+        public bool ThemSanPhamMoi(CHITIETDONGLAPTOP dongLaptopMoi)
         {
             try
             {
@@ -670,7 +743,6 @@ namespace TUVANLAPTOP
             }
             return true;
         }
-
 
         /// <summary>
         /// Ham xu ly textbox_giaTienTrieu chi duoc nhap ky tu so
