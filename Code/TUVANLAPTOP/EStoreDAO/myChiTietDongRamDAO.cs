@@ -9,11 +9,12 @@ namespace EStoreDAO
     public class myChiTietDongRamDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+        
         /// <summary>
         /// Lấy thông tin của dòng RAM dựa vào mã dòng RAM
         /// </summary>
         /// <param name="_iMaChiTietDongRam"> Mã số dòng RAM</param>
-        /// <returns>Lớp đối tượng chứa thông tin dòng RAM cần ra cứu</returns>
+        /// <returns>Lớp đối tượng chứa thông tin dòng RAM cần tra cứu</returns>
         public static myChiTietDongRamDTO LayChiTietDongRam(int _iMaChiTietDongRam)
         {
             try

@@ -10,10 +10,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// Lay thong tin dong card reader dua vao ma card reader
+        /// Lấy thông tin chi tiết dòng Card Reader dựa vào mã
         /// </summary>
-        /// <param name="_iMaChiTietDongCardReader"></param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongCardReader">Mã dòng Card Reader muốn xem thông tin</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng Card Reader có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongCardReaderDTO LayChiTietDongCardReader(int _iMaChiTietDongCardReader)
         {
             try

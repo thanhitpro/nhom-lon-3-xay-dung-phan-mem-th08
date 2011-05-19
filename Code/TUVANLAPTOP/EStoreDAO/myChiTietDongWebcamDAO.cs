@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietDongWebcamDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
         /// <summary>
-        /// lay thong tin webcam dua vao thong tin ma webcam
+        /// Lấy thông tin chi tiết dòng Webcam dựa vào mã dòng dòng Webcam
         /// </summary>
-        /// <param name="_iMaChiTietDongWebcam">ma webcam</param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongWebcam">Mã dòng Webcam</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng Webcam có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongWebcamDTO LayChiTietDongWebcam(int _iMaChiTietDongWebcam)
         {
             try

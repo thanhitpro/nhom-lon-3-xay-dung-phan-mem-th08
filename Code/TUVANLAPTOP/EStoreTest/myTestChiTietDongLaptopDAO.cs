@@ -88,5 +88,26 @@ namespace EStoreTest
             }
             myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
         }
+
+        [Test]
+        public void TestTaoChiTietLapTop()
+        {
+            DataClasses1DataContext storeDataContext = new DataClasses1DataContext();
+            CHITIETDONGLAPTOP chiTietDongLaptop = storeDataContext.CHITIETDONGLAPTOPs.Single(laptop => laptop.MaDongLapTop == 1);
+            myChiTietDongLaptopDTO dongLaptopKetQua = myChiTietDongLaptopDAO.TaoChiTietLapTop(chiTietDongLaptop);
+
+            Assert.AreEqual(chiTietDongLaptop.MaDongLapTop, dongLaptopKetQua.IMaDongLaptop);
+        }
+
+        [Test]
+        public void TestLayChiTietDongLaptopMoiNhat()
+        {
+            DataClasses1DataContext storeDataContext = new DataClasses1DataContext();
+            CHITIETDONGLAPTOP chiTietDongLaptop = storeDataContext.CHITIETDONGLAPTOPs.Single(laptop => laptop.MaDongLapTop == 1);
+            myChiTietDongLaptopDTO dongLaptopKetQua = myChiTietDongLaptopDAO.TaoChiTietLapTop(chiTietDongLaptop);
+
+            List<myChiTietDongLaptopDTO> listLaptopMoiNhat = myChiTietDongLaptopDAO.LayChiTietDongLaptopMoiNhat(dongLaptopKetQua);
+            Assert.IsNotNull(listLaptopMoiNhat);
+        }
     }
 }

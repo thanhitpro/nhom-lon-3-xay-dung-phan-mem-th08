@@ -14,9 +14,10 @@ namespace TUVANLAPTOP
 {
     public partial class SANPHAMTUVAN : Form
     {
-        private int m_iMaLaptopDuocChon;
-        private string m_sTenLaptop = "";
+        private int iMaLaptopDuocChon;
+        private string sTenLaptop = "";
         private static SANPHAMTUVAN aForm = null;
+        myChiTietDongLaptopDTO dongLapTopTemp = new myChiTietDongLaptopDTO();
 
         public static SANPHAMTUVAN Instance()
         {
@@ -34,8 +35,8 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Hàm xử lý khi click button BACK
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Control phát sinh sự kiện</param>
+        /// <param name="e">Thông tin sự kiện</param>
         private void button_Back_Click(object sender, EventArgs e)
         {
             Close();
@@ -45,8 +46,8 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Hàm xử lý sự kiện load Form
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Đối tượng gây ra sự kiện</param>
+        /// <param name="e">Thông tin sự kiện</param>
         private void SANPHAMTUVAN_Load(object sender, EventArgs e)
         {
             clearData();
@@ -54,7 +55,6 @@ namespace TUVANLAPTOP
             try
             {
                 listIDLaptopTuVan = (List<int>)this.Tag;
-
                 if (listIDLaptopTuVan.Count == 0)
                 {
                     btn_SoSP.Text = "KHÔNG CÓ LAPTOP NÀO PHÙ HỢP VỚI BẠN ! THỬ LẠI...";
@@ -81,17 +81,14 @@ namespace TUVANLAPTOP
 
             //Disable button chọn SP:
             button_ChonLaptop.Enabled = false;
-            button1.Enabled = false;
+            BtnSanPhamMoi.Enabled = false;
         }
 
         /// <summary>
         /// Xử lý sự kiện Click vào link để xem chi tiết laptop:
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-        myChiTietDongLaptopDTO dongLapTopTemp = new myChiTietDongLaptopDTO();
-
+        /// <param name="sender">Control gây ra sự kiện Click</param>
+        /// <param name="e">Thông tin sự kiện</param>
         void Link_TenLaptop_Click(object sender, EventArgs e)
         {
             if (sender != null)
@@ -102,85 +99,17 @@ namespace TUVANLAPTOP
                 {
                     try
                     {
-                        m_iMaLaptopDuocChon = dongLaptop.IMaDongLaptop;
-                        m_sTenLaptop = dongLaptop.STenChiTietDongLapTop;
-
-                        btn_TenLaptop.Text = dongLaptop.STenChiTietDongLapTop;
-
-                        //CPU:
-                        tB_CPU.Text = dongLaptop.ChiTietDongCPU.STenDongCPU;
-
-                        //O Cung:
-                        tB_OCung.Text = dongLaptop.ChiTietDongOCung.STenDongOCung;
-
-                        //RAM:
-                        tB_RAM.Text = dongLaptop.ChiTietDongRam.STenDongRAM;
-
-                        //Card man hinh:
-                        tB_CardManHinh.Text = dongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + dongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa;
-
-                        //Man hinh:
-                        tB_ManHinh.Text = dongLaptop.ChiTietDongManHinh.STenDongManHinh;
-
-                        //Trong luong:
-                        tB_TrongLuong.Text = dongLaptop.ChiTietTrongLuong.ChiTietLoaiTrongLuong.STenLoaiTrongLuong;
-
-                        //O quang:
-                        tB_OQuang.Text = dongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang;
-
-                        //Webcam:
-                        tB_Webcam.Text = dongLaptop.ChiTietDongWebCam.STenDongWebCam + " (độ phân giải " + dongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString() + "MG pixel)";
-
-                        //Pin:
-                        tB_Pin.Text = dongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin;
-
-                        //CardReader:
-                        tB_CardReader.Text = dongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader;
-
-                        //Card mang:
-                        tB_CardMang.Text = dongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang;
-
-                        //HDH:
-                        tB_HDH.Text = dongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh;
-
-                        //Finger:
-                        if (dongLaptop.BFingerprintReader == 1)
-                            tB_Finger.Text = "Có";
-                        else
-                            tB_Finger.Text = "Không";
-
-                        //HDMI:
-                        if (dongLaptop.BHDMI == 1)
-                            tB_HDMI.Text = "Có";
-                        else
-                            tB_HDMI.Text = "Không";
-
-                        //Loa:
-                        if (dongLaptop.ChiTietDongLoa.BCoMicro == 1)
-                            tB_Loa.Text = dongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
-                        else
-                            tB_Loa.Text = dongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
-
-                        //So cong USB:
-                        tB_SoCongUSB.Text = dongLaptop.ISoLuongCongUSB.ToString() + " cổng";
-
-                        //Mau sac:
-                        tB_MauSac.Text = dongLaptop.SMauSac;
-
-                        //Danh gia:
-                        tB_DanhGia.Text = dongLaptop.DanhGia.ITongDiem.ToString() + " điểm";
-
-                        //Mo ta them:s
-                        tB_MoTaThem.Text = dongLaptop.SMoTaThem;
+                        iMaLaptopDuocChon = dongLaptop.IMaDongLaptop;
+                        sTenLaptop = dongLaptop.STenChiTietDongLapTop;
+                        FillLaptopInfo(dongLaptop);
 
                         //Enable button ChonLaptop:
                         button_ChonLaptop.Enabled = true;
-                        button1.Enabled = true;
+                        BtnSanPhamMoi.Enabled = true;
                     }
                     catch
                     {
-
-                        //Bỏ qua nếu có một thuộc tính nào đó NULL
+                        MessageBox.Show("Có một số thông tin về Laptop này chưa có !", "Thông báo");
                     }
                 }
                 else
@@ -189,32 +118,96 @@ namespace TUVANLAPTOP
         }
 
         /// <summary>
-        /// Ham xu ly khi Khach Hang ChonMuaSP
+        /// Hàm đổ dữ liệu của dòng Laptop chỉ định lên các control để hiện thị nội dung chi tiết dòng Laptop
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="dongLaptop">Thông tin dòng Laptop cần thể hiện thông tin chi tiết</param>
+        private void FillLaptopInfo(myChiTietDongLaptopDTO dongLaptop)
+        {
+            btn_TenLaptop.Text = dongLaptop.STenChiTietDongLapTop;
+
+            //CPU:
+            tB_CPU.Text = dongLaptop.ChiTietDongCPU.STenDongCPU;
+
+            //O Cung:
+            tB_OCung.Text = dongLaptop.ChiTietDongOCung.STenDongOCung;
+
+            //RAM:
+            tB_RAM.Text = dongLaptop.ChiTietDongRam.STenDongRAM;
+
+            //Card man hinh:
+            tB_CardManHinh.Text = dongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + dongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa;
+
+            //Man hinh:
+            tB_ManHinh.Text = dongLaptop.ChiTietDongManHinh.STenDongManHinh;
+
+            //Trong luong:
+            tB_TrongLuong.Text = dongLaptop.ChiTietTrongLuong.ChiTietLoaiTrongLuong.STenLoaiTrongLuong;
+
+            //O quang:
+            tB_OQuang.Text = dongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang;
+
+            //Webcam:
+            tB_Webcam.Text = dongLaptop.ChiTietDongWebCam.STenDongWebCam + " (độ phân giải " + dongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString() + "MG pixel)";
+
+            //Pin:
+            tB_Pin.Text = dongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin;
+
+            //CardReader:
+            tB_CardReader.Text = dongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader;
+
+            //Card mang:
+            tB_CardMang.Text = dongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang;
+
+            //HDH:
+            tB_HDH.Text = dongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh;
+
+            //Finger:
+            if (dongLaptop.BFingerprintReader == 1)
+                tB_Finger.Text = "Có";
+            else
+                tB_Finger.Text = "Không";
+
+            //HDMI:
+            if (dongLaptop.BHDMI == 1)
+                tB_HDMI.Text = "Có";
+            else
+                tB_HDMI.Text = "Không";
+
+            //Loa:
+            if (dongLaptop.ChiTietDongLoa.BCoMicro == 1)
+                tB_Loa.Text = dongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
+            else
+                tB_Loa.Text = dongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
+
+            //So cong USB:
+            tB_SoCongUSB.Text = dongLaptop.ISoLuongCongUSB.ToString() + " cổng";
+
+            //Mau sac:
+            tB_MauSac.Text = dongLaptop.SMauSac;
+
+            //Danh gia:
+            tB_DanhGia.Text = dongLaptop.DanhGia.ITongDiem.ToString() + " điểm";
+
+            //Mo ta them:s
+            tB_MoTaThem.Text = dongLaptop.SMoTaThem;
+        }
+
+        /// <summary>
+        /// Hàm xử lý sự kiện người dùng chọn mua sản phẩm
+        /// </summary>
+        /// <param name="sender">Control gây ra sự kiện Click</param>
+        /// <param name="e">Thông tin sự kiện</param>
         private void buttonNhapThongTin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn chọn mua Laptop " + m_sTenLaptop + " hay không ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn chọn mua Laptop " + sTenLaptop + " hay không ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.OK)
             {
                 try
                 {
-                    KHACHHANG khachHang = MANHINHCHINH.KKhachHang;
-
-                    if (myKhachHangBUS.themKhachHang(khachHang) == false)
+                    bool bThemGD = myGiaoDichBUS.themGiaoDich(LayGiaoDichHienTai());    
+                    if (bThemGD)
                     {
-                        MessageBox.Show("Có lỗi xảy ra ! Xin thử lại ...", "Thông báo");
-                        return;
-                    }
-
-                    GIAODICH giaoDich = new GIAODICH();
-                    giaoDich.MaKhachHang = khachHang.MaKhachHang;
-                    giaoDich.MaDongLaptop = m_iMaLaptopDuocChon;
-                    giaoDich.NgayMua = DateTime.Now;
-
-                    if (myGiaoDichBUS.themGiaoDich(giaoDich))
-                    {
-                        MessageBox.Show("Bạn đã chọn Laptop " + m_sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
+                        MessageBox.Show("Bạn đã chọn Laptop " + sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
 
                         button_Back_Click(sender, e);
                     }
@@ -226,6 +219,22 @@ namespace TUVANLAPTOP
                     MessageBox.Show(ex.Message, "Thông báo lỗi");
                 }
             }
+        }
+
+        /// <summary>
+        /// Lấy giao dịch hiện tại
+        /// </summary>
+        /// <returns>
+        ///     Trả về đối tượng GIAODICH hiện tại 
+        /// </returns>
+        private GIAODICH LayGiaoDichHienTai()
+        {           
+            GIAODICH giaoDich = new GIAODICH();
+            giaoDich.KHACHHANG = MANHINHCHINH.KKhachHang;
+            giaoDich.MaDongLaptop = iMaLaptopDuocChon;
+            giaoDich.NgayMua = DateTime.Now;
+
+            return giaoDich;
         }
 
         /// <summary>
@@ -299,8 +308,12 @@ namespace TUVANLAPTOP
             button_ChonLaptop.Enabled = false;
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Hàm xử lý sự kiện Click
+        /// </summary>
+        /// <param name="sender">Control phát sinh sự kiện</param>
+        /// <param name="e">Thông tin sự kiện</param>
+        private void BtnSanPhamMoi_Click(object sender, EventArgs e)
         {
             try
             {

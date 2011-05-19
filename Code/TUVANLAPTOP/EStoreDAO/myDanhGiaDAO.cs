@@ -9,6 +9,15 @@ namespace EStoreDAO
     public class myDanhGiaDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Hàm lấy danh sách các Đánh Giá hiện có dựa vào mã
+        /// </summary>
+        /// <param name="_iMaDanhGia">Mã đánh giá</param>
+        /// <returns>
+        ///     Thành công: danh sách mã đánh giá
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myDanhGiaDTO LayDanhGia(int _iMaDanhGia)
         {
             try

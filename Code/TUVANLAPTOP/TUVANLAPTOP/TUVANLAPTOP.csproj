@@ -350,6 +350,7 @@
     <None Include="Resources\question.png" />
     <None Include="Resources\admin.png" />
     <None Include="Resources\admin_form.png" />
+    <None Include="bin\Release\image\noImage.jpg" />
     <Content Include="Resources\ThemSP.png" />
     <None Include="Resources\ThemThongTin.png" />
     <Content Include="ResultAnalyseData.xml">

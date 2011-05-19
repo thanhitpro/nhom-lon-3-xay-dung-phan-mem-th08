@@ -11,9 +11,12 @@ namespace EStoreDAO
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
 
         /// <summary>
-        /// Lấy danh sách công nghệ RAM:
+        /// Lấy danh sách công nghệ RAM
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách công nghệ RAM hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietCongNgheRamDTO> LayChiTietCongNgheRam()
         {
             try
@@ -27,7 +30,6 @@ namespace EStoreDAO
 
                     dsCongNgheRam.Add(ctCongNgheRam);
                 }
-
                 return dsCongNgheRam;
             }
             catch
@@ -37,10 +39,13 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Thêm mới Công nghệ RAM:
+        /// Thêm mới Công nghệ RAM
         /// </summary>
-        /// <param name="_mBoNho"></param>
-        /// <returns></returns>
+        /// <param name="_mCongNgheRAM">Thông tin công nghệ RAM muốn thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemCongNgheRAM(myChiTietCongNgheRamDTO _mCongNgheRAM)
         {
             try

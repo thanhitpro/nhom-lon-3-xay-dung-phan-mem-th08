@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietDongPinDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
         /// <summary>
-        /// lay thong tin dong pin dua vao ma dong pin
+        /// Lấy thông tin chi tiết dòng Pin dựa vào mã dòng Pin
         /// </summary>
-        /// <param name="_iMaChiTietDongPin">ma dong pin </param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongPin">Mã dòng Pin</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng Pin có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongPinDTO LayChiTietDongPin(int _iMaChiTietDongPin)
         {
             try

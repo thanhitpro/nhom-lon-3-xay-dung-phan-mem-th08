@@ -12,7 +12,10 @@ namespace EStoreDAO
         /// <summary>
         /// Lấy danh sách vòng quay ổ cứng hiện có:
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách vòng quay ổ cứng hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietVongQuayOCungDTO> LayDSVongQuayOCung()
         {
             try
@@ -38,8 +41,11 @@ namespace EStoreDAO
         /// <summary>
         /// Thêm vòng quay ổ cứng
         /// </summary>
-        /// <param name="_mVongQuay"></param>
-        /// <returns></returns>
+        /// <param name="_mVongQuay">Vòng xoay ổ cứng mới cần thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemVongQuay(myChiTietVongQuayOCungDTO _mVongQuay)
         {
             try

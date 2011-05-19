@@ -33,6 +33,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_Title_ThongTinLapTop = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnSanPhamMoi = new System.Windows.Forms.Button();
+            this.button_Back = new System.Windows.Forms.Button();
+            this.button_ChonLaptop = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.GroupPanel_ThongTinChiTiet = new System.Windows.Forms.GroupBox();
             this.panel_ChiTietThuocTinh = new System.Windows.Forms.Panel();
@@ -74,13 +77,10 @@
             this.label_RAM = new System.Windows.Forms.Label();
             this.label_OCung = new System.Windows.Forms.Label();
             this.label_BoXuLy = new System.Windows.Forms.Label();
+            this.btn_TenLaptop = new System.Windows.Forms.Button();
             this.GroupPanel_ListSanPham = new System.Windows.Forms.GroupBox();
             this.flp_DSLaptop = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_SoSP = new System.Windows.Forms.Button();
-            this.btn_TenLaptop = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button_Back = new System.Windows.Forms.Button();
-            this.button_ChonLaptop = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -113,7 +113,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.BtnSanPhamMoi);
             this.panel2.Controls.Add(this.button_Back);
             this.panel2.Controls.Add(this.button_ChonLaptop);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -121,6 +121,48 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1024, 74);
             this.panel2.TabIndex = 8;
+            // 
+            // BtnSanPhamMoi
+            // 
+            this.BtnSanPhamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.BtnSanPhamMoi.Image = global::TUVANLAPTOP.Properties.Resources.New;
+            this.BtnSanPhamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSanPhamMoi.Location = new System.Drawing.Point(79, 13);
+            this.BtnSanPhamMoi.Name = "BtnSanPhamMoi";
+            this.BtnSanPhamMoi.Size = new System.Drawing.Size(169, 43);
+            this.BtnSanPhamMoi.TabIndex = 3;
+            this.BtnSanPhamMoi.Text = "Sản Phẩm Mới";
+            this.BtnSanPhamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSanPhamMoi.UseVisualStyleBackColor = true;
+            this.BtnSanPhamMoi.Click += new System.EventHandler(this.BtnSanPhamMoi_Click);
+            // 
+            // button_Back
+            // 
+            this.button_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_Back.Image = ((System.Drawing.Image)(resources.GetObject("button_Back.Image")));
+            this.button_Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Back.Location = new System.Drawing.Point(706, 13);
+            this.button_Back.Name = "button_Back";
+            this.button_Back.Size = new System.Drawing.Size(129, 43);
+            this.button_Back.TabIndex = 2;
+            this.button_Back.Text = "Quay lại";
+            this.button_Back.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
+            // 
+            // button_ChonLaptop
+            // 
+            this.button_ChonLaptop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_ChonLaptop.Image = ((System.Drawing.Image)(resources.GetObject("button_ChonLaptop.Image")));
+            this.button_ChonLaptop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_ChonLaptop.Location = new System.Drawing.Point(519, 13);
+            this.button_ChonLaptop.Name = "button_ChonLaptop";
+            this.button_ChonLaptop.Size = new System.Drawing.Size(156, 43);
+            this.button_ChonLaptop.TabIndex = 1;
+            this.button_ChonLaptop.Text = "Chọn Laptop";
+            this.button_ChonLaptop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_ChonLaptop.UseVisualStyleBackColor = true;
+            this.button_ChonLaptop.Click += new System.EventHandler(this.buttonNhapThongTin_Click);
             // 
             // panel3
             // 
@@ -576,6 +618,22 @@
             this.label_BoXuLy.Text = "Bộ xử lý";
             this.label_BoXuLy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btn_TenLaptop
+            // 
+            this.btn_TenLaptop.BackColor = System.Drawing.Color.Gray;
+            this.btn_TenLaptop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_TenLaptop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BurlyWood;
+            this.btn_TenLaptop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TenLaptop.ForeColor = System.Drawing.Color.White;
+            this.btn_TenLaptop.Image = ((System.Drawing.Image)(resources.GetObject("btn_TenLaptop.Image")));
+            this.btn_TenLaptop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TenLaptop.Location = new System.Drawing.Point(3, 18);
+            this.btn_TenLaptop.Name = "btn_TenLaptop";
+            this.btn_TenLaptop.Size = new System.Drawing.Size(696, 35);
+            this.btn_TenLaptop.TabIndex = 0;
+            this.btn_TenLaptop.Text = "TÊN LAPTOP HIỂN THỊ THÔNG TIN";
+            this.btn_TenLaptop.UseVisualStyleBackColor = false;
+            // 
             // GroupPanel_ListSanPham
             // 
             this.GroupPanel_ListSanPham.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -617,64 +675,6 @@
             this.btn_SoSP.TabIndex = 0;
             this.btn_SoSP.Text = "CÓ   SẢN PHẨM PHÙ HỢP";
             this.btn_SoSP.UseVisualStyleBackColor = false;
-            // 
-            // btn_TenLaptop
-            // 
-            this.btn_TenLaptop.BackColor = System.Drawing.Color.Gray;
-            this.btn_TenLaptop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_TenLaptop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BurlyWood;
-            this.btn_TenLaptop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TenLaptop.ForeColor = System.Drawing.Color.White;
-            this.btn_TenLaptop.Image = ((System.Drawing.Image)(resources.GetObject("btn_TenLaptop.Image")));
-            this.btn_TenLaptop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_TenLaptop.Location = new System.Drawing.Point(3, 18);
-            this.btn_TenLaptop.Name = "btn_TenLaptop";
-            this.btn_TenLaptop.Size = new System.Drawing.Size(696, 35);
-            this.btn_TenLaptop.TabIndex = 0;
-            this.btn_TenLaptop.Text = "TÊN LAPTOP HIỂN THỊ THÔNG TIN";
-            this.btn_TenLaptop.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Image = global::TUVANLAPTOP.Properties.Resources.New;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(79, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Sản Phẩm Mới";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button_Back
-            // 
-            this.button_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_Back.Image = ((System.Drawing.Image)(resources.GetObject("button_Back.Image")));
-            this.button_Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Back.Location = new System.Drawing.Point(706, 13);
-            this.button_Back.Name = "button_Back";
-            this.button_Back.Size = new System.Drawing.Size(129, 43);
-            this.button_Back.TabIndex = 2;
-            this.button_Back.Text = "Quay lại";
-            this.button_Back.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_Back.UseVisualStyleBackColor = true;
-            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
-            // 
-            // button_ChonLaptop
-            // 
-            this.button_ChonLaptop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button_ChonLaptop.Image = ((System.Drawing.Image)(resources.GetObject("button_ChonLaptop.Image")));
-            this.button_ChonLaptop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChonLaptop.Location = new System.Drawing.Point(519, 13);
-            this.button_ChonLaptop.Name = "button_ChonLaptop";
-            this.button_ChonLaptop.Size = new System.Drawing.Size(156, 43);
-            this.button_ChonLaptop.TabIndex = 1;
-            this.button_ChonLaptop.Text = "Chọn Laptop";
-            this.button_ChonLaptop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_ChonLaptop.UseVisualStyleBackColor = true;
-            this.button_ChonLaptop.Click += new System.EventHandler(this.buttonNhapThongTin_Click);
             // 
             // SANPHAMTUVAN
             // 
@@ -756,6 +756,6 @@
         private System.Windows.Forms.TextBox tB_Finger;
         private System.Windows.Forms.TextBox tB_ManHinh;
         private System.Windows.Forms.Label label_ManHinh;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnSanPhamMoi;
     }
 }

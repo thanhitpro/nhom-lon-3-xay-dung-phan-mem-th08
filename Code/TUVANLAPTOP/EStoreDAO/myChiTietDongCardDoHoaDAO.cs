@@ -14,10 +14,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// Lay thong tin card do hoa tu ma card do hoa
+        /// Lấy thông tin dòng Card đồ họa từ mã 
         /// </summary>
-        /// <param name="_iMaChiTietDongCardDoHoa">ma card do hoa</param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongCardDoHoa">Mã Card đồ họa</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết đối tượng ChiTietCardDoHoaDTO
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongCardDoHoaDTO LayChiTietDongCardDoHoa(int _iMaChiTietDongCardDoHoa)
         {
             try
@@ -48,7 +51,10 @@ namespace EStoreDAO
         /// <summary>
         /// Lấy thông tin tất cả các dòng card đồ họa
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách dòng Card đồ họa hiện có hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public List<myChiTietDongCardDoHoaDTO> LayChiTietDongCardDoHoa()
         {
             DataClasses1DataContext m_EStoreContext = new DataClasses1DataContext();

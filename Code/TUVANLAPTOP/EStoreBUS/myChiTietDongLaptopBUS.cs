@@ -62,7 +62,7 @@ namespace EStoreBUS
         /// </summary>
         /// <param name="_iMaDongLaptop">Mã dòng Laptop cần kiểm tra</param>
         /// <returns>
-        ///     Kiểm tra tồn tại: trả về trues
+        ///     Kiểm tra tồn tại: trả về true
         ///     KT không tồn tại: trả về false
         /// </returns>
         public static bool KiemTraSanPhamTonTai(int _iMaDongLaptop)
@@ -150,7 +150,10 @@ namespace EStoreBUS
         /// Lấy thông tin chi tiết laptop mới nhất từ tầng DAO
         /// </summary>
         /// <param name="dongLaptop">Thông tin Laptop so sánh</param>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: Danh sách các Laptop mới nhất
+        ///     Thất bại: 
+        /// </returns>
         public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptopMoiNhat(myChiTietDongLaptopDTO dongLaptop)
         {
             return myChiTietDongLaptopDAO.LayChiTietDongLaptopMoiNhat(dongLaptop);
