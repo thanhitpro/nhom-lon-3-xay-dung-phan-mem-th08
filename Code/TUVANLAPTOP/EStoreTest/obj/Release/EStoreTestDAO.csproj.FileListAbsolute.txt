@@ -1,0 +1,12 @@
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
