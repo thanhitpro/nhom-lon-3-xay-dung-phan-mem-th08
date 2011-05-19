@@ -178,15 +178,16 @@ namespace EStoreBUS
         /// Cập nhật thông tin một dòng laptop
         /// </summary>
         /// <param name="dongLaptopMoi">Thông tin dòng Laptop cần cập nhật</param>
-        static public void CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        static public bool CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
         {
             try
             {
-                myChiTietDongLaptopDAO.CapNhatChiTietDongLaptop(dongLaptopMoi);
+                return myChiTietDongLaptopDAO.CapNhatChiTietDongLaptop(dongLaptopMoi);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
+                return false;
             }
         }
 

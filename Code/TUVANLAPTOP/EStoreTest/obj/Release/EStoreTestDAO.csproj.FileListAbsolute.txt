@@ -34,3 +34,16 @@ E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

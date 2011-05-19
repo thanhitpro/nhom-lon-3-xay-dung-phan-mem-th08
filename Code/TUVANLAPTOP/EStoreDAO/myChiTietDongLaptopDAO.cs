@@ -704,58 +704,307 @@ namespace EStoreDAO
                 throw;
             }
         }
+
+
+
         /// <summary>
-        /// Cập nhật thông tin một dòng Laptop
+        /// Cập nhật tên chi tiết dòng Laptop
+        /// 
         /// </summary>
         /// <param name="dongLaptopMoi"></param>
-        static public void CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        /// <returns>Trả về chi tiết dòng laptop </returns>
+        public static CHITIETDONGLAPTOP CapNhatTenChiTietDongLapTop(CHITIETDONGLAPTOP dongLaptopMoi)
         {
+            CHITIETDONGLAPTOP laptop;
             try
             {
-                CHITIETDONGLAPTOP laptop = storeDataContext.CHITIETDONGLAPTOPs.Single(p => p.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
-
+                laptop = storeDataContext.CHITIETDONGLAPTOPs.Single(p => p.MaDongLapTop == dongLaptopMoi.MaDongLapTop);
                 //Update TenLapTop
                 laptop.TenChiTietDongLapTop = dongLaptopMoi.TenChiTietDongLapTop;
-                //Update Ram
-                CHITIETDONGRAM ram = storeDataContext.CHITIETDONGRAMs.Single(p => p.MaDongRAM == dongLaptopMoi.MaDongRAM);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop;
+        }
+
+        /// <summary>
+        /// Cập nhật Chi tiết dòng Ram
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>Chi tiết dòng ram</returns>
+        public static CHITIETDONGRAM CapNhatChiTietDongRam(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGRAM ram;
+            //Update Ram
+            try
+            {
+                ram = storeDataContext.CHITIETDONGRAMs.Single(p => p.MaDongRAM == dongLaptopMoi.MaDongRAM);
                 laptop.CHITIETDONGRAM = ram;
-                // Update CPU
-                CHITIETDONGCPU cpu = storeDataContext.CHITIETDONGCPUs.Single(p => p.MaDongCPU == dongLaptopMoi.MaDongCPU);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return laptop.CHITIETDONGRAM;
+        }
+
+        /// <summary>
+        /// Cap nhat chi tiet dong CPU
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>Chi tiet dong CPU</returns>
+        public static CHITIETDONGCPU CapNhatChiTietDongCPU(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGCPU cpu;
+            // Update CPU
+            try
+            {
+                cpu = storeDataContext.CHITIETDONGCPUs.Single(p => p.MaDongCPU == dongLaptopMoi.MaDongCPU);
                 laptop.CHITIETDONGCPU = cpu;
-                //Update OCung
-                CHITIETDONGOCUNG ocung = storeDataContext.CHITIETDONGOCUNGs.Single(p => p.MaDongOCung == dongLaptopMoi.MaDongOCung);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGCPU;
+        }
+
+        /// <summary>
+        /// Cap nhat chi tiet dong o cung
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>Chi tiet dong o cung</returns>
+        public static CHITIETDONGOCUNG CapNhatChiTietDongOCung(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGOCUNG ocung;
+            //Update OCung
+            try
+            {
+                ocung = storeDataContext.CHITIETDONGOCUNGs.Single(p => p.MaDongOCung == dongLaptopMoi.MaDongOCung);
                 laptop.CHITIETDONGOCUNG = ocung;
-                //Update Man Hinh
-                CHITIETDONGMANHINH manhinh = storeDataContext.CHITIETDONGMANHINHs.Single(p => p.MaDongManHinh == dongLaptopMoi.MaDongManHinh);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return laptop.CHITIETDONGOCUNG;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet dong man hinh
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet dong man hinh</returns>
+        public static CHITIETDONGMANHINH CapNhatChiTietDongManHinh(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGMANHINH manhinh;
+            //Update Man Hinh
+            try
+            {
+                manhinh = storeDataContext.CHITIETDONGMANHINHs.Single(p => p.MaDongManHinh == dongLaptopMoi.MaDongManHinh);
                 laptop.CHITIETDONGMANHINH = manhinh;
-                //Update Card màn hình
-                CHITIETDONGCARDDOHOA dohoa = storeDataContext.CHITIETDONGCARDDOHOAs.Single(p => p.MaDongCardDoHoa == dongLaptopMoi.MaDongCardDoHoa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGMANHINH;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet dong card man hinh
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet card man hinh</returns>
+        public static CHITIETDONGCARDDOHOA CapNhatChiTietDongCardDoHoa(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGCARDDOHOA dohoa;
+            //Update Card màn hình
+            try
+            {
+                dohoa = storeDataContext.CHITIETDONGCARDDOHOAs.Single(p => p.MaDongCardDoHoa == dongLaptopMoi.MaDongCardDoHoa);
                 laptop.CHITIETDONGCARDDOHOA = dohoa;
-                // Update Loa
-                CHITIETDONGLOA loa = storeDataContext.CHITIETDONGLOAs.Single(p => p.MaDongLoa == dongLaptopMoi.MaDongLoa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGCARDDOHOA;
+        }
+
+        /// <summary>
+        /// cap nha chi tiet dong Loa
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>Chi tiet dong Loa</returns>
+        public static CHITIETDONGLOA CapNhatChiTietDongLoa(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGLOA loa;
+            // Update Loa
+            try
+            {
+                loa = storeDataContext.CHITIETDONGLOAs.Single(p => p.MaDongLoa == dongLaptopMoi.MaDongLoa);
                 laptop.CHITIETDONGLOA = loa;
-                // Update O Dia Quang
-                CHITIETDONGODIAQUANG oquang = storeDataContext.CHITIETDONGODIAQUANGs.Single(p => p.MaDongODiaQuang == dongLaptopMoi.MaDongODiaQuang);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return laptop.CHITIETDONGLOA;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet o dia quang
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet o dia quuang</returns>
+        public static CHITIETDONGODIAQUANG CapNhatChiTietDongODiaQuang(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGODIAQUANG oquang;
+            // Update O Dia Quang
+            try
+            {
+                oquang = storeDataContext.CHITIETDONGODIAQUANGs.Single(p => p.MaDongODiaQuang == dongLaptopMoi.MaDongODiaQuang);
                 laptop.CHITIETDONGODIAQUANG = oquang;
-                //Update HDH
-                HEDIEUHANH hdh = storeDataContext.HEDIEUHANHs.Single(p => p.MaHeDieuHanh == dongLaptopMoi.MaHeDieuHanh);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGODIAQUANG;
+        }
+
+        /// <summary>
+        /// cap nhat he dieu hanh
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>He dieu Hanh</returns>
+        public static HEDIEUHANH CapNhatHeDieuHanh(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            HEDIEUHANH hdh;
+            //Update HDH
+            try
+            {
+                hdh = storeDataContext.HEDIEUHANHs.Single(p => p.MaHeDieuHanh == dongLaptopMoi.MaHeDieuHanh);
                 laptop.HEDIEUHANH = hdh;
-                //Update Tronluong
-                CHITIETTRONGLUONG trongluong = storeDataContext.CHITIETTRONGLUONGs.Single(p => p.MaChiTietTrongLuong == dongLaptopMoi.MaChiTietTrongLuong);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.HEDIEUHANH;
+        }
+
+        /// <summary>
+        /// cap nha chi tiet trong luong
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>Chi tiet trong luong</returns>
+        public static CHITIETTRONGLUONG CapNhatChiTietTrongLuong(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETTRONGLUONG trongluong;
+            //Update Tronluong
+            try
+            {
+                trongluong = storeDataContext.CHITIETTRONGLUONGs.Single(p => p.MaChiTietTrongLuong == dongLaptopMoi.MaChiTietTrongLuong);
                 laptop.CHITIETTRONGLUONG = trongluong;
-                //Update MauSac
-                laptop.MauSac = dongLaptopMoi.MauSac;
-                //Update Card Mang
-                CHITIETDONGCARDMANG cardmang = storeDataContext.CHITIETDONGCARDMANGs.Single(p => p.MaDongCardMang == dongLaptopMoi.MaDongCardMang);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETTRONGLUONG;
+        }
+
+
+        /// <summary>
+        /// cap nhat chi tiet dong card mang
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet dong card mang</returns>
+        public static CHITIETDONGCARDMANG CapNhatChiTietDongCardMang(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGCARDMANG cardmang;
+            //Update Card Mang
+            try
+            {
+                cardmang = storeDataContext.CHITIETDONGCARDMANGs.Single(p => p.MaDongCardMang == dongLaptopMoi.MaDongCardMang);
                 laptop.CHITIETDONGCARDMANG = cardmang;
-                //Update CardReader
-                CHITIETDONGCARDREADER cardreader = storeDataContext.CHITIETDONGCARDREADERs.Single(p => p.MaDongCardReader == dongLaptopMoi.MaDongCardReader);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGCARDMANG;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet dong card reader
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet don card reader</returns>
+        public static CHITIETDONGCARDREADER CapNhatChiTietDongCardReader(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGCARDREADER cardreader;
+            //Update CardReader
+            try
+            {
+                cardreader = storeDataContext.CHITIETDONGCARDREADERs.Single(p => p.MaDongCardReader == dongLaptopMoi.MaDongCardReader);
                 laptop.CHITIETDONGCARDREADER = cardreader;
-                //Update Webcam
-                CHITIETDONGWEBCAM webcam = storeDataContext.CHITIETDONGWEBCAMs.Single(p => p.MaDongWebCam == dongLaptopMoi.MaDongWebCam);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGCARDREADER;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet web cam
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet webcame</returns>
+        public static CHITIETDONGWEBCAM CapNhatChiTietDongWebCam(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGWEBCAM webcam;
+            //Update Webcam
+            try
+            {
+
+                webcam = storeDataContext.CHITIETDONGWEBCAMs.Single(p => p.MaDongWebCam == dongLaptopMoi.MaDongWebCam);
                 laptop.CHITIETDONGWEBCAM = webcam;
-                //Update Pin
-                CHITIETDONGPIN pin = storeDataContext.CHITIETDONGPINs.Single(p => p.MaDongPin == dongLaptopMoi.MaDongPin);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGWEBCAM;
+        }
+
+        /// <summary>
+        /// cap nhat chi tiet dong pIn
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet dong pin</returns>
+        public static CHITIETDONGPIN CapNhatChiTietDongPin(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            CHITIETDONGPIN pin;
+            //Update Pin
+            try
+            {
+                pin = storeDataContext.CHITIETDONGPINs.Single(p => p.MaDongPin == dongLaptopMoi.MaDongPin);
                 laptop.CHITIETDONGPIN = pin;
                 //Update Nhan Dang Van Tay
                 laptop.FingerprintReader = dongLaptopMoi.FingerprintReader;
@@ -763,8 +1012,27 @@ namespace EStoreDAO
                 laptop.SoLuongCongUSB = dongLaptopMoi.SoLuongCongUSB;
                 //Update HDMI
                 laptop.HDMI = dongLaptopMoi.HDMI;
-                //Update NhaSx
-                NHASANXUAT nhasx = storeDataContext.NHASANXUATs.Single(p => p.MaNhaSanXuat == dongLaptopMoi.MaNhaSanXuat);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return laptop.CHITIETDONGPIN;
+        }
+
+        /// <summary>
+        /// cap nhat Nha san xuat
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>chi tiet nha san xuat</returns>
+        public static NHASANXUAT CapNhatNhaSanXuat(CHITIETDONGLAPTOP dongLaptopMoi, CHITIETDONGLAPTOP laptop)
+        {
+            NHASANXUAT nhasx;
+            //Update NhaSx
+            try
+            {
+                nhasx = storeDataContext.NHASANXUATs.Single(p => p.MaNhaSanXuat == dongLaptopMoi.MaNhaSanXuat);
                 laptop.NHASANXUAT = nhasx;
                 //Update Thoi Gian Bao Hanh
                 laptop.ThoiGianBaoHanh = dongLaptopMoi.ThoiGianBaoHanh;
@@ -778,14 +1046,69 @@ namespace EStoreDAO
                 laptop.MoTaThem = dongLaptopMoi.MoTaThem;
                 //Update Hinh Anh
                 laptop.HinhAnh = dongLaptopMoi.HinhAnh;
-
-                storeDataContext.SubmitChanges();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
 
+            return laptop.NHASANXUAT;
         }
+
+
+
+
+        /// <summary>
+        /// Cập nhật thông tin một dòng Laptop
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        static public bool CapNhatChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        {
+            bool kq = true;
+            try
+            {
+                CHITIETDONGLAPTOP laptop = CapNhatTenChiTietDongLapTop(dongLaptopMoi);
+
+                //ram
+                CapNhatChiTietDongRam(dongLaptopMoi, laptop);
+                //cpu
+                CapNhatChiTietDongCPU(dongLaptopMoi, laptop);
+                //o cung
+                CapNhatChiTietDongOCung(dongLaptopMoi, laptop);
+                //man hinh
+                CapNhatChiTietDongManHinh(dongLaptopMoi, laptop);
+                //card man hinh
+                CapNhatChiTietDongCardDoHoa(dongLaptopMoi, laptop);
+                //loa
+                CapNhatChiTietDongLoa(dongLaptopMoi, laptop);
+                //o dia quang
+                CapNhatChiTietDongODiaQuang(dongLaptopMoi, laptop);
+                //he dieu hanh
+                CapNhatHeDieuHanh(dongLaptopMoi, laptop);
+                //trong luong
+                CapNhatChiTietTrongLuong(dongLaptopMoi, laptop);
+                //card mang
+                CapNhatChiTietDongCardMang(dongLaptopMoi, laptop);
+                //card reader
+                CapNhatChiTietDongCardReader(dongLaptopMoi, laptop);
+                //webcam
+                CapNhatChiTietDongWebCam(dongLaptopMoi, laptop);
+                //pin
+                CapNhatChiTietDongPin(dongLaptopMoi, laptop);
+                //nha san xuat
+                CapNhatNhaSanXuat(dongLaptopMoi, laptop);
+
+                storeDataContext.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                kq = false;
+                //                throw ex;
+            }
+
+            return kq;
+
+        }
+
     }
 }

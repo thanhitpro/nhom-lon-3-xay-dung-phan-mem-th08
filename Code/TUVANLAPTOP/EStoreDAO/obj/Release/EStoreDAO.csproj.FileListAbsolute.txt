@@ -188,3 +188,13 @@ E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
 E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
