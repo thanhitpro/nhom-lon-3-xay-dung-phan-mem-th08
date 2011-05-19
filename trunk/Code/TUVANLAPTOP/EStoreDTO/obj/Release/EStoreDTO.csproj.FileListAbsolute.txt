@@ -78,3 +78,8 @@ D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

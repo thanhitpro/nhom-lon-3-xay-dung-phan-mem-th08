@@ -550,3 +550,33 @@ D:\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
 D:\SVN\0.BANLAPTOP(xaydungphanmem)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 D:\SVN\0.BANLAPTOP(xaydungphanmem)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
