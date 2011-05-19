@@ -244,35 +244,6 @@ C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TU
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
-E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
@@ -581,3 +552,33 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+E:\Studying\Projects\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb

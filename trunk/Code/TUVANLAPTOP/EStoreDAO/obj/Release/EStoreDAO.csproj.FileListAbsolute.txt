@@ -78,16 +78,6 @@ C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDAO\bin\Release\ESto
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
@@ -188,3 +178,13 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

@@ -10,10 +10,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// Lay thong tin cua CPU tu ma CPU
+        /// Lấy thông tin chi tiết dòng CPU dựa vào mã
         /// </summary>
-        /// <param name="_iMaChiTietDongCPU"></param>
-        /// <returns>True nếu thành công</returns>
+        /// <param name="_iMaChiTietDongCPU">Mã dòng CPU cần lấy thông tin</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng CPU có mã chỉ định
+        ///     Thất bai: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongCPUDTO LayChiTietDongCPU(int _iMaChiTietDongCPU)
         {
             try
@@ -42,10 +45,13 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Thêm dòng CPU
+        /// Thêm dòng CPU mới
         /// </summary>
-        /// <param name="_mDongCPU"></param>
-        /// <returns></returns>
+        /// <param name="_mDongCPU">Thông tin dòng CPU muốn thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemDongCPU(myChiTietDongCPUDTO _mDongCPU)
         {
             try
@@ -69,10 +75,14 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Kiem tra mot dong CPU co ton tai hay chua
+        /// Kiểm tra một dòng CPU có tồn tại hay chưa
         /// </summary>
-        /// <param name="_sName"></param>
-        /// <returns></returns>
+        /// <param name="_sName">Tên dòng CPU cần kiểm tra</param>
+        /// <returns>
+        ///     Tồn tại: trả về true
+        ///     Không tồn tại: trả về false;
+        ///     Xảy ra lỗi: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool KiemTraTonTaiDongCPU(string _sName)
         {
             try
@@ -81,14 +91,17 @@ namespace EStoreDAO
             }
             catch
             {
-                throw;
+                return false;
             }
         }
 
         /// <summary>
-        /// Lay danh sach tat ca cac dong CPU
+        /// Lấy danh sách các dòng CPU
         /// </summary>
-        /// <returns>Danh sách dòng CPU</returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách dòng CPU hiên có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public List<myChiTietDongCPUDTO> LayChiTietDongCPU()
         {
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();

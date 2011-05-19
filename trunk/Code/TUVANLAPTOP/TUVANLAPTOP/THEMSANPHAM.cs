@@ -65,7 +65,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ram", "Thông báo");
                 return false;
-                this.Close();
             }
 
             foreach (myChiTietDongRamDTO ram in dsDongRam)
@@ -93,7 +92,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng CPU", "Thông báo");
                 return false;
-                this.Close();
             }
 
             foreach (myChiTietDongCPUDTO cpu in dsDongCPU)
@@ -119,7 +117,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ổ cứng", "Thông báo");
                 return false;
-                this.Close();
             }
 
             foreach (myChiTietDongOCungDTO ocung in dsDongOCung)
@@ -145,7 +142,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng màn hình", "Thông báo");
                 return false;
-                this.Close();
             }
 
             foreach (myChiTietDongManHinhDTO manhinh in dsManHinh)
@@ -173,7 +169,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card đồ họa", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongCardDoHoaDTO carddohoa in dsCardDoHoa)
                 comboBox_CardManHinh.Items.Add(carddohoa);
@@ -198,7 +193,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng loa", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongLoaDTO loa in dsLoa)
                 comboBox_Loa.Items.Add(loa);
@@ -223,7 +217,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng ổ đĩa quang", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongODiaQuangDTO diaquang in dsDiaQuang)
                 comboBox_ODiaQuang.Items.Add(diaquang);
@@ -247,7 +240,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết hệ điều hành", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietHeDieuHanhDTO hdh in dsHDH)
                 comboBox_HeDieuHanh.Items.Add(hdh);
@@ -272,7 +264,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết trọng lượng", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietTrongLuongDTO tl in dsTrongLuong)
                 comboBox_TrongLuong.Items.Add(tl);
@@ -329,7 +320,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show(ex.Message, "Notice");
                 return false;
-                this.Close();
             }
 
             return true;
@@ -350,7 +340,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card mạng", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongCardMangDTO cardmang in dsCardMang)
             {
@@ -376,7 +365,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng card reader", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongCardReaderDTO cardreader in dsCardReader)
                 comboBox_CardReader.Items.Add(cardreader);
@@ -400,7 +388,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng webcam", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongWebcamDTO webcam in dsWebcam)
                 comboBox_Webcam.Items.Add(webcam);
@@ -424,7 +411,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết dòng pin", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myChiTietDongPinDTO pin in dsPin)
                 comboBox_Pin.Items.Add(pin);
@@ -508,7 +494,6 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show("Lỗi khi lấy chi tiết nhà sản xuất", "Thông báo");
                 return false;
-                this.Close();
             }
             foreach (myNhaSanXuatDTO nhasx in dsNhaSX)
             {

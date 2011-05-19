@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietHeDieuHanhDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
         /// <summary>
-        /// Lay thong tin cua he dieu hanh dua vao ma he dieu hanh
+        /// Lấy thông tin chi tiết Hệ điều hành dựa vào mã hệ điều hành
         /// </summary>
-        /// <param name="_iMaDanhGia"></param>
-        /// <returns></returns>
+        /// <param name="_iMaHeDieuHanh">Mã hệ điều hành</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết hệ điều hành có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietHeDieuHanhDTO LayChiTietHDH(int _iHeDieuHanh)
         {
             try
@@ -92,7 +96,10 @@ namespace EStoreDAO
         /// <summary>
         /// Lấy danh sách hệ điều hành
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách hệ điều hành hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietHeDieuHanhDTO> LayDSHeDieuHanh()
         {
             try
@@ -118,8 +125,11 @@ namespace EStoreDAO
         /// <summary>
         /// Thêm mới Hệ Điều Hành
         /// </summary>
-        /// <param name="_mHDH"></param>
-        /// <returns></returns>
+        /// <param name="_mHDH">Thông tin hệ điều hành cần thêm mới</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemHDH(myChiTietHeDieuHanhDTO _mHDH)
         {
             try

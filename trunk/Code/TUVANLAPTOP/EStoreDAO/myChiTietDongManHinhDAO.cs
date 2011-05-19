@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietDongManHinhDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
         /// <summary>
-        /// Lay thong tin man hinh tu ma man hinh
+        /// Lấy thông tin chi tiết dòng màn hình dựa vào mã màn hình
         /// </summary>
-        /// <param name="_iMaChiTietDongManHinh"></param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongManHinh">Mã dòng màn hình</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng màn hình có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongManHinhDTO LayChiTietDongManHinh(int _iMaChiTietDongManHinh)
         {
             try

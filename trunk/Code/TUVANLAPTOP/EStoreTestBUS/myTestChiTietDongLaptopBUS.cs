@@ -43,5 +43,14 @@ namespace EStoreTestBUS
         {
             Assert.AreEqual(true,myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(1,2));
         }
+
+        [Test]
+        public void TestLayDanhSachLaptopMoiNhat()
+        {
+            myChiTietDongLaptopDTO chiTietDongLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
+            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(chiTietDongLapTop);
+
+            Assert.IsNotNull(listChiTietDongLaptop);
+        }
     }
 }

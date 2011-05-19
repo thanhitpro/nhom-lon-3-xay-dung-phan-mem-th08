@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1055]E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll</TopNode>
-  <SelectedNode>[0-1056]EStoreTest</SelectedNode>
+  <TopNode>[0-1062]E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll</TopNode>
+  <SelectedNode>[0-1019]EStoreTest.myTestChiTietDongLaptopDAO.ThemMoiChiTietDongLaptopTest</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1055]E:\Studying\Hoc Ky II 2010-2011\Xay Dung Phan Mem\Code Nhom\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1056]EStoreTest" Expanded="true" />
-    <Node UniqueName="[0-1015]EStoreTest.myChiTietDongLaptopDAOTest" Expanded="true" />
-    <Node UniqueName="[0-1011]EStoreTest.myTestChiTietBoNhoCardDoHoaDAO" Expanded="true" />
-    <Node UniqueName="[0-1005]EStoreTest.myTestChiTietBoNhoRamDAO" Expanded="true" />
-    <Node UniqueName="[0-1000]EStoreTest.myTestChiTietCongNgheCPUDAO" Expanded="true" />
-    <Node UniqueName="[0-1008]EStoreTest.myTestChiTietCongNgheRamDAO" Expanded="true" />
-    <Node UniqueName="[0-1003]EStoreTest.myTestChiTietDongCardDoHoaDAO" Expanded="true" />
-    <Node UniqueName="[0-1013]EStoreTest.myTestChiTietDongCardMangDAO" Expanded="true" />
-    <Node UniqueName="[0-1022]EStoreTest.myTestChiTietDongCardReaderDAO" Expanded="true" />
-    <Node UniqueName="[0-1018]EStoreTest.myTestChiTietDongCPUDAO" Expanded="true" />
-    <Node UniqueName="[0-1024]EStoreTest.myTestChiTietDongLaptopDAO" Expanded="true" />
-    <Node UniqueName="[0-1026]EStoreTest.myTestChiTietDongLoaDAO" Expanded="true" />
-    <Node UniqueName="[0-1028]EStoreTest.myTestChiTietDongManHinhDAO" Expanded="true" />
-    <Node UniqueName="[0-1030]EStoreTest.myTestChiTietDongOCungDAO" Expanded="true" />
-    <Node UniqueName="[0-1032]EStoreTest.myTestChiTietDongODiaQuangDAO" Expanded="true" />
-    <Node UniqueName="[0-1034]EStoreTest.myTestChiTietDongPinDAO" Expanded="true" />
-    <Node UniqueName="[0-1036]EStoreTest.myTestChiTietDongRamDAO" Expanded="true" />
-    <Node UniqueName="[0-1038]EStoreTest.myTestChiTietDongWebcamDAO" Expanded="true" />
-    <Node UniqueName="[0-1040]EStoreTest.myTestChiTietDungLuongOCungDAO" Expanded="true" />
-    <Node UniqueName="[0-1043]EStoreTest.myTestChiTietHeDieuHanhDAO" Expanded="true" />
-    <Node UniqueName="[0-1047]EStoreTest.myTestChiTietKichThuocManHinhDAO" Expanded="true" />
-    <Node UniqueName="[0-1050]EStoreTest.myTestChiTietVongQuayOCungDAO" Expanded="true" />
-    <Node UniqueName="[0-1053]EStoreTest.myTestDanhGiaDAO" Expanded="true" />
+    <Node UniqueName="[0-1062]E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1063]EStoreTest" Expanded="true" />
+    <Node UniqueName="[0-1016]EStoreTest.myTestChiTietDongLaptopDAO" Expanded="true" />
   </Nodes>
 </VisualState>

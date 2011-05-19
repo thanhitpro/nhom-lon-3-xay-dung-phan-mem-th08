@@ -25,7 +25,9 @@ namespace EStoreDAO
             myChiTietDongLaptopDTO chiTietDongLaptop = null;
             try
             {
-                var query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs where dongLaptop.MaDongLapTop == intMaChiTietDongLaptop select dongLaptop;
+                var query = from dongLaptop in storeDataContext.CHITIETDONGLAPTOPs 
+                            where dongLaptop.MaDongLapTop == intMaChiTietDongLaptop 
+                            select dongLaptop;
                 if (query.Count() > 0)
                 {
                     CHITIETDONGLAPTOP temp = query.Single();
@@ -566,7 +568,6 @@ namespace EStoreDAO
         /// <returns></returns>
         public static string ConvertString(string giaban)
         {
-
             string temp = "";
 
             for (int i = 0; i < giaban.Length; i++)
@@ -620,10 +621,17 @@ namespace EStoreDAO
             return true;
         }
 
- 
+        /// <summary>
+        /// Lấy danh sách những Laptop mới nhất
+        /// </summary>
+        /// <param name="donglaptop">Thông tin dòng laptop cùng loại</param>
+        /// <returns>
+        ///     Thành công: trả về danh sách dòng laptop mới nhất
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<myChiTietDongLaptopDTO> LayChiTietDongLaptopMoiNhat(myChiTietDongLaptopDTO donglaptop)
         {
-            List<myChiTietDongLaptopDTO> danhsachChiTietDongLapTop = new List<myChiTietDongLaptopDTO>();
+            List<myChiTietDongLaptopDTO> listChiTietDongLapTop = new List<myChiTietDongLaptopDTO>();
             var query = from mayTinh in storeDataContext.CHITIETDONGLAPTOPs
                         where mayTinh.CHITIETDONGCARDDOHOA.CHITIETBONHOCARDDOHOA.TenChiTietBoNhoCardDoHoa == donglaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa
                             && mayTinh.CHITIETDONGCPU.CHITIETCONGNGHECPU.TenChiTietCongNgheCPU == donglaptop.ChiTietDongCPU.ChiTietCongNgheCPU.STenChiTietCongNgheCPU
@@ -637,51 +645,54 @@ namespace EStoreDAO
                 {
                     continue;
                 }
-                //Chi tiet dong Laptop
-                #region ChiTietDongLapTop
-                myChiTietDongLaptopDTO dongLapTop = new myChiTietDongLaptopDTO();
-                dongLapTop.STenChiTietDongLapTop = laptop.TenChiTietDongLapTop;
-                dongLapTop.SMauSac = laptop.MauSac;
-                dongLapTop.IMaDongLaptop = laptop.MaDongLapTop;
-                dongLapTop.IThoiGianBaoHanh = (int)laptop.ThoiGianBaoHanh;
-                dongLapTop.FGiaBanHienHanh = (float)laptop.GiaBanHienHanh;
-                dongLapTop.ChiTietDongRam = myChiTietDongRamDAO.LayChiTietDongRam((int)laptop.MaDongRAM);
-                dongLapTop.ChiTietDongOCung = myChiTietDongOCungDAO.LayChiTietDongOCung((int)laptop.MaDongOCung);
-                dongLapTop.ChiTietDongCacDoHoa = myChiTietDongCardDoHoaDAO.LayChiTietDongCardDoHoa((int)laptop.MaDongCardDoHoa);
-                dongLapTop.ChiTietDongCardMang = myChiTietDongCardMangDAO.LayChiTietDongCardMang((int)laptop.MaDongCardMang);
-                dongLapTop.ChiTietDongCPU = myChiTietDongCPUDAO.LayChiTietDongCPU((int)laptop.MaDongCPU);
-                dongLapTop.ChiTietDongCardReader = myChiTietDongCardReaderDAO.LayChiTietDongCardReader((int)laptop.MaDongCardReader);
-                dongLapTop.ChiTietDongLoa = myChiTietDongLoaDAO.LayChiTietDongLoa((int)laptop.MaDongLoa);
-                dongLapTop.ChiTietDongManHinh = myChiTietDongManHinhDAO.LayChiTietDongManHinh((int)laptop.MaDongManHinh);
-                dongLapTop.ChiTietDongODiaQuang = myChiTietDongODiaQuangDAO.LayChiTietDongODiaQuang((int)laptop.MaDongODiaQuang);
-                dongLapTop.ChiTietDongPin = myChiTietDongPinDAO.LayChiTietDongPin((int)laptop.MaDongPin);
-                dongLapTop.ChiTietDongWebCam = myChiTietDongWebcamDAO.LayChiTietDongWebcam((int)laptop.MaDongWebCam);
-                dongLapTop.ChiTietHeDieuHanh = myChiTietHeDieuHanhDAO.LayChiTietHDH((int)laptop.MaHeDieuHanh);
-                dongLapTop.ChiTietTrongLuong = myChiTietTrongLuongDAO.LayChiTietTrongLuong((int)laptop.MaChiTietTrongLuong);
-                dongLapTop.BFingerprintReader = BitConverter.GetBytes(laptop.FingerprintReader.Value)[0];
-                dongLapTop.BHDMI = BitConverter.GetBytes(laptop.HDMI.Value)[0];
-                dongLapTop.ISoLuongCongUSB = (int)laptop.SoLuongCongUSB;
-                dongLapTop.NhaSanXuat = new myNhaSanXuatDTO(laptop.NHASANXUAT.TenNhaSanXuat);
-                dongLapTop.DanhGia = myDanhGiaDAO.LayDanhGia(laptop.DANHGIA.MaDanhGia);
-                dongLapTop.FGiaBanHienHanh = (float)laptop.GiaBanHienHanh;
-                dongLapTop.SMoTaThem = (string)laptop.MoTaThem;
-                dongLapTop.ISoLuongNhap = (int)laptop.SoLuongNhap;
-                dongLapTop.ISoLuongConLai = (int)laptop.SoLuongConLai;
-                dongLapTop.IThoiGianBaoHanh = (int)laptop.ThoiGianBaoHanh;
-                dongLapTop.SHinhAnh = (string)laptop.HinhAnh;
-                dongLapTop.SMauSac = (string)laptop.MauSac;
-                #endregion
-
-                danhsachChiTietDongLapTop.Add(dongLapTop);
+                myChiTietDongLaptopDTO chiTietDongLapTop = TaoChiTietLapTop(laptop);
+                listChiTietDongLapTop.Add(chiTietDongLapTop);
             }
-            return danhsachChiTietDongLapTop;
+            return listChiTietDongLapTop;
+        }
+
+        public static myChiTietDongLaptopDTO TaoChiTietLapTop(CHITIETDONGLAPTOP laptop)
+        {
+            myChiTietDongLaptopDTO dongLapTop = new myChiTietDongLaptopDTO();
+            dongLapTop.STenChiTietDongLapTop = laptop.TenChiTietDongLapTop;
+            dongLapTop.SMauSac = laptop.MauSac;
+            dongLapTop.IMaDongLaptop = laptop.MaDongLapTop;
+            dongLapTop.IThoiGianBaoHanh = (int)laptop.ThoiGianBaoHanh;
+            dongLapTop.FGiaBanHienHanh = (float)laptop.GiaBanHienHanh;
+            dongLapTop.ChiTietDongRam = myChiTietDongRamDAO.LayChiTietDongRam((int)laptop.MaDongRAM);
+            dongLapTop.ChiTietDongOCung = myChiTietDongOCungDAO.LayChiTietDongOCung((int)laptop.MaDongOCung);
+            dongLapTop.ChiTietDongCacDoHoa = myChiTietDongCardDoHoaDAO.LayChiTietDongCardDoHoa((int)laptop.MaDongCardDoHoa);
+            dongLapTop.ChiTietDongCardMang = myChiTietDongCardMangDAO.LayChiTietDongCardMang((int)laptop.MaDongCardMang);
+            dongLapTop.ChiTietDongCPU = myChiTietDongCPUDAO.LayChiTietDongCPU((int)laptop.MaDongCPU);
+            dongLapTop.ChiTietDongCardReader = myChiTietDongCardReaderDAO.LayChiTietDongCardReader((int)laptop.MaDongCardReader);
+            dongLapTop.ChiTietDongLoa = myChiTietDongLoaDAO.LayChiTietDongLoa((int)laptop.MaDongLoa);
+            dongLapTop.ChiTietDongManHinh = myChiTietDongManHinhDAO.LayChiTietDongManHinh((int)laptop.MaDongManHinh);
+            dongLapTop.ChiTietDongODiaQuang = myChiTietDongODiaQuangDAO.LayChiTietDongODiaQuang((int)laptop.MaDongODiaQuang);
+            dongLapTop.ChiTietDongPin = myChiTietDongPinDAO.LayChiTietDongPin((int)laptop.MaDongPin);
+            dongLapTop.ChiTietDongWebCam = myChiTietDongWebcamDAO.LayChiTietDongWebcam((int)laptop.MaDongWebCam);
+            dongLapTop.ChiTietHeDieuHanh = myChiTietHeDieuHanhDAO.LayChiTietHDH((int)laptop.MaHeDieuHanh);
+            dongLapTop.ChiTietTrongLuong = myChiTietTrongLuongDAO.LayChiTietTrongLuong((int)laptop.MaChiTietTrongLuong);
+            dongLapTop.BFingerprintReader = BitConverter.GetBytes(laptop.FingerprintReader.Value)[0];
+            dongLapTop.BHDMI = BitConverter.GetBytes(laptop.HDMI.Value)[0];
+            dongLapTop.ISoLuongCongUSB = (int)laptop.SoLuongCongUSB;
+            dongLapTop.NhaSanXuat = new myNhaSanXuatDTO(laptop.NHASANXUAT.TenNhaSanXuat);
+            dongLapTop.DanhGia = myDanhGiaDAO.LayDanhGia(laptop.DANHGIA.MaDanhGia);
+            dongLapTop.FGiaBanHienHanh = (float)laptop.GiaBanHienHanh;
+            dongLapTop.SMoTaThem = (string)laptop.MoTaThem;
+            dongLapTop.ISoLuongNhap = (int)laptop.SoLuongNhap;
+            dongLapTop.ISoLuongConLai = (int)laptop.SoLuongConLai;
+            dongLapTop.IThoiGianBaoHanh = (int)laptop.ThoiGianBaoHanh;
+            dongLapTop.SHinhAnh = (string)laptop.HinhAnh;
+            dongLapTop.SMauSac = (string)laptop.MauSac;
+
+            return dongLapTop;
         }
 
         /// <summary>
         /// Thêm một dòng LapTop mới
         /// </summary>
         /// <param name="dongLaptopMoi"></param>
-        static public void ThemMoiChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
+        public static void ThemMoiChiTietDongLaptop(CHITIETDONGLAPTOP dongLaptopMoi)
         {
             try
             {

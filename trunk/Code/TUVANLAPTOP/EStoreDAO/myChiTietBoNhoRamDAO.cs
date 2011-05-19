@@ -11,9 +11,12 @@ namespace EStoreDAO
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
 
         /// <summary>
-        /// Lay DS Bo Nho RAM:
+        /// Lấy danh sách bộ nhớ RAM
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách bộ nhớ RAM hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietBoNhoRamDTO> LayChiTietBoNhoRam()
         {
             try
@@ -37,10 +40,13 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Them bo nho RAM:
+        /// Thêm mới bộ nhớ RAM
         /// </summary>
-        /// <param name="_mBoNho"></param>
-        /// <returns></returns>
+        /// <param name="_mBoNho">Thông tin đối tượng cần thêm mới</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemBoNhoRAM(myChiTietBoNhoRamDTO _mBoNho)
         {
             try

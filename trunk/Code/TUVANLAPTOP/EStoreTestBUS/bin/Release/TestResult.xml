@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll" total="24" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-05-19" time="19:34:04">
+  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release" machine-name="THIETQN" user="WSThiet" user-domain="THIETQN" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll" executed="True" result="Success" success="True" time="4.672" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="EStoreTestBUS" executed="True" result="Success" success="True" time="4.672" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoCardDoHoaBUS" executed="True" result="Success" success="True" time="2.141" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietBoNhoCardDoHoaBUS.TestLayChiTietBoNhoCardMH" executed="True" result="Success" success="True" time="1.438" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietBoNhoCardDoHoaBUS.TestThemBoNhoCardMH" executed="True" result="Success" success="True" time="0.656" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoRamBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietBoNhoRamBUS.TestLayChiTietBoNhoRam" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietBoNhoRamBUS.TestThemBoNhoRAM" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietCongNgheCPU" executed="True" result="Success" success="True" time="0.141" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietCongNgheCPU.TestLayDSCongNgheCPU" executed="True" result="Success" success="True" time="0.109" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietCongNgheCPU.TestThemCongNgheCPU" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietCongNgheRamBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietCongNgheRamBUS.TestLayChiTietCongNgheRam" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietCongNgheRamBUS.TestThemCongNgheRAM" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardDoHoaBUS" executed="True" result="Success" success="True" time="0.328" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDongCardDoHoaBUS.TestLayChiTietDongCardDoHoa" executed="True" result="Success" success="True" time="0.328" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardMangBUS" executed="True" result="Success" success="True" time="0.047" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDongCardMangBUS.TestLayDSCardMang" executed="True" result="Success" success="True" time="0.047" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardReaderBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDongCardReaderBUS.TestLayDSCardReader" executed="True" result="Success" success="True" time="0.031" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCPUBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDongCPUBUS.TestLayDSDongCPU" executed="True" result="Success" success="True" time="0.031" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongLaptopBUS" executed="True" result="Success" success="True" time="1.734" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop" executed="True" result="Success" success="True" time="1.547" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietDongLaptopBUS.TestKiemTraGiaTienHopLe" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+              <test-case name="EStoreTestBUS.myTestChiTietDongLaptopBUS.TestLayChiTietDongLaptop" executed="True" result="Success" success="True" time="0.031" asserts="10" />
+              <test-case name="EStoreTestBUS.myTestChiTietDongLaptopBUS.TestLayDanhSachLaptopMoiNhat" executed="True" result="Success" success="True" time="0.125" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDungLuongOCungBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietDungLuongOCungBUS.TestLayDanhSachOCung" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietDungLuongOCungBUS.TestThemOCungMoi" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietHeDieuHanhBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietHeDieuHanhBUS.TestLayDSHeDieuHanh" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietHeDieuHanhBUS.TestThemHeDieuHanh" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietKichThuocManHinhBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietKichThuocManHinhBUS.TestLayDSKichThuocManHinh" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietKichThuocManHinhBUS.TestThemMoiKichThuocManHinh" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietVongQuayOCungBUS" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTestBUS.myTestChiTietVongQuayOCungBUS.TestLayDanhSachChiTietVongQuayOCung" executed="True" result="Success" success="True" time="0.016" asserts="2" />
+              <test-case name="EStoreTestBUS.myTestChiTietVongQuayOCungBUS.TestThemMoiChiTietVongQuayOCung" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

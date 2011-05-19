@@ -11,10 +11,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// Lay thong tin nha sx tu ma nha sx
+        /// Lấy thông tin nhà sản xuất dựa vào mã
         /// </summary>
-        /// <param name="_iMaNhaSanXuat"></param>
-        /// <returns></returns>
+        /// <param name="_iMaNhaSanXuat">Mã nhà sản xuất</param>
+        /// <returns>
+        ///     Thành công: Chi tiết thông tin nhà sản xuất
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static NHASANXUAT LayNhaSanXuat(int _iMaNhaSanXuat)
         {
             try

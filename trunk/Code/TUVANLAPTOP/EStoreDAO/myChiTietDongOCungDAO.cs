@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietDongOCungDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
         /// <summary>
-        /// Lay thong tin O Cung dua vao Ma O Cung
+        /// Lấy thông tin chi tiết dòng Ổ cứng dựa vào mã dòng Ổ cứng
         /// </summary>
-        /// <param name="_iMaChiTietDongOCung"></param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongOCung">Mã dòng ổ cứng</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng ổ cứng có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongOCungDTO LayChiTietDongOCung(int _iMaChiTietDongOCung)
         {
             try

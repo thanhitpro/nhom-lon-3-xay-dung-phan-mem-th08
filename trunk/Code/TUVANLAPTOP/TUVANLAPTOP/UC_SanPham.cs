@@ -16,10 +16,15 @@ namespace TUVANLAPTOP
     {
         private myChiTietDongLaptopDTO m_dLaptop = new myChiTietDongLaptopDTO();
 
+        public UC_SANPHAM()
+        {
+            InitializeComponent();
+        }
+
         /// <summary>
         /// Hàm khởi tạo đối tượng DongLaptop chứa trong UserControl Sản phẩm
         /// </summary>
-        /// <param name="_mDongLaptop"></param>
+        /// <param name="_mDongLaptop">Thông tin đối tượng DongLaptop muốn khởi tạo cho Control</param>
         public UC_SANPHAM(myChiTietDongLaptopDTO _mDongLaptop)
         {
             InitializeComponent();
@@ -37,8 +42,8 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Hàm xử lý sự kiện chuột hover qua label Tên Laptop
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Control gây ra sự kiện hover</param>
+        /// <param name="e">Thông tin sự kiện</param>
         private void linkLabel_TenLaptop_MouseHover(object sender, EventArgs e)
         {
             toolTip_TenLaptop.ToolTipTitle = "Xem chi tiết";
@@ -48,50 +53,94 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Hàm xử lý sự kiện load User control
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Control gây ra sự kiện Load</param>
+        /// <param name="e">Thông tin sự kiện</param>
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
             //Load hình ảnh đại diện cho laptop:
             string imagePath = Application.StartupPath + "\\" + m_dLaptop.SHinhAnh.Trim();
-            if (File.Exists(imagePath))
+            if (CheckExistImagePath(imagePath))
                 pictureBox_HinhSP.Image = Image.FromFile(imagePath);
+            else
+                pictureBox_HinhSP.Image = Properties.Resources.noImage;
 
-            //Tên laptop:
-            string nameLaptop = m_dLaptop.STenChiTietDongLapTop.Trim();
-            if (nameLaptop.Length > 25)
-            {
-                nameLaptop = nameLaptop.Substring(0, 25) + "...";
-            }
-            linkLabel_TenLaptop.Text = nameLaptop;
+            //Tên laptop:                        
+            linkLabel_TenLaptop.Text = ReduceLengthString(m_dLaptop.STenChiTietDongLapTop);
             linkLabel_TenLaptop.Tag = m_dLaptop;
+            this.Tag = m_dLaptop.STenChiTietDongLapTop.Trim();
 
-            // Thông tin chung về laptop:
-            //Tên nhà SX:
-            if (m_dLaptop.NhaSanXuat.STenNhaSanXuat.Trim() != "")
+            FillNSXInfo();
+            FillThoiGianBHInfo();
+            FillGiaBanInfo();
+        }
+
+        /// <summary>
+        /// Điền thông tin Giá Bán laptop cho UCControl
+        /// </summary>
+        private void FillGiaBanInfo()
+        {
+            if (m_dLaptop.FGiaBanHienHanh > 0)
             {
-                label_NhaSX_value.Text = m_dLaptop.NhaSanXuat.STenNhaSanXuat.Trim();
+                label_Gia_value.Text = m_dLaptop.FGiaBanHienHanh.ToString("###,###") + " triệu";
             }
             else
-                linkLabel_TenLaptop.Text = "Chưa xác định";
+                label_Gia_value.Text = "Chưa xác định";
+        }
 
-            //Thời gian bảo hành:
+        /// <summary>
+        /// Điền thông tin Thời gian Bảo hành cho UCControl
+        /// </summary>
+        private void FillThoiGianBHInfo()
+        {
             if (m_dLaptop.IThoiGianBaoHanh > 0)
             {
                 label_BaoHanh_value.Text = m_dLaptop.IThoiGianBaoHanh.ToString("00") + "tháng";
             }
             else
                 label_BaoHanh_value.Text = "Chưa xác định";
+        }
 
-            //Giá hiện hành:
-            if (m_dLaptop.FGiaBanHienHanh > 0)
+        /// <summary>
+        /// Điền thông tin Nhà Sản Xuất cho UCControl
+        /// </summary>
+        private void FillNSXInfo()
+        {
+            if (m_dLaptop.NhaSanXuat.STenNhaSanXuat.Trim() != "")
             {
-                label_Gia_value.Text = m_dLaptop.FGiaBanHienHanh.ToString() + " triệu";
+                label_NhaSX_value.Text = m_dLaptop.NhaSanXuat.STenNhaSanXuat.Trim();
             }
             else
-                label_Gia_value.Text = "Chưa xác định";
+                linkLabel_TenLaptop.Text = "Chưa xác định";
+        }
 
-            this.Tag = m_dLaptop.STenChiTietDongLapTop.Trim();
+        /// <summary>
+        /// Hàm rút gọn độ dài tên dòng Laptop
+        /// </summary>
+        /// <param name="stringNeedReduced">Chuỗi cần rút gọn</param>
+        /// <returns>
+        ///     Nếu độ dài > 25, trả về chuỗi từ 0 --> 25 + "..."
+        ///     Nếu độ dài nhỏ hơn hoặc bằng 25, trả về chuỗi ban đầu
+        /// </returns>
+        public string ReduceLengthString(string stringNeedReduced)
+        {
+            if (stringNeedReduced.Length > 25)
+            {
+                stringNeedReduced = stringNeedReduced.Substring(0, 25) + "...";
+            }            
+            return stringNeedReduced;
+        }
+
+        /// <summary>
+        /// Hàm kiểm tra đường dẫn ảnh có tồn tại hay không ?
+        /// </summary>
+        /// <param name="imagePath">Chuỗi đường dẫn của ảnh</param>
+        /// <returns>
+        ///     Tồn tại: trả về True
+        ///     Không tồn tại: trả về False
+        /// </returns>
+        public bool CheckExistImagePath(string imagePath)
+        {
+            return File.Exists(imagePath);                            
         }
     }
 }

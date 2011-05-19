@@ -28,11 +28,6 @@ C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\bin\Release\ESto
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
-E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 D:\Documents\Software Construction\Project\Final Project\My WorkSpace\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
@@ -83,3 +78,8 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+E:\Studying\Projects\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

@@ -10,7 +10,6 @@ namespace EStoreDAO
         public myChiTietCongNgheCardReaderDTO LayChiTietCongNgheCardReader(int _iMaChiTietCongNgheCardReader)
         {
             return null;
-
         }
 
         public List<myChiTietCongNgheCardReaderDTO> LayChiTietCongNgheCardReader()

@@ -129,6 +129,15 @@ namespace EStoreDAO
             }
         }
 
+
+        /// <summary>
+        /// Thêm mới Khách hàng
+        /// </summary>
+        /// <param name="_kKhachHang">Thông tin khách hàng muốn thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: trả về false
+        /// </returns>
         public static bool themKhachHang(KHACHHANG _kKhachHang)
         {
             try

@@ -10,10 +10,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// lay thong tin trong luong dua vao ma chi tiet trong luong
+        /// Lấy thông trong lượng Laptop dựa vào mã trọng lượng
         /// </summary>
-        /// <param name="_iMaChiTietTrongLuong"></param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietTrongLuong">Mã chi tiết trọng lượng</param>
+        /// <returns>
+        ///     Thành công: Thông tin chi tiết Trọng Lượng
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietTrongLuongDTO LayChiTietTrongLuong(int _iMaChiTietTrongLuong)
         {
             try

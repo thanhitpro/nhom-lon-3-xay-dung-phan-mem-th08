@@ -10,9 +10,12 @@ namespace EStoreDAO
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
 
         /// <summary>
-        /// Lấy danh sách dung lượng
+        /// Lấy danh sách dung lượng ổ Cứng hiện có
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách dung lượng ổ cứng hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietDungLuongOCungDTO> LayDSDungLuongOCung()
         {
             try
@@ -38,8 +41,11 @@ namespace EStoreDAO
         /// <summary>
         /// Thêm dung lượng Dung Lượng Ổ Cứng:
         /// </summary>
-        /// <param name="_mDungLuong"></param>
-        /// <returns></returns>
+        /// <param name="_mDungLuong">Thông tin DungLuongOCung cần thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemDungLuongOCung(myChiTietDungLuongOCungDTO _mDungLuong)
         {
             try

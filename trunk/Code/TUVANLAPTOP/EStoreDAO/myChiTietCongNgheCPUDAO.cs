@@ -12,8 +12,11 @@ namespace EStoreDAO
         /// <summary>
         /// Thêm Công Nghệ CPU
         /// </summary>
-        /// <param name="_mCongNgheCPU"></param>
-        /// <returns></returns>
+        /// <param name="_mCongNgheCPU">Thông tin công nghệ CPU muốn thêm</param>
+        /// <returns>
+        ///     Thành công: trả về mã Công nghệ mới được thêm mới
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static int ThemCongNgheCPU(myChiTietCongNgheCPUDTO _mCongNgheCPU)
         {
             try
@@ -34,9 +37,12 @@ namespace EStoreDAO
         }
 
         /// <summary>
-        /// Lay Danh sach CPU
+        /// Lấy danh sách công nghệ CPU
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách công nghệ CPU hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietCongNgheCPUDTO> LayDSCongNgheCPU()
         {
             List<myChiTietCongNgheCPUDTO> dsCongNgheCPU = new List<myChiTietCongNgheCPUDTO>();

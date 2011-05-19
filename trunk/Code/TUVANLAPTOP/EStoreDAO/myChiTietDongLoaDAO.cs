@@ -9,11 +9,15 @@ namespace EStoreDAO
     public class myChiTietDongLoaDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+       
         /// <summary>
-        /// Lay thong tin dong loa dua vao ten dong loa
+        /// Lấy thông tin chi tiết dòng Loa dựa vào mã dòng loa
         /// </summary>
-        /// <param name="_iMaChiTietDongLoa">ma dong loa</param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongLoa">Mã dòng loa</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng loa có mã chỉ định
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongLoaDTO LayChiTietDongLoa(int _iMaChiTietDongLoa)
         {
             try

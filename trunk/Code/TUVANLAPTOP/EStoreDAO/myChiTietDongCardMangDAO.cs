@@ -10,10 +10,13 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
         /// <summary>
-        /// Lay thong tin cua card mang dua vao ma card mang
+        /// Lấy thông tin dòng Card mạng dựa vào mã
         /// </summary>
-        /// <param name="_iMaChiTietDongCardMang">ma dong card mang</param>
-        /// <returns></returns>
+        /// <param name="_iMaChiTietDongCardMang">Mã dòng card mạng</param>
+        /// <returns>
+        ///     Thành công: trả về thông tin chi tiết dòng Card mạng có mã truyền vào
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static myChiTietDongCardMangDTO LayChiTietDongCardMang(int _iMaChiTietDongCardMang)
         {
             try

@@ -79,6 +79,14 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Thêm mới giao dịch
+        /// </summary>
+        /// <param name="_gGiaoDich">Thông tin giao dịch mới cần thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: trả về true
+        /// </returns>
         public static bool themGiaoDich(GIAODICH _gGiaoDich)
         {
             try
@@ -89,7 +97,6 @@ namespace EStoreDAO
             }
             catch(Exception ex)
             {
-                string temp = ex.Message;
                 return false;
             }            
         }
