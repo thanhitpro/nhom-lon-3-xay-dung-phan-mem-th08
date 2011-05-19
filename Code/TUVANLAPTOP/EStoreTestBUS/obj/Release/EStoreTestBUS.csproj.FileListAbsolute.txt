@@ -17,6 +17,22 @@ C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+<<<<<<< .mine
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+=======
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
@@ -45,3 +61,4 @@ D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+>>>>>>> .r349

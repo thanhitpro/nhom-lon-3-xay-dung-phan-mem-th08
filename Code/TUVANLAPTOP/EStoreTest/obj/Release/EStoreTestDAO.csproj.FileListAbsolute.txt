@@ -22,6 +22,21 @@ C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\ESt
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+<<<<<<< .mine
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+=======
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
 E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
@@ -47,3 +62,4 @@ D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
 D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+>>>>>>> .r349

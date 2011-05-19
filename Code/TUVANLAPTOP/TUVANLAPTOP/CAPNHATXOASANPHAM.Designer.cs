@@ -109,7 +109,7 @@
             this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_search.Location = new System.Drawing.Point(678, 50);
+            this.btn_search.Location = new System.Drawing.Point(678, 55);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(119, 43);
             this.btn_search.TabIndex = 11;
@@ -120,19 +120,21 @@
             // 
             // textBox_MaSanPham
             // 
-            this.textBox_MaSanPham.Location = new System.Drawing.Point(465, 63);
+            this.textBox_MaSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_MaSanPham.Location = new System.Drawing.Point(464, 63);
             this.textBox_MaSanPham.MaxLength = 10;
             this.textBox_MaSanPham.Name = "textBox_MaSanPham";
-            this.textBox_MaSanPham.Size = new System.Drawing.Size(156, 20);
+            this.textBox_MaSanPham.Size = new System.Drawing.Size(156, 26);
             this.textBox_MaSanPham.TabIndex = 10;
             this.textBox_MaSanPham.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_MaSanPham_KeyPress);
             // 
             // label_MaSanPham
             // 
             this.label_MaSanPham.AutoSize = true;
-            this.label_MaSanPham.Location = new System.Drawing.Point(344, 66);
+            this.label_MaSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MaSanPham.Location = new System.Drawing.Point(314, 66);
             this.label_MaSanPham.Name = "label_MaSanPham";
-            this.label_MaSanPham.Size = new System.Drawing.Size(74, 13);
+            this.label_MaSanPham.Size = new System.Drawing.Size(109, 20);
             this.label_MaSanPham.TabIndex = 9;
             this.label_MaSanPham.Text = "Mã Sản Phẩm";
             // 

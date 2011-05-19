@@ -14,6 +14,7 @@ namespace TUVANLAPTOP
     public partial class CAPNHATXOASANPHAM : Form
     {
         private static CAPNHATXOASANPHAM m_stForm = null;
+        bool m_bLoadFinished = false;
 
         public static CAPNHATXOASANPHAM Instance()
         {
@@ -29,9 +30,33 @@ namespace TUVANLAPTOP
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Ham xu ly khi click vao button Quay lai
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Back_Click(object sender, EventArgs e)
         {
             ResetDataGridView();
+        }
+
+        /// <summary>
+        /// Ham gan gia tri cho cac CheckBoxCell
+        /// </summary>
+        /// <param name="_bState">true:check - false:uncheck</param>
+        public bool AssignValueToCheckBoxCell(bool _bState)
+        {
+            try
+            {
+                foreach (DataGridViewRow row in dataGridXoaSanPham.Rows)
+                    ((DataGridViewCheckBoxCell)row.Cells[0]).Value = _bState;
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi khi gán giá trị cho check box cell", "Thông báo");
+                return false;
+            }
+            return true;
         }
 
         /// <summary>
@@ -42,36 +67,89 @@ namespace TUVANLAPTOP
         private void checkAll_CheckedChanged(object sender, EventArgs e)
         {
             if (checkAll.Checked == true)
-            {
-                foreach (DataGridViewRow row in dataGridXoaSanPham.Rows)
-                {
-                    ((DataGridViewCheckBoxCell)row.Cells[0]).Value = true;
-                }
-            }
+                AssignValueToCheckBoxCell(true);
             else
-            {
-                foreach (DataGridViewRow row in dataGridXoaSanPham.Rows)
-                {
-                    ((DataGridViewCheckBoxCell)row.Cells[0]).Value = false;
-                }
-            }
+                AssignValueToCheckBoxCell(false);
         }
 
-        bool IsCheckLoadFinished = false;
-
+        /// <summary>
+        /// Ham khoi tao khi load form CAPNHATXOASANPHAM
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CAPNHATXOASANPHAM_Load(object sender, EventArgs e)
         {
             ResetDataGridView();
         }
 
         /// <summary>
+        /// Ham them du lieu chi tiet dong laptop vao DataGirdView
+        /// </summary>
+        /// <param name="chiTietDongLaptop"></param>
+        public bool AddDataIntoDataGridView(myChiTietDongLaptopDTO chiTietDongLaptop)
+        {
+            try
+            {
+                string fingerPrintReader;
+                string loa;
+                string hDMI;
+
+                if (chiTietDongLaptop.BFingerprintReader == 1)
+                    fingerPrintReader = "Có";
+                else
+                    fingerPrintReader = "Không";
+                //HDMI:
+                if (chiTietDongLaptop.BHDMI == 1)
+                    hDMI = "Có";
+                else
+                    hDMI = "Không";
+
+                //Loa:
+                if (chiTietDongLaptop.ChiTietDongLoa.BCoMicro == 1)
+                    loa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
+                else
+                    loa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
+
+                this.dataGridXoaSanPham.Rows.Add(chiTietDongLaptop.BDeleted, false,
+                    chiTietDongLaptop.IMaDongLaptop.ToString(),
+                    chiTietDongLaptop.STenChiTietDongLapTop,
+                    chiTietDongLaptop.ChiTietDongRam.STenDongRAM,
+                    chiTietDongLaptop.ChiTietDongCPU.STenDongCPU,
+                    chiTietDongLaptop.ChiTietDongManHinh.STenDongManHinh,
+                    chiTietDongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + chiTietDongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa,
+                    loa,
+                    chiTietDongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang,
+                    chiTietDongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang,
+                    chiTietDongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader,
+                    " độ phân giải " + chiTietDongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString("0.00") + "MG pixel",
+                    chiTietDongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin,
+                    chiTietDongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh,
+                    chiTietDongLaptop.ChiTietTrongLuong.FGiaTriTrongLuong.ToString("0.00") + " kg",
+                    chiTietDongLaptop.SMauSac, fingerPrintReader, hDMI,
+                    chiTietDongLaptop.ISoLuongCongUSB.ToString() + " cổng",
+                    chiTietDongLaptop.NhaSanXuat.STenNhaSanXuat,
+                    chiTietDongLaptop.DanhGia.ITongDiem.ToString() + " điểm",
+                    chiTietDongLaptop.FGiaBanHienHanh.ToString(),
+                    chiTietDongLaptop.ISoLuongNhap.ToString(),
+                    chiTietDongLaptop.ISoLuongConLai.ToString(),
+                    chiTietDongLaptop.IThoiGianBaoHanh.ToString() + " tháng");
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi khi thêm dữ liệu vào data grid view", "Thông báo");
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
         /// Ham khoi tao lai DataGirdViewXoaSanPham
         /// </summary>
-        private void ResetDataGridView()
+        public bool ResetDataGridView()
         {
             int soLuongLaptop = 0;
             int soLuongLaptopDaXoa = 0;
-            IsCheckLoadFinished = false;
+            m_bLoadFinished = false;
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
@@ -79,72 +157,32 @@ namespace TUVANLAPTOP
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLapTop)
                 {
                     soLuongLaptop++;
-                    string sFingerprintReader;
-                    string sLoa;
-                    string sHDMI;
-
                     if (chiTietDongLaptop.BDeleted)
                     {
                         soLuongLaptopDaXoa++;
                         continue;
                     }
 
-                    if (chiTietDongLaptop.BFingerprintReader == 1)
-                        sFingerprintReader = "Có";
-                    else
-                        sFingerprintReader = "Không";
-                    //HDMI:
-                    if (chiTietDongLaptop.BHDMI == 1)
-                        sHDMI = "Có";
-                    else
-                        sHDMI = "Không";
-
-                    //Loa:
-                    if (chiTietDongLaptop.ChiTietDongLoa.BCoMicro == 1)
-                        sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
-                    else
-                        sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
-
-                    this.dataGridXoaSanPham.Rows.Add(chiTietDongLaptop.BDeleted, false,
-                        chiTietDongLaptop.IMaDongLaptop.ToString(),
-                        chiTietDongLaptop.STenChiTietDongLapTop,
-                        chiTietDongLaptop.ChiTietDongRam.STenDongRAM,
-                        chiTietDongLaptop.ChiTietDongCPU.STenDongCPU,
-                        chiTietDongLaptop.ChiTietDongManHinh.STenDongManHinh,
-                        chiTietDongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + chiTietDongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa,
-                        sLoa,
-                        chiTietDongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang,
-                        chiTietDongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang,
-                        chiTietDongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader,
-                        " độ phân giải " + chiTietDongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString("0.00") + "MG pixel",
-                        chiTietDongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin,
-                        chiTietDongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh,
-                        chiTietDongLaptop.ChiTietTrongLuong.FGiaTriTrongLuong.ToString("0.00") + " kg",
-                        chiTietDongLaptop.SMauSac, sFingerprintReader, sHDMI,
-                        chiTietDongLaptop.ISoLuongCongUSB.ToString() + " cổng",
-                        chiTietDongLaptop.NhaSanXuat.STenNhaSanXuat,
-                        chiTietDongLaptop.DanhGia.ITongDiem.ToString() + " điểm",
-                        chiTietDongLaptop.FGiaBanHienHanh.ToString(),
-                        chiTietDongLaptop.ISoLuongNhap.ToString(),
-                        chiTietDongLaptop.ISoLuongConLai.ToString(),
-                        chiTietDongLaptop.IThoiGianBaoHanh.ToString() + " tháng");
+                    AddDataIntoDataGridView(chiTietDongLaptop);
                 }
                 if (soLuongLaptopDaXoa == soLuongLaptop)
                     checkAll.Checked = true;
                 else checkAll.Checked = false;
-                IsCheckLoadFinished = true;
+                m_bLoadFinished = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Notice");
+                return false;
             }
+            return true;
         }
 
         /// <summary>
         /// Ham lay danh sach MaDongLaptop de xoa
         /// </summary>
         /// <returns> mang cac so nguyen</returns>
-        private List<int> LayDanhSachMaDongLaptop()
+        public List<int> LayDanhSachMaDongLaptop()
         {
             List<int> danhSachMaDongLaptop = new List<int>();
 
@@ -171,6 +209,8 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void btn_OK_Click(object sender, EventArgs e)
         {
+            try
+            {
             List<int> danhSachMaLaptopXoa = LayDanhSachMaDongLaptop();
             if (0 == danhSachMaLaptopXoa.Count)
             {
@@ -180,8 +220,7 @@ namespace TUVANLAPTOP
 
             if (MessageBox.Show("Bạn có muốn xóa/bỏ xóa những sản phẩm này?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.No)
                 return;
-            try
-            {
+          
                 bool bKetQua = myChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaLaptopXoa);
                 if (bKetQua)
                 {
@@ -200,10 +239,10 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Ham xu ly khi click vao button Search
         /// </summary>
-        int maChiTietDongLaptop;
         private void btn_search_Click(object sender, EventArgs e)
         {
-            IsCheckLoadFinished = false;
+            int maChiTietDongLaptop = 0;
+            m_bLoadFinished = false;
 
             if (textBox_MaSanPham.Text == "")
             {
@@ -217,51 +256,9 @@ namespace TUVANLAPTOP
                     maChiTietDongLaptop = int.Parse(textBox_MaSanPham.Text);
                     myChiTietDongLaptopDTO chiTietDongLaptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(maChiTietDongLaptop);
                     if (chiTietDongLaptop != null)
-                    {
-                        string sFingerprintReader;
-                        string sLoa;
-                        string sHDMI;
-                        if (chiTietDongLaptop.BFingerprintReader == 1)
-                            sFingerprintReader = "Có";
-                        else
-                            sFingerprintReader = "Không";
-                        //HDMI:
-                        if (chiTietDongLaptop.BHDMI == 1)
-                            sHDMI = "Có";
-                        else
-                            sHDMI = "Không";
-
-                        //Loa:
-                        if (chiTietDongLaptop.ChiTietDongLoa.BCoMicro == 1)
-                            sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
-                        else
-                            sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
-
-                        this.dataGridXoaSanPham.Rows.Add(chiTietDongLaptop.BDeleted, false,
-                            chiTietDongLaptop.IMaDongLaptop.ToString(),
-                            chiTietDongLaptop.STenChiTietDongLapTop,
-                            chiTietDongLaptop.ChiTietDongRam.STenDongRAM,
-                            chiTietDongLaptop.ChiTietDongCPU.STenDongCPU,
-                            chiTietDongLaptop.ChiTietDongManHinh.STenDongManHinh,
-                            chiTietDongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + chiTietDongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa,
-                            sLoa,
-                            chiTietDongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang,
-                            chiTietDongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang,
-                            chiTietDongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader,
-                            " độ phân giải " + chiTietDongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString("0.00") + "MG pixel",
-                            chiTietDongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin,
-                            chiTietDongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh,
-                            chiTietDongLaptop.ChiTietTrongLuong.FGiaTriTrongLuong.ToString("0.00") + " kg",
-                            chiTietDongLaptop.SMauSac, sFingerprintReader, sHDMI,
-                            chiTietDongLaptop.ISoLuongCongUSB.ToString() + " cổng",
-                            chiTietDongLaptop.NhaSanXuat.STenNhaSanXuat,
-                            chiTietDongLaptop.DanhGia.ITongDiem.ToString() + " điểm",
-                            chiTietDongLaptop.FGiaBanHienHanh.ToString(),
-                            chiTietDongLaptop.ISoLuongNhap.ToString(),
-                            chiTietDongLaptop.ISoLuongConLai.ToString(),
-                            chiTietDongLaptop.IThoiGianBaoHanh.ToString() + " tháng");
-                    }
-                    IsCheckLoadFinished = true;
+                        AddDataIntoDataGridView(chiTietDongLaptop);
+ 
+                    m_bLoadFinished = true;
                 }
                 catch (Exception ex)
                 {
@@ -291,7 +288,7 @@ namespace TUVANLAPTOP
         private void dataGridXoaSanPham_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             // Xet de de tranh voi luc' load form len
-            if (!IsCheckLoadFinished)
+            if (!m_bLoadFinished)
                 return;
 
             //Neu thay doi cot "DeletedState" moi xet
@@ -310,59 +307,15 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void btn_ShowAll_Click(object sender, EventArgs e)
         {
-            IsCheckLoadFinished = false;
+            m_bLoadFinished = false;
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
                 List<myChiTietDongLaptopDTO> danhSachChiTietDongLaptop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLaptop)
-                {
-                    string sFingerprintReader;
-                    string sLoa;
-                    string sHDMI;
+                    AddDataIntoDataGridView(chiTietDongLaptop);
 
-                    if (chiTietDongLaptop.BFingerprintReader == 1)
-                        sFingerprintReader = "Có";
-                    else
-                        sFingerprintReader = "Không";
-                    //HDMI:
-                    if (chiTietDongLaptop.BHDMI == 1)
-                        sHDMI = "Có";
-                    else
-                        sHDMI = "Không";
-
-                    //Loa:
-                    if (chiTietDongLaptop.ChiTietDongLoa.BCoMicro == 1)
-                        sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (có Micro)";
-                    else
-                        sLoa = chiTietDongLaptop.ChiTietDongLoa.STenDongLoa + " (không có Micro)";
-
-                    this.dataGridXoaSanPham.Rows.Add(chiTietDongLaptop.BDeleted, false,
-                        chiTietDongLaptop.IMaDongLaptop.ToString(),
-                        chiTietDongLaptop.STenChiTietDongLapTop,
-                        chiTietDongLaptop.ChiTietDongRam.STenDongRAM,
-                        chiTietDongLaptop.ChiTietDongCPU.STenDongCPU,
-                        chiTietDongLaptop.ChiTietDongManHinh.STenDongManHinh,
-                        chiTietDongLaptop.ChiTietDongCacDoHoa.STenDongCardDoHoa + "  " + chiTietDongLaptop.ChiTietDongCacDoHoa.ChiTietBoNhoCardDoHoa.STenChiTietCardDoHoa,
-                        sLoa,
-                        chiTietDongLaptop.ChiTietDongODiaQuang.STenDongODiaQuang,
-                        chiTietDongLaptop.ChiTietDongCardMang.ChiTietLoaiKetNoiMang.STenLoaiKetNoiCardMang,
-                        chiTietDongLaptop.ChiTietDongCardReader.ChiTietCongNgheCardReader.STenCongNgheCardReader,
-                        " độ phân giải " + chiTietDongLaptop.ChiTietDongWebCam.FDoPhanGiai.ToString("0.00") + "MG pixel",
-                        chiTietDongLaptop.ChiTietDongPin.ChiTietThoiLuongPin.STenThoiLuongPin,
-                        chiTietDongLaptop.ChiTietHeDieuHanh.STenHeDieuHanh,
-                        chiTietDongLaptop.ChiTietTrongLuong.FGiaTriTrongLuong.ToString("0.00") + " kg",
-                        chiTietDongLaptop.SMauSac, sFingerprintReader, sHDMI,
-                        chiTietDongLaptop.ISoLuongCongUSB.ToString() + " cổng",
-                        chiTietDongLaptop.NhaSanXuat.STenNhaSanXuat,
-                        chiTietDongLaptop.DanhGia.ITongDiem.ToString() + " điểm",
-                        chiTietDongLaptop.FGiaBanHienHanh.ToString(),
-                        chiTietDongLaptop.ISoLuongNhap.ToString(),
-                        chiTietDongLaptop.ISoLuongConLai.ToString(),
-                        chiTietDongLaptop.IThoiGianBaoHanh.ToString() + " tháng");
-                }
-
-                IsCheckLoadFinished = true;
+                m_bLoadFinished = true;
             }
             catch (Exception ex)
             {
@@ -370,23 +323,27 @@ namespace TUVANLAPTOP
             }
         }
 
+        /// <summary>
+        /// Ham xu ly khi click vao button Thoat
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        /// <summary>
+        /// Ham xu ly khong cho nhap ky tu la chu cai vao textBox_MaSanPham
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox_MaSanPham_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }
-        }
-
-        private void btn_Update_Click(object sender, EventArgs e)
-        {
-            CAPNHATDULIEUKHACHHANG frm = new CAPNHATDULIEUKHACHHANG();
-            frm.ShowDialog();
         }
     }
 }
