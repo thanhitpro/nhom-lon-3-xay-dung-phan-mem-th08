@@ -27,7 +27,31 @@ namespace TUVANLAPTOP
         /// <param name="e"></param>
         private void THEMSANPHAM_Load(object sender, EventArgs e)
         {
-            // Load Ram
+            LoadRAM();
+            LoadCPU();
+            LoadOCung();
+            LoadManHinh();
+            LoadCardManHinh();
+            LoadDongLoa();
+            LoadODiaQuang();
+            LoadHeDieuHanh();
+            LoadTrongLuong();
+            LoadTenVaMauSac();
+            LoadCardMang();
+            LoadCardReader();
+            LoadWebcam();
+            LoadPin();
+            LoadKhaNangNhanDangVanTay();
+            LoadCongHDMI();
+            LoadSoCongUSB();
+            LoadNhaSX();
+        }
+
+        /// <summary>
+        /// load RAM từ csdl lên form
+        /// </summary>
+        private void LoadRAM()
+        {
             myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
 
@@ -47,8 +71,13 @@ namespace TUVANLAPTOP
             }
             comboBox_Ram.DisplayMember = "STenDongRAM";
             comboBox_Ram.SelectedItem = comboBox_Ram.Items[0];
+        }
 
-            // Load CPU
+        /// <summary>
+        /// load CPU từ csdl lên form
+        /// </summary>
+        private void LoadCPU()
+        {
             myChiTietDongCPUBUS chiTietDongCPU = new myChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
 
@@ -66,8 +95,13 @@ namespace TUVANLAPTOP
                 comboBox_CPU.Items.Add(cpu);
             comboBox_CPU.DisplayMember = "STenDongCPU";
             comboBox_CPU.SelectedItem = comboBox_CPU.Items[0];
+        }
 
-            // Load O Cung
+        /// <summary>
+        /// load ổ cứng từ csdl lên form
+        /// </summary>
+        private void LoadOCung()
+        {
             myChiTietDongOCungBUS chiTietDongOCung = new myChiTietDongOCungBUS();
             List<myChiTietDongOCungDTO> dsDongOCung = new List<myChiTietDongOCungDTO>();
 
@@ -85,8 +119,13 @@ namespace TUVANLAPTOP
                 comboBox_HardDisk.Items.Add(ocung);
             comboBox_HardDisk.DisplayMember = "STenDongOCung";
             comboBox_HardDisk.SelectedItem = comboBox_HardDisk.Items[0];
+        }
 
-            // Load Man Hinh
+        /// <summary>
+        /// load màn hình từ csdl lên form
+        /// </summary>
+        private void LoadManHinh()
+        {
             myChiTietDongManHinhBUS chiTietManHinh = new myChiTietDongManHinhBUS();
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
 
@@ -107,8 +146,13 @@ namespace TUVANLAPTOP
 
             comboBox_ManHinh.DisplayMember = "STenDongManHinh";
             comboBox_ManHinh.SelectedItem = comboBox_ManHinh.Items[0];
+        }
 
-            // Load Card Man Hinh
+        /// <summary>
+        /// load card màn hình từ csdl lên form
+        /// </summary>
+        private void LoadCardManHinh()
+        {
             myChiTietDongCardDoHoaBUS chiTietCardDoHoa = new myChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
             try
@@ -125,8 +169,13 @@ namespace TUVANLAPTOP
 
             comboBox_CardManHinh.DisplayMember = "STenDongCardDoHoa";
             comboBox_CardManHinh.SelectedItem = comboBox_CardManHinh.Items[0];
+        }
 
-            // Load Dong Loa
+        /// <summary>
+        /// load dòng loa từ csdl lên form
+        /// </summary>
+        private void LoadDongLoa()
+        {
             myChiTietDongLoaBUS chiTietDongLoa = new myChiTietDongLoaBUS();
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
             try
@@ -143,8 +192,13 @@ namespace TUVANLAPTOP
 
             comboBox_Loa.DisplayMember = "STenDongLoa";
             comboBox_Loa.SelectedItem = comboBox_Loa.Items[0];
+        }
 
-            // Load O Quang
+        /// <summary>
+        /// load ổ đĩa quang từ csdl lên form
+        /// </summary>
+        private void LoadODiaQuang()
+        {
             myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
             try
@@ -160,8 +214,13 @@ namespace TUVANLAPTOP
                 comboBox_ODiaQuang.Items.Add(diaquang);
             comboBox_ODiaQuang.DisplayMember = "STenDongODiaQuang";
             comboBox_ODiaQuang.SelectedItem = comboBox_ODiaQuang.Items[0];
+        }
 
-            //Load HDH
+        /// <summary>
+        /// load hệ điều hành từ csdl lên form
+        /// </summary>
+        private void LoadHeDieuHanh()
+        {
             myChiTietHeDieuHanhBUS chiTietHDH = new myChiTietHeDieuHanhBUS();
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
             try
@@ -178,7 +237,13 @@ namespace TUVANLAPTOP
 
             comboBox_HeDieuHanh.DisplayMember = "STenHeDieuHanh";
             comboBox_HeDieuHanh.SelectedItem = comboBox_HeDieuHanh.Items[0];
-            //Load Trong Luong
+        }
+
+        /// <summary>
+        /// load trọng lượng từ csdl lên form
+        /// </summary>
+        private void LoadTrongLuong()
+        {
             myChiTietTrongLuongBUS chiTietTL = new myChiTietTrongLuongBUS();
             List<myChiTietTrongLuongDTO> dsTrongLuong = new List<myChiTietTrongLuongDTO>();
             try
@@ -194,9 +259,13 @@ namespace TUVANLAPTOP
                 comboBox_TrongLuong.Items.Add(tl);
             comboBox_TrongLuong.DisplayMember = "FGiaTriTrongLuong";
             comboBox_TrongLuong.SelectedItem = comboBox_TrongLuong.Items[0];
+        }
 
-            //Load Ten Dong LapTop & Mau Sac & Thoi Gian Bao Hanh & Gia Ban
-
+        /// <summary>
+        /// load tên, màu sắc, giá tiền từ csdl lên form
+        /// </summary>
+        private void LoadTenVaMauSac()
+        {
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
             {
@@ -241,8 +310,13 @@ namespace TUVANLAPTOP
                 MessageBox.Show(ex.Message, "Notice");
                 this.Close();
             }
-             
-            //Load Card Mạng
+        }
+
+        /// <summary>
+        /// load card mạng từ csdl lên form
+        /// </summary>
+        private void LoadCardMang()
+        {
             myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
             try
@@ -260,8 +334,13 @@ namespace TUVANLAPTOP
             }
             comboBox_CardMang.DisplayMember = "STenDongCardMang";
             comboBox_CardMang.SelectedItem = comboBox_CardMang.Items[0];
+        }
 
-            //Load CardReader
+        /// <summary>
+        /// load card reader từ csdl lên form
+        /// </summary>
+        private void LoadCardReader()
+        {
             myChiTietDongCardReaderBUS chiTietCardReader = new myChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
             try
@@ -277,8 +356,13 @@ namespace TUVANLAPTOP
                 comboBox_CardReader.Items.Add(cardreader);
             comboBox_CardReader.DisplayMember = "STenDongCardReader";
             comboBox_CardReader.SelectedItem = comboBox_CardReader.Items[0];
+        }
 
-            //Load WebCam
+        /// <summary>
+        /// load webcam từ csdl lên form
+        /// </summary>
+        private void LoadWebcam()
+        {
             myChiTietDongWebcamBUS chiTietWebCam = new myChiTietDongWebcamBUS();
             List<myChiTietDongWebcamDTO> dsWebcam = new List<myChiTietDongWebcamDTO>();
             try
@@ -294,8 +378,13 @@ namespace TUVANLAPTOP
                 comboBox_Webcam.Items.Add(webcam);
             comboBox_Webcam.DisplayMember = "STenDongWebCam";
             comboBox_Webcam.SelectedItem = comboBox_Webcam.Items[0];
+        }
 
-            //Load Pin
+        /// <summary>
+        /// load pin từ csdl lên form
+        /// </summary>
+        private void LoadPin()
+        {
             myChiTietDongPinBUS chiTietPin = new myChiTietDongPinBUS();
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
             try
@@ -311,25 +400,45 @@ namespace TUVANLAPTOP
                 comboBox_Pin.Items.Add(pin);
             comboBox_Pin.DisplayMember = "FTenDongPin";
             comboBox_Pin.SelectedItem = comboBox_Pin.Items[0];
+        }
 
-            //Load Kha Nang Nhan Dang Van Tay
+        /// <summary>
+        /// load khả năng nhận dạng vân tay từ csdl lên form
+        /// </summary>
+        private void LoadKhaNangNhanDangVanTay()
+        {
             comboBox_NhanDangVanTay.Items.Add("Có");
             comboBox_NhanDangVanTay.Items.Add("Không");
             comboBox_NhanDangVanTay.SelectedItem = comboBox_NhanDangVanTay.Items[0];
+        }
 
-            //Load Cong HDMI
+        /// <summary>
+        /// load cổng HDMI từ csdl lên form
+        /// </summary>
+        private void LoadCongHDMI()
+        {
             comboBox_HDMI.Items.Add("Có");
             comboBox_HDMI.Items.Add("Không");
             comboBox_HDMI.SelectedItem = comboBox_HDMI.Items[0];
+        }
 
-            // Load So Cong USB
+        /// <summary>
+        /// load cổng usb từ csdl lên form
+        /// </summary>
+        private void LoadSoCongUSB()
+        {
             comboBox_SoCongUSB.Items.Add("1");
             comboBox_SoCongUSB.Items.Add("2");
             comboBox_SoCongUSB.Items.Add("3");
             comboBox_SoCongUSB.Items.Add("4");
             comboBox_SoCongUSB.SelectedItem = comboBox_SoCongUSB.Items[0];
+        }
 
-            // Load Nha SX
+        /// <summary>
+        /// load nhà sx từ csdl lên form
+        /// </summary>
+        private void LoadNhaSX()
+        {
             myNhaSanXuatBUS nhaSX = new myNhaSanXuatBUS();
             List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
             try
@@ -349,6 +458,7 @@ namespace TUVANLAPTOP
             comboBox_NhaSanXuat.SelectedItem = comboBox_NhaSanXuat.Items[0];
         }
 
+
         /// <summary>
         /// Ham xu ly khi click vao button ThemSanPham
         /// </summary>
@@ -357,12 +467,33 @@ namespace TUVANLAPTOP
         private void button_OK_ThemSanPham_Click(object sender, EventArgs e)
         {
             CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
+            dongLaptopMoi = LayThongTinLaptopMoi();
+
+            if (ThemSanPhamMoi(dongLaptopMoi))
+            {
+                MessageBox.Show("Thêm sản phẩm mới thành công", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Thêm sản phẩm mới thất bại");
+            }
+
+            
+        }
+
+        /// <summary>
+        /// lấy thông tin laptop mới từ form
+        /// </summary>
+        /// <returns>trả về một laptop mới</returns>
+        private CHITIETDONGLAPTOP LayThongTinLaptopMoi()
+        {
+            CHITIETDONGLAPTOP dongLaptopMoi = new CHITIETDONGLAPTOP();
             //tên dòng laptop
             if ((this.textBox_TenDongLapTop.Text.Trim().Length < 5) || (this.textBox_TenDongLapTop.Text.Trim().Length > 30))
             {
                 MessageBox.Show("Tên dòng laptop có chiều dài từ 5 đến 30 ký tự");
                 textBox_TenDongLapTop.Focus();
-                return;
+                return null;
             }
             else
             {
@@ -415,8 +546,8 @@ namespace TUVANLAPTOP
             }
             catch
             {
-                MessageBox.Show("Thời gian bảo hành phải là 1 con số","Thông báo");
-                return;
+                MessageBox.Show("Thời gian bảo hành phải là 1 con số", "Thông báo");
+                return null;
             }
 
             //giá hiện hành
@@ -425,14 +556,17 @@ namespace TUVANLAPTOP
                 double giaHienHanh = 0f;
                 giaHienHanh = double.Parse(textBox_giaTienTrieu.Text);
                 giaHienHanh *= 1000;
-                giaHienHanh += double.Parse(textBox_giaTienTramNgan.Text);
+                if (textBox_giaTienTramNgan.Text.Length != 0)
+                {
+                    giaHienHanh += double.Parse(textBox_giaTienTramNgan.Text);
+                }
                 dongLaptopMoi.GiaBanHienHanh = giaHienHanh;
             }
             catch
             {
-                MessageBox.Show("Giá tiền phải là số không chứa chữ","Thông báo");
+                MessageBox.Show("Giá tiền phải là số không chứa chữ", "Thông báo");
                 textBox_giaTienTrieu.Focus();
-                return;
+                return null;
             }
 
             //card mạng
@@ -481,9 +615,9 @@ namespace TUVANLAPTOP
             }
             else
             {
-                MessageBox.Show("Mô tả thêm dài hơn 512 ký tự, xin nhập lại","Thông báo");
+                MessageBox.Show("Mô tả thêm dài hơn 512 ký tự, xin nhập lại", "Thông báo");
                 richTextBox_moTaThem.Focus();
-                return;
+                return null;
             }
 
             //số lượng nhập và số lượng còn lại
@@ -495,9 +629,9 @@ namespace TUVANLAPTOP
             }
             catch
             {
-                MessageBox.Show("Số lượng nhập phải là số nguyên!","Thông báo");
+                MessageBox.Show("Số lượng nhập phải là số nguyên!", "Thông báo");
                 textBox_soLuongNhap.Focus();
-                return;
+                return null;
             }
 
             //ngày nhập
@@ -507,25 +641,36 @@ namespace TUVANLAPTOP
             // đường dẫn file hình ảnh
             if (fileName == "")
             {
-                MessageBox.Show("Chưa chọn file hình ảnh laptop!","Thông báo");
-                return;
+                MessageBox.Show("Chưa chọn file hình ảnh laptop!", "Thông báo");
+                return null;
             }
             else
             {
                 dongLaptopMoi.HinhAnh = fileName;
             }
 
+            return dongLaptopMoi;
+        }
+
+        /// <summary>
+        /// thêm một laptop mới vào cơ sở dữ liệu
+        /// </summary>
+        /// <param name="dongLaptopMoi"></param>
+        /// <returns>true: thêm thành công - false: thêm thất bại</returns>
+        private bool ThemSanPhamMoi(CHITIETDONGLAPTOP dongLaptopMoi)
+        {
             try
             {
                 myChiTietDongLaptopBUS.ThemMoiChiTietDongLaptop(dongLaptopMoi);
-                MessageBox.Show("Thêm sản phẩm mới thành công","Thông báo");
                 fileName = "";
             }
             catch
             {
-                MessageBox.Show("Thêm sản phẩm mới thất bại");
+                return false;
             }
+            return true;
         }
+
 
         /// <summary>
         /// Ham xu ly textbox_giaTienTrieu chi duoc nhap ky tu so
@@ -670,7 +815,7 @@ namespace TUVANLAPTOP
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Notice");
+                //MessageBox.Show(ex.Message, "Notice");
                 return false;
             }
         }
