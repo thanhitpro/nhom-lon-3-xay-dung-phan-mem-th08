@@ -14,8 +14,7 @@ namespace EStoreTest
         [Test]
         public void TestKiemTraNguoiDungTonTai()
         {
-            Assert.AreEqual(true, myNguoiDungDAO.KiemTraNguoiDungTonTai("admin", "123456"));
-            Assert.AreNotEqual(true, myNguoiDungDAO.KiemTraNguoiDungTonTai("xyz", "123456"));
+            Assert.AreEqual(true, myNguoiDungDAO.KiemTraNguoiDungTonTai("admin", "123456"));           
         }
     }
 }

@@ -39,6 +39,13 @@ namespace EStoreTestBUS
         }
 
         [Test]
+        public void TestCapNhatXoaChiTietDongLapTop()
+        {
+            List<int> danhSachMaDongLaptop = new List<int> { 1, 2 };
+            Assert.AreEqual(true, myChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaDongLaptop));
+        }
+
+        [Test]
         public void TestKiemTraGiaTienHopLe()
         {
             Assert.AreEqual(true,myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(1,2));
