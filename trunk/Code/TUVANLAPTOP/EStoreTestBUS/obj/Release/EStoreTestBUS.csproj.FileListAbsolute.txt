@@ -31,3 +31,17 @@ E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 E:\Studying\Projects\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb

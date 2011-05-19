@@ -196,3 +196,14 @@ E:\Studying\Projects\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
 E:\Studying\Projects\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 E:\Studying\Projects\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 E:\Studying\Projects\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE.mdf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ESTORE_log.ldf
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+D:\Group3_1\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
