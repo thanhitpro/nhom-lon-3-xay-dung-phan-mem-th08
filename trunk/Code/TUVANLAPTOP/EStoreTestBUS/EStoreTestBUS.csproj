@@ -31,8 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Xml.Linq">
@@ -45,7 +52,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="myTestChiTietBoNhoCardDoHoaBUS.cs" />
+    <Compile Include="myTestChiTietBoNhoRamBUS.cs" />
+    <Compile Include="myTestChiTietCongNgheCPU.cs" />
+    <Compile Include="myTestChiTietCongNgheRamBUS.cs" />
+    <Compile Include="myTestChiTietDongCardDoHoaBUS.cs" />
+    <Compile Include="myTestChiTietDongCardMangBUS.cs" />
+    <Compile Include="myTestChiTietDongCardReaderBUS.cs" />
+    <Compile Include="myTestChiTietDongCPUBUS.cs" />
+    <Compile Include="myTestChiTietDongLaptopBUS.cs" />
+    <Compile Include="myTestChiTietDungLuongOCungBUS.cs" />
+    <Compile Include="myTestChiTietHeDieuHanhBUS.cs" />
+    <Compile Include="myTestChiTietKichThuocManHinhBUS.cs" />
+    <Compile Include="myTestChiTietVongQuayOCungBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EStoreBUS\EStoreBUS.csproj">
+      <Project>{8B6BFF8E-0410-4FF2-A891-838FFFB3B14C}</Project>
+      <Name>EStoreBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreDAO\EStoreDAO.csproj">
+      <Project>{37E6FD17-D704-448D-9376-57BC1F7F1E43}</Project>
+      <Name>EStoreDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreDTO\EStoreDTO.csproj">
+      <Project>{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}</Project>
+      <Name>EStoreDTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

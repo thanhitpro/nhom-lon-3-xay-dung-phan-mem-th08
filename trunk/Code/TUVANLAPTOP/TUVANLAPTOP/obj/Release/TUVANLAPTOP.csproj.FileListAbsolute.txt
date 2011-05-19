@@ -580,3 +580,4 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources

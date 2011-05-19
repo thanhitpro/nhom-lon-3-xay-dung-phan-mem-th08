@@ -18,13 +18,13 @@ namespace EStoreTest
             bn.FHeSo = (float)1.0;
             bn.STenChiTietCardDoHoa = "Lớn hơn 2GB";
 
+            myChiTietBoNhoCardDoHoaDAO myChiTietBoNhoCardDoHoaDAO = new myChiTietBoNhoCardDoHoaDAO();
             Assert.AreEqual(true, myChiTietBoNhoCardDoHoaDAO.ThemBoNhoCardMH(bn));
 
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
-
             int maMax = m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.Max(it => it.MaChiTietBoNhoCardDoHoa);
-
-            m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.DeleteOnSubmit(m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.Single(it => it.MaChiTietBoNhoCardDoHoa == maMax));
+            CHITIETBONHOCARDDOHOA chiTietBoNhoCardDoHoa = m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.Single(it => it.MaChiTietBoNhoCardDoHoa == maMax);
+            m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.DeleteOnSubmit(chiTietBoNhoCardDoHoa);
             m_eStoreDataContext.SubmitChanges();
         }
     }

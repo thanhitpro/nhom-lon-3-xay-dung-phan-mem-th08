@@ -11,7 +11,10 @@ namespace EStoreBUS
         /// <summary>
         /// Lấy danh sách kích thước màn hình
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách kích thước màn hình hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietKichThuocManHinhDTO> LayDSKichThuocManHinh()
         {
             try
@@ -27,8 +30,11 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm mới kích thước màn hình
         /// </summary>
-        /// <param name="_mKichThuoc"></param>
-        /// <returns></returns>
+        /// <param name="_mKichThuoc">Đối tượng ChiTietKichThuocManHinhDTO muốn thêm mới</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemMoiKichThuocMH(myChiTietKichThuocManHinhDTO _mKichThuoc)
         {
             try

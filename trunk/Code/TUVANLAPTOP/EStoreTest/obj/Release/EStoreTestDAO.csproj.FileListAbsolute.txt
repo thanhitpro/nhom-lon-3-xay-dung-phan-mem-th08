@@ -10,3 +10,15 @@ D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

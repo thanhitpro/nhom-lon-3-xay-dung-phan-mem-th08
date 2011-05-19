@@ -9,9 +9,12 @@ namespace EStoreBUS
     public class myChiTietDungLuongOCungBUS
     {
         /// <summary>
-        /// Lấy danh sách các dung lượng ổ cứng hiện có:
+        /// Lấy danh sách các dung lượng ổ cứng hiện có
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách các loại dung lượng ổ cứng hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietDungLuongOCungDTO> LayChiTietDungLuongOCung()
         {
             try

@@ -9,14 +9,6 @@ namespace EStoreBUS
     public class myChiTietHeDieuHanhBUS
     {
         /// <summary>
-        /// Lấy thông tin hệ điều hành dựa vào mã chi tiết HDH
-        /// </summary>
-        /// <param name="_iMaChiTietHeDieuHanh">mã chi tiết HDH</param>
-        /// <returns>Thông tin HDH</returns>
-        public myChiTietHeDieuHanhDTO LayChiTietHeDieuHanh(int _iMaChiTietHeDieuHanh)
-        { return null; }
-
-        /// <summary>
         /// Lấy thông tin tất cả các hệ điều hành
         /// </summary>
         /// <returns>Danh sách tất cả các HDH</returns>
@@ -51,7 +43,10 @@ namespace EStoreBUS
         /// <summary>
         /// Lấy danh sách hệ điều hành
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách các hệ điều hành hiện có
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietHeDieuHanhDTO> LayDSHeDieuHanh()
         {
             try
@@ -65,10 +60,13 @@ namespace EStoreBUS
         }
 
         /// <summary>
-        /// Thêm hệ điều hành
+        /// Thêm hệ điều hành mới
         /// </summary>
         /// <param name="_mHDH"></param>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemMoiHDH(myChiTietHeDieuHanhDTO _mHDH)
         {
             try

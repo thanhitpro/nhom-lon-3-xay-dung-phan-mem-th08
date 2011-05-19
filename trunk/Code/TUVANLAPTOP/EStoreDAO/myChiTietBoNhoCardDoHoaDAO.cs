@@ -1,33 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using EStoreDTO;
 
 namespace EStoreDAO
 {
     public class myChiTietBoNhoCardDoHoaDAO
     {
-        private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+        private DataClasses1DataContext storeDataContext = new DataClasses1DataContext();
 
         /// <summary>
         /// Lấy ds Bộ Nhớ Card MH
         /// </summary>
-        /// <returns></returns>
-        public static List<myChiTietBoNhoCardDoHoaDTO> LayDSBoNhoMH()
+        /// <returns>
+        ///     Nếu không xuất hiện lỗi trả về danh sách chi tiết bộ nhớ Card đồ họa. 
+        ///     Nếu có lỗi throw một exception.
+        ///</returns>
+        public List<myChiTietBoNhoCardDoHoaDTO> LayDSBoNhoMH()
         {
             try
             {
-                List<myChiTietBoNhoCardDoHoaDTO> dsBoNhoCardMH = new List<myChiTietBoNhoCardDoHoaDTO>();
-                foreach (CHITIETBONHOCARDDOHOA boNhoCardMH in m_eStoreDataContext.CHITIETBONHOCARDDOHOAs)
+                List<myChiTietBoNhoCardDoHoaDTO> listBoNhoCardMH = new List<myChiTietBoNhoCardDoHoaDTO>();
+                foreach (CHITIETBONHOCARDDOHOA chitTietBoNhoCardDoHoa in storeDataContext.CHITIETBONHOCARDDOHOAs)
                 {
-                    myChiTietBoNhoCardDoHoaDTO ctBoNhoCardMH = new myChiTietBoNhoCardDoHoaDTO();
-                    ctBoNhoCardMH.STenChiTietCardDoHoa = boNhoCardMH.TenChiTietBoNhoCardDoHoa;
-                    ctBoNhoCardMH.FHeSo = (float)boNhoCardMH.HeSo;
+                    myChiTietBoNhoCardDoHoaDTO myChiTietBoNhoCardDoHoaDTO = new myChiTietBoNhoCardDoHoaDTO();
+                    myChiTietBoNhoCardDoHoaDTO.STenChiTietCardDoHoa = chitTietBoNhoCardDoHoa.TenChiTietBoNhoCardDoHoa;
+                    myChiTietBoNhoCardDoHoaDTO.FHeSo = (float)chitTietBoNhoCardDoHoa.HeSo;
 
-                    dsBoNhoCardMH.Add(ctBoNhoCardMH);
+                    listBoNhoCardMH.Add(myChiTietBoNhoCardDoHoaDTO);
                 }
 
-                return dsBoNhoCardMH;
+                return listBoNhoCardMH;
             }
             catch
             {
@@ -38,18 +40,21 @@ namespace EStoreDAO
         /// <summary>
         /// Thêm bộ nhớ Card MH:
         /// </summary>
-        /// <param name="_mBoNhoCardMH"></param>
-        /// <returns></returns>
-        public static bool ThemBoNhoCardMH(myChiTietBoNhoCardDoHoaDTO _mBoNhoCardMH)
+        /// <param name="_mBoNhoCardMH">Đối tượng ChiTietBoNhoCarDoHoaDTO cần thêm</param>
+        /// <returns>
+        ///     Nếu thành công trả về true
+        ///     Nếu có lỗi throw một Exception
+        /// </returns>
+        public bool ThemBoNhoCardMH(myChiTietBoNhoCardDoHoaDTO myChiTietBoNhoCardCardDoHoaDTO)
         {
             try
             {
-                CHITIETBONHOCARDDOHOA ctBoNhoCardMH = new CHITIETBONHOCARDDOHOA();
-                ctBoNhoCardMH.TenChiTietBoNhoCardDoHoa = _mBoNhoCardMH.STenChiTietCardDoHoa;
-                ctBoNhoCardMH.HeSo = (float)_mBoNhoCardMH.FHeSo;
+                CHITIETBONHOCARDDOHOA chiTietBoNhoCardDoHoa = new CHITIETBONHOCARDDOHOA();
+                chiTietBoNhoCardDoHoa.TenChiTietBoNhoCardDoHoa = myChiTietBoNhoCardCardDoHoaDTO.STenChiTietCardDoHoa;
+                chiTietBoNhoCardDoHoa.HeSo = (float)myChiTietBoNhoCardCardDoHoaDTO.FHeSo;
 
-                m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.InsertOnSubmit(ctBoNhoCardMH);
-                m_eStoreDataContext.SubmitChanges();
+                storeDataContext.CHITIETBONHOCARDDOHOAs.InsertOnSubmit(chiTietBoNhoCardDoHoa);
+                storeDataContext.SubmitChanges();
 
                 return true;
             }

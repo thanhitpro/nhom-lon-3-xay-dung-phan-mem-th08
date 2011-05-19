@@ -55,7 +55,7 @@ namespace TUVANLAPTOP
 
         void LoadVongQuay()
         {
-            m_lVongQuayOCung = myChiTietVongQuayOCungBUS.LayChiTietVongQuayOCung();
+            m_lVongQuayOCung = myChiTietVongQuayOCungBUS.LayDanhSachChiTietVongQuayOCung();
 
             if (m_lVongQuayOCung.Count > 0)
             {
@@ -109,7 +109,7 @@ namespace TUVANLAPTOP
 
         void LoadBoNhoCardMH()
         {
-            m_lBoNhoCardMH = myChiTietBoNhoCardDoHoaBUS.LayChiTietBoNhoCarMH();
+            m_lBoNhoCardMH = myChiTietBoNhoCardDoHoaBUS.LayDanhSachChiTietBoNhoCardMH();
 
             if (m_lBoNhoCardMH != null && m_lBoNhoCardMH.Count > 0)
             {

@@ -9,10 +9,13 @@ namespace EStoreBUS
     public class myChiTietCongNgheCPUBUS
     {
         /// <summary>
-        /// Them Cong Nghe CPU:
+        /// Thêm công nghệ CPU
         /// </summary>
-        /// <param name="_mCongNgheCPU"></param>
-        /// <returns></returns>
+        /// <param name="_mCongNgheCPU">Đối tượng ChiTietCongNgheCPUDTO muốn thêm</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static int ThemCongNgheCPU(myChiTietCongNgheCPUDTO _mCongNgheCPU)
         {
             try
@@ -26,9 +29,12 @@ namespace EStoreBUS
         }
 
         /// <summary>
-        /// Lay DS Cong Nghe:
+        /// Lấy danh sách công nghệ CPU
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách các ChiTietCongNgheCPUDTO
+        ///     Thất bại: throw một exception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietCongNgheCPUDTO> LayDSCongNgheCPU()
         {
             try

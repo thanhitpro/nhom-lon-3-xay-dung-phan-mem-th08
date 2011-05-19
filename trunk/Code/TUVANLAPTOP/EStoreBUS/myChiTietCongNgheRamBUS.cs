@@ -10,9 +10,12 @@ namespace EStoreBUS
     public class myChiTietCongNgheRamBUS
     {
         /// <summary>
-        /// Lấy danh sách Công nghệ RAM:
+        /// Lấy danh sách Công nghệ RAM
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Thành công: trả về danh sách các ChiTietCongNgheRAMDTO
+        ///     Thất bại: throw một exeception cho tầng trên xử lý
+        /// </returns>
         public static List<myChiTietCongNgheRamDTO> LayChiTietCongNgheRam()
         {
             try
@@ -26,10 +29,13 @@ namespace EStoreBUS
         }
 
         /// <summary>
-        /// Thêm chi tiết công nghệ RAM:
+        /// Thêm chi tiết công nghệ RAM
         /// </summary>
-        /// <param name="_mCTRAM"></param>
-        /// <returns></returns>
+        /// <param name="_mCTRAM">ChiTietCongNgheRAM muốn thêm mới</param>
+        /// <returns>
+        ///     Thành công: trả về true
+        ///     Thất bại: throw một exeception cho tầng trên xử lý
+        /// </returns>
         public static bool ThemCongNgheRAM(myChiTietCongNgheRamDTO _mCNRAM)
         {
             try

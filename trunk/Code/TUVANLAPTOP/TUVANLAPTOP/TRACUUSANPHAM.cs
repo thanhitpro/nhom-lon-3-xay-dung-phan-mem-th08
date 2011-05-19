@@ -233,7 +233,7 @@ namespace TUVANLAPTOP
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
             {
-                dsLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop();
+                dsLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
             }
             catch 
             {
