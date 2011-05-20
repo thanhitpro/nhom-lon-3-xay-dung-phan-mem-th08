@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-<<<<<<< .mine
-  <Connection Mode="AppSettings" ConnectionString="Data Source=NGUYENHOANGTAM\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString17" Provider="System.Data.SqlClient" />
-=======
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString14" Provider="System.Data.SqlClient" />
->>>>>>> .r349
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ITFRIEND;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString15" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
