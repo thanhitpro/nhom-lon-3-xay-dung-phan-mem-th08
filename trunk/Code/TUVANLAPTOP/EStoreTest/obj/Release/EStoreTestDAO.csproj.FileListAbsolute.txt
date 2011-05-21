@@ -1,77 +1,12 @@
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-D:\Study\Xay dung PM\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-C:\Documents and Settings\WSThiet\Desktop\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
-<<<<<<< .mine
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
-=======
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-E:\Studying\Projects\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
->>>>>>> .r349
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
-D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

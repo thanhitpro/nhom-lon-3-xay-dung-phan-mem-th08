@@ -45,7 +45,8 @@ namespace TUVANLAPTOP
 
         private void CapNhat()
         {
-            AlgorithmNavasBayes.AnalyseData();
+            AlgorithmNavasBayes NavasBayes = new AlgorithmNavasBayes();
+            NavasBayes.AnalyseData();
             m_bFinish = true;
         }
 
