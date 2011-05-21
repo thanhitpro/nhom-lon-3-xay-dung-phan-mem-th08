@@ -69,7 +69,7 @@ namespace TUVANLAPTOP
 
         void LoadDLRAM()
         {
-            this.danhsachBoNhoRAM = myChiTietBoNhoRamBUS.LayChiTietBoNhoRam();          
+            this.danhsachBoNhoRAM = myChiTietBoNhoRamBUS.LayChiTietBoNhoRam();
             if (this.danhsachBoNhoRAM.Count > 0)
             {
                 txt_BoNhoHienCo.Text = string.Empty;
@@ -77,7 +77,7 @@ namespace TUVANLAPTOP
                 {
                     txt_BoNhoHienCo.Text += bn.STenChiTietBoNhoRam + ";  ";
                 }
-            }            
+            }
         }
 
         void LoadCNRAM()
@@ -220,9 +220,9 @@ namespace TUVANLAPTOP
             {
                 this.LoadManHinh();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Thông báo");
+                MessageBox.Show(ex.Message, "Thông báo");
             }
         }
 
