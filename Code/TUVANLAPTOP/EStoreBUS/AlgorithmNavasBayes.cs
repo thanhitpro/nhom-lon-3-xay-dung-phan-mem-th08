@@ -17,6 +17,13 @@ namespace EStoreBUS
            xmlDocument = new XmlDocument();
            xmlDocument.Load(FileName);         
         }
+
+        /// <summary>
+        /// Lưu file XML
+        /// </summary>
+        /// <returns>
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static void SaveFileXML(string FileName)
         {
             try
@@ -30,6 +37,14 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Tạo một node với tên thẻ, ID, tỉ lệ giao dịch và tỉ lệ không giao dịch
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node mới được tạo
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
         {
             XmlNode Node = xmlDocument.CreateElement(TenThe);
@@ -46,6 +61,16 @@ namespace EStoreBUS
             Node.Attributes.Append(xmlTyLeKhongGiaoDich);
             return Node;
         }
+
+        /// <summary>
+        /// Tạo một node có tên TY_LE_THEO_NGHE_NGHIEP
+        /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại nghề nghiệp sử dụng với dòng máy được đưa vào
+        /// Dựa trên danh sách các giao dịch được lưu
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node TY_LE_THEO_NGHE_NGHIEP
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
         {
             XmlNode TyLeTheoNgheNghiep = xmlDocument.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
@@ -93,7 +118,15 @@ namespace EStoreBUS
             return TyLeTheoNgheNghiep;
         }
 
-
+        /// <summary>
+        /// Tạo một node có tên TY_LE_THEO_MUC_DICH_SU_DUNG
+        /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại mục đích sử dụng với dòng máy được đưa vào
+        /// Dựa trên danh sách các giao dịch được lưu
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node TY_LE_THEO_MUC_DICH_SU_DUNG
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
         {
             XmlNode TyLeTheoMucDichSuDung = xmlDocument.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
@@ -140,7 +173,16 @@ namespace EStoreBUS
             }
             return TyLeTheoMucDichSuDung;
         }
-
+        
+        /// <summary>
+        /// Tạo một node có tên TY_LE_THEO_DO_TUOI
+        /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại độ tuổi với dòng máy được đưa vào
+        /// Dựa trên danh sách các giao dịch được lưu
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node TY_LE_THEO_DO_TUOI
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
         {
             XmlNode TyLeTheoDoTuoi = xmlDocument.CreateElement("TY_LE_THEO_DO_TUOI");
@@ -186,7 +228,16 @@ namespace EStoreBUS
             }
             return TyLeTheoDoTuoi;
         }
-
+       
+        /// <summary>
+        /// Tạo một node có tên TY_LE_THEO_TINH_THANH
+        /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại tỉnh thành với dòng máy được đưa vào
+        /// Dựa trên danh sách các giao dịch được lưu
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node TY_LE_THEO_TINH_THANH
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
         {
             XmlNode TyLeTheoTinhThanh = xmlDocument.CreateElement("TY_LE_THEO_TINH_THANH");
@@ -234,7 +285,15 @@ namespace EStoreBUS
             return TyLeTheoTinhThanh;
         }
 
-
+        /// <summary>
+        /// Tạo một node có tên TY_LE_THEO_GIOI_TINH
+        /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại giới tính với dòng máy được đưa vào
+        /// Dựa trên danh sách các giao dịch được lưu
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về Node TY_LE_THEO_GIOI_TINH
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         private static XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
         {
             XmlNode TyLeTheoGioiTinh = xmlDocument.CreateElement("TY_LE_THEO_GIOI_TINH");
@@ -286,6 +345,14 @@ namespace EStoreBUS
             return TyLeTheoGioiTinh;
         }
 
+        /// <summary>
+        /// Thực thi thuật toán bayes. Dữ liệu được lấy trong bảng giao dịch trong csdl
+        /// Thực hiện tính xác xuất từng yếu tố ảnh hưởng tới quyết định chọn dòng máy của khách hàng với mỗi dòng máy
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về file xml
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         public static void AnalyseData()
         {
            
