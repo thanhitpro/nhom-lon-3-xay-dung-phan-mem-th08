@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="myTestCAPNHATXOASANPHAM.cs" />
+    <Compile Include="myTestMANHINHCHINH.cs" />
     <Compile Include="myTestTHEMSANPHAM.cs" />
     <Compile Include="myTestUCSanPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

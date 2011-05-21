@@ -65,5 +65,20 @@ namespace EStoreTest
             }
             myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
         }
+
+        [Test]
+        public void LayChiTietDongLaptopMoiNhat_Test()
+        {
+            myChiTietDongLaptopDTO laptop1 = myChiTietDongLaptopDAO.LayChiTietDongLaptop(19);
+            myChiTietDongLaptopDTO laptop2 = myChiTietDongLaptopDAO.LayChiTietDongLaptop(20);
+            myChiTietDongLaptopDTO laptop3 = myChiTietDongLaptopDAO.LayChiTietDongLaptop(21);
+            List<myChiTietDongLaptopDTO> listLaptop = new List<myChiTietDongLaptopDTO>();
+            listLaptop.Add(laptop2);
+            listLaptop.Add(laptop3);
+
+            List<myChiTietDongLaptopDTO> listLaptopKetQua = new List<myChiTietDongLaptopDTO>();
+            listLaptop = myChiTietDongLaptopDAO.LayChiTietDongLaptopMoiNhat(laptop1);
+            Assert.AreEqual(listLaptopKetQua, listLaptopKetQua);
+        }
     }
 }

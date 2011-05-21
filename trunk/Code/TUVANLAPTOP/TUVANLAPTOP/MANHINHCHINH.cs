@@ -18,7 +18,7 @@ namespace TUVANLAPTOP
         //0: form Quan Ly Xoa San Pham
         //1: form Them San Pham
         List<int> m_lDanhSachIDSanPhamDuocChon = new List<int>();
-        private static KHACHHANG m_kKhachHang;
+        public static KHACHHANG m_kKhachHang;
         public static KHACHHANG KKhachHang
         {
             get { return MANHINHCHINH.m_kKhachHang; }
@@ -29,14 +29,14 @@ namespace TUVANLAPTOP
         {
             InitializeComponent();
         }
-        struct MyStruct
+        public struct MyStruct
         {
             public double gt;
             public int id;
         }
 
 
-        private void button_TuVanLapTop_Click(object sender, EventArgs e)
+        public void button_TuVanLapTop_Click(object sender, EventArgs e)
         {
             //Code thuật toán
 
@@ -96,7 +96,7 @@ namespace TUVANLAPTOP
 
             LayDuLieuTuForm(out IDNgheNghiep, out IDGioiTinh, out IDDoTuoi, out IDTinhThanh, out IDMucDich, out IDKhoangGia);
             
-            KhoiTaoKhachHang(IDNgheNghiep, IDDoTuoi, IDTinhThanh, IDMucDich);
+            KKhachHang = KhoiTaoKhachHang(IDNgheNghiep, IDDoTuoi, IDTinhThanh, IDMucDich);
             
             KhoiTaoXPath(IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich, out xPathNgheNghiep, out xPathGioiTinh, out xPathDoTuoi, out xPathTinhThanh, out xPathMucDich);
 
@@ -141,7 +141,7 @@ namespace TUVANLAPTOP
         ///     Thành công: trả về List MyStruct đã được sắp xếp tăng dần
         ///     Thất bại: throw một Exception ra màn hình
         /// </returns>
-        private List<MyStruct> SapXep(List<MyStruct> listSanPham)
+        public List<MyStruct> SapXep(List<MyStruct> listSanPham)
         {
             if (listSanPham == null)
             {
@@ -177,7 +177,7 @@ namespace TUVANLAPTOP
         ///     Thành công: trả về list phần tử kiểu MyStruct
         ///     Thất bại: throw một Exception ra màn hình
         /// </returns>
-        private List<MyStruct> ThuaNhanNaive(XmlNodeList nodeListTinhThanh, XmlNodeList nodeListNgheNghiep, XmlNodeList nodeListDoTuoi, XmlNodeList nodeListMucDich, XmlNodeList nodeListGioiTinh)
+        public List<MyStruct> ThuaNhanNaive(XmlNodeList nodeListTinhThanh, XmlNodeList nodeListNgheNghiep, XmlNodeList nodeListDoTuoi, XmlNodeList nodeListMucDich, XmlNodeList nodeListGioiTinh)
         {
             List<MyStruct> KetQua = new List<MyStruct>();
             for (int i = 0; i < nodeListNgheNghiep.Count; i++)
@@ -223,7 +223,7 @@ namespace TUVANLAPTOP
         ///     Thành công: lưu dữ liệu vào các node list được truyền vào
         ///     Thất bại: xuất message box exception gặp phải
         /// </returns>
-        private static void LayDuLieuTuFileXML(string xPathNgheNghiep, string xPathGioiTinh, string xPathDoTuoi, string xPathTinhThanh, string xPathMucDich, XmlDocument xmlDocument, out XmlNodeList nodeListNgheNghiep, out XmlNodeList nodeListDoTuoi, out XmlNodeList nodeListGioiTinh, out XmlNodeList nodeListMucDich, out XmlNodeList nodeListTinhThanh)
+        public void LayDuLieuTuFileXML(string xPathNgheNghiep, string xPathGioiTinh, string xPathDoTuoi, string xPathTinhThanh, string xPathMucDich, XmlDocument xmlDocument, out XmlNodeList nodeListNgheNghiep, out XmlNodeList nodeListDoTuoi, out XmlNodeList nodeListGioiTinh, out XmlNodeList nodeListMucDich, out XmlNodeList nodeListTinhThanh)
         {
                 string xPath = xPathNgheNghiep;
                 nodeListNgheNghiep = xmlDocument.SelectNodes(xPath);
@@ -243,7 +243,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: lưu dữ liệu vào các chuỗi được truyền vào
         /// </returns>
-        private static void KhoiTaoXPath(int IDNgheNghiep, int IDGioiTinh, int IDDoTuoi, int IDTinhThanh, int IDMucDich, out string xPathNgheNghiep, out string xPathGioiTinh, out string xPathDoTuoi, out string xPathTinhThanh, out string xPathMucDich)
+        public void KhoiTaoXPath(int IDNgheNghiep, int IDGioiTinh, int IDDoTuoi, int IDTinhThanh, int IDMucDich, out string xPathNgheNghiep, out string xPathGioiTinh, out string xPathDoTuoi, out string xPathTinhThanh, out string xPathMucDich)
         {
             xPathNgheNghiep = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_NGHE_NGHIEP/NGHE_NGHIEP/@TyLeGiaoDich[../@ID='" + IDNgheNghiep.ToString() + "']";
             xPathGioiTinh = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_GIOI_TINH/GIOI_TINH/@TyLeGiaoDich[../@ID='" + IDGioiTinh.ToString() + "']";
@@ -259,20 +259,22 @@ namespace TUVANLAPTOP
         ///     Thành công: Khởi tạo đối tượng khách hàng(biến toàn cục)
         ///     Thất bại: xuất message box exception gặp phải
         /// </returns>
-        private void KhoiTaoKhachHang(int IDNgheNghiep, int IDDoTuoi, int IDTinhThanh, int IDMucDich)
+        public KHACHHANG KhoiTaoKhachHang(int IDNgheNghiep, int IDDoTuoi, int IDTinhThanh, int IDMucDich)
         {
+            KHACHHANG khach = new KHACHHANG();
             try
             {
-                KKhachHang.MaDoTuoi = IDDoTuoi;
-                KKhachHang.MaMucDichSuDung = IDMucDich;
-                KKhachHang.MaNgheNghiep = IDNgheNghiep;
-                KKhachHang.MaTinhThanh = IDTinhThanh;
-                KKhachHang.GioiTinhNam = (1 == (comboBoxGioiTinh.SelectedIndex + 1));
+                khach.MaDoTuoi = IDDoTuoi;
+                khach.MaMucDichSuDung = IDMucDich;
+                khach.MaNgheNghiep = IDNgheNghiep;
+                khach.MaTinhThanh = IDTinhThanh;
+                khach.GioiTinhNam = (1 == (comboBoxGioiTinh.SelectedIndex + 1));
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            return khach;
         }
 
         /// <summary>
@@ -281,7 +283,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: lưu dữ liệu các tham số được truyền vào
         /// </returns>
-        private void LayDuLieuTuForm(out int IDNgheNghiep, out int IDGioiTinh, out int IDDoTuoi, out int IDTinhThanh, out int IDMucDich, out int IDKhoangGia)
+        public void LayDuLieuTuForm(out int IDNgheNghiep, out int IDGioiTinh, out int IDDoTuoi, out int IDTinhThanh, out int IDMucDich, out int IDKhoangGia)
         {
             IDNgheNghiep = comboBoxNgheNghiep.SelectedIndex + 1;
             IDGioiTinh = comboBoxGioiTinh.SelectedIndex;
@@ -294,7 +296,7 @@ namespace TUVANLAPTOP
         /// <summary>
         /// About
         /// </summary>
-        private void AboutUsMenuItem_Click(object sender, EventArgs e)
+        public void AboutUsMenuItem_Click(object sender, EventArgs e)
         {
             ABOUT frm = ABOUT.Instance();
             frm.ShowDialog();
@@ -303,7 +305,7 @@ namespace TUVANLAPTOP
         /// <summary>
         /// Help
         /// </summary>
-        private void HelpMenuItem_Click(object sender, EventArgs e)
+        public void HelpMenuItem_Click(object sender, EventArgs e)
         {
             HELP frm = HELP.Instance();
             frm.ShowDialog();
@@ -316,7 +318,7 @@ namespace TUVANLAPTOP
         ///     Thành công: form giao diện có các dữ liệu mặc định
         ///     Thật bại: Throw một exception lên giao diện
         /// </returns>
-        private void MANHINHCHINH_Load(object sender, EventArgs e)
+        public void MANHINHCHINH_Load(object sender, EventArgs e)
         {
             myNgheNghiepBUS ngheNghiepDAO = new myNgheNghiepBUS();
             List<NGHENGHIEP> listNgheNghiep = new List<NGHENGHIEP>();
@@ -380,7 +382,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: Hiện lên form xóa sản phẩm
         /// </returns>
-        private void XoaSanPhamItem_Click(object sender, EventArgs e)
+        public void XoaSanPhamItem_Click(object sender, EventArgs e)
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 0;
             DANGNHAP frm = new DANGNHAP();
@@ -393,7 +395,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: Hiện lên form tra cứu sản phẩm
         /// </returns>
-        private void TraCuuSanPhamItem_Click(object sender, EventArgs e)
+        public void TraCuuSanPhamItem_Click(object sender, EventArgs e)
         {
             TRACUUSANPHAM frm = new TRACUUSANPHAM();
             frm.ShowDialog();
@@ -405,7 +407,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: Hiện lên form thêm mới sản phẩm
         /// </returns>
-        private void ThemMoiSanPhamItem_Click(object sender, EventArgs e)
+        public void ThemMoiSanPhamItem_Click(object sender, EventArgs e)
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 1;
             DANGNHAP frm = new DANGNHAP();
@@ -418,7 +420,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: Hiện lên form thay đổi thông tin sản phẩm
         /// </returns>
-        private void ThayDoiThongTinSP_Click(object sender, EventArgs e)
+        public void ThayDoiThongTinSP_Click(object sender, EventArgs e)
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 2;
             DANGNHAP frm = new DANGNHAP();
@@ -431,7 +433,7 @@ namespace TUVANLAPTOP
         /// <returns>
         ///     Thành công: Hiện lên form thêm thông tin sản phẩm
         /// </returns>
-        private void btn_ThemThongTin_Click(object sender, EventArgs e)
+        public void btn_ThemThongTin_Click(object sender, EventArgs e)
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 3;
             DANGNHAP frm = new DANGNHAP();

@@ -1125,5 +1125,10 @@ namespace EStoreDAO
 
         }
 
+
+        public static List<CHITIETDONGLAPTOP> LayChiTietDongLaptopMoiNhat(CHITIETDONGLAPTOP laptop1)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
