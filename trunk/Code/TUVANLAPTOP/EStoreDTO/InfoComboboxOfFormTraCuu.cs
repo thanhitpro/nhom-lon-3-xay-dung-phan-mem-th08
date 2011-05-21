@@ -174,6 +174,5 @@ namespace EStoreDTO
             get { return iThoigianBH; }
             set { iThoigianBH = value; }
         }
-
     }
 }
