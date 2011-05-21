@@ -14,6 +14,7 @@ namespace EStoreDTO
             get { return sTendongLapTop; }
             set { sTendongLapTop = value; }
         }
+
         private string sRam;
 
         public string SRam
@@ -21,6 +22,7 @@ namespace EStoreDTO
             get { return sRam; }
             set { sRam = value; }
         }
+
         private string sCPU;
 
         public string SCPU
@@ -28,6 +30,7 @@ namespace EStoreDTO
             get { return sCPU; }
             set { sCPU = value; }
         }
+
         private string sOCung;
 
         public string SOCung
@@ -35,6 +38,7 @@ namespace EStoreDTO
             get { return sOCung; }
             set { sOCung = value; }
         }
+
         private string sManHinh;
 
         public string SManHinh
@@ -42,6 +46,7 @@ namespace EStoreDTO
             get { return sManHinh; }
             set { sManHinh = value; }
         }
+
         private string sCardManHinh;
 
         public string SCardManHinh
@@ -49,6 +54,7 @@ namespace EStoreDTO
             get { return sCardManHinh; }
             set { sCardManHinh = value; }
         }
+
         private string sDongLoa;
 
         public string SDongLoa
@@ -64,6 +70,7 @@ namespace EStoreDTO
             get { return sOQuang; }
             set { sOQuang = value; }
         }
+
         private string sHeDieuHanh;
 
         public string SHeDieuHanh
@@ -71,6 +78,7 @@ namespace EStoreDTO
             get { return sHeDieuHanh; }
             set { sHeDieuHanh = value; }
         }
+
         private float fTrongLuong;
 
         public float FTrongLuong
@@ -78,6 +86,7 @@ namespace EStoreDTO
             get { return fTrongLuong; }
             set { fTrongLuong = value; }
         }
+
         private string sMauSac;
 
         public string SMauSac
@@ -85,6 +94,7 @@ namespace EStoreDTO
             get { return sMauSac; }
             set { sMauSac = value; }
         }
+
         private string sCardMang;
 
         public string SCardMang
@@ -92,6 +102,7 @@ namespace EStoreDTO
             get { return sCardMang; }
             set { sCardMang = value; }
         }
+
         private string sCardReader;
 
         public string SCardReader
@@ -99,6 +110,7 @@ namespace EStoreDTO
             get { return sCardReader; }
             set { sCardReader = value; }
         }
+
         private string sWebCam;
 
         public string SWebCam
@@ -114,6 +126,7 @@ namespace EStoreDTO
             get { return sPin; }
             set { sPin = value; }
         }
+
         private string sNhanDangVanTay;
 
         public string SNhanDangVanTay
@@ -121,6 +134,7 @@ namespace EStoreDTO
             get { return sNhanDangVanTay; }
             set { sNhanDangVanTay = value; }
         }
+
         private string sCongHDMI;
 
         public string SCongHDMI
@@ -128,6 +142,7 @@ namespace EStoreDTO
             get { return sCongHDMI; }
             set { sCongHDMI = value; }
         }
+
         private int iSoCongUSB;
 
         public int ISoCongUSB
@@ -135,6 +150,7 @@ namespace EStoreDTO
             get { return iSoCongUSB; }
             set { iSoCongUSB = value; }
         }
+
         private string sNhaSanXuat;
 
         public string SNhaSanXuat
@@ -142,6 +158,7 @@ namespace EStoreDTO
             get { return sNhaSanXuat; }
             set { sNhaSanXuat = value; }
         }
+
         private string sGiaBan;
 
         public string SGiaBan
@@ -149,6 +166,7 @@ namespace EStoreDTO
             get { return sGiaBan; }
             set { sGiaBan = value; }
         }
+
         private int iThoigianBH;
 
         public int IThoigianBH
