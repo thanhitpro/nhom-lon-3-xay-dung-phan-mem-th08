@@ -170,6 +170,14 @@ namespace EStoreDAO
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Lấy dánh sách các laptop với đầy đủ thông tin
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách các CHITIETDONGLAPTOP với thông tin chi tiết.
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         public static List<CHITIETDONGLAPTOP> LayTatCaChiTietDongLaptop()
         {
             try
@@ -651,6 +659,13 @@ namespace EStoreDAO
             return listChiTietDongLapTop;
         }
 
+        /// <summary>
+        /// Tạo chi tiết laptop
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách các ChiTietDongLapTopDTO với thông tin chi tiết.
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
         public static myChiTietDongLaptopDTO TaoChiTietLapTop(CHITIETDONGLAPTOP laptop)
         {
             myChiTietDongLaptopDTO dongLapTop = new myChiTietDongLaptopDTO();

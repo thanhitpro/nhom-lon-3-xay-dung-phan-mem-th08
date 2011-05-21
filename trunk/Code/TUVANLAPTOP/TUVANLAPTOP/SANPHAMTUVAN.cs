@@ -327,7 +327,7 @@
         }
 
         /// <summary>
-        /// Hàm xử lý sự kiện Click
+        /// Hàm xử lý sự kiện lấy sản phẩm mới cùng loại
         /// </summary>
         /// <param name="sender">Control phát sinh sự kiện</param>
         /// <param name="e">Thông tin sự kiện</param>
