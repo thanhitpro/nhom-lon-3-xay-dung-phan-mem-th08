@@ -57,14 +57,14 @@ namespace TUVANLAPTOP
         /// <param name="e">Thông tin sự kiện</param>
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
-            //Load hình ảnh đại diện cho laptop:
+            // Load hình ảnh đại diện cho laptop:
             string imagePath = Application.StartupPath + "\\" + m_dLaptop.SHinhAnh.Trim();
             if (CheckExistImagePath(imagePath))
                 pictureBox_HinhSP.Image = Image.FromFile(imagePath);
             else
                 pictureBox_HinhSP.Image = Properties.Resources.noImage;
 
-            //Tên laptop:                        
+            // Tên laptop:                        
             linkLabel_TenLaptop.Text = ReduceLengthString(m_dLaptop.STenChiTietDongLapTop);
             linkLabel_TenLaptop.Tag = m_dLaptop;
             this.Tag = m_dLaptop.STenChiTietDongLapTop.Trim();
@@ -126,7 +126,8 @@ namespace TUVANLAPTOP
             if (stringNeedReduced.Length > 25)
             {
                 stringNeedReduced = stringNeedReduced.Substring(0, 25) + "...";
-            }            
+            }   
+         
             return stringNeedReduced;
         }
 
