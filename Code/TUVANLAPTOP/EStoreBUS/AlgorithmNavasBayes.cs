@@ -10,12 +10,53 @@ namespace EStoreBUS
 {
     public class AlgorithmNavasBayes
     {
-        static XmlDocument xmlDocument;
-        static int TongSoLuongGiaoDich ;
-        private static void LoadFileXML(string FileName)
-        {           
-           xmlDocument = new XmlDocument();
-           xmlDocument.Load(FileName);         
+        private XmlDocument xmlDocument;
+
+        public XmlDocument XmlDocument
+        {
+            get { return xmlDocument; }
+            set { xmlDocument = value; }
+        }
+        private int tongSoLuongGiaoDich;
+
+        public int TongSoLuongGiaoDich
+        {
+            get { return tongSoLuongGiaoDich; }
+            set { tongSoLuongGiaoDich = value; }
+        }
+        /// <summary>
+        /// Load file XML
+        /// </summary>
+        /// <param name="FileName">
+        /// Tên của file xml để Load
+        /// </param>
+        /// <returns>
+        ///     Thất bại: throw một Exception để tầng trên xử lý.
+        /// </returns>
+        private void LoadFileXML(string FileName)
+        {
+            try
+            {
+                xmlDocument = new XmlDocument();
+                xmlDocument.Load(FileName);
+            }
+            catch (System.IO.FileNotFoundException fileNotFoundEx)
+            {
+                throw fileNotFoundEx;
+            }
+            catch (System.Xml.XmlException xmlEx)
+            {
+                throw xmlEx;
+            }
+            catch (System.IO.FileLoadException fileLoadEx)
+            {
+                throw fileLoadEx;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         /// <summary>
@@ -24,13 +65,25 @@ namespace EStoreBUS
         /// <returns>
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static void SaveFileXML(string FileName)
+        private void SaveFileXML(string FileName)
         {
             try
             {
                 if(xmlDocument!=null)
                 xmlDocument.Save(FileName);
                 return;
+            }
+            catch (System.IO.FileNotFoundException fileNotFoundEx)
+            {
+                throw fileNotFoundEx;
+            }
+            catch (System.Xml.XmlException xmlEx)
+            {
+                throw xmlEx;
+            }
+            catch (OverflowException overflowEX)
+            {
+                throw overflowEX;
             }
             catch (Exception ex)
             {
@@ -45,21 +98,36 @@ namespace EStoreBUS
         ///     Thành công: trả về Node mới được tạo
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
+        private XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
         {
-            XmlNode Node = xmlDocument.CreateElement(TenThe);
-            XmlAttribute xmlID = xmlDocument.CreateAttribute("ID");
-            XmlAttribute xmlTyLeGiaoDich = xmlDocument.CreateAttribute("TyLeGiaoDich");
-            XmlAttribute xmlTyLeKhongGiaoDich = xmlDocument.CreateAttribute("TyLeKhongGiaoDich");
+            try
+            {
+                XmlNode Node = xmlDocument.CreateElement(TenThe);
+                XmlAttribute xmlID = xmlDocument.CreateAttribute("ID");
+                XmlAttribute xmlTyLeGiaoDich = xmlDocument.CreateAttribute("TyLeGiaoDich");
+                XmlAttribute xmlTyLeKhongGiaoDich = xmlDocument.CreateAttribute("TyLeKhongGiaoDich");
 
-            xmlID.Value = ID.ToString();
-            xmlTyLeGiaoDich.Value = TyLeGiaoDich.ToString();
-            xmlTyLeKhongGiaoDich.Value = TyLeKhongGiaoDich.ToString();
+                xmlID.Value = ID.ToString();
+                xmlTyLeGiaoDich.Value = TyLeGiaoDich.ToString();
+                xmlTyLeKhongGiaoDich.Value = TyLeKhongGiaoDich.ToString();
 
-            Node.Attributes.Append(xmlID);
-            Node.Attributes.Append(xmlTyLeGiaoDich);
-            Node.Attributes.Append(xmlTyLeKhongGiaoDich);
-            return Node;
+                Node.Attributes.Append(xmlID);
+                Node.Attributes.Append(xmlTyLeGiaoDich);
+                Node.Attributes.Append(xmlTyLeKhongGiaoDich);
+                return Node;
+            }
+            catch (System.Xml.XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
+            catch (OverflowException overflowEX)
+            {
+                throw overflowEX;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         /// <summary>
@@ -71,9 +139,17 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_NGHE_NGHIEP
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
+        private XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
         {
-            XmlNode TyLeTheoNgheNghiep = xmlDocument.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
+            XmlNode TyLeTheoNgheNghiep;
+            try
+            {
+                TyLeTheoNgheNghiep = xmlDocument.CreateElement("TY_LE_THEO_NGHE_NGHIEP");
+            }
+            catch (XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
             int SLCoGiaoDich, SLKhongGiaoDich, SoLuongKhachHangTheoNgheNghiep;
             float TyLeGiaoDich, TyLeKhongGiaoDich;
             for (int iNgheNghiep = 0; iNgheNghiep < DSNgheNghiep.Count; ++iNgheNghiep)
@@ -110,6 +186,10 @@ namespace EStoreBUS
                     XmlNode xmlNgheNghiep = TaoXMLNode("NGHE_NGHIEP",DSNgheNghiep[iNgheNghiep].MaNgheNghiep, TyLeGiaoDich, TyLeKhongGiaoDich);
                     TyLeTheoNgheNghiep.AppendChild(xmlNgheNghiep);
                 }
+                catch (XmlException XmlEX)
+                {
+                    throw XmlEX;
+                }
                 catch (Exception ex)
                 {
                     throw ex;
@@ -127,9 +207,17 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_MUC_DICH_SU_DUNG
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
+        private XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
         {
-            XmlNode TyLeTheoMucDichSuDung = xmlDocument.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
+            XmlNode TyLeTheoMucDichSuDung;
+            try
+            {
+                TyLeTheoMucDichSuDung = xmlDocument.CreateElement("TY_LE_THEO_MUC_DICH_SU_DUNG");
+            }
+            catch (XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
             int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoMucDich;
             float TyLeGiaoDich, TyLeKhongGiaoDich;
             for (int k = 0; k < DSMucDichSuDung.Count; ++k)
@@ -156,6 +244,7 @@ namespace EStoreBUS
                     SLKhongGiaoDich = SLKhachHangTheoMucDich - SLCoGiaoDich;
                     TyLeKhongGiaoDich = ((float)SLKhongGiaoDich / ((float)TongSoLuongGiaoDich - (float)DSGiaoDichTheoDongLaptop.Count)) * 100;
                 }
+
                 catch (Exception ex)
                 {
                     throw ex;
@@ -165,6 +254,10 @@ namespace EStoreBUS
 
                     XmlNode xmlMucDich = TaoXMLNode("MUC_DICH", DSMucDichSuDung[k].MaMucDichSuDung, TyLeGiaoDich, TyLeKhongGiaoDich);
                     TyLeTheoMucDichSuDung.AppendChild(xmlMucDich);
+                }
+                catch (XmlException XmlEX)
+                {
+                    throw XmlEX;
                 }
                 catch (Exception ex)
                 {
@@ -183,9 +276,17 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_DO_TUOI
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
+        private XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
         {
-            XmlNode TyLeTheoDoTuoi = xmlDocument.CreateElement("TY_LE_THEO_DO_TUOI");
+            XmlNode TyLeTheoDoTuoi;
+            try
+            {
+                TyLeTheoDoTuoi = xmlDocument.CreateElement("TY_LE_THEO_DO_TUOI");
+            }
+            catch (XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
             int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoDoTuoi;
             float TyLeGiaoDich, TyLeKhongGiaoDich;
             for (int k = 0; k < DSDoTuoi.Count; ++k)
@@ -221,6 +322,10 @@ namespace EStoreBUS
                     XmlNode xmlDoTuoi = TaoXMLNode("DO_TUOI", DSDoTuoi[k].MaDoTuoi, TyLeGiaoDich, TyLeKhongGiaoDich);
                     TyLeTheoDoTuoi.AppendChild(xmlDoTuoi);
                 }
+                catch (XmlException XmlEX)
+                {
+                    throw XmlEX;
+                }
                 catch (Exception ex)
                 {
                     throw ex;
@@ -238,9 +343,17 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_TINH_THANH
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
+        private XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
         {
-            XmlNode TyLeTheoTinhThanh = xmlDocument.CreateElement("TY_LE_THEO_TINH_THANH");
+            XmlNode TyLeTheoTinhThanh;
+            try
+            {
+                TyLeTheoTinhThanh = xmlDocument.CreateElement("TY_LE_THEO_TINH_THANH");
+            }
+            catch (XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
             int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoTinhThanh;
             float TyLeGiaoDich, TyLeKhongGiaoDich;
             for (int k = 0; k < DSTinhThanh.Count; ++k)
@@ -277,6 +390,10 @@ namespace EStoreBUS
                     XmlNode xmlTinhThanh = TaoXMLNode("TINH_THANH", DSTinhThanh[k].MaTinhThanh, TyLeGiaoDich, TyLeKhongGiaoDich);
                     TyLeTheoTinhThanh.AppendChild(xmlTinhThanh);
                 }
+                catch (XmlException XmlEX)
+                {
+                    throw XmlEX;
+                }
                 catch (Exception ex)
                 {
                     throw ex;
@@ -294,9 +411,17 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_GIOI_TINH
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private static XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
+        private XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
         {
-            XmlNode TyLeTheoGioiTinh = xmlDocument.CreateElement("TY_LE_THEO_GIOI_TINH");
+            XmlNode TyLeTheoGioiTinh;
+            try
+            {
+                TyLeTheoGioiTinh = xmlDocument.CreateElement("TY_LE_THEO_GIOI_TINH");
+            }
+            catch (XmlException XmlEX)
+            {
+                throw XmlEX;
+            }
             int SLCoGiaoDich, SLKhongGiaoDich, SLKhachHangTheoGioiTinh;
             float TyLeGiaoDich, TyLeKhongGiaoDich;
             for (int k = 0; k < 2; ++k)
@@ -337,6 +462,10 @@ namespace EStoreBUS
                     XmlNode xmlGioiTinh = TaoXMLNode("GIOI_TINH", k, TyLeGiaoDich, TyLeKhongGiaoDich);
                     TyLeTheoGioiTinh.AppendChild(xmlGioiTinh);
                 }
+                catch (XmlException XmlEX)
+                {
+                    throw XmlEX;
+                }
                 catch (Exception ex)
                 {
                     throw ex;
@@ -353,7 +482,7 @@ namespace EStoreBUS
         ///     Thành công: trả về file xml
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        public static void AnalyseData()
+        public void AnalyseData()
         {
            
             LoadFileXML("ResultAnalyseData.xml");
@@ -375,13 +504,17 @@ namespace EStoreBUS
                 TongSoLuongGiaoDich = myGiaoDichDAO.LaySoLuongGiaoDich();
                 DSDongLaptop = myChiTietDongLaptopDAO.LayTatCaChiTietDongLaptop();
             }
+            catch (OverflowException OverflowEX)
+            {
+                throw OverflowEX;
+            }
             catch (Exception ex)
             {
                 throw ex;
             }
 
             List<GIAODICH> DSGiaoDichTheoDongLaptop;
-            int SoLuongGiaoDichTheoDongLaptop = 0;
+          
             for (int i = 0; i < DSDongLaptop.Count; ++i)
             {
                 try
