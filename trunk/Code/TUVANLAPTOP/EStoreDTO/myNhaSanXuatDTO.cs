@@ -15,11 +15,6 @@ namespace EStoreDTO
             set { m_sTenNhaSanXuat = value; }
         }
 
-        public myNhaSanXuatDTO(string _sNhaSX)
-        {
-            m_sTenNhaSanXuat = _sNhaSX;
-        }
-
         int m_iMaNhaSanXuat;
 
         public int IMaNhaSanXuat
@@ -27,5 +22,10 @@ namespace EStoreDTO
             get { return m_iMaNhaSanXuat; }
             set { m_iMaNhaSanXuat = value; }
         }
+
+        public myNhaSanXuatDTO(string _sNhaSX)
+        {
+            m_sTenNhaSanXuat = _sNhaSX;
+        }        
     }
 }
