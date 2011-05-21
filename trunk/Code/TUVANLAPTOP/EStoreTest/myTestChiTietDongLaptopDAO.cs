@@ -78,15 +78,8 @@ namespace EStoreTest
         [Test]
         public void CapNhatXoaChiTietDongLaptop_Test()
         {
-            List<int> maDongLaptop = new List<int> { 1, 2, 3, 4 };
-            myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
-
-            for (int i = 0; i < maDongLaptop.Count(); i++)
-            {
-                myChiTietDongLaptopDTO kiemTraGiaTri = myChiTietDongLaptopDAO.LayChiTietDongLaptop(maDongLaptop[i]);
-                Assert.AreEqual(true, kiemTraGiaTri.BDeleted);
-            }
-            myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
+            List<int> maDongLaptop = new List<int> {1,5,29,30};
+            Assert.AreEqual(true,myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop));
         }
 
         [Test]
