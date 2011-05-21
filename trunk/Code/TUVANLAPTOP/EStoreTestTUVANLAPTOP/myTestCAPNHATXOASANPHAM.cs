@@ -19,10 +19,10 @@ namespace EStoreTestTUVANLAPTOP
         public void LayDanhSachMaDongLaptop_Test()
         {
             List<int> danhSachMaDongLapTop = myCapNhatXoaSanPham_test.LayDanhSachMaDongLaptop();
-            List<int> test = new List<int> { 1, 2, 3 };
+            List<int> test = new List<int> { 1, 30};
             Assert.AreNotEqual(test, danhSachMaDongLapTop);
         }
-        
+
         [Test]
         public void AssignValueToCheckBoxCell_Test()
         {
