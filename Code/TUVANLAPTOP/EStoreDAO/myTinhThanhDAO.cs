@@ -9,6 +9,15 @@ namespace EStoreDAO
     public class myTinhThanhDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy thông tin tỉnh thành theo mã
+        /// </summary>
+        /// <param name="_iMaTinhThanh">Thông tin mã tĩnh thành muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tượng TINHTHANH
+        ///     Thất bại: trả về null
+        /// </returns>
         public static TINHTHANH LayTinhThanh(int _iMaTinhThanh)
         {
             try
@@ -22,6 +31,13 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Lấy danh sách toàn bộ tỉnh thành có trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách các tỉnh thành có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<TINHTHANH> LayTinhThanh()
         {
             try

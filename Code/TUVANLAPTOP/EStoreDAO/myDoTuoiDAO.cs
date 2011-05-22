@@ -9,6 +9,15 @@ namespace EStoreDAO
     public class myDoTuoiDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy thông tin độ tuổi theo mã
+        /// </summary>
+        /// <param name="_iMaDoTuoi">Thông tin mã độ tuổi muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tượng DOTUOI
+        ///     Thất bại: trả về null
+        /// </returns>
         public static DOTUOI LayDoTuoi(int _iMaDoTuoi)
         {
             DOTUOI _DoTuoi = m_eStoreDataContext.DOTUOIs.Single(temp => temp.MaDoTuoi == _iMaDoTuoi);
@@ -16,6 +25,14 @@ namespace EStoreDAO
             return _DoTuoi;
         }
 
+
+        /// <summary>
+        /// Lấy danh sách tất cả dộ tuổi có trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách tất cả độ tuổi có trong CSDL
+        ///     Thất bại: trả về NULL
+        /// </returns>
         public static List<DOTUOI> LayDoTuoi()
         {
             try

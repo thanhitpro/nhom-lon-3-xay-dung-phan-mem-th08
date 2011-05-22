@@ -9,6 +9,15 @@ namespace EStoreDAO
     public class myNgheNghiepDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy Thông tin nghề nghiệp dựa vào mã nghề nghiệp
+        /// </summary>
+        /// <param name="_iMaNgheNghiep">Thông tin mã nghề nghiệp muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tượng NGHENGHIEP
+        ///     Thất bại: trả về null
+        /// </returns>
         public static NGHENGHIEP LayNgheNghiep(int _iMaNgheNghiep)
         {
             try
@@ -23,6 +32,13 @@ namespace EStoreDAO
           
         }
 
+        /// <summary>
+        /// Lấy danh sách tất cả các nghề nghiệp
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách tất cả Nghề nghiệp có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<NGHENGHIEP> LayNgheNghiep()
         {
             try

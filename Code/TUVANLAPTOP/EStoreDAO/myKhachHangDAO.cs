@@ -9,6 +9,14 @@ namespace EStoreDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
 
+        /// <summary>
+        /// Lấy Thông tinh Khách hàng dựa vào mã khách hàng
+        /// </summary>
+        /// <param name="_iMaKhachHang">mã khách hàng muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tương KHACHHANG
+        ///     Thất bại: trả về null
+        /// </returns>
         public static KHACHHANG LayKhachHang(int _iMaKhachHang)
         {
             try
@@ -22,6 +30,13 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Lấy danh sách toàn bộ Khách hàng
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách toàn bộ khách hàng có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<KHACHHANG> LayKhachHang()
         {
             try
@@ -38,6 +53,15 @@ namespace EStoreDAO
             }
             
         }
+
+        /// <summary>
+        /// Tính số lượng Khách Hàng Theo Nghề Nghiệp
+        /// </summary>
+        /// <param name="_iMaNgheNghiep">mã Nghề Nghiệp</param>
+        /// <returns>
+        ///     Thành công: số lượng Khách Hàng Theo Mã Nghề Nghiệp
+        ///     Thất bại: trả về 0
+        /// </returns>
         public static int SLKhachHangTheoNgheNghiep(int _iMaNgheNghiep)
         {
             try
@@ -56,6 +80,14 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Tính số lượng Khách Hàng Theo Mục Đích Sử Dụng
+        /// </summary>
+        /// <param name="_iMaMucDichSuDung">mã mục đích sử dụng</param>
+        /// <returns>
+        ///     Thành công: số lượng Khách Hàng Theo mục đích sử dụng
+        ///     Thất bại: trả về 0
+        /// </returns>
         public static int SLKhachHangTheoMucDich(int _iMaMucDichSuDung)
         {
             try
@@ -74,6 +106,14 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Tính số lượng Khách Hàng Theo Độ Tuổi
+        /// </summary>
+        /// <param name="_iMaDoTuoi">mã độ tuổi</param>
+        /// <returns>
+        ///     Thành công: số lượng Khách Hàng Theo Độ Tuổi
+        ///     Thất bại: trả về 0
+        /// </returns>
         public static int SLKhachHangTheoDoTuoi(int _iMaDoTuoi)
         {
             try
@@ -92,6 +132,14 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Tính số lượng Khách Hàng Theo Tỉnh Thành
+        /// </summary>
+        /// <param name="_iMaTinhThanh">mã tỉnh thành</param>
+        /// <returns>
+        ///     Thành công: số lượng Khách Hàng Theo Tỉnh Thành
+        ///     Thất bại: trả về 0
+        /// </returns>
         public static int SLKhachHangTheoTinhThanh(int _iMaTinhThanh)
         {
             try
@@ -110,6 +158,14 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Tính số lượng Khách Hàng Theo giới Tính
+        /// </summary>
+        /// <param name="isNam">giới tình là nam = true hoặc nữ= false</param>
+        /// <returns>
+        ///     Thành công: số lượng Khách Hàng Theo giới tính
+        ///     Thất bại: trả về 0
+        /// </returns>
         public static int SLKhachHangTheoGioiTinh(bool isNam)
         {
             try

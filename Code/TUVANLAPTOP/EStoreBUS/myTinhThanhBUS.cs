@@ -9,11 +9,13 @@ namespace EStoreBUS
 {
     public class myTinhThanhBUS
     {
-        public myTinhThanhDTO LayTinhThanh(int _iMaTinhThanh)
-        { 
-            return null; 
-        }
-
+        /// <summary>
+        /// Lấy danh sách toàn bộ tỉnh thành có trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách các tỉnh thành có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public List<TINHTHANH> LayTinhThanh()
         {
             try
