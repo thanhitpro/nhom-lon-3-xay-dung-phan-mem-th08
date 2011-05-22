@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+<<<<<<< .mine
+<<<<<<< .mine
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ITFRIEND;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString15" Provider="System.Data.SqlClient" />
+=======
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TAKAGIPRO\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString20" Provider="System.Data.SqlClient" />
+=======
   <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=&quot;D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf&quot;;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString21" Provider="System.Data.SqlClient" />
+>>>>>>> .r390
+>>>>>>> .r383
   <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
     <Type Name="BANGDIEM_KHOANGTANG">
       <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -282,6 +290,17 @@
       <Association Name="CHITIETDUNGLUONGOCUNG_CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs" OtherKey="MaChiTietDungLuongOCung" Type="CHITIETDONGOCUNG" />
     </Type>
   </Table>
+<<<<<<< .mine
+  <Table Name="dbo.CHITIETHEDIEUHANH" Member="CHITIETHEDIEUHANHs">
+    <Type Name="CHITIETHEDIEUHANH">
+      <Column Name="MaChiTietHeDieuHanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenHeDieuHanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETHEDIEUHANH_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaChiTietHeDieuHanh" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+=======
+>>>>>>> .r383
   <Table Name="dbo.CHITIETKICHTHUOCMANHINH" Member="CHITIETKICHTHUOCMANHINHs">
     <Type Name="CHITIETKICHTHUOCMANHINH">
       <Column Name="MaChiTietKichThuocManHinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

@@ -1,3 +1,10 @@
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+=======
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
@@ -13,3 +20,4 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+>>>>>>> .r389

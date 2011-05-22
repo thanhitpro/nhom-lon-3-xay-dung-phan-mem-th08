@@ -1,3 +1,18 @@
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.dll
+=======
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
@@ -32,6 +47,9 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStor
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+<<<<<<< .mine
+>>>>>>> .r383
+=======
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
@@ -44,3 +62,4 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+>>>>>>> .r390

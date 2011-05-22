@@ -9,6 +9,14 @@ using EStoreDAO;
 namespace EStoreBUS
 {
     /// <summary>
+    /// Tạo dữ liệu kiểu Struct để lưu lại kết quả tích các tỉ lệ của từng dòng laptop
+    /// </summary>
+    public struct MyStruct
+    {
+        public double gt;
+        public int id;
+    }
+    /// <summary>
     /// class chính cho thuật toán NavasBayes
     /// class này làm nhiệm vụ tổng hợp dữ liệu từ CSDL để tính toán thông kê ra
     /// tỷ lệ giao dịch và không giao dịch của từng Laptop theo mỗi yếu tố từ khách hàng bao gồm: 
@@ -78,7 +86,7 @@ namespace EStoreBUS
             catch (Exception ex)
             {
                 throw ex;
-            }          
+            }
         }
 
         /// <summary>
@@ -191,7 +199,7 @@ namespace EStoreBUS
             for (int iNgheNghiep = 0; iNgheNghiep < danhSachNgheNghiep.Count; ++iNgheNghiep)
             {
                 soLuongCoGiaoDich = 0;
-                soLuongKhongGiaoDich = 0;            
+                soLuongKhongGiaoDich = 0;
                 try
                 {
                     soLuongKhachHangTheoNgheNghiep = myKhachHangDAO.SLKhachHangTheoNgheNghiep(danhSachNgheNghiep[iNgheNghiep].MaNgheNghiep);
@@ -200,7 +208,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-             
+
                 for (int iGiaoDich = 0; iGiaoDich < danhSachGiaoDichTheoDongLaptop.Count; ++iGiaoDich)
                 {
                     if (danhSachNgheNghiep[iNgheNghiep].MaNgheNghiep == danhSachGiaoDichTheoDongLaptop[iGiaoDich].KHACHHANG.MaNgheNghiep)
@@ -208,7 +216,7 @@ namespace EStoreBUS
                         ++soLuongCoGiaoDich;
                     }
                 }
-                
+
                 try
                 {
                     tyLeGiaoDich = ((float)soLuongCoGiaoDich / (float)danhSachGiaoDichTheoDongLaptop.Count) * 100;
@@ -266,7 +274,7 @@ namespace EStoreBUS
             float tyLeGiaoDich, tyLeKhongGiaoDich;
             for (int k = 0; k < danhSachMucDichSuDung.Count; ++k)
             {
-                soLuongCoGiaoDich = soLuongKhongGiaoDich = 0;            
+                soLuongCoGiaoDich = soLuongKhongGiaoDich = 0;
                 try
                 {
                     soLuongKhachHangTheoMucDich = myKhachHangDAO.SLKhachHangTheoMucDich(danhSachMucDichSuDung[k].MaMucDichSuDung);
@@ -275,7 +283,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-               
+
                 for (int j = 0; j < danhSachGiaoDichTheoDongLaptop.Count; ++j)
                 {
                     if (danhSachMucDichSuDung[k].MaMucDichSuDung == danhSachGiaoDichTheoDongLaptop[j].KHACHHANG.MaMucDichSuDung)
@@ -312,7 +320,7 @@ namespace EStoreBUS
 
             return tyLeTheoMucDichSuDung;
         }
-        
+
         /// <summary>
         /// Tạo một node có tên TY_LE_THEO_DO_TUOI
         /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại độ tuổi với dòng máy được đưa vào
@@ -350,7 +358,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-               
+
                 for (int j = 0; j < danhSachGiaoDichTheoDonglapTop.Count; ++j)
                 {
                     if (danhSachDoTuoi[k].MaDoTuoi == danhSachGiaoDichTheoDonglapTop[j].KHACHHANG.MaDoTuoi)
@@ -387,7 +395,7 @@ namespace EStoreBUS
 
             return tyLeTheoDoTuoi;
         }
-       
+
         /// <summary>
         /// Tạo một node có tên TY_LE_THEO_TINH_THANH
         /// Có 2 giá trị được ghi vào là tỷ lệ giao dịch của từng loại tỉnh thành với dòng máy được đưa vào
@@ -417,7 +425,7 @@ namespace EStoreBUS
             for (int k = 0; k < danhSachTinhThanh.Count; ++k)
             {
                 soLuongCoGiaoDich = soLuongKhongGiaoDich = 0;
-                
+
                 try
                 {
                     soLuongKhachHangTheoTinhThanh = myKhachHangDAO.SLKhachHangTheoTinhThanh(danhSachTinhThanh[k].MaTinhThanh);
@@ -426,7 +434,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-             
+
                 for (int j = 0; j < danhSachGiaoDichTheoDongLaptop.Count; ++j)
                 {
                     if (danhSachTinhThanh[k].MaTinhThanh == danhSachGiaoDichTheoDongLaptop[j].KHACHHANG.MaTinhThanh)
@@ -491,7 +499,7 @@ namespace EStoreBUS
             float tyLeGiaoDich, tyLeKhongGiaoDich;
             for (int k = 0; k < 2; ++k)
             {
-                soLuongCoGiaoDich = soLuongKhongGiaoDich = 0;               
+                soLuongCoGiaoDich = soLuongKhongGiaoDich = 0;
                 try
                 {
                     if (k == 0)
@@ -506,7 +514,7 @@ namespace EStoreBUS
                 catch (Exception ex)
                 {
                     throw ex;
-                }             
+                }
 
                 for (int j = 0; j < danhSachGiaoDichTheoDongLaptop.Count; ++j)
                 {
@@ -549,8 +557,8 @@ namespace EStoreBUS
         /// Thực thi thuật toán bayes. Dữ liệu được lấy trong bảng giao dịch trong csdl
         /// Thực hiện tính xác xuất từng yếu tố ảnh hưởng tới quyết định chọn dòng máy của khách hàng với mỗi dòng máy
         /// </summary>
-        public void AnalyseData()
-        {           
+        public void PhanTichDuLieu()
+        {
             this.LoadFileXML("ResultAnalyseData.xml");
             XmlNode navasBayes = this.xmlDocument.DocumentElement;
             navasBayes.RemoveAll();
@@ -558,7 +566,7 @@ namespace EStoreBUS
             List<NGHENGHIEP> danhSachNgheNgiep;
             List<MUCDICHSUDUNG> danhSachMucDichSuDung;
             List<DOTUOI> danhSachDoTuoi;
-            List<TINHTHANH> danhSachTinhThanh;           
+            List<TINHTHANH> danhSachTinhThanh;
             List<CHITIETDONGLAPTOP> danhSachDongLaptop;
             try
             {
@@ -579,7 +587,7 @@ namespace EStoreBUS
             }
 
             List<GIAODICH> danhSachGiaoDichTheoDongLaptop;
-          
+
             for (int i = 0; i < danhSachDongLaptop.Count; ++i)
             {
                 try
@@ -590,7 +598,7 @@ namespace EStoreBUS
                 {
                     throw ex;
                 }
-               
+
                 XmlNode dongLapTop = this.xmlDocument.CreateElement("DONGLAPTOP");
                 XmlAttribute maDongLapTop = this.xmlDocument.CreateAttribute("ID");
                 XmlAttribute tenDongLapTop = this.xmlDocument.CreateAttribute("TenDongLaptop");
@@ -609,9 +617,9 @@ namespace EStoreBUS
                     throw ex;
                 }
 
-                XmlNode xmlTyLeTheoNgheNghiep = this.TinhTyLeTheoNgheNghiep(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop, danhSachNgheNgiep);               
+                XmlNode xmlTyLeTheoNgheNghiep = this.TinhTyLeTheoNgheNghiep(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop, danhSachNgheNgiep);
                 dongLapTop.AppendChild(xmlTyLeTheoNgheNghiep);
-             
+
                 XmlNode xmlTyLeTheoMucDichSuDung = this.TinhTyLeTheoMucDichSuDung(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop, danhSachMucDichSuDung);
                 dongLapTop.AppendChild(xmlTyLeTheoMucDichSuDung);
 
@@ -628,6 +636,251 @@ namespace EStoreBUS
             }
 
             this.SaveFileXML("ResultAnalyseData.xml");
-        }        
+        }
+
+        /// <summary>
+        /// Sắp xếp list MyStruct
+        /// Đầu vào là một list phần tử kiểu MyStruct
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List MyStruct đã được sắp xếp tăng dần
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<MyStruct> SapXep(List<MyStruct> listSanPham)
+        {
+            if (listSanPham == null)
+            {
+                return null;
+            }
+            for (int i = 0; i < listSanPham.Count; i++)
+            {
+                for (int j = i; j < listSanPham.Count; j++)
+                {
+                    if (listSanPham[i].gt < listSanPham[j].gt)
+                    {
+                        MyStruct temp = new MyStruct();
+                        temp = listSanPham[i];
+                        listSanPham[i] = listSanPham[j];
+                        listSanPham[j] = temp;
+                    }
+                }
+            }
+            return listSanPham;
+        }
+
+        /// <summary>
+        /// Thực thi thuật toán NaiveBayes
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List MyStruct chứa ID của các laptop được chọn
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<MyStruct> ThuatToanNaiveBayes(
+            int IDNgheNghiep,
+            int IDGioiTinh,
+            int IDDoTuoi,
+            int IDTinhThanh,
+            int IDMucDich,
+            int IDMucGia)
+        {
+            List<string> listXPath = new List<string>();
+            List<XmlNodeList> listXmlNodeList = new List<XmlNodeList>();
+            List<MyStruct> listMyStruct = new List<MyStruct>();
+            List<MyStruct> listSanPhamDatYeuCau = new List<MyStruct>();
+
+            try
+            {
+                listXPath = KhoiTaoXPath(IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            listXmlNodeList = LayDuLieuTuFileXML(listXPath[0], listXPath[1], listXPath[2], listXPath[3], listXPath[4], "ResultAnalyseData.xml");
+            listMyStruct = ThuaNhanNaives(listXmlNodeList[0], listXmlNodeList[1], listXmlNodeList[2], listXmlNodeList[3], listXmlNodeList[4]);
+            
+            try
+            {
+                listMyStruct = KiemTraHopLe(listMyStruct, IDMucGia);
+                if (listMyStruct.Count > 0)
+                {
+                    listMyStruct = SapXep(listMyStruct);
+                    listSanPhamDatYeuCau.Add(listMyStruct[0]);
+                    listSanPhamDatYeuCau.Add(listMyStruct[1]);
+                    listSanPhamDatYeuCau.Add(listMyStruct[2]);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listSanPhamDatYeuCau;
+        }
+
+        /// <summary>
+        /// Đầu vào là list các ID của laptop
+        /// Đầu ra là list các ID của laptop đã được kiểm tra tồn tại và các điều kiện
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List MyStruct chứa ID của các laptop hợp lệ
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<MyStruct> KiemTraHopLe(List<MyStruct> listSanPham, int IDMucGia)
+        {
+            List<MyStruct> listSanPhamDatYeuCau = new List<MyStruct>();
+
+            for (int i = 0; i < listSanPham.Count; i++)
+            {
+                try
+                {
+                    bool isHopLe = myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(listSanPham[i].id + 1, IDMucGia);
+                    if (isHopLe == true)
+                        if (myChiTietDongLaptopBUS.KiemTraSanPhamTonTai(listSanPham[i].id + 1) == false)
+                        {
+                            listSanPhamDatYeuCau.Add(listSanPham[i]);
+                        }
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    listSanPhamDatYeuCau = null;
+                    throw ex;
+                }
+            }
+
+            return listSanPhamDatYeuCau;
+        }
+
+        /// <summary>
+        /// Thực thi thuật toán thừa nhận Naive
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List MyStruct chứa ID của các laptop được chọn
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<MyStruct> ThuaNhanNaives(
+            XmlNodeList nodeListTinhThanh,
+            XmlNodeList nodeListNgheNghiep,
+            XmlNodeList nodeListDoTuoi,
+            XmlNodeList nodeListMucDich,
+            XmlNodeList nodeListGioiTinh)
+        {
+            List<MyStruct> listKetQua = new List<MyStruct>();
+
+            try
+            {
+                for (int i = 0; i < nodeListNgheNghiep.Count; i++)
+                {
+                    double ketQua = 0;
+                    if (nodeListTinhThanh[i].InnerText != null)
+                        ketQua = (double.Parse(nodeListTinhThanh[i].InnerText));
+                    if (nodeListNgheNghiep[i].InnerText != null)
+                        ketQua *= (double.Parse(nodeListNgheNghiep[i].InnerText));
+                    if (nodeListMucDich[i].InnerText != null)
+                        ketQua *= (double.Parse(nodeListMucDich[i].InnerText));
+                    if (nodeListGioiTinh[i].InnerText != null)
+                        ketQua *= (double.Parse(nodeListGioiTinh[i].InnerText));
+                    if (nodeListDoTuoi[i].InnerText != null)
+                        ketQua *= (double.Parse(nodeListDoTuoi[i].InnerText));
+                    MyStruct myStruct = new MyStruct();
+                    myStruct.gt = ketQua;
+                    myStruct.id = i;
+                    listKetQua.Add(myStruct);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listKetQua;
+        }
+
+        /// <summary>
+        /// Lấy dữ liệu từ file XML
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List XmlNodeList
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<XmlNodeList> LayDuLieuTuFileXML(
+            string xPathNgheNghiep,
+            string xPathGioiTinh,
+            string xPathDoTuoi,
+            string xPathTinhThanh,
+            string xPathMucDich,
+            string fileXmlName)
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+
+            try
+            {
+                xmlDoc.Load(fileXmlName);
+            }
+            catch (System.Xml.XmlException ex)
+            {
+                throw ex;
+            }
+
+            string xPath = xPathNgheNghiep;
+            List<XmlNodeList> listNodeList = new List<XmlNodeList>();
+
+            try
+            {
+                XmlNodeList nodeListNgheNghiep = xmlDoc.SelectNodes(xPath);
+                xPath = xPathDoTuoi;
+                XmlNodeList nodeListDoTuoi = xmlDoc.SelectNodes(xPath);
+                xPath = xPathGioiTinh;
+                XmlNodeList nodeListGioiTinh = xmlDoc.SelectNodes(xPath);
+                xPath = xPathMucDich;
+                XmlNodeList nodeListMucDich = xmlDoc.SelectNodes(xPath);
+                xPath = xPathTinhThanh;
+                XmlNodeList nodeListTinhThanh = xmlDoc.SelectNodes(xPath);
+                listNodeList.Add(nodeListDoTuoi);
+                listNodeList.Add(nodeListGioiTinh);
+                listNodeList.Add(nodeListMucDich);
+                listNodeList.Add(nodeListNgheNghiep);
+                listNodeList.Add(nodeListTinhThanh);
+            }
+            catch (System.Xml.XmlException ex)
+            {
+                throw ex;
+            }
+
+            return listNodeList;
+        }
+
+        /// <summary>
+        /// Khởi tạo XPatch truy xuất file xml
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về List MyStruct chứa ID của các laptop được chọn
+        ///     Thất bại: throw một Exception ra màn hình
+        /// </returns>
+        public List<string> KhoiTaoXPath(int IDNgheNghiep, int IDGioiTinh, int IDDoTuoi, int IDTinhThanh, int IDMucDich)
+        {
+            List<string> listXPath = new List<string>();
+
+            try
+            {
+                string xPathNgheNghiep = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_NGHE_NGHIEP/NGHE_NGHIEP/@TyLeGiaoDich[../@ID='" + IDNgheNghiep.ToString() + "']";
+                string xPathGioiTinh = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_GIOI_TINH/GIOI_TINH/@TyLeGiaoDich[../@ID='" + IDGioiTinh.ToString() + "']";
+                string xPathDoTuoi = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_DO_TUOI/DO_TUOI/@TyLeGiaoDich[../@ID='" + IDDoTuoi.ToString() + "']";
+                string xPathTinhThanh = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_TINH_THANH/TINH_THANH/@TyLeGiaoDich[../@ID='" + IDTinhThanh.ToString() + "']";
+                string xPathMucDich = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_MUC_DICH_SU_DUNG/MUC_DICH/@TyLeGiaoDich[../@ID='" + IDMucDich.ToString() + "']";
+                listXPath.Add(xPathDoTuoi);
+                listXPath.Add(xPathGioiTinh);
+                listXPath.Add(xPathMucDich);
+                listXPath.Add(xPathNgheNghiep);
+                listXPath.Add(xPathTinhThanh);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listXPath;
+        }
     }
 }

@@ -28,6 +28,38 @@ D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\TU
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+=======
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
@@ -88,3 +120,4 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+>>>>>>> .r389
