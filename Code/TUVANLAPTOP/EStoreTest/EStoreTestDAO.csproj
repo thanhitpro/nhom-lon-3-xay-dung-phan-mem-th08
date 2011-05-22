@@ -71,6 +71,7 @@
     <Compile Include="myTestChiTietKichThuocManHinhDAO.cs" />
     <Compile Include="myTestChiTietVongQuayOCungDAO.cs" />
     <Compile Include="myTestDanhGiaDAO.cs" />
+    <Compile Include="myTestKhachHangDAO.cs" />
     <Compile Include="myTestNguoiDungDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
