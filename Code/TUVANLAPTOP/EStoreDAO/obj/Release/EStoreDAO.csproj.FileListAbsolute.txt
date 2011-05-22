@@ -8,8 +8,6 @@ D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\ES
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
-D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
-D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
