@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyTestAlgorithmNavasBayes.cs" />
     <Compile Include="myTestChiTietBoNhoCardDoHoaBUS.cs" />
     <Compile Include="myTestChiTietBoNhoRamBUS.cs" />
     <Compile Include="myTestChiTietCongNgheCPU.cs" />

@@ -12,7 +12,7 @@ namespace EStoreBUS
     {
         private XmlDocument xmlDocument;
 
-        public XmlDocument XmlDocument
+        public XmlDocument Xmldocument
         {
             get { return xmlDocument; }
             set { xmlDocument = value; }
@@ -31,14 +31,16 @@ namespace EStoreBUS
         /// Tên của file xml để Load
         /// </param>
         /// <returns>
+        ///     thành công : trả về true và người lại trả về false
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private void LoadFileXML(string FileName)
+        public bool LoadFileXML(string FileName)
         {
             try
             {
                 xmlDocument = new XmlDocument();
                 xmlDocument.Load(FileName);
+                return true;
             }
             catch (System.IO.FileNotFoundException fileNotFoundEx)
             {
@@ -56,6 +58,7 @@ namespace EStoreBUS
             {
                 throw ex;
             }
+            return false;
 
         }
 
@@ -63,15 +66,19 @@ namespace EStoreBUS
         /// Lưu file XML
         /// </summary>
         /// <returns>
+        ///     thành công : trả về true và ngược lại trả về false
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private void SaveFileXML(string FileName)
+        public bool SaveFileXML(string FileName)
         {
             try
             {
-                if(xmlDocument!=null)
-                xmlDocument.Save(FileName);
-                return;
+                if (xmlDocument != null)
+                {
+                    xmlDocument.Save(FileName);
+                    return true;
+                }
+                return false;
             }
             catch (System.IO.FileNotFoundException fileNotFoundEx)
             {
@@ -89,6 +96,7 @@ namespace EStoreBUS
             {
                 throw ex;
             }
+            return false;
         }
 
         /// <summary>
@@ -98,7 +106,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node mới được tạo
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
+        public XmlNode TaoXMLNode(string TenThe,int ID,float TyLeGiaoDich, float TyLeKhongGiaoDich)
         {
             try
             {
@@ -139,7 +147,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_NGHE_NGHIEP
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
+        public XmlNode TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<NGHENGHIEP> DSNgheNghiep)
         {
             XmlNode TyLeTheoNgheNghiep;
             try
@@ -207,7 +215,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_MUC_DICH_SU_DUNG
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
+        public XmlNode TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<MUCDICHSUDUNG> DSMucDichSuDung)
         {
             XmlNode TyLeTheoMucDichSuDung;
             try
@@ -276,7 +284,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_DO_TUOI
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
+        public XmlNode TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<DOTUOI> DSDoTuoi)
         {
             XmlNode TyLeTheoDoTuoi;
             try
@@ -343,7 +351,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_TINH_THANH
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
+        public XmlNode TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop, List<TINHTHANH> DSTinhThanh)
         {
             XmlNode TyLeTheoTinhThanh;
             try
@@ -411,7 +419,7 @@ namespace EStoreBUS
         ///     Thành công: trả về Node TY_LE_THEO_GIOI_TINH
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
+        public XmlNode TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP LapTop, List<GIAODICH> DSGiaoDichTheoDongLaptop)
         {
             XmlNode TyLeTheoGioiTinh;
             try
