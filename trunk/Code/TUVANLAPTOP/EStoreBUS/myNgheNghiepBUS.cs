@@ -9,9 +9,13 @@ namespace EStoreBUS
 {
     public class myNgheNghiepBUS
     {
-        public myNgheNghiepDTO LayNgheNghiep(int _iMaNgheNghiep)
-        { return null; }
-
+        /// <summary>
+        /// Lấy danh sách tất cả các nghề nghiệp
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về danh sách tất cả Nghề nghiệp có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public List<NGHENGHIEP> LayNgheNghiep()
         {
             try

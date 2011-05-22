@@ -57,9 +57,7 @@ namespace EStoreBUS
             catch (Exception ex)
             {
                 throw ex;
-            }
-            return false;
-
+            }          
         }
 
         /// <summary>
@@ -96,7 +94,6 @@ namespace EStoreBUS
             {
                 throw ex;
             }
-            return false;
         }
 
         /// <summary>

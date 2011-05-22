@@ -9,6 +9,16 @@ namespace EStoreDAO
     public class myMucDichSuDungDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy Thông tin mục đích sử dụng dựa vào mã mục đích sử dung
+        /// </summary>
+        /// <param name="_iMaMucDichSuDung">Thông tin mã mục đích muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tượng MUCDICHSUDUNG
+        ///     Thất bại: trả về null
+        /// </returns>
+        /// 
         public static MUCDICHSUDUNG LayMucDichSuDung(int _iMaMucDichSuDung)
         {
             try
@@ -22,6 +32,13 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Lấy danh sách tất cả mục địch sử dụng có trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách tất cả mục đích sử dụng có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<MUCDICHSUDUNG> LayMucDichSuDung()
         {
             try

@@ -11,6 +11,15 @@ namespace EStoreDAO
     public class myGiaoDichDAO
     {
         private static DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
+
+        /// <summary>
+        /// Lấy thông tin Giao Dịch theo mã
+        /// </summary>
+        /// <param name="_iMaGiaoDich">Thông tin mã Giao Dich muốn lấy</param>
+        /// <returns>
+        ///     Thành công: trả về 1 đối tượng GIAODICH
+        ///     Thất bại: trả về null
+        /// </returns>
         public static GIAODICH LayGiaoDich(int _iMaGiaoDich)
         {
             try
@@ -24,6 +33,13 @@ namespace EStoreDAO
             }
         }
 
+        /// <summary>
+        /// Lấy danh sách toàn bộ Giao Dịch có trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách tất cả Giao Dịch có trong CSDL
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<GIAODICH> LayGiaoDich()
         {
             try
@@ -39,6 +55,15 @@ namespace EStoreDAO
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// Lấy danh sách Giao Dịch Theo mã dòng Laptop
+        /// </summary>
+        /// <param name="_iMaDongLapTop">Thông tin mã dòng laptop</param>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách các giao dịch theo mã dòng laptop
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<GIAODICH> LayDanhSachGiaoDichTheoMaDongLapTop(int _iMaDongLapTop)
         {
             try
@@ -60,6 +85,14 @@ namespace EStoreDAO
           
         }
 
+        /// <summary>
+        /// Lấy danh sách Giao Dịch Theo mã nhà sản xuất
+        /// </summary>
+        /// <param name="_iMaDongLapTop">Thông tin mã nhà sản xuất</param>
+        /// <returns>
+        ///     Thành công: trả về 1 danh sách các giao dịch theo mã nhà sản xuất
+        ///     Thất bại: trả về null
+        /// </returns>
         public static List<GIAODICH> LayDanhSachGiaoDichTheoNhaSanXuat(int _iMaNhaSanXuat)
         {
             try
@@ -101,6 +134,13 @@ namespace EStoreDAO
             }            
         }
 
+        /// <summary>
+        /// Lấy số lượng toàn bộ Giao Dịch cso trong CSDL
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về số lượng tất cả giao dịch trong CSDL
+        ///     Thất bại: 0
+        /// </returns>
         public static int LaySoLuongGiaoDich()
         {
             try

@@ -66,6 +66,11 @@
     <Compile Include="myTestChiTietHeDieuHanhBUS.cs" />
     <Compile Include="myTestChiTietKichThuocManHinhBUS.cs" />
     <Compile Include="myTestChiTietVongQuayOCungBUS.cs" />
+    <Compile Include="myTestDoTuoiBUS.cs" />
+    <Compile Include="myTestKhachHangBUS.cs" />
+    <Compile Include="myTestMucDichSuDungBUS.cs" />
+    <Compile Include="myTestNgheNghiepBUS.cs" />
+    <Compile Include="myTestTinhThanhBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
