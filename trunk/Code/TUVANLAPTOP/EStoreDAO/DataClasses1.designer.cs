@@ -150,7 +150,7 @@ namespace EStoreDAO
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString18, mappingSource)
+				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString19, mappingSource)
 		{
 			OnCreated();
 		}

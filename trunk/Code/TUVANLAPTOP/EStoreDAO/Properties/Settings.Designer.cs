@@ -220,5 +220,15 @@ namespace EStoreDAO.Properties {
                 return ((string)(this["ESTOREConnectionString18"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MRKEN-PC;Initial Catalog=ESTORE;Integrated Security=True")]
+        public string ESTOREConnectionString19 {
+            get {
+                return ((string)(this["ESTOREConnectionString19"]));
+            }
+        }
     }
 }
