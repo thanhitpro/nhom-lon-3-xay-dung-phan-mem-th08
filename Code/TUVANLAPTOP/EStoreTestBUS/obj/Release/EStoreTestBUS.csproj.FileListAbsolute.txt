@@ -26,3 +26,17 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStor
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb

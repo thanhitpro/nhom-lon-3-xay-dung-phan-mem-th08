@@ -58,3 +58,33 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVAN
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE.mdf
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ESTORE_log.ldf
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
