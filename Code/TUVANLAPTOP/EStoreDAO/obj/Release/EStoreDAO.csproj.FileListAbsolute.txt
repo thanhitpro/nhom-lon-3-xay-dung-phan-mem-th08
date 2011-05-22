@@ -28,9 +28,7 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStor
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
-<<<<<<< .mine
 >>>>>>> .r383
-=======
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE.mdf
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ESTORE_log.ldf
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
