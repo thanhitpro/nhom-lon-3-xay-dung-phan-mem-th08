@@ -10,3 +10,15 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE_log.ldf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\ESTORE.mdf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

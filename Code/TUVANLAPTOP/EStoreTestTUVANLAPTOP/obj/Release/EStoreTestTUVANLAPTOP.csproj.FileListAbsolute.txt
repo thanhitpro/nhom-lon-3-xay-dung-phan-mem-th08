@@ -15,3 +15,20 @@ D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVAN
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.xml
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.xml
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb

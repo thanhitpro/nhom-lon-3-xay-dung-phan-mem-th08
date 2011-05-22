@@ -1,14 +1,14 @@
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
-D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE_log.ldf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\ESTORE.mdf
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
