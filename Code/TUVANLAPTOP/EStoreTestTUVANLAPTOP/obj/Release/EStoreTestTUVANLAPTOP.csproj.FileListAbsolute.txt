@@ -1,3 +1,23 @@
+<<<<<<< .mine
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE.mdf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE_log.ldf
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.xml
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
+D:\Learning\CNTT\SoftwareConstruction\SVN_New\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.dll
+=======
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
 D:\Study\Nam III\HK II\Software Construction\Do An Cuoi Ki (Nhom Lon)\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
@@ -47,6 +67,9 @@ D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStor
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
+<<<<<<< .mine
+>>>>>>> .r383
+=======
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE.mdf
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE_log.ldf
@@ -64,3 +87,4 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
+>>>>>>> .r389

@@ -35,97 +35,33 @@ namespace TUVANLAPTOP
             public int id;
         }
 
-
         public void button_TuVanLapTop_Click(object sender, EventArgs e)
         {
-            //Code thuật toán
-
-            int IDNgheNghiep;
-            int IDGioiTinh;
-            int IDDoTuoi;
-            int IDTinhThanh;
-            int IDMucDich;
-            int IDKhoangGia;
-            string xPathNgheNghiep;
-            string xPathGioiTinh;
-            string xPathDoTuoi;
-            string xPathTinhThanh;
-            string xPathMucDich;
-            string fileName = "ResultAnalyseData.xml";
-            XmlNodeList nodeListNgheNghiep = null;
-            XmlNodeList nodeListDoTuoi = null;
-            XmlNodeList nodeListGioiTinh = null;
-            XmlNodeList nodeListMucDich =null;
-            XmlNodeList nodeListTinhThanh =null;
-            List<MyStruct> KetQua = new List<MyStruct>();
-            XmlDocument xmlDocument = new XmlDocument();
-            List<CHITIETDONGLAPTOP> listLapTop = new List<CHITIETDONGLAPTOP>();
-            int iSoLuongLapTopDatYeuCau = 0;
-            m_lDanhSachIDSanPhamDuocChon.Clear();
-            try
-            {
-                m_kKhachHang = new KHACHHANG();
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi tạo khách hàng");
-            }
+            int IDNgheNghiep = -1;
+            int IDGioiTinh = -1;
+            int IDDoTuoi = -1;
+            int IDTinhThanh = -1;
+            int IDMucDich = -1;
+            int IDKhoangGia = -1;
+            int iSoLuongLapTopDatYeuCau = 3;
+            AlgorithmNavasBayes thuatToan = new AlgorithmNavasBayes();
+            List<EStoreBUS.MyStruct> listSanPham = new List<EStoreBUS.MyStruct>();
 
             try
             {
-                xmlDocument.Load(fileName);
-            }
-            catch (System.IO.FileNotFoundException fileNotFoundEx)
-            {
-                MessageBox.Show("không tìm thấy file " + fileName + "\nxin vui lòng kiểm tra lại, có thể dữ liệu hệ thống đã bị mất" + fileNotFoundEx.FileName);
-            }
-            catch (System.Xml.XmlException xmlEx)
-            {
-                MessageBox.Show(xmlEx.Message);
-                return;
-            }
-            catch (System.IO.FileLoadException fileLoadEx)
-            {
-                MessageBox.Show("có lỗi trong quá trình tải dữ liệu" + fileLoadEx.FileName);
-                return;
+                LayDuLieuTuForm(out IDNgheNghiep, out IDGioiTinh, out IDDoTuoi, out IDTinhThanh, out IDMucDich, out IDKhoangGia);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-            LayDuLieuTuForm(out IDNgheNghiep, out IDGioiTinh, out IDDoTuoi, out IDTinhThanh, out IDMucDich, out IDKhoangGia);
-            
-            KKhachHang = KhoiTaoKhachHang(IDNgheNghiep, IDDoTuoi, IDTinhThanh, IDMucDich);
-            
-            KhoiTaoXPath(IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich, out xPathNgheNghiep, out xPathGioiTinh, out xPathDoTuoi, out xPathTinhThanh, out xPathMucDich);
-
-            LayDuLieuTuFileXML(xPathNgheNghiep, xPathGioiTinh, xPathDoTuoi, xPathTinhThanh, xPathMucDich, xmlDocument, out nodeListNgheNghiep, out nodeListDoTuoi, out nodeListGioiTinh, out nodeListMucDich, out nodeListTinhThanh);
-
-            KetQua = ThuaNhanNaive(nodeListTinhThanh, nodeListNgheNghiep, nodeListDoTuoi, nodeListMucDich, nodeListGioiTinh);
-            
-            KetQua = SapXep(KetQua);
-
-            if (KetQua==null)
-            {
-                return;
-            }
-            if (KetQua.Count > 3)
-            {
-                iSoLuongLapTopDatYeuCau = 3;
-            }
-            else
-            {
-                iSoLuongLapTopDatYeuCau = KetQua.Count;
-            }
-
+            listSanPham = thuatToan.ThuatToanNaiveBayes(IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich, IDKhoangGia);
+            iSoLuongLapTopDatYeuCau = listSanPham.Count;
+            m_lDanhSachIDSanPhamDuocChon.Clear();
             for (int i = 0; i < iSoLuongLapTopDatYeuCau; i++)
             {
-                if (KetQua.Count - i - 1 >= 0)
-                {
-                    int t = KetQua[KetQua.Count - i - 1].id;
-                    m_lDanhSachIDSanPhamDuocChon.Add(t);
-                }
+                int t = listSanPham[i].id;
+                m_lDanhSachIDSanPhamDuocChon.Add(t);
             }
 
             SANPHAMTUVAN frm = SANPHAMTUVAN.Instance();
@@ -134,163 +70,33 @@ namespace TUVANLAPTOP
         }
 
         /// <summary>
-        /// Sắp xếp list MyStruct
-        /// Đầu vào là một list phần tử kiểu MyStruct
+        /// Lấy dữ liệu từ form chương trình
         /// </summary>
         /// <returns>
-        ///     Thành công: trả về List MyStruct đã được sắp xếp tăng dần
+        ///     Thành công: trả về các tham số đã được truyền vào
         ///     Thất bại: throw một Exception ra màn hình
         /// </returns>
-        public List<MyStruct> SapXep(List<MyStruct> listSanPham)
+        public void LayDuLieuTuForm(out int IDNgheNghiep, out int IDGioiTinh, out int IDDoTuoi, out int IDTinhThanh, out int IDMucDich, out int IDKhoangGia)
         {
-            if (listSanPham == null)
-            {
-                return null;
-            }
-            for (int i = 0; i < listSanPham.Count; i++)
-            {
-                for (int j = i; j < listSanPham.Count; j++)
-                {
-                    if (listSanPham[i].gt > listSanPham[j].gt)
-                    {
-                        MyStruct temp = new MyStruct();
-                        temp = listSanPham[i];
-                        listSanPham[i] = listSanPham[j];
-                        listSanPham[j] = temp;
-                    }
-                }
-            }
-            return listSanPham;
-        }
-
-        /// <summary>
-        /// Thực thi thuật toán thừa nhận Naive
-        /// Sau khi đã có được các tỉ lệ mua máy tính theo từng yếu tố
-        /// Áp dụng thừa nhận Naive.
-        /// Mỗi dòng máy tính tương ứng với các tỉ lệ về tỉnh thành, nghề nghiệp...
-        /// Áp dụng thừa nhận naive cho mỗi dòng máy bằng cách tính tích các tỉ lệ
-        /// Kết hợp với việc kiểm tra giá tiền hợp lệ
-        /// Kết hợp kiểm tra máy tính có còn tồn tại trong cửa hàng hay không
-        /// Lưu tích của các tỉ lệ của mỗi dòng máy vào một list kiểu MyStruct
-        /// </summary>
-        /// <returns>
-        ///     Thành công: trả về list phần tử kiểu MyStruct
-        ///     Thất bại: throw một Exception ra màn hình
-        /// </returns>
-        public List<MyStruct> ThuaNhanNaive(XmlNodeList nodeListTinhThanh, XmlNodeList nodeListNgheNghiep, XmlNodeList nodeListDoTuoi, XmlNodeList nodeListMucDich, XmlNodeList nodeListGioiTinh)
-        {
-            List<MyStruct> KetQua = new List<MyStruct>();
-            for (int i = 0; i < nodeListNgheNghiep.Count; i++)
-            {
-                double temp = 0;
-                if (nodeListTinhThanh[i].InnerText != null)
-                    temp = (double.Parse(nodeListTinhThanh[i].InnerText));
-                if (nodeListNgheNghiep[i].InnerText != null)
-                    temp *= (double.Parse(nodeListNgheNghiep[i].InnerText));
-                if (nodeListMucDich[i].InnerText != null)
-                    temp *= (double.Parse(nodeListMucDich[i].InnerText));
-                if (nodeListGioiTinh[i].InnerText != null)
-                    temp *= (double.Parse(nodeListGioiTinh[i].InnerText));
-                if (nodeListDoTuoi[i].InnerText != null)
-                    temp *= (double.Parse(nodeListDoTuoi[i].InnerText));
-                MyStruct myStruct = new MyStruct();
-                myStruct.gt = temp;
-                myStruct.id = i;
-                try
-                {
-                    bool a = myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(myStruct.id + 1, comboBoxMucGia.SelectedIndex);
-                    if (a == true)
-                        if (myChiTietDongLaptopBUS.KiemTraSanPhamTonTai(myStruct.id + 1) == false)
-                        {
-                            KetQua.Add(myStruct);
-                        }
-
-                }
-                catch (System.Data.SqlClient.SqlException ex)
-                {
-                    MessageBox.Show("kết nối bị lỗi, hoặc bạn ko có quyền thực hiện thao tác trên" + ex.Message);
-                    KetQua = null;
-                }
-            }
-            return KetQua;
-            
-        }
-
-        /// <summary>
-        /// Lấy các node list trong file XML dựa vào các XPath và xmlDocument(Biến toàn cục)
-        /// </summary>
-        /// <returns>
-        ///     Thành công: lưu dữ liệu vào các node list được truyền vào
-        ///     Thất bại: xuất message box exception gặp phải
-        /// </returns>
-        public void LayDuLieuTuFileXML(string xPathNgheNghiep, string xPathGioiTinh, string xPathDoTuoi, string xPathTinhThanh, string xPathMucDich, XmlDocument xmlDocument, out XmlNodeList nodeListNgheNghiep, out XmlNodeList nodeListDoTuoi, out XmlNodeList nodeListGioiTinh, out XmlNodeList nodeListMucDich, out XmlNodeList nodeListTinhThanh)
-        {
-                string xPath = xPathNgheNghiep;
-                nodeListNgheNghiep = xmlDocument.SelectNodes(xPath);
-                xPath = xPathDoTuoi;
-                nodeListDoTuoi = xmlDocument.SelectNodes(xPath);
-                xPath = xPathGioiTinh;
-                nodeListGioiTinh = xmlDocument.SelectNodes(xPath);
-                xPath = xPathMucDich;
-                nodeListMucDich = xmlDocument.SelectNodes(xPath);
-                xPath = xPathTinhThanh;
-                nodeListTinhThanh = xmlDocument.SelectNodes(xPath);
-        }
-
-        /// <summary>
-        /// Khởi tạo chuỗi XPath
-        /// </summary>
-        /// <returns>
-        ///     Thành công: lưu dữ liệu vào các chuỗi được truyền vào
-        /// </returns>
-        public void KhoiTaoXPath(int IDNgheNghiep, int IDGioiTinh, int IDDoTuoi, int IDTinhThanh, int IDMucDich, out string xPathNgheNghiep, out string xPathGioiTinh, out string xPathDoTuoi, out string xPathTinhThanh, out string xPathMucDich)
-        {
-            xPathNgheNghiep = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_NGHE_NGHIEP/NGHE_NGHIEP/@TyLeGiaoDich[../@ID='" + IDNgheNghiep.ToString() + "']";
-            xPathGioiTinh = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_GIOI_TINH/GIOI_TINH/@TyLeGiaoDich[../@ID='" + IDGioiTinh.ToString() + "']";
-            xPathDoTuoi = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_DO_TUOI/DO_TUOI/@TyLeGiaoDich[../@ID='" + IDDoTuoi.ToString() + "']";
-            xPathTinhThanh = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_TINH_THANH/TINH_THANH/@TyLeGiaoDich[../@ID='" + IDTinhThanh.ToString() + "']";
-            xPathMucDich = "/NAVAS_BAYES/DONGLAPTOP/TY_LE_THEO_MUC_DICH_SU_DUNG/MUC_DICH/@TyLeGiaoDich[../@ID='" + IDMucDich.ToString() + "']";
-        }
-
-        /// <summary>
-        /// Khởi tạo khách hàng
-        /// </summary>
-        /// <returns>
-        ///     Thành công: Khởi tạo đối tượng khách hàng(biến toàn cục)
-        ///     Thất bại: xuất message box exception gặp phải
-        /// </returns>
-        public KHACHHANG KhoiTaoKhachHang(int IDNgheNghiep, int IDDoTuoi, int IDTinhThanh, int IDMucDich)
-        {
-            KHACHHANG khach = new KHACHHANG();
+            IDNgheNghiep = -1;
+            IDGioiTinh = -1;
+            IDDoTuoi = -1;
+            IDTinhThanh = -1;
+            IDMucDich = -1;
+            IDKhoangGia = -1;
             try
             {
-                khach.MaDoTuoi = IDDoTuoi;
-                khach.MaMucDichSuDung = IDMucDich;
-                khach.MaNgheNghiep = IDNgheNghiep;
-                khach.MaTinhThanh = IDTinhThanh;
-                khach.GioiTinhNam = (1 == (comboBoxGioiTinh.SelectedIndex + 1));
+                IDNgheNghiep = comboBoxNgheNghiep.SelectedIndex + 1;
+                IDGioiTinh = comboBoxGioiTinh.SelectedIndex;
+                IDDoTuoi = comboBoxDoTuoi.SelectedIndex + 1;
+                IDTinhThanh = comboBoxTinhThanh.SelectedIndex + 1;
+                IDMucDich = comboBoxMucDichSD.SelectedIndex + 1;
+                IDKhoangGia = comboBoxMucGia.SelectedIndex;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            return khach;
-        }
-
-        /// <summary>
-        /// Lấy dữ liệu từ form chương trình
-        /// </summary>
-        /// <returns>
-        ///     Thành công: lưu dữ liệu các tham số được truyền vào
-        /// </returns>
-        public void LayDuLieuTuForm(out int IDNgheNghiep, out int IDGioiTinh, out int IDDoTuoi, out int IDTinhThanh, out int IDMucDich, out int IDKhoangGia)
-        {
-            IDNgheNghiep = comboBoxNgheNghiep.SelectedIndex + 1;
-            IDGioiTinh = comboBoxGioiTinh.SelectedIndex;
-            IDDoTuoi = comboBoxDoTuoi.SelectedIndex + 1;
-            IDTinhThanh = comboBoxTinhThanh.SelectedIndex + 1;
-            IDMucDich = comboBoxMucDichSD.SelectedIndex + 1;
-            IDKhoangGia = comboBoxMucGia.SelectedIndex + 1;
         }
 
         /// <summary>
@@ -335,40 +141,40 @@ namespace TUVANLAPTOP
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai" + ex.Message);
             }
             comboBoxNgheNghiep.DataSource = listNgheNghiep;
             comboBoxNgheNghiep.DisplayMember = "TenNgheNghiep";
-            
+
             try
             {
                 listDoTuoi = doTuoiDAO.LayDoTuoi();
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai" + ex.Message);
             }
             comboBoxDoTuoi.DataSource = listDoTuoi;
             comboBoxDoTuoi.DisplayMember = "TenDoTuoi";
-            
+
             try
             {
                 listTinhThanh = tinhThanhDAO.LayTinhThanh();
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai" + ex.Message);
             }
             comboBoxTinhThanh.DataSource = listTinhThanh;
             comboBoxTinhThanh.DisplayMember = "TenTinhThanh";
-            
+
             try
             {
                 listMucDichSuDung = mucDichSuDungDAO.LayMucDichSuDung();
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai"+ex.Message);
+                MessageBox.Show("Khong ket noi duoc csdl\nVui long kiem tra lai" + ex.Message);
             }
             comboBoxMucDichSD.DataSource = listMucDichSuDung;
             comboBoxMucDichSD.DisplayMember = "TenMucDichSuDung";
@@ -386,7 +192,7 @@ namespace TUVANLAPTOP
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 0;
             DANGNHAP frm = new DANGNHAP();
-                frm.ShowDialog();
+            frm.ShowDialog();
         }
 
         /// <summary>
@@ -411,7 +217,7 @@ namespace TUVANLAPTOP
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 1;
             DANGNHAP frm = new DANGNHAP();
-                frm.ShowDialog();      
+            frm.ShowDialog();
         }
 
         /// <summary>
@@ -424,7 +230,7 @@ namespace TUVANLAPTOP
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 2;
             DANGNHAP frm = new DANGNHAP();
-            frm.ShowDialog();      
+            frm.ShowDialog();
         }
 
         /// <summary>
@@ -437,7 +243,7 @@ namespace TUVANLAPTOP
         {
             MANHINHCHINH.m_iStaticFormDuocChon = 3;
             DANGNHAP frm = new DANGNHAP();
-            frm.ShowDialog(); 
+            frm.ShowDialog();
         }
     }
 }
