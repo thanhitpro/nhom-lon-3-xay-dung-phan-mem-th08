@@ -33,8 +33,6 @@ D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\ES
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
 D:\Learn\University\Hoc Ki VI\Xay Dung Phan Mem\Nhom lon\SVN\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
-D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE.mdf
-D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ESTORE_log.ldf
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
 D:\Tu lieu\Xay dung phan mem\Do an nhom lon 3\SVN_Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.dll
