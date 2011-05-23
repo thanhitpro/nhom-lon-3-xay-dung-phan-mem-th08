@@ -55,6 +55,17 @@ namespace TUVANLAPTOP
             {
                 MessageBox.Show(ex.Message);
             }
+            KKhachHang = new KHACHHANG();
+            KKhachHang.MaDoTuoi = IDDoTuoi;
+            KKhachHang.MaMucDichSuDung = IDMucDich;
+            KKhachHang.MaNgheNghiep = IDNgheNghiep;
+            KKhachHang.MaTinhThanh = IDTinhThanh;
+            if (IDGioiTinh == 0)
+            {
+                KKhachHang.GioiTinhNam = false;
+            }
+            else
+                KKhachHang.GioiTinhNam = true;
             listSanPham = thuatToan.ThuatToanNaiveBayes(IDNgheNghiep, IDGioiTinh, IDDoTuoi, IDTinhThanh, IDMucDich, IDKhoangGia);
             iSoLuongLapTopDatYeuCau = listSanPham.Count;
             m_lDanhSachIDSanPhamDuocChon.Clear();
