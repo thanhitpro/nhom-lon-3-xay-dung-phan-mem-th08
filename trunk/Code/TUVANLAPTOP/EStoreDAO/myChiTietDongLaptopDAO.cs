@@ -1118,7 +1118,7 @@ namespace EStoreDAO
             catch (Exception ex)
             {
                 kq = false;
-                //                throw ex;
+                throw ex;
             }
 
             return kq;

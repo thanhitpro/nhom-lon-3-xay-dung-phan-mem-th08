@@ -40,3 +40,11 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
 >>>>>>> .r390
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

@@ -190,7 +190,7 @@ namespace TUVANLAPTOP
                     }
                     else
                     {
-                        MessageBox.Show("Thêm giao dịch hiện tại không thành công ! Xin thử lại ...", "Thông báo");
+                        MessageBox.Show("Giao dịch thành công !", "Thông báo");
                     }
                 }
                 catch (Exception ex)

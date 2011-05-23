@@ -61,3 +61,13 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
 >>>>>>> .r390
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

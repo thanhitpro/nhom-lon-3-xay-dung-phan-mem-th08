@@ -433,6 +433,7 @@ namespace TUVANLAPTOP
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
 
             return true;
@@ -453,6 +454,7 @@ namespace TUVANLAPTOP
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
 
             return true;
@@ -474,6 +476,7 @@ namespace TUVANLAPTOP
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
 
             return true;
@@ -872,7 +875,7 @@ namespace TUVANLAPTOP
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message, "Notice");
+                MessageBox.Show(ex.Message, "Notice");
                 return false;
             }
         }
