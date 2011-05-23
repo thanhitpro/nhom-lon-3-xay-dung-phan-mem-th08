@@ -86,3 +86,18 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
 >>>>>>> .r389
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.xml
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb

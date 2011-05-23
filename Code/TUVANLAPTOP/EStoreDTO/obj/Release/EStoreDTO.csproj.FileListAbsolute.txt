@@ -21,3 +21,8 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
 >>>>>>> .r389
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

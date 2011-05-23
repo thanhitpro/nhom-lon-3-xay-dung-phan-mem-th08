@@ -131,6 +131,7 @@ namespace EStoreDAO
             catch(Exception ex)
             {
                 return false;
+                throw ex;
             }            
         }
 

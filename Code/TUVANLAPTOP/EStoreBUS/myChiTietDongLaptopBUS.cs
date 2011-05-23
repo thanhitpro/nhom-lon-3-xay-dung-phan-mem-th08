@@ -186,8 +186,9 @@ namespace EStoreBUS
             }
             catch (Exception ex)
             {
-                throw ex;
                 return false;
+                throw ex;
+                
             }
         }
 

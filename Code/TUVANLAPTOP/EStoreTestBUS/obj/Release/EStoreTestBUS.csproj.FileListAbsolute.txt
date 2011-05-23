@@ -55,3 +55,15 @@ F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 F:\Dai Hoc\HK VI\2. Xay dung pham mem\7. De an cuoi ky\Project\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
 >>>>>>> .r390
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+D:\SVN\1.Laptop\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb

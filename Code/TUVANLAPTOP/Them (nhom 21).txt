@@ -1,3 +1,0 @@
-﻿Nhóm 21 có thêm đường dẫn động |DataDirectory| vào file cấu hình: app.config và Settings.Designer.cs trong DAO để đem qua máy khác khỏi kết nối lại CSDL.
-
-(file .mdf đặt trong thư mục Release của tầng giao diện).
