@@ -107,13 +107,12 @@ namespace EStoreBUS
         /// <summary>
         /// Tính ra tất cả các tỷ lệ giao dịch của từng nghề nghiệp theo từng dòng máy tính nhất định
         /// </summary>
-        /// <param name="lapTop"> Laptop cần thống kê</param>
         /// <param name="danhSachGiaoDichTheoDongLaptop">danh sách giao dịch theo dòng laptop</param>
         /// <returns>
         ///     Thành công: trả về 1 danh sách bao gồm các tỷ lệ giao dịch của từng nghề nghiệp theo từng laptop
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private List<float> TinhTyLeTheoNgheNghiep(CHITIETDONGLAPTOP lapTop, List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
+        public List<float> TinhTyLeTheoNgheNghiep(List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
         {
             if (this.danhSachNgheNghiep == null)
                 return null;
@@ -149,13 +148,12 @@ namespace EStoreBUS
         /// <summary>
         /// Tính ra tất cả các tỷ lệ giao dịch của từng mục đích sử dụng theo từng dòng máy tính nhất định
         /// </summary>
-        /// <param name="lapTop"> Laptop cần thống kê</param>
         /// <param name="danhSachGiaoDichTheoDongLaptop">danh sách giao dịch theo dòng laptop</param>
         /// <returns>
         ///     Thành công: trả về 1 danh sách bao gồm các tỷ lệ giao dịch của từng mục đích sử dụng theo từng laptop
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private List<float> TinhTyLeTheoMucDichSuDung(CHITIETDONGLAPTOP lapTop, List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
+        public List<float> TinhTyLeTheoMucDichSuDung(List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
         {
             if (this.danhSachMucDichSuDung == null)
                 return null;
@@ -191,13 +189,12 @@ namespace EStoreBUS
         /// <summary>
         /// Tính ra tất cả các tỷ lệ giao dịch của từng độ tuổi theo từng dòng máy tính nhất định
         /// </summary>
-        /// <param name="lapTop"> Laptop cần thống kê</param>
         /// <param name="danhSachGiaoDichTheoDongLaptop">danh sách giao dịch theo dòng laptop</param>
         /// <returns>
         ///     Thành công: trả về 1 danh sách bao gồm các tỷ lệ giao dịch của từng độ tuổi theo từng laptop
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private List<float> TinhTyLeTheoDoTuoi(CHITIETDONGLAPTOP lapTop, List<GIAODICH> danhSachGiaoDichTheoDonglapTop)
+        public List<float> TinhTyLeTheoDoTuoi(List<GIAODICH> danhSachGiaoDichTheoDonglapTop)
         {
             if (this.danhSachDoTuoi == null)
                 return null;
@@ -233,13 +230,12 @@ namespace EStoreBUS
         /// <summary>
         /// Tính ra tất cả các tỷ lệ giao dịch của từng tỉnh thành theo từng dòng máy tính nhất định
         /// </summary>
-        /// <param name="lapTop"> Laptop cần thống kê</param>
         /// <param name="danhSachGiaoDichTheoDongLaptop">danh sách giao dịch theo dòng laptop</param>
         /// <returns>
         ///     Thành công: trả về 1 danh sách bao gồm các tỷ lệ giao dịch của từng tỉnh thành theo từng laptop
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private List<float> TinhTyLeTheoTinhThanh(CHITIETDONGLAPTOP lapTop, List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
+        public List<float> TinhTyLeTheoTinhThanh(List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
         {
             if (this.danhSachTinhThanh == null)
                 return null;
@@ -275,13 +271,12 @@ namespace EStoreBUS
         /// <summary>
         /// Tính ra tất cả các tỷ lệ giao dịch của từng giới tính theo từng dòng máy tính nhất định
         /// </summary>
-        /// <param name="lapTop"> Laptop cần thống kê</param>
         /// <param name="danhSachGiaoDichTheoDongLaptop">danh sách giao dịch theo dòng laptop</param>
         /// <returns>
         ///     Thành công: trả về 1 danh sách bao gồm các tỷ lệ giao dịch của từng giới tính theo từng laptop
         ///     Thất bại: throw một Exception để tầng trên xử lý.
         /// </returns>
-        private List<float> TinhTyLeTheoGioiTinh(CHITIETDONGLAPTOP lapTop, List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
+        public List<float> TinhTyLeTheoGioiTinh(List<GIAODICH> danhSachGiaoDichTheoDongLaptop)
         {
             List<float> danhSachTyLeGiaoDich;
             int soLuongCoGiaoDich;
@@ -509,19 +504,19 @@ namespace EStoreBUS
                     throw xmlEx;
                 }
 
-                List<float> DanhSachTyLeTheoNgheNghiep = this.TinhTyLeTheoNgheNghiep(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop);
+                List<float> DanhSachTyLeTheoNgheNghiep = this.TinhTyLeTheoNgheNghiep(danhSachGiaoDichTheoDongLaptop);
                 this.LuuVaoXmlFile(dongLapTop, DanhSachTyLeTheoNgheNghiep, "NGHE_NGHIEP");
 
-                List<float> DanhSachTyLeTheoMucDichSuDung = this.TinhTyLeTheoMucDichSuDung(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop);
+                List<float> DanhSachTyLeTheoMucDichSuDung = this.TinhTyLeTheoMucDichSuDung(danhSachGiaoDichTheoDongLaptop);
                 this.LuuVaoXmlFile(dongLapTop, DanhSachTyLeTheoMucDichSuDung, "MUC_DICH_SU_DUNG");
 
-                List<float> DanhSachTyLeTheoDoTuoi = this.TinhTyLeTheoDoTuoi(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop);
+                List<float> DanhSachTyLeTheoDoTuoi = this.TinhTyLeTheoDoTuoi(danhSachGiaoDichTheoDongLaptop);
                 this.LuuVaoXmlFile(dongLapTop, DanhSachTyLeTheoDoTuoi, "DO_TUOI");
 
-                List<float> DanhSachTyLeTheoTinhThanh = this.TinhTyLeTheoTinhThanh(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop);
+                List<float> DanhSachTyLeTheoTinhThanh = this.TinhTyLeTheoTinhThanh(danhSachGiaoDichTheoDongLaptop);
                 this.LuuVaoXmlFile(dongLapTop, DanhSachTyLeTheoTinhThanh, "TINH_THANH");
 
-                List<float> DanhSachTyLeTheoGioiTinh = this.TinhTyLeTheoGioiTinh(danhSachDongLaptop[i], danhSachGiaoDichTheoDongLaptop);
+                List<float> DanhSachTyLeTheoGioiTinh = this.TinhTyLeTheoGioiTinh(danhSachGiaoDichTheoDongLaptop);
                 this.LuuVaoXmlFile(dongLapTop, DanhSachTyLeTheoGioiTinh, "GIOI_TINH");
 
                 navasBayes.AppendChild(dongLapTop);
