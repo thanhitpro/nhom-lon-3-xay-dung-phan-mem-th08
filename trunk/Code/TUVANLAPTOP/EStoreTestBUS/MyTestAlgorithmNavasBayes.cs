@@ -13,7 +13,7 @@ namespace EStoreTestBUS
     [TestFixture]
     class MyTestAlgorithmNavasBayes
     {
-        [Test]
+       /* [Test]
         public void LoadFileXMLTest()
         {
             AlgorithmNavasBayes NavasBayes=new AlgorithmNavasBayes();
@@ -27,9 +27,9 @@ namespace EStoreTestBUS
             AlgorithmNavasBayes NavasBayes = new AlgorithmNavasBayes();
             bool Actual = NavasBayes.SaveFileXML("ResultAnalyseData.xml");
             Assert.IsTrue(Actual);
-        }
+        }*/
 
-        [Test]
+       /* [Test]
         public void TaoXMLNodeTest()
         {
             XmlDocument xmlDocument = new XmlDocument();
@@ -51,7 +51,7 @@ namespace EStoreTestBUS
             XmlNode NodeResult = NavasBayes.TaoXMLNode("NGHE_NGHIEP", 1, 10.01f, 2.01f);
             Assert.AreSame(NodeTest, NodeResult);
         }
-
+        */
         [Test]
         public void ThuatToanNaiveBayes()
         {

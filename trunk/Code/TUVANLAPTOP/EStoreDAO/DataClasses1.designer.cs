@@ -33,9 +33,6 @@ namespace EStoreDAO
     partial void InsertBANGDIEM_KHOANGTANG(BANGDIEM_KHOANGTANG instance);
     partial void UpdateBANGDIEM_KHOANGTANG(BANGDIEM_KHOANGTANG instance);
     partial void DeleteBANGDIEM_KHOANGTANG(BANGDIEM_KHOANGTANG instance);
-    partial void InsertTINHTHANH(TINHTHANH instance);
-    partial void UpdateTINHTHANH(TINHTHANH instance);
-    partial void DeleteTINHTHANH(TINHTHANH instance);
     partial void InsertCHITIETBONHOCARDDOHOA(CHITIETBONHOCARDDOHOA instance);
     partial void UpdateCHITIETBONHOCARDDOHOA(CHITIETBONHOCARDDOHOA instance);
     partial void DeleteCHITIETBONHOCARDDOHOA(CHITIETBONHOCARDDOHOA instance);
@@ -93,6 +90,9 @@ namespace EStoreDAO
     partial void InsertCHITIETDUNGLUONGOCUNG(CHITIETDUNGLUONGOCUNG instance);
     partial void UpdateCHITIETDUNGLUONGOCUNG(CHITIETDUNGLUONGOCUNG instance);
     partial void DeleteCHITIETDUNGLUONGOCUNG(CHITIETDUNGLUONGOCUNG instance);
+    partial void InsertCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
+    partial void UpdateCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
+    partial void DeleteCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
     partial void InsertCHITIETKICHTHUOCMANHINH(CHITIETKICHTHUOCMANHINH instance);
     partial void UpdateCHITIETKICHTHUOCMANHINH(CHITIETKICHTHUOCMANHINH instance);
     partial void DeleteCHITIETKICHTHUOCMANHINH(CHITIETKICHTHUOCMANHINH instance);
@@ -117,9 +117,6 @@ namespace EStoreDAO
     partial void InsertCHITIETVONGQUAYOCUNG(CHITIETVONGQUAYOCUNG instance);
     partial void UpdateCHITIETVONGQUAYOCUNG(CHITIETVONGQUAYOCUNG instance);
     partial void DeleteCHITIETVONGQUAYOCUNG(CHITIETVONGQUAYOCUNG instance);
-    partial void InsertCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
-    partial void UpdateCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
-    partial void DeleteCHITIETHEDIEUHANH(CHITIETHEDIEUHANH instance);
     partial void InsertDANHGIA(DANHGIA instance);
     partial void UpdateDANHGIA(DANHGIA instance);
     partial void DeleteDANHGIA(DANHGIA instance);
@@ -147,10 +144,13 @@ namespace EStoreDAO
     partial void InsertNHASANXUAT(NHASANXUAT instance);
     partial void UpdateNHASANXUAT(NHASANXUAT instance);
     partial void DeleteNHASANXUAT(NHASANXUAT instance);
+    partial void InsertTINHTHANH(TINHTHANH instance);
+    partial void UpdateTINHTHANH(TINHTHANH instance);
+    partial void DeleteTINHTHANH(TINHTHANH instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString, mappingSource)
+				base(global::EStoreDAO.Properties.Settings.Default.ESTOREConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -184,14 +184,6 @@ namespace EStoreDAO
 			get
 			{
 				return this.GetTable<BANGDIEM_KHOANGTANG>();
-			}
-		}
-		
-		public System.Data.Linq.Table<TINHTHANH> TINHTHANHs
-		{
-			get
-			{
-				return this.GetTable<TINHTHANH>();
 			}
 		}
 		
@@ -347,6 +339,14 @@ namespace EStoreDAO
 			}
 		}
 		
+		public System.Data.Linq.Table<CHITIETHEDIEUHANH> CHITIETHEDIEUHANHs
+		{
+			get
+			{
+				return this.GetTable<CHITIETHEDIEUHANH>();
+			}
+		}
+		
 		public System.Data.Linq.Table<CHITIETKICHTHUOCMANHINH> CHITIETKICHTHUOCMANHINHs
 		{
 			get
@@ -408,14 +408,6 @@ namespace EStoreDAO
 			get
 			{
 				return this.GetTable<CHITIETVONGQUAYOCUNG>();
-			}
-		}
-		
-		public System.Data.Linq.Table<CHITIETHEDIEUHANH> CHITIETHEDIEUHANHs
-		{
-			get
-			{
-				return this.GetTable<CHITIETHEDIEUHANH>();
 			}
 		}
 		
@@ -488,6 +480,14 @@ namespace EStoreDAO
 			get
 			{
 				return this.GetTable<NHASANXUAT>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TINHTHANH> TINHTHANHs
+		{
+			get
+			{
+				return this.GetTable<TINHTHANH>();
 			}
 		}
 	}
@@ -991,120 +991,6 @@ namespace EStoreDAO
 		{
 			this.SendPropertyChanging();
 			entity.BANGDIEM_KHOANGTANG = null;
-		}
-	}
-	
-	[Table(Name="dbo.TINHTHANH")]
-	public partial class TINHTHANH : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaTinhThanh;
-		
-		private string _TenTinhThanh;
-		
-		private EntitySet<KHACHHANG> _KHACHHANGs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaTinhThanhChanging(int value);
-    partial void OnMaTinhThanhChanged();
-    partial void OnTenTinhThanhChanging(string value);
-    partial void OnTenTinhThanhChanged();
-    #endregion
-		
-		public TINHTHANH()
-		{
-			this._KHACHHANGs = new EntitySet<KHACHHANG>(new Action<KHACHHANG>(this.attach_KHACHHANGs), new Action<KHACHHANG>(this.detach_KHACHHANGs));
-			OnCreated();
-		}
-		
-		[Column(Storage="_MaTinhThanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaTinhThanh
-		{
-			get
-			{
-				return this._MaTinhThanh;
-			}
-			set
-			{
-				if ((this._MaTinhThanh != value))
-				{
-					this.OnMaTinhThanhChanging(value);
-					this.SendPropertyChanging();
-					this._MaTinhThanh = value;
-					this.SendPropertyChanged("MaTinhThanh");
-					this.OnMaTinhThanhChanged();
-				}
-			}
-		}
-		
-		[Column(Storage="_TenTinhThanh", DbType="NVarChar(30)")]
-		public string TenTinhThanh
-		{
-			get
-			{
-				return this._TenTinhThanh;
-			}
-			set
-			{
-				if ((this._TenTinhThanh != value))
-				{
-					this.OnTenTinhThanhChanging(value);
-					this.SendPropertyChanging();
-					this._TenTinhThanh = value;
-					this.SendPropertyChanged("TenTinhThanh");
-					this.OnTenTinhThanhChanged();
-				}
-			}
-		}
-		
-		[Association(Name="TINHTHANH_KHACHHANG", Storage="_KHACHHANGs", OtherKey="MaTinhThanh")]
-		public EntitySet<KHACHHANG> KHACHHANGs
-		{
-			get
-			{
-				return this._KHACHHANGs;
-			}
-			set
-			{
-				this._KHACHHANGs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_KHACHHANGs(KHACHHANG entity)
-		{
-			this.SendPropertyChanging();
-			entity.TINHTHANH = this;
-		}
-		
-		private void detach_KHACHHANGs(KHACHHANG entity)
-		{
-			this.SendPropertyChanging();
-			entity.TINHTHANH = null;
 		}
 	}
 	
@@ -6983,6 +6869,144 @@ namespace EStoreDAO
 		}
 	}
 	
+	[Table(Name="dbo.CHITIETHEDIEUHANH")]
+	public partial class CHITIETHEDIEUHANH : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaChiTietHeDieuHanh;
+		
+		private string _TenHeDieuHanh;
+		
+		private System.Nullable<double> _HeSo;
+		
+		private EntitySet<HEDIEUHANH> _HEDIEUHANHs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaChiTietHeDieuHanhChanging(int value);
+    partial void OnMaChiTietHeDieuHanhChanged();
+    partial void OnTenHeDieuHanhChanging(string value);
+    partial void OnTenHeDieuHanhChanged();
+    partial void OnHeSoChanging(System.Nullable<double> value);
+    partial void OnHeSoChanged();
+    #endregion
+		
+		public CHITIETHEDIEUHANH()
+		{
+			this._HEDIEUHANHs = new EntitySet<HEDIEUHANH>(new Action<HEDIEUHANH>(this.attach_HEDIEUHANHs), new Action<HEDIEUHANH>(this.detach_HEDIEUHANHs));
+			OnCreated();
+		}
+		
+		[Column(Storage="_MaChiTietHeDieuHanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaChiTietHeDieuHanh
+		{
+			get
+			{
+				return this._MaChiTietHeDieuHanh;
+			}
+			set
+			{
+				if ((this._MaChiTietHeDieuHanh != value))
+				{
+					this.OnMaChiTietHeDieuHanhChanging(value);
+					this.SendPropertyChanging();
+					this._MaChiTietHeDieuHanh = value;
+					this.SendPropertyChanged("MaChiTietHeDieuHanh");
+					this.OnMaChiTietHeDieuHanhChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_TenHeDieuHanh", DbType="NVarChar(30)")]
+		public string TenHeDieuHanh
+		{
+			get
+			{
+				return this._TenHeDieuHanh;
+			}
+			set
+			{
+				if ((this._TenHeDieuHanh != value))
+				{
+					this.OnTenHeDieuHanhChanging(value);
+					this.SendPropertyChanging();
+					this._TenHeDieuHanh = value;
+					this.SendPropertyChanged("TenHeDieuHanh");
+					this.OnTenHeDieuHanhChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_HeSo", DbType="Float")]
+		public System.Nullable<double> HeSo
+		{
+			get
+			{
+				return this._HeSo;
+			}
+			set
+			{
+				if ((this._HeSo != value))
+				{
+					this.OnHeSoChanging(value);
+					this.SendPropertyChanging();
+					this._HeSo = value;
+					this.SendPropertyChanged("HeSo");
+					this.OnHeSoChanged();
+				}
+			}
+		}
+		
+		[Association(Name="CHITIETHEDIEUHANH_HEDIEUHANH", Storage="_HEDIEUHANHs", OtherKey="MaChiTietHeDieuHanh")]
+		public EntitySet<HEDIEUHANH> HEDIEUHANHs
+		{
+			get
+			{
+				return this._HEDIEUHANHs;
+			}
+			set
+			{
+				this._HEDIEUHANHs.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_HEDIEUHANHs(HEDIEUHANH entity)
+		{
+			this.SendPropertyChanging();
+			entity.CHITIETHEDIEUHANH = this;
+		}
+		
+		private void detach_HEDIEUHANHs(HEDIEUHANH entity)
+		{
+			this.SendPropertyChanging();
+			entity.CHITIETHEDIEUHANH = null;
+		}
+	}
+	
 	[Table(Name="dbo.CHITIETKICHTHUOCMANHINH")]
 	public partial class CHITIETKICHTHUOCMANHINH : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -8213,144 +8237,6 @@ namespace EStoreDAO
 		}
 	}
 	
-	[Table(Name="dbo.CHITIETHEDIEUHANH")]
-	public partial class CHITIETHEDIEUHANH : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaChiTietHeDieuHanh;
-		
-		private string _TenHeDieuHanh;
-		
-		private System.Nullable<double> _HeSo;
-		
-		private EntitySet<HEDIEUHANH> _HEDIEUHANHs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaChiTietHeDieuHanhChanging(int value);
-    partial void OnMaChiTietHeDieuHanhChanged();
-    partial void OnTenHeDieuHanhChanging(string value);
-    partial void OnTenHeDieuHanhChanged();
-    partial void OnHeSoChanging(System.Nullable<double> value);
-    partial void OnHeSoChanged();
-    #endregion
-		
-		public CHITIETHEDIEUHANH()
-		{
-			this._HEDIEUHANHs = new EntitySet<HEDIEUHANH>(new Action<HEDIEUHANH>(this.attach_HEDIEUHANHs), new Action<HEDIEUHANH>(this.detach_HEDIEUHANHs));
-			OnCreated();
-		}
-		
-		[Column(Storage="_MaChiTietHeDieuHanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaChiTietHeDieuHanh
-		{
-			get
-			{
-				return this._MaChiTietHeDieuHanh;
-			}
-			set
-			{
-				if ((this._MaChiTietHeDieuHanh != value))
-				{
-					this.OnMaChiTietHeDieuHanhChanging(value);
-					this.SendPropertyChanging();
-					this._MaChiTietHeDieuHanh = value;
-					this.SendPropertyChanged("MaChiTietHeDieuHanh");
-					this.OnMaChiTietHeDieuHanhChanged();
-				}
-			}
-		}
-		
-		[Column(Storage="_TenHeDieuHanh", DbType="NVarChar(30)")]
-		public string TenHeDieuHanh
-		{
-			get
-			{
-				return this._TenHeDieuHanh;
-			}
-			set
-			{
-				if ((this._TenHeDieuHanh != value))
-				{
-					this.OnTenHeDieuHanhChanging(value);
-					this.SendPropertyChanging();
-					this._TenHeDieuHanh = value;
-					this.SendPropertyChanged("TenHeDieuHanh");
-					this.OnTenHeDieuHanhChanged();
-				}
-			}
-		}
-		
-		[Column(Storage="_HeSo", DbType="Float")]
-		public System.Nullable<double> HeSo
-		{
-			get
-			{
-				return this._HeSo;
-			}
-			set
-			{
-				if ((this._HeSo != value))
-				{
-					this.OnHeSoChanging(value);
-					this.SendPropertyChanging();
-					this._HeSo = value;
-					this.SendPropertyChanged("HeSo");
-					this.OnHeSoChanged();
-				}
-			}
-		}
-		
-		[Association(Name="CHITIETHEDIEUHANH_HEDIEUHANH", Storage="_HEDIEUHANHs", OtherKey="MaChiTietHeDieuHanh")]
-		public EntitySet<HEDIEUHANH> HEDIEUHANHs
-		{
-			get
-			{
-				return this._HEDIEUHANHs;
-			}
-			set
-			{
-				this._HEDIEUHANHs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_HEDIEUHANHs(HEDIEUHANH entity)
-		{
-			this.SendPropertyChanging();
-			entity.CHITIETHEDIEUHANH = this;
-		}
-		
-		private void detach_HEDIEUHANHs(HEDIEUHANH entity)
-		{
-			this.SendPropertyChanging();
-			entity.CHITIETHEDIEUHANH = null;
-		}
-	}
-	
 	[Table(Name="dbo.DANHGIA")]
 	public partial class DANHGIA : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -9191,11 +9077,11 @@ namespace EStoreDAO
 		
 		private EntityRef<DOTUOI> _DOTUOI;
 		
-		private EntityRef<TINHTHANH> _TINHTHANH;
-		
 		private EntityRef<MUCDICHSUDUNG> _MUCDICHSUDUNG;
 		
 		private EntityRef<NGHENGHIEP> _NGHENGHIEP;
+		
+		private EntityRef<TINHTHANH> _TINHTHANH;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -9219,9 +9105,9 @@ namespace EStoreDAO
 		{
 			this._GIAODICHes = new EntitySet<GIAODICH>(new Action<GIAODICH>(this.attach_GIAODICHes), new Action<GIAODICH>(this.detach_GIAODICHes));
 			this._DOTUOI = default(EntityRef<DOTUOI>);
-			this._TINHTHANH = default(EntityRef<TINHTHANH>);
 			this._MUCDICHSUDUNG = default(EntityRef<MUCDICHSUDUNG>);
 			this._NGHENGHIEP = default(EntityRef<NGHENGHIEP>);
+			this._TINHTHANH = default(EntityRef<TINHTHANH>);
 			OnCreated();
 		}
 		
@@ -9408,40 +9294,6 @@ namespace EStoreDAO
 			}
 		}
 		
-		[Association(Name="TINHTHANH_KHACHHANG", Storage="_TINHTHANH", ThisKey="MaTinhThanh", IsForeignKey=true)]
-		public TINHTHANH TINHTHANH
-		{
-			get
-			{
-				return this._TINHTHANH.Entity;
-			}
-			set
-			{
-				TINHTHANH previousValue = this._TINHTHANH.Entity;
-				if (((previousValue != value) 
-							|| (this._TINHTHANH.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TINHTHANH.Entity = null;
-						previousValue.KHACHHANGs.Remove(this);
-					}
-					this._TINHTHANH.Entity = value;
-					if ((value != null))
-					{
-						value.KHACHHANGs.Add(this);
-						this._MaTinhThanh = value.MaTinhThanh;
-					}
-					else
-					{
-						this._MaTinhThanh = default(int);
-					}
-					this.SendPropertyChanged("TINHTHANH");
-				}
-			}
-		}
-		
 		[Association(Name="MUCDICHSUDUNG_KHACHHANG", Storage="_MUCDICHSUDUNG", ThisKey="MaMucDichSuDung", IsForeignKey=true)]
 		public MUCDICHSUDUNG MUCDICHSUDUNG
 		{
@@ -9506,6 +9358,40 @@ namespace EStoreDAO
 						this._MaNgheNghiep = default(int);
 					}
 					this.SendPropertyChanged("NGHENGHIEP");
+				}
+			}
+		}
+		
+		[Association(Name="TINHTHANH_KHACHHANG", Storage="_TINHTHANH", ThisKey="MaTinhThanh", IsForeignKey=true)]
+		public TINHTHANH TINHTHANH
+		{
+			get
+			{
+				return this._TINHTHANH.Entity;
+			}
+			set
+			{
+				TINHTHANH previousValue = this._TINHTHANH.Entity;
+				if (((previousValue != value) 
+							|| (this._TINHTHANH.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._TINHTHANH.Entity = null;
+						previousValue.KHACHHANGs.Remove(this);
+					}
+					this._TINHTHANH.Entity = value;
+					if ((value != null))
+					{
+						value.KHACHHANGs.Add(this);
+						this._MaTinhThanh = value.MaTinhThanh;
+					}
+					else
+					{
+						this._MaTinhThanh = default(int);
+					}
+					this.SendPropertyChanged("TINHTHANH");
 				}
 			}
 		}
@@ -10328,6 +10214,120 @@ namespace EStoreDAO
 		{
 			this.SendPropertyChanging();
 			entity.NHASANXUAT = null;
+		}
+	}
+	
+	[Table(Name="dbo.TINHTHANH")]
+	public partial class TINHTHANH : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaTinhThanh;
+		
+		private string _TenTinhThanh;
+		
+		private EntitySet<KHACHHANG> _KHACHHANGs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaTinhThanhChanging(int value);
+    partial void OnMaTinhThanhChanged();
+    partial void OnTenTinhThanhChanging(string value);
+    partial void OnTenTinhThanhChanged();
+    #endregion
+		
+		public TINHTHANH()
+		{
+			this._KHACHHANGs = new EntitySet<KHACHHANG>(new Action<KHACHHANG>(this.attach_KHACHHANGs), new Action<KHACHHANG>(this.detach_KHACHHANGs));
+			OnCreated();
+		}
+		
+		[Column(Storage="_MaTinhThanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaTinhThanh
+		{
+			get
+			{
+				return this._MaTinhThanh;
+			}
+			set
+			{
+				if ((this._MaTinhThanh != value))
+				{
+					this.OnMaTinhThanhChanging(value);
+					this.SendPropertyChanging();
+					this._MaTinhThanh = value;
+					this.SendPropertyChanged("MaTinhThanh");
+					this.OnMaTinhThanhChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_TenTinhThanh", DbType="NVarChar(30)")]
+		public string TenTinhThanh
+		{
+			get
+			{
+				return this._TenTinhThanh;
+			}
+			set
+			{
+				if ((this._TenTinhThanh != value))
+				{
+					this.OnTenTinhThanhChanging(value);
+					this.SendPropertyChanging();
+					this._TenTinhThanh = value;
+					this.SendPropertyChanged("TenTinhThanh");
+					this.OnTenTinhThanhChanged();
+				}
+			}
+		}
+		
+		[Association(Name="TINHTHANH_KHACHHANG", Storage="_KHACHHANGs", OtherKey="MaTinhThanh")]
+		public EntitySet<KHACHHANG> KHACHHANGs
+		{
+			get
+			{
+				return this._KHACHHANGs;
+			}
+			set
+			{
+				this._KHACHHANGs.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_KHACHHANGs(KHACHHANG entity)
+		{
+			this.SendPropertyChanging();
+			entity.TINHTHANH = this;
+		}
+		
+		private void detach_KHACHHANGs(KHACHHANG entity)
+		{
+			this.SendPropertyChanging();
+			entity.TINHTHANH = null;
 		}
 	}
 }
