@@ -10,12 +10,12 @@ using EStoreBUS;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestMucDichSuDungBUS
+    class MyTestMucDichSuDungBUS
     {
         [Test]
         public void LayDanhSachMucDichSuDungTest()
         {
-            myMucDichSuDungBUS MucDichSuDungBUS = new myMucDichSuDungBUS();
+            MyMucDichSuDungBUS MucDichSuDungBUS = new MyMucDichSuDungBUS();
             List<MUCDICHSUDUNG> DSMucDichSuDung = MucDichSuDungBUS.LayMucDichSuDung();
             Assert.IsNotNull(DSMucDichSuDung);
         }

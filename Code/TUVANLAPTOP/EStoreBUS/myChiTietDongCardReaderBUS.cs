@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongCardReaderBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng card Reader BUS
+    /// </summary>
+    public class MyChiTietDongCardReaderBUS
     {
         /// <summary>
         /// Lấy danh sách thông tin tất cả các dòng card reader
@@ -27,21 +31,22 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã cardreader
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongCardReader(string m_tenCardReader)
+        /// <param name="tenCardReader">tên card reader</param>
+        /// <returns>mã dòng card reader</returns>
+        public int LayChiTietDongCardReader(string tenCardReader)
         {
             try
             {
-                return myChiTietDongCardReaderDAO.LayMaDongCardReader(m_tenCardReader);
+                return myChiTietDongCardReaderDAO.LayMaDongCardReader(tenCardReader);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
     }
 }

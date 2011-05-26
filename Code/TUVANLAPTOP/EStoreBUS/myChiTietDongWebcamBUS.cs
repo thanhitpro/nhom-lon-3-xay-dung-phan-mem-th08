@@ -1,15 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
-namespace EStoreBUS
+﻿namespace EStoreBUS
 {
-    public class myChiTietDongWebcamBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng Webcam BUS
+    /// </summary>
+    public class MyChiTietDongWebcamBUS
     {
-        public myChiTietDongWebcamDTO LayChiTietDongWebcam(int _iMaChiTietDongWebcam)
-        { return null; }
+        /// <summary>
+        /// Lấy chi tiết dòng webcam
+        /// </summary>
+        /// <param name="maChiTietDongWebcam">Mã chi tiết dòng webcame</param>
+        /// <returns>trả về giá trị null</returns>
+        public myChiTietDongWebcamDTO LayChiTietDongWebcam(int maChiTietDongWebcam)
+        { 
+            return null; 
+        }
 
         /// <summary>
         /// Lấy danh sách tất cả các dòng webcam
@@ -27,15 +36,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã webcam dựa vào tên webcam
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongWebcam(string m_tenWebCam)
+        /// <param name="tenWebcam">Tên của dòng Webcam</param>
+        /// <returns>trả về mã dòng Webcam</returns>
+        public int LayChiTietDongWebcam(string tenWebcam)
         {
             try
             {
-                return myChiTietDongWebcamDAO.LayMaDongWebCam(m_tenWebCam);
+                return myChiTietDongWebcamDAO.LayMaDongWebCam(tenWebcam);
             }
             catch (Exception ex)
             {

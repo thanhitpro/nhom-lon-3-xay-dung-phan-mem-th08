@@ -31,7 +31,7 @@ namespace TUVANLAPTOP
         {
             try
             {
-                if (myNguoiDungBUS.KiemTraNguoiDungTonTai(textBox_username.Text, textBox_password.Text))
+                if (CMyNguoiDungBUS.KiemTraNguoiDungTonTai(textBox_username.Text, textBox_password.Text))
                 {
                     this.Hide();
                     if (0 == MANHINHCHINH.m_iStaticFormDuocChon)

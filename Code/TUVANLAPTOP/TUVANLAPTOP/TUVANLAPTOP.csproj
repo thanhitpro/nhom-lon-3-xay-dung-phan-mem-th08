@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{E26E6E9D-7153-4619-B244-3BB13DF35A38}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -323,6 +323,14 @@
     <ProjectReference Include="..\EStoreDTO\EStoreDTO.csproj">
       <Project>{1D59FB1C-8ADA-4678-A8CD-12ECC1492E83}</Project>
       <Name>EStoreDTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreTestBUS\EStoreTestBUS.csproj">
+      <Project>{D3895BF6-7B53-4A3C-8C27-F60D8D1B5DD4}</Project>
+      <Name>EStoreTestBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreTest\EStoreTestDAO.csproj">
+      <Project>{F4B5BC30-C27B-4007-8E6A-2DEFBBE586F6}</Project>
+      <Name>EStoreTestDAO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

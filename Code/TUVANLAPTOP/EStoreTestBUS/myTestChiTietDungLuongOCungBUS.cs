@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     
-    class myTestChiTietDungLuongOCungBUS
+    class MyTestChiTietDungLuongOCungBUS
     {
         [Test]
         public void TestLayDanhSachOCung()
         {
-            List<myChiTietDungLuongOCungDTO> listDungLuongOCung = myChiTietDungLuongOCungBUS.LayChiTietDungLuongOCung();
+            List<myChiTietDungLuongOCungDTO> listDungLuongOCung = MyChiTietDungLuongOCungBUS.LayChiTietDungLuongOCung();
             Assert.IsNotNull(listDungLuongOCung);
             Assert.LessOrEqual(1, listDungLuongOCung.Count);
         }
@@ -27,7 +27,7 @@ namespace EStoreTestBUS
             dlOCung.STenChiTietDungLuongOCung = "10TB ";
             dlOCung.FHeSo = (float)1.0;
 
-            Assert.AreEqual(true, myChiTietDungLuongOCungBUS.ThemDungLuongOCung(dlOCung));
+            Assert.AreEqual(true, MyChiTietDungLuongOCungBUS.ThemDungLuongOCung(dlOCung));
 
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
             int maMax = m_eStoreDataContext.CHITIETDUNGLUONGOCUNGs.Max(it => it.MaChiTietDungLuongOCung);

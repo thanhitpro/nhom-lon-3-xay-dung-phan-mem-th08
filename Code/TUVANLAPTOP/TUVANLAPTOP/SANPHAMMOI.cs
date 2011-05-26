@@ -181,7 +181,7 @@ namespace TUVANLAPTOP
             {
                 try
                 {
-                    bool isThemGD = myGiaoDichBUS.themGiaoDich(this.LayGiaoDichHienTai());
+                    bool isThemGD = MyGiaoDichBUS.ThemGiaoDich(this.LayGiaoDichHienTai());
                     if (isThemGD)
                     {
                         MessageBox.Show("Bạn đã chọn Laptop " + this.sTenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");

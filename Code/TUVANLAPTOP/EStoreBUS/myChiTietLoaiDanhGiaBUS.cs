@@ -1,17 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietLoaiDanhGiaBUS
-    {
-        public myChiTietLoaiDanhGiaDTO LayChiTietLoaiDanhGia(int _iMaChiTietLoaiDanhGia)
-        { return null; }
+    using System.Collections.Generic;
+    using EStoreDTO;
 
+    /// <summary>
+    /// Lớp chi tiết loại đánh giá
+    /// </summary>
+    public class MyChiTietLoaiDanhGiaBUS
+    {
+        /// <summary>
+        /// Lấy chi tiết loại đánh giá
+        /// </summary>
+        /// <param name="maChiTietLoaiDanhGia">Mã chi tiết loại đánh giá</param>
+        /// <returns>trả về giá trị null</returns>
+        public myChiTietLoaiDanhGiaDTO LayChiTietLoaiDanhGia(int maChiTietLoaiDanhGia)
+        { 
+            return null; 
+        }
+
+        /// <summary>
+        /// Lấy chi tiết loại đánh giá
+        /// </summary>
+        /// <returns>trả về giá trị null</returns>
         public List<myChiTietLoaiDanhGiaDTO> LayChiTietLoaiDanhGia()
-        { return null; }
+        { 
+            return null; 
+        }
     }
 }

@@ -1,17 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
+﻿
 namespace EStoreBUS
 {
-    public class myDanhGiaBUS
-    {
-        public myDanhGiaDTO LayDanhGia(int _iMaDanhGia)
-        { return null; }
+    using System.Collections.Generic;
+    using EStoreDTO;
 
+    /// <summary>
+    /// Lớp đánh giá BUS
+    /// </summary>
+    public class MyDanhGiaBUS
+    {
+        /// <summary>
+        /// Lấy đánh giá
+        /// </summary>
+        /// <param name="maDanhGia">Mã đánh giá</param>
+        /// <returns>trả về giá trị null</returns>
+        public myDanhGiaDTO LayDanhGia(int maDanhGia)
+        { 
+            return null; 
+        }
+
+        /// <summary>
+        /// Lấy đánh giá
+        /// </summary>
+        /// <returns>trả về giá trị null</returns>
         public List<myDanhGiaDTO> LayDanhGia()
-        { return null; }
+        { 
+            return null; 
+        }
     }
 }

@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietDongCardMangBUS
+    class MyTestChiTietDongCardMangBUS
     {
         [Test]
         public void TestLayDSCardMang()
         {
-            myChiTietDongCardMangBUS chiTietCardMangBUS = new myChiTietDongCardMangBUS();
+            MyChiTietDongCardMangBUS chiTietCardMangBUS = new MyChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> listChiTietDongCardMangDTO = chiTietCardMangBUS.LayChiTietDongCardMang();
             
             Assert.IsNotNull(listChiTietDongCardMangDTO);

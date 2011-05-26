@@ -32,7 +32,7 @@ namespace EStoreTestTUVANLAPTOP
         [Test]
         public void AddDataIntoDataGridView_Test()
         {
-            myChiTietDongLaptopDTO chiTietDongLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
+            myChiTietDongLaptopDTO chiTietDongLapTop = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
             Assert.AreEqual(true, myCapNhatXoaSanPham_test.AddDataIntoDataGridView(chiTietDongLapTop));
         }
 

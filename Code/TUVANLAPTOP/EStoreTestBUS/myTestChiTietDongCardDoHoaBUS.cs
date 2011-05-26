@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietDongCardDoHoaBUS
+    class MyTestChiTietDongCardDoHoaBUS
     {
         [Test]
         public void TestLayChiTietDongCardDoHoa()
         {
-            myChiTietDongCardDoHoaBUS chiTietDongCardDoHoaBUS = new myChiTietDongCardDoHoaBUS();
+            MyChiTietDongCardDoHoaBUS chiTietDongCardDoHoaBUS = new MyChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> ListChiTietDongCardDoHoaDTO = chiTietDongCardDoHoaBUS.LayChiTietDongCardDoHoa();
             Assert.IsNotNull(ListChiTietDongCardDoHoaDTO);
             Assert.LessOrEqual(2, ListChiTietDongCardDoHoaDTO.Count); ;

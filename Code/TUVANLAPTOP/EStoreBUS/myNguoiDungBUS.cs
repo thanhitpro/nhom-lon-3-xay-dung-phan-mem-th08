@@ -1,21 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDAO;
-using EStoreDTO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myNguoiDungBUS
+    using System;
+    using EStoreDAO;
+
+    /// <summary>
+    /// Người dùng BUS
+    /// </summary>
+    public class CMyNguoiDungBUS
     {
-        public static bool KiemTraNguoiDungTonTai(string _sTenDangNhap, string _sMatKhau)
+        /// <summary>
+        /// Kiểm tra người dùng tồn tại
+        /// </summary>
+        /// <param name="tenDangNhap">tên đăng nhập </param>
+        /// <param name="matKhau"> mật khẩu người dùng</param>
+        /// <returns>True khi người dung tồn lại, ngược lại trả về false</returns>
+        public static bool KiemTraNguoiDungTonTai(string tenDangNhap, string matKhau)
         {
             try
             {
-                return myNguoiDungDAO.KiemTraNguoiDungTonTai(_sTenDangNhap, _sMatKhau);
+                return myNguoiDungDAO.KiemTraNguoiDungTonTai(tenDangNhap, matKhau);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }

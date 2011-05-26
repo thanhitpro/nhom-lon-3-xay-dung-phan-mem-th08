@@ -66,7 +66,7 @@ namespace TUVANLAPTOP
                     btn_SoSP.Text = string.Format("CÓ {0} LAPTOP PHÙ HỢP VỚI BẠN !", listIDLaptopTuVan.Count);
                     foreach (int laptopID in listIDLaptopTuVan)
                     {
-                        myChiTietDongLaptopDTO laptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(laptopID + 1);
+                        myChiTietDongLaptopDTO laptop = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(laptopID + 1);
                         if (laptop != null)
                         {
                             UC_SANPHAM sanPhamControl = new UC_SANPHAM(laptop);
@@ -220,7 +220,7 @@ namespace TUVANLAPTOP
             {
                 try
                 {
-                    bool isThemGD = myGiaoDichBUS.themGiaoDich(this.LayGiaoDichHienTai());
+                    bool isThemGD = MyGiaoDichBUS.ThemGiaoDich(this.LayGiaoDichHienTai());
                     if (isThemGD)
                     {
                         MessageBox.Show("Bạn đã chọn Laptop " + this.tenLaptop + "! Bạn vui lòng đến quày thu ngân làm thủ tục !", "Thông báo");
@@ -337,7 +337,7 @@ namespace TUVANLAPTOP
             {
                 if (this.dongLapTopTemp != null)
                 {
-                    List<myChiTietDongLaptopDTO> danhSachLapTopCungLoai = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(this.dongLapTopTemp);
+                    List<myChiTietDongLaptopDTO> danhSachLapTopCungLoai = MyChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(this.dongLapTopTemp);
                     SANPHAMMOI frm = new SANPHAMMOI();
                     frm.Tag = danhSachLapTopCungLoai;
                     frm.ShowDialog();

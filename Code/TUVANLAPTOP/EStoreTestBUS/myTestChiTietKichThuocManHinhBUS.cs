@@ -10,13 +10,13 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    public class myTestChiTietKichThuocManHinhBUS
+    public class MyTestChiTietKichThuocManHinhBUS
     {
         [Test]
         public void TestLayDSKichThuocManHinh()
         {
             //myChiTietKichThuocManHinhBUS chiTietKichThuocManHinhBUS = new myChiTietKichThuocManHinhBUS();
-            List<myChiTietKichThuocManHinhDTO> listKichThuocManHinhDTO = myChiTietKichThuocManHinhBUS.LayDSKichThuocManHinh();
+            List<myChiTietKichThuocManHinhDTO> listKichThuocManHinhDTO = MyChiTietKichThuocManHinhBUS.LayDSKichThuocManHinh();
 
             Assert.IsNotNull(listKichThuocManHinhDTO);
             Assert.LessOrEqual(1, listKichThuocManHinhDTO.Count);
@@ -29,7 +29,7 @@ namespace EStoreTestBUS
             kichThuoc.STenChiTietKichThuocManHinh = "32 inches";
             kichThuoc.FHeSo = (float)1.0;
 
-            Assert.AreEqual(true, myChiTietKichThuocManHinhBUS.ThemMoiKichThuocMH(kichThuoc));
+            Assert.AreEqual(true, MyChiTietKichThuocManHinhBUS.ThemMoiKichThuocMH(kichThuoc));
 
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
             int maMax = m_eStoreDataContext.CHITIETKICHTHUOCMANHINHs.Max(it => it.MaChiTietKichThuocManHinh);

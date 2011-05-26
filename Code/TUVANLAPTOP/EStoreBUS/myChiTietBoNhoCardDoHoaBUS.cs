@@ -1,10 +1,15 @@
-﻿using System.Collections.Generic;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietBoNhoCardDoHoaBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết bộ nhớ card đồ họa BUS
+    /// </summary>
+    public class MyChiTietBoNhoCardDoHoaBUS
     {
         /// <summary>
         /// Lấy danh sách bộ nhớ Đồ họa
@@ -29,17 +34,17 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm mới bộ nhớ Card MH
         /// </summary>
-        /// <param name="_mBoNhoCardMH">Đối tượng ChiTietBoNhoCardDoHoaDTO muốn thêm</param>
+        /// <param name="maBoNhoCardMH">Đối tượng ChiTietBoNhoCardDoHoaDTO muốn thêm</param>
         /// <returns>
         ///     Thành công: trả về true
         ///     Thất bại: throw một exception
         /// </returns>
-        public static bool ThemBoNhoCardMH(myChiTietBoNhoCardDoHoaDTO _mBoNhoCardMH)
+        public static bool ThemBoNhoCardMH(myChiTietBoNhoCardDoHoaDTO maBoNhoCardMH)
         {
             try
             {
                 myChiTietBoNhoCardDoHoaDAO myChiTietBoNhoCardDoHoaDAO = new myChiTietBoNhoCardDoHoaDAO();
-                return myChiTietBoNhoCardDoHoaDAO.ThemBoNhoCardMH(_mBoNhoCardMH);
+                return myChiTietBoNhoCardDoHoaDAO.ThemBoNhoCardMH(maBoNhoCardMH);
             }
             catch
             {

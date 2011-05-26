@@ -10,7 +10,7 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietVongQuayOCungBUS
+    class MyTestChiTietVongQuayOCungBUS
     {
         [Test]
         public void TestLayDanhSachChiTietVongQuayOCung()
@@ -27,7 +27,7 @@ namespace EStoreTestBUS
             vongQuay.STenChiTietVongQuayOCung = "Vòng quay  5400rpm";
             vongQuay.FHeSo = (float)1.0;
 
-            Assert.AreEqual(true, myChiTietVongQuayOCungBUS.ThemVongQuayOCung(vongQuay));
+            Assert.AreEqual(true, MyChiTietVongQuayOCungBUS.ThemVongQuayOCung(vongQuay));
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
             int maMax = m_eStoreDataContext.CHITIETVONGQUAYOCUNGs.Max(it => it.MaChiTietVongQuayOCung);
             CHITIETVONGQUAYOCUNG chiTietVongXoay = m_eStoreDataContext.CHITIETVONGQUAYOCUNGs.Single(it => it.MaChiTietVongQuayOCung == maMax);

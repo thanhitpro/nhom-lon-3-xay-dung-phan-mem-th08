@@ -42,7 +42,7 @@ namespace TUVANLAPTOP
 
         void LoadDungLuong()
         {
-            this.danhsachDungLuongOCung = myChiTietDungLuongOCungBUS.LayChiTietDungLuongOCung();
+            this.danhsachDungLuongOCung = MyChiTietDungLuongOCungBUS.LayChiTietDungLuongOCung();
             if (this.danhsachDungLuongOCung.Count > 0)
             {
                 txt_DungLuongHienCo.Text = string.Empty;
@@ -55,7 +55,7 @@ namespace TUVANLAPTOP
 
         void LoadVongQuay()
         {
-            this.danhsachVongQuayOCung = myChiTietVongQuayOCungBUS.LayDanhSachChiTietVongQuayOCung();
+            this.danhsachVongQuayOCung = MyChiTietVongQuayOCungBUS.LayDanhSachChiTietVongQuayOCung();
 
             if (this.danhsachVongQuayOCung.Count > 0)
             {
@@ -69,7 +69,7 @@ namespace TUVANLAPTOP
 
         void LoadDLRAM()
         {
-            this.danhsachBoNhoRAM = myChiTietBoNhoRamBUS.LayChiTietBoNhoRam();
+            this.danhsachBoNhoRAM = MyChiTietBoNhoRamBUS.LayChiTietBoNhoRam();
             if (this.danhsachBoNhoRAM.Count > 0)
             {
                 txt_BoNhoHienCo.Text = string.Empty;
@@ -82,7 +82,7 @@ namespace TUVANLAPTOP
 
         void LoadCNRAM()
         {
-            this.danhsachCongNgheRAM = myChiTietCongNgheRamBUS.LayChiTietCongNgheRam();
+            this.danhsachCongNgheRAM = MyChiTietCongNgheRamBUS.LayChiTietCongNgheRam();
             if (this.danhsachCongNgheRAM.Count > 0)
             {
                 txt_CongNgheHienCo.Text = string.Empty;
@@ -95,7 +95,7 @@ namespace TUVANLAPTOP
 
         void LoadManHinh()
         {
-            this.danhsachKichThuocManHinh = myChiTietKichThuocManHinhBUS.LayDSKichThuocManHinh();
+            this.danhsachKichThuocManHinh = MyChiTietKichThuocManHinhBUS.LayDSKichThuocManHinh();
 
             if (this.danhsachKichThuocManHinh != null && this.danhsachKichThuocManHinh.Count > 0)
             {
@@ -109,7 +109,7 @@ namespace TUVANLAPTOP
 
         void LoadBoNhoCardMH()
         {
-            this.danhsachBoNhoCardMH = myChiTietBoNhoCardDoHoaBUS.LayDanhSachChiTietBoNhoCardMH();
+            this.danhsachBoNhoCardMH = MyChiTietBoNhoCardDoHoaBUS.LayDanhSachChiTietBoNhoCardMH();
 
             if (this.danhsachBoNhoCardMH != null && this.danhsachBoNhoCardMH.Count > 0)
             {
@@ -123,7 +123,7 @@ namespace TUVANLAPTOP
 
         void LoadHDH()
         {
-            this.danhsachHeDieuHanh = myChiTietHeDieuHanhBUS.LayDSHeDieuHanh();
+            this.danhsachHeDieuHanh = MyChiTietHeDieuHanhBUS.LayDSHeDieuHanh();
 
             if (this.danhsachHeDieuHanh != null && this.danhsachHeDieuHanh.Count > 0)
             {
@@ -137,7 +137,7 @@ namespace TUVANLAPTOP
 
         private void tab_CPU_Enter(object sender, EventArgs e)
         {
-            List<myChiTietCongNgheCPUDTO> danhsachCongNghe = myChiTietCongNgheCPUBUS.LayDSCongNgheCPU();
+            List<myChiTietCongNgheCPUDTO> danhsachCongNghe = MyChiTietCongNgheCPUBUS.LayDSCongNgheCPU();
             if (danhsachCongNghe != null && danhsachCongNghe.Count > 0)
             {
                 cB_CongNghe.DataSource = danhsachCongNghe;
@@ -160,7 +160,7 @@ namespace TUVANLAPTOP
 
             try
             {
-                if (myChiTietDongCPUBUS.KiemTraTonTaiDongCPU(txt_FullName.Text))
+                if (MyChiTietDongCPUBUS.KiemTraTonTaiDongCPU(txt_FullName.Text))
                 {
                     MessageBox.Show("Dòng CPU " + txt_FullName.Text + " đã tồn tại ! ", "Thông báo");
                     return;
@@ -179,7 +179,7 @@ namespace TUVANLAPTOP
                     if (danhsachCongNghe.Exists(CN => CN.STenChiTietCongNgheCPU == cB_CongNghe.Text.Trim()) == false)
                     {
                         // Nếu không tồn tại công nghệ CPU thì thêm mới vào:
-                        cn.IMaChiTietCN = myChiTietCongNgheCPUBUS.ThemCongNgheCPU(cn);
+                        cn.IMaChiTietCN = MyChiTietCongNgheCPUBUS.ThemCongNgheCPU(cn);
                         dongCPU.ChiTietCongNgheCPU = cn;
                     }
                     else
@@ -188,7 +188,7 @@ namespace TUVANLAPTOP
                         dongCPU.ChiTietCongNgheCPU = danhsachCongNghe[cB_CongNghe.SelectedIndex];
                     }
 
-                    if (myChiTietDongCPUBUS.ThemDongCPU(dongCPU))
+                    if (MyChiTietDongCPUBUS.ThemDongCPU(dongCPU))
                     {
                         MessageBox.Show("Thêm mới thành công dòng CPU: " + txt_FullName.Text, "Thông báo");
                     }
@@ -249,7 +249,7 @@ namespace TUVANLAPTOP
                     chitietKichThuoc.STenChiTietKichThuocManHinh = txt_KichThuocMoi.Text.Trim();
                     chitietKichThuoc.FHeSo = (float)2.0;
 
-                    if (myChiTietKichThuocManHinhBUS.ThemMoiKichThuocMH(chitietKichThuoc) == true)
+                    if (MyChiTietKichThuocManHinhBUS.ThemMoiKichThuocMH(chitietKichThuoc) == true)
                     {
                         MessageBox.Show("Thêm mới kích thước: " + txt_KichThuocMoi.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadManHinh();
@@ -304,7 +304,7 @@ namespace TUVANLAPTOP
                     bonhoRAM.STenChiTietBoNhoRam = txt_BoNhoRAMNew.Text.Trim();
                     bonhoRAM.FHeSo = (float)2.0;
 
-                    if (myChiTietBoNhoRamBUS.ThemBoNhoRAM(bonhoRAM) == true)
+                    if (MyChiTietBoNhoRamBUS.ThemBoNhoRAM(bonhoRAM) == true)
                     {
                         MessageBox.Show("Thêm mới bộ nhớ RAM: " + txt_BoNhoRAMNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadDLRAM();
@@ -340,7 +340,7 @@ namespace TUVANLAPTOP
                     congngheRAM.STenCongNgheRam = txt_CongNgheRAMNew.Text.Trim();
                     congngheRAM.FHeSo = (float)2.0;
 
-                    if (myChiTietCongNgheRamBUS.ThemCongNgheRAM(congngheRAM) == true)
+                    if (MyChiTietCongNgheRamBUS.ThemCongNgheRAM(congngheRAM) == true)
                     {
                         MessageBox.Show("Thêm mới công nghệ RAM: " + txt_CongNgheRAMNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadCNRAM();
@@ -395,7 +395,7 @@ namespace TUVANLAPTOP
                     chitietDungLuong.STenChiTietDungLuongOCung = txt_DungLuongNew.Text.Trim();
                     chitietDungLuong.FHeSo = (float)2.0;
 
-                    if (myChiTietDungLuongOCungBUS.ThemDungLuongOCung(chitietDungLuong) == true)
+                    if (MyChiTietDungLuongOCungBUS.ThemDungLuongOCung(chitietDungLuong) == true)
                     {
                         MessageBox.Show("Thêm mới dung lượng ổ cứng: " + txt_DungLuongNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadDungLuong();
@@ -431,7 +431,7 @@ namespace TUVANLAPTOP
                     chitietVongQuay.STenChiTietVongQuayOCung = txt_VongXoayNew.Text.Trim();
                     chitietVongQuay.FHeSo = (float)2.0;
 
-                    if (myChiTietVongQuayOCungBUS.ThemVongQuayOCung(chitietVongQuay) == true)
+                    if (MyChiTietVongQuayOCungBUS.ThemVongQuayOCung(chitietVongQuay) == true)
                     {
                         MessageBox.Show("Thêm mới vòng quay ổ cứng: " + txt_VongXoayNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadVongQuay();
@@ -480,7 +480,7 @@ namespace TUVANLAPTOP
                     chitietBoNhoCardMH.STenChiTietCardDoHoa = txt_BoNhoCardMHNew.Text.Trim();
                     chitietBoNhoCardMH.FHeSo = (float)2.0;
 
-                    if (myChiTietBoNhoCardDoHoaBUS.ThemBoNhoCardMH(chitietBoNhoCardMH) == true)
+                    if (MyChiTietBoNhoCardDoHoaBUS.ThemBoNhoCardMH(chitietBoNhoCardMH) == true)
                     {
                         MessageBox.Show("Thêm mới bộ nhớ card đồ họa: " + txt_BoNhoCardMHNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadBoNhoCardMH();
@@ -542,7 +542,7 @@ namespace TUVANLAPTOP
                     chitietHDH.STenHeDieuHanh = txt_HDHNew.Text.Trim();
                     chitietHDH.FHeSo = (float)2.0;
 
-                    if (myChiTietHeDieuHanhBUS.ThemMoiHDH(chitietHDH) == true)
+                    if (MyChiTietHeDieuHanhBUS.ThemMoiHDH(chitietHDH) == true)
                     {
                         MessageBox.Show("Thêm mới Hệ Điều Hành: " + txt_HDHNew.Text.Trim() + " thành công !", "Thông báo");
                         this.LoadHDH();

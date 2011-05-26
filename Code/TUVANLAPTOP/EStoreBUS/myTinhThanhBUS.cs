@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myTinhThanhBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+
+    /// <summary>
+    /// Đối tượng tỉnh thành
+    /// </summary>
+    public class MyTinhThanhBUS
     {
         /// <summary>
         /// Lấy danh sách toàn bộ tỉnh thành có trong CSDL

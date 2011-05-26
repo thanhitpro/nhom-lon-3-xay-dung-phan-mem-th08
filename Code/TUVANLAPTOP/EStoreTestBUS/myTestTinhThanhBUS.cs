@@ -10,12 +10,12 @@ using EStoreBUS;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestTinhThanhBUS
+    class MyTestTinhThanhBUS
     {
         [Test]
         public void LayDanhSachTinhThanh()
         {
-            myTinhThanhBUS TinhThanhBUS = new myTinhThanhBUS();
+            MyTinhThanhBUS TinhThanhBUS = new MyTinhThanhBUS();
             List<TINHTHANH> DanhSachTinhThanh = TinhThanhBUS.LayTinhThanh();
             Assert.IsNotNull(DanhSachTinhThanh);
         }

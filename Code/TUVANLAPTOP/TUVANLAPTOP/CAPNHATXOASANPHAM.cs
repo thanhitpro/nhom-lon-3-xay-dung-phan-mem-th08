@@ -153,7 +153,7 @@ namespace TUVANLAPTOP
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
-                List<myChiTietDongLaptopDTO> danhSachChiTietDongLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
+                List<myChiTietDongLaptopDTO> danhSachChiTietDongLapTop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLapTop)
                 {
                     soLuongLaptop++;
@@ -221,7 +221,7 @@ namespace TUVANLAPTOP
             if (MessageBox.Show("Bạn có muốn xóa/bỏ xóa những sản phẩm này?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.No)
                 return;
           
-                bool bKetQua = myChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaLaptopXoa);
+                bool bKetQua = MyChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaLaptopXoa);
                 if (bKetQua)
                 {
                     MessageBox.Show("Cập nhật thành công");
@@ -254,7 +254,7 @@ namespace TUVANLAPTOP
                 try
                 {
                     maChiTietDongLaptop = int.Parse(textBox_MaSanPham.Text);
-                    myChiTietDongLaptopDTO chiTietDongLaptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(maChiTietDongLaptop);
+                    myChiTietDongLaptopDTO chiTietDongLaptop = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(maChiTietDongLaptop);
                     if (chiTietDongLaptop != null)
                         AddDataIntoDataGridView(chiTietDongLaptop);
  
@@ -311,7 +311,7 @@ namespace TUVANLAPTOP
             this.dataGridXoaSanPham.Rows.Clear();
             try
             {
-                List<myChiTietDongLaptopDTO> danhSachChiTietDongLaptop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
+                List<myChiTietDongLaptopDTO> danhSachChiTietDongLaptop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 foreach (myChiTietDongLaptopDTO chiTietDongLaptop in danhSachChiTietDongLaptop)
                     AddDataIntoDataGridView(chiTietDongLaptop);
 

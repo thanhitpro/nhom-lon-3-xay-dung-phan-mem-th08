@@ -1,20 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongPinBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng pin BUS
+    /// </summary>
+    public class MyChiTietDongPinBUS
     {
         /// <summary>
         /// Lấy thông tin dòng phin dựa vào mã dòng PIN
         /// </summary>
-        /// <param name="_iMaChiTietDongPin"></param>
+        /// <param name="maChiTietDongPin">Mã chi tiết dòng pin</param>
         /// <returns>Chi tiết thông tin dòng pin</returns>
-        public myChiTietDongPinDTO LayChiTietDongPin(int _iMaChiTietDongPin)
-        { return null; }
+        public myChiTietDongPinDTO LayChiTietDongPin(int maChiTietDongPin)
+        { 
+            return null; 
+        }
+
         /// <summary>
         /// Lấy thông tin tất cả các dòng PIN
         /// </summary>
@@ -31,15 +38,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã của pin dựa vào tên dòng Pin
         /// </summary>
+        /// <param name="tenPin">Tên dòng pin</param>
         /// <returns>Mã dòng pin</returns>
-        public int LayChiTietDongPin(string m_tenPin)
+        public int LayChiTietDongPin(string tenPin)
         {
             try
             {
-                return myChiTietDongPinDAO.LayMaDongPin(m_tenPin);
+                return myChiTietDongPinDAO.LayMaDongPin(tenPin);
             }
             catch (Exception ex)
             {

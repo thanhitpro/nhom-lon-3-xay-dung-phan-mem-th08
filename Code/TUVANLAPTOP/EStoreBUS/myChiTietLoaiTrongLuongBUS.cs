@@ -1,17 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
+﻿
 namespace EStoreBUS
 {
-    public class myChiTietLoaiTrongLuongBUS
-    {
-        public myChiTietLoaiTrongLuongDTO LayChiTietLoaiTrongLuong(int _iMaChiTietLoaiTrongLuong)
-        { return null; }
+    using System.Collections.Generic;
+    using EStoreDTO;
 
+    /// <summary>
+    /// Lớp chi tiết loại trọng lượng BUS
+    /// </summary>
+    public class MyChiTietLoaiTrongLuongBUS
+    {
+        /// <summary>
+        /// Lấy chi tiết loại trọng lư
+        /// </summary>
+        /// <param name="maChiTietLoaiTrongLuong">Mã chi tiết loại đánh giá</param>
+        /// <returns>trả về giá trị null</returns>
+        public myChiTietLoaiTrongLuongDTO LayChiTietLoaiTrongLuong(int maChiTietLoaiTrongLuong)
+        { 
+            return null; 
+        }
+
+        /// <summary>
+        /// Lấy chi tiết loại trọng lượng
+        /// </summary>
+        /// <returns>trả về giá trị null</returns>
         public List<myChiTietLoaiTrongLuongDTO> LayChiTietLoaiTrongLuong()
-        { return null; }
+        { 
+            return null; 
+        }
     }
 }

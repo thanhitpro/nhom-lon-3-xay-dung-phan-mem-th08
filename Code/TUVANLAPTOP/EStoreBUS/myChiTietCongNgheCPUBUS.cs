@@ -1,26 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
-namespace EStoreBUS
+﻿namespace EStoreBUS
 {
-    public class myChiTietCongNgheCPUBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết công nghệ CPU BUS
+    /// </summary>
+    public class MyChiTietCongNgheCPUBUS
     {
         /// <summary>
         /// Thêm công nghệ CPU
         /// </summary>
-        /// <param name="_mCongNgheCPU">Đối tượng ChiTietCongNgheCPUDTO muốn thêm</param>
+        /// <param name="maCongNgheCPU">Đối tượng ChiTietCongNgheCPUDTO muốn thêm</param>
         /// <returns>
         ///     Thành công: trả về true
         ///     Thất bại: throw một exception cho tầng trên xử lý
         /// </returns>
-        public static int ThemCongNgheCPU(myChiTietCongNgheCPUDTO _mCongNgheCPU)
+        public static int ThemCongNgheCPU(myChiTietCongNgheCPUDTO maCongNgheCPU)
         {
             try
             {
-                return myChiTietCongNgheCPUDAO.ThemCongNgheCPU(_mCongNgheCPU);
+                return myChiTietCongNgheCPUDAO.ThemCongNgheCPU(maCongNgheCPU);
             }
             catch
             {
