@@ -1,0 +1,13 @@
+﻿Các tên Lớp phải sửa lại theo kiểu Pascal Case, ví dụ CMyClass,
+Thiếu summary rất nhiều.
+Tên biển phải sửa lại theo kiểu camel Case , ví dụ danhSach....
+Cách dòng sai  rất nhiều, lúc ko cách 1 dòng giữa 2 khoảng trắng, có lúc lại cách rất nhiều.
+Thiếu mở ngoặc đóng ngoại ở các lệnh if, case.
+using sai theo cách của stylecop
+
+số loại chưa sửa là 758 cái.
+sau khi sửa còn lại <50 cái.
+mất 3 tiếng để sửa tất cả :|
+
+Còn 1 loại lỗi tui không biết sửa ntn.
+ Warning 1 SA1633: The file has no header, the header Xml is invalid, or the header is not located at the top of the file. 
