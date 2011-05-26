@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietDongCPUBUS
+    class MyTestChiTietDongCPUBUS
     {
         [Test]
         public void TestLayDSDongCPU()
         {
-            myChiTietDongCPUBUS chiTietDongCPUBUS = new myChiTietDongCPUBUS();
+            MyChiTietDongCPUBUS chiTietDongCPUBUS = new MyChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> listChiTietDongCPUBUS = chiTietDongCPUBUS.LayChiTietDongCPU();
 
             Assert.IsNotNull(listChiTietDongCPUBUS);

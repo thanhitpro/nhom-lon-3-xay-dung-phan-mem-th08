@@ -1,20 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongODiaQuangBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng ổ đĩa quang BUS
+    /// </summary>
+    public class MyChiTietDongODiaQuangBUS
     {
         /// <summary>
         /// Lấy thông tin ổ đĩa quang dựa vào mã ỗ đĩa quang
         /// </summary>
-        /// <param name="_iMaChiTietDongODiaQuang">Mã ổ đĩa quang</param>
-        /// <returns></returns>
-        public myChiTietDongODiaQuangDTO LayChiTietDongODiaQuang(int _iMaChiTietDongODiaQuang)
-        { return null; }
+        /// <param name="maChiTietDongODiaQuang">Mã ổ đĩa quang</param>
+        /// <returns>trả về giá trị null</returns>
+        public myChiTietDongODiaQuangDTO LayChiTietDongODiaQuang(int maChiTietDongODiaQuang)
+        { 
+            return null; 
+        }
 
         /// <summary>
         /// Lấy thông tin tất cả các dòng ỗ đĩa quang
@@ -32,15 +38,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy thông tin mã ổ đĩa quang dựa vào tên ỗ đĩa quang
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongODiaQuang(string m_tenOQuang)
+        /// <param name="tenOQuang">Tên ổ đĩa quang</param>
+        /// <returns>Mã dòng ổ đĩa quang</returns>
+        public int LayChiTietDongODiaQuang(string tenOQuang)
         {
             try
             {
-                return myChiTietDongODiaQuangDAO.LayMaDongODiaQuang(m_tenOQuang);
+                return myChiTietDongODiaQuangDAO.LayMaDongODiaQuang(tenOQuang);
             }
             catch (Exception ex)
             {

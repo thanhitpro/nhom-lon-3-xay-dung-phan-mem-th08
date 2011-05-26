@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietKichThuocManHinhBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết kích thước màn hình BUS
+    /// </summary>
+    public class MyChiTietKichThuocManHinhBUS
     {
         /// <summary>
         /// Lấy danh sách kích thước màn hình
@@ -30,16 +33,16 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm mới kích thước màn hình
         /// </summary>
-        /// <param name="_mKichThuoc">Đối tượng ChiTietKichThuocManHinhDTO muốn thêm mới</param>
+        /// <param name="maKichThuoc">Đối tượng ChiTietKichThuocManHinhDTO muốn thêm mới</param>
         /// <returns>
         ///     Thành công: trả về true
         ///     Thất bại: throw một exception cho tầng trên xử lý
         /// </returns>
-        public static bool ThemMoiKichThuocMH(myChiTietKichThuocManHinhDTO _mKichThuoc)
+        public static bool ThemMoiKichThuocMH(myChiTietKichThuocManHinhDTO maKichThuoc)
         {
             try
             {
-                return myChiTietKichThuocManHinhDAO.ThemKichThuocManHinh(_mKichThuoc);
+                return myChiTietKichThuocManHinhDAO.ThemKichThuocManHinh(maKichThuoc);
             }
             catch
             {

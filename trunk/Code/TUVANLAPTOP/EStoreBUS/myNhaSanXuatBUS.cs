@@ -1,23 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
+﻿
 namespace EStoreBUS
 {
-    public class myNhaSanXuatBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// class nhà sản xuất BUS
+    /// </summary>
+    public class MyNhaSanXuatBUS
     {
         /// <summary>
-        /// Lay thong tin nha sx tu ma nha sx
+        /// lấy thông tin nhà sản xuất từ mã nhà sản xuất (Chưa sửa dụng)
         /// </summary>
-        /// <param name="_iMaNhaSanXuat"></param>
-        /// <returns></returns>
-        public myNhaSanXuatDTO LayNhaSanXuat(int _iMaNhaSanXuat)
+        /// <param name="maNhaSanXuat"> mã nhà sản xuất</param>
+        /// <returns>trả về giá trị null</returns>
+        public myNhaSanXuatDTO LayNhaSanXuat(int maNhaSanXuat)
         {
             return null;
         }
+
         /// <summary>
         /// Lấy danh sách nhà SX
         /// </summary>
@@ -34,15 +37,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã nhà xuất dựa vào tên nhà sx
         /// </summary>
-        /// <returns></returns>
-        public int LayNhaSanXuat(string m_tenNhaSX)
+        /// <param name="tenNhaSX"> tên nhà sản xuất</param>
+        /// <returns> trả về mã nhà sản xuất</returns>
+        public int LayNhaSanXuat(string tenNhaSX)
         {
             try
             {
-                return myNhaSanXuatDAO.LayMaNhaSanXuat(m_tenNhaSX);
+                return myNhaSanXuatDAO.LayMaNhaSanXuat(tenNhaSX);
             }
             catch (Exception ex)
             {

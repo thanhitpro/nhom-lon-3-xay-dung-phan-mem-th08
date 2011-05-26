@@ -54,7 +54,7 @@ namespace TUVANLAPTOP
 
         public bool LoadRAM()
         {
-            myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
+            MyChiTietDongRamBUS chiTietDongRam = new MyChiTietDongRamBUS();
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
 
             try
@@ -81,7 +81,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadCPU()
         {
-            myChiTietDongCPUBUS chiTietDongCPU = new myChiTietDongCPUBUS();
+            MyChiTietDongCPUBUS chiTietDongCPU = new MyChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
 
             try
@@ -106,7 +106,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadOCung()
         {
-            myChiTietDongOCungBUS chiTietDongOCung = new myChiTietDongOCungBUS();
+            MyChiTietDongOCungBUS chiTietDongOCung = new MyChiTietDongOCungBUS();
             List<myChiTietDongOCungDTO> dsDongOCung = new List<myChiTietDongOCungDTO>();
 
             try
@@ -131,7 +131,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadManHinh()
         {
-            myChiTietDongManHinhBUS chiTietManHinh = new myChiTietDongManHinhBUS();
+            MyChiTietDongManHinhBUS chiTietManHinh = new MyChiTietDongManHinhBUS();
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
 
             try
@@ -159,7 +159,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadCardManHinh()
         {
-            myChiTietDongCardDoHoaBUS chiTietCardDoHoa = new myChiTietDongCardDoHoaBUS();
+            MyChiTietDongCardDoHoaBUS chiTietCardDoHoa = new MyChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
             try
             {
@@ -183,7 +183,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadDongLoa()
         {
-            myChiTietDongLoaBUS chiTietDongLoa = new myChiTietDongLoaBUS();
+            MyChiTietDongLoaBUS chiTietDongLoa = new MyChiTietDongLoaBUS();
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
             try
             {
@@ -207,7 +207,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadODiaQuang()
         {
-            myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
+            MyChiTietDongODiaQuangBUS chiTietDongDQ = new MyChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
             try
             {
@@ -230,7 +230,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadHeDieuHanh()
         {
-            myChiTietHeDieuHanhBUS chiTietHDH = new myChiTietHeDieuHanhBUS();
+            MyChiTietHeDieuHanhBUS chiTietHDH = new MyChiTietHeDieuHanhBUS();
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
             try
             {
@@ -254,7 +254,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadTrongLuong()
         {
-            myChiTietTrongLuongBUS chiTietTL = new myChiTietTrongLuongBUS();
+            MyChiTietTrongLuongBUS chiTietTL = new MyChiTietTrongLuongBUS();
             List<myChiTietTrongLuongDTO> dsTrongLuong = new List<myChiTietTrongLuongDTO>();
             try
             {
@@ -280,7 +280,7 @@ namespace TUVANLAPTOP
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
             {
-                dsLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
+                dsLapTop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
                 // - Mau Sac-
                 foreach (myChiTietDongLaptopDTO laptop in dsLapTop)
                 {
@@ -330,7 +330,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadCardMang()
         {
-            myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
+            MyChiTietDongCardMangBUS chiTietCardMang = new MyChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
             try
             {
@@ -355,7 +355,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadCardReader()
         {
-            myChiTietDongCardReaderBUS chiTietCardReader = new myChiTietDongCardReaderBUS();
+            MyChiTietDongCardReaderBUS chiTietCardReader = new MyChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
             try
             {
@@ -378,7 +378,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadWebcam()
         {
-            myChiTietDongWebcamBUS chiTietWebCam = new myChiTietDongWebcamBUS();
+            MyChiTietDongWebcamBUS chiTietWebCam = new MyChiTietDongWebcamBUS();
             List<myChiTietDongWebcamDTO> dsWebcam = new List<myChiTietDongWebcamDTO>();
             try
             {
@@ -401,7 +401,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadPin()
         {
-            myChiTietDongPinBUS chiTietPin = new myChiTietDongPinBUS();
+            MyChiTietDongPinBUS chiTietPin = new MyChiTietDongPinBUS();
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
             try
             {
@@ -487,7 +487,7 @@ namespace TUVANLAPTOP
         /// </summary>
         public bool LoadNhaSX()
         {
-            myNhaSanXuatBUS nhaSX = new myNhaSanXuatBUS();
+            MyNhaSanXuatBUS nhaSX = new MyNhaSanXuatBUS();
             List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
             try
             {
@@ -722,7 +722,7 @@ namespace TUVANLAPTOP
         {
             try
             {
-                myChiTietDongLaptopBUS.ThemMoiChiTietDongLaptop(dongLaptopMoi);
+                MyChiTietDongLaptopBUS.ThemMoiChiTietDongLaptop(dongLaptopMoi);
                 fileName = "";
             }
             catch

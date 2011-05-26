@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    public class myTestChiTietBoNhoCardDoHoaBUS
+    public class MyTestChiTietBoNhoCardDoHoaBUS
     {
         [Test]
         public void TestLayChiTietBoNhoCardMH()
         {
-            List<myChiTietBoNhoCardDoHoaDTO> listBoNhoCardDoHoaDTO = myChiTietBoNhoCardDoHoaBUS.LayDanhSachChiTietBoNhoCardMH();
+            List<myChiTietBoNhoCardDoHoaDTO> listBoNhoCardDoHoaDTO = MyChiTietBoNhoCardDoHoaBUS.LayDanhSachChiTietBoNhoCardMH();
             Assert.IsNotNull(listBoNhoCardDoHoaDTO);
             Assert.LessOrEqual(3, listBoNhoCardDoHoaDTO.Count);
         }
@@ -27,7 +27,7 @@ namespace EStoreTestBUS
             bn.FHeSo = (float)1.0;
             bn.STenChiTietCardDoHoa = "Lớn hơn 2GB";
 
-            Assert.AreEqual(true,myChiTietBoNhoCardDoHoaBUS.ThemBoNhoCardMH(bn));
+            Assert.AreEqual(true,MyChiTietBoNhoCardDoHoaBUS.ThemBoNhoCardMH(bn));
 
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
             int maMax = m_eStoreDataContext.CHITIETBONHOCARDDOHOAs.Max(it => it.MaChiTietBoNhoCardDoHoa);

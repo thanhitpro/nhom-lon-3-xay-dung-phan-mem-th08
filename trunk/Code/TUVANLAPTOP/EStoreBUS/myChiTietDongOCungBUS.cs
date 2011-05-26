@@ -1,20 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
-namespace EStoreBUS
+﻿namespace EStoreBUS
 {
-    public class myChiTietDongOCungBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng ổ cứng BUS
+    /// </summary>
+    public class MyChiTietDongOCungBUS
     {
         /// <summary>
         /// Lấy thông tin dòng ổ cứng dựa vào mã ổ cứng
         /// </summary>
-        /// <param name="_iMaChiTietDongOCung">mã ổ cứng</param>
-        /// <returns></returns>
-        public myChiTietDongOCungDTO LayChiTietDongOCung(int _iMaChiTietDongOCung)
-        { return null; }
+        /// <param name="maChiTietDongOCung">mã dòng ổ cứng</param>
+        /// <returns>trả về giá trị null</returns>
+        public myChiTietDongOCungDTO LayChiTietDongOCung(int maChiTietDongOCung)
+        { 
+            return null; 
+        }
 
         /// <summary>
         /// Lất tất cả các dòng ổ cứng
@@ -32,15 +36,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã của một dòng ổ cứng dựa vào tên ổ cứng
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongOCung(string m_tenOCung)
+        /// <param name="tenOCung">Tên ổ cứng</param>
+        /// <returns>mã dòng ổ cứng</returns>
+        public int LayChiTietDongOCung(string tenOCung)
         {
             try
             {
-                return myChiTietDongOCungDAO.LayMaDongOCung(m_tenOCung);
+                return myChiTietDongOCungDAO.LayMaDongOCung(tenOCung);
             }
             catch (Exception ex)
             {

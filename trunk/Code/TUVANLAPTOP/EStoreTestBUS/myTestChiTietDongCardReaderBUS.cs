@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietDongCardReaderBUS
+    class MyTestChiTietDongCardReaderBUS
     {
         [Test]
         public void TestLayDSCardReader()
         {
-            myChiTietDongCardReaderBUS chiTietDongCardReaderBUS = new myChiTietDongCardReaderBUS();
+            MyChiTietDongCardReaderBUS chiTietDongCardReaderBUS = new MyChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> ListChiTietDongCardReaderBUS = chiTietDongCardReaderBUS.LayChiTietDongCardReader();
 
             Assert.IsNotNull(ListChiTietDongCardReaderBUS);

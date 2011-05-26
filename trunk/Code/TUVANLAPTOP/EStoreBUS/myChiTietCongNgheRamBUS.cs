@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietCongNgheRamBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết công nghệ RAM BUS
+    /// </summary>
+    public class MyChiTietCongNgheRamBUS
     {
         /// <summary>
         /// Lấy danh sách Công nghệ RAM
@@ -31,16 +33,16 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm chi tiết công nghệ RAM
         /// </summary>
-        /// <param name="_mCTRAM">ChiTietCongNgheRAM muốn thêm mới</param>
+        /// <param name="maCNRAM">ChiTietCongNgheRAM muốn thêm mới</param>
         /// <returns>
         ///     Thành công: trả về true
         ///     Thất bại: throw một exeception cho tầng trên xử lý
         /// </returns>
-        public static bool ThemCongNgheRAM(myChiTietCongNgheRamDTO _mCNRAM)
+        public static bool ThemCongNgheRAM(myChiTietCongNgheRamDTO maCNRAM)
         {
             try
             {
-                return myChiTietCongNgheRamDAO.ThemCongNgheRAM(_mCNRAM);
+                return myChiTietCongNgheRamDAO.ThemCongNgheRAM(maCNRAM);
             }
             catch
             {

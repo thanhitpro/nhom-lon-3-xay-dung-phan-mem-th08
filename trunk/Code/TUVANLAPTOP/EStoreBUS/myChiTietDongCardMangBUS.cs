@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
+﻿
 namespace EStoreBUS
 {
-    public class myChiTietDongCardMangBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng card mạng BUS
+    /// </summary>
+    public class MyChiTietDongCardMangBUS
     {
         /// <summary>
         /// Lấy thông tin tất cả các dòng card mạng
@@ -24,17 +27,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+        
         /// <summary>
-        /// 
+        /// Lấy chi tiết dùng card mạng
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongCardMang( string m_tencardmang)
+        /// <param name="tencardmang">Tên card mạng</param>
+        /// <returns>Mã dòng card mạng</returns>
+        public int LayChiTietDongCardMang(string tencardmang)
         {
-            
             try
             {
-               return  myChiTietDongCardMangDAO.LayMaDongCardMang(m_tencardmang);    
-               
+                return myChiTietDongCardMangDAO.LayMaDongCardMang(tencardmang);
             }
             catch (Exception ex)
             {

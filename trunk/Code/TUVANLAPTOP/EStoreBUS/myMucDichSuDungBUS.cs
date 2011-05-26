@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myMucDichSuDungBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+
+    /// <summary>
+    /// Lớp mục đích sử dụng BUS
+    /// </summary>
+    public class MyMucDichSuDungBUS
     {
         /*public myMucDichSuDungDTO LayMucDichSuDung(int _iMaMucDichSuDung)
         { return null; }*/

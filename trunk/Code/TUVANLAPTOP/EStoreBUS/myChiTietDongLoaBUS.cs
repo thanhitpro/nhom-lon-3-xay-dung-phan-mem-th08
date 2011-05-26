@@ -1,20 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongLoaBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng loa BUS
+    /// </summary>
+    public class MyChiTietDongLoaBUS
     {
         /// <summary>
         ///  Lấy thông tin dòng loa dựa vào mã dòng loa
         /// </summary>
-        /// <param name="_iMaChiTietDongLoa">Mã dòng loa</param>
+        /// <param name="maChiTietDongLoa">Mã dòng loa</param>
         /// <returns>Dòng loa cần tra cứu</returns>
-        public myChiTietDongLoaDTO LayChiTietDongLoa(int _iMaChiTietDongLoa)
-        { return null; }
+        public myChiTietDongLoaDTO LayChiTietDongLoa(int maChiTietDongLoa)
+        { 
+            return null; 
+        }
 
         /// <summary>
         /// Lấy thông tin tất cả các dòng Loa
@@ -32,15 +38,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// lấy mã dòng Loa dựa vào tên loa
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongLoa(string m_tenLoa)
+        /// <param name="tenLoa">Tên của dòng loa</param>
+        /// <returns>mã dòng loa</returns>
+        public int LayChiTietDongLoa(string tenLoa)
         {
             try
             {
-                return myChiTietDongLoaDAO.LayMaDongLoa(m_tenLoa);
+                return myChiTietDongLoaDAO.LayMaDongLoa(tenLoa);
             }
             catch (Exception ex)
             {

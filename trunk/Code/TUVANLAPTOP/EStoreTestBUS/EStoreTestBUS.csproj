@@ -53,24 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyTestAlgorithmNavasBayes.cs" />
-    <Compile Include="myTestChiTietBoNhoCardDoHoaBUS.cs" />
-    <Compile Include="myTestChiTietBoNhoRamBUS.cs" />
-    <Compile Include="myTestChiTietCongNgheCPU.cs" />
-    <Compile Include="myTestChiTietCongNgheRamBUS.cs" />
-    <Compile Include="myTestChiTietDongCardDoHoaBUS.cs" />
-    <Compile Include="myTestChiTietDongCardMangBUS.cs" />
-    <Compile Include="myTestChiTietDongCardReaderBUS.cs" />
-    <Compile Include="myTestChiTietDongCPUBUS.cs" />
-    <Compile Include="myTestChiTietDongLaptopBUS.cs" />
-    <Compile Include="myTestChiTietDungLuongOCungBUS.cs" />
-    <Compile Include="myTestChiTietHeDieuHanhBUS.cs" />
-    <Compile Include="myTestChiTietKichThuocManHinhBUS.cs" />
-    <Compile Include="myTestChiTietVongQuayOCungBUS.cs" />
-    <Compile Include="myTestDoTuoiBUS.cs" />
-    <Compile Include="myTestKhachHangBUS.cs" />
-    <Compile Include="myTestMucDichSuDungBUS.cs" />
-    <Compile Include="myTestNgheNghiepBUS.cs" />
-    <Compile Include="myTestTinhThanhBUS.cs" />
+    <Compile Include="MyTestChiTietBoNhoCardDoHoaBUS.cs" />
+    <Compile Include="MyTestChiTietBoNhoRamBUS.cs" />
+    <Compile Include="MyTestChiTietCongNgheCPU.cs" />
+    <Compile Include="MyTestChiTietCongNgheRamBUS.cs" />
+    <Compile Include="MyTestChiTietDongCardDoHoaBUS.cs" />
+    <Compile Include="MyTestChiTietDongCardMangBUS.cs" />
+    <Compile Include="MyTestChiTietDongCardReaderBUS.cs" />
+    <Compile Include="MyTestChiTietDongCPUBUS.cs" />
+    <Compile Include="MyTestChiTietDongLaptopBUS.cs" />
+    <Compile Include="MyTestChiTietDungLuongOCungBUS.cs" />
+    <Compile Include="MyTestChiTietHeDieuHanhBUS.cs" />
+    <Compile Include="MyTestChiTietKichThuocManHinhBUS.cs" />
+    <Compile Include="MyTestChiTietVongQuayOCungBUS.cs" />
+    <Compile Include="MyTestDoTuoiBUS.cs" />
+    <Compile Include="MyTestKhachHangBUS.cs" />
+    <Compile Include="MyTestMucDichSuDungBUS.cs" />
+    <Compile Include="MyTestNgheNghiepBUS.cs" />
+    <Compile Include="MyTestTinhThanhBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietCongNgheRamBUS
+    class MyTestChiTietCongNgheRamBUS
     {
         [Test]
         public void TestLayChiTietCongNgheRam()
         {
-            List<myChiTietCongNgheRamDTO> listChiTietCongNgheRAMDTO = myChiTietCongNgheRamBUS.LayChiTietCongNgheRam();
+            List<myChiTietCongNgheRamDTO> listChiTietCongNgheRAMDTO = MyChiTietCongNgheRamBUS.LayChiTietCongNgheRam();
             Assert.IsNotNull(listChiTietCongNgheRAMDTO);
             Assert.LessOrEqual(1, listChiTietCongNgheRAMDTO.Count);
         }
@@ -27,7 +27,7 @@ namespace EStoreTestBUS
             chiTietCongNgheRAM.FHeSo = (float)1.0;
             chiTietCongNgheRAM.STenCongNgheRam = "DDR8";
 
-            Assert.AreEqual(true, myChiTietCongNgheRamBUS.ThemCongNgheRAM(chiTietCongNgheRAM));
+            Assert.AreEqual(true, MyChiTietCongNgheRamBUS.ThemCongNgheRAM(chiTietCongNgheRAM));
 
             DataClasses1DataContext m_eStoreDataContext = new DataClasses1DataContext();
             int maMax = m_eStoreDataContext.CHITIETCONGNGHERAMs.Max(it => it.MaChiTietCongNgheRAM);

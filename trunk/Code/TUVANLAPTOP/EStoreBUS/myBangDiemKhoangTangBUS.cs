@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EStoreDAO;
-using EStoreDTO;
-
-namespace EStoreBUS
+﻿namespace EStoreBUS
 {
-    public class myBangDiemKhoangTangBUS
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp bảng điểm khoảng tăng BUS
+    /// </summary>
+    public class MyBangDiemKhoangTangBUS
     {
-        public myBangDiemKhoangTangDTO LayBangDiemKhoangTang(int _iMaBangDiemKhoangTang)
+        /// <summary>
+        /// Lấy bảng điểm khoảng tăng
+        /// </summary>
+        /// <param name="maBangDiemKhoangTang">mã bảng điểm khoảng tặng</param>
+        /// <returns>trả về giá trị null</returns>
+        public myBangDiemKhoangTangDTO LayBangDiemKhoangTang(int maBangDiemKhoangTang)
         {
             return null;
         }

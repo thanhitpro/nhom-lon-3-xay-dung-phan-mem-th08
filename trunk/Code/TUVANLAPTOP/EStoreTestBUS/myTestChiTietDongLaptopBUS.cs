@@ -10,12 +10,12 @@ using EStoreDAO;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestChiTietDongLaptopBUS
+    class MyTestChiTietDongLaptopBUS
     {
         [Test]
         public void TestLayChiTietDongLaptop()
         {
-            myChiTietDongLaptopDTO chiTietDongLapTopDTO = myChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
+            myChiTietDongLaptopDTO chiTietDongLapTopDTO = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
 
             Assert.IsNotNull(chiTietDongLapTopDTO);
             Assert.AreEqual("ACER Aspire 4745 352G32Mn 041", chiTietDongLapTopDTO.STenChiTietDongLapTop.Trim());
@@ -32,7 +32,7 @@ namespace EStoreTestBUS
         [Test]
         public void LayDanhSachChiTietDongLaptop()
         {
-            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
+            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
 
             Assert.IsNotNull(listChiTietDongLaptop);
             Assert.LessOrEqual(30, listChiTietDongLaptop.Count);
@@ -42,20 +42,20 @@ namespace EStoreTestBUS
         public void TestCapNhatXoaChiTietDongLapTop()
         {
             List<int> danhSachMaDongLaptop = new List<int> { 1, 2 };
-            Assert.AreEqual(true, myChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaDongLaptop));
+            Assert.AreEqual(true, MyChiTietDongLaptopBUS.CapNhatXoaChiTietDongLaptop(danhSachMaDongLaptop));
         }
 
         [Test]
         public void TestKiemTraGiaTienHopLe()
         {
-            Assert.AreEqual(true,myChiTietDongLaptopBUS.KiemTraGiaTienHopLe(1,2));
+            Assert.AreEqual(true,MyChiTietDongLaptopBUS.KiemTraGiaTienHopLe(1,2));
         }
 
         [Test]
         public void TestLayDanhSachLaptopMoiNhat()
         {
-            myChiTietDongLaptopDTO chiTietDongLapTop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
-            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = myChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(chiTietDongLapTop);
+            myChiTietDongLaptopDTO chiTietDongLapTop = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(1);
+            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = MyChiTietDongLaptopBUS.LayChiTietDongLaptopMoiNhat(chiTietDongLapTop);
 
             Assert.IsNotNull(listChiTietDongLaptop);
         }

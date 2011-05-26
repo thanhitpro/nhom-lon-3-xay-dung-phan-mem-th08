@@ -28,7 +28,7 @@ namespace TUVANLAPTOP
         public void LoadInfor()
         {
             // Load Ram
-            myChiTietDongRamBUS chiTietDongRam = new myChiTietDongRamBUS();
+            MyChiTietDongRamBUS chiTietDongRam = new MyChiTietDongRamBUS();
             List<myChiTietDongRamDTO> dsDongRam = new List<myChiTietDongRamDTO>();
             try
             {
@@ -49,7 +49,7 @@ namespace TUVANLAPTOP
             }
 
             // Load CPUs
-            myChiTietDongCPUBUS chiTietDongCPU = new myChiTietDongCPUBUS();
+            MyChiTietDongCPUBUS chiTietDongCPU = new MyChiTietDongCPUBUS();
             List<myChiTietDongCPUDTO> dsDongCPU = new List<myChiTietDongCPUDTO>();
             try
             {
@@ -69,7 +69,7 @@ namespace TUVANLAPTOP
                 cbb_cpu.SelectedItem = cbb_cpu.Items[0];
             }
             // Load O Cung
-            myChiTietDongOCungBUS chiTietDongOCung = new myChiTietDongOCungBUS();
+            MyChiTietDongOCungBUS chiTietDongOCung = new MyChiTietDongOCungBUS();
             List<myChiTietDongOCungDTO> dsDongOCung = new List<myChiTietDongOCungDTO>();
             try
             {
@@ -90,7 +90,7 @@ namespace TUVANLAPTOP
             }
 
             // Load Man Hinh
-            myChiTietDongManHinhBUS chiTietManHinh = new myChiTietDongManHinhBUS();
+            MyChiTietDongManHinhBUS chiTietManHinh = new MyChiTietDongManHinhBUS();
             List<myChiTietDongManHinhDTO> dsManHinh = new List<myChiTietDongManHinhDTO>();
             try
             {
@@ -111,7 +111,7 @@ namespace TUVANLAPTOP
             }
 
             // Load Card Mang Hinh
-            myChiTietDongCardDoHoaBUS chiTietCardDoHoa = new myChiTietDongCardDoHoaBUS();
+            MyChiTietDongCardDoHoaBUS chiTietCardDoHoa = new MyChiTietDongCardDoHoaBUS();
             List<myChiTietDongCardDoHoaDTO> dsCardDoHoa = new List<myChiTietDongCardDoHoaDTO>();
             try
             {
@@ -132,7 +132,7 @@ namespace TUVANLAPTOP
             }
 
             // Load Dong Loa
-            myChiTietDongLoaBUS chiTietDongLoa = new myChiTietDongLoaBUS();
+            MyChiTietDongLoaBUS chiTietDongLoa = new MyChiTietDongLoaBUS();
             List<myChiTietDongLoaDTO> dsLoa = new List<myChiTietDongLoaDTO>();
             try
             {
@@ -152,7 +152,7 @@ namespace TUVANLAPTOP
                 cbb_loa.SelectedItem = cbb_loa.Items[0];
             }
             // Load O Quang
-            myChiTietDongODiaQuangBUS chiTietDongDQ = new myChiTietDongODiaQuangBUS();
+            MyChiTietDongODiaQuangBUS chiTietDongDQ = new MyChiTietDongODiaQuangBUS();
             List<myChiTietDongODiaQuangDTO> dsDiaQuang = new List<myChiTietDongODiaQuangDTO>();
             try
             {
@@ -173,7 +173,7 @@ namespace TUVANLAPTOP
             }
 
             //Load HDH
-            myChiTietHeDieuHanhBUS chiTietHDH = new myChiTietHeDieuHanhBUS();
+            MyChiTietHeDieuHanhBUS chiTietHDH = new MyChiTietHeDieuHanhBUS();
             List<myChiTietHeDieuHanhDTO> dsHDH = new List<myChiTietHeDieuHanhDTO>();
             try
             {
@@ -194,7 +194,7 @@ namespace TUVANLAPTOP
             }
 
             //Load Trong Luong
-            myChiTietTrongLuongBUS chiTietTL = new myChiTietTrongLuongBUS();
+            MyChiTietTrongLuongBUS chiTietTL = new MyChiTietTrongLuongBUS();
             List<myChiTietTrongLuongDTO> dsTrongLuong = new List<myChiTietTrongLuongDTO>();
             try
             {
@@ -220,7 +220,7 @@ namespace TUVANLAPTOP
             List<myChiTietDongLaptopDTO> dsLapTop = new List<myChiTietDongLaptopDTO>();
             try
             {
-                dsLapTop = myChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
+                dsLapTop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
             }
             catch
             {
@@ -264,7 +264,7 @@ namespace TUVANLAPTOP
             }
 
             //Load Card Mạng
-            myChiTietDongCardMangBUS chiTietCardMang = new myChiTietDongCardMangBUS();
+            MyChiTietDongCardMangBUS chiTietCardMang = new MyChiTietDongCardMangBUS();
             List<myChiTietDongCardMangDTO> dsCardMang = new List<myChiTietDongCardMangDTO>();
             try
             {
@@ -285,7 +285,7 @@ namespace TUVANLAPTOP
             }
 
             //Load CardReader
-            myChiTietDongCardReaderBUS chiTietCardReader = new myChiTietDongCardReaderBUS();
+            MyChiTietDongCardReaderBUS chiTietCardReader = new MyChiTietDongCardReaderBUS();
             List<myChiTietDongCardReaderDTO> dsCardReader = new List<myChiTietDongCardReaderDTO>();
             try
             {
@@ -306,7 +306,7 @@ namespace TUVANLAPTOP
             }
 
             //Load WebCam
-            myChiTietDongWebcamBUS chiTietWebCam = new myChiTietDongWebcamBUS();
+            MyChiTietDongWebcamBUS chiTietWebCam = new MyChiTietDongWebcamBUS();
             List<myChiTietDongWebcamDTO> dsWebcam = new List<myChiTietDongWebcamDTO>();
             try
             {
@@ -327,7 +327,7 @@ namespace TUVANLAPTOP
             }
 
             //Load Pin
-            myChiTietDongPinBUS chiTietPin = new myChiTietDongPinBUS();
+            MyChiTietDongPinBUS chiTietPin = new MyChiTietDongPinBUS();
             List<myChiTietDongPinDTO> dsPin = new List<myChiTietDongPinDTO>();
             try
             {
@@ -367,7 +367,7 @@ namespace TUVANLAPTOP
             cbb_usb.SelectedItem = cbb_usb.Items[0];
 
             // Load Nha SX
-            myNhaSanXuatBUS nhaSX = new myNhaSanXuatBUS();
+            MyNhaSanXuatBUS nhaSX = new MyNhaSanXuatBUS();
             List<myNhaSanXuatDTO> dsNhaSX = new List<myNhaSanXuatDTO>();
             try
             {
@@ -423,7 +423,7 @@ namespace TUVANLAPTOP
             myChiTietDongLaptopDTO laptop = new myChiTietDongLaptopDTO();
             try
             {
-                laptop = myChiTietDongLaptopBUS.LayChiTietDongLaptop(laptopName);
+                laptop = MyChiTietDongLaptopBUS.LayChiTietDongLaptop(laptopName);
             }
             catch
             {
@@ -1006,7 +1006,7 @@ namespace TUVANLAPTOP
 
             try
             {
-                myChiTietDongLaptopBUS.CapNhatChiTietDongLaptop(dongLaptopMoi);
+                MyChiTietDongLaptopBUS.CapNhatChiTietDongLaptop(dongLaptopMoi);
                 MessageBox.Show("Cập nhật thông tin sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getLaptopDataFromDB(iTemp);
             }

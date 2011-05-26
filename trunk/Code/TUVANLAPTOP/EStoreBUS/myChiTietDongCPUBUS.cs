@@ -1,13 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongCPUBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng CPU
+    /// </summary>
+    public class MyChiTietDongCPUBUS
     {
+        /// <summary>
+        /// Them moi dong dong CPU:
+        /// </summary>
+        /// <param name="maChiTietDongCPU">Mã chi tiết dòng CPU</param>
+        /// <returns>true nếu thêm dòng CPU thành công, ngược lại là false</returns>
+        public static bool ThemDongCPU(myChiTietDongCPUDTO maChiTietDongCPU)
+        {
+            try
+            {
+                return myChiTietDongCPUDAO.ThemDongCPU(maChiTietDongCPU);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Kiểm tra tồn tại dòng CPU
+        /// </summary>
+        /// <param name="name">tên của dòng CPU</param>
+        /// <returns>nếu tồn tại trả về true ngược lại trả về false</returns>
+        public static bool KiemTraTonTaiDongCPU(string name)
+        {
+            try
+            {
+                return myChiTietDongCPUDAO.KiemTraTonTaiDongCPU(name);
+            }
+            catch
+            {
+                throw;
+            }
+        }
 
         /// <summary>
         /// Lấy thông tin tất cả dòng CPU
@@ -28,48 +65,21 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã dòng CPU dựa vào tên dòng CPU
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongCPU(string m_tenCPU)
+        /// <param name="tenCPU">tên của dòng CPU</param>
+        /// <returns>mã dòng CPU</returns>
+        public int LayChiTietDongCPU(string tenCPU)
         {
             try
             {
-                return myChiTietDongCPUDAO.LayMaDongCPU(m_tenCPU);
+                return myChiTietDongCPUDAO.LayMaDongCPU(tenCPU);
             }
             catch (Exception ex)
             {
                 throw ex;
-            }
-        }
-
-        /// <summary>
-        /// Them moi dong dong CPU:
-        /// </summary>
-        /// <param name="_mChiTietDongCPU"></param>
-        /// <returns></returns>
-        public static bool ThemDongCPU(myChiTietDongCPUDTO _mChiTietDongCPU)
-        {
-            try
-            {
-                return myChiTietDongCPUDAO.ThemDongCPU(_mChiTietDongCPU);
-            }
-            catch
-            {
-                throw;
-            }
-        }
-
-        public static bool KiemTraTonTaiDongCPU(string _sName)
-        {
-            try
-            {
-                return myChiTietDongCPUDAO.KiemTraTonTaiDongCPU(_sName);
-            }
-            catch
-            {
-                throw;
             }
         }
     }

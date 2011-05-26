@@ -106,8 +106,8 @@ namespace EStoreTestBUS
             AlgorithmNavasBayes NavasBayes = new AlgorithmNavasBayes();
             List<EStoreBUS.MyStruct> listSanPham = new List<MyStruct>();
             EStoreBUS.MyStruct myStruct1 = new MyStruct();
-            myStruct1.gt = 2.2424;
-            myStruct1.id = 3;
+            myStruct1.Gt = 2.2424;
+            myStruct1.Id = 3;
             listSanPham.Add(myStruct1);
             int IDMucGia = 0;
             Assert.AreEqual(listSanPham, NavasBayes.KiemTraHopLe(listSanPham, IDMucGia));

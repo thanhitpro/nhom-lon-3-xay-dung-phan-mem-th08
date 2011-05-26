@@ -1,20 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDongCardDoHoaBUS
+    using System;
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dòng card đồ họa BUS
+    /// </summary>
+    public class MyChiTietDongCardDoHoaBUS
     {
         /// <summary>
         /// Lấy thông tin card đồ họa từ mã card đồ họa
         /// </summary>
-        /// <param name="_iMaChiTietDongCardDoHoa">Mã card đồ họa</param>
+        /// <param name="maChiTietDongCardDoHoa">Mã card đồ họa</param>
         /// <returns>Thông tin chi tiết card đồ họa</returns>
-        public myChiTietDongCardDoHoaDTO LayChiTietDongCardDoHoa(int _iMaChiTietDongCardDoHoa)
-        { return null; }
+        public myChiTietDongCardDoHoaDTO LayChiTietDongCardDoHoa(int maChiTietDongCardDoHoa)
+        { 
+            return null; 
+        }
 
         /// <summary>
         /// Lấy thông tin tất cả các dòng card đồ họa
@@ -32,15 +38,17 @@ namespace EStoreBUS
                 throw ex;
             }
         }
+
         /// <summary>
         /// Lấy mã dòng card đồ họa dựa vào tên card đồ họa
         /// </summary>
-        /// <returns></returns>
-        public int LayChiTietDongCardDoHoa(string m_tenCardDoHoa)
+        /// <param name="tenCardDoHoa">Tên card đồ họa</param>
+        /// <returns>trả về mã dòng card đồ họa</returns>
+        public int LayChiTietDongCardDoHoa(string tenCardDoHoa)
         {
             try
             {
-                return myChiTietDongCardDoHoaDAO.LayMaDongCardDoHoa(m_tenCardDoHoa);
+                return myChiTietDongCardDoHoaDAO.LayMaDongCardDoHoa(tenCardDoHoa);
             }
             catch (Exception ex)
             {

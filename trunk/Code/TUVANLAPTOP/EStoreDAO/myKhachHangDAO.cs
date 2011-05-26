@@ -194,7 +194,7 @@ namespace EStoreDAO
         ///     Thành công: trả về true
         ///     Thất bại: trả về false
         /// </returns>
-        public static bool themKhachHang(KHACHHANG _kKhachHang)
+        public static bool ThemKhachHang(KHACHHANG _kKhachHang)
         {
             try
             {

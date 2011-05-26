@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
-
-namespace EStoreBUS
+﻿namespace EStoreBUS
 {
-    public class myChiTietVongQuayOCungBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết vòng quay ổ cứng BUS
+    /// </summary>
+    public class MyChiTietVongQuayOCungBUS
     {
         /// <summary>
         /// Lấy danh sách Vong Quay:
@@ -30,16 +31,16 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm vòng quay ổ cứng
         /// </summary>
-        /// <param name="_mVongQuay">Đối tượng ChiTietVongXoayOCungDTO</param>
+        /// <param name="vongQuay">Đối tượng ChiTietVongXoayOCungDTO</param>
         /// <returns>
         ///     Thành công: trả về true
         ///     Thất bại: throw một exception cho tầng trên xử lý
         /// </returns>
-        public static bool ThemVongQuayOCung(myChiTietVongQuayOCungDTO _mVongQuay)
+        public static bool ThemVongQuayOCung(myChiTietVongQuayOCungDTO vongQuay)
         {
             try
             {
-                return myChiTietVongQuayOCungDAO.ThemVongQuay(_mVongQuay);
+                return myChiTietVongQuayOCungDAO.ThemVongQuay(vongQuay);
             }
             catch
             {

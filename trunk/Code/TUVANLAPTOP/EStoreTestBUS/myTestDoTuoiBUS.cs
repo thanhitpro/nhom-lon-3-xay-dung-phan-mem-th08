@@ -10,12 +10,12 @@ using EStoreBUS;
 namespace EStoreTestBUS
 {
     [TestFixture]
-    class myTestDoTuoiBUS
+    class MyTestDoTuoiBUS
     {
         [Test]
         public void LayDanhSachDoTuoiTest()
         {
-            myDoTuoiBUS DoTuoi = new myDoTuoiBUS();
+            MyDoTuoiBUS DoTuoi = new MyDoTuoiBUS();
             List<DOTUOI> DanhSachDoTuoi = DoTuoi.LayDoTuoi();
             Assert.IsNotNull(DanhSachDoTuoi);
         }

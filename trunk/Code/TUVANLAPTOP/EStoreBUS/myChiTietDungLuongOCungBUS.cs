@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EStoreDTO;
-using EStoreDAO;
+﻿
 
 namespace EStoreBUS
 {
-    public class myChiTietDungLuongOCungBUS
+    using System.Collections.Generic;
+    using EStoreDAO;
+    using EStoreDTO;
+
+    /// <summary>
+    /// Lớp chi tiết dung lượng ổ cứng BUS
+    /// </summary>
+    public class MyChiTietDungLuongOCungBUS
     {
         /// <summary>
         /// Lấy danh sách các dung lượng ổ cứng hiện có
@@ -30,13 +33,13 @@ namespace EStoreBUS
         /// <summary>
         /// Thêm dung lượng Ổ cứng mới:
         /// </summary>
-        /// <param name="_mDungLuong"></param>
-        /// <returns></returns>
-        public static bool ThemDungLuongOCung(myChiTietDungLuongOCungDTO _mDungLuong)
+        /// <param name="maDungLuong">Mã Dung lượng ổ cứng</param>
+        /// <returns>True khi thêm dung lượng ổ cứng thành công, ngược lại false</returns>
+        public static bool ThemDungLuongOCung(myChiTietDungLuongOCungDTO maDungLuong)
         {
             try
             {
-                return myChiTietDungLuongOCungDAO.ThemDungLuongOCung(_mDungLuong);
+                return myChiTietDungLuongOCungDAO.ThemDungLuongOCung(maDungLuong);
             }
             catch
             {

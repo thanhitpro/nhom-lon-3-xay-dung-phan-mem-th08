@@ -71,7 +71,7 @@ namespace TUVANLAPTOP
             m_lDanhSachIDSanPhamDuocChon.Clear();
             for (int i = 0; i < iSoLuongLapTopDatYeuCau; i++)
             {
-                int t = listSanPham[i].id;
+                int t = listSanPham[i].Id;
                 m_lDanhSachIDSanPhamDuocChon.Add(t);
             }
 
@@ -137,13 +137,13 @@ namespace TUVANLAPTOP
         /// </returns>
         public void MANHINHCHINH_Load(object sender, EventArgs e)
         {
-            myNgheNghiepBUS ngheNghiepDAO = new myNgheNghiepBUS();
+            MyNgheNghiepBUS ngheNghiepDAO = new MyNgheNghiepBUS();
             List<NGHENGHIEP> listNgheNghiep = new List<NGHENGHIEP>();
-            myDoTuoiBUS doTuoiDAO = new myDoTuoiBUS();
+            MyDoTuoiBUS doTuoiDAO = new MyDoTuoiBUS();
             List<DOTUOI> listDoTuoi = new List<DOTUOI>();
-            myTinhThanhBUS tinhThanhDAO = new myTinhThanhBUS();
+            MyTinhThanhBUS tinhThanhDAO = new MyTinhThanhBUS();
             List<TINHTHANH> listTinhThanh = new List<TINHTHANH>();
-            myMucDichSuDungBUS mucDichSuDungDAO = new myMucDichSuDungBUS();
+            MyMucDichSuDungBUS mucDichSuDungDAO = new MyMucDichSuDungBUS();
             List<MUCDICHSUDUNG> listMucDichSuDung = new List<MUCDICHSUDUNG>();
 
             try
