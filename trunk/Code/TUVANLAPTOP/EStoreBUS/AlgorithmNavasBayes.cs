@@ -1,4 +1,8 @@
-﻿
+﻿//-----------------------------------------------------------------------
+// <copyright file="AlgorithmNavasBayes.cs" company="NHOM LON NHOM 3">
+//     Copyright MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace EStoreBUS
 {
@@ -141,7 +145,7 @@ namespace EStoreBUS
             }
 
             List<float> danhSachTyLeGiaoDich;
-            int soLuongCoGiaoDich;   
+            int soLuongCoGiaoDich;
             float tyLeGiaoDich;
 
             try
@@ -237,7 +241,6 @@ namespace EStoreBUS
             List<float> danhSachTyLeGiaoDich;
             int soLuongCoGiaoDich;
             float tyLeGiaoDich;
-
             try
             {
                 danhSachTyLeGiaoDich = new List<float>();
@@ -594,7 +597,7 @@ namespace EStoreBUS
 
             listXmlNodeList = this.LayDuLieuTuFileXML(listXPath[0], listXPath[1], listXPath[2], listXPath[3], listXPath[4], "ResultAnalyseData.xml");
             listMyStruct = this.ThuaNhanNaives(listXmlNodeList[0], listXmlNodeList[1], listXmlNodeList[2], listXmlNodeList[3], listXmlNodeList[4]);
-            
+
             try
             {
                 listMyStruct = this.KiemTraHopLe(listMyStruct, iDMucGia);
@@ -633,7 +636,7 @@ namespace EStoreBUS
                 try
                 {
                     bool isHopLe = MyChiTietDongLaptopBUS.KiemTraGiaTienHopLe(listSanPham[i].Id + 1, iDMucGia);
-                   
+
                     if (isHopLe)
                     {
                         if (MyChiTietDongLaptopBUS.KiemTraSanPhamTonTai(listSanPham[i].Id + 1) == false)
@@ -665,11 +668,12 @@ namespace EStoreBUS
         /// Thất bại: throw một Exception ra màn hình
         /// </returns>
         public List<MyStruct> ThuaNhanNaives(
-            XmlNodeList nodeListTinhThanh,
-            XmlNodeList nodeListNgheNghiep,
             XmlNodeList nodeListDoTuoi,
+            XmlNodeList nodeListGioiTinh,
             XmlNodeList nodeListMucDich,
-            XmlNodeList nodeListGioiTinh)
+            XmlNodeList nodeListNgheNghiep,
+            XmlNodeList nodeListTinhThanh
+            )
         {
             List<MyStruct> listKetQua = new List<MyStruct>();
 
@@ -732,11 +736,11 @@ namespace EStoreBUS
         ///  Thất bại: throw một Exception ra màn hình
         /// </returns>
         public List<XmlNodeList> LayDuLieuTuFileXML(
-            string pathNgheNghiep,
-            string pathGioiTinh,
             string pathDoTuoi,
-            string pathTinhThanh,
+            string pathGioiTinh,
             string pathMucDich,
+            string pathNgheNghiep,
+            string pathTinhThanh,
             string fileXmlName)
         {
             XmlDocument xmlDoc = new XmlDocument();
