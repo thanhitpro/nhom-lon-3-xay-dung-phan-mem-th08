@@ -1,4 +1,8 @@
-﻿
+﻿//-----------------------------------------------------------------------
+// <copyright file="MyDoTuoiBUS.cs" company="NHOM LON NHOM 3">
+//     Copyright MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace EStoreBUS
 {
@@ -13,11 +17,14 @@ namespace EStoreBUS
         /// <summary>
         /// Lấy thông tin độ tuổi theo mã
         /// </summary>
+        /// <return>
+        /// trả về giá trị null
+        /// </return>
         /// <param name="maDoTuoi">Thông tin mã độ tuổi muốn lấy</param>
-        /// <return>trả về giá trị null</return>
         public static DOTUOI LayDoTuoi(int maDoTuoi)
-        { 
-            return null; 
+        {
+            DOTUOI doTuoi = new DOTUOI();
+            return doTuoi; 
         }
 
         /// <summary>
