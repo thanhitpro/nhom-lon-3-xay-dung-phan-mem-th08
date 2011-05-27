@@ -35,6 +35,13 @@ namespace TUVANLAPTOP
             public int id;
         }
 
+        /// <summary>
+        /// Tư vấn laptop cho khách hàng
+        /// </summary>
+        /// <returns>
+        ///     Thành công: trả về list 3 sản phẩm phù hợp nhất truyền vào màn hình kết quả
+        ///     Thất bại: throw một Exception
+        /// </returns>
         public void button_TuVanLapTop_Click(object sender, EventArgs e)
         {
             int IDNgheNghiep = -1;
