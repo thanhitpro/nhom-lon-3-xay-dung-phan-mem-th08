@@ -1,4 +1,9 @@
-﻿
+﻿//-----------------------------------------------------------------------
+// <copyright file="MyChiTietLoaiTrongLuongBUS.cs" company="NHOM LON NHOM 3">
+//     Copyright MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
 namespace EStoreBUS
 {
     using System.Collections.Generic;

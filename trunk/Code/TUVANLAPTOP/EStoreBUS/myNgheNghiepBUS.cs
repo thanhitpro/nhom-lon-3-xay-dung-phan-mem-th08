@@ -1,9 +1,16 @@
-﻿
+﻿//-----------------------------------------------------------------------
+// <copyright file="MyNgheNghiepBUS.cs" company="NHOM LON NHOM 3">
+//     Copyright MyCompany. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace EStoreBUS
 {
     using System.Collections.Generic;
     using EStoreDAO;
+    /// <summary>
+    /// Class MyNgheNghiepBUS sử dụng giao tiếp với MyNgheNghiepDAO
+    /// </summary>
 
     public class MyNgheNghiepBUS
     {
