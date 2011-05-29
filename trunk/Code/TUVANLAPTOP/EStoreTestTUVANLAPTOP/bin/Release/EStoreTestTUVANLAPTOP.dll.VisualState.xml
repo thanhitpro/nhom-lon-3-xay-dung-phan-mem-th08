@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1025]D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll</TopNode>
+  <SelectedNode>[0-1024]EStoreTestTUVANLAPTOP.myTestCAPNHATXOASANPHAM.ResetDataGridView_Test</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1025]D:\Xay Dung Phan Mem\Project Nhom\XayDungPhanMem\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll" Expanded="true" />
+    <Node UniqueName="[0-1026]EStoreTestTUVANLAPTOP" Expanded="true" />
+    <Node UniqueName="[0-1020]EStoreTestTUVANLAPTOP.myTestCAPNHATXOASANPHAM" Expanded="true" />
+    <Node UniqueName="[0-1000]EStoreTestTUVANLAPTOP.myTestTHEMSANPHAM" Expanded="true" />
+  </Nodes>
+</VisualState>
