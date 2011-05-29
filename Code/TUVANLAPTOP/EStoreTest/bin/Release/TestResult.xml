@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" total="56" errors="3" failures="9" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-05-19" time="22:59:51">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.4959" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files\NUnit 2.5.10\bin\net-2.0" machine-name="DANH-PC" user="danh" user-domain="danh-PC" />
+  <culture-info current-culture="vi-VN" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" executed="True" result="Failure" success="False" time="3.253" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="EStoreTest" executed="True" result="Failure" success="False" time="3.253" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="myChiTietDongLaptopDAOTest" executed="True" result="Success" success="True" time="0.455" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.CapNhatXoaChiTietDongLaptop_Test" executed="True" result="Success" success="True" time="0.414" asserts="4" />
+              <test-case name="EStoreTest.myChiTietDongLaptopDAOTest.ThemMoiChiTietDongLaptopTest" executed="True" result="Success" success="True" time="0.036" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoCardDoHoaDAO" executed="True" result="Success" success="True" time="0.020" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietBoNhoCardDoHoaDAO.TestThem" executed="True" result="Success" success="True" time="0.019" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietBoNhoRamDAO" executed="True" result="Success" success="True" time="0.026" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietBoNhoRamDAO.TestLayChiTietBoNhoRam" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietBoNhoRamDAO.TestThemBoNhoRAM" executed="True" result="Success" success="True" time="0.012" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietCongNgheCPUDAO" executed="True" result="Success" success="True" time="0.026" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietCongNgheCPUDAO.TestLayDSCongNgheCPU" executed="True" result="Success" success="True" time="0.009" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietCongNgheCPUDAO.TestThemCongNgheCPU" executed="True" result="Success" success="True" time="0.013" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietCongNgheRamDAO" executed="True" result="Success" success="True" time="0.027" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestLayChiTietCongNgheRam" executed="True" result="Success" success="True" time="0.007" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietCongNgheRamDAO.TestThemCongNgheRAM" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardDoHoaDAO" executed="True" result="Success" success="True" time="0.006" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongCardDoHoaDAO.TestLayDSDongCardDoHoa" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardMangDAO" executed="True" result="Success" success="True" time="0.003" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongCardMangDAO.TestLayChiTietDongCardMang" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCardReaderDAO" executed="True" result="Success" success="True" time="0.004" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongCardReaderDAO.TestLayChiTietDongCardReader" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongCPUDAO" executed="True" result="Failure" success="False" time="0.094" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestKiemTraTonTaiDongCPU" executed="True" result="Failure" success="False" time="0.014" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongCPUDAO.TestKiemTraTonTaiDongCPU() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongCPUDAO.cs:line 47
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestLayChiTietDongCPU" executed="True" result="Failure" success="False" time="0.003" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected string length 27 but was 24. Strings differ at index 0.
+  Expected: "Intel Core i7-950 (3.06GHz)"
+  But was:  "EL Core i7-950 (3.06GHz)"
+  -----------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongCPUDAO.TestLayChiTietDongCPU() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongCPUDAO.cs:line 19
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="EStoreTest.myTestChiTietDongCPUDAO.TestThemMoiDongCPU" executed="True" result="Error" success="False" time="0.006" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Data.SqlClient.SqlException : The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CHITIETDONGCPU_NHASANXUAT". The conflict occurred in database "ESTORE", table "dbo.NHASANXUAT", column 'MaNhaSanXuat'.
+The statement has been terminated.]]></message>
+                  <stack-trace><![CDATA[at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+at System.Data.SqlClient.SqlDataReader.get_MetaData()
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+at System.Data.Common.DbCommand.ExecuteReader()
+at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+at System.Data.Linq.ChangeDirector.StandardChangeDirector.DynamicInsert(TrackedObject item)
+at System.Data.Linq.ChangeDirector.StandardChangeDirector.Insert(TrackedObject item)
+at System.Data.Linq.ChangeProcessor.SubmitChanges(ConflictMode failureMode)
+at System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+at System.Data.Linq.DataContext.SubmitChanges()
+at EStoreDAO.myChiTietDongCPUDAO.ThemDongCPU(myChiTietDongCPUDTO _mDongCPU) in D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\myChiTietDongCPUDAO.cs:line 71
+at EStoreTest.myTestChiTietDongCPUDAO.TestThemMoiDongCPU() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongCPUDAO.cs:line 33
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongLaptopDAO" executed="True" result="Failure" success="False" time="2.247" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop_Test" executed="True" result="Success" success="True" time="0.354" asserts="4" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongCardDoHoa" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongCardMang" executed="True" result="Success" success="True" time="0.021" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongCardReader" executed="True" result="Success" success="True" time="0.017" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongCPU" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongLaptop" executed="True" result="Success" success="True" time="0.240" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongLoa" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongManHinh" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongOCung" executed="True" result="Success" success="True" time="0.017" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongODiaQuang" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongPin" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongRam" executed="True" result="Success" success="True" time="0.018" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietDongWebCam" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatChiTietTrongLuong" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatHeDieuHanh" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatNhaSanXuat" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestCapNhatTenDongLapTop" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestLayChiTietDongLaptop" executed="True" result="Failure" success="False" time="0.103" asserts="6">
+                <failure>
+                  <message><![CDATA[  Expected: 10454
+  But was:  10.4540005f
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongLaptopDAO.TestLayChiTietDongLaptop() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongLaptopDAO.cs:line 23
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestLayChiTietDongLaptopMoiNhat" executed="True" result="Success" success="True" time="0.086" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestLayDanhSachChiTietDongLaptop" executed="True" result="Error" success="False" time="0.172" asserts="0">
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : Nullable object must have a value.]]></message>
+                  <stack-trace><![CDATA[at EStoreDAO.myChiTietDongLaptopDAO.LayDanhSachChiTietDongLaptop() in D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\myChiTietDongLaptopDAO.cs:line 170
+at EStoreTest.myTestChiTietDongLaptopDAO.TestLayDanhSachChiTietDongLaptop() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongLaptopDAO.cs:line 33
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestTaoChiTietLapTop" executed="True" result="Success" success="True" time="0.041" asserts="1" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.TestTraCuu" executed="True" result="Success" success="True" time="0.876" asserts="21" />
+              <test-case name="EStoreTest.myTestChiTietDongLaptopDAO.ThemMoiChiTietDongLaptopTest" executed="True" result="Failure" success="False" time="0.052" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: null
+  But was:  "dell"
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongLaptopDAO.ThemMoiChiTietDongLaptopTest() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongLaptopDAO.cs:line 71
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongLoaDAO" executed="True" result="Success" success="True" time="0.003" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongLoaDAO.TestLayChiTietDongLoa" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongManHinhDAO" executed="True" result="Success" success="True" time="0.003" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongManHinhDAO.TestLayChiTietDongManHinh" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongOCungDAO" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongOCungDAO.TestLayChiTietDongOCung" executed="True" result="Failure" success="False" time="0.003" asserts="5">
+                <failure>
+                  <message><![CDATA[  Expected string length 17 but was 22. Strings differ at index 0.
+  Expected: "HDD 320GB 7200rpm"
+  But was:  "Sony HDD 320GB 7200rpm"
+  -----------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongOCungDAO.TestLayChiTietDongOCung() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongOCungDAO.cs:line 19
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongODiaQuangDAO" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongODiaQuangDAO.TestLayChiTietDongODiaQuang" executed="True" result="Failure" success="False" time="0.004" asserts="3">
+                <failure>
+                  <message><![CDATA[  Expected string length 22 but was 15. Strings differ at index 15.
+  Expected: "DVD-16X SAMSUNG READER"
+  But was:  "DVD-16X SAMSUNG"
+  --------------------------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongODiaQuangDAO.TestLayChiTietDongODiaQuang() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongODiaQuangDAO.cs:line 19
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongPinDAO" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongPinDAO.TestLayChiTietDongPin" executed="True" result="Failure" success="False" time="0.003" asserts="3">
+                <failure>
+                  <message><![CDATA[  Expected string length 5 but was 1. Strings differ at index 0.
+  Expected: "3 giờ"
+  But was:  "1"
+  -----------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongPinDAO.TestLayChiTietDongPin() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongPinDAO.cs:line 19
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongRamDAO" executed="True" result="Success" success="True" time="0.004" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongRamDAO.TestLayChiTietDongRam" executed="True" result="Success" success="True" time="0.003" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDongWebcamDAO" executed="True" result="Failure" success="False" time="0.005" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDongWebcamDAO.TestLayChiTietDongWebcam" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected string length 13 but was 2. Strings differ at index 0.
+  Expected: "Colorvis 2005"
+  But was:  "1 "
+  -----------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietDongWebcamDAO.TestLayChiTietDongWebcam() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietDongWebcamDAO.cs:line 18
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietDungLuongOCungDAO" executed="True" result="Success" success="True" time="0.030" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietDungLuongOCungDAO.TestLayDSDungLuongOCung" executed="True" result="Success" success="True" time="0.009" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietDungLuongOCungDAO.TestThemDungLuongOCung" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietHeDieuHanhDAO" executed="True" result="Failure" success="False" time="0.042" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestLayChiTietHDH" executed="True" result="Failure" success="False" time="0.003" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected string length 18 but was 8. Strings differ at index 4.
+  Expected: "Win 7 Home Premium"
+  But was:  "Win home"
+  ---------------^
+]]></message>
+                  <stack-trace><![CDATA[at EStoreTest.myTestChiTietHeDieuHanhDAO.TestLayChiTietHDH() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestChiTietHeDieuHanhDAO.cs:line 18
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestLayDSHeDieuHanh" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietHeDieuHanhDAO.TestThemHeDieuHanh" executed="True" result="Success" success="True" time="0.013" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietKichThuocManHinhDAO" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietKichThuocManHinhDAO.TestLayDSKichThuocManHinh" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietKichThuocManHinhDAO.TestThemKichThuocManHinh" executed="True" result="Success" success="True" time="0.017" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestChiTietVongQuayOCungDAO" executed="True" result="Success" success="True" time="0.027" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestChiTietVongQuayOCungDAO.TestLayDSVongQuayOCung" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+              <test-case name="EStoreTest.myTestChiTietVongQuayOCungDAO.TestThemVongQuay" executed="True" result="Success" success="True" time="0.013" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestDanhGiaDAO" executed="True" result="Success" success="True" time="0.004" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestDanhGiaDAO.TestLayDanhGia" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="myTestNguoiDungDAO" executed="True" result="Failure" success="False" time="0.007" asserts="0">
+            <results>
+              <test-case name="EStoreTest.myTestNguoiDungDAO.TestKiemTraNguoiDungTonTai" executed="True" result="Error" success="False" time="0.005" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Data.SqlClient.SqlException : Invalid object name 'dbo.NGUOIDUNG'.]]></message>
+                  <stack-trace><![CDATA[at EStoreDAO.myNguoiDungDAO.KiemTraNguoiDungTonTai(String _sTenDangNhap, String _sMatKhau) in D:\Group3_1\Code\TUVANLAPTOP\EStoreDAO\myNguoiDungDAO.cs:line 35
+at EStoreTest.myTestNguoiDungDAO.TestKiemTraNguoiDungTonTai() in D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\myTestNguoiDungDAO.cs:line 17
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

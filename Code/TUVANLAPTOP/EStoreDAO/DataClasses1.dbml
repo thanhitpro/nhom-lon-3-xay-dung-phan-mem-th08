@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ESTORE" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHNGUYENDANG\SQLEXPRESS;Initial Catalog=ESTORE;Integrated Security=True" SettingsObjectName="EStoreDAO.Properties.Settings" SettingsPropertyName="ESTOREConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BANGDIEM_KHOANGTANG" Member="BANGDIEM_KHOANGTANGs">
+    <Type Name="BANGDIEM_KHOANGTANG">
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Diem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDDOHOA" Member="CHITIETDONGCARDDOHOAs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGCARDDOHOA" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDMANG" Member="CHITIETDONGCARDMANGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGCARDMANG" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDREADER" Member="CHITIETDONGCARDREADERs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGCARDREADER" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCPU" Member="CHITIETDONGCPUs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGCPU" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGLOA" Member="CHITIETDONGLOAs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGLOA" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGMANHINH" Member="CHITIETDONGMANHINHs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGMANHINH" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGOCUNG" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGODIAQUANG" Member="CHITIETDONGODIAQUANGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGODIAQUANG" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGRAM" Member="CHITIETDONGRAMs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGRAM" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGWEBCAM" Member="CHITIETDONGWEBCAMs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGWEBCAM" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGWEBCAM1" Member="CHITIETDONGWEBCAMs1" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETDONGWEBCAM" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETTRONGLUONG" Member="CHITIETTRONGLUONGs" OtherKey="MaBangDiem_KhoangTang" Type="CHITIETTRONGLUONG" />
+      <Association Name="BANGDIEM_KHOANGTANG_DANHGIA" Member="DANHGIAs" OtherKey="MaBangDiem_KhoangTang" Type="DANHGIA" />
+      <Association Name="BANGDIEM_KHOANGTANG_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaBangDiem_KhoangTang" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETBONHOCARDDOHOA" Member="CHITIETBONHOCARDDOHOAs">
+    <Type Name="CHITIETBONHOCARDDOHOA">
+      <Column Name="MaChiTietBoNhoCardDoHoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietBoNhoCardDoHoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETBONHOCARDDOHOA_CHITIETDONGCARDDOHOA" Member="CHITIETDONGCARDDOHOAs" OtherKey="MaChiTietBoNhoCardDoHoa" Type="CHITIETDONGCARDDOHOA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETBONHORAM" Member="CHITIETBONHORAMs">
+    <Type Name="CHITIETBONHORAM">
+      <Column Name="MaChiTietBoNhoRAM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietBoNhoRAM" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETBONHORAM_CHITIETDONGRAM" Member="CHITIETDONGRAMs" OtherKey="MaChiTietBoNhoRAM" Type="CHITIETDONGRAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETCACKHANANGODIAQUANG" Member="CHITIETCACKHANANGODIAQUANGs">
+    <Type Name="CHITIETCACKHANANGODIAQUANG">
+      <Column Name="MaChiTietCacKhaNangODiaQuang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietCacKhaNangODiaQuang" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETCACKHANANGODIAQUANG_CHITIETDONGODIAQUANG" Member="CHITIETDONGODIAQUANGs" OtherKey="MaChiTietCacKhaNangODiaQuang" Type="CHITIETDONGODIAQUANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETCONGNGHECARDREADER" Member="CHITIETCONGNGHECARDREADERs">
+    <Type Name="CHITIETCONGNGHECARDREADER">
+      <Column Name="MaChiTietCongNgheCardReader" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenCongNgheCardReader" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETCONGNGHECARDREADER_CHITIETDONGCARDREADER" Member="CHITIETDONGCARDREADERs" OtherKey="MaChiTietCongNgheCardReader" Type="CHITIETDONGCARDREADER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETCONGNGHECPU" Member="CHITIETCONGNGHECPUs">
+    <Type Name="CHITIETCONGNGHECPU">
+      <Column Name="MaChiTietCongNgheCPU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietCongNgheCPU" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETCONGNGHECPU_CHITIETDONGCPU" Member="CHITIETDONGCPUs" OtherKey="MaChiTietCongNgheCPU" Type="CHITIETDONGCPU" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETCONGNGHERAM" Member="CHITIETCONGNGHERAMs">
+    <Type Name="CHITIETCONGNGHERAM">
+      <Column Name="MaChiTietCongNgheRAM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenCongNgheRam" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETCONGNGHERAM_CHITIETDONGRAM" Member="CHITIETDONGRAMs" OtherKey="MaChiTietCongNgheRAM" Type="CHITIETDONGRAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGCARDDOHOA" Member="CHITIETDONGCARDDOHOAs">
+    <Type Name="CHITIETDONGCARDDOHOA">
+      <Column Name="MaDongCardDoHoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietBoNhoCardDoHoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongCardDoHoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGCARDDOHOA_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCardDoHoa" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDDOHOA" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETBONHOCARDDOHOA_CHITIETDONGCARDDOHOA" Member="CHITIETBONHOCARDDOHOA" ThisKey="MaChiTietBoNhoCardDoHoa" Type="CHITIETBONHOCARDDOHOA" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDDOHOA" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGCARDMANG" Member="CHITIETDONGCARDMANGs">
+    <Type Name="CHITIETDONGCARDMANG">
+      <Column Name="MaDongCardMang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietLoaiKetNoiCardMang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenDongCardMang" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="CHITIETDONGCARDMANG_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCardMang" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDMANG" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETLOAIKETNOICARDMANG_CHITIETDONGCARDMANG" Member="CHITIETLOAIKETNOICARDMANG" ThisKey="MaChiTietLoaiKetNoiCardMang" Type="CHITIETLOAIKETNOICARDMANG" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDMANG" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGCARDREADER" Member="CHITIETDONGCARDREADERs">
+    <Type Name="CHITIETDONGCARDREADER">
+      <Column Name="MaDongCardReader" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietCongNgheCardReader" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenDongCardReader" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="CHITIETDONGCARDREADER_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCardReader" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCARDREADER" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETCONGNGHECARDREADER_CHITIETDONGCARDREADER" Member="CHITIETCONGNGHECARDREADER" ThisKey="MaChiTietCongNgheCardReader" Type="CHITIETCONGNGHECARDREADER" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDREADER" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGCPU" Member="CHITIETDONGCPUs">
+    <Type Name="CHITIETDONGCPU">
+      <Column Name="MaDongCPU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietCongNgheCPU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongCPU" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGCPU_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongCPU" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGCPU" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETCONGNGHECPU_CHITIETDONGCPU" Member="CHITIETCONGNGHECPU" ThisKey="MaChiTietCongNgheCPU" Type="CHITIETCONGNGHECPU" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGCPU" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs">
+    <Type Name="CHITIETDONGLAPTOP">
+      <Column Name="MaDongLapTop" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietDongLapTop" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaDongRAM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongCPU" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongOCung" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongManHinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongCardDoHoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongLoa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongODiaQuang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongCardMang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongCardReader" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongWebCam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDongPin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaHeDieuHanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietTrongLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FingerprintReader" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HDMI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SoLuongCongUSB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDanhGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GiaBanHienHanh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MoTaThem" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="SoLuongNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoLuongConLai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThoiGianBaoHanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="MauSac" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="CHITIETDONGLAPTOP_GIAODICH" Member="GIAODICHes" OtherKey="MaDongLaptop" Type="GIAODICH" />
+      <Association Name="CHITIETDONGCARDDOHOA_CHITIETDONGLAPTOP" Member="CHITIETDONGCARDDOHOA" ThisKey="MaDongCardDoHoa" Type="CHITIETDONGCARDDOHOA" IsForeignKey="true" />
+      <Association Name="CHITIETDONGCPU_CHITIETDONGLAPTOP" Member="CHITIETDONGCPU" ThisKey="MaDongCPU" Type="CHITIETDONGCPU" IsForeignKey="true" />
+      <Association Name="CHITIETDONGCARDMANG_CHITIETDONGLAPTOP" Member="CHITIETDONGCARDMANG" ThisKey="MaDongCardMang" Type="CHITIETDONGCARDMANG" IsForeignKey="true" />
+      <Association Name="CHITIETDONGCARDREADER_CHITIETDONGLAPTOP" Member="CHITIETDONGCARDREADER" ThisKey="MaDongCardReader" Type="CHITIETDONGCARDREADER" IsForeignKey="true" />
+      <Association Name="CHITIETDONGLOA_CHITIETDONGLAPTOP" Member="CHITIETDONGLOA" ThisKey="MaDongLoa" Type="CHITIETDONGLOA" IsForeignKey="true" />
+      <Association Name="CHITIETDONGMANHINH_CHITIETDONGLAPTOP" Member="CHITIETDONGMANHINH" ThisKey="MaDongManHinh" Type="CHITIETDONGMANHINH" IsForeignKey="true" />
+      <Association Name="CHITIETDONGOCUNG_CHITIETDONGLAPTOP" Member="CHITIETDONGOCUNG" ThisKey="MaDongOCung" Type="CHITIETDONGOCUNG" IsForeignKey="true" />
+      <Association Name="CHITIETDONGODIAQUANG_CHITIETDONGLAPTOP" Member="CHITIETDONGODIAQUANG" ThisKey="MaDongODiaQuang" Type="CHITIETDONGODIAQUANG" IsForeignKey="true" />
+      <Association Name="CHITIETDONGPIN_CHITIETDONGLAPTOP" Member="CHITIETDONGPIN" ThisKey="MaDongPin" Type="CHITIETDONGPIN" IsForeignKey="true" />
+      <Association Name="CHITIETDONGRAM_CHITIETDONGLAPTOP" Member="CHITIETDONGRAM" ThisKey="MaDongRAM" Type="CHITIETDONGRAM" IsForeignKey="true" />
+      <Association Name="CHITIETDONGWEBCAM_CHITIETDONGLAPTOP" Member="CHITIETDONGWEBCAM" ThisKey="MaDongWebCam" Type="CHITIETDONGWEBCAM" IsForeignKey="true" />
+      <Association Name="CHITIETTRONGLUONG_CHITIETDONGLAPTOP" Member="CHITIETTRONGLUONG" ThisKey="MaChiTietTrongLuong" Type="CHITIETTRONGLUONG" IsForeignKey="true" />
+      <Association Name="DANHGIA_CHITIETDONGLAPTOP" Member="DANHGIA" ThisKey="MaDanhGia" Type="DANHGIA" IsForeignKey="true" />
+      <Association Name="HEDIEUHANH_CHITIETDONGLAPTOP" Member="HEDIEUHANH" ThisKey="MaHeDieuHanh" Type="HEDIEUHANH" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGLOA" Member="CHITIETDONGLOAs">
+    <Type Name="CHITIETDONGLOA">
+      <Column Name="MaDongLoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CoMicro" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongDongLoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGLOA_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongLoa" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGLOA" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGLOA" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGMANHINH" Member="CHITIETDONGMANHINHs">
+    <Type Name="CHITIETDONGMANHINH">
+      <Column Name="MaDongManHinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietKichThuocManHinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongManHinh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGMANHINH_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongManHinh" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGMANHINH" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETKICHTHUOCMANHINH_CHITIETDONGMANHINH" Member="CHITIETKICHTHUOCMANHINH" ThisKey="MaChiTietKichThuocManHinh" Type="CHITIETKICHTHUOCMANHINH" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGMANHINH" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs">
+    <Type Name="CHITIETDONGOCUNG">
+      <Column Name="MaDongOCung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietVongQuayOCung" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaChiTietDungLuongOCung" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongOCung" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGOCUNG_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongOCung" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGOCUNG" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETDUNGLUONGOCUNG_CHITIETDONGOCUNG" Member="CHITIETDUNGLUONGOCUNG" ThisKey="MaChiTietDungLuongOCung" Type="CHITIETDUNGLUONGOCUNG" IsForeignKey="true" />
+      <Association Name="CHITIETVONGQUAYOCUNG_CHITIETDONGOCUNG" Member="CHITIETVONGQUAYOCUNG" ThisKey="MaChiTietVongQuayOCung" Type="CHITIETVONGQUAYOCUNG" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGOCUNG" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGODIAQUANG" Member="CHITIETDONGODIAQUANGs">
+    <Type Name="CHITIETDONGODIAQUANG">
+      <Column Name="MaDongODiaQuang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietCacKhaNangODiaQuang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongODiaQuang" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGODIAQUANG_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongODiaQuang" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGODIAQUANG" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETCACKHANANGODIAQUANG_CHITIETDONGODIAQUANG" Member="CHITIETCACKHANANGODIAQUANG" ThisKey="MaChiTietCacKhaNangODiaQuang" Type="CHITIETCACKHANANGODIAQUANG" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGODIAQUANG" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGPIN" Member="CHITIETDONGPINs">
+    <Type Name="CHITIETDONGPIN">
+      <Column Name="MaDongPin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietThoiLuongPin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenDongPin" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="ThoiGianSuDung" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETDONGPIN_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongPin" Type="CHITIETDONGLAPTOP" />
+      <Association Name="CHITIETTHOILUONGPIN_CHITIETDONGPIN" Member="CHITIETTHOILUONGPIN" ThisKey="MaChiTietThoiLuongPin" Type="CHITIETTHOILUONGPIN" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGPIN" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGRAM" Member="CHITIETDONGRAMs">
+    <Type Name="CHITIETDONGRAM">
+      <Column Name="MaDongRAM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietBoNhoRAM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaChiTietCongNgheRAM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenDongRAM" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGRAM_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongRAM" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGRAM" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETCONGNGHERAM_CHITIETDONGRAM" Member="CHITIETCONGNGHERAM" ThisKey="MaChiTietCongNgheRAM" Type="CHITIETCONGNGHERAM" IsForeignKey="true" />
+      <Association Name="CHITIETBONHORAM_CHITIETDONGRAM" Member="CHITIETBONHORAM" ThisKey="MaChiTietBoNhoRAM" Type="CHITIETBONHORAM" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGRAM" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDONGWEBCAM" Member="CHITIETDONGWEBCAMs">
+    <Type Name="CHITIETDONGWEBCAM">
+      <Column Name="MaDongWebCam" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietLoaiDoPhanGiaiWebCam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenDongWebCam" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DoPhanGiai" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETDONGWEBCAM_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDongWebCam" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGWEBCAM" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETDONGWEBCAM1" Member="BANGDIEM_KHOANGTANG1" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETLOAIDOPHANGIAIWEBCAM_CHITIETDONGWEBCAM" Member="CHITIETLOAIDOPHANGIAIWEBCAM" ThisKey="MaChiTietLoaiDoPhanGiaiWebCam" Type="CHITIETLOAIDOPHANGIAIWEBCAM" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_CHITIETDONGWEBCAM" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETDUNGLUONGOCUNG" Member="CHITIETDUNGLUONGOCUNGs">
+    <Type Name="CHITIETDUNGLUONGOCUNG">
+      <Column Name="MaChiTietDungLuongOCung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietDungLuongOCung" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETDUNGLUONGOCUNG_CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs" OtherKey="MaChiTietDungLuongOCung" Type="CHITIETDONGOCUNG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETHEDIEUHANH" Member="CHITIETHEDIEUHANHs">
+    <Type Name="CHITIETHEDIEUHANH">
+      <Column Name="MaChiTietHeDieuHanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenHeDieuHanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETHEDIEUHANH_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaChiTietHeDieuHanh" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETKICHTHUOCMANHINH" Member="CHITIETKICHTHUOCMANHINHs">
+    <Type Name="CHITIETKICHTHUOCMANHINH">
+      <Column Name="MaChiTietKichThuocManHinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietKichThuocManHinh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETKICHTHUOCMANHINH_CHITIETDONGMANHINH" Member="CHITIETDONGMANHINHs" OtherKey="MaChiTietKichThuocManHinh" Type="CHITIETDONGMANHINH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETLOAIDANHGIA" Member="CHITIETLOAIDANHGIAs">
+    <Type Name="CHITIETLOAIDANHGIA">
+      <Column Name="MaLoaiDanhGia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLoaiDanhGia" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="GiaTri" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETLOAIDOPHANGIAIWEBCAM" Member="CHITIETLOAIDOPHANGIAIWEBCAMs">
+    <Type Name="CHITIETLOAIDOPHANGIAIWEBCAM">
+      <Column Name="MaChiTietLoaiDoPhanGiaiWebCam" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietLoaiDoPhanGiaiWebcam" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETLOAIDOPHANGIAIWEBCAM_CHITIETDONGWEBCAM" Member="CHITIETDONGWEBCAMs" OtherKey="MaChiTietLoaiDoPhanGiaiWebCam" Type="CHITIETDONGWEBCAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETLOAIKETNOICARDMANG" Member="CHITIETLOAIKETNOICARDMANGs">
+    <Type Name="CHITIETLOAIKETNOICARDMANG">
+      <Column Name="MaChiTietLoaiKetNoiCardMang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLoaiKetNoiCardMang" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETLOAIKETNOICARDMANG_CHITIETDONGCARDMANG" Member="CHITIETDONGCARDMANGs" OtherKey="MaChiTietLoaiKetNoiCardMang" Type="CHITIETDONGCARDMANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETLOAITRONGLUONG" Member="CHITIETLOAITRONGLUONGs">
+    <Type Name="CHITIETLOAITRONGLUONG">
+      <Column Name="MaChiTietLoaiTrongLuong" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLoaiTrongLuong" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="GiaTriTrongLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETLOAITRONGLUONG_CHITIETTRONGLUONG" Member="CHITIETTRONGLUONGs" OtherKey="MaChiTietLoaiTrongLuong" Type="CHITIETTRONGLUONG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETTHOILUONGPIN" Member="CHITIETTHOILUONGPINs">
+    <Type Name="CHITIETTHOILUONGPIN">
+      <Column Name="MaChiTietThoiLuongPin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenThoiLuongPin" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETTHOILUONGPIN_CHITIETDONGPIN" Member="CHITIETDONGPINs" OtherKey="MaChiTietThoiLuongPin" Type="CHITIETDONGPIN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETTRONGLUONG" Member="CHITIETTRONGLUONGs">
+    <Type Name="CHITIETTRONGLUONG">
+      <Column Name="MaChiTietTrongLuong" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaChiTietLoaiTrongLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GiaTriTrongLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CHITIETTRONGLUONG_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaChiTietTrongLuong" Type="CHITIETDONGLAPTOP" />
+      <Association Name="CHITIETLOAITRONGLUONG_CHITIETTRONGLUONG" Member="CHITIETLOAITRONGLUONG" ThisKey="MaChiTietLoaiTrongLuong" Type="CHITIETLOAITRONGLUONG" IsForeignKey="true" />
+      <Association Name="BANGDIEM_KHOANGTANG_CHITIETTRONGLUONG" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETVONGQUAYOCUNG" Member="CHITIETVONGQUAYOCUNGs">
+    <Type Name="CHITIETVONGQUAYOCUNG">
+      <Column Name="MaChiTietVongQuayOCung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietVongQuayOCung" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="HeSo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CHITIETVONGQUAYOCUNG_CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs" OtherKey="MaChiTietVongQuayOCung" Type="CHITIETDONGOCUNG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DANHGIA" Member="DANHGIAs">
+    <Type Name="DANHGIA">
+      <Column Name="MaDanhGia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TongDiem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoNguoiDanhGia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="DANHGIA_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaDanhGia" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_DANHGIA" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOTUOI" Member="DOTUOIs">
+    <Type Name="DOTUOI">
+      <Column Name="MaDoTuoi" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDoTuoi" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="DOTUOI_KHACHHANG" Member="KHACHHANGs" OtherKey="MaDoTuoi" Type="KHACHHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GIAODICH" Member="GIAODICHes">
+    <Type Name="GIAODICH">
+      <Column Name="MaGiaoDich" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaKhachHang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaDongLaptop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayMua" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CHITIETDONGLAPTOP_GIAODICH" Member="CHITIETDONGLAPTOP" ThisKey="MaDongLaptop" Type="CHITIETDONGLAPTOP" IsForeignKey="true" />
+      <Association Name="KHACHHANG_GIAODICH" Member="KHACHHANG" ThisKey="MaKhachHang" Type="KHACHHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HEDIEUHANH" Member="HEDIEUHANHs">
+    <Type Name="HEDIEUHANH">
+      <Column Name="MaHeDieuHanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaBangDiem_KhoangTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaChiTietHeDieuHanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HEDIEUHANH_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaHeDieuHanh" Type="CHITIETDONGLAPTOP" />
+      <Association Name="BANGDIEM_KHOANGTANG_HEDIEUHANH" Member="BANGDIEM_KHOANGTANG" ThisKey="MaBangDiem_KhoangTang" Type="BANGDIEM_KHOANGTANG" IsForeignKey="true" />
+      <Association Name="CHITIETHEDIEUHANH_HEDIEUHANH" Member="CHITIETHEDIEUHANH" ThisKey="MaChiTietHeDieuHanh" Type="CHITIETHEDIEUHANH" IsForeignKey="true" />
+      <Association Name="NHASANXUAT_HEDIEUHANH" Member="NHASANXUAT" ThisKey="MaNhaSanXuat" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="MaKhachHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaNgheNghiep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaMucDichSuDung" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaDoTuoi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinhNam" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="KHACHHANG_GIAODICH" Member="GIAODICHes" OtherKey="MaKhachHang" Type="GIAODICH" />
+      <Association Name="DOTUOI_KHACHHANG" Member="DOTUOI" ThisKey="MaDoTuoi" Type="DOTUOI" IsForeignKey="true" />
+      <Association Name="MUCDICHSUDUNG_KHACHHANG" Member="MUCDICHSUDUNG" ThisKey="MaMucDichSuDung" Type="MUCDICHSUDUNG" IsForeignKey="true" />
+      <Association Name="NGHENGHIEP_KHACHHANG" Member="NGHENGHIEP" ThisKey="MaNgheNghiep" Type="NGHENGHIEP" IsForeignKey="true" />
+      <Association Name="TINHTHANH_KHACHHANG" Member="TINHTHANH" ThisKey="MaTinhThanh" Type="TINHTHANH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MUCDICHSUDUNG" Member="MUCDICHSUDUNGs">
+    <Type Name="MUCDICHSUDUNG">
+      <Column Name="MaMucDichSuDung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenMucDichSuDung" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="MUCDICHSUDUNG_KHACHHANG" Member="KHACHHANGs" OtherKey="MaMucDichSuDung" Type="KHACHHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGHENGHIEP" Member="NGHENGHIEPs">
+    <Type Name="NGHENGHIEP">
+      <Column Name="MaNgheNghiep" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNgheNghiep" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="NGHENGHIEP_KHACHHANG" Member="KHACHHANGs" OtherKey="MaNgheNghiep" Type="KHACHHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIDUNG" Member="NGUOIDUNGs">
+    <Type Name="NGUOIDUNG">
+      <Column Name="MaNguoiDung" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDangNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHASANXUAT" Member="NHASANXUATs">
+    <Type Name="NHASANXUAT">
+      <Column Name="MaNhaSanXuat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNhaSanXuat" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDDOHOA" Member="CHITIETDONGCARDDOHOAs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGCARDDOHOA" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDMANG" Member="CHITIETDONGCARDMANGs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGCARDMANG" />
+      <Association Name="NHASANXUAT_CHITIETDONGCARDREADER" Member="CHITIETDONGCARDREADERs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGCARDREADER" />
+      <Association Name="NHASANXUAT_CHITIETDONGCPU" Member="CHITIETDONGCPUs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGCPU" />
+      <Association Name="NHASANXUAT_CHITIETDONGLAPTOP" Member="CHITIETDONGLAPTOPs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGLAPTOP" />
+      <Association Name="NHASANXUAT_CHITIETDONGLOA" Member="CHITIETDONGLOAs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGLOA" />
+      <Association Name="NHASANXUAT_CHITIETDONGMANHINH" Member="CHITIETDONGMANHINHs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGMANHINH" />
+      <Association Name="NHASANXUAT_CHITIETDONGOCUNG" Member="CHITIETDONGOCUNGs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGOCUNG" />
+      <Association Name="NHASANXUAT_CHITIETDONGODIAQUANG" Member="CHITIETDONGODIAQUANGs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGODIAQUANG" />
+      <Association Name="NHASANXUAT_CHITIETDONGPIN" Member="CHITIETDONGPINs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGPIN" />
+      <Association Name="NHASANXUAT_CHITIETDONGRAM" Member="CHITIETDONGRAMs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGRAM" />
+      <Association Name="NHASANXUAT_CHITIETDONGWEBCAM" Member="CHITIETDONGWEBCAMs" OtherKey="MaNhaSanXuat" Type="CHITIETDONGWEBCAM" />
+      <Association Name="NHASANXUAT_HEDIEUHANH" Member="HEDIEUHANHs" OtherKey="MaNhaSanXuat" Type="HEDIEUHANH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TINHTHANH" Member="TINHTHANHs">
+    <Type Name="TINHTHANH">
+      <Column Name="MaTinhThanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTinhThanh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="TINHTHANH_KHACHHANG" Member="KHACHHANGs" OtherKey="MaTinhThanh" Type="KHACHHANG" />
+    </Type>
+  </Table>
+</Database>
