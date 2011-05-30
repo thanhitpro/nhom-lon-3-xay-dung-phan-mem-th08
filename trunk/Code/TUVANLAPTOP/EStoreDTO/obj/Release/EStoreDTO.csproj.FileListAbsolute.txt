@@ -3,3 +3,8 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDTO\bin\Release\ES
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDTO\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDTO\obj\Release\EStoreDTO.pdb

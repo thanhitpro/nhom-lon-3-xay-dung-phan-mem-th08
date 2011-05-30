@@ -6,3 +6,11 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDAO\bin\Release\ES
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll.config
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreDAO\obj\Release\EStoreDAO.pdb

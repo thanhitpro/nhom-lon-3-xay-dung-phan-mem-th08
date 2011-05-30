@@ -7,3 +7,12 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreBUS\bin\Release\ES
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreBUS\obj\Release\EStoreBUS.pdb

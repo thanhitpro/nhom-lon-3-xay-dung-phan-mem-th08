@@ -10,3 +10,15 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestBUS\bin\Releas
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreTestBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\nunit.framework.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestBUS\obj\Release\EStoreTestBUS.pdb
