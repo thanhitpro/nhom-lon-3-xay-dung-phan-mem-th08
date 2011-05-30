@@ -30,15 +30,6 @@ namespace EStoreTestBUS
         }
 
         [Test]
-        public void LayDanhSachChiTietDongLaptop()
-        {
-            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = MyChiTietDongLaptopBUS.LayDanhSachChiTietDongLaptop();
-
-            Assert.IsNotNull(listChiTietDongLaptop);
-            Assert.LessOrEqual(30, listChiTietDongLaptop.Count);
-        }
-
-        [Test]
         public void TestCapNhatXoaChiTietDongLapTop()
         {
             List<int> danhSachMaDongLaptop = new List<int> { 1, 2 };
