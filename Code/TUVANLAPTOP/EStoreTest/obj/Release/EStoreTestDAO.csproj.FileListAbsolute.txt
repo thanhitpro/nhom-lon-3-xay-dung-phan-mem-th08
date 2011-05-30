@@ -8,3 +8,13 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTest\bin\Release\E
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\nunit.framework.xml
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\obj\Release\EStoreTest.pdb

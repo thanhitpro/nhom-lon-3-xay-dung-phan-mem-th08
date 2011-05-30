@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1079]D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll</TopNode>
-  <SelectedNode>[0-1016]EStoreTest.myTestChiTietDongLaptopDAO.TestTraCuu</SelectedNode>
+  <TopNode>[0-1097]E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll</TopNode>
+  <SelectedNode>[0-1097]E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1079]D:\Group3_1\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1080]EStoreTest" Expanded="true" />
-    <Node UniqueName="[0-1009]EStoreTest.myTestChiTietDongLaptopDAO" Expanded="true" />
+    <Node UniqueName="[0-1097]E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTest\bin\Release\EStoreTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1098]EStoreTest" Expanded="true" />
   </Nodes>
 </VisualState>

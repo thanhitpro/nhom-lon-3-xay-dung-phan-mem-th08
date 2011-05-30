@@ -13,3 +13,18 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bi
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreTestTUVANLAPTOP.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\nunit.framework.xml
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\EStoreTestTUVANLAPTOP\obj\Release\EStoreTestTUVANLAPTOP.pdb

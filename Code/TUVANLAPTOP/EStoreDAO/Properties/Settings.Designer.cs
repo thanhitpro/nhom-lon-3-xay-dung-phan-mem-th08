@@ -233,9 +233,19 @@ namespace EStoreDAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"D:\\Tu lieu\\Xay dung phan mem\\Do an nho" +
-            "m lon 3\\SVN_Project\\Code\\TUVANLAPTOP\\TUVANLAPTOP\\bin\\Release\\ESTORE.mdf\";Integra" +
-            "ted Security=True;Connect Timeout=30;User Instance=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\ESTORE.mdf\";Integrated" +
+            " Security=True;Connect Timeout=30;User Instance=True")]
+        public string ESTOREConnectionString {
+            get {
+                return ((string)(this["ESTOREConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\ESTORE.mdf\";Integrated" +
+            " Security=True;Connect Timeout=30;User Instance=True")]
         public string ESTOREConnectionString21 {
             get {
                 return ((string)(this["ESTOREConnectionString21"]));
@@ -245,11 +255,11 @@ namespace EStoreDAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\ESTORE.mdf\";Integrated" +
-            " Security=True;Connect Timeout=30;User Instance=True")]
-        public string ESTOREConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\ESTORE.mdf\";Integrated Security=True;Connect Timeou" +
+            "t=30;User Instance=True")]
+        public string ESTOREConnectionString22 {
             get {
-                return ((string)(this["ESTOREConnectionString"]));
+                return ((string)(this["ESTOREConnectionString22"]));
             }
         }
     }

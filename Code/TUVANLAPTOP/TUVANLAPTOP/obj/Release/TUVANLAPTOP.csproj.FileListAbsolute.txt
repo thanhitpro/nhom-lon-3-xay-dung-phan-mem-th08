@@ -31,3 +31,36 @@ C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\nunit.framework.dll
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTestBUS.pdb
 C:\Users\ttkien\Desktop\XDPM\SVN\trunk\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTest.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.exe
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\ResultAnalyseData.xml
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.exe
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\TUVANLAPTOP.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTest.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTestBUS.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\nunit.framework.dll
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTestBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreBUS.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDTO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreDAO.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\bin\Release\EStoreTest.pdb
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\ResolveAssemblyReference.cache
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ABOUT.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.ADMIN.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATDULIEUKHACHHANG.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.CAPNHATXOASANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.DANGNHAP.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.HELP.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.MANHINHCHINH.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.Properties.Resources.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMMOI.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.SANPHAMTUVAN.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THAYDOI_THONGTINSANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMDACTINHSANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.THEMSANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.TRACUUSANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.UC_SANPHAM.resources
+E:\Xay dung phan mem\XDPM\Code\TUVANLAPTOP\TUVANLAPTOP\obj\Release\TUVANLAPTOP.csproj.GenerateResource.Cache
