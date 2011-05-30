@@ -52,19 +52,6 @@ namespace EStoreTest
             dataContext.SubmitChanges();
         }
 
-        [Test]
-        public void CapNhatXoaChiTietDongLaptop_Test()
-        {
-            List<int> maDongLaptop = new List<int> { 1, 2, 3, 4 };
-            myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
-
-            for (int i = 0; i < maDongLaptop.Count(); i++)
-            {
-                myChiTietDongLaptopDTO kiemTraGiaTri = myChiTietDongLaptopDAO.LayChiTietDongLaptop(maDongLaptop[i]);
-                Assert.AreEqual(true, kiemTraGiaTri.BDeleted);
-            }
-            myChiTietDongLaptopDAO.CapNhatXoaChiTietDongLaptop(maDongLaptop);
-        }
 
         [Test]
         public void LayChiTietDongLaptopMoiNhat_Test()
