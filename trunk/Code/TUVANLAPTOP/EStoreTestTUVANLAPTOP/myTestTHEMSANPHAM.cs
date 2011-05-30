@@ -71,11 +71,6 @@ namespace EStoreTestTUVANLAPTOP
             Assert.AreEqual(true, myThemSanPham_test.LoadTrongLuong());
         }
 
-        [Test]
-        public void LoadTenVaMauSac_Test()
-        {
-            Assert.AreEqual(true, myThemSanPham_test.LoadTenVaMauSac());
-        }
 
         [Test]
         public void LoadCardMang_Test()
@@ -123,36 +118,6 @@ namespace EStoreTestTUVANLAPTOP
         public void LoadNhaSX_Test()
         {
             Assert.AreEqual(true, myThemSanPham_test.LoadNhaSX());
-        }
-
-        [Test]
-        public void LayThongTinLaptopMoi_Test()
-        {
-            myThemSanPham_test.LoadRAM();
-            myThemSanPham_test.LoadCPU();
-            myThemSanPham_test.LoadOCung();
-            myThemSanPham_test.LoadManHinh();
-            myThemSanPham_test.LoadCardManHinh();
-            myThemSanPham_test.LoadDongLoa();
-            myThemSanPham_test.LoadODiaQuang();
-            myThemSanPham_test.LoadHeDieuHanh();
-            myThemSanPham_test.LoadTrongLuong();
-            myThemSanPham_test.LoadTenVaMauSac();
-            myThemSanPham_test.LoadCardMang();
-            myThemSanPham_test.LoadCardReader();
-            myThemSanPham_test.LoadWebcam();
-            myThemSanPham_test.LoadPin();
-            myThemSanPham_test.LoadKhaNangNhanDangVanTay();
-            myThemSanPham_test.LoadCongHDMI();
-            myThemSanPham_test.LoadSoCongUSB();
-            myThemSanPham_test.LoadNhaSX();
-
-            myThemSanPham_test.GanThongTinTextBox_Test("Asus N43J", "1", "1", "Asus");
-            CHITIETDONGLAPTOP dongLaptop = new CHITIETDONGLAPTOP();
-            dongLaptop = myThemSanPham_test.LayThongTinLaptopMoi();
-            Assert.AreEqual("Asus N43J", dongLaptop.TenChiTietDongLapTop);
-            Assert.AreEqual(1, dongLaptop.SoLuongNhap);
-            //Assert.AreEqual(1000000, dongLaptop.GiaBanHienHanh);
         }
     }
 }

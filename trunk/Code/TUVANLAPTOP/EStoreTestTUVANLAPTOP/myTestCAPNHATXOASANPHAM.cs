@@ -36,10 +36,5 @@ namespace EStoreTestTUVANLAPTOP
             Assert.AreEqual(true, myCapNhatXoaSanPham_test.AddDataIntoDataGridView(chiTietDongLapTop));
         }
 
-        [Test]
-        public void ResetDataGridView_Test()
-        {
-            Assert.AreEqual(true, myCapNhatXoaSanPham_test.ResetDataGridView());
-        }
     }
 }
