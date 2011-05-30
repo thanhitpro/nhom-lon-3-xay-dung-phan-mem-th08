@@ -27,53 +27,6 @@ namespace EStoreTest
             Assert.AreEqual("image/1.png", chiTietDongLapTopDTO.SHinhAnh);
         }
 
-        [Test]
-        public void TestLayDanhSachChiTietDongLaptop()
-        {
-            List<myChiTietDongLaptopDTO> listChiTietDongLaptop = myChiTietDongLaptopDAO.LayDanhSachChiTietDongLaptop();
-            Assert.IsNotNull(listChiTietDongLaptop);
-            Assert.Less(30, listChiTietDongLaptop.Count);
-        }
-
-        [Test]
-        public void ThemMoiChiTietDongLaptopTest()
-        {
-            DataClasses1DataContext dataContext = new DataClasses1DataContext();
-            CHITIETDONGLAPTOP dongLaptopCanThemMoi = new CHITIETDONGLAPTOP();
-            dongLaptopCanThemMoi.TenChiTietDongLapTop = "dell";
-            dongLaptopCanThemMoi.MaDongRAM = 1;
-            dongLaptopCanThemMoi.MaDongOCung = 1;
-            dongLaptopCanThemMoi.MaDongManHinh = 1;
-            dongLaptopCanThemMoi.MaDongCardDoHoa = 1;
-            dongLaptopCanThemMoi.MaDongLoa = 1;
-            dongLaptopCanThemMoi.MaDongODiaQuang = 1;
-            dongLaptopCanThemMoi.MaDongCardMang = 1;
-            dongLaptopCanThemMoi.MaDongCardReader = 1;
-            dongLaptopCanThemMoi.MaDongWebCam = 1;
-            dongLaptopCanThemMoi.MaDongPin = 1;
-            dongLaptopCanThemMoi.MaHeDieuHanh = 1;
-            dongLaptopCanThemMoi.MaChiTietTrongLuong = 1;
-            dongLaptopCanThemMoi.FingerprintReader = true;
-            dongLaptopCanThemMoi.HDMI = true;
-            dongLaptopCanThemMoi.SoLuongCongUSB = 3;
-            dongLaptopCanThemMoi.MaNhaSanXuat = 1;
-            dongLaptopCanThemMoi.MaDanhGia = 1;
-            dongLaptopCanThemMoi.GiaBanHienHanh = 16700;
-            dongLaptopCanThemMoi.MoTaThem = "";
-            dongLaptopCanThemMoi.SoLuongNhap = 20;
-            dongLaptopCanThemMoi.SoLuongConLai = 10;
-            dongLaptopCanThemMoi.ThoiGianBaoHanh = 12;
-            dongLaptopCanThemMoi.HinhAnh = "image/1.png";
-            dongLaptopCanThemMoi.MauSac = "xanh";
-            dongLaptopCanThemMoi.Deleted = false;
-            dongLaptopCanThemMoi.NgayNhap = DateTime.Now;
-
-            myChiTietDongLaptopDAO.ThemMoiChiTietDongLaptop(dongLaptopCanThemMoi);
-            CHITIETDONGLAPTOP temp = (from dongLaptop in dataContext.CHITIETDONGLAPTOPs orderby dongLaptop.MaDongLapTop descending select dongLaptop).First();
-            Assert.That(dongLaptopCanThemMoi.TenChiTietDongLapTop, Is.EqualTo(temp.TenChiTietDongLapTop));
-            dataContext.CHITIETDONGLAPTOPs.DeleteOnSubmit(temp);
-            dataContext.SubmitChanges();
-        }
 
         [Test]
         public void CapNhatXoaChiTietDongLaptop_Test()
@@ -103,50 +56,6 @@ namespace EStoreTest
             Assert.IsNotNull(listLaptopMoiNhat);
         }
 
-
-        [Test]
-        public void TestTraCuu()
-        {
-
-            myChiTietDongLaptopDAO laptop = new myChiTietDongLaptopDAO();
-
-            InfoComboboxOfFormTraCuu infoCombobox = new InfoComboboxOfFormTraCuu();
-
-            //mau sac
-            infoCombobox.SMauSac = "Màu Đen ";
-            Assert.That(laptop.TraCuu(infoCombobox)[0].STenChiTietDongLapTop, Is.EqualTo("ACER Aspire 4745 352G32Mn 041"));
-            Assert.That(laptop.TraCuu(infoCombobox)[1].STenChiTietDongLapTop, Is.EqualTo("LAPTOP SONY VGN - CF112FX "));
-            //            Assert.That(laptop.TraCuu(infoCombobox)[2].STenChiTietDongLapTop, Is.EqualTo("DELL Inspiron 14R N4030-JM1W74"));
-
-
-
-            //ten laptop va mau sac (màu đen)
-            infoCombobox.STendongLapTop = "ACER Aspire 4745 352G32Mn 041";
-
-            Assert.That(laptop.TraCuu(infoCombobox)[0].STenChiTietDongLapTop, Is.EqualTo("ACER Aspire 4745 352G32Mn 041"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].SMauSac, Is.EqualTo("Màu Đen"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].IThoiGianBaoHanh, Is.EqualTo(12));
-
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongRam.STenDongRAM, Is.EqualTo("4GB DDRAM3 KINGMAX"));
-
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongOCung.STenDongOCung, Is.EqualTo("Sony HDD 320GB 7200rpm"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongCacDoHoa.STenDongCardDoHoa, Is.EqualTo("NDIVIA"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongCardMang.STenDongCardMang, Is.EqualTo("1 "));
-
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongCPU.STenDongCPU, Is.EqualTo("EL Core i7-950 (3.06GHz)"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongCardReader.STenDongCardReader, Is.EqualTo(" 1"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongLoa.STenDongLoa, Is.EqualTo("Creative"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongManHinh.STenDongManHinh, Is.EqualTo("11.6 inches HD WLED"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongODiaQuang.STenDongODiaQuang, Is.EqualTo("DVD-16X SAMSUNG"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongPin.FTenDongPin, Is.EqualTo("1"));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietDongWebCam.STenDongWebCam, Is.EqualTo("1 "));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ChiTietHeDieuHanh.STenHeDieuHanh, Is.EqualTo("Win home "));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ISoLuongCongUSB, Is.EqualTo(2));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ISoLuongNhap, Is.EqualTo(50));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].ISoLuongConLai, Is.EqualTo(9));
-            Assert.That(laptop.TraCuu(infoCombobox)[0].SHinhAnh, Is.EqualTo("image/1.png"));
-
-        }
 
         [Test]
         public void TestCapNhatChiTietDongLaptop()
@@ -207,31 +116,6 @@ namespace EStoreTest
                         , Is.EqualTo("4GB DDRAM3 KINGMAX"));
         }
 
-        [Test]
-        public void TestCapNhatChiTietDongCPU()
-        {
-            CHITIETDONGLAPTOP laptop = new CHITIETDONGLAPTOP();
-            laptop.MaDongCPU = 3;
-
-            CHITIETDONGLAPTOP donglaptop = new CHITIETDONGLAPTOP();
-
-            //            myChiTietDongLaptopDAO capnhat = new myChiTietDongLaptopDAO();
-
-
-            Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongCPU(laptop, donglaptop).TenDongCPU, Is.EqualTo("EL Core i5-760 (2.8GHz)"));
-        }
-
-        [Test]
-        public void TestCapNhatChiTietDongOCung()
-        {
-            CHITIETDONGLAPTOP laptop = new CHITIETDONGLAPTOP();
-            laptop.MaDongOCung = 1;
-            CHITIETDONGLAPTOP donglaptop = new CHITIETDONGLAPTOP();
-
-            //            myChiTietDongLaptopDAO capnhat = new myChiTietDongLaptopDAO();
-
-            Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongOCung(laptop, donglaptop).TenDongOCung, Is.EqualTo("Sony HDD 320GB 7200rpm"));
-        }
 
         [Test]
         public void TestCapNhatChiTietDongManHinh()
@@ -269,17 +153,6 @@ namespace EStoreTest
             Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongLoa(laptop, donglaptop).TenDongDongLoa, Is.EqualTo("Creative"));
         }
 
-        [Test]
-        public void TestCapNhatChiTietDongODiaQuang()
-        {
-            CHITIETDONGLAPTOP laptop = new CHITIETDONGLAPTOP();
-            laptop.MaDongODiaQuang = 1;
-            CHITIETDONGLAPTOP donglaptop = new CHITIETDONGLAPTOP();
-
-            //            myChiTietDongLaptopDAO capnhat = new myChiTietDongLaptopDAO();
-
-            Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongODiaQuang(laptop, donglaptop).TenDongODiaQuang, Is.EqualTo("DVD-16X SAMSUNG"));
-        }
 
         [Test]
         public void TestCapNhatHeDieuHanh()
@@ -329,30 +202,6 @@ namespace EStoreTest
             Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongCardReader(laptop, donglaptop).TenDongCardReader, Is.EqualTo(" 1"));
         }
 
-        [Test]
-        public void TestCapNhatChiTietDongWebCam()
-        {
-            CHITIETDONGLAPTOP laptop = new CHITIETDONGLAPTOP();
-            laptop.MaDongWebCam = 1;
-            CHITIETDONGLAPTOP donglaptop = new CHITIETDONGLAPTOP();
-
-            //            myChiTietDongLaptopDAO capnhat = new myChiTietDongLaptopDAO();
-
-            Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongWebCam(laptop, donglaptop).TenDongWebCam, Is.EqualTo("1 "));
-        }
-
-        [Test]
-        public void TestCapNhatChiTietDongPin()
-        {
-            CHITIETDONGLAPTOP laptop = new CHITIETDONGLAPTOP();
-            laptop.MaDongPin = 1;
-            CHITIETDONGLAPTOP donglaptop = new CHITIETDONGLAPTOP();
-
-
-            //            myChiTietDongLaptopDAO capnhat = new myChiTietDongLaptopDAO();
-
-            Assert.That(myChiTietDongLaptopDAO.CapNhatChiTietDongPin(laptop, donglaptop).TenDongPin, Is.EqualTo("1"));
-        }
 
         [Test]
         public void TestCapNhatNhaSanXuat()
