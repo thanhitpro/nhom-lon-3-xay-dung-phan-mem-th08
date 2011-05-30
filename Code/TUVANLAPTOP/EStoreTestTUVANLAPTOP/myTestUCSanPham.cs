@@ -12,14 +12,6 @@ namespace EStoreTestTUVANLAPTOP
     class myTestUCSanPham
     {
         [Test]
-        public void TestCheckExistImagePath()
-        {
-            UC_SANPHAM userControlSanPham = new UC_SANPHAM();
-            string imagePath = @"E:\Studying\Projects\TUVANLAPTOP\EStoreTestTUVANLAPTOP\bin\Release\1.png";
-            Assert.AreEqual(true,userControlSanPham.CheckExistImagePath(imagePath));
-        }
-
-        [Test]
         public void TestReduceString()
         {
             UC_SANPHAM userControlSanPham = new UC_SANPHAM();
